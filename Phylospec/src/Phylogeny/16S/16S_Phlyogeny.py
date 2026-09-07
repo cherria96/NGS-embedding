@@ -4,7 +4,7 @@ from Bio import SeqIO
 import pandas as pd
 import os
 sys.path.append('./')
-from src.global_config import get_config_16S_Phlyogeny
+from Phylospec.src.global_config import get_config_16S_Phlyogeny
 
 def main():
     args = get_config_16S_Phlyogeny()

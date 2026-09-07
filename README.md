@@ -52,3 +52,42 @@ Notes:
 - Sites `ADP` and `YCG` are missing their Spring row (facility inaccessible; flagged `x` in `ADPs_140Si,Se,분석`).
 - `BSIb` and `DGYb` (QC replicate facilities) only have a Summer row — the source notes them as excluded from Fall onward.
 - Empty cells are blank strings, not `0`/`NaN` — impute/cast before model training.
+
+### Genomic data
+
+- **`data/final/Dat_ARC.xlsx`, `data/final/Dat_BAC.xlsx`**: 16S rRNA taxonomic classification and
+  relative-abundance summaries derived from the QIIME2 ASV tables (archaeal and bacterial
+  domains, respectively). Sheet `OTUs` lists each ASV's `Feature ID` and full lineage
+  (`Domain`→`Species`). For each taxonomic rank (`P`=Phylum, `C`=Class, `O`=Order, `F`=Family,
+  `G`=Genus, `S`=Species) there are three wide sheets, one row per taxon and one column per
+  `SampleID` (e.g. `1-1-BSSG`): `{rank}_read` (read counts), `{rank}(%)` (relative abundance
+  within sample), and `{rank}_rank(%)` (percentile rank within sample).
+- **`data/qiimeresult/ARC/`, `data/qiimeresult/BAC/`**: the underlying QIIME2 analysis artifacts
+  that `Dat_ARC.xlsx`/`Dat_BAC.xlsx` were summarized from (per domain). Key outputs:
+  - `table_filtered.qza` — prevalence-filtered ASV feature table (the ASV × sample count matrix).
+  - `silva_16S_taxonomy.qza`/`.qzv` — SILVA-based taxonomic classification per ASV.
+  - `rooted-tree.qza` — rooted phylogenetic tree over the ASVs, used by the hierarchy-aware models.
+  
+  The directories also retain the intermediate DADA2/denoising and QC artifacts
+  (`dada2_table.qza`, `dada2_rep_seqs.qza`, `dada2_stats.qzv`, `alpha_rarefaction.qzv`,
+  `primer_trimmed.qzv`, `seq_filtered.qza`, `aligned-rep-seqs.qza`, `unrooted-tree.qza`, etc.)
+  from the QIIME2 pipeline run.
+
+## Experimental plan
+
+### Three-tier comparison
+
+| Tier | Model(s) | Encodes | Named gap |
+|---|---|---|---|
+| Baseline | RF / MLP on single-rank abundance + covariates | one taxonomic level | drops other levels → information loss + rank-choice bias |
+| Hierarchy-aware | PopPhy-CNN, DeepPhylo, Phylo-Spec | within-tree structure | ignores cross-domain bacteria↔archaea syntrophy |
+| Proposed | dual-domain hierarchy encoder + syntrophic cross-attention | within-tree and cross-domain syntrophic interface | — |
+
+### Benchmark reimplementations
+
+Faithful but deliberately small reimplementations, used as the hierarchy-aware tier:
+
+- **PopPhy-CNN** (Reiman 2020): tree → 2D matrix populated with abundance → 2D-CNN.
+- **DeepPhylo** (Wang 2024): per-OTU embeddings = PCA of the patristic-distance matrix
+  (evolutionary distance, not just topology); dual abundance + conv modules.
+- **Phylo-Spec** (Zhang 2025): bottom-up fusion of per-rank abundance features.

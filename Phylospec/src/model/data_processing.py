@@ -1,5 +1,7 @@
 import pickle
+import tempfile
 import numpy as np
+from ete3 import PhyloTree
 from sklearn.preprocessing import LabelEncoder
 import pandas as pd
 

@@ -3,7 +3,7 @@ import pandas as pd
 from ete3 import PhyloTree
 import os
 sys.path.append('./')
-from src.global_config import get_config_WGS_Phlyogeny
+from Phylospec.src.global_config import get_config_WGS_Phlyogeny
 
 def main():
 

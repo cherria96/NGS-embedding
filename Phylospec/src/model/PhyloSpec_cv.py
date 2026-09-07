@@ -8,14 +8,14 @@ from Bio import Phylo
 from sklearn.model_selection import StratifiedKFold
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 from imblearn.over_sampling import SMOTE
-from data_processing import load_and_preprocess_data, match_leaf_nodes, assign_unique_names, get_conv_order, \
+from Phylospec.src.model.data_processing import load_and_preprocess_data, match_leaf_nodes, assign_unique_names, get_conv_order, \
     calculate_node_weights, process_unclassified_features, tree_p
-from PhyloSpec import PhyloSpec, AuxiliaryModel, calculate_fc1_input_dim
-from training_evaluating import calculate_roc_auc, cv_train_and_evaluate
+from Phylospec.src.model.PhyloSpec import PhyloSpec, AuxiliaryModel, calculate_fc1_input_dim
+from Phylospec.src.model.training_evaluating import calculate_roc_auc, cv_train_and_evaluate
 import random
 import torch.nn
 sys.path.append('./')
-from src.global_config import get_config_train_test
+from Phylospec.src.global_config import get_config_train_test
 
 
 def set_seed(seed):

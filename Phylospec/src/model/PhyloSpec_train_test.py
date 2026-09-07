@@ -9,12 +9,12 @@ from sklearn.metrics import roc_auc_score
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 from torch import nn
 from torch.utils.data import TensorDataset, DataLoader
-from data_processing import load_and_preprocess_data, match_leaf_nodes, assign_unique_names, get_conv_order, \
+from Phylospec.src.model.data_processing import load_and_preprocess_data, match_leaf_nodes, assign_unique_names, get_conv_order, \
     calculate_node_weights, save_node_features_with_pickle, process_unclassified_features, tree_p
-from PhyloSpec import PhyloSpec, AuxiliaryModel, calculate_fc1_input_dim
+from Phylospec.src.model.PhyloSpec import PhyloSpec, AuxiliaryModel, calculate_fc1_input_dim
 sys.path.append('./')
-from src.global_config import get_config_train_test
-from training_evaluating import train_model, evaluate_model_on_test
+from Phylospec.src.global_config import get_config_train_test
+from Phylospec.src.model.training_evaluating import train_model, evaluate_model_on_test
 
 def set_seed(seed):
     """Ensure reproducibility by setting all relevant seeds."""

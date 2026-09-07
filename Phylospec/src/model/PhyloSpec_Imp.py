@@ -6,7 +6,7 @@ import pandas as pd
 from sklearn.preprocessing import StandardScaler
 from collections import Counter
 sys.path.append('./')
-from src.global_config import get_config_feature_importance
+from Phylospec.src.global_config import get_config_feature_importance
 
 # Normalize each node's feature matrix
 def normalize_features(node_features):
