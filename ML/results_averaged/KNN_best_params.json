@@ -1,0 +1,5 @@
+{
+  "model__regressor__weights": "distance",
+  "model__regressor__p": 2,
+  "model__regressor__n_neighbors": 15
+}

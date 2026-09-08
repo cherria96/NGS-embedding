@@ -1,0 +1,6 @@
+{
+  "model__regressor__kernel": "rbf",
+  "model__regressor__gamma": 0.01,
+  "model__regressor__epsilon": 0.1,
+  "model__regressor__C": 0.1
+}

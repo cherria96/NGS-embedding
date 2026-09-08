@@ -1,0 +1,6 @@
+{
+  "model__regressor__hidden_layer_sizes": [
+    32
+  ],
+  "model__regressor__alpha": 0.01
+}

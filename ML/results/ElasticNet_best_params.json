@@ -1,0 +1,4 @@
+{
+  "model__regressor__l1_ratio": 0.9,
+  "model__regressor__alpha": 1.0
+}
