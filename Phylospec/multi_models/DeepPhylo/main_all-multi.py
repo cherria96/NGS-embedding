@@ -12,8 +12,8 @@ from sklearn.metrics import roc_auc_score, roc_curve, auc, cohen_kappa_score
 import pandas as pd
 import matplotlib.pyplot as plt
 from itertools import cycle
-from DeepPhylo.deepphylo.pre_dataset import DeepPhyDataset
-from DeepPhylo.deepphylo.model import DeepPhylo_ibd as DeepPhylo
+from Phylospec.multi_models.DeepPhylo.deepphylo.pre_dataset import DeepPhyDataset
+from Phylospec.multi_models.DeepPhylo.deepphylo.model import DeepPhylo_ibd as DeepPhylo
 
 
 def set_seed(seed):

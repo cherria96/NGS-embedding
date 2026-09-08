@@ -54,8 +54,16 @@ def train_model_function(config, seed):
     nodes, parents, conv_order, node_relations = get_conv_order(tree)
     node_weights = calculate_node_weights(tree)
 
-    smote = SMOTE(random_state=seed)
-    X_train, y_train = smote.fit_resample(X_train, y_train)
+    # SMOTE's default k_neighbors=5 needs >=6 samples in the smallest class;
+    # fall back to a smaller k (or skip SMOTE entirely below 2 samples) for
+    # rare classes instead of crashing.
+    min_class_count = np.min(np.bincount(y_train))
+    if min_class_count < 2:
+        print(f"Skipping SMOTE: smallest class has only {min_class_count} sample(s)")
+    else:
+        k_neighbors = min(5, min_class_count - 1)
+        smote = SMOTE(random_state=seed, k_neighbors=k_neighbors)
+        X_train, y_train = smote.fit_resample(X_train, y_train)
 
     scaler = StandardScaler()
     X_train = scaler.fit_transform(X_train)

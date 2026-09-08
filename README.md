@@ -53,6 +53,32 @@ Notes:
 - `BSIb` and `DGYb` (QC replicate facilities) only have a Summer row — the source notes them as excluded from Fall onward.
 - Empty cells are blank strings, not `0`/`NaN` — impute/cast before model training.
 
+### Warning-flag targets (`code/metadata_targetwriter.py`)
+
+Five binary target columns are appended to `metadata.csv`, each a threshold flag on a
+digester-stability indicator computed from the `eff_*` effluent columns. A row can trigger more
+than one flag at once (17/140 rows do) — these are **multi-label**, not mutually-exclusive
+classes:
+
+| Column | Trigger condition | Rationale | Positives (of 140) |
+|---|---|---|---|
+| `warning_acid_base_balance` | `eff_pH < 6.5` OR `eff_pH > 8.0` | outside the workable pH range for methanogens | 21 |
+| `warning_buffer_capacity` | `eff_TVFAs / eff_ALK >= 0.30` | classic VFA/ALK (FOS/TAC) instability ratio | 9 |
+| `warning_acid_accumulation` | (`eff_HPro / eff_HAc > 1.4` AND `eff_HPro > 0.1`) OR `eff_HPro >= 0.8` | propionate build-up/inhibition pattern | 4 |
+| `warning_ammonia_toxicity` | `eff_TAN > 2.5` | total ammonia nitrogen inhibition threshold | 26 |
+| `warning_biogas_quality` | `eff_CH4 < 50.0` | methane content below viable biogas quality | 7 |
+
+Notes:
+- `eff_TVFAs / eff_ALK` is computed as 999 (forced positive) when `eff_ALK == 0` and `eff_TVFAs > 0`,
+  and left undefined (no flag) when both are 0/missing.
+- Because these thresholds are computed straight from `eff_pH`/`eff_TAN`/etc., a row with missing
+  underlying effluent data silently evaluates its comparisons to `False` (numpy `NaN` comparisons)
+  and gets flagged `0` rather than "unknown" — treat `0` as "not flagged," not necessarily "confirmed normal,"
+  for rows with sparse `eff_*` data.
+- Class counts are small enough (4–26 positives out of 140) that any train/test split must be
+  **grouped by `Site`** (never split a site's 4 seasonal samples across train and test) and ideally
+  stratified at the site level per flag — see the model-comparison scripts below.
+
 ### Genomic data
 
 - **`data/final/Dat_ARC.xlsx`, `data/final/Dat_BAC.xlsx`**: 16S rRNA taxonomic classification and

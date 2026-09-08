@@ -109,7 +109,7 @@ class DeepPhylo_ibd(nn.Module):
 
 
 class DeepPhylo_multi_label(nn.Module):
-    def __init__(self, hidden_size, embeddings, kernel_size_conv=7, kernel_size_pool=4, dropout_conv=0.2, activation=nn.ReLU()):
+    def __init__(self, hidden_size, embeddings, kernel_size_conv=7, kernel_size_pool=4, dropout_conv=0.2, activation=nn.ReLU(), n_labels=4):
         super().__init__()
         self.embedding = nn.Embedding.from_pretrained(embeddings.float(), freeze=True)
         self.input_size = self.embedding.weight.size(0) - 1
@@ -127,7 +127,7 @@ class DeepPhylo_multi_label(nn.Module):
             )
         self.fc_phy = nn.Linear(self.embedding_dim, hidden_size)
         self.fc_pred = nn.Sequential(
-        nn.Linear(hidden_size, 4),
+        nn.Linear(hidden_size, n_labels),
             nn.Sigmoid()
          )
 

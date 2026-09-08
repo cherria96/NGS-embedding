@@ -6,10 +6,10 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import DataLoader
-from deepphylo.pre_dataset import set_seed,reducer, inverse_C, DeepPhyDataset
-from deepphylo.plot import plot_ss_curve, plot_pr_curve
-from deepphylo.evaluate import compute_metrics_multi_label, select_best_epoch
-from deepphylo.model import DeepPhylo_classification_multi_label
+from Phylospec.multi_models.DeepPhylo.deepphylo.pre_dataset import set_seed,reducer, inverse_C, DeepPhyDataset
+from Phylospec.multi_models.DeepPhylo.deepphylo.plot import plot_ss_curve, plot_pr_curve
+from Phylospec.multi_models.DeepPhylo.deepphylo.evaluate import compute_metrics_multi_label, select_best_epoch
+from Phylospec.multi_models.DeepPhylo.deepphylo.model import DeepPhylo_multi_label
 import argparse
 
 
@@ -20,6 +20,7 @@ def train(X_train, Y_train, X_eval, Y_eval, phy_embedding):
     criterion = nn.MSELoss()
     batch_size = args.batch_size
     kernel_size_pool = args.kernel_size_pool
+    n_labels = Y_train.shape[1]
     if args.activation == 'relu':
         activation = nn.ReLU()
     elif args.activation == 'sigmoid':
@@ -30,10 +31,11 @@ def train(X_train, Y_train, X_eval, Y_eval, phy_embedding):
         raise ValueError("Invalid activation function")
     # Create DataLoader for training and validation data
     train_dataset = DeepPhyDataset(phy_embedding, X_train, Y_train)
-    train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True, collate_fn=train_dataset.custom_collate_fn)
+    # drop_last avoids a size-1 trailing batch, which crashes BatchNorm1d during training
+    train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True, collate_fn=train_dataset.custom_collate_fn, drop_last=len(train_dataset) % batch_size == 1)
     val_dataset = DeepPhyDataset(phy_embedding, X_eval, Y_eval)
     val_loader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False, collate_fn=train_dataset.custom_collate_fn)
-    model = DeepPhylo_classification_multi_label(hidden_size, train_dataset.embeddings, kernel_size_conv, kernel_size_pool, activation=activation).to(device)
+    model = DeepPhylo_multi_label(hidden_size, train_dataset.embeddings, kernel_size_conv, kernel_size_pool, activation=activation, n_labels=n_labels).to(device)
     optimizer = optim.AdamW(model.parameters(), lr=args.lr)
     # Training
     epochs = args.epochs
@@ -51,7 +53,7 @@ def train(X_train, Y_train, X_eval, Y_eval, phy_embedding):
             batch = {key: val.to(device) for key, val in batch.items()}
             optimizer.zero_grad()
             y_pred_train = model(batch['X'], batch['nonzero_indices'])
-            loss_train = criterion(y_pred_train, batch['y'].reshape(-1, 4))
+            loss_train = criterion(y_pred_train, batch['y'].reshape(-1, n_labels))
             loss_train.backward()
             optimizer.step()
             train_loss += loss_train.item() * batch['X'].size(0)
@@ -67,14 +69,14 @@ def train(X_train, Y_train, X_eval, Y_eval, phy_embedding):
                 y_val.append(batch['y'].numpy())
                 batch = {key: val.to(device) for key, val in batch.items()}
                 y_pred_val =model(batch['X'], batch['nonzero_indices'])
-                loss_val = criterion(y_pred_val, batch['y'].reshape(-1, 4))
+                loss_val = criterion(y_pred_val, batch['y'].reshape(-1, n_labels))
                 val_loss += loss_val.item() * batch['X'].size(0)
                 val_preds.append(y_pred_val.detach().cpu().numpy())
         val_loss /= len(val_loader.dataset)
         # Calculate validation R2
         y_val = np.concatenate(y_val)
         val_preds = np.concatenate(val_preds)
-        _ , metric_dict_all = compute_metrics_multi_label(y_val, val_preds)
+        _ , metric_dict_all = compute_metrics_multi_label(y_val, val_preds, n_labels=n_labels)
         print(f"epoch: {epoch+1}, train_loss: {train_loss:.4f}, val_loss: {val_loss:.4f}, acc: {metric_dict_all['acc']:.4f}, mcc:{metric_dict_all['mcc']:.4}, roc-auc:{metric_dict_all['roc_auc']:.4f}, aupr:{metric_dict_all['aupr']:.4f}")
         train_losses.append(train_loss)
         val_losses.append(val_loss)
@@ -143,14 +145,18 @@ if __name__ == '__main__':
                         default='relu',
                         choices=['relu', 'sigmoid', 'tanh'],
                         help='Activation function for encoding protein embedding with backbone (default: relu)')
+    parser.add_argument('-d',
+                        '--data_dir',
+                        default='data/ggmp_multi_label_classification',
+                        help='Directory containing X_train.npy, X_eval.npy, Y_train.npy, Y_eval.npy, c.npy')
 
 
     args = parser.parse_args()
-    X_train = np.load('data/ggmp_multi_label_classification/X_train.npy')
-    X_eval = np.load('data/ggmp_multi_label_classification/X_val.npy')
-    Y_train = np.load('data/ggmp_multi_label_classification/y_train_mets_gastritis_t2dm_gout.npy')
-    Y_eval = np.load('data/ggmp_multi_label_classification/y_val_mets_gastritis_t2dm_gout.npy')
-    C = np.load('/data/ggmp_multi_label_classification/distance_matrix.npy')
+    X_train = np.load(os.path.join(args.data_dir, 'X_train.npy'))
+    X_eval = np.load(os.path.join(args.data_dir, 'X_eval.npy'))
+    Y_train = np.load(os.path.join(args.data_dir, 'Y_train.npy'))
+    Y_eval = np.load(os.path.join(args.data_dir, 'Y_eval.npy'))
+    C = np.load(os.path.join(args.data_dir, 'c.npy'))
     D = inverse_C(C)
     phy_embedding = reducer(C, 'pca', args.hidden_size, whiten=True)
     train_losses, val_losses, metrics_dict = train(X_train, Y_train, X_eval, Y_eval, phy_embedding)

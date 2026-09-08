@@ -5,9 +5,9 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import LabelEncoder, MinMaxScaler, StandardScaler
 from imblearn.over_sampling import SMOTE
 from Bio import Phylo
-from DeepPhylo.deepphylo.model import DeepPhylo_ibd as DeepPhylo
-from DeepPhylo.deepphylo.pre_dataset import DeepPhyDataset
-from data_preprocessing.data_processing import load_and_preprocess_data, match_leaf_nodes, assign_unique_names
+from Phylospec.multi_models.DeepPhylo.deepphylo.model import DeepPhylo_ibd as DeepPhylo
+from Phylospec.multi_models.DeepPhylo.deepphylo.pre_dataset import DeepPhyDataset
+from Phylospec.multi_models.data_preprocessing.data_processing import load_and_preprocess_data, match_leaf_nodes, assign_unique_names
 import pandas as pd
 import numpy as np
 import time

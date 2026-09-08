@@ -66,28 +66,35 @@ def compute_metrics_ibd(y_true, y_pred):
     metric_dict = {'acc': acc, 'mcc': mcc, 'roc_auc': roc_auc, 'aupr': aupr, 'f1':f1}
     return metric_dict
 
-def compute_metrics_multi_label(y_true, y_pred):
+def compute_metrics_multi_label(y_true, y_pred, n_labels=4):
     metrics_dict = {'acc': [], 'mcc': [], 'roc_auc': [], 'aupr': [], 'f1':[]}
     if not isinstance(y_true, np.ndarray):
         y_true = np.array(y_true)
     if not isinstance(y_pred, np.ndarray):
         y_pred = np.array(y_pred)
-    for i in range(4):
+    for i in range(n_labels):
         y_pred_hard = np.where(y_pred[:,i] > 0.5, 1, 0)
         acc = accuracy_score(y_true[:,i], y_pred_hard)
         mcc = matthews_corrcoef(y_true[:,i], y_pred_hard)
-        fpr, tpr, t = roc_curve(y_true[:,i], y_pred[:,i])
-        roc_auc = auc(fpr, tpr)
-        # 从FPR和TPR计算特异度和敏感度
-        specificity = 1 - fpr
-        sensitivity = tpr
-        precision, recall, thresholds = precision_recall_curve(y_true[:,i], y_pred[:,i])
-        aupr = auc(recall, precision)
-        # 选取thresholds为0.5时的precision和recall，计算F1
-        idx = np.argmin(np.abs(thresholds - 0.5))
-        precision = precision[idx]
-        recall = recall[idx]
-        f1 = 2 * precision * recall / (precision + recall)
+        # roc_curve/aupr are undefined when the eval fold has only one
+        # class for this label (common here given the rare warning flags)
+        if len(np.unique(y_true[:, i])) < 2:
+            roc_auc = float('nan')
+            aupr = float('nan')
+            f1 = float('nan')
+        else:
+            fpr, tpr, t = roc_curve(y_true[:,i], y_pred[:,i])
+            roc_auc = auc(fpr, tpr)
+            # 从FPR和TPR计算特异度和敏感度
+            specificity = 1 - fpr
+            sensitivity = tpr
+            precision, recall, thresholds = precision_recall_curve(y_true[:,i], y_pred[:,i])
+            aupr = auc(recall, precision)
+            # 选取thresholds为0.5时的precision和recall，计算F1
+            idx = np.argmin(np.abs(thresholds - 0.5))
+            precision = precision[idx]
+            recall = recall[idx]
+            f1 = 2 * precision * recall / (precision + recall) if (precision + recall) > 0 else 0.0
         metrics_dict['acc'].append(acc)
         metrics_dict['mcc'].append(mcc)
         metrics_dict['roc_auc'].append(roc_auc)

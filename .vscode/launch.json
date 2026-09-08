@@ -1,0 +1,53 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "PhyloSpec: train",
+            "type": "debugpy",
+            "request": "launch",
+            "python": "/root/anaconda3/envs/PhyloSpec/bin/python",
+            "module": "Phylospec.src.model.PhyloSpec_train_test",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
+            "args": [
+                "-t", "Phylospec/example/warnings_BAC/phylogeny.nwk",
+                "-c", "Phylospec/example/warnings_BAC/ammonia_toxicity/example_train.csv",
+                "-o", "Phylospec/output/warnings_BAC_ammonia_toxicity/",
+                "--PhyloSpec", "train"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "PhyloSpec: test",
+            "type": "debugpy",
+            "request": "launch",
+            "python": "/root/anaconda3/envs/PhyloSpec/bin/python",
+            "module": "Phylospec.src.model.PhyloSpec_train_test",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
+            "args": [
+                "-t", "Phylospec/example/warnings_BAC/phylogeny.nwk",
+                "-c", "Phylospec/example/warnings_BAC/ammonia_toxicity/example_test.csv",
+                "-o", "Phylospec/output/warnings_BAC_ammonia_toxicity/",
+                "--PhyloSpec", "test"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false
+        }
+    ]
+}

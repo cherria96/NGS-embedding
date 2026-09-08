@@ -1,0 +1,107 @@
+[
+  {
+    "domain": "ARC",
+    "flag": "acid_base_balance",
+    "RF": 0.6071428571428572,
+    "PMCNN": 0.5952380952380952,
+    "MetaDR": 0.7619047619047619
+  },
+  {
+    "domain": "ARC",
+    "flag": "buffer_capacity",
+    "RF": 0.24137931034482757,
+    "PMCNN": 0.1896551724137931,
+    "MetaDR": 0.04310344827586207
+  },
+  {
+    "domain": "ARC",
+    "flag": "acid_accumulation",
+    "RF": 0.8189655172413793,
+    "PMCNN": 0.31034482758620685,
+    "MetaDR": 0.9482758620689655
+  },
+  {
+    "domain": "ARC",
+    "flag": "ammonia_toxicity",
+    "RF": 0.9076923076923076,
+    "PMCNN": 0.49999999999999994,
+    "MetaDR": 0.85
+  },
+  {
+    "domain": "ARC",
+    "flag": "biogas_quality",
+    "RF": 0.6,
+    "PMCNN": 0.6666666666666667,
+    "MetaDR": 0.5666666666666667
+  },
+  {
+    "domain": "BAC",
+    "flag": "acid_base_balance",
+    "RF": 0.6666666666666666,
+    "PMCNN": 0.42857142857142855,
+    "MetaDR": 0.6071428571428571
+  },
+  {
+    "domain": "BAC",
+    "flag": "buffer_capacity",
+    "RF": 0.22413793103448276,
+    "PMCNN": 0.4482758620689655,
+    "MetaDR": 0.25862068965517243
+  },
+  {
+    "domain": "BAC",
+    "flag": "acid_accumulation",
+    "RF": 0.5172413793103448,
+    "PMCNN": 0.5344827586206896,
+    "MetaDR": 0.810344827586207
+  },
+  {
+    "domain": "BAC",
+    "flag": "ammonia_toxicity",
+    "RF": 0.8692307692307691,
+    "PMCNN": 0.7538461538461538,
+    "MetaDR": 0.8769230769230769
+  },
+  {
+    "domain": "BAC",
+    "flag": "biogas_quality",
+    "RF": 0.9666666666666667,
+    "PMCNN": 0.19999999999999996,
+    "MetaDR": 0.9666666666666667
+  },
+  {
+    "domain": "merged",
+    "flag": "acid_base_balance",
+    "RF": 0.7023809523809523,
+    "PMCNN": 0.5595238095238094,
+    "MetaDR": 0.5952380952380952
+  },
+  {
+    "domain": "merged",
+    "flag": "buffer_capacity",
+    "RF": 0.13793103448275867,
+    "PMCNN": 0.396551724137931,
+    "MetaDR": 0.15517241379310348
+  },
+  {
+    "domain": "merged",
+    "flag": "acid_accumulation",
+    "RF": 0.5862068965517241,
+    "PMCNN": 0.3793103448275862,
+    "MetaDR": 0.7586206896551724
+  },
+  {
+    "domain": "merged",
+    "flag": "ammonia_toxicity",
+    "RF": 0.8615384615384615,
+    "PMCNN": 0.7000000000000001,
+    "MetaDR": 0.8615384615384615
+  },
+  {
+    "domain": "merged",
+    "flag": "biogas_quality",
+    "RF": 0.9,
+    "PMCNN": 1.0,
+    "MetaDR": 1.0
+  }
+]

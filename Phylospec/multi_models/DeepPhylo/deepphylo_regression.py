@@ -31,7 +31,8 @@ def train(X_train, Y_train, X_eval, Y_eval, phy_embedding):
         raise ValueError("Invalid activation function")
     # Create DataLoader for training and validation data
     train_dataset = DeepPhyDataset(phy_embedding, X_train, Y_train)
-    train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True, collate_fn=train_dataset.custom_collate_fn)
+    # drop_last avoids a size-1 trailing batch, which crashes BatchNorm1d during training
+    train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True, collate_fn=train_dataset.custom_collate_fn, drop_last=len(train_dataset) % batch_size == 1)
     val_dataset = DeepPhyDataset(phy_embedding, X_eval, Y_eval)
     val_loader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False, collate_fn=train_dataset.custom_collate_fn)
     model = DeepPhylo_regression(hidden_size, train_dataset.embeddings,kernal_size_conv, kernal_size_pool, activation=activation).to(device)
@@ -51,7 +52,7 @@ def train(X_train, Y_train, X_eval, Y_eval, phy_embedding):
         for batch in train_loader:
             batch = {key: val.to(device) for key, val in batch.items()}
             optimizer.zero_grad()
-            y_pred_train = model(batch['X'], batch['nonzero_indices'])
+            y_pred_train = model(batch['X'], batch['nonzero_indices']).squeeze(-1)
             loss_train = criterion(y_pred_train, batch['y'])
             loss_train.backward()
             optimizer.step()
@@ -67,7 +68,7 @@ def train(X_train, Y_train, X_eval, Y_eval, phy_embedding):
             for batch in val_loader:
                 y_val.append(batch['y'].numpy())
                 batch = {key: val.to(device) for key, val in batch.items()}
-                y_pred_val =model(batch['X'], batch['nonzero_indices'])
+                y_pred_val = model(batch['X'], batch['nonzero_indices']).squeeze(-1)
                 loss_val = criterion(y_pred_val, batch['y'])
                 val_loss += loss_val.item() * batch['X'].size(0)
                 val_preds.append(y_pred_val.detach().cpu().numpy())
@@ -133,12 +134,16 @@ if __name__ == '__main__':
                         default='relu',
                         choices=['relu', 'sigmoid', 'tanh'],
                         help='Activation function for encoding protein embedding with backbone (default: relu)')
+    parser.add_argument('-d',
+                        '--data_dir',
+                        default='data/age_regression',
+                        help='Directory containing X_train.npy, X_eval.npy, Y_train.npy, Y_eval.npy, c.npy')
     args = parser.parse_args()
-    X_train = np.load('data/age_regression/X_train.npy')
-    X_eval = np.load('data/age_regression/X_eval.npy')
-    Y_train = np.load('data/age_regression/Y_train.npy')
-    Y_eval = np.load('data/age_regression/Y_eval.npy')
-    C = np.load('data/age_regression/c.npy')
+    X_train = np.load(os.path.join(args.data_dir, 'X_train.npy'))
+    X_eval = np.load(os.path.join(args.data_dir, 'X_eval.npy'))
+    Y_train = np.load(os.path.join(args.data_dir, 'Y_train.npy'))
+    Y_eval = np.load(os.path.join(args.data_dir, 'Y_eval.npy'))
+    C = np.load(os.path.join(args.data_dir, 'c.npy'))
     D = inverse_C(C)
     phy_embedding = reducer(C, 'pca', args.hidden_size, whiten=True)
 

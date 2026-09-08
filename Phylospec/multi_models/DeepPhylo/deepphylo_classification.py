@@ -6,10 +6,10 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import DataLoader
-from deepphylo.pre_dataset import set_seed,reducer, inverse_C, DeepPhyDataset
-from deepphylo.plot import plot_ss_curve, plot_pr_curve
-from deepphylo.evaluate import compute_metrics, select_best_epoch
-from deepphylo.model import DeepPhylo_classification
+from Phylospec.multi_models.DeepPhylo.deepphylo.pre_dataset import set_seed,reducer, inverse_C, DeepPhyDataset
+from Phylospec.multi_models.DeepPhylo.deepphylo.plot import plot_ss_curve, plot_pr_curve
+from Phylospec.multi_models.DeepPhylo.deepphylo.evaluate import compute_metrics, select_best_epoch
+from Phylospec.multi_models.DeepPhylo.deepphylo.model import DeepPhylo_classification
 import argparse
 
 

@@ -7,10 +7,10 @@ import matplotlib.pyplot as plt
 import torch.optim as optim
 from torch.utils.data import DataLoader
 
-from deepphylo.utils import set_seed
-from deepphylo.evaluate import compute_metrics_ibd as compute_metrics
-from deepphylo.model import DeepPhylo_ibd as DeepPhylo
-from deepphylo.pre_dataset import DeepPhyDataset
+from Phylospec.multi_models.DeepPhylo.deepphylo.utils import set_seed
+from Phylospec.multi_models.DeepPhylo.deepphylo.evaluate import compute_metrics_ibd as compute_metrics
+from Phylospec.multi_models.DeepPhylo.deepphylo.model import DeepPhylo_ibd as DeepPhylo
+from Phylospec.multi_models.DeepPhylo.deepphylo.pre_dataset import DeepPhyDataset
 
 
 def plot_training(train_losses, val_losses):

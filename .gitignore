@@ -1,2 +1,4 @@
 /data/fastq/
 /data/qiimeresult/
+__pycache__/
+/Phylospec/output/
