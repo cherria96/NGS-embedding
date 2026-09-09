@@ -1,5 +1,10 @@
 # Site-grouped TVFAs / ALK regression
 
+For the five-label warning classification comparison (RF, KNN, SVM, NNET,
+XGBoost, and elastic-net logistic regression), see
+[README_warnings.md](README_warnings.md). That workflow uses training-only,
+sample-specific top-taxon selection and excludes all effluent predictors.
+
 Run from the repository root:
 
 ```bash
