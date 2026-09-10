@@ -26,7 +26,15 @@
       "Bash(python3 build_merged.py -o output/genus_tree/genus/merged_build)",
       "Bash(rm -rf output/genus_tree/genus_autorun)",
       "Bash(time python3 run_genus_tree_pipeline.py --mode genus --out-dir output/genus_tree/genus_autorun)",
-      "Bash(GENUS_TREE_TEST_DIR=\"$\\(pwd\\)/output/genus_tree/phylo\" python3 -m pytest tests/test_invariants.py -q)"
+      "Bash(GENUS_TREE_TEST_DIR=\"$\\(pwd\\)/output/genus_tree/phylo\" python3 -m pytest tests/test_invariants.py -q)",
+      "Bash(git count-objects *)",
+      "Bash(git rev-list *)",
+      "Bash(git cat-file *)",
+      "Bash(awk '$1==\"blob\"{print $3, $4}')",
+      "Bash(git ls-remote *)",
+      "Bash(git config *)",
+      "Bash(git --version)",
+      "Bash(git push *)"
     ]
   }
 }
