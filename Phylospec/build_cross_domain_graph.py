@@ -32,7 +32,14 @@ Inputs
   -x  taxonomy CSV: first column = feature id, plus a column naming the domain
       (Kingdom / Domain / taxonomy string containing k__Bacteria / d__Archaea)
   -m  metadata TSV (optional but strongly recommended): sample id + operating variables
-  --covariates  comma-separated metadata columns to condition on
+  --covariates  comma-separated metadata columns to condition on.  These must be
+      UPSTREAM of the community -- influent composition, OLR, HRT, temperature,
+      digester type, sequencing depth.  Effluent chemistry (eff_*) is a DESCENDANT
+      of the community and a *collider*: conditioning on it manufactures spurious
+      cross-domain edges and deletes the mediated signal you are trying to detect.
+      It is also what the warning_* labels are thresholds on, so conditioning on it
+      is label leakage.  eff_* / warning_* columns are refused unless
+      --allow-outcome-covariates is passed.
 
 Outputs (prefix from -o)
 ------------------------
@@ -46,7 +53,8 @@ Outputs (prefix from -o)
 Usage
 -----
   python build_cross_domain_graph.py -c abundance.csv -t tree.nwk -x taxonomy.csv \
-      -m metadata.tsv --covariates OLR,temperature,TAN,pH -o run1 --sweep 1.0,0.5,0.25
+      -m metadata.tsv --covariates OLR,temperature,HRT,inf_TS,seq_depth \
+      -o run1 --sweep 1.0,0.5,0.25
 """
 import argparse
 import json
@@ -267,6 +275,10 @@ def main():
     ap.add_argument("-x", "--taxonomy", required=True)
     ap.add_argument("-m", "--metadata", default=None)
     ap.add_argument("--covariates", default="")
+    ap.add_argument("--allow-outcome-covariates", action="store_true",
+                    dest="allow_outcome_covariates",
+                    help="permit eff_* / warning_* covariates (label leakage + collider "
+                         "bias; only for deliberate sensitivity analysis)")
     ap.add_argument("-o", "--out", required=True)
     ap.add_argument("-d", "--dim", type=int, default=200)
     ap.add_argument("--prevalence", type=float, default=0.2,
@@ -312,6 +324,21 @@ def main():
 
     # ---- condition on operating variables ------------------------------------
     covs = [c for c in args.covariates.split(",") if c.strip()]
+    outcome_like = [c for c in covs
+                    if c.strip().lower().startswith(("eff_", "warning_"))]
+    if outcome_like and not args.allow_outcome_covariates:
+        sys.exit(
+            "ERROR: refusing to condition on outcome-side columns: "
+            f"{outcome_like}\n"
+            "  These are descendants of the microbial community, not confounders.\n"
+            "  Conditioning on them (a) induces collider bias -- spurious bacteria x\n"
+            "  archaea edges from a shared downstream constraint, (b) removes the\n"
+            "  mediated covariation that a real syntrophic pair produces, and (c) leaks\n"
+            "  the warning_* labels, which are thresholds on these same eff_* columns,\n"
+            "  into the edge selection that later serves as a fixed prior.\n"
+            "  Condition on upstream operating variables instead (OLR, HRT, temperature,\n"
+            "  influent composition, sequencing depth). Pass --allow-outcome-covariates\n"
+            "  only for a deliberate sensitivity analysis.")
     conditioned = False
     if args.metadata and covs:
         meta = pd.read_csv(args.metadata, sep=None, engine="python")
