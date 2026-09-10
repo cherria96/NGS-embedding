@@ -4,22 +4,23 @@ from sklearn.metrics import roc_curve, auc
 
 # Evaluate model on test data
 def evaluate_model_on_test(model, test_loader, conv_order, data, leaf_to_species, node_weights, num_classes=2,
-                           multi_label=False):
+                           multi_label=False, device=torch.device('cpu')):
     model.eval()
     test_preds = []
     test_labels = []
 
     with torch.no_grad():  # Disable gradient tracking for evaluation
         for inputs, labels in test_loader:
-            labels = labels.long()  # Ensure labels are in correct format for loss function
+            inputs = inputs.to(device)
+            labels = labels.long().to(device)  # Ensure labels are in correct format for loss function
             outputs = model(inputs, conv_order, {}, data, leaf_to_species, labels, node_weights)
 
-            test_labels.extend(labels.numpy())
+            test_labels.extend(labels.cpu().numpy())
 
             if multi_label or num_classes == 2:  # Binary/multi-label classification: use sigmoid
-                test_preds.extend(torch.sigmoid(outputs).numpy())
+                test_preds.extend(torch.sigmoid(outputs).cpu().numpy())
             else:  # Multi-class classification: use softmax
-                test_preds.extend(torch.softmax(outputs, dim=1).numpy())
+                test_preds.extend(torch.softmax(outputs, dim=1).cpu().numpy())
 
     return np.array(test_labels), np.array(test_preds)
 
@@ -83,7 +84,7 @@ def cv_train_and_evaluate(model, train_loader, test_loader, criterion, optimizer
     return model, test_group, all_preds
 
 # Standard training loop
-def train_model(model, train_loader, criterion, optimizer, conv_order, data, leaf_to_species, node_weights, num_epochs, num_classes):
+def train_model(model, train_loader, criterion, optimizer, conv_order, data, leaf_to_species, node_weights, num_epochs, num_classes, device=torch.device('cpu')):
     train_losses = []
 
     for epoch in range(num_epochs):
@@ -92,6 +93,7 @@ def train_model(model, train_loader, criterion, optimizer, conv_order, data, lea
         model.clear_accumulated_features()
 
         for inputs, labels in train_loader:
+            inputs = inputs.to(device)
             if isinstance(criterion, torch.nn.BCEWithLogitsLoss):
                 labels = labels.float()
                 if labels.dim() == 1:
@@ -99,6 +101,7 @@ def train_model(model, train_loader, criterion, optimizer, conv_order, data, lea
                     # Multi-label: labels already [batch_size, n_labels], no-op
             else:
                 labels = labels.long()  # Multi-class: integer class indices
+            labels = labels.to(device)
 
             optimizer.zero_grad()
             outputs = model(inputs, conv_order, {}, data, leaf_to_species, labels, node_weights)

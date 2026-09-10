@@ -65,18 +65,14 @@
     }
   },
   "genera_on_pruned_tree": 180,
-  "genera_non_monophyletic": 28,
+  "genera_non_monophyletic": 32,
   "worst_genera": [
     [
       "Methanolinea",
-      5
-    ],
-    [
-      "Syntrophomonas",
       4
     ],
     [
-      "Candidatus_Cloacimonas",
+      "Methanosarcina",
       4
     ],
     [
@@ -84,7 +80,19 @@
       3
     ],
     [
+      "SAR324_clade(Marine_group_B)",
+      3
+    ],
+    [
       "Smithella",
+      3
+    ],
+    [
+      "W27",
+      3
+    ],
+    [
+      "Candidatus_Cloacimonas",
       3
     ],
     [
@@ -92,61 +100,57 @@
       3
     ],
     [
-      "Methanomethylovorans",
-      2
+      "MBA03",
+      3
     ],
     [
-      "SJA-28",
-      2
-    ],
-    [
-      "DTU014",
-      2
-    ],
-    [
-      "Christensenellaceae_R-7_group",
-      2
+      "W5",
+      3
     ]
   ],
   "genera_split_into_blocks": {
     "Acholeplasma": 2,
-    "Aminicenantales": 2,
-    "Bacteroides": 2,
-    "Bacteroidetes_vadinHA17": 2,
-    "Caldicoprobacter": 2,
-    "Candidatus_Cloacimonas": 4,
+    "Butyrivibrio": 2,
+    "Candidatus_Cloacimonas": 3,
     "Christensenellaceae_R-7_group": 2,
     "DTU014": 2,
     "Fermentimonas": 2,
-    "Gelria": 2,
+    "Izemoplasmatales": 2,
+    "LD1-PB3": 2,
     "Lentimicrobium": 2,
-    "Methanolinea": 5,
+    "MBA03": 3,
+    "Methanoculleus": 2,
+    "Methanolinea": 4,
     "Methanomethylovorans": 2,
     "Methanosaeta": 3,
+    "Methanosarcina": 4,
+    "Paludibacter": 2,
     "Petrimonas": 2,
     "Proteiniphilum": 3,
-    "Rikenellaceae_RC9_gut_group": 2,
+    "Rhodobacter": 2,
+    "SAR324_clade(Marine_group_B)": 3,
     "SBR1031": 2,
-    "SJA-28": 2,
     "Smithella": 3,
     "Streptococcus": 2,
     "Syner-01": 2,
-    "Syntrophomonas": 4,
+    "Syntrophomonas": 2,
+    "Syntrophorhabdus": 2,
     "Syntrophus": 2,
     "Tetrasphaera": 2,
-    "W27": 2,
-    "W5": 2,
+    "W27": 3,
+    "W5": 3,
+    "W5053": 2,
     "p-251-o5": 2
   },
   "phylospec_audit": {
-    "features_matching_a_tip": 325,
+    "features_matching_a_tip": 331,
     "features_routed_to_step2_bypass": 0,
     "columns_named_unclassified": [],
-    "max_branch_length": 0.95,
+    "max_branch_length": 0.4181,
     "branches_ge_1_negative_node_weight": 0,
     "substring_ambiguous_feature_names": []
   },
-  "output_features": 325,
+  "output_features": 331,
   "largest_group": 22,
   "mode": "genus"
 }

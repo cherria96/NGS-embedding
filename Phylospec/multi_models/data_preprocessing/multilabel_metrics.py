@@ -9,6 +9,18 @@ from sklearn.metrics import (
 )
 
 
+def predict_proba_matrix(clf, X):
+    """Normalise the two shapes sklearn classifiers return P(class=1) in for a
+    multi-label target: MultiOutputClassifier / natively-multi-output
+    classifiers (RandomForest, KNeighbors) return a list of (n_samples,
+    n_classes) arrays, one per label; MLPClassifier returns a single
+    (n_samples, n_labels) array directly."""
+    proba = clf.predict_proba(X)
+    if isinstance(proba, list):
+        return np.column_stack([p[:, 1] if p.shape[1] > 1 else p[:, 0] for p in proba])
+    return proba
+
+
 def compute_multilabel_metrics(y_true, y_prob, flag_names, threshold=0.5):
     """y_true, y_prob: (n_samples, n_flags) arrays. Returns per-flag metrics and macro averages."""
     y_true = np.asarray(y_true)

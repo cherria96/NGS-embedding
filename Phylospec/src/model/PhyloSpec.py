@@ -33,7 +33,7 @@ class AuxiliaryModel(nn.Module):
             feature_map[leaf] = x[:, node_index].view(-1, 1, 1).float()
             layer_name = re.sub(r'\W+', '_', leaf)
             if layer_name not in self.conv1x1_layers:
-                self.conv1x1_layers[layer_name] = nn.Conv1d(1, self.channel, kernel_size=1)
+                self.conv1x1_layers[layer_name] = nn.Conv1d(1, self.channel, kernel_size=1).to(x.device)
             feature_map[leaf] = self.conv1x1_layers[layer_name](feature_map[leaf])
             feature_map[leaf] = feature_map[leaf] * node_weights[leaf]  # Apply node weight
             all_features.append(feature_map[leaf])
@@ -45,7 +45,7 @@ class AuxiliaryModel(nn.Module):
                 unmatched_feature = x[:, data.columns.get_loc(column) - 1].view(-1, 1, 1).float()
                 layer_name = re.sub(r'\W+', '_', column)
                 if layer_name not in self.conv1x1_layers:
-                    self.conv1x1_layers[layer_name] = nn.Conv1d(1, self.channel, kernel_size=1)
+                    self.conv1x1_layers[layer_name] = nn.Conv1d(1, self.channel, kernel_size=1).to(x.device)
                 unmatched_feature = self.conv1x1_layers[layer_name](unmatched_feature)
                 all_features.append(unmatched_feature)
 
@@ -94,7 +94,7 @@ class PhyloSpec(nn.Module):
             feature_map[leaf] = x[:, node_index].view(-1, 1, 1).float()
             layer_name = re.sub(r'\W+', '_', leaf)
             if layer_name not in self.conv1x1_layers:
-                self.conv1x1_layers[layer_name] = nn.Conv1d(1, self.channel, kernel_size=1)
+                self.conv1x1_layers[layer_name] = nn.Conv1d(1, self.channel, kernel_size=1).to(x.device)
             feature_map[leaf] = self.conv1x1_layers[layer_name](feature_map[leaf])
             feature_map[leaf] = feature_map[leaf] * node_weights[leaf]
             all_features.append(feature_map[leaf])
@@ -111,7 +111,7 @@ class PhyloSpec(nn.Module):
                 unmatched_feature = x[:, data.columns.get_loc(column) - 1].view(-1, 1, 1).float()
                 layer_name = re.sub(r'\W+', '_', column)
                 if layer_name not in self.conv1x1_layers:
-                    self.conv1x1_layers[layer_name] = nn.Conv1d(1, self.channel, kernel_size=1)
+                    self.conv1x1_layers[layer_name] = nn.Conv1d(1, self.channel, kernel_size=1).to(x.device)
                 unmatched_feature = self.conv1x1_layers[layer_name](unmatched_feature)
                 all_features.append(unmatched_feature)
 

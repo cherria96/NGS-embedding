@@ -36,6 +36,7 @@ BUILD_MERGED_SCRIPT = os.path.join(ROOT, "build_merged.py")
 QIIME_DIR = os.path.join(ROOT, "data", "qiimeresult")
 METADATA_PATH = os.path.join(ROOT, "data", "final", "metadata.csv")
 DEFAULT_OUT_DIR = os.path.join(ROOT, "output", "genus_tree")
+DEFAULT_SEPP_TREE = os.path.join(QIIME_DIR, "sepp_output", "sepp_tree_export", "tree.nwk")
 
 LABEL_COLS = [
     "warning_acid_base_balance",
@@ -150,10 +151,13 @@ def build_single_domain(domain, out_dir, mode, labels):
     return prefix
 
 
-def build_merged_domain(out_dir, mode, labels, arc_prefix, bac_prefix):
+def build_merged_domain(out_dir, mode, labels, arc_prefix, bac_prefix, use_sepp_tree=None):
     print("=== merged (ARC + BAC) ===")
     merged_build_dir = os.path.join(out_dir, "merged_build")
-    subprocess.run([sys.executable, BUILD_MERGED_SCRIPT, "-o", merged_build_dir], check=True)
+    cmd = [sys.executable, BUILD_MERGED_SCRIPT, "-o", merged_build_dir]
+    if use_sepp_tree:
+        cmd += ["--use-sepp-tree", use_sepp_tree]
+    subprocess.run(cmd, check=True)
 
     tax = pd.concat([pd.read_csv(f"{arc_prefix}_taxonomy.csv"),
                      pd.read_csv(f"{bac_prefix}_taxonomy.csv")], ignore_index=True)
@@ -173,18 +177,27 @@ def main():
     ap.add_argument("--mode", choices=["asv", "phylo", "genus"], default="genus")
     ap.add_argument("--out-dir", default=None,
                      help="default: output/genus_tree/<mode>/")
+    ap.add_argument("--use-sepp-tree", default=DEFAULT_SEPP_TREE,
+                     help="Sec 5.5 route 1: plain-Newick SEPP fragment-insertion tree "
+                          "(qiime fragment-insertion sepp, exported) to use for the ARC+BAC "
+                          "merge instead of the calibrated-graft fallback. Defaults to "
+                          "data/qiimeresult/sepp_output/sepp_tree_export/tree.nwk if it "
+                          "exists; pass --use-sepp-tree '' to force the graft fallback.")
     a = ap.parse_args()
     out_dir = a.out_dir or os.path.join(DEFAULT_OUT_DIR, a.mode)
     os.makedirs(out_dir, exist_ok=True)
+    sepp_tree = a.use_sepp_tree if a.use_sepp_tree and os.path.exists(a.use_sepp_tree) else None
+    print(f"merge route: {'SEPP fragment insertion (' + sepp_tree + ')' if sepp_tree else 'calibrated graft fallback'}")
 
     labels = pd.read_csv(METADATA_PATH, encoding="utf-8-sig",
                          index_col="SampleID")[LABEL_COLS]
 
     arc_prefix = build_single_domain("ARC", out_dir, a.mode, labels)
     bac_prefix = build_single_domain("BAC", out_dir, a.mode, labels)
-    build_merged_domain(out_dir, a.mode, labels, arc_prefix, bac_prefix)
+    build_merged_domain(out_dir, a.mode, labels, arc_prefix, bac_prefix, use_sepp_tree=sepp_tree)
 
-    summary = {"mode": a.mode, "out_dir": out_dir, "arms": ["arc", "bac", "merged"]}
+    summary = {"mode": a.mode, "out_dir": out_dir, "arms": ["arc", "bac", "merged"],
+               "merge_route": "sepp_fragment_insertion" if sepp_tree else "calibrated_graft_fallback"}
     with open(os.path.join(out_dir, "pipeline_run_summary.json"), "w") as f:
         json.dump(summary, f, indent=2)
     print(json.dumps(summary, indent=2))

@@ -72,7 +72,7 @@ RESULTS_DIR = os.path.join(HERE, "results", "site_grouped_cv")
 DOMAINS = ["ARC", "BAC", "merged"]
 MODELS = ["RF", "CNN", "PMCNN", "MetaDR", "DeepPhylo", "PhyloSpec"]
 POS_WEIGHT_CAP = 10.0
-PHYLOSPEC_EPOCHS = 10
+PHYLOSPEC_EPOCHS = 60
 PY = sys.executable
 DOMAIN_TO_ARM = {"ARC": "arc", "BAC": "bac", "merged": "merged"}
 

@@ -17,6 +17,9 @@ sys.path.append('./')
 from Phylospec.src.global_config import get_config_train_test
 from Phylospec.src.model.training_evaluating import train_model, evaluate_model_on_test
 
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+print(f"Using device: {device}")
+
 def set_seed(seed):
     """Ensure reproducibility by setting all relevant seeds."""
     torch.manual_seed(seed)
@@ -84,7 +87,7 @@ def train_model_function(config, seed):
             # 10 by default from run_site_grouped_cv_benchmark.py, matching
             # the cap used for all 5 other model families in this benchmark.
             pos_weight = np.clip(pos_weight, None, cap)
-        pos_weight_tensor = torch.tensor(pos_weight, dtype=torch.float32)
+        pos_weight_tensor = torch.tensor(pos_weight, dtype=torch.float32).to(device)
     else:
         # SMOTE's default k_neighbors=5 needs >=6 samples in the smallest class;
         # fall back to a smaller k (or skip SMOTE entirely below 2 samples) for
@@ -115,15 +118,15 @@ def train_model_function(config, seed):
     # Initialize model and select loss function based on classification type
     if multi_label:
         final_model = PhyloSpec(fc1_input_dim=fc1_input_dim, num_res_blocks=1, channel=config.ch,
-                                kernel_size=config.ks, out_feature=n_labels).to('cpu')
+                                kernel_size=config.ks, out_feature=n_labels).to(device)
         criterion = nn.BCEWithLogitsLoss(pos_weight=pos_weight_tensor)
     elif num_classes == 2:
         final_model = PhyloSpec(fc1_input_dim=fc1_input_dim, num_res_blocks=1, channel=config.ch,
-                                kernel_size=config.ks, out_feature=1).to('cpu')
+                                kernel_size=config.ks, out_feature=1).to(device)
         criterion = nn.BCEWithLogitsLoss()
     else:
         final_model = PhyloSpec(fc1_input_dim=fc1_input_dim, num_res_blocks=1, channel=config.ch,
-                                kernel_size=config.ks, out_feature=num_classes).to('cpu')
+                                kernel_size=config.ks, out_feature=num_classes).to(device)
         criterion = nn.CrossEntropyLoss()
 
     optimizer = torch.optim.Adam(final_model.parameters(), lr=config.lr, weight_decay=0.0001)
@@ -133,7 +136,7 @@ def train_model_function(config, seed):
     # Start training loop
     final_model = train_model(
         final_model, train_loader, criterion, optimizer, conv_order, data_features, leaf_to_species,
-        node_weights=node_weights, num_epochs=config.ep, num_classes=num_classes
+        node_weights=node_weights, num_epochs=config.ep, num_classes=num_classes, device=device
     )
 
     # Save with node features
@@ -212,13 +215,15 @@ def test_model_function(config, seed):
     # the whole model object, not a state_dict). The checkpoint being loaded
     # here was always just written by this same run's own train step, so
     # weights_only=False is safe -- it is never loading a third-party file.
-    final_model = torch.load(config.o + 'train_model.pth', weights_only=False)
+    final_model = torch.load(config.o + 'train_model.pth', weights_only=False, map_location=device)
+    final_model = final_model.to(device)
 
     print("Testing the model on the test set...")
 
     # Predict and evaluate
     y_true, y_scores = evaluate_model_on_test(final_model, test_loader, conv_order, data_features, leaf_to_species,
-                                              node_weights, num_classes=num_classes, multi_label=multi_label)
+                                              node_weights, num_classes=num_classes, multi_label=multi_label,
+                                              device=device)
 
     if getattr(config, 'scores_out', None):
         # Site-grouped CV path (task Sec 5A): dump raw, unthresholded scores

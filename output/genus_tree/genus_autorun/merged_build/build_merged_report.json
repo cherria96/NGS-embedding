@@ -1,66 +1,59 @@
 {
-  "route": "calibrated_graft_fallback",
-  "calibration": {
-    "mean_arc_tip_depth": 2.1282489083693688,
-    "mean_bac_tip_depth": 3.0023268978899504,
-    "target_cross_domain_distance": 1.35,
-    "calibrated_connect_len": 0.0,
-    "resulting_cross_domain_distance": 5.130575806259319
-  },
-  "fallback_reason": "qiime2 / q2-fragment-insertion is not installed on this machine and a fresh conda install was declined for this session; used domain_merge_utils.calibrate_connect_len() (task Sec 5.5 fallback route) instead of SEPP fragment-insertion.",
+  "route": "sepp_fragment_insertion",
+  "sepp_tree_path": "/home/best/Sujin/NGS-embedding/data/qiimeresult/sepp_output/sepp_tree_export/tree.nwk",
   "phylospec_audit_pre_rescale": {
     "ARC": {
       "label": "ARC",
-      "n_branches": 3547,
-      "max_branch_length": 1.547792136,
+      "n_branches": 3486,
+      "max_branch_length": 3.203447,
       "branches_eq_1_weight_zero": 0,
-      "branches_gt_1_weight_negative": 9,
-      "suggested_rescale_factor": 0.6137775079120831
+      "branches_gt_1_weight_negative": 158,
+      "suggested_rescale_factor": 0.29655555406410655
     },
     "BAC": {
       "label": "BAC",
-      "n_branches": 26722,
-      "max_branch_length": 2.464980779,
+      "n_branches": 26769,
+      "max_branch_length": 3.31024721104,
       "branches_eq_1_weight_zero": 0,
-      "branches_gt_1_weight_negative": 4,
-      "suggested_rescale_factor": 0.3853985426958983
+      "branches_gt_1_weight_negative": 17,
+      "suggested_rescale_factor": 0.2869876294530682
     },
     "merged": {
       "label": "merged",
-      "n_branches": 30270,
-      "max_branch_length": 2.464980779,
+      "n_branches": 30256,
+      "max_branch_length": 3.203447,
       "branches_eq_1_weight_zero": 0,
-      "branches_gt_1_weight_negative": 13,
-      "suggested_rescale_factor": 0.3853985426958983
+      "branches_gt_1_weight_negative": 146,
+      "suggested_rescale_factor": 0.29655555406410655
     }
   },
   "phylospec_audit_final": {
     "ARC": {
       "label": "ARC",
-      "n_branches": 3547,
-      "max_branch_length": 0.5965168336105715,
+      "n_branches": 3486,
+      "max_branch_length": 0.9193496606085431,
       "branches_eq_1_weight_zero": 0,
       "branches_gt_1_weight_negative": 0,
       "suggested_rescale_factor": 1.0
     },
     "BAC": {
       "label": "BAC",
-      "n_branches": 26722,
-      "max_branch_length": 0.95,
+      "n_branches": 26769,
+      "max_branch_length": 0.9500000000000001,
       "branches_eq_1_weight_zero": 0,
       "branches_gt_1_weight_negative": 0,
       "suggested_rescale_factor": 1.0
     },
     "merged": {
       "label": "merged",
-      "n_branches": 30270,
-      "max_branch_length": 0.95,
+      "n_branches": 30256,
+      "max_branch_length": 0.9193496606085431,
       "branches_eq_1_weight_zero": 0,
       "branches_gt_1_weight_negative": 0,
       "suggested_rescale_factor": 1.0
     }
   },
-  "rescale_factor_applied": 0.38539854269589824,
+  "rescale_factor_applied": 0.2869876294530682,
   "n_common_samples": 138,
   "n_arc_features": 1776,
   "n_bac_features": 13385,
