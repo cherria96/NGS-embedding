@@ -1,0 +1,34 @@
+{
+  "params": {
+    "solver": "lbfgs",
+    "hidden_layer_sizes": [
+      32,
+      16
+    ],
+    "alpha": 0.1
+  },
+  "candidate": 4,
+  "thresholds": [
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5
+  ],
+  "CV_pooled_OOF": {
+    "MCC_warning_acid_base_balance": 0.34506002973340105,
+    "AUPR_warning_acid_base_balance": 0.4961926550032357,
+    "MCC_warning_buffer_capacity": -0.09429042892502947,
+    "AUPR_warning_buffer_capacity": 0.05069709461203024,
+    "MCC_warning_acid_accumulation": -0.03283545516515592,
+    "AUPR_warning_acid_accumulation": 0.032715558716479104,
+    "MCC_warning_ammonia_toxicity": 0.3237159383742574,
+    "AUPR_warning_ammonia_toxicity": 0.41787778663392716,
+    "MCC_warning_biogas_quality": 0.25288506223352675,
+    "AUPR_warning_biogas_quality": 0.3811413454270597,
+    "Macro_MCC": 0.15890702925019995,
+    "Macro_AUPR": 0.2757248880785464,
+    "AUPR_evaluable_labels": 5,
+    "Micro_AUPR": 0.24113161206105316
+  }
+}

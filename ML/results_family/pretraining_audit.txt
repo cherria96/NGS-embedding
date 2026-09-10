@@ -1,0 +1,18 @@
+Matched samples: 138; site labels: 37; groups: 35.
+Train: 109 samples, 28 groups. Test: 29 samples, 7 groups.
+Training sites: ADA, ADP, BSE, BSI, BSN, BSO, BSS, CGS, CWS, DGB, DGC, DGD, DGG, DGJ, GCG, GHGa, GHGb, GHH, GHJ, GSG, JJN, JJY, MGY, USJ, USO, USY, YCG, YSY
+Test sites: CWM, DGY, MYS, SCH, UJG, YCD, YSD
+Missing ARC: 1-32' and 4-24; excluded explicitly in sample_audit.csv.
+ARC header 2-29-SCHG-ARC has redundant domain suffix removed for site checks; logged in sample_id_corrections.csv.
+Duplicate/missing metadata and normalized genomic IDs checked; SampleID and Site mapping validated.
+QC replicates BSIb→BSI and DGYb→DGY; 35 groups, not the assumed 34 complete sites.
+Final microbiome features: {'BAC_F': 64, 'ARC_F': 12}
+Numeric ranges parsed to midpoint; ± values use center; other nonnumeric values become missing (logged).
+Median numeric imputation, most-frequent categorical imputation, unknown-safe one-hot encoding, z-score scaling; all fitted on training rows.
+RF/SVM/elastic-net logistic regression: balanced class weights; XGBoost: training negative/positive ratio.
+KNN/NNET: per-label random oversampling on training rows only. Single-class training labels use constant prediction.
+GLMNET denotes sklearn elastic-net logistic regression (saga), not the R glmnet package.
+All supplied annotations remain eligible, including unidentified and off-domain taxa.
+Existing warning labels retained; missing target-source measurements can produce unflagged zeros.
+CV scores are tuning estimates, not nested unbiased performance estimates. Rare positives limit stability.
+No additional ML feature selection. All-sample Family counts are descriptive; selection uses training samples only.

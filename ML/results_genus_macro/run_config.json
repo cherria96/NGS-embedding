@@ -1,0 +1,157 @@
+{
+  "seed": 42,
+  "n_iter": 8,
+  "targets": [
+    "warning_acid_base_balance",
+    "warning_buffer_capacity",
+    "warning_acid_accumulation",
+    "warning_ammonia_toxicity",
+    "warning_biogas_quality"
+  ],
+  "search_spaces": {
+    "RandomForest": {
+      "n_estimators": [
+        150,
+        300
+      ],
+      "max_depth": [
+        3,
+        6,
+        null
+      ],
+      "min_samples_leaf": [
+        1,
+        3,
+        5
+      ],
+      "max_features": [
+        "sqrt",
+        0.5
+      ]
+    },
+    "KNN": {
+      "n_neighbors": [
+        3,
+        5,
+        9,
+        15
+      ],
+      "weights": [
+        "uniform",
+        "distance"
+      ],
+      "p": [
+        1,
+        2
+      ]
+    },
+    "SVM": {
+      "C": [
+        0.1,
+        1,
+        10,
+        100
+      ],
+      "gamma": [
+        "scale",
+        0.001,
+        0.01
+      ],
+      "kernel": [
+        "rbf",
+        "linear"
+      ]
+    },
+    "NNET": {
+      "hidden_layer_sizes": [
+        [
+          16
+        ],
+        [
+          32
+        ],
+        [
+          32,
+          16
+        ]
+      ],
+      "alpha": [
+        0.01,
+        0.1,
+        1,
+        10
+      ],
+      "solver": [
+        "lbfgs"
+      ]
+    },
+    "XGBoost": {
+      "n_estimators": [
+        50,
+        100,
+        200
+      ],
+      "max_depth": [
+        1,
+        2,
+        3
+      ],
+      "learning_rate": [
+        0.03,
+        0.1
+      ],
+      "reg_lambda": [
+        1,
+        10
+      ],
+      "subsample": [
+        0.8,
+        1.0
+      ]
+    },
+    "GLMNET": {
+      "C": [
+        0.01,
+        0.1,
+        1,
+        10
+      ],
+      "l1_ratio": [
+        0.1,
+        0.5,
+        0.9
+      ]
+    }
+  },
+  "feature_rule": "Strict per-sample >0.1% from G(%) sheets; preserve original percentages, mask <=0.1 to zero. Union fitted exclusively on training portion, including inner calibration. No other selection or transformation.",
+  "protocol_conflict": "All-sample union conflicts with prohibition on test-informed feature construction. All-sample union exported descriptively; modeling uses training-only union.",
+  "selection": "Equal-weight mean descending rank of pooled training OOF Macro MCC at fixed 0.5, Macro AUPR, Macro ROC-AUC. Ties favor Macro AUPR, ROC-AUC, MCC, then candidate order.",
+  "threshold": "Per-label maximize MCC on chosen-candidate training OOF scores, grid 0.01..0.99 step .01, ties closest to .5. Frozen before test. Selection CV uses predefined .5; optimized OOF MCC is a tuning estimate.",
+  "metrics": "Each macro is arithmetic mean of exactly five binary-label metrics. AUPR is trapezoidal precision-recall area, not average precision. MCC zero-denominator=0. AUPR/ROC-AUC undefined for single-class truth; macro propagates NaN, never skips labels. Pooled OOF is used for tuning; single-class validation folds remain recorded.",
+  "preprocessing": "Training-only median imputation (empty fallback zero); z-score KNN/SVM/NNET/GLMNET, trees unscaled. Abundances validated finite; missing entire domains excluded, never zero-imputed.",
+  "imbalance": "RF/SVM/GLMNET balanced class weights; XGBoost train negative/positive ratio; KNN/NNET per-label random oversampling to majority count with seed+j, training only after preprocessing. Single-class training uses constant estimator.",
+  "SVM": "Inner three-fold GroupKFold OOF margin logistic calibration with refitted feature union/scaling.",
+  "GLMNET": "sklearn saga elastic-net logistic regression analogue, not the R glmnet implementation; coefficients regularized without subsequent feature removal.",
+  "versions": {
+    "python": "3.10.0",
+    "numpy": "2.2.6",
+    "pandas": "2.3.1",
+    "sklearn": "1.5.2",
+    "xgboost": "3.0.2",
+    "matplotlib": "3.9.2",
+    "joblib": "1.4.2"
+  },
+  "input_sha256": {
+    "metadata.csv": "cd0c854a306128ca1c26612e27f9a849ca5523d05e9a469932eb1ddb63ef97e7",
+    "Dat_BAC.xlsx": "b18a13af9531d06f3f6870115ec040cb6330a8651ed02b4aeba7a03487361850",
+    "Dat_ARC.xlsx": "bd3c9c6f9ade17763f92306e8559da11eae5a94bdc6f2f613ecd0572538fe2bd"
+  },
+  "code_sha256": {
+    "genus_macro_models.py": "cece7d71ba1f115a48d8002ab93e26bdd140423662c521a16d96e2d4fdea8ebf",
+    "genus_macro_data.py": "7d39be86d2345dc2fdd5df316fe6fe0b00208aed480665afd094b9a4eedac8c9",
+    "train_genus_macro.py": "292c050355a72681d50a626a6c6f63d2f4731077a6a0c975dcbb66e0246c7195",
+    "report_genus_macro.py": "d72692fb730e10242c2bcb2cce6b4e34b7ebfde4a3ebcfd622a3cf0601ccdcab",
+    "verify_genus_macro.py": "d9fa1730ed7bc894d1e242bc65e5b2f1c37459a4b6881f728c75c4fd01e50a89",
+    "train_family_point1.py": "48f61dedca4de08501e051b8848cb01636a5b7e8cd7d8acb18133dd9d3f91bb3"
+  }
+}

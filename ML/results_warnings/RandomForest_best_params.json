@@ -1,0 +1,32 @@
+{
+  "params": {
+    "n_estimators": 300,
+    "min_samples_leaf": 1,
+    "max_features": "sqrt",
+    "max_depth": 6
+  },
+  "candidate": 1,
+  "thresholds": [
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5
+  ],
+  "CV_pooled_OOF": {
+    "MCC_warning_acid_base_balance": 0.0,
+    "AUPR_warning_acid_base_balance": 0.409919191277826,
+    "MCC_warning_buffer_capacity": 0.0,
+    "AUPR_warning_buffer_capacity": 0.06278120187062493,
+    "MCC_warning_acid_accumulation": 0.0,
+    "AUPR_warning_acid_accumulation": 0.027872433377020535,
+    "MCC_warning_ammonia_toxicity": 0.46262923019925517,
+    "AUPR_warning_ammonia_toxicity": 0.6388618362790868,
+    "MCC_warning_biogas_quality": 0.0,
+    "AUPR_warning_biogas_quality": 0.05367847230807059,
+    "Macro_MCC": 0.09252584603985103,
+    "Macro_AUPR": 0.23862262702252574,
+    "AUPR_evaluable_labels": 5,
+    "Micro_AUPR": 0.42750556131880724
+  }
+}

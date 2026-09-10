@@ -1,0 +1,20 @@
+{
+  "params": {
+    "kernel": "rbf",
+    "gamma": 0.001,
+    "C": 1
+  },
+  "candidate": 0,
+  "thresholds": {
+    "warning_acid_base_balance": 0.38,
+    "warning_buffer_capacity": 0.38,
+    "warning_acid_accumulation": 0.38,
+    "warning_ammonia_toxicity": 0.38,
+    "warning_biogas_quality": 0.38
+  },
+  "CV_selection_metrics": {
+    "Multilabel MCC": 0.4185174608090405,
+    "Micro-AUPR": 0.3443464597993575,
+    "Micro-ROC-AUC": 0.7551388249731554
+  }
+}

@@ -1,0 +1,130 @@
+Detected identity columns: SampleID, Site, Season; Round/No consistency verified.
+Metadata predictors: 16 (2 categorical, 14 numeric).
+Taxonomic row labels: Phylum in P(%), Genus in G(%). All remaining sheet columns are sample abundance percentages.
+Workbook sample IDs normalize round-number-suffix to round-number; suffix/site crosswalk exported.
+Matched samples: 138; Site labels: 37; physical grouping units: 35.
+Training: 109 samples / 28 groups; test: 29 samples / 7 groups.
+Train groups: ADA, ADP, BSE, BSI, BSN, BSO, BSS, CGS, CWS, DGB, DGC, DGD, DGG, DGJ, GCG, GHGa, GHGb, GHH, GHJ, GSG, JJN, JJY, MGY, USJ, USO, USY, YCG, YSY
+Test groups: CWM, DGY, MYS, SCH, UJG, YCD, YSD
+Microbiome union sizes: {'BAC_P': 33, 'BAC_G': 175, 'ARC_P': 15, 'ARC_G': 37}
+LEAKAGE CHECK: explicit metadata whitelist excludes every warning and effluent column.
+LEAKAGE CHECK: no site group overlap in holdout or CV; each training site is validation in exactly one fold.
+LEAKAGE CHECK: taxa union, imputation, encoding, scaling, and resampling refit within each training fold.
+LEAKAGE CHECK: test set excluded from tuning and calibration; classification thresholds fixed at 0.5.
+Known QC replicas grouped with parents. Other Site labels remain distinct unless group-map provided.
+Target source missingness is exported: existing zero labels are retained as requested, not certified normal.
+Rare labels may lack positives in individual validation folds; AP is NA in those folds; pooled OOF AP is the tuning objective.
+All workbook taxa, including unidentified/off-domain annotations, remain eligible; no unsupported domain filtering.
+Top-k ties (including zero values) break alphabetically; no re-normalization or mean abundance ranking.
+MCC uses sklearn convention of 0 when the denominator is zero; class support is reported.
+
+          scope                    target  samples  positive  positive_percent
+   all_metadata warning_acid_base_balance      140        21         15.000000
+   all_metadata   warning_buffer_capacity      140         9          6.428571
+   all_metadata warning_acid_accumulation      140         4          2.857143
+   all_metadata  warning_ammonia_toxicity      140        26         18.571429
+   all_metadata    warning_biogas_quality      140         7          5.000000
+        matched warning_acid_base_balance      138        20         14.492754
+        matched   warning_buffer_capacity      138         9          6.521739
+        matched warning_acid_accumulation      138         4          2.898551
+        matched  warning_ammonia_toxicity      138        26         18.840580
+        matched    warning_biogas_quality      138         7          5.072464
+cv_validation_1 warning_acid_base_balance       24         2          8.333333
+cv_validation_1   warning_buffer_capacity       24         2          8.333333
+cv_validation_1 warning_acid_accumulation       24         0          0.000000
+cv_validation_1  warning_ammonia_toxicity       24         4         16.666667
+cv_validation_1    warning_biogas_quality       24         1          4.166667
+  cv_training_1 warning_acid_base_balance       85        13         15.294118
+  cv_training_1   warning_buffer_capacity       85         6          7.058824
+  cv_training_1 warning_acid_accumulation       85         3          3.529412
+  cv_training_1  warning_ammonia_toxicity       85        18         21.176471
+  cv_training_1    warning_biogas_quality       85         4          4.705882
+cv_validation_2 warning_acid_base_balance       19         4         21.052632
+cv_validation_2   warning_buffer_capacity       19         2         10.526316
+cv_validation_2 warning_acid_accumulation       19         1          5.263158
+cv_validation_2  warning_ammonia_toxicity       19         2         10.526316
+cv_validation_2    warning_biogas_quality       19         3         15.789474
+  cv_training_2 warning_acid_base_balance       90        11         12.222222
+  cv_training_2   warning_buffer_capacity       90         6          6.666667
+  cv_training_2 warning_acid_accumulation       90         2          2.222222
+  cv_training_2  warning_ammonia_toxicity       90        20         22.222222
+  cv_training_2    warning_biogas_quality       90         2          2.222222
+cv_validation_3 warning_acid_base_balance       23         2          8.695652
+cv_validation_3   warning_buffer_capacity       23         1          4.347826
+cv_validation_3 warning_acid_accumulation       23         0          0.000000
+cv_validation_3  warning_ammonia_toxicity       23         5         21.739130
+cv_validation_3    warning_biogas_quality       23         0          0.000000
+  cv_training_3 warning_acid_base_balance       86        13         15.116279
+  cv_training_3   warning_buffer_capacity       86         7          8.139535
+  cv_training_3 warning_acid_accumulation       86         3          3.488372
+  cv_training_3  warning_ammonia_toxicity       86        17         19.767442
+  cv_training_3    warning_biogas_quality       86         5          5.813953
+cv_validation_4 warning_acid_base_balance       20         3         15.000000
+cv_validation_4   warning_buffer_capacity       20         2         10.000000
+cv_validation_4 warning_acid_accumulation       20         2         10.000000
+cv_validation_4  warning_ammonia_toxicity       20         6         30.000000
+cv_validation_4    warning_biogas_quality       20         0          0.000000
+  cv_training_4 warning_acid_base_balance       89        12         13.483146
+  cv_training_4   warning_buffer_capacity       89         6          6.741573
+  cv_training_4 warning_acid_accumulation       89         1          1.123596
+  cv_training_4  warning_ammonia_toxicity       89        16         17.977528
+  cv_training_4    warning_biogas_quality       89         5          5.617978
+cv_validation_5 warning_acid_base_balance       23         4         17.391304
+cv_validation_5   warning_buffer_capacity       23         1          4.347826
+cv_validation_5 warning_acid_accumulation       23         0          0.000000
+cv_validation_5  warning_ammonia_toxicity       23         5         21.739130
+cv_validation_5    warning_biogas_quality       23         1          4.347826
+  cv_training_5 warning_acid_base_balance       86        11         12.790698
+  cv_training_5   warning_buffer_capacity       86         7          8.139535
+  cv_training_5 warning_acid_accumulation       86         3          3.488372
+  cv_training_5  warning_ammonia_toxicity       86        17         19.767442
+  cv_training_5    warning_biogas_quality       86         4          4.651163
+          train warning_acid_base_balance      109        15         13.761468
+          train   warning_buffer_capacity      109         8          7.339450
+          train warning_acid_accumulation      109         3          2.752294
+          train  warning_ammonia_toxicity      109        22         20.183486
+          train    warning_biogas_quality      109         5          4.587156
+           test warning_acid_base_balance       29         5         17.241379
+           test   warning_buffer_capacity       29         1          3.448276
+           test warning_acid_accumulation       29         1          3.448276
+           test  warning_ammonia_toxicity       29         4         13.793103
+           test    warning_biogas_quality       29         2          6.896552
+
+SiteGroup,Site,samples,seasons
+ADA,ADA,4,Summer|Fall|Winter|Spring
+ADP,ADP,3,Summer|Fall|Winter
+BSE,BSE,4,Summer|Fall|Winter|Spring
+BSI,BSI,4,Summer|Fall|Winter|Spring
+BSI,BSIb,1,Summer
+BSN,BSN,4,Summer|Fall|Winter|Spring
+BSO,BSO,4,Summer|Fall|Winter|Spring
+BSS,BSS,4,Summer|Fall|Winter|Spring
+CGS,CGS,4,Summer|Fall|Winter|Spring
+CWM,CWM,4,Summer|Fall|Winter|Spring
+CWS,CWS,4,Summer|Fall|Winter|Spring
+DGB,DGB,4,Summer|Fall|Winter|Spring
+DGC,DGC,4,Summer|Fall|Winter|Spring
+DGD,DGD,4,Summer|Fall|Winter|Spring
+DGG,DGG,4,Summer|Fall|Winter|Spring
+DGJ,DGJ,4,Summer|Fall|Winter|Spring
+DGY,DGY,4,Summer|Fall|Winter|Spring
+DGY,DGYb,1,Summer
+GCG,GCG,4,Summer|Fall|Winter|Spring
+GHGa,GHGa,3,Summer|Fall|Winter
+GHGb,GHGb,4,Summer|Fall|Winter|Spring
+GHH,GHH,4,Summer|Fall|Winter|Spring
+GHJ,GHJ,4,Summer|Fall|Winter|Spring
+GSG,GSG,4,Summer|Fall|Winter|Spring
+JJN,JJN,4,Summer|Fall|Winter|Spring
+JJY,JJY,3,Fall|Winter|Spring
+MGY,MGY,4,Summer|Fall|Winter|Spring
+MYS,MYS,4,Summer|Fall|Winter|Spring
+SCH,SCH,4,Summer|Fall|Winter|Spring
+UJG,UJG,4,Summer|Fall|Winter|Spring
+USJ,USJ,4,Summer|Fall|Winter|Spring
+USO,USO,4,Summer|Fall|Winter|Spring
+USY,USY,4,Summer|Fall|Winter|Spring
+YCD,YCD,4,Summer|Fall|Winter|Spring
+YCG,YCG,3,Summer|Fall|Winter
+YSD,YSD,4,Summer|Fall|Winter|Spring
+YSY,YSY,4,Summer|Fall|Winter|Spring

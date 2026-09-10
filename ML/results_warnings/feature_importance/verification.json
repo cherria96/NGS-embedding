@@ -1,0 +1,10 @@
+{
+  "model_label_analyses": 30,
+  "features_ranked_per_analysis": 276,
+  "cv_folds": 5,
+  "permutation_repeats": 20,
+  "test_samples_used": 0,
+  "refit_predictions_match_original_oof": true,
+  "AP_scoring_matches_sklearn": true,
+  "unit_tests_passed": 7
+}

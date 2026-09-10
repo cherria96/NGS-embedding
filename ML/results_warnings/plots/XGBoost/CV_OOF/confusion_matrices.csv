@@ -1,0 +1,6 @@
+target,TN,FP,FN,TP
+warning_acid_base_balance,79,15,8,7
+warning_buffer_capacity,94,7,8,0
+warning_acid_accumulation,103,3,3,0
+warning_ammonia_toxicity,76,11,4,18
+warning_biogas_quality,102,2,5,0

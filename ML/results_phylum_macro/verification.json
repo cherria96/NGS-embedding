@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "prediction_tables_recomputed": 12,
+  "samples": 138,
+  "training_features": 57,
+  "descriptive_union_features": 63,
+  "checks": [
+    "source percentages and strict sample mask",
+    "training-only final and fold unions",
+    "site disjointness",
+    "exact target matches",
+    "frozen thresholds and binary predictions",
+    "five per-label scores and arithmetic macro means"
+  ],
+  "test_predictions_generated": 0
+}

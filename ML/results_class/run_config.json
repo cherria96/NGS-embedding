@@ -1,0 +1,156 @@
+{
+  "seed": 42,
+  "n_iter": 8,
+  "group_map": {
+    "BSIb": "BSI",
+    "DGYb": "DGY"
+  },
+  "metadata_features": [],
+  "targets": [
+    "warning_acid_base_balance",
+    "warning_buffer_capacity",
+    "warning_acid_accumulation",
+    "warning_ammonia_toxicity",
+    "warning_biogas_quality"
+  ],
+  "blocks": {
+    "BAC_C": "Class",
+    "ARC_C": "Class"
+  },
+  "filter": "Per sample, retain actual percent only if strictly >0.1; otherwise zero. No renormalization. Fixed union of matched samples under the predefined rule; no other feature selection. All folds retain identical columns.",
+  "selection": "Equal-weight mean rank across all three pooled OOF metrics; ties resolved by candidate order. Report metric leaders and trade-offs. Model selected before test evaluation.",
+  "threshold": "Shared threshold across five labels; maximize flattened MCC on selected-candidate training OOF predictions over 0.01..0.99; tie closest to 0.5.",
+  "Micro-AUPR": "Trapezoidal area under pooled precision-recall curve from flattened probabilities (not average precision).",
+  "Multilabel MCC": "Binary MCC of flattened sample-label pairs; zero for zero denominator.",
+  "search_spaces": {
+    "RandomForest": {
+      "n_estimators": [
+        150,
+        300
+      ],
+      "max_depth": [
+        3,
+        6,
+        null
+      ],
+      "min_samples_leaf": [
+        1,
+        3,
+        5
+      ],
+      "max_features": [
+        "sqrt",
+        0.5
+      ]
+    },
+    "KNN": {
+      "n_neighbors": [
+        3,
+        5,
+        9,
+        15
+      ],
+      "weights": [
+        "uniform",
+        "distance"
+      ],
+      "p": [
+        1,
+        2
+      ]
+    },
+    "SVM": {
+      "C": [
+        0.1,
+        1,
+        10,
+        100
+      ],
+      "gamma": [
+        "scale",
+        0.001,
+        0.01
+      ],
+      "kernel": [
+        "rbf",
+        "linear"
+      ]
+    },
+    "NNET": {
+      "hidden_layer_sizes": [
+        [
+          16
+        ],
+        [
+          32
+        ],
+        [
+          32,
+          16
+        ]
+      ],
+      "alpha": [
+        0.01,
+        0.1,
+        1,
+        10
+      ],
+      "solver": [
+        "lbfgs"
+      ]
+    },
+    "XGBoost": {
+      "n_estimators": [
+        50,
+        100,
+        200
+      ],
+      "max_depth": [
+        1,
+        2,
+        3
+      ],
+      "learning_rate": [
+        0.03,
+        0.1
+      ],
+      "reg_lambda": [
+        1,
+        10
+      ],
+      "subsample": [
+        0.8,
+        1.0
+      ]
+    },
+    "GLMNET": {
+      "C": [
+        0.01,
+        0.1,
+        1,
+        10
+      ],
+      "l1_ratio": [
+        0.1,
+        0.5,
+        0.9
+      ]
+    }
+  },
+  "versions": {
+    "python": "3.10.0",
+    "numpy": "2.2.6",
+    "pandas": "2.3.1",
+    "sklearn": "1.5.2",
+    "xgboost": "3.0.2",
+    "matplotlib": "3.9.2"
+  },
+  "input_sha256": {
+    "metadata.csv": "cd0c854a306128ca1c26612e27f9a849ca5523d05e9a469932eb1ddb63ef97e7",
+    "Dat_BAC.xlsx": "b18a13af9531d06f3f6870115ec040cb6330a8651ed02b4aeba7a03487361850",
+    "Dat_ARC.xlsx": "bd3c9c6f9ade17763f92306e8559da11eae5a94bdc6f2f613ecd0572538fe2bd"
+  },
+  "Micro-ROC-AUC": "ROC-AUC on flattened sample-label truth and probability vectors.",
+  "feature_union_scope": "138 matched samples; fixed predefined threshold rule only; includes 16 columns with no training values above threshold.",
+  "grouping": "Site; QC replicate aliases BSIb\u2192BSI and DGYb\u2192DGY grouped conservatively. GHGa and GHGb retain distinct Site codes."
+}

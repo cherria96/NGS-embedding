@@ -1,0 +1,1 @@
+Two genomic unit tests passed. Exact split/CV reuse verified. Six serialized models contain genomic-only predictors. Saved test metrics and all 8,700 importance repeats verified from exported predictions. Importance baseline OOF predictions matched original genomic-only CV predictions.

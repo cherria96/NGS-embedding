@@ -1,0 +1,11 @@
+model,target,rank,feature,category,importance_mean,fold_sd,evaluable_folds,selected_folds,positive_folds,top10_folds,top20_folds,mean_fold_rank,mean_permutation_sd,top10_frequency,positive_frequency
+RandomForest,warning_buffer_capacity,1.0,substrate_avg_TC,Metadata: substrate,0.017861856066190434,0.025470171925989767,5,5,3,3,3,96.6,0.009638888651247554,0.6,0.6
+RandomForest,warning_buffer_capacity,2.0,ARC_G::Methanosaeta,Archaea,0.015479162417688801,0.01838823745690874,5,5,4,4,4,53.4,0.012655008198925899,0.8,0.8
+RandomForest,warning_buffer_capacity,3.0,substrate_avg_Protein,Metadata: substrate,0.014500173203279277,0.02817952440717002,5,5,4,3,4,56.8,0.008757220495903249,0.6,0.8
+RandomForest,warning_buffer_capacity,4.0,BAC_P::Spirochaetota,Bacteria,0.012366984172518232,0.035322648776107926,5,5,4,4,4,55.0,0.02075872243899346,0.8,0.8
+RandomForest,warning_buffer_capacity,5.0,ARC_P::Thermoplasmatota,Archaea,0.011511608790246566,0.018295153935328903,5,5,3,2,3,83.8,0.0099103274700762,0.4,0.6
+RandomForest,warning_buffer_capacity,6.0,ARC_G::unidentified,Archaea,0.011008363433092538,0.015494974130041413,5,5,4,2,3,60.4,0.009366182030965784,0.4,0.8
+RandomForest,warning_buffer_capacity,7.0,substrate_avg_pH,Metadata: substrate,0.009466914836109888,0.019806810461203948,5,5,3,1,2,83.5,0.0035440496446770943,0.2,0.6
+RandomForest,warning_buffer_capacity,8.0,ARC_G::Candidatus_Methanomethylicus,Archaea,0.008986811391223159,0.017919205922094356,5,5,3,1,2,60.8,0.0036453903572267595,0.2,0.6
+RandomForest,warning_buffer_capacity,9.0,substrate_avg_Lipid,Metadata: substrate,0.008528748169615043,0.013996080188298714,5,5,4,2,3,67.6,0.01981991139687449,0.4,0.8
+RandomForest,warning_buffer_capacity,10.0,BAC_G::ST-12K33,Bacteria,0.007526143790849674,0.013015644903739562,5,5,2,1,1,117.1,0.0066956570324414235,0.2,0.4

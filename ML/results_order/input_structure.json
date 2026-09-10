@@ -1,0 +1,20 @@
+{
+  "metadata_shape": [
+    140,
+    135
+  ],
+  "genomic": [
+    {
+      "file": "Dat_BAC.xlsx",
+      "sheet": "O(%)",
+      "taxa": 323,
+      "samples": 140
+    },
+    {
+      "file": "Dat_ARC.xlsx",
+      "sheet": "O(%)",
+      "taxa": 20,
+      "samples": 138
+    }
+  ]
+}

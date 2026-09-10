@@ -1,0 +1,11 @@
+model,target,rank,feature,category,importance_mean,fold_sd,evaluable_folds,selected_folds,positive_folds,top10_folds,top20_folds,mean_fold_rank,mean_permutation_sd,top10_frequency,positive_frequency
+RandomForest,warning_ammonia_toxicity,1.0,ARC_G::Candidatus_Methanofastidiosum,Archaea,0.030286147186147187,0.04181626762399457,5,5,3,2,2,84.3,0.043231859975821074,0.4,0.6
+RandomForest,warning_ammonia_toxicity,2.0,BAC_P::Firmicutes,Bacteria,0.021829509379509397,0.039670498156295045,5,5,3,2,3,111.7,0.05548377391349624,0.4,0.6
+RandomForest,warning_ammonia_toxicity,3.0,BAC_G::Candidatus_Cloacimonas,Bacteria,0.019971428571428567,0.038289754140093966,5,5,3,1,2,89.4,0.03870669294209404,0.2,0.6
+RandomForest,warning_ammonia_toxicity,4.0,substrate_avg_TC,Metadata: substrate,0.016404761904761915,0.024312893288240135,5,5,2,2,2,81.7,0.030937311508097733,0.4,0.4
+RandomForest,warning_ammonia_toxicity,5.0,ARC_P::Euryarchaeota,Archaea,0.010738888888888886,0.02705664485368097,5,5,3,2,2,89.2,0.039883645547184474,0.4,0.6
+RandomForest,warning_ammonia_toxicity,6.0,Q_total_Tpy,Metadata: operation/context,0.01,0.020539595906443733,5,5,2,2,2,114.7,0.03330840306855461,0.4,0.4
+RandomForest,warning_ammonia_toxicity,7.0,BAC_P::Desulfobacterota,Bacteria,0.00996666666666667,0.011995601045568516,5,5,3,1,2,62.7,0.029918552457929952,0.2,0.6
+RandomForest,warning_ammonia_toxicity,8.0,ARC_G::Methanomassiliicoccus,Archaea,0.009630952380952388,0.02153546421187299,5,5,1,1,1,106.1,0.00495924132019142,0.2,0.2
+RandomForest,warning_ammonia_toxicity,9.0,T_C,Metadata: operation/context,0.009472222222222208,0.027118637957894542,5,5,1,1,1,132.7,0.008981822815069436,0.2,0.2
+RandomForest,warning_ammonia_toxicity,10.0,substrate_avg_Protein,Metadata: substrate,0.008266666666666677,0.01143921131702513,5,5,2,1,2,81.8,0.01257405999571283,0.2,0.4

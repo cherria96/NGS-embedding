@@ -1,0 +1,3 @@
+domain,original_OTUs,unique_Families,all_samples_exceed_1_any,all_samples_meet_5_percent_descriptive,training_exceed_1_any,training_meet_5_percent_retained
+ARC,111,27,17,13,17,12
+BAC,2925,542,136,70,124,64

@@ -1,0 +1,4 @@
+{
+  "Model": "RandomForest",
+  "rule": "Equal-weight mean rank across all three pooled OOF metrics; ties resolved by candidate order. Report metric leaders and trade-offs. Model selected before test evaluation."
+}

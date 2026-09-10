@@ -1,0 +1,11 @@
+model,target,rank,feature,category,importance_mean,fold_sd,evaluable_folds,selected_folds,positive_folds,top10_folds,top20_folds,mean_fold_rank,mean_permutation_sd,top10_frequency,positive_frequency
+SVM,warning_ammonia_toxicity,1.0,ARC_G::Methanimicrococcus,Archaea,0.04276470196470196,0.09562478063059239,5,5,1,1,1,117.2,0.025082934675883566,0.2,0.2
+SVM,warning_ammonia_toxicity,2.0,BAC_G::W5053,Bacteria,0.03656089629324924,0.04786069990886701,5,5,3,3,3,55.9,0.013928603817369017,0.6,0.6
+SVM,warning_ammonia_toxicity,3.0,substrate_avg_VS,Metadata: substrate,0.017070028723289592,0.03088708416936021,5,5,3,1,2,72.8,0.018287751717422276,0.2,0.6
+SVM,warning_ammonia_toxicity,4.0,substrate_avg_Protein,Metadata: substrate,0.015230486942251653,0.02531641359470207,5,5,3,3,3,82.6,0.01344640131321596,0.6,0.6
+SVM,warning_ammonia_toxicity,5.0,substrate_avg_Lipid,Metadata: substrate,0.013534948167301112,0.02800760952499675,5,5,3,2,3,86.0,0.01395832390740164,0.4,0.6
+SVM,warning_ammonia_toxicity,6.0,BAC_G::Anaerovorax,Bacteria,0.01347085137085136,0.016963021327100283,5,5,3,3,3,55.4,0.010185113796581555,0.6,0.6
+SVM,warning_ammonia_toxicity,7.0,BAC_G::Anaerofustis,Bacteria,0.0128655462184874,0.029111979951992283,5,5,1,1,1,132.3,0.006378708849976028,0.2,0.2
+SVM,warning_ammonia_toxicity,8.0,substrate_avg_sCOD,Metadata: substrate,0.01229137553766037,0.027958630024335292,5,5,3,2,3,112.6,0.01570895355141662,0.4,0.6
+SVM,warning_ammonia_toxicity,9.0,BAC_G::Acholeplasma,Bacteria,0.011302843233764282,0.02622526335446669,5,5,3,2,2,114.9,0.013683752097134776,0.4,0.6
+SVM,warning_ammonia_toxicity,10.0,BAC_G::Lactobacillus,Bacteria,0.011052431228901819,0.024713987544466003,5,5,1,1,1,110.0,0.013920980127087285,0.2,0.2

@@ -1,0 +1,21 @@
+model,target,rank,feature,category,importance_mean,fold_sd,evaluable_folds,selected_folds,positive_folds,top10_folds,top20_folds,mean_fold_rank,mean_permutation_sd,top10_frequency,positive_frequency
+RandomForest,warning_acid_accumulation,1.0,substrate_avg_TVFAs,Metadata: substrate,0.025637626262626258,0.0362570787676587,2,5,1,1,1,68.0,0.016423211159215426,0.5,0.5
+RandomForest,warning_acid_accumulation,2.0,substrate_avg_ALK,Metadata: substrate,0.02208333333333333,0.031230549502405846,2,5,1,1,1,68.5,0.010304217611482947,0.5,0.5
+RandomForest,warning_acid_accumulation,3.0,substrate_avg_Lipid,Metadata: substrate,0.021276154401154396,0.030089026109256563,2,5,1,1,1,69.0,0.01691083449758665,0.5,0.5
+RandomForest,warning_acid_accumulation,4.0,BAC_P::Synergistota,Bacteria,0.020198412698412695,0.028564869176504176,2,5,1,1,1,69.5,0.01340325333680627,0.5,0.5
+RandomForest,warning_acid_accumulation,5.0,ARC_G::RumEn_M2,Archaea,0.01944444444444444,0.027498597046143512,2,5,1,1,1,70.0,0.010471347707292388,0.5,0.5
+RandomForest,warning_acid_accumulation,6.0,substrate_avg_VS,Metadata: substrate,0.018958333333333334,0.026811132119989926,2,5,1,1,1,71.0,0.013139698675637492,0.5,0.5
+RandomForest,warning_acid_accumulation,7.0,ARC_G::Methanocorpusculum,Archaea,0.013472222222222219,0.03496250195866817,2,5,1,1,1,139.0,0.022427721248309343,0.5,0.5
+RandomForest,warning_acid_accumulation,8.0,BAC_G::DTU014,Bacteria,0.008928571428571428,0.012626906806902633,2,5,1,1,1,72.0,0.005288829265706181,0.5,0.5
+RandomForest,warning_acid_accumulation,9.0,Q_total_Tpy,Metadata: operation/context,0.007708333333333328,0.0109012295432926,2,5,1,1,1,72.5,0.020691402500239094,0.5,0.5
+RandomForest,warning_acid_accumulation,10.0,BAC_P::Thermotogota,Bacteria,0.007440476190476189,0.010522422339085527,2,5,1,0,1,73.0,0.007385448141683133,0.0,0.5
+RandomForest,warning_acid_accumulation,11.0,BAC_P::Desulfobacterota,Bacteria,0.007291666666666666,0.010311973892303818,2,5,1,0,1,73.5,0.01019501010269985,0.0,0.5
+RandomForest,warning_acid_accumulation,12.0,substrate_avg_sCOD,Metadata: substrate,0.006388888888888888,0.00903525331516144,2,5,1,0,1,74.5,0.01315610774090074,0.0,0.5
+RandomForest,warning_acid_accumulation,13.0,BAC_G::Sedimentibacter,Bacteria,0.005119047619047618,0.007239426569290842,2,5,1,0,1,75.0,0.01409569742867362,0.0,0.5
+RandomForest,warning_acid_accumulation,14.0,BAC_P::Firmicutes,Bacteria,0.0035714285714285713,0.005050762722761054,2,5,1,0,1,75.5,0.005597170785495562,0.0,0.5
+RandomForest,warning_acid_accumulation,15.0,Season,Metadata: operation/context,0.002827380952380952,0.0039985204888525,2,5,1,0,1,76.0,0.006066804347418464,0.0,0.5
+RandomForest,warning_acid_accumulation,16.0,BAC_P::Planctomycetota,Bacteria,0.0017857142857142857,0.002525381361380527,2,5,1,0,1,76.75,0.004361280339672894,0.0,0.5
+RandomForest,warning_acid_accumulation,16.0,substrate_avg_COD,Metadata: substrate,0.0017857142857142857,0.002525381361380527,2,5,1,0,1,76.75,0.004361280339672895,0.0,0.5
+RandomForest,warning_acid_accumulation,18.0,ARC_G::unidentified,Archaea,0.0011904761904761904,0.0016835875742536844,2,5,1,0,0,77.75,0.0036642084003041214,0.0,0.5
+RandomForest,warning_acid_accumulation,18.0,substrate_avg_HPro,Metadata: substrate,0.0011904761904761904,0.0016835875742536844,2,5,1,0,0,77.75,0.003664208400304122,0.0,0.5
+RandomForest,warning_acid_accumulation,20.0,ARC_P::Halobacterota,Archaea,0.0011904761904761897,0.04293148314346896,2,5,1,1,1,141.5,0.03564025576130876,0.5,0.5

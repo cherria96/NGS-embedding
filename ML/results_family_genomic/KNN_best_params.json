@@ -1,0 +1,20 @@
+{
+  "params": {
+    "weights": "distance",
+    "p": 1,
+    "n_neighbors": 5
+  },
+  "candidate": 2,
+  "thresholds": {
+    "warning_acid_base_balance": 0.17,
+    "warning_buffer_capacity": 0.17,
+    "warning_acid_accumulation": 0.17,
+    "warning_ammonia_toxicity": 0.17,
+    "warning_biogas_quality": 0.17
+  },
+  "CV_selection_at_0_5": {
+    "Multilabel MCC": 0.2603892964394395,
+    "Micro-AUPR": 0.3005465499859219,
+    "Micro-ROC-AUC": 0.7300582911489493
+  }
+}

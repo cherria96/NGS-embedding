@@ -1,0 +1,16 @@
+feature,taxon,domain,taxonomic_level,samples_above_0_1_percent,training_samples_above_0_1_percent,included_in_final_matrix
+ARC_C::Actinopterygii,Actinopterygii,Archaea,Class,1,1,True
+ARC_C::Aenigmarchaeia,Aenigmarchaeia,Archaea,Class,2,2,True
+ARC_C::Bathyarchaeia,Bathyarchaeia,Archaea,Class,67,51,True
+ARC_C::Bivalvia,Bivalvia,Archaea,Class,2,2,True
+ARC_C::Ichthyosporea,Ichthyosporea,Archaea,Class,1,1,True
+ARC_C::Lokiarchaeia,Lokiarchaeia,Archaea,Class,2,1,True
+ARC_C::Methanomethylicia,Methanomethylicia,Archaea,Class,20,12,True
+ARC_C::Methanomicrobia,Methanomicrobia,Archaea,Class,138,109,True
+ARC_C::Methanosarcinia,Methanosarcinia,Archaea,Class,135,106,True
+ARC_C::Micrarchaeia,Micrarchaeia,Archaea,Class,18,13,True
+ARC_C::Nanoarchaeia,Nanoarchaeia,Archaea,Class,52,40,True
+ARC_C::Nitrososphaeria,Nitrososphaeria,Archaea,Class,13,10,True
+ARC_C::Thermococci,Thermococci,Archaea,Class,127,98,True
+ARC_C::Thermoplasmata,Thermoplasmata,Archaea,Class,132,104,True
+ARC_C::unidentified,unidentified,Archaea,Class,115,93,True

@@ -1,0 +1,11 @@
+model,target,rank,feature,category,importance_mean,fold_sd,evaluable_folds,selected_folds,positive_folds,top10_folds,top20_folds,mean_fold_rank,mean_permutation_sd,top10_frequency,positive_frequency
+XGBoost,warning_ammonia_toxicity,1.0,BAC_P::Firmicutes,Bacteria,0.11960107658938926,0.13634422828503265,5,5,4,4,4,56.0,0.12981790848931662,0.8,0.8
+XGBoost,warning_ammonia_toxicity,2.0,ARC_G::Methanosarcina,Archaea,0.04068452380952381,0.08907238900622709,5,5,2,2,2,84.0,0.02540622777240951,0.4,0.4
+XGBoost,warning_ammonia_toxicity,3.0,substrate_avg_sCOD,Metadata: substrate,0.03890625485625483,0.08193556128766415,5,5,4,4,4,57.6,0.11868540701503787,0.8,0.8
+XGBoost,warning_ammonia_toxicity,4.0,BAC_G::Fastidiosipila,Bacteria,0.03229610389610388,0.13430793769136315,5,5,2,2,2,164.8,0.06234370891189819,0.4,0.4
+XGBoost,warning_ammonia_toxicity,5.0,ARC_P::Halobacterota,Archaea,0.031160714285714285,0.035676119487700476,5,5,4,4,4,57.4,0.05376977895527639,0.8,0.8
+XGBoost,warning_ammonia_toxicity,6.0,substrate_avg_HAc,Metadata: substrate,0.027507936507936502,0.042740288867227146,5,5,3,3,3,84.5,0.04401120221523408,0.6,0.6
+XGBoost,warning_ammonia_toxicity,7.0,substrate_avg_Lipid,Metadata: substrate,0.016064754689754678,0.02494282025648949,5,5,3,3,3,110.9,0.05428711648052855,0.6,0.6
+XGBoost,warning_ammonia_toxicity,8.0,ARC_P::Euryarchaeota,Archaea,0.006773160173160172,0.02470424969816537,5,5,1,1,1,165.1,0.025164101388628495,0.2,0.2
+XGBoost,warning_ammonia_toxicity,9.0,BAC_G::HN-HF0106,Bacteria,0.0008333333333333326,0.0018633899812498232,5,5,1,1,1,111.3,0.002564945880212883,0.2,0.2
+XGBoost,warning_ammonia_toxicity,10.0,ARC_G::Aenigmarchaeales,Archaea,0.0,0.0,5,5,0,0,0,138.3,0.0,0.0,0.0

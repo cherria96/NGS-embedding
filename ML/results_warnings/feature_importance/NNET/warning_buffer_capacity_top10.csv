@@ -1,0 +1,11 @@
+model,target,rank,feature,category,importance_mean,fold_sd,evaluable_folds,selected_folds,positive_folds,top10_folds,top20_folds,mean_fold_rank,mean_permutation_sd,top10_frequency,positive_frequency
+NNET,warning_buffer_capacity,1.0,BAC_P::Spirochaetota,Bacteria,0.0024455803148258405,0.006620776142327907,5,5,2,1,1,154.3,0.00407568228545504,0.2,0.4
+NNET,warning_buffer_capacity,2.0,ARC_P::Thermoplasmatota,Archaea,0.0015501426677897278,0.004178941047702576,5,5,2,1,2,131.0,0.0017255033682267568,0.2,0.4
+NNET,warning_buffer_capacity,3.0,BAC_G::Pseudomonas,Bacteria,0.0014653148708876258,0.003276543659746059,5,5,1,1,1,95.6,0.000701759264818442,0.2,0.2
+NNET,warning_buffer_capacity,4.0,ARC_G::Methanomassiliicoccus,Archaea,0.0014045766754745097,0.0029074972805773393,5,5,3,2,3,86.4,0.002886621589972995,0.4,0.6
+NNET,warning_buffer_capacity,5.0,BAC_G::Syner-01,Bacteria,0.001390378240610439,0.0019431139010814777,5,5,2,2,2,76.6,0.0015167606491808625,0.4,0.4
+NNET,warning_buffer_capacity,6.0,BAC_G::Sedimentibacter,Bacteria,0.001386685424998119,0.0035529096057273354,5,5,1,1,1,148.1,0.0017889878533166315,0.2,0.2
+NNET,warning_buffer_capacity,7.0,substrate_avg_Protein,Metadata: substrate,0.0011187048245871781,0.0018100075590997175,5,5,3,3,3,50.7,0.0014535056254632432,0.6,0.6
+NNET,warning_buffer_capacity,8.0,BAC_P::Proteobacteria,Bacteria,0.0010434353228470877,0.0027461591643188205,5,5,2,1,2,126.5,0.0016892926724822808,0.2,0.4
+NNET,warning_buffer_capacity,9.0,BAC_G::SJA-15,Bacteria,0.0009801309801309795,0.0021916394984263657,5,5,1,1,1,98.4,0.0006300710868455651,0.2,0.2
+NNET,warning_buffer_capacity,10.0,BAC_G::SC103,Bacteria,0.0009511060834590257,0.0016207048332177788,5,5,2,1,2,101.4,0.001274011340783294,0.2,0.4

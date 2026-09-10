@@ -1,0 +1,23 @@
+{
+  "params": {
+    "solver": "lbfgs",
+    "hidden_layer_sizes": [
+      32,
+      16
+    ],
+    "alpha": 10
+  },
+  "candidate": 7,
+  "thresholds": {
+    "warning_acid_base_balance": 0.35000000000000003,
+    "warning_buffer_capacity": 0.35000000000000003,
+    "warning_acid_accumulation": 0.35000000000000003,
+    "warning_ammonia_toxicity": 0.35000000000000003,
+    "warning_biogas_quality": 0.35000000000000003
+  },
+  "CV_selection_at_0_5": {
+    "Multilabel MCC": 0.38344891393421926,
+    "Micro-AUPR": 0.33746095067060694,
+    "Micro-ROC-AUC": 0.7086209541340696
+  }
+}

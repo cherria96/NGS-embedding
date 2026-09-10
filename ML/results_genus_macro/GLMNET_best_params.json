@@ -1,0 +1,13 @@
+{
+  "params": {
+    "l1_ratio": 0.1,
+    "C": 0.01
+  },
+  "candidate": 2,
+  "combinations_evaluated": 8,
+  "CV_selection_at_0_5": {
+    "Macro MCC": 0.19670654881221256,
+    "Macro AUPR": 0.24213181534114367,
+    "Macro ROC-AUC": 0.5535043609812224
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "checks": [
+    "Original workbook values reproduce strict sample-specific mask and exact union",
+    "129 microbiome-only features, no metadata",
+    "Disjoint site groups across holdout and five CV folds",
+    "All six saved CV/test scores reproduce from saved probabilities",
+    "All binary predictions match saved training-only thresholds",
+    "All six serialized bundles load with correct feature schema",
+    "48 candidate configurations and 240 outer CV fits recorded"
+  ],
+  "source_sha256": {
+    "class_models.py": "2a4ed911d5675252db59d192450c07c92a239c71556c3d39e0a40f4eae2cc94b",
+    "train_class.py": "289543b1b719756687d3984281ff4de2503b55c260ffc323cbac3e93005013ed",
+    "report_class.py": "958eef4207b509282b6d6ffe9d9b975393f8cbaf609c55008c6eef0a32a53436"
+  }
+}

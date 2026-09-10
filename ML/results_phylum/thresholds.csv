@@ -1,0 +1,7 @@
+Model,warning_acid_base_balance,warning_buffer_capacity,warning_acid_accumulation,warning_ammonia_toxicity,warning_biogas_quality
+RandomForest,0.32,0.32,0.32,0.32,0.32
+KNN,0.5700000000000001,0.5700000000000001,0.5700000000000001,0.5700000000000001,0.5700000000000001
+SVM,0.38,0.38,0.38,0.38,0.38
+NNET,0.05,0.05,0.05,0.05,0.05
+XGBoost,0.6,0.6,0.6,0.6,0.6
+GLMNET,0.33,0.33,0.33,0.33,0.33

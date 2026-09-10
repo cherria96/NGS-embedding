@@ -1,0 +1,23 @@
+{
+  "Model": "RandomForest",
+  "mean_ranks": {
+    "RandomForest": 1.3333333333333333,
+    "KNN": 4.333333333333333,
+    "SVM": 6.0,
+    "NNET": 4.333333333333333,
+    "XGBoost": 2.6666666666666665,
+    "GLMNET": 2.3333333333333335
+  },
+  "metric_leaders": {
+    "Multilabel MCC": [
+      "GLMNET"
+    ],
+    "Micro-AUPR": [
+      "RandomForest"
+    ],
+    "Micro-ROC-AUC": [
+      "RandomForest"
+    ]
+  },
+  "rule": "Equal average descending rank of all three pooled OOF metrics across candidates; stable candidate order breaks exact rank ties. MCC uses 0.5 during hyperparameter selection. Across final models use all three thresholded OOF metrics; report leaders/trade-offs."
+}

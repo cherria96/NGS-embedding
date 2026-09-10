@@ -1,0 +1,4 @@
+{
+  "Model": "RandomForest",
+  "rule": "Maximum pooled OOF Micro-AUPR; tie-break flattened MCC at threshold 0.5. Select model before test evaluation."
+}

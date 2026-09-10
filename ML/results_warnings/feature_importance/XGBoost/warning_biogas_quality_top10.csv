@@ -1,0 +1,11 @@
+model,target,rank,feature,category,importance_mean,fold_sd,evaluable_folds,selected_folds,positive_folds,top10_folds,top20_folds,mean_fold_rank,mean_permutation_sd,top10_frequency,positive_frequency
+XGBoost,warning_biogas_quality,1.0,BAC_G::Atopobium,Bacteria,0.02562641062641063,0.04438624522056619,3,5,1,1,1,90.66666666666667,0.013413517071342787,0.3333333333333333,0.3333333333333333
+XGBoost,warning_biogas_quality,2.0,BAC_P::Spirochaetota,Bacteria,0.0019242139122001827,0.004701407075357415,3,5,2,2,2,92.0,0.012294051082164782,0.6666666666666666,0.6666666666666666
+XGBoost,warning_biogas_quality,3.0,BAC_P::Actinobacteriota,Bacteria,0.0018816368816368851,0.0032590906803905513,3,5,1,1,1,91.0,0.0031043292103294724,0.3333333333333333,0.3333333333333333
+XGBoost,warning_biogas_quality,4.0,ARC_G::Methanospirillum,Archaea,0.001513153929024169,0.0031154332441250742,3,5,2,2,2,92.0,0.0030884501753872203,0.6666666666666666,0.6666666666666666
+XGBoost,warning_biogas_quality,5.0,ARC_G::Aenigmarchaeales,Archaea,0.0,0.0,3,5,0,0,0,136.16666666666666,0.0,0.0,0.0
+XGBoost,warning_biogas_quality,5.0,ARC_G::Bathyarchaeia,Archaea,0.0,0.0,3,5,0,0,0,136.16666666666666,0.0,0.0,0.0
+XGBoost,warning_biogas_quality,5.0,ARC_G::Candidatus_Iainarchaeum,Archaea,0.0,0.0,3,5,0,0,0,136.16666666666666,0.0,0.0,0.0
+XGBoost,warning_biogas_quality,5.0,ARC_G::Candidatus_Methanofastidiosum,Archaea,0.0,0.0,3,5,0,0,0,136.16666666666666,0.0,0.0,0.0
+XGBoost,warning_biogas_quality,5.0,ARC_G::Candidatus_Methanogranum,Archaea,0.0,0.0,3,5,0,0,0,136.16666666666666,0.0,0.0,0.0
+XGBoost,warning_biogas_quality,5.0,ARC_G::Candidatus_Methanomethylicus,Archaea,0.0,0.0,3,5,0,0,0,136.16666666666666,0.0,0.0,0.0

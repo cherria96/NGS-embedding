@@ -1,0 +1,19 @@
+{
+  "params": {
+    "l1_ratio": 0.1,
+    "C": 0.01
+  },
+  "candidate": 2,
+  "thresholds": {
+    "warning_acid_base_balance": 0.54,
+    "warning_buffer_capacity": 0.54,
+    "warning_acid_accumulation": 0.54,
+    "warning_ammonia_toxicity": 0.54,
+    "warning_biogas_quality": 0.54
+  },
+  "CV_selection_at_0_5": {
+    "Multilabel MCC": 0.30268645949903167,
+    "Micro-AUPR": 0.2679436377835762,
+    "Micro-ROC-AUC": 0.7523009664058905
+  }
+}

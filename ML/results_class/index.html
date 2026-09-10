@@ -1,0 +1,60 @@
+<!doctype html><html lang="en"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Class-level microbiome warning prediction</title>
+<style>body{font:16px system-ui;max-width:1100px;margin:40px auto;padding:0 20px;color:#19323c}table{border-collapse:collapse;width:100%}td,th{padding:10px;border-bottom:1px solid #ddd;text-align:left}img{width:100%;max-width:800px}figure{margin:30px 0}a{color:#156779}</style>
+<h1>Class-level microbiome warning prediction</h1>
+<p>129 microbiome predictors · 138 matched samples · Five labels evaluated together</p>
+<p>CV-selected model: <strong>RandomForest</strong>. Test rankings are descriptive and do not change that selection.</p>
+<h2>Held-out test results</h2><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Model</th>
+      <th>Multilabel MCC</th>
+      <th>Micro-AUPR</th>
+      <th>Micro-ROC-AUC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>RandomForest</td>
+      <td>0.4528</td>
+      <td>0.6193</td>
+      <td>0.9167</td>
+    </tr>
+    <tr>
+      <td>KNN</td>
+      <td>0.3924</td>
+      <td>0.3736</td>
+      <td>0.8534</td>
+    </tr>
+    <tr>
+      <td>SVM</td>
+      <td>0.3471</td>
+      <td>0.4290</td>
+      <td>0.7821</td>
+    </tr>
+    <tr>
+      <td>NNET</td>
+      <td>0.5191</td>
+      <td>0.5049</td>
+      <td>0.9382</td>
+    </tr>
+    <tr>
+      <td>XGBoost</td>
+      <td>0.3645</td>
+      <td>0.5658</td>
+      <td>0.8508</td>
+    </tr>
+    <tr>
+      <td>GLMNET</td>
+      <td>0.4505</td>
+      <td>0.3685</td>
+      <td>0.9033</td>
+    </tr>
+  </tbody>
+</table>
+<p>Test metric leaders: {&#x27;Multilabel MCC&#x27;: &#x27;NNET&#x27;, &#x27;Micro-AUPR&#x27;: &#x27;RandomForest&#x27;, &#x27;Micro-ROC-AUC&#x27;: &#x27;NNET&#x27;}.</p>
+<p>The test has 29 samples from seven groups. This dataset and holdout were used in previous analyses; this run isolates test data from fitting and selection. Rare positives and tuning optimism limit conclusions.</p>
+<figure><img src="multilabel_mcc.png" alt="Multilabel MCC"><figcaption>Multilabel MCC</figcaption></figure><figure><img src="micro_aupr.png" alt="Micro-AUPR"><figcaption>Micro-AUPR</figcaption></figure><figure><img src="micro_roc_auc.png" alt="Micro-ROC-AUC"><figcaption>Micro-ROC-AUC</figcaption></figure><h2>Methods and downloads</h2>
+<p><a href="report.md">Complete report and taxa lists</a> · <a href="test_performance.csv">Test results</a> · <a href="cv_performance.csv">CV results</a> · <a href="final_feature_matrix.csv">Feature matrix</a> · <a href="selected_taxa.csv">Selected taxa and sample counts</a> · <a href="split_and_cv_assignment.csv">Site and fold assignments</a></p>
+<p>Multilabel MCC is binary MCC across flattened sample-label pairs. Micro-AUPR is trapezoidal PR area; Micro-ROC-AUC uses flattened probabilities. No metadata predictors or additional feature selection are used.</p></html>

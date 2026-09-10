@@ -1,0 +1,21 @@
+model,target,rank,feature,category,importance_mean,fold_sd,evaluable_folds,selected_folds,positive_folds,top10_folds,top20_folds,mean_fold_rank,mean_permutation_sd,top10_frequency,positive_frequency
+NNET,warning_acid_accumulation,1.0,ARC_G::Rhinosporideacae,Archaea,0.0021631514447884447,0.0030591581106867737,2,5,1,1,1,69.75,0.0015312823333430957,0.5,0.5
+NNET,warning_acid_accumulation,1.0,ARC_P::Holozoa,Archaea,0.0021631514447884447,0.0030591581106867737,2,5,1,1,1,69.75,0.0015312823333430957,0.5,0.5
+NNET,warning_acid_accumulation,3.0,BAC_G::Gelria,Bacteria,0.0010784313725490228,0.00152513227314746,2,5,1,1,1,70.5,0.0006851371478495218,0.5,0.5
+NNET,warning_acid_accumulation,4.0,BAC_G::Syntrophomonas,Bacteria,0.0010263480392156891,0.0014514753167738609,2,5,1,1,1,71.0,0.000726427973949144,0.5,0.5
+NNET,warning_acid_accumulation,5.0,ARC_G::Candidatus_Nitrocosmicus,Archaea,0.0007456524276377236,0.0010545117759816916,2,5,1,1,1,71.5,0.0026928006860022407,0.5,0.5
+NNET,warning_acid_accumulation,6.0,BAC_G::Guggenheimella,Bacteria,0.0007066993464052308,0.0009994238002064794,2,5,1,1,1,72.0,0.0006923038093325049,0.5,0.5
+NNET,warning_acid_accumulation,7.0,BAC_G::MVP-15,Bacteria,0.0006172045403856595,0.0008728590317716523,2,5,1,1,1,72.5,0.0019467051501813172,0.5,0.5
+NNET,warning_acid_accumulation,8.0,BAC_G::ST-12K33,Bacteria,0.0005580357142857169,0.0007891816754314183,2,5,1,1,1,73.0,0.0007508694164132896,0.5,0.5
+NNET,warning_acid_accumulation,9.0,substrate_avg_ALK,Metadata: substrate,0.0004462826797385636,0.0006311390183384851,2,5,1,1,1,73.5,0.000575007312888744,0.5,0.5
+NNET,warning_acid_accumulation,10.0,BAC_G::D8A-2,Bacteria,0.00011860994397759305,0.0001677397914054251,2,5,1,1,1,74.0,0.0008292400957680641,0.5,0.5
+NNET,warning_acid_accumulation,11.0,BAC_G::HN-HF0106,Bacteria,9.672619047619117e-05,0.00013679149040811284,2,5,1,0,1,74.5,0.0004858699617529971,0.0,0.5
+NNET,warning_acid_accumulation,12.0,BAC_G::Caldicoprobacter,Bacteria,3.7202380952381864e-05,5.261211169542893e-05,2,5,1,0,1,75.0,0.0005648472131817323,0.0,0.5
+NNET,warning_acid_accumulation,13.0,ARC_G::Aenigmarchaeales,Archaea,0.0,0.0,2,5,0,0,0,120.0,0.0,0.0,0.0
+NNET,warning_acid_accumulation,13.0,ARC_G::Bathyarchaeia,Archaea,0.0,0.0,2,5,0,0,0,120.0,0.0,0.0,0.0
+NNET,warning_acid_accumulation,13.0,ARC_G::Candidatus_Iainarchaeum,Archaea,0.0,0.0,2,5,0,0,0,120.0,0.0,0.0,0.0
+NNET,warning_acid_accumulation,13.0,ARC_G::Candidatus_Methanomethylicus,Archaea,0.0,0.0,2,5,0,0,0,120.0,0.0,0.0,0.0
+NNET,warning_acid_accumulation,13.0,ARC_G::Candidatus_Methanomethylophilus,Archaea,0.0,0.0,2,5,0,0,0,120.0,0.0,0.0,0.0
+NNET,warning_acid_accumulation,13.0,ARC_G::Candidatus_Methanoplasma,Archaea,0.0,0.0,2,5,0,0,0,120.0,0.0,0.0,0.0
+NNET,warning_acid_accumulation,13.0,ARC_G::Hadarchaeales,Archaea,0.0,0.0,2,5,0,0,0,120.0,0.0,0.0,0.0
+NNET,warning_acid_accumulation,13.0,ARC_G::LKM11,Archaea,0.0,0.0,2,5,0,0,0,120.0,0.0,0.0,0.0

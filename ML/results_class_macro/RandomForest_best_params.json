@@ -1,0 +1,15 @@
+{
+  "params": {
+    "n_estimators": 150,
+    "min_samples_leaf": 5,
+    "max_features": "sqrt",
+    "max_depth": 6
+  },
+  "candidate": 4,
+  "combinations_evaluated": 8,
+  "CV_selection_at_0_5": {
+    "Macro MCC": 0.18698320483028613,
+    "Macro AUPR": 0.2058580932427025,
+    "Macro ROC-AUC": 0.6057399106268242
+  }
+}

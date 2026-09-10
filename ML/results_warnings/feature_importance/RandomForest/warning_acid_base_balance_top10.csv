@@ -1,0 +1,11 @@
+model,target,rank,feature,category,importance_mean,fold_sd,evaluable_folds,selected_folds,positive_folds,top10_folds,top20_folds,mean_fold_rank,mean_permutation_sd,top10_frequency,positive_frequency
+RandomForest,warning_acid_base_balance,1.0,BAC_P::Spirochaetota,Bacteria,0.05705554453716218,0.03952598128162789,5,5,4,4,4,55.8,0.07128708533775888,0.8,0.8
+RandomForest,warning_acid_base_balance,2.0,ARC_P::Nanoarchaeota,Archaea,0.026176722808495267,0.02348412955566312,5,5,4,3,4,32.5,0.03234500838184756,0.6,0.8
+RandomForest,warning_acid_base_balance,3.0,BAC_G::Alkaliphilus,Bacteria,0.024428894634776984,0.046187928187069405,5,5,3,2,2,83.4,0.01603659738939969,0.4,0.6
+RandomForest,warning_acid_base_balance,4.0,BAC_P::Firmicutes,Bacteria,0.02386027764375289,0.04621917690355219,5,5,4,2,4,60.8,0.031767788864072916,0.4,0.8
+RandomForest,warning_acid_base_balance,5.0,HRT_d,Metadata: operation/context,0.022015873015873027,0.03162058734676982,5,5,3,3,3,58.2,0.023765414093452064,0.6,0.6
+RandomForest,warning_acid_base_balance,6.0,ARC_P::unidentified,Archaea,0.020740271854048954,0.03760325650723994,5,5,4,4,4,58.4,0.04829469470862703,0.8,0.8
+RandomForest,warning_acid_base_balance,7.0,ARC_G::Methanospirillum,Archaea,0.01915960510078158,0.05448670206244328,5,5,1,1,1,166.9,0.015594888193210407,0.2,0.2
+RandomForest,warning_acid_base_balance,8.0,BAC_P::Thermotogota,Bacteria,0.0181708035256797,0.03620357298719292,5,5,3,1,2,64.9,0.022597761192188294,0.2,0.6
+RandomForest,warning_acid_base_balance,9.0,BAC_G::Proteiniphilum,Bacteria,0.018129153934301,0.020073898581737876,5,5,4,2,4,34.3,0.026844486529248257,0.4,0.8
+RandomForest,warning_acid_base_balance,10.0,BAC_G::Fastidiosipila,Bacteria,0.014824327633151163,0.03370407942596872,5,5,2,1,1,116.7,0.014989294668734776,0.2,0.4

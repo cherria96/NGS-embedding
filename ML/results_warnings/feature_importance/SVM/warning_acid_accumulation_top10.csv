@@ -1,0 +1,11 @@
+model,target,rank,feature,category,importance_mean,fold_sd,evaluable_folds,selected_folds,positive_folds,top10_folds,top20_folds,mean_fold_rank,mean_permutation_sd,top10_frequency,positive_frequency
+SVM,warning_acid_accumulation,1.0,substrate_avg_ALK,Metadata: substrate,0.011272508666084516,0.01594173463754497,2,5,1,1,1,69.5,0.0027765121374057015,0.5,0.5
+SVM,warning_acid_accumulation,2.0,BAC_P::Bacteroidota,Bacteria,0.007768602924852921,0.010986463617018296,2,5,1,1,1,70.0,0.0030357298106558667,0.5,0.5
+SVM,warning_acid_accumulation,3.0,BAC_G::009E01-B-SD-P15,Bacteria,0.005873596432806957,0.00830651973518183,2,5,1,1,1,70.5,0.002239581627146932,0.5,0.5
+SVM,warning_acid_accumulation,4.0,BAC_G::Candidatus_Cloacimonas,Bacteria,0.0042287920412920395,0.005980415057250608,2,5,1,1,1,71.0,0.003935667773163303,0.5,0.5
+SVM,warning_acid_accumulation,5.0,BAC_P::Acidobacteriota,Bacteria,0.003924825174825172,0.005550540992181113,2,5,1,1,1,71.5,0.0019742374993717985,0.5,0.5
+SVM,warning_acid_accumulation,6.0,Season,Metadata: operation/context,0.003428030303030301,0.004847966946771402,2,5,1,1,1,72.0,0.003004169441378117,0.5,0.5
+SVM,warning_acid_accumulation,7.0,substrate_avg_Lipid,Metadata: substrate,0.0032733585858585835,0.0046292281066316245,2,5,1,1,1,72.5,0.003239039207944612,0.5,0.5
+SVM,warning_acid_accumulation,8.0,ARC_P::Halobacterota,Archaea,0.0021476787101787085,0.0030372763595546853,2,5,1,1,1,73.0,0.0036363749669929097,0.5,0.5
+SVM,warning_acid_accumulation,9.0,BAC_G::Ruminococcus,Bacteria,0.0019191919191919172,0.0027141472409180586,2,5,1,1,1,73.5,0.0015292626603751905,0.5,0.5
+SVM,warning_acid_accumulation,10.0,substrate_avg_TVFAs,Metadata: substrate,0.00190972222222222,0.002700755067031949,2,5,1,1,1,74.0,0.0016991683504499746,0.5,0.5

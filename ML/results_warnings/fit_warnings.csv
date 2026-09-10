@@ -1,0 +1,15 @@
+model,candidate,fold,category,message
+RandomForest,5,1,ResourceWarning,unclosed file <_io.BufferedReader name='/home/best/Sujin/NGS-embedding/data/final/Dat_ARC.xlsx'>
+GLMNET,2,1,ConvergenceWarning,The max_iter was reached which means the coef_ did not converge
+GLMNET,2,1,ConvergenceWarning,The max_iter was reached which means the coef_ did not converge
+GLMNET,2,1,ConvergenceWarning,The max_iter was reached which means the coef_ did not converge
+GLMNET,2,3,ConvergenceWarning,The max_iter was reached which means the coef_ did not converge
+GLMNET,2,3,ConvergenceWarning,The max_iter was reached which means the coef_ did not converge
+GLMNET,2,3,ConvergenceWarning,The max_iter was reached which means the coef_ did not converge
+GLMNET,2,4,ConvergenceWarning,The max_iter was reached which means the coef_ did not converge
+GLMNET,2,4,ConvergenceWarning,The max_iter was reached which means the coef_ did not converge
+GLMNET,2,5,ConvergenceWarning,The max_iter was reached which means the coef_ did not converge
+GLMNET,2,5,ConvergenceWarning,The max_iter was reached which means the coef_ did not converge
+GLMNET,2,5,ConvergenceWarning,The max_iter was reached which means the coef_ did not converge
+GLMNET,6,3,ConvergenceWarning,The max_iter was reached which means the coef_ did not converge
+GLMNET,6,5,ConvergenceWarning,The max_iter was reached which means the coef_ did not converge

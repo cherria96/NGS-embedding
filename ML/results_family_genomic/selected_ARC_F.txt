@@ -1,0 +1,12 @@
+ARC_F::Bathyarchaeia
+ARC_F::Methanofastidiosaceae
+ARC_F::Methanomassiliicoccaceae
+ARC_F::Methanomethylophilaceae
+ARC_F::Methanomicrobiaceae
+ARC_F::Methanomicrobiales
+ARC_F::Methanoregulaceae
+ARC_F::Methanosaetaceae
+ARC_F::Methanosarcinaceae
+ARC_F::Methanospirillaceae
+ARC_F::SCGC_AAA011-D5
+ARC_F::unidentified

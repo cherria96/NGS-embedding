@@ -1,0 +1,3 @@
+Model,candidate,fold,category,message
+GLMNET,2,1,ConvergenceWarning,The max_iter was reached which means the coef_ did not converge
+GLMNET,2,4,ConvergenceWarning,The max_iter was reached which means the coef_ did not converge

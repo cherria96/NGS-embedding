@@ -1,0 +1,16 @@
+{
+  "params": {
+    "subsample": 0.8,
+    "reg_lambda": 10,
+    "n_estimators": 200,
+    "max_depth": 1,
+    "learning_rate": 0.03
+  },
+  "candidate": 6,
+  "combinations_evaluated": 8,
+  "CV_selection_at_0_5": {
+    "Macro MCC": 0.2122191230199862,
+    "Macro AUPR": 0.23825058350547482,
+    "Macro ROC-AUC": 0.6058792290282294
+  }
+}

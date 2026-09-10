@@ -1,0 +1,13 @@
+block,taxon,feature,samples_above_1_percent,training_samples_above_1_percent,all_samples_percent_above_1,training_percent_above_1,domain,included_in_final_matrix
+ARC_F,Bathyarchaeia,ARC_F::Bathyarchaeia,8,7,5.797101449275362,6.422018348623853,Archaea,True
+ARC_F,Methanofastidiosaceae,ARC_F::Methanofastidiosaceae,104,78,75.3623188405797,71.55963302752293,Archaea,True
+ARC_F,Methanomassiliicoccaceae,ARC_F::Methanomassiliicoccaceae,90,73,65.21739130434783,66.97247706422019,Archaea,True
+ARC_F,Methanomethylophilaceae,ARC_F::Methanomethylophilaceae,37,30,26.81159420289855,27.522935779816514,Archaea,True
+ARC_F,Methanomicrobiaceae,ARC_F::Methanomicrobiaceae,93,85,67.3913043478261,77.98165137614679,Archaea,True
+ARC_F,Methanomicrobiales,ARC_F::Methanomicrobiales,16,13,11.594202898550725,11.926605504587156,Archaea,True
+ARC_F,Methanoregulaceae,ARC_F::Methanoregulaceae,92,70,66.66666666666667,64.22018348623853,Archaea,True
+ARC_F,Methanosaetaceae,ARC_F::Methanosaetaceae,126,97,91.30434782608695,88.9908256880734,Archaea,True
+ARC_F,Methanosarcinaceae,ARC_F::Methanosarcinaceae,47,40,34.05797101449275,36.69724770642202,Archaea,True
+ARC_F,Methanospirillaceae,ARC_F::Methanospirillaceae,117,88,84.78260869565217,80.73394495412845,Archaea,True
+ARC_F,SCGC_AAA011-D5,ARC_F::SCGC_AAA011-D5,15,11,10.869565217391305,10.091743119266056,Archaea,True
+ARC_F,unidentified,ARC_F::unidentified,81,67,58.69565217391305,61.46788990825688,Archaea,True

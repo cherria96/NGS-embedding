@@ -1,0 +1,11 @@
+model,target,rank,feature,category,importance_mean,fold_sd,evaluable_folds,selected_folds,positive_folds,top10_folds,top20_folds,mean_fold_rank,mean_permutation_sd,top10_frequency,positive_frequency
+XGBoost,warning_acid_base_balance,1.0,BAC_P::Spirochaetota,Bacteria,0.12983570952611198,0.14387754670438757,5,5,4,4,4,56.0,0.08556538351403549,0.8,0.8
+XGBoost,warning_acid_base_balance,2.0,ARC_P::Nanoarchaeota,Archaea,0.03448307942057942,0.052814395586244844,5,5,3,3,3,82.4,0.043015134731949914,0.6,0.6
+XGBoost,warning_acid_base_balance,3.0,BAC_P::Thermotogota,Bacteria,0.02479563492063492,0.04789955287732675,5,5,4,4,4,31.1,0.03408818423623452,0.8,0.8
+XGBoost,warning_acid_base_balance,4.0,ARC_G::Methanosaeta,Archaea,0.018021464646464636,0.01602924084728158,5,5,4,4,4,29.7,0.048641995703122755,0.8,0.8
+XGBoost,warning_acid_base_balance,5.0,HRT_d,Metadata: operation/context,0.016023719336219332,0.03384707642038365,5,5,2,2,2,137.3,0.03292392406014397,0.4,0.4
+XGBoost,warning_acid_base_balance,6.0,BAC_P::Cloacimonadota,Bacteria,0.004205741626794256,0.012808192595143826,5,5,2,2,2,139.1,0.04264201113791051,0.4,0.4
+XGBoost,warning_acid_base_balance,7.0,substrate_avg_sCOD,Metadata: substrate,0.0035158730158730057,0.00786173106374924,5,5,1,1,1,137.4,0.009345162051618417,0.2,0.2
+XGBoost,warning_acid_base_balance,8.0,Season,Metadata: operation/context,0.0032738095238095217,0.004484083087297427,5,5,2,2,2,85.1,0.006738773884089418,0.4,0.4
+XGBoost,warning_acid_base_balance,9.0,BAC_G::Proteiniphilum,Bacteria,0.0029026251526251385,0.024951431380279075,5,5,3,3,3,85.5,0.03339261638450184,0.6,0.6
+XGBoost,warning_acid_base_balance,10.0,ARC_G::Methanoculleus,Archaea,0.0011904761904761878,0.002343454724408271,5,5,2,2,2,85.2,0.003193293348506536,0.4,0.4

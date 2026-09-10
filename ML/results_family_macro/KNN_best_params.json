@@ -1,0 +1,14 @@
+{
+  "params": {
+    "weights": "distance",
+    "p": 2,
+    "n_neighbors": 9
+  },
+  "candidate": 5,
+  "combinations_evaluated": 8,
+  "CV_selection_at_0_5": {
+    "Macro MCC": 0.21311604694899455,
+    "Macro AUPR": 0.21242686907703012,
+    "Macro ROC-AUC": 0.6457047031271879
+  }
+}

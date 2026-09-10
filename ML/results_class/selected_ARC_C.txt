@@ -1,0 +1,17 @@
+ARC_C::Actinopterygii
+ARC_C::Aenigmarchaeia
+ARC_C::Bathyarchaeia
+ARC_C::Bivalvia
+ARC_C::Ichthyosporea
+ARC_C::LKM11
+ARC_C::Lokiarchaeia
+ARC_C::Methanomethylicia
+ARC_C::Methanomicrobia
+ARC_C::Methanosarcinia
+ARC_C::Micrarchaeia
+ARC_C::Nanoarchaeia
+ARC_C::Nitrososphaeria
+ARC_C::Odinarchaeia
+ARC_C::Thermococci
+ARC_C::Thermoplasmata
+ARC_C::unidentified

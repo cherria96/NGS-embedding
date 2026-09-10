@@ -1,0 +1,1 @@
+Four unit tests passed. Independently verified matrix against original P(%) sheets, disjoint group assignments, serialized feature columns, saved threshold predictions and all three metrics for six models. Test metrics recomputed from saved scores only; models were not reevaluated.

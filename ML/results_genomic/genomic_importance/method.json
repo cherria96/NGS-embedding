@@ -1,0 +1,24 @@
+{
+  "model": "RandomForest",
+  "model_params": {
+    "n_estimators": 300,
+    "min_samples_leaf": 1,
+    "max_features": "sqrt",
+    "max_depth": 6
+  },
+  "seed": 20260908,
+  "repeats": 30,
+  "baseline_OOF": {
+    "Multilabel MCC": 0.4765925577220582,
+    "Micro-AUPR": 0.3932643584366832
+  },
+  "thresholds": {
+    "warning_acid_base_balance": 0.25,
+    "warning_buffer_capacity": 0.25,
+    "warning_acid_accumulation": 0.25,
+    "warning_ammonia_toxicity": 0.25,
+    "warning_biogas_quality": 0.25
+  },
+  "method": "Shuffle one taxon within validation samples of each existing fold, pool all five folds before both metrics. Columnwise mask/scaling permits equivalent batched transformed-column permutations. No renormalization. Missing fold-union features produce zero drop in that fold.",
+  "interpretation": "Fixed chosen settings; training-only post-selection descriptive importance. SD measures permutation randomness, not independent-site confidence. Correlated taxa, hierarchical ranks and compositional constraints limit interpretation. Permutations can create unrealistic profiles. No causation, direction, or feature removal."
+}

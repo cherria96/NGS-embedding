@@ -1,0 +1,11 @@
+model,target,rank,feature,category,importance_mean,fold_sd,evaluable_folds,selected_folds,positive_folds,top10_folds,top20_folds,mean_fold_rank,mean_permutation_sd,top10_frequency,positive_frequency
+SVM,warning_buffer_capacity,1.0,BAC_G::Lactobacillus,Bacteria,0.10926552287581699,0.24432513674738512,5,5,1,1,1,101.7,0.024944362143316353,0.2,0.2
+SVM,warning_buffer_capacity,2.0,BAC_P::Armatimonadota,Bacteria,0.07893253968253969,0.17630448535340437,5,5,2,1,1,84.7,0.027388522346548306,0.2,0.4
+SVM,warning_buffer_capacity,3.0,BAC_G::Smithella,Bacteria,0.03640739978975273,0.0943898802710183,5,5,2,2,2,137.6,0.01635080111611508,0.4,0.4
+SVM,warning_buffer_capacity,4.0,BAC_G::Butyrivibrio,Bacteria,0.026888278388278387,0.061378346504134824,5,5,2,1,1,106.5,0.006371264001437671,0.2,0.4
+SVM,warning_buffer_capacity,5.0,BAC_G::Prevotella,Bacteria,0.023232277526395166,0.05196815096074013,5,5,1,1,1,119.7,0.010065921400774915,0.2,0.2
+SVM,warning_buffer_capacity,6.0,BAC_G::Sphaerochaeta,Bacteria,0.02239188589188589,0.05536592906872733,5,5,1,1,1,196.2,0.03197170650380453,0.2,0.2
+SVM,warning_buffer_capacity,7.0,BAC_G::Mesotoga,Bacteria,0.017049089799089798,0.039213406369057166,5,5,1,1,1,146.5,0.03487835259103893,0.2,0.2
+SVM,warning_buffer_capacity,8.0,BAC_G::Syntrophorhabdus,Bacteria,0.015880952380952374,0.02905781437004026,5,5,3,3,3,60.3,0.009958463936613853,0.6,0.6
+SVM,warning_buffer_capacity,9.0,BAC_P::Desulfobacterota,Bacteria,0.015668658139246363,0.05220649412552045,5,5,1,1,1,185.4,0.015416021892663173,0.2,0.2
+SVM,warning_buffer_capacity,10.0,ARC_G::Methanomassiliicoccus,Archaea,0.015547154642742866,0.038987011475453595,5,5,3,3,3,109.2,0.02030291645127221,0.6,0.6

@@ -1,0 +1,4 @@
+{
+  "Model": "NNET",
+  "rule": "Equal-weight mean descending rank of pooled training OOF Macro MCC at fixed 0.5, Macro AUPR, Macro ROC-AUC. Ties favor Macro AUPR, ROC-AUC, MCC, then candidate order."
+}

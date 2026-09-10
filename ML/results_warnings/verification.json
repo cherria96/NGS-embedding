@@ -1,0 +1,50 @@
+{
+  "models": [
+    {
+      "model": "NNET",
+      "serialized_predictions_match": true,
+      "metrics_recomputed_match": true,
+      "predictors": 276,
+      "plots": 12
+    },
+    {
+      "model": "RandomForest",
+      "serialized_predictions_match": true,
+      "metrics_recomputed_match": true,
+      "predictors": 276,
+      "plots": 12
+    },
+    {
+      "model": "KNN",
+      "serialized_predictions_match": true,
+      "metrics_recomputed_match": true,
+      "predictors": 276,
+      "plots": 12
+    },
+    {
+      "model": "XGBoost",
+      "serialized_predictions_match": true,
+      "metrics_recomputed_match": true,
+      "predictors": 276,
+      "plots": 12
+    },
+    {
+      "model": "GLMNET",
+      "serialized_predictions_match": true,
+      "metrics_recomputed_match": true,
+      "predictors": 276,
+      "plots": 12
+    },
+    {
+      "model": "SVM",
+      "serialized_predictions_match": true,
+      "metrics_recomputed_match": true,
+      "predictors": 276,
+      "plots": 12
+    }
+  ],
+  "unit_tests_passed": 4,
+  "five_grouped_folds": true,
+  "eight_candidates_per_model": true,
+  "test_site_overlap": false
+}

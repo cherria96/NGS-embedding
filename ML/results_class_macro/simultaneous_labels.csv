@@ -1,0 +1,13 @@
+scope,simultaneous_labels,samples,percent
+all_metadata,0,95,67.85714285714286
+all_metadata,1,28,20.0
+all_metadata,2,13,9.285714285714286
+all_metadata,3,3,2.142857142857143
+all_metadata,4,1,0.7142857142857143
+all_metadata,5,0,0.0
+matched,0,94,68.11594202898551
+matched,1,27,19.565217391304348
+matched,2,13,9.420289855072465
+matched,3,3,2.1739130434782608
+matched,4,1,0.7246376811594203
+matched,5,0,0.0

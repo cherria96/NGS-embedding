@@ -1,0 +1,30 @@
+{
+  "params": {
+    "weights": "distance",
+    "p": 1,
+    "n_neighbors": 5
+  },
+  "candidate": 5,
+  "candidate_mean_ranks": [
+    4.666666666666667,
+    3.3333333333333335,
+    6.333333333333333,
+    6.666666666666667,
+    4.166666666666667,
+    1.0,
+    4.833333333333333,
+    5.0
+  ],
+  "thresholds": {
+    "warning_acid_base_balance": 0.5800000000000001,
+    "warning_buffer_capacity": 0.5800000000000001,
+    "warning_acid_accumulation": 0.5800000000000001,
+    "warning_ammonia_toxicity": 0.5800000000000001,
+    "warning_biogas_quality": 0.5800000000000001
+  },
+  "CV_at_0_5": {
+    "Multilabel MCC": 0.3892085860057657,
+    "Micro-AUPR": 0.4064872814431081,
+    "Micro-ROC-AUC": 0.7875365399946851
+  }
+}

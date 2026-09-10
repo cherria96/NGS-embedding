@@ -1,0 +1,32 @@
+{
+  "params": {
+    "solver": "lbfgs",
+    "hidden_layer_sizes": [
+      32
+    ],
+    "alpha": 10
+  },
+  "candidate": 0,
+  "candidate_mean_ranks": [
+    1.1666666666666667,
+    4.833333333333333,
+    7.333333333333333,
+    4.666666666666667,
+    5.333333333333333,
+    5.5,
+    5.333333333333333,
+    1.8333333333333333
+  ],
+  "thresholds": {
+    "warning_acid_base_balance": 0.31,
+    "warning_buffer_capacity": 0.31,
+    "warning_acid_accumulation": 0.31,
+    "warning_ammonia_toxicity": 0.31,
+    "warning_biogas_quality": 0.31
+  },
+  "CV_at_0_5": {
+    "Multilabel MCC": 0.33370368267798317,
+    "Micro-AUPR": 0.2816987378276041,
+    "Micro-ROC-AUC": 0.7895296306138719
+  }
+}

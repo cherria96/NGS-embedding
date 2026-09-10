@@ -1,0 +1,11 @@
+model,target,rank,feature,category,importance_mean,fold_sd,evaluable_folds,selected_folds,positive_folds,top10_folds,top20_folds,mean_fold_rank,mean_permutation_sd,top10_frequency,positive_frequency
+KNN,warning_acid_accumulation,1.0,ARC_G::Aenigmarchaeales,Archaea,0.0,0.0,2,5,0,0,0,136.5,0.0,0.0,0.0
+KNN,warning_acid_accumulation,1.0,ARC_G::Bathyarchaeia,Archaea,0.0,0.0,2,5,0,0,0,136.5,0.0,0.0,0.0
+KNN,warning_acid_accumulation,1.0,ARC_G::Candidatus_Iainarchaeum,Archaea,0.0,0.0,2,5,0,0,0,136.5,0.0,0.0,0.0
+KNN,warning_acid_accumulation,1.0,ARC_G::Candidatus_Methanofastidiosum,Archaea,0.0,0.0,2,5,0,0,0,136.5,0.0,0.0,0.0
+KNN,warning_acid_accumulation,1.0,ARC_G::Candidatus_Methanogranum,Archaea,0.0,0.0,2,5,0,0,0,136.5,0.0,0.0,0.0
+KNN,warning_acid_accumulation,1.0,ARC_G::Candidatus_Methanomethylicus,Archaea,0.0,0.0,2,5,0,0,0,136.5,0.0,0.0,0.0
+KNN,warning_acid_accumulation,1.0,ARC_G::Candidatus_Methanomethylophilus,Archaea,0.0,0.0,2,5,0,0,0,136.5,0.0,0.0,0.0
+KNN,warning_acid_accumulation,1.0,ARC_G::Candidatus_Methanoplasma,Archaea,0.0,0.0,2,5,0,0,0,136.5,0.0,0.0,0.0
+KNN,warning_acid_accumulation,1.0,ARC_G::Candidatus_Nitrocosmicus,Archaea,0.0,0.0,2,5,0,0,0,136.5,0.0,0.0,0.0
+KNN,warning_acid_accumulation,1.0,ARC_G::Hadarchaeales,Archaea,0.0,0.0,2,5,0,0,0,136.5,0.0,0.0,0.0

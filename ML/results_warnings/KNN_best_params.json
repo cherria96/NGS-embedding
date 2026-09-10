@@ -1,0 +1,31 @@
+{
+  "params": {
+    "weights": "distance",
+    "p": 1,
+    "n_neighbors": 15
+  },
+  "candidate": 4,
+  "thresholds": [
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5
+  ],
+  "CV_pooled_OOF": {
+    "MCC_warning_acid_base_balance": 0.305878074058409,
+    "AUPR_warning_acid_base_balance": 0.23879293699501483,
+    "MCC_warning_buffer_capacity": -0.058246763437142086,
+    "AUPR_warning_buffer_capacity": 0.07312850407747197,
+    "MCC_warning_acid_accumulation": -0.06458176499147496,
+    "AUPR_warning_acid_accumulation": 0.027522935779816515,
+    "MCC_warning_ammonia_toxicity": 0.6260187535773305,
+    "AUPR_warning_ammonia_toxicity": 0.4958859992241996,
+    "MCC_warning_biogas_quality": 0.0773548613943271,
+    "AUPR_warning_biogas_quality": 0.24974515800203875,
+    "Macro_MCC": 0.17728463212028994,
+    "Macro_AUPR": 0.21701510681570832,
+    "AUPR_evaluable_labels": 5,
+    "Micro_AUPR": 0.21138749856275668
+  }
+}

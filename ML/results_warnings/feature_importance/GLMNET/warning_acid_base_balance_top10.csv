@@ -1,0 +1,11 @@
+model,target,rank,feature,category,importance_mean,fold_sd,evaluable_folds,selected_folds,positive_folds,top10_folds,top20_folds,mean_fold_rank,mean_permutation_sd,top10_frequency,positive_frequency
+GLMNET,warning_acid_base_balance,1.0,ARC_G::Methanimicrococcus,Archaea,0.07841804723054724,0.17534808427029275,5,5,1,1,1,114.5,0.013118444434883733,0.2,0.2
+GLMNET,warning_acid_base_balance,2.0,BAC_G::Alkaliphilus,Bacteria,0.03732980614630231,0.04703190546103433,5,5,3,3,3,110.5,0.020383955836979523,0.6,0.6
+GLMNET,warning_acid_base_balance,3.0,BAC_G::Guggenheimella,Bacteria,0.02159949562148713,0.04225721183323077,5,5,2,2,2,139.7,0.021145296008000358,0.4,0.4
+GLMNET,warning_acid_base_balance,4.0,BAC_G::Sphaerochaeta,Bacteria,0.015059602288611907,0.01766255479862034,5,5,4,2,4,33.2,0.00809831570270297,0.4,0.8
+GLMNET,warning_acid_base_balance,5.0,BAC_G::WCHB1-41,Bacteria,0.014237189742624511,0.025566105937207356,5,5,3,2,2,68.4,0.010184397256799812,0.4,0.6
+GLMNET,warning_acid_base_balance,6.0,BAC_G::Bacteroides,Bacteria,0.013932147562582342,0.031153229022492124,5,5,1,1,1,117.0,0.0012476915521280984,0.2,0.2
+GLMNET,warning_acid_base_balance,7.0,BAC_G::Gelria,Bacteria,0.010199542003889818,0.01960706155637687,5,5,3,1,2,73.1,0.0063704394398974434,0.2,0.6
+GLMNET,warning_acid_base_balance,8.0,BAC_G::JS1,Bacteria,0.010059704184704185,0.02249418239053766,5,5,1,1,1,114.9,0.004356045487303983,0.2,0.2
+GLMNET,warning_acid_base_balance,9.0,BAC_G::Sedimentibacter,Bacteria,0.00953561371349768,0.010289575775178243,5,5,4,2,3,35.4,0.010131541096842547,0.4,0.8
+GLMNET,warning_acid_base_balance,10.0,substrate_avg_VS,Metadata: substrate,0.009463444466161854,0.017436987278271022,5,5,3,1,2,84.6,0.008695606715548736,0.2,0.6

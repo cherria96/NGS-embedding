@@ -1,0 +1,21 @@
+{
+  "params": {
+    "n_estimators": 300,
+    "min_samples_leaf": 1,
+    "max_features": "sqrt",
+    "max_depth": 6
+  },
+  "candidate": 1,
+  "thresholds": {
+    "warning_acid_base_balance": 0.32,
+    "warning_buffer_capacity": 0.32,
+    "warning_acid_accumulation": 0.32,
+    "warning_ammonia_toxicity": 0.32,
+    "warning_biogas_quality": 0.32
+  },
+  "CV_selection_metrics": {
+    "Multilabel MCC": 0.5246596869847385,
+    "Micro-AUPR": 0.4497847628675586,
+    "Micro-ROC-AUC": 0.8148489032060132
+  }
+}

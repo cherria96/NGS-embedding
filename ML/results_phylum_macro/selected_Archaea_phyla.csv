@@ -1,0 +1,13 @@
+feature,taxon,domain,taxonomic_level,samples_above_0_1_percent,training_samples_above_0_1_percent,included_in_final_matrix
+ARC_P::Aenigmarchaeota,Aenigmarchaeota,Archaea,Phylum,2,2,True
+ARC_P::Asgardarchaeota,Asgardarchaeota,Archaea,Phylum,4,2,True
+ARC_P::Crenarchaeota,Crenarchaeota,Archaea,Phylum,76,58,True
+ARC_P::Euryarchaeota,Euryarchaeota,Archaea,Phylum,127,98,True
+ARC_P::Halobacterota,Halobacterota,Archaea,Phylum,138,109,True
+ARC_P::Holozoa,Holozoa,Archaea,Phylum,1,1,True
+ARC_P::Micrarchaeota,Micrarchaeota,Archaea,Phylum,18,13,True
+ARC_P::Mollusca,Mollusca,Archaea,Phylum,2,2,True
+ARC_P::Nanoarchaeota,Nanoarchaeota,Archaea,Phylum,52,40,True
+ARC_P::Thermoplasmatota,Thermoplasmatota,Archaea,Phylum,132,104,True
+ARC_P::Vertebrata,Vertebrata,Archaea,Phylum,1,1,True
+ARC_P::unidentified,unidentified,Archaea,Phylum,112,91,True

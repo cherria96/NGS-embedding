@@ -1,0 +1,11 @@
+model,target,rank,feature,category,importance_mean,fold_sd,evaluable_folds,selected_folds,positive_folds,top10_folds,top20_folds,mean_fold_rank,mean_permutation_sd,top10_frequency,positive_frequency
+XGBoost,warning_acid_accumulation,1.0,substrate_avg_TVFAs,Metadata: substrate,0.06046328671328671,0.08550800009558303,2,5,1,1,1,69.75,0.03943801791409898,0.5,0.5
+XGBoost,warning_acid_accumulation,2.0,substrate_avg_ALK,Metadata: substrate,0.021249999999999998,0.030052038200428267,2,5,1,1,1,70.25,0.009158688713313079,0.5,0.5
+XGBoost,warning_acid_accumulation,3.0,BAC_G::Sphaerochaeta,Bacteria,0.0004166666666666666,0.0005892556509887895,2,5,1,1,1,70.75,0.012529205647288528,0.5,0.5
+XGBoost,warning_acid_accumulation,4.0,ARC_G::Aenigmarchaeales,Archaea,0.0,0.0,2,5,0,0,0,138.5,0.0,0.0,0.0
+XGBoost,warning_acid_accumulation,4.0,ARC_G::Bathyarchaeia,Archaea,0.0,0.0,2,5,0,0,0,138.5,0.0,0.0,0.0
+XGBoost,warning_acid_accumulation,4.0,ARC_G::Candidatus_Iainarchaeum,Archaea,0.0,0.0,2,5,0,0,0,138.5,0.0,0.0,0.0
+XGBoost,warning_acid_accumulation,4.0,ARC_G::Candidatus_Methanofastidiosum,Archaea,0.0,0.0,2,5,0,0,0,138.5,0.0,0.0,0.0
+XGBoost,warning_acid_accumulation,4.0,ARC_G::Candidatus_Methanogranum,Archaea,0.0,0.0,2,5,0,0,0,138.5,0.0,0.0,0.0
+XGBoost,warning_acid_accumulation,4.0,ARC_G::Candidatus_Methanomethylicus,Archaea,0.0,0.0,2,5,0,0,0,138.5,0.0,0.0,0.0
+XGBoost,warning_acid_accumulation,4.0,ARC_G::Candidatus_Methanomethylophilus,Archaea,0.0,0.0,2,5,0,0,0,138.5,0.0,0.0,0.0

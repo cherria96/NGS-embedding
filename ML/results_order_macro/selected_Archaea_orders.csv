@@ -1,0 +1,16 @@
+feature,taxon,domain,taxonomic_level,samples_above_0_1_percent,training_samples_above_0_1_percent,included_in_final_matrix
+ARC_O::Aenigmarchaeales,Aenigmarchaeales,Archaea,Order,2,2,True
+ARC_O::Bathyarchaeia,Bathyarchaeia,Archaea,Order,67,51,True
+ARC_O::Lokiarchaeia,Lokiarchaeia,Archaea,Order,2,1,True
+ARC_O::Methanofastidiosales,Methanofastidiosales,Archaea,Order,127,98,True
+ARC_O::Methanomassiliicoccales,Methanomassiliicoccales,Archaea,Order,132,104,True
+ARC_O::Methanomethyliales,Methanomethyliales,Archaea,Order,20,12,True
+ARC_O::Methanomicrobiales,Methanomicrobiales,Archaea,Order,138,109,True
+ARC_O::Methanosarciniales,Methanosarciniales,Archaea,Order,135,106,True
+ARC_O::Micrarchaeales,Micrarchaeales,Archaea,Order,18,13,True
+ARC_O::Nitrososphaerales,Nitrososphaerales,Archaea,Order,13,10,True
+ARC_O::Rhinosporideacae,Rhinosporideacae,Archaea,Order,1,1,True
+ARC_O::Teleostei,Teleostei,Archaea,Order,1,1,True
+ARC_O::Veneroida,Veneroida,Archaea,Order,2,2,True
+ARC_O::Woesearchaeales,Woesearchaeales,Archaea,Order,52,40,True
+ARC_O::unidentified,unidentified,Archaea,Order,115,93,True

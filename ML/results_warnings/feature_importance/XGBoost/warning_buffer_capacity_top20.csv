@@ -1,0 +1,21 @@
+model,target,rank,feature,category,importance_mean,fold_sd,evaluable_folds,selected_folds,positive_folds,top10_folds,top20_folds,mean_fold_rank,mean_permutation_sd,top10_frequency,positive_frequency
+XGBoost,warning_buffer_capacity,1.0,BAC_P::Bacteroidota,Bacteria,0.002526003601661498,0.004421445180126636,5,5,3,3,3,56.1,0.004192852639368796,0.6,0.6
+XGBoost,warning_buffer_capacity,2.0,ARC_G::Methanosaeta,Archaea,0.002460085137413851,0.004512804084508682,5,5,3,3,3,82.8,0.01149238828662633,0.6,0.6
+XGBoost,warning_buffer_capacity,3.0,BAC_P::Caldatribacteriota,Bacteria,0.0018687999307194364,0.0056317496161031625,5,5,2,2,2,110.6,0.0051195958528627,0.4,0.4
+XGBoost,warning_buffer_capacity,4.0,substrate_avg_ALK,Metadata: substrate,0.0006921503848748469,0.0015187163903492272,5,5,2,2,2,134.3,0.00510106708174664,0.4,0.4
+XGBoost,warning_buffer_capacity,5.0,ARC_G::Aenigmarchaeales,Archaea,0.0,0.0,5,5,0,0,0,135.8,0.0,0.0,0.0
+XGBoost,warning_buffer_capacity,5.0,ARC_G::Bathyarchaeia,Archaea,0.0,0.0,5,5,0,0,0,135.8,0.0,0.0,0.0
+XGBoost,warning_buffer_capacity,5.0,ARC_G::Candidatus_Iainarchaeum,Archaea,0.0,0.0,5,5,0,0,0,135.8,0.0,0.0,0.0
+XGBoost,warning_buffer_capacity,5.0,ARC_G::Candidatus_Methanofastidiosum,Archaea,0.0,0.0,5,5,0,0,0,135.8,0.0,0.0,0.0
+XGBoost,warning_buffer_capacity,5.0,ARC_G::Candidatus_Methanogranum,Archaea,0.0,0.0,5,5,0,0,0,135.8,0.0,0.0,0.0
+XGBoost,warning_buffer_capacity,5.0,ARC_G::Candidatus_Methanomethylicus,Archaea,0.0,0.0,5,5,0,0,0,135.8,0.0,0.0,0.0
+XGBoost,warning_buffer_capacity,5.0,ARC_G::Candidatus_Methanomethylophilus,Archaea,0.0,0.0,5,5,0,0,0,135.8,0.0,0.0,0.0
+XGBoost,warning_buffer_capacity,5.0,ARC_G::Candidatus_Nitrocosmicus,Archaea,0.0,0.0,5,5,0,0,0,135.8,0.0,0.0,0.0
+XGBoost,warning_buffer_capacity,5.0,ARC_G::Hadarchaeales,Archaea,0.0,0.0,5,5,0,0,0,135.8,0.0,0.0,0.0
+XGBoost,warning_buffer_capacity,5.0,ARC_G::LKM11,Archaea,0.0,0.0,5,5,0,0,0,135.8,0.0,0.0,0.0
+XGBoost,warning_buffer_capacity,5.0,ARC_G::Lokiarchaeia,Archaea,0.0,0.0,5,5,0,0,0,135.8,0.0,0.0,0.0
+XGBoost,warning_buffer_capacity,5.0,ARC_G::Marine_Benthic_Group_D_and_DHVEG-1,Archaea,0.0,0.0,5,5,0,0,0,135.8,0.0,0.0,0.0
+XGBoost,warning_buffer_capacity,5.0,ARC_G::Methanimicrococcus,Archaea,0.0,0.0,5,5,0,0,0,135.8,0.0,0.0,0.0
+XGBoost,warning_buffer_capacity,5.0,ARC_G::Methanofollis,Archaea,0.0,0.0,5,5,0,0,0,135.8,0.0,0.0,0.0
+XGBoost,warning_buffer_capacity,5.0,ARC_G::Methanogenium,Archaea,0.0,0.0,5,5,0,0,0,135.8,0.0,0.0,0.0
+XGBoost,warning_buffer_capacity,5.0,ARC_G::Methanolacinia,Archaea,0.0,0.0,5,4,0,0,0,135.8,0.0,0.0,0.0

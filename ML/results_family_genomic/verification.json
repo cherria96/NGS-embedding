@@ -1,0 +1,14 @@
+{
+  "condition": "Genomic/Microbiome features only",
+  "samples": 138,
+  "predictor_columns": 76,
+  "metadata_predictor_columns": 0,
+  "models_verified": 6,
+  "same_previous_split_and_folds": true,
+  "checks": [
+    "All raw/selected/encoded model inputs contain Family features exclusively",
+    "Stored model transforms reproduce exported matrices",
+    "Exported probabilities and thresholds reproduce binary predictions and all three metrics",
+    "No site group crosses split or CV partitions"
+  ]
+}

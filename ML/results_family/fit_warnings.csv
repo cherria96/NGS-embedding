@@ -1,0 +1,24 @@
+Model,candidate,fold,category,message
+NNET,0,3,ConvergenceWarning,"lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html"
+NNET,1,1,ConvergenceWarning,"lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html"
+GLMNET,2,1,ConvergenceWarning,The max_iter was reached which means the coef_ did not converge
+GLMNET,2,3,ConvergenceWarning,The max_iter was reached which means the coef_ did not converge
+GLMNET,2,3,ConvergenceWarning,The max_iter was reached which means the coef_ did not converge
+GLMNET,2,4,ConvergenceWarning,The max_iter was reached which means the coef_ did not converge
+GLMNET,2,5,ConvergenceWarning,The max_iter was reached which means the coef_ did not converge
+GLMNET,4,1,ConvergenceWarning,The max_iter was reached which means the coef_ did not converge
+GLMNET,4,2,ConvergenceWarning,The max_iter was reached which means the coef_ did not converge
+GLMNET,4,2,ConvergenceWarning,The max_iter was reached which means the coef_ did not converge
+GLMNET,4,3,ConvergenceWarning,The max_iter was reached which means the coef_ did not converge
+GLMNET,4,4,ConvergenceWarning,The max_iter was reached which means the coef_ did not converge
+GLMNET,4,5,ConvergenceWarning,The max_iter was reached which means the coef_ did not converge
+GLMNET,2,final,ConvergenceWarning,The max_iter was reached which means the coef_ did not converge
+GLMNET,2,final,ConvergenceWarning,The max_iter was reached which means the coef_ did not converge

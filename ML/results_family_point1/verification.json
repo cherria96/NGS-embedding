@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "checks": [
+    "Exact source F(%) values and strict >0.1% masking",
+    "138 samples and 370 microbiome-only columns",
+    "Unique IDs and disjoint site groups",
+    "Five complete grouped CV validation assignments",
+    "All six saved OOF/test metric tables independently recomputed",
+    "Saved binary predictions match frozen thresholds",
+    "All trained bundles and three bar charts exist"
+  ]
+}

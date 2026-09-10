@@ -1,0 +1,22 @@
+{
+  "params": {
+    "subsample": 0.8,
+    "reg_lambda": 10,
+    "n_estimators": 50,
+    "max_depth": 2,
+    "learning_rate": 0.1
+  },
+  "candidate": 5,
+  "thresholds": {
+    "warning_acid_base_balance": 0.5800000000000001,
+    "warning_buffer_capacity": 0.5800000000000001,
+    "warning_acid_accumulation": 0.5800000000000001,
+    "warning_ammonia_toxicity": 0.5800000000000001,
+    "warning_biogas_quality": 0.5800000000000001
+  },
+  "CV_selection_at_0_5": {
+    "Multilabel MCC": 0.39476589712706933,
+    "Micro-AUPR": 0.3258435191964209,
+    "Micro-ROC-AUC": 0.7496356803190674
+  }
+}

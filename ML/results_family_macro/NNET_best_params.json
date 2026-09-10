@@ -1,0 +1,17 @@
+{
+  "params": {
+    "solver": "lbfgs",
+    "hidden_layer_sizes": [
+      32,
+      16
+    ],
+    "alpha": 0.01
+  },
+  "candidate": 5,
+  "combinations_evaluated": 8,
+  "CV_selection_at_0_5": {
+    "Macro MCC": 0.29598582950258445,
+    "Macro AUPR": 0.30220431504158324,
+    "Macro ROC-AUC": 0.5668111003018794
+  }
+}

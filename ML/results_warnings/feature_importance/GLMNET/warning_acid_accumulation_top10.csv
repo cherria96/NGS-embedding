@@ -1,0 +1,11 @@
+model,target,rank,feature,category,importance_mean,fold_sd,evaluable_folds,selected_folds,positive_folds,top10_folds,top20_folds,mean_fold_rank,mean_permutation_sd,top10_frequency,positive_frequency
+GLMNET,warning_acid_accumulation,1.0,Season,Metadata: operation/context,0.015492216117216118,0.021909302144182085,2,5,1,1,1,69.5,0.042470731085749135,0.5,0.5
+GLMNET,warning_acid_accumulation,2.0,BAC_P::Bacteroidota,Bacteria,0.004297161172161173,0.006077103609373398,2,5,1,1,1,70.0,0.015578339006484258,0.5,0.5
+GLMNET,warning_acid_accumulation,3.0,ARC_G::Aenigmarchaeales,Archaea,0.0,0.0,2,5,0,0,0,138.0,0.0,0.0,0.0
+GLMNET,warning_acid_accumulation,3.0,ARC_G::Bathyarchaeia,Archaea,0.0,0.0,2,5,0,0,0,138.0,0.0,0.0,0.0
+GLMNET,warning_acid_accumulation,3.0,ARC_G::Candidatus_Iainarchaeum,Archaea,0.0,0.0,2,5,0,0,0,138.0,0.0,0.0,0.0
+GLMNET,warning_acid_accumulation,3.0,ARC_G::Candidatus_Methanofastidiosum,Archaea,0.0,0.0,2,5,0,0,0,138.0,0.0,0.0,0.0
+GLMNET,warning_acid_accumulation,3.0,ARC_G::Candidatus_Methanogranum,Archaea,0.0,0.0,2,5,0,0,0,138.0,0.0,0.0,0.0
+GLMNET,warning_acid_accumulation,3.0,ARC_G::Candidatus_Methanomethylicus,Archaea,0.0,0.0,2,5,0,0,0,138.0,0.0,0.0,0.0
+GLMNET,warning_acid_accumulation,3.0,ARC_G::Candidatus_Methanomethylophilus,Archaea,0.0,0.0,2,5,0,0,0,138.0,0.0,0.0,0.0
+GLMNET,warning_acid_accumulation,3.0,ARC_G::Candidatus_Methanoplasma,Archaea,0.0,0.0,2,5,0,0,0,138.0,0.0,0.0,0.0

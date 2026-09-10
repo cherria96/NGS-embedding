@@ -1,0 +1,21 @@
+model,target,rank,feature,category,importance_mean,fold_sd,evaluable_folds,selected_folds,positive_folds,top10_folds,top20_folds,mean_fold_rank,mean_permutation_sd,top10_frequency,positive_frequency
+KNN,warning_acid_base_balance,1.0,BAC_G::Lactobacillus,Bacteria,0.013750000000000002,0.03074593469062211,5,5,1,1,1,108.7,0.01276044463835101,0.2,0.2
+KNN,warning_acid_base_balance,2.0,BAC_G::Sphaerochaeta,Bacteria,0.012811403508771932,0.014362625538610774,5,5,3,3,3,82.5,0.013798681660133056,0.6,0.6
+KNN,warning_acid_base_balance,3.0,BAC_G::Aminobacterium,Bacteria,0.012376803751803746,0.020624603200758027,5,5,2,2,2,98.8,0.025868839605459208,0.4,0.4
+KNN,warning_acid_base_balance,4.0,substrate_avg_VS,Metadata: substrate,0.010685606060606067,0.014634198974126508,5,5,2,2,2,82.3,0.006915412836337165,0.4,0.4
+KNN,warning_acid_base_balance,5.0,BAC_G::Caldicoprobacter,Bacteria,0.010577380952380942,0.010163845167197608,5,5,3,3,3,57.0,0.018996049549239374,0.6,0.6
+KNN,warning_acid_base_balance,6.0,BAC_G::Guggenheimella,Bacteria,0.010222243399874969,0.010037906885690812,5,5,3,3,3,55.3,0.02776650478477218,0.6,0.6
+KNN,warning_acid_base_balance,7.0,ARC_G::Bathyarchaeia,Archaea,0.00896291866028708,0.014159390327938493,5,5,2,2,2,110.2,0.008992882425476712,0.4,0.4
+KNN,warning_acid_base_balance,8.0,BAC_G::Candidatus_Cloacimonas,Bacteria,0.008944377990430612,0.016573827407237878,5,5,2,1,2,108.1,0.008449453201422949,0.2,0.4
+KNN,warning_acid_base_balance,9.0,BAC_G::Clostridium_sensu_stricto_1,Bacteria,0.007651515151515145,0.010480691668113166,5,5,2,1,2,82.2,0.012453421351615432,0.2,0.4
+KNN,warning_acid_base_balance,10.0,BAC_G::Fastidiosipila,Bacteria,0.007048430735930725,0.0170509969709269,5,5,1,1,1,128.3,0.008145760828194215,0.2,0.2
+KNN,warning_acid_base_balance,11.0,BAC_G::Gelria,Bacteria,0.006804112554112558,0.013780130105333117,5,5,2,1,1,87.3,0.010110611876220681,0.2,0.4
+KNN,warning_acid_base_balance,12.0,BAC_G::Defluviitoga,Bacteria,0.0063898809523809524,0.014288208177654907,5,5,1,1,1,104.3,0.0024678892417093574,0.2,0.2
+KNN,warning_acid_base_balance,13.0,ARC_G::Methanimicrococcus,Archaea,0.005958333333333334,0.013323238365936248,5,5,1,1,1,104.5,0.002407271513633407,0.2,0.2
+KNN,warning_acid_base_balance,14.0,BAC_G::Anaerofustis,Bacteria,0.005407695374800641,0.012091974459665434,5,5,1,1,1,108.9,0.014310832816105984,0.2,0.2
+KNN,warning_acid_base_balance,15.0,ARC_P::Crenarchaeota,Archaea,0.004166666666666668,0.009316949906249128,5,5,1,1,1,111.2,0.0042749098003548106,0.2,0.2
+KNN,warning_acid_base_balance,16.0,BAC_G::Alkaliphilus,Bacteria,0.003770021645021638,0.00518558646643747,5,5,2,1,2,86.5,0.0054202527713831305,0.2,0.4
+KNN,warning_acid_base_balance,17.0,BAC_G::Syntrophococcus,Bacteria,0.00375,0.008385254915624212,5,5,1,1,1,109.3,0.009158688713313082,0.2,0.2
+KNN,warning_acid_base_balance,18.0,BAC_G::Acetomicrobium,Bacteria,0.0020909090909090942,0.004675414862045022,5,5,1,0,1,107.3,0.0017515708892198202,0.0,0.2
+KNN,warning_acid_base_balance,19.0,ARC_P::unidentified,Archaea,0.0017499999999999977,0.003913118960624627,5,5,1,0,1,107.7,0.0040093093424564755,0.0,0.2
+KNN,warning_acid_base_balance,20.0,BAC_G::Lentimicrobiaceae,Bacteria,0.0016586921850079762,0.009585473322848101,5,5,2,1,2,106.0,0.018284757933662955,0.2,0.4

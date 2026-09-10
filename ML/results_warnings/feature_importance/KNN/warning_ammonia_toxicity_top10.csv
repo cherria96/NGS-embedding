@@ -1,0 +1,11 @@
+model,target,rank,feature,category,importance_mean,fold_sd,evaluable_folds,selected_folds,positive_folds,top10_folds,top20_folds,mean_fold_rank,mean_permutation_sd,top10_frequency,positive_frequency
+KNN,warning_ammonia_toxicity,1.0,substrate_avg_VS,Metadata: substrate,0.04477380952380952,0.0796086213696223,5,5,2,2,2,81.3,0.017909164786774193,0.4,0.4
+KNN,warning_ammonia_toxicity,2.0,BAC_G::Syntrophaceticus,Bacteria,0.03530238095238095,0.05726236981298137,5,5,2,2,2,80.7,0.025832006293190334,0.4,0.4
+KNN,warning_ammonia_toxicity,3.0,substrate_avg_sCOD,Metadata: substrate,0.028361904761904772,0.06153939661388391,5,5,2,1,2,108.2,0.027138311888034478,0.2,0.4
+KNN,warning_ammonia_toxicity,4.0,Season,Metadata: operation/context,0.025105590062111792,0.02617951427576411,5,5,4,3,3,50.2,0.028472832306308427,0.6,0.8
+KNN,warning_ammonia_toxicity,5.0,BAC_G::Keratinibaculum,Bacteria,0.019345238095238103,0.04325726742187094,5,5,1,1,1,113.2,0.00899100975170051,0.2,0.2
+KNN,warning_ammonia_toxicity,6.0,BAC_G::Fastidiosipila,Bacteria,0.012870634920634918,0.02821551154883976,5,5,2,2,2,99.2,0.009959677115984207,0.4,0.4
+KNN,warning_ammonia_toxicity,7.0,substrate_avg_COD,Metadata: substrate,0.010850000000000009,0.06338869291039914,5,5,2,1,1,117.8,0.020397905658312697,0.2,0.4
+KNN,warning_ammonia_toxicity,8.0,BAC_G::Aminobacterium,Bacteria,0.008967460317460315,0.019665943704123282,5,5,2,1,1,82.7,0.006715905978738774,0.2,0.4
+KNN,warning_ammonia_toxicity,9.0,BAC_G::Anaerovorax,Bacteria,0.007853174603174575,0.010568539499282548,5,5,3,0,1,63.1,0.0037061643383574706,0.0,0.6
+KNN,warning_ammonia_toxicity,10.0,BAC_G::Candidatus_Cloacimonas,Bacteria,0.0068464458247067,0.012318193453023612,5,5,2,1,1,104.3,0.013313749808114,0.2,0.4

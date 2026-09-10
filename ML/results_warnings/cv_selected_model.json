@@ -1,0 +1,4 @@
+{
+  "Model": "NNET",
+  "rule": "pooled training out-of-fold Macro average precision, tie break Macro MCC"
+}

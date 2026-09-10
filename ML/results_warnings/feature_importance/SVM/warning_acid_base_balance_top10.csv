@@ -1,0 +1,11 @@
+model,target,rank,feature,category,importance_mean,fold_sd,evaluable_folds,selected_folds,positive_folds,top10_folds,top20_folds,mean_fold_rank,mean_permutation_sd,top10_frequency,positive_frequency
+SVM,warning_acid_base_balance,1.0,BAC_G::Lactobacillus,Bacteria,0.11782872622733305,0.26347304154652906,5,5,1,1,1,121.3,0.017278254043737735,0.2,0.2
+SVM,warning_acid_base_balance,2.0,ARC_G::Methanimicrococcus,Archaea,0.06241380841380841,0.13956151834792394,5,5,1,1,1,134.3,0.02060872465660806,0.2,0.2
+SVM,warning_acid_base_balance,3.0,BAC_G::Guggenheimella,Bacteria,0.04161484144940027,0.048168224932803747,5,5,4,3,3,46.4,0.045704365024879345,0.6,0.8
+SVM,warning_acid_base_balance,4.0,BAC_G::Alkaliphilus,Bacteria,0.04075831575831575,0.059206816207403264,5,5,4,2,2,43.1,0.024244317205499463,0.4,0.8
+SVM,warning_acid_base_balance,5.0,BAC_P::Planctomycetota,Bacteria,0.032154761904761894,0.06086146376902912,5,5,2,2,2,115.5,0.0174729007213053,0.4,0.4
+SVM,warning_acid_base_balance,6.0,BAC_G::Caldicoprobacter,Bacteria,0.028516504329004305,0.02962585614827201,5,5,3,2,2,85.6,0.021214729335843764,0.4,0.6
+SVM,warning_acid_base_balance,7.0,Season,Metadata: operation/context,0.02743939393939393,0.035162498883735946,5,5,4,2,3,62.2,0.011013604612475535,0.4,0.8
+SVM,warning_acid_base_balance,8.0,BAC_G::Bacteroides,Bacteria,0.025500000000000002,0.03756291019372997,5,5,2,2,2,86.3,0.0015389675281277325,0.4,0.4
+SVM,warning_acid_base_balance,9.0,BAC_G::Gelria,Bacteria,0.023425010979358785,0.0335922682920679,5,5,2,2,2,111.7,0.007266827687528321,0.4,0.4
+SVM,warning_acid_base_balance,10.0,substrate_avg_pH,Metadata: substrate,0.022912698412698402,0.021139615557785447,5,5,3,1,2,61.2,0.011720550433607823,0.2,0.6

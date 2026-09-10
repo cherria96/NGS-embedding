@@ -1,0 +1,14 @@
+{
+  "params": {
+    "kernel": "linear",
+    "gamma": 0.01,
+    "C": 1
+  },
+  "candidate": 4,
+  "combinations_evaluated": 8,
+  "CV_selection_at_0_5": {
+    "Macro MCC": 0.03626725879001123,
+    "Macro AUPR": 0.1634084994143818,
+    "Macro ROC-AUC": 0.4217971415443825
+  }
+}

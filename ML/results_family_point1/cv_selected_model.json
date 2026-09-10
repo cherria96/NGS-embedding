@@ -1,0 +1,4 @@
+{
+  "Model": "RandomForest",
+  "rule": "Minimize equal-weight mean descending rank across pooled OOF flattened MCC at 0.5, Micro-AUPR and Micro-ROC-AUC; ties favor AUPR then ROC-AUC then MCC. Select before test evaluation."
+}
