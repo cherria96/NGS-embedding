@@ -40,7 +40,7 @@ class AuxiliaryModel(nn.Module):
 
         # Step 2: Process unmatched features (not in phylogenetic tree)
         matched_columns = set(leaf_to_species.values())
-        for column in data.columns[1:-1]:
+        for column in data.columns[1:]:
             if column not in matched_columns:
                 unmatched_feature = x[:, data.columns.get_loc(column) - 1].view(-1, 1, 1).float()
                 layer_name = re.sub(r'\W+', '_', column)
@@ -106,7 +106,7 @@ class PhyloSpec(nn.Module):
 
         # Step 2: Add unmatched features (non-phylogenetic)
         matched_columns = set(leaf_to_species.values())
-        for column in data.columns[1:-1]:
+        for column in data.columns[1:]:
             if column not in matched_columns:
                 unmatched_feature = x[:, data.columns.get_loc(column) - 1].view(-1, 1, 1).float()
                 layer_name = re.sub(r'\W+', '_', column)

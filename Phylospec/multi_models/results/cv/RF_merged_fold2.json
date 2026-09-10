@@ -1,0 +1,42 @@
+{
+  "model": "RF",
+  "domain": "merged",
+  "per_flag": {
+    "acid_accumulation": {
+      "accuracy": 1.0,
+      "mcc": 0.0,
+      "roc_auc": NaN,
+      "aupr": NaN
+    },
+    "acid_base_balance": {
+      "accuracy": 0.9642857142857143,
+      "mcc": 0.693888666488711,
+      "roc_auc": 0.9807692307692308,
+      "aupr": 0.8333333333333333
+    },
+    "ammonia_toxicity": {
+      "accuracy": 0.9285714285714286,
+      "mcc": 0.7565217391304347,
+      "roc_auc": 0.9130434782608695,
+      "aupr": 0.6342424242424243
+    },
+    "biogas_quality": {
+      "accuracy": 0.9642857142857143,
+      "mcc": 0.0,
+      "roc_auc": 1.0,
+      "aupr": 1.0
+    },
+    "buffer_capacity": {
+      "accuracy": 0.9285714285714286,
+      "mcc": 0.0,
+      "roc_auc": 0.8269230769230769,
+      "aupr": 0.5909090909090909
+    }
+  },
+  "macro": {
+    "accuracy": 0.9571428571428573,
+    "mcc": 0.2900820811238291,
+    "roc_auc": 0.9301839464882944,
+    "aupr": 0.7646212121212121
+  }
+}

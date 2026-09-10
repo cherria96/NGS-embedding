@@ -1,0 +1,42 @@
+{
+  "model": "CNN",
+  "domain": "BAC",
+  "per_flag": {
+    "acid_accumulation": {
+      "accuracy": 0.8571428571428571,
+      "mcc": 0.0,
+      "roc_auc": NaN,
+      "aupr": NaN
+    },
+    "acid_base_balance": {
+      "accuracy": 0.75,
+      "mcc": 0.37463432463267765,
+      "roc_auc": 0.6979166666666666,
+      "aupr": 0.5357142857142857
+    },
+    "ammonia_toxicity": {
+      "accuracy": 0.8571428571428571,
+      "mcc": 0.6454972243679028,
+      "roc_auc": 0.9166666666666666,
+      "aupr": 0.525
+    },
+    "biogas_quality": {
+      "accuracy": 0.75,
+      "mcc": 0.3042903097250923,
+      "roc_auc": 1.0,
+      "aupr": 1.0
+    },
+    "buffer_capacity": {
+      "accuracy": 0.8571428571428571,
+      "mcc": 0.4127594582445936,
+      "roc_auc": 1.0,
+      "aupr": 1.0
+    }
+  },
+  "macro": {
+    "accuracy": 0.8142857142857143,
+    "mcc": 0.3474362633940533,
+    "roc_auc": 0.9036458333333333,
+    "aupr": 0.7651785714285715
+  }
+}

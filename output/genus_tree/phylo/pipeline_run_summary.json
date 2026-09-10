@@ -1,0 +1,9 @@
+{
+  "mode": "phylo",
+  "out_dir": "output/genus_tree/phylo",
+  "arms": [
+    "arc",
+    "bac",
+    "merged"
+  ]
+}

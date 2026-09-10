@@ -48,6 +48,46 @@
             ],
             "console": "integratedTerminal",
             "justMyCode": false
+        },
+        {
+            "name": "PhyloSpec: train (multi-output)",
+            "type": "debugpy",
+            "request": "launch",
+            "python": "/root/anaconda3/envs/PhyloSpec/bin/python",
+            "module": "Phylospec.src.model.PhyloSpec_train_test",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
+            "args": [
+                "-t", "Phylospec/example/warnings_BAC/phylogeny.nwk",
+                "-c", "Phylospec/example/warnings_BAC/multi_output/example_train.csv",
+                "-o", "Phylospec/output/warnings_BAC_multi/",
+                "-labels", "acid_base_balance,buffer_capacity,acid_accumulation,ammonia_toxicity,biogas_quality",
+                "--PhyloSpec", "train"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "PhyloSpec: test (multi-output)",
+            "type": "debugpy",
+            "request": "launch",
+            "python": "/root/anaconda3/envs/PhyloSpec/bin/python",
+            "module": "Phylospec.src.model.PhyloSpec_train_test",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
+            "args": [
+                "-t", "Phylospec/example/warnings_BAC/phylogeny.nwk",
+                "-c", "Phylospec/example/warnings_BAC/multi_output/example_test.csv",
+                "-o", "Phylospec/output/warnings_BAC_multi/",
+                "-labels", "acid_base_balance,buffer_capacity,acid_accumulation,ammonia_toxicity,biogas_quality",
+                "--PhyloSpec", "test"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false
         }
     ]
 }

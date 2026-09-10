@@ -5,7 +5,7 @@ import torch
 import sys
 import numpy as np
 from Bio import Phylo
-from sklearn.model_selection import StratifiedKFold
+from sklearn.model_selection import StratifiedKFold, KFold
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 from imblearn.over_sampling import SMOTE
 from Phylospec.src.model.data_processing import load_and_preprocess_data, match_leaf_nodes, assign_unique_names, get_conv_order, \
@@ -36,22 +36,34 @@ def cv_function(config, seed):
     csv_path = config.c
     newick_path = config.t
     taxonomy_path = config.taxo
+    label_cols = [s.strip() for s in config.labels.split(',')] if getattr(config, 'labels', None) else None
 
-    tree = tree_p(csv_path, newick_path)
+    tree = tree_p(csv_path, newick_path, label_cols=label_cols)
     tree = Phylo.read(tree, 'newick')
     tree = assign_unique_names(tree)
 
-    X, y, encoder, data = load_and_preprocess_data(csv_path, tree)
-    leaf_to_species = match_leaf_nodes(tree, data)
+    X, y, encoder, data = load_and_preprocess_data(csv_path, tree, label_cols=label_cols)
+
+    label_cols_resolved = label_cols if label_cols else [data.columns[-1]]
+    n_labels = len(label_cols_resolved)
+    multi_label = n_labels > 1
+    data_features = data.drop(columns=label_cols_resolved)
+
+    leaf_to_species = match_leaf_nodes(tree, data_features)
     nodes, parents, conv_order, node_relations = get_conv_order(tree)
 
     if any('Unclassified' in col or 'unclassified' in col for col in data.columns):
-        data, tree = process_unclassified_features(tree, data, taxonomy_path)
-        X = data.iloc[:, 1:-1].values
-        y = label_encoder.fit_transform(data.iloc[:, -1].values)
+        data, tree = process_unclassified_features(tree, data, taxonomy_path, label_cols=label_cols_resolved)
+        X = data.iloc[:, 1:-n_labels].values
+        if multi_label:
+            y = data[label_cols_resolved].values.astype(np.float32)
+        else:
+            y = label_encoder.fit_transform(data.iloc[:, -1].values)
+        data_features = data.drop(columns=label_cols_resolved)
 
-    num_classes = len(np.unique(y))
+    num_classes = n_labels if multi_label else len(np.unique(y))
     node_weights = calculate_node_weights(tree)
+    data = data_features
 
     fold_auc = []
 
@@ -59,6 +71,13 @@ def cv_function(config, seed):
         with open(config.pkl, 'rb') as f:
             skf_splits = pickle.load(f)
         print("Using predefined fold indices from:", config.pkl)
+    elif multi_label:
+        # iterstrat isn't installed in this environment, so multi-label folds
+        # aren't label-stratified; switch to iterstrat.MultilabelStratifiedKFold
+        # if per-fold class balance becomes a problem.
+        kf = KFold(n_splits=5, shuffle=True, random_state=seed)
+        skf_splits = list(kf.split(X))
+        print("No pkl provided, generating (non-stratified) fold indices for multi-label.")
     else:
         skf = StratifiedKFold(n_splits=5, shuffle=True, random_state=seed)
         skf_splits = list(skf.split(X, y))
@@ -70,21 +89,34 @@ def cv_function(config, seed):
         X_train_fold, X_val_fold = X[train_idx], X[val_idx]
         y_train_fold, y_val_fold = y[train_idx], y[val_idx]
 
-        smote = SMOTE(random_state=seed)
-        X_train_fold, y_train_fold = smote.fit_resample(X_train_fold, y_train_fold)
+        if multi_label:
+            # imblearn's SMOTE only supports single-column labels; skip resampling
+            # and instead weight each flag's positive class in the loss (below).
+            X_train_smote = X_train_fold
+            pos_counts = y_train_fold.sum(axis=0)
+            neg_counts = y_train_fold.shape[0] - pos_counts
+            pos_weight = neg_counts / np.clip(pos_counts, 1, None)
+            pos_weight_tensor = torch.tensor(pos_weight, dtype=torch.float32)
+        else:
+            smote = SMOTE(random_state=seed)
+            X_train_smote, y_train_fold = smote.fit_resample(X_train_fold, y_train_fold)
 
         scaler = StandardScaler()
-        X_train_smote = scaler.fit_transform(X_train_fold)
+        X_train_smote = scaler.fit_transform(X_train_smote)
         X_val_fold = scaler.transform(X_val_fold)
 
         X_train_tensor = torch.tensor(X_train_smote, dtype=torch.float32)
-        y_train_tensor = torch.tensor(y_train_fold, dtype=torch.long)
         X_val_tensor = torch.tensor(X_val_fold, dtype=torch.float32)
-        y_val_tensor = torch.tensor(y_val_fold, dtype=torch.long)
 
-        if num_classes == 2:
+        if multi_label:
+            y_train_tensor = torch.tensor(y_train_fold, dtype=torch.float32)
+            y_val_tensor = torch.tensor(y_val_fold, dtype=torch.float32)
+        elif num_classes == 2:
             y_train_tensor = torch.tensor(y_train_fold, dtype=torch.float32).unsqueeze(1)
             y_val_tensor = torch.tensor(y_val_fold, dtype=torch.float32).unsqueeze(1)
+        else:
+            y_train_tensor = torch.tensor(y_train_fold, dtype=torch.long)
+            y_val_tensor = torch.tensor(y_val_fold, dtype=torch.long)
 
         train_loader = torch.utils.data.DataLoader(torch.utils.data.TensorDataset(X_train_tensor, y_train_tensor),
                                                    batch_size=8, shuffle=True)
@@ -95,7 +127,11 @@ def cv_function(config, seed):
         fc1_input_dim = calculate_fc1_input_dim(aux_model, X_train_smote, conv_order, data, leaf_to_species,
                                                 node_weights)
 
-        if num_classes == 2:
+        if multi_label:
+            model = PhyloSpec(fc1_input_dim=fc1_input_dim, num_res_blocks=1, channel=config.ch,
+                              kernel_size=config.ks, out_feature=n_labels).to('cpu')
+            criterion = torch.nn.BCEWithLogitsLoss(pos_weight=pos_weight_tensor)
+        elif num_classes == 2:
             model = PhyloSpec(fc1_input_dim=fc1_input_dim, num_res_blocks=1, channel=config.ch,
                               kernel_size=config.ks, out_feature=1).to('cpu')
             criterion = torch.nn.BCEWithLogitsLoss()
@@ -108,13 +144,15 @@ def cv_function(config, seed):
 
         best_model, test_group, all_preds = cv_train_and_evaluate(
             model, train_loader, val_loader, criterion, optimizer, conv_order, data, leaf_to_species, node_weights,
-            num_epochs=config.ep, num_classes=num_classes
+            num_epochs=config.ep, num_classes=num_classes, multi_label=multi_label
         )
 
         y_val_encoded = np.array(test_group)
         y_score = np.array(all_preds)
 
-        if num_classes == 2:
+        if multi_label:
+            roc_auc = calculate_roc_auc(y_val_encoded, y_score, num_classes, multi_label=True)
+        elif num_classes == 2:
             roc_auc = [calculate_roc_auc(y_val_encoded, y_score, num_classes)]
         else:
             roc_auc = calculate_roc_auc(y_val_encoded, y_score, num_classes)

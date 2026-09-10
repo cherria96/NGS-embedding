@@ -1,0 +1,9 @@
+{
+  "mode": "asv",
+  "out_dir": "output/genus_tree/asv",
+  "arms": [
+    "arc",
+    "bac",
+    "merged"
+  ]
+}

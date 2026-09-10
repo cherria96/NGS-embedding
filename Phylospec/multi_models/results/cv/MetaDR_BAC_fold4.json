@@ -1,0 +1,42 @@
+{
+  "model": "MetaDR",
+  "domain": "BAC",
+  "per_flag": {
+    "acid_accumulation": {
+      "accuracy": 0.9642857142857143,
+      "mcc": 0.0,
+      "roc_auc": NaN,
+      "aupr": NaN
+    },
+    "acid_base_balance": {
+      "accuracy": 0.7857142857142857,
+      "mcc": 0.4195731958391368,
+      "roc_auc": 0.8541666666666666,
+      "aupr": 0.54375
+    },
+    "ammonia_toxicity": {
+      "accuracy": 0.8571428571428571,
+      "mcc": 0.4166666666666667,
+      "roc_auc": 0.9375,
+      "aupr": 0.6083333333333333
+    },
+    "biogas_quality": {
+      "accuracy": 0.9285714285714286,
+      "mcc": -0.037037037037037035,
+      "roc_auc": 0.8888888888888888,
+      "aupr": 0.25
+    },
+    "buffer_capacity": {
+      "accuracy": 0.9642857142857143,
+      "mcc": 0.693888666488711,
+      "roc_auc": 0.962962962962963,
+      "aupr": 0.5
+    }
+  },
+  "macro": {
+    "accuracy": 0.9,
+    "mcc": 0.29861829839149545,
+    "roc_auc": 0.9108796296296295,
+    "aupr": 0.4755208333333333
+  }
+}

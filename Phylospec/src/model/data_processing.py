@@ -6,21 +6,28 @@ from sklearn.preprocessing import LabelEncoder
 import pandas as pd
 
 # Load data
-def load_and_preprocess_data(csv_path, tree):
+def load_and_preprocess_data(csv_path, tree, label_cols=None):
     data = pd.read_csv(csv_path)
+    if label_cols is None:
+        label_cols = [data.columns[-1]]
+    n_labels = len(label_cols)
     leaf_names = [leaf.name for leaf in tree.get_terminals()]
     matched_columns = [col for col in leaf_names if col in data.columns]
-    remaining_columns = [col for col in data.columns[1:-1] if col not in matched_columns]
-    # Reorder columns: ID | matched leaves | remaining features | label
-    ordered_columns = [data.columns[0]] + matched_columns + remaining_columns + [data.columns[-1]]
+    remaining_columns = [col for col in data.columns[1:-n_labels] if col not in matched_columns]
+    # Reorder columns: ID | matched leaves | remaining features | label(s)
+    ordered_columns = [data.columns[0]] + matched_columns + remaining_columns + label_cols
     data = data[ordered_columns]
-    X = data.iloc[:, 1:-1].values
-    y = data.iloc[:, -1].values
+    X = data.iloc[:, 1:-n_labels].values
+    y = data.iloc[:, -1].values if n_labels == 1 else data[label_cols].values
+
     y_encoded, encoder = encode_labels(y)
     return X, y_encoded, encoder, data
 
 # Encode class labels to numeric values
 def encode_labels(y):
+    if np.ndim(y) == 2:
+        # Multi-label: columns are already binary (0/1) flags, no LabelEncoder needed
+        return np.asarray(y, dtype=np.float32), None
     encoder = LabelEncoder()
     y_encoded = encoder.fit_transform(y)
     class_mapping = dict(zip(encoder.classes_, range(len(encoder.classes_))))
@@ -32,7 +39,7 @@ def match_leaf_nodes(tree, data):
     leaf_to_species = {}
     for leaf in tree.get_terminals():
         leaf_name = leaf.name
-        for species in data.columns[1:-1]:
+        for species in data.columns[1:]:
             if species in leaf_name:
                 leaf_to_species[leaf_name] = species
                 break
@@ -101,15 +108,18 @@ def save_node_features_with_pickle(node_features, node_relations, node_weights, 
         pickle.dump(combined_data, f)
 
 # Handling unclassified species through advanced taxonomy
-def process_unclassified_features(tree, abundance_table, taxonomy_path):
+def process_unclassified_features(tree, abundance_table, taxonomy_path, label_cols=None):
+    if label_cols is None:
+        label_cols = [abundance_table.columns[-1]]
     table = abundance_table.copy()
-    group_col = table.pop(table.columns[-1])  # Save the label column
+    group_cols = table[label_cols].copy()  # Save the label column(s)
+    table = table.drop(columns=label_cols)
     taxonomy_table = pd.read_csv(taxonomy_path)
 
     unclassified_features = [col for col in abundance_table.columns if 'Unclassified' in col or 'unclassified' in col]
 
     if not unclassified_features:
-        table[abundance_table.columns[-1]] = group_col
+        table[label_cols] = group_cols
         return table, tree
 
     for feature in unclassified_features:
@@ -144,12 +154,14 @@ def process_unclassified_features(tree, abundance_table, taxonomy_path):
                 table[species] = average_abundance
         table.drop(columns=[feature], inplace=True)
 
-    table[abundance_table.columns[-1]] = group_col
+    table[label_cols] = group_cols
     return table, tree
 
-def tree_p(csv_file_path, nwk_file_path):
+def tree_p(csv_file_path, nwk_file_path, label_cols=None):
     df = pd.read_csv(csv_file_path)
-    feature_columns = df.columns[1:-1].tolist()
+    if label_cols is None:
+        label_cols = [df.columns[-1]]
+    feature_columns = df.columns[1:-len(label_cols)].tolist()
 
     tree = PhyloTree(nwk_file_path, format=1)
 

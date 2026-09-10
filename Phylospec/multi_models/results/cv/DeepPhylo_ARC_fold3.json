@@ -1,0 +1,42 @@
+{
+  "model": "DeepPhylo",
+  "domain": "ARC",
+  "per_flag": {
+    "acid_base_balance": {
+      "accuracy": 0.9259259259259259,
+      "mcc": 0.7065217391304348,
+      "roc_auc": 0.9565217391304348,
+      "aupr": 0.7708333333333333
+    },
+    "buffer_capacity": {
+      "accuracy": 0.9629629629629629,
+      "mcc": 0.0,
+      "roc_auc": NaN,
+      "aupr": NaN
+    },
+    "acid_accumulation": {
+      "accuracy": 0.9629629629629629,
+      "mcc": 0.0,
+      "roc_auc": NaN,
+      "aupr": NaN
+    },
+    "ammonia_toxicity": {
+      "accuracy": 0.8888888888888888,
+      "mcc": 0.6063726140217525,
+      "roc_auc": 0.8727272727272727,
+      "aupr": 0.61
+    },
+    "biogas_quality": {
+      "accuracy": 0.9259259259259259,
+      "mcc": 0.0,
+      "roc_auc": 0.6,
+      "aupr": 0.2976190476190476
+    }
+  },
+  "macro": {
+    "accuracy": 0.9333333333333332,
+    "mcc": 0.26257887063043744,
+    "roc_auc": 0.8097496706192359,
+    "aupr": 0.559484126984127
+  }
+}

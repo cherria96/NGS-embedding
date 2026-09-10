@@ -1,0 +1,122 @@
+{
+  "input_features": 15161,
+  "features_absent_from_tree": 0,
+  "features_after_filter": 567,
+  "protected_features_retained": 96,
+  "reads_retained_pct": 79.01,
+  "classification_rate_all_features": {
+    "domain": {
+      "features_pct": 93.9,
+      "reads_pct": 97.7
+    },
+    "phylum": {
+      "features_pct": 92.3,
+      "reads_pct": 97.1
+    },
+    "class": {
+      "features_pct": 89.3,
+      "reads_pct": 95.6
+    },
+    "order": {
+      "features_pct": 88.5,
+      "reads_pct": 96.8
+    },
+    "family": {
+      "features_pct": 84.6,
+      "reads_pct": 95.8
+    },
+    "genus": {
+      "features_pct": 67.8,
+      "reads_pct": 88.2
+    },
+    "species": {
+      "features_pct": 7.1,
+      "reads_pct": 9.8
+    }
+  },
+  "classification_rate_after_filter": {
+    "domain": {
+      "features_pct": 98.9,
+      "reads_pct": 97.9
+    },
+    "phylum": {
+      "features_pct": 98.4,
+      "reads_pct": 97.3
+    },
+    "class": {
+      "features_pct": 96.5,
+      "reads_pct": 95.8
+    },
+    "order": {
+      "features_pct": 97.4,
+      "reads_pct": 97.2
+    },
+    "family": {
+      "features_pct": 95.2,
+      "reads_pct": 96.4
+    },
+    "genus": {
+      "features_pct": 81.1,
+      "reads_pct": 89.7
+    },
+    "species": {
+      "features_pct": 8.5,
+      "reads_pct": 9.4
+    }
+  },
+  "genera_on_pruned_tree": 180,
+  "genera_non_monophyletic": 28,
+  "worst_genera": [
+    [
+      "Methanolinea",
+      5
+    ],
+    [
+      "Syntrophomonas",
+      4
+    ],
+    [
+      "Candidatus_Cloacimonas",
+      4
+    ],
+    [
+      "Methanosaeta",
+      3
+    ],
+    [
+      "Smithella",
+      3
+    ],
+    [
+      "Proteiniphilum",
+      3
+    ],
+    [
+      "Methanomethylovorans",
+      2
+    ],
+    [
+      "SJA-28",
+      2
+    ],
+    [
+      "DTU014",
+      2
+    ],
+    [
+      "Christensenellaceae_R-7_group",
+      2
+    ]
+  ],
+  "phylospec_audit": {
+    "features_matching_a_tip": 567,
+    "features_routed_to_step2_bypass": 0,
+    "columns_named_unclassified": [],
+    "max_branch_length": 0.95,
+    "branches_ge_1_negative_node_weight": 0,
+    "substring_ambiguous_feature_names": []
+  },
+  "output_features": 567,
+  "largest_group": 1,
+  "mode": "asv"
+}

@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip3 list *)",
+      "Bash(qiime --version)",
+      "Bash(python3 -c \"import sklearn; print\\('sklearn', sklearn.__version__\\)\")",
+      "Bash(python3 -c \"import Bio; print\\('biopython', Bio.__version__\\)\")",
+      "Bash(python3 -c \"import ete3; print\\('ete3 ok'\\)\")",
+      "Bash(python3 -c \"import dendropy; print\\('dendropy ok'\\)\")",
+      "Bash(python3 -c \"import sys; print\\(sys.executable\\)\")",
+      "Bash(python3 -c \"import sys; sys.path.insert\\(0,'Phylospec'\\); import reduce_features_for_tree_models\")",
+      "Read(//Users/sujinchoi/anaconda3/**)",
+      "Bash(conda env *)",
+      "Bash(curl -sI --max-time 5 https://data.qiime2.org)",
+      "Bash(awk '{print $NF, $5}')",
+      "Bash(python3 -c ' *)",
+      "Bash(pip3 --version)",
+      "Bash(pip3 install *)",
+      "Bash(python3 -c \"import build_merged\")",
+      "Bash(python3 -c \"import prepare_qiime_inputs\")",
+      "Bash(mkdir -p output/genus_tree/genus)",
+      "Bash(python3 prepare_qiime_inputs.py ARC -o output/genus_tree/genus/arc_input)",
+      "Bash(python3 Phylospec/reduce_features_for_tree_models.py -c output/genus_tree/genus/arc_input_abundance.csv -t data/qiimeresult/ARC/rooted-tree.nwk -x output/genus_tree/genus/arc_input_taxonomy.csv -o output/genus_tree/genus/arc --mode genus --safe-ids --protect archaea)",
+      "Bash(python3 prepare_qiime_inputs.py BAC -o output/genus_tree/genus/bac_input)",
+      "Bash(time python3 Phylospec/reduce_features_for_tree_models.py -c output/genus_tree/genus/bac_input_abundance.csv -t data/qiimeresult/BAC/rooted-tree.nwk -x output/genus_tree/genus/bac_input_taxonomy.csv -o output/genus_tree/genus/bac --mode genus --safe-ids --protect archaea)",
+      "Bash(python3 build_merged.py -o output/genus_tree/genus/merged_build)",
+      "Bash(rm -rf output/genus_tree/genus_autorun)",
+      "Bash(time python3 run_genus_tree_pipeline.py --mode genus --out-dir output/genus_tree/genus_autorun)",
+      "Bash(GENUS_TREE_TEST_DIR=\"$\\(pwd\\)/output/genus_tree/phylo\" python3 -m pytest tests/test_invariants.py -q)"
+    ]
+  }
+}

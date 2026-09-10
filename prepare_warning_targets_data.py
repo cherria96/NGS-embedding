@@ -16,6 +16,10 @@ For each domain (ARC, BAC, merged dual-domain) this produces:
   - Phylospec/example/warnings_{domain}/{flag}/example_train.csv
     Phylospec/example/warnings_{domain}/{flag}/example_test.csv
         (SampleID, <features>, Group in {"Normal","Warning"})
+  - Phylospec/example/warnings_{domain}/multi_output/example_train.csv
+    Phylospec/example/warnings_{domain}/multi_output/example_test.csv
+        (SampleID, <features>, <5 flag columns as 0/1>, for Phylo-Spec's
+        multi-output/multi-label mode, i.e. all 5 flags predicted at once)
 
 Both model families use the *same* train/eval sample split per domain
 (multilabel-stratified, to keep at least some positives of every rare flag
@@ -163,6 +167,25 @@ def write_phylospec_csvs(out_dir, X, y_matrix, sample_ids, feature_names, train_
         print(f"    {flag_name}: train warning={n_pos_train}/{len(train_idx)}  eval warning={n_pos_eval}/{len(eval_idx)}")
 
 
+def write_phylospec_multi_csv(out_dir, X, y_matrix, sample_ids, feature_names, train_idx, eval_idx):
+    """Combined multi-label CSV for Phylo-Spec's multi-output mode: one CSV
+    per domain with all 5 flags as trailing numeric (0/1) columns, using the
+    same train/eval split as write_phylospec_csvs so results are comparable."""
+    multi_dir = os.path.join(out_dir, "multi_output")
+    os.makedirs(multi_dir, exist_ok=True)
+    flag_names = [c.replace("warning_", "") for c in LABEL_COLS]
+    df = pd.DataFrame(X, columns=feature_names)
+    df.insert(0, "SampleID", sample_ids)
+    for li, flag in enumerate(flag_names):
+        df[flag] = y_matrix[:, li].astype(int)
+    df.iloc[train_idx].to_csv(os.path.join(multi_dir, "example_train.csv"), index=False)
+    df.iloc[eval_idx].to_csv(os.path.join(multi_dir, "example_test.csv"), index=False)
+    for li, flag in enumerate(flag_names):
+        n_pos_train = int((y_matrix[train_idx, li] == 1).sum())
+        n_pos_eval = int((y_matrix[eval_idx, li] == 1).sum())
+        print(f"    {flag}: train warning={n_pos_train}/{len(train_idx)}  eval warning={n_pos_eval}/{len(eval_idx)}")
+
+
 def write_deepphylo_npys(out_dir, X, y_matrix, feature_names, sample_ids, C, train_idx, eval_idx):
     os.makedirs(out_dir, exist_ok=True)
     np.save(os.path.join(out_dir, "X_train.npy"), X[train_idx].astype(np.float32))
@@ -205,6 +228,7 @@ def build_single_domain(domain, labels, site_map):
     os.makedirs(ps_out, exist_ok=True)
     Phylo.write(tree, os.path.join(ps_out, "phylogeny.nwk"), "newick")
     write_phylospec_csvs(ps_out, X, y_matrix, sample_ids, feature_names, train_idx, eval_idx)
+    write_phylospec_multi_csv(ps_out, X, y_matrix, sample_ids, feature_names, train_idx, eval_idx)
 
 
 def build_merged(labels, site_map):
@@ -239,6 +263,7 @@ def build_merged(labels, site_map):
     os.makedirs(ps_out, exist_ok=True)
     Phylo.write(merged_tree, os.path.join(ps_out, "phylogeny.nwk"), "newick")
     write_phylospec_csvs(ps_out, X, y_matrix, sample_ids, feature_names, train_idx, eval_idx)
+    write_phylospec_multi_csv(ps_out, X, y_matrix, sample_ids, feature_names, train_idx, eval_idx)
 
 
 def main():

@@ -16,6 +16,11 @@ def get_config_train_test():
     parser.add_argument('-t', type=str, required=True, help="Path to the Newick format tree file.")
     parser.add_argument('-o', type=str, default='./output/',help="Directory to save model and features. Default is './output/'.")
     parser.add_argument('-taxo', type=str, help="Path to the taxonomy file.")
+    parser.add_argument('-labels', type=str, default=None,
+                        help="Comma-separated label column names for multi-output/multi-label "
+                             "classification (e.g. 'acid_base_balance,buffer_capacity,acid_accumulation,"
+                             "ammonia_toxicity,biogas_quality'). If omitted, single-label mode is used "
+                             "(the CSV's last column, as before).")
     # os.path.join(os.getcwd(), 'output') or './output/'
 
     parser.add_argument('-pkl', type=str, default=None,
