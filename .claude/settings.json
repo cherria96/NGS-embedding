@@ -34,7 +34,9 @@
       "Bash(git ls-remote *)",
       "Bash(git config *)",
       "Bash(git --version)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "Bash(cd \"/Users/sujinchoi/Library/CloudStorage/OneDrive-postech.ac.kr/학회/2026/ICAE/paper/Phylospec/src/model\" && wc -l *.py && echo \"---global_config---\" && cat ../global_config.py 2>&1 | head -50)",
+      "Read(//Users/sujinchoi/Library/CloudStorage/OneDrive-postech.ac.kr/학회/2026/ICAE/**)"
     ]
   }
 }

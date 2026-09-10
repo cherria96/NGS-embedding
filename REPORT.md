@@ -187,26 +187,47 @@ built in §1–§4 above (not the old ASV-level, naive-graft data) — ARC, BAC,
 merged as three separate arms, no syntrophy-shortcut information anywhere.
 `Phylospec/multi_models/build_inputs_from_genus_tables.py` converts this run's
 `output/genus_tree/genus_autorun/*_table.csv` + `*_tree.nwk` into each
-model's native input; `run_site_grouped_cv_benchmark.py` then wires all five
-model families (RF, CNN, PMCNN, MetaDR, DeepPhylo) into
-`evaluate_multilabel.evaluate_cv()` — site-grouped repeated CV (5 folds × 5
-repeats = 25 fits per model per domain, 375 total), pooled out-of-fold
+model's native input; `run_site_grouped_cv_benchmark.py` then wires all **six**
+model families — RF, CNN, PMCNN, MetaDR, DeepPhylo, and **Phylo-Spec itself**
+(`Phylospec/src/model/PhyloSpec.py`, the actual phylogeny-aware target model
+this whole pipeline was built for, not another baseline) — into
+`evaluate_multilabel.evaluate_cv()`: site-grouped repeated CV (5 folds × 5
+repeats = 25 fits per model per domain, 450 total), pooled out-of-fold
 scoring, per-flag MCC-tuned thresholds fit on validation-only scores, and
 macro F2 / AUPRC-lift reporting, exactly per Sec 5A. `pos_weight` capped at
 10 for every model (Sec 5A.4). Full per-flag tables (mean + 95% CI over the 5
 repeats) are in `Phylospec/multi_models/results/site_grouped_cv/results_
 <domain>_<model>.csv`; the macro-level summary is reproduced below.
 
-**Two environment fixes were needed to actually run this**, both applied:
-`RF-multilabel.py` didn't accept `--pos-weight-cap` (RF's imbalance handling
-is `class_weight='balanced'`, not a `pos_weight`, so the flag was simply never
-defined) — added as an accepted-but-unused argument for CLI uniformity across
-all five scripts. The installed `torch` (2.1.2) could not call `.numpy()` at
-all against the installed `numpy` (2.0.2) — a known ABI break, not specific to
-this code — fixed by upgrading to `torch` 2.8.0, matching this repo's own
-`requirements.txt` floor of `>=2.3.1`.
+**Environment / code fixes needed to actually run this, all applied:**
+- `RF-multilabel.py` didn't accept `--pos-weight-cap` (RF's imbalance handling
+  is `class_weight='balanced'`, not a `pos_weight` — the flag had simply never
+  been defined) — added as an accepted-but-unused argument for CLI uniformity.
+- The installed `torch` (2.1.2) could not call `.numpy()` at all against the
+  installed `numpy` (2.0.2) — a known ABI break — fixed by upgrading to
+  `torch` 2.8.0, matching this repo's own `requirements.txt` floor of
+  `>=2.3.1`.
+- **Phylo-Spec specifically** (`PhyloSpec_train_test.py`) needed three more
+  fixes: (1) it does `from Phylospec.src.model...` — an absolute import that
+  only resolves with the repo root on `PYTHONPATH`, not when run from inside
+  `Phylospec/`; the CV wrapper sets this per-subprocess. (2) `torch.load()`
+  defaults to `weights_only=True` since torch 2.6, which refuses to unpickle
+  the full saved model object this script writes (not a `state_dict`) — fixed
+  by passing `weights_only=False` explicitly (safe here: it only ever loads a
+  checkpoint this same run just wrote, never a third-party file). (3) its
+  multi-label `pos_weight` was **uncapped** (every other model caps at 10 per
+  Sec 5A.4) — added a `-pos_weight_cap` CLI option, now passed 10.0 for
+  comparability with the other five. Also found, not fixed (not on this
+  run's path): `test_model_function`'s plain (non-CV) multi-label metrics
+  branch references an undefined `hamming` variable — a pre-existing
+  `NameError` waiting to happen if that code path is ever exercised without
+  `-scores_out`.
+- Phylo-Spec ran at **10 epochs** (the script's own default) for runtime
+  reasons — the other five model families used 60–150. Its numbers below
+  should be read as a lower bound on its achievable performance on this data,
+  not a fully-tuned result; the other five got substantially more training.
 
-### Macro MCC / F2, all 15 (domain × model) combinations
+### Macro MCC / F2, all 18 (domain × model) combinations
 
 Mean over 5 repeats, [2.5th, 97.5th] percentile in brackets.
 
@@ -217,16 +238,19 @@ Mean over 5 repeats, [2.5th, 97.5th] percentile in brackets.
 | ARC | PMCNN | 0.150 [0.086, 0.204] | 0.326 [0.260, 0.378] | 0.186 | 1.68× |
 | ARC | MetaDR | **0.182** [0.143, 0.209] | **0.368** [0.336, 0.393] | 0.218 | 2.22× |
 | ARC | DeepPhylo | 0.031 [−0.037, 0.079] | 0.230 [0.095, 0.328] | 0.116 | 1.14× |
+| ARC | **Phylo-Spec** | 0.091 [0.064, 0.121] | 0.279 [0.216, 0.351] | 0.166 | 1.46× |
 | BAC | RF | 0.183 [0.147, 0.238] | 0.360 [0.319, 0.404] | 0.224 | 2.11× |
 | BAC | CNN | 0.183 [0.172, 0.192] | 0.378 [0.368, 0.395] | 0.197 | 1.75× |
 | BAC | PMCNN | **0.237** [0.202, 0.270] | **0.389** [0.341, 0.430] | 0.275 | 2.51× |
 | BAC | MetaDR | 0.221 [0.154, 0.265] | 0.379 [0.306, 0.431] | 0.235 | 2.16× |
 | BAC | DeepPhylo | 0.141 [0.056, 0.231] | 0.324 [0.189, 0.416] | 0.175 | 1.72× |
+| BAC | **Phylo-Spec** | 0.181 [0.081, 0.244] | 0.318 [0.215, 0.387] | 0.248 | 2.24× |
 | merged | RF | 0.161 [0.124, 0.188] | 0.351 [0.293, 0.388] | 0.222 | 2.17× |
 | merged | CNN | 0.183 [0.136, 0.217] | 0.334 [0.286, 0.386] | 0.241 | 2.03× |
 | merged | PMCNN | 0.197 [0.137, 0.232] | 0.373 [0.304, 0.414] | 0.214 | 1.94× |
 | merged | MetaDR | 0.182 [0.161, 0.192] | 0.365 [0.352, 0.397] | 0.234 | 1.97× |
 | merged | DeepPhylo | **0.220** [0.155, 0.273] | 0.370 [0.299, 0.461] | 0.273 | 4.25× |
+| merged | **Phylo-Spec** | 0.187 [0.103, 0.252] | 0.366 [0.266, 0.421] | 0.243 | 2.30× |
 
 Best macro MCC per domain in bold: **MetaDR on ARC**, **PMCNN on BAC**,
 **DeepPhylo on merged** — but note per Sec 5A.5's own rule ("a difference
@@ -234,6 +258,19 @@ between arms is only claimed if the repeat-level intervals separate"), most
 of these are *not* cleanly separated from their nearest competitor within the
 same domain (e.g. BAC's PMCNN 0.237 vs. MetaDR 0.221 overlap heavily) — read
 these as "roughly tied," not a ranked leaderboard.
+
+**Phylo-Spec itself never tops any domain**, but is never the worst either —
+it sits mid-pack on ARC (above CNN and DeepPhylo, below RF/PMCNN/MetaDR) and
+in the same overlapping cluster as RF/CNN/MetaDR on BAC and merged, with wide
+enough CIs that it isn't cleanly separated from most of them. Its merged-arm
+result (0.187 [0.103, 0.252]) is its best relative showing, consistent with
+DeepPhylo also doing best on merged (§ below) — both are the two model
+families that consume the tree/distance structure directly rather than
+treating features as an unordered vector, and both improve most from ARC to
+merged. Given the 10-vs-60–150 epoch gap noted above, this is not a claim
+that Phylo-Spec is weaker than the baselines in general — only that, at this
+epoch budget, on this dataset, it performs comparably to them rather than
+better.
 
 **What *is* cleanly separated, arm vs. arm, same model:**
 - **CNN, ARC vs. BAC**: 0.052 [0.027, 0.077] vs. 0.183 [0.172, 0.192] — no
@@ -267,7 +304,7 @@ up directly in the numbers, not a modelling failure.
 **Full per-flag tables** (AUPRC, AUPRC-lift, MCC, F2, precision, recall,
 tuned threshold, each mean + 95% CI): `Phylospec/multi_models/results/
 site_grouped_cv/results_<domain>_<model>.csv`, one file per row of the table
-above (15 files). Site/label support per domain:
+above (18 files). Site/label support per domain:
 `site_label_support_<domain>.csv` in the same directory.
 
 ## 8. What's still open

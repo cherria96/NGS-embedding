@@ -66,12 +66,15 @@ ROOT = os.path.join(PHYLOSPEC_DIR, "..")
 # built by prepare_warning_targets_data.py from raw ASV features under a
 # naive DOMAIN_CONNECT_BRANCH_LEN=1.0 graft (REPORT.md Sec 4).
 CSV_DATA_DIR = os.path.join(HERE, "input_for_all_models_genus")
+GENUS_DIR = os.path.join(ROOT, "output", "genus_tree", "genus_autorun")
 METADATA_PATH = os.path.join(ROOT, "data", "final", "metadata.csv")
 RESULTS_DIR = os.path.join(HERE, "results", "site_grouped_cv")
 DOMAINS = ["ARC", "BAC", "merged"]
-MODELS = ["RF", "CNN", "PMCNN", "MetaDR", "DeepPhylo"]
+MODELS = ["RF", "CNN", "PMCNN", "MetaDR", "DeepPhylo", "PhyloSpec"]
 POS_WEIGHT_CAP = 10.0
+PHYLOSPEC_EPOCHS = 10
 PY = sys.executable
+DOMAIN_TO_ARM = {"ARC": "arc", "BAC": "bac", "merged": "merged"}
 
 sys.path.insert(0, PHYLOSPEC_DIR)
 from evaluate_multilabel import LABEL_COLS, audit_site_label_support, evaluate_cv  # noqa: E402
@@ -114,8 +117,8 @@ def _deepphylo_col_order(dp_dir):
     return [raw_order.index(flag) for flag in FLAG_COLS]
 
 
-def run_subprocess(cmd):
-    subprocess.run(cmd, check=True, cwd=HERE)
+def run_subprocess(cmd, env=None):
+    subprocess.run(cmd, check=True, cwd=HERE, env=env)
 
 
 def make_csv_fit_predict(script, domain, combined_df, extra_args, scratch_root):
@@ -166,6 +169,49 @@ def make_deepphylo_fit_predict(domain, X_all, Y_all_raw, dp_dir, scratch_root):
     return fit_predict
 
 
+def make_phylospec_fit_predict(domain, combined_df, scratch_root):
+    """The actual Phylo-Spec model (Phylospec/src/model/PhyloSpec.py), not a
+    baseline comparator. Unlike the other 5 scripts, train/test are two
+    separate CLI invocations that share a saved model directory -- so this
+    calls 'train' once on tr, then 'test' twice (once on va, once on te)
+    against that same trained model, reading back each call's -scores_out.
+    Needs PYTHONPATH=<repo root> for its own `from Phylospec.src...` absolute
+    imports, which only resolve when the repo root is on sys.path."""
+    script = os.path.join(PHYLOSPEC_DIR, "src", "model", "PhyloSpec_train_test.py")
+    tree_path = os.path.join(GENUS_DIR, f"{DOMAIN_TO_ARM[domain]}_tree.nwk")
+    labels_arg = ",".join(FLAG_COLS)
+    env = dict(os.environ, PYTHONPATH=os.path.abspath(ROOT))
+
+    def fit_predict(tr, va, te, pos_weight):
+        with tempfile.TemporaryDirectory(dir=scratch_root) as tmp:
+            train_csv, val_csv, test_csv = (os.path.join(tmp, f"{s}.csv")
+                                            for s in ("train", "val", "test"))
+            combined_df.iloc[tr].to_csv(train_csv, index=False)
+            combined_df.iloc[va].to_csv(val_csv, index=False)
+            combined_df.iloc[te].to_csv(test_csv, index=False)
+            model_dir = os.path.join(tmp, "model") + os.sep
+            os.makedirs(model_dir, exist_ok=True)
+
+            run_subprocess([PY, script, "--PhyloSpec", "train",
+                            "-c", train_csv, "-t", tree_path, "-o", model_dir,
+                            "-labels", labels_arg, "-ep", str(PHYLOSPEC_EPOCHS),
+                            "-pos_weight_cap", str(POS_WEIGHT_CAP)], env=env)
+
+            val_scores_path = os.path.join(tmp, "val_scores.npy")
+            test_scores_path = os.path.join(tmp, "test_scores.npy")
+            run_subprocess([PY, script, "--PhyloSpec", "test",
+                            "-c", val_csv, "-t", tree_path, "-o", model_dir,
+                            "-labels", labels_arg, "-scores_out", val_scores_path], env=env)
+            run_subprocess([PY, script, "--PhyloSpec", "test",
+                            "-c", test_csv, "-t", tree_path, "-o", model_dir,
+                            "-labels", labels_arg, "-scores_out", test_scores_path], env=env)
+
+            val_scores = np.load(val_scores_path)
+            test_scores = np.load(test_scores_path)
+        return val_scores, test_scores
+    return fit_predict
+
+
 def build_fit_predict(model, domain, combined_df, X_all, Y_all_raw, dp_dir, scratch_root):
     d = os.path.join(CSV_DATA_DIR, f"Warnings_{domain}")
     if model == "RF":
@@ -184,6 +230,8 @@ def build_fit_predict(model, domain, combined_df, X_all, Y_all_raw, dp_dir, scra
                                     domain, combined_df, ["-t", tree], scratch_root)
     if model == "DeepPhylo":
         return make_deepphylo_fit_predict(domain, X_all, Y_all_raw, dp_dir, scratch_root)
+    if model == "PhyloSpec":
+        return make_phylospec_fit_predict(domain, combined_df, scratch_root)
     raise ValueError(model)
 
 

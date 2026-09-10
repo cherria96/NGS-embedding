@@ -76,6 +76,14 @@ def train_model_function(config, seed):
         pos_counts = y_train.sum(axis=0)
         neg_counts = y_train.shape[0] - pos_counts
         pos_weight = neg_counts / np.clip(pos_counts, 1, None)
+        cap = getattr(config, 'pos_weight_cap', None)
+        if cap:
+            # Uncapped, a rare flag (e.g. acid_accumulation, 4/140 positives)
+            # gets pos_weight ~34, which task Sec 5A.4 flags as destabilising
+            # training -- swamping the other four flags' gradient. Capped at
+            # 10 by default from run_site_grouped_cv_benchmark.py, matching
+            # the cap used for all 5 other model families in this benchmark.
+            pos_weight = np.clip(pos_weight, None, cap)
         pos_weight_tensor = torch.tensor(pos_weight, dtype=torch.float32)
     else:
         # SMOTE's default k_neighbors=5 needs >=6 samples in the smallest class;
@@ -199,13 +207,31 @@ def test_model_function(config, seed):
     test_loader = DataLoader(test_dataset, batch_size=64, shuffle=False)
 
     # Load trained model
-    final_model = torch.load(config.o + 'train_model.pth')
+    # torch>=2.6 defaults torch.load to weights_only=True, which refuses to
+    # unpickle a full nn.Module (this file's own train_model_function() saves
+    # the whole model object, not a state_dict). The checkpoint being loaded
+    # here was always just written by this same run's own train step, so
+    # weights_only=False is safe -- it is never loading a third-party file.
+    final_model = torch.load(config.o + 'train_model.pth', weights_only=False)
 
     print("Testing the model on the test set...")
 
     # Predict and evaluate
     y_true, y_scores = evaluate_model_on_test(final_model, test_loader, conv_order, data_features, leaf_to_species,
                                               node_weights, num_classes=num_classes, multi_label=multi_label)
+
+    if getattr(config, 'scores_out', None):
+        # Site-grouped CV path (task Sec 5A): dump raw, unthresholded scores
+        # instead of scoring inline -- threshold tuning (on val) and final
+        # metrics (on pooled test) are centralized in
+        # run_site_grouped_cv_benchmark.py so every model is scored
+        # identically. y_scores is already sigmoid-ed per flag (multi_label)
+        # or per class (evaluate_model_on_test), so no further transform
+        # is needed before saving.
+        os.makedirs(os.path.dirname(os.path.abspath(config.scores_out)), exist_ok=True)
+        np.save(config.scores_out, y_scores)
+        print(f"Saved raw scores {y_scores.shape} -> {config.scores_out}")
+        return
 
     # Compute AUC / AUPR / MCC scores
     if multi_label:

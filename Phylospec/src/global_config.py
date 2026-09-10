@@ -25,6 +25,17 @@ def get_config_train_test():
 
     parser.add_argument('-pkl', type=str, default=None,
                         help="Optional path to a .pkl file with predefined 5/10-fold splits.")
+    parser.add_argument('-pos_weight_cap', type=float, default=None,
+                        help="Cap the per-flag BCEWithLogitsLoss pos_weight (train mode, "
+                             "multi-label only) at this value. Uncapped by default; the "
+                             "site-grouped CV benchmark passes 10.0 to match the other "
+                             "5 model families (task Sec 5A.4).")
+    parser.add_argument('-scores_out', type=str, default=None,
+                        help="'test' mode only: dump raw (unthresholded) y_scores as a .npy "
+                             "to this path instead of computing/printing metrics inline. For "
+                             "site-grouped CV: run 'test' once per split (val, test) against "
+                             "the same trained model in -o, pointing -scores_out at a "
+                             "different file each time.")
     return parser.parse_args()
 
 
