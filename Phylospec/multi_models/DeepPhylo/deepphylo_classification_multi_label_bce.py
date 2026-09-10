@@ -105,14 +105,14 @@ def train_bce(X_train, Y_train, X_eval, Y_eval, phy_embedding, pos_weight,
 
 
 def main(data_dir, out_path, domain, seed=1234, epochs=150, hidden_size=32,
-         use_pos_weight=True, pos_weight_cap=10.0, val_dir=None, scores_out_dir=None):
+         use_pos_weight=True, pos_weight_cap=10.0, val_dir=None, scores_out_dir=None,
+         embedding_path=None):
     set_seed(seed)
 
     X_train = np.load(os.path.join(data_dir, "X_train.npy"))
     X_eval = np.load(os.path.join(data_dir, "X_eval.npy"))
     Y_train = np.load(os.path.join(data_dir, "Y_train.npy")).astype(np.float32)
     Y_eval = np.load(os.path.join(data_dir, "Y_eval.npy")).astype(np.float32)
-    C = np.load(os.path.join(data_dir, "c.npy"))
 
     label_path = os.path.join(data_dir, "label_names.txt")
     if os.path.exists(label_path):
@@ -120,7 +120,25 @@ def main(data_dir, out_path, domain, seed=1234, epochs=150, hidden_size=32,
     else:
         flag_names = DEFAULT_FLAGS
 
-    phy_embedding = reducer(C, "pca", hidden_size, whiten=True)
+    if embedding_path:
+        # Cross-domain syntrophy injection (Phylospec/CROSS_DOMAIN_INJECTION_
+        # BY_MODEL.md Sec 1): a precomputed embedding -- either the fused
+        # (with-injection) or tree-only (without, nested baseline) PCA from
+        # build_cross_domain_graph.py -- replaces the usual "PCA the raw
+        # patristic matrix here" step entirely. Do not also pass c.npy-based
+        # computation; the whole point is that the *same* reduction method
+        # (plain PCA, not classical MDS -- a pre-existing quirk, see the doc)
+        # was already applied identically to both arms upstream, so nothing
+        # here should re-derive or re-fit anything.
+        phy_embedding = np.load(embedding_path)
+        if phy_embedding.shape[1] != hidden_size:
+            print(f"NOTE: --embedding_path has dim {phy_embedding.shape[1]}, "
+                 f"not --hidden_size {hidden_size}; using the embedding's own "
+                 f"dimensionality (hidden_size is only a PCA target when no "
+                 f"embedding_path is given).")
+    else:
+        C = np.load(os.path.join(data_dir, "c.npy"))
+        phy_embedding = reducer(C, "pca", hidden_size, whiten=True)
 
     # pos_weight cap defaults to 10.0 to match evaluate_multilabel.pos_weight_
     # from_labels()'s recommendation (task Sec 5A.4); override via --pos-weight-cap.
@@ -167,9 +185,17 @@ if __name__ == "__main__":
     parser.add_argument("--pos-weight-cap", type=float, default=10.0)
     parser.add_argument("--val_dir", default=None, help="Dir with X_val.npy, Y_val.npy (inner-validation split)")
     parser.add_argument("--scores-out-dir", default=None)
+    parser.add_argument("--embedding_path", default=None,
+                        help="Cross-domain syntrophy injection (CROSS_DOMAIN_INJECTION_BY_"
+                             "MODEL.md Sec 1): a precomputed (n_taxa, d) embedding .npy from "
+                             "build_cross_domain_graph.py, replacing the usual PCA-of-c.npy "
+                             "step. Pass the *_treeonly_DeepPhylo_embeding.npy for the "
+                             "without-injection arm, *_DeepPhylo_embeding.npy for with -- "
+                             "same code path, neutral vs. fused input, per the doc's own rule.")
     args = parser.parse_args()
     if not args.scores_out_dir and not args.out:
         parser.error("--out is required unless --scores-out-dir is given")
     main(args.data_dir, args.out, args.domain, epochs=args.epochs,
          use_pos_weight=not args.no_pos_weight, pos_weight_cap=args.pos_weight_cap,
-         val_dir=args.val_dir, scores_out_dir=args.scores_out_dir)
+         val_dir=args.val_dir, scores_out_dir=args.scores_out_dir,
+         embedding_path=args.embedding_path)

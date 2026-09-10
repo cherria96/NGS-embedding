@@ -1,0 +1,22 @@
+{
+  "n_samples": 138,
+  "n_features_kept": 221,
+  "n_bacteria": 194,
+  "n_archaea": 19,
+  "conditioned_on": [
+    "HRT_d",
+    "T_C",
+    "Q_total_Tpy",
+    "substrate_avg_TS",
+    "substrate_avg_COD"
+  ],
+  "cross_domain_pairs_tested": 3686,
+  "edges_raw": 95,
+  "edges_conditioned": 95,
+  "edges_lost_to_conditioning": 55,
+  "edges_gained_by_conditioning": 55,
+  "mean_rho_kept": 0.3693037472342191,
+  "spearman_weight_vs_patristic": 0.17263437849944008,
+  "archaea_with_no_partner": 0,
+  "shortcut_scale": 0.25
+}

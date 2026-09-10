@@ -1,0 +1,6 @@
+label,n_pos_samples,n_pos_sites,n_sites
+acid_accumulation,1,1,8
+acid_base_balance,5,2,8
+ammonia_toxicity,4,2,8
+biogas_quality,2,1,8
+buffer_capacity,1,1,8

@@ -270,6 +270,49 @@ def evaluate_cv(y, sites, fit_predict, label_names=None, n_splits=5, n_repeats=5
             "repeats": repeats}
 
 
+def evaluate_holdout(y, sites, fit_predict, train_idx, test_idx, label_names=None,
+                     seed=42, beta=2.0, pos_weight_cap=10.0):
+    """Single fixed train:test split, not CV -- for when the split itself is
+    externally given (e.g. a specific held-out set of sites shared with
+    another pipeline for comparability) rather than something evaluate_cv()
+    should generate on its own.
+
+    Same `fit_predict(train_idx, val_idx, test_idx, pos_weight) -> (val_scores,
+    test_scores)` contract as evaluate_cv(): `train_idx`/`test_idx` here are the
+    OUTER split (fixed, caller-supplied); this carves its own inner
+    validation split out of `train_idx` ONLY (via split_train_val, exactly as
+    evaluate_cv() does per fold) for MCC threshold tuning, so no test
+    prediction ever contributes to the operating point that scores it.
+
+    Unlike evaluate_cv(), there is no pooling and no repeat spread -- one
+    split in, one score out, point estimates only (no confidence interval).
+    Report this plainly as a single train:test result, not as a substitute
+    for the repeated-CV protocol's statistical backing (task Sec 5A.2's
+    concern about rare flags landing outside the test fold applies with EQUAL
+    force to a single held-out split, more so since there is no repeat to
+    average over -- check audit_site_label_support() against `test_idx`
+    specifically before trusting any flag's holdout number).
+    """
+    y = np.asarray(y)
+    sites = np.asarray(sites)
+    names = list(label_names) if label_names is not None else LABEL_COLS
+    train_idx = np.asarray(train_idx)
+    test_idx = np.asarray(test_idx)
+
+    tr_rel, va_rel = split_train_val(y[train_idx], sites[train_idx], seed=seed)
+    tr, va = train_idx[tr_rel], train_idx[va_rel]
+    pw = pos_weight_from_labels(y[tr], cap=pos_weight_cap)
+    val_scores, test_scores = fit_predict(tr, va, test_idx, pw)
+
+    thr = tune_thresholds_mcc(y[va], np.asarray(val_scores))
+    result = score_multilabel(y[test_idx], np.asarray(test_scores), thr, names, beta=beta)
+    result["train_idx"] = tr
+    result["inner_val_idx"] = va
+    result["test_idx"] = test_idx
+    result["thresholds"] = thr.tolist()
+    return result
+
+
 def audit_site_label_support(y, sites, label_names=None):
     """How many SITES carry a positive for each flag.
 
