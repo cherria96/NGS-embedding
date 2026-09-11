@@ -54,7 +54,7 @@
     }
   },
   "rescale_factor_applied": 0.2869876294530682,
-  "n_common_samples": 138,
+  "n_common_samples": 134,
   "n_arc_features": 1776,
   "n_bac_features": 13385,
   "merged_abundance_units": "per-domain-closed relative abundance, NOT raw reads -- each sample sums to 1.0 within ARC and 1.0 within BAC (2.0 total), by design (Sec 5.6). reduce_features_for_tree_models.py's --protect-min-abundance / --min-abundance thresholds and its 'abundance conserved under collapsing' behaviour both operate correctly on this, but 'total reads conserved' (task invariant 4) means 'total relative-abundance units conserved' for this arm specifically, not literal read counts -- note this in REPORT.md."

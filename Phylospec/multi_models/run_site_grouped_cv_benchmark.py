@@ -66,15 +66,18 @@ ROOT = os.path.join(PHYLOSPEC_DIR, "..")
 # built by prepare_warning_targets_data.py from raw ASV features under a
 # naive DOMAIN_CONNECT_BRANCH_LEN=1.0 graft (REPORT.md Sec 4).
 CSV_DATA_DIR = os.path.join(HERE, "input_for_all_models_genus")
-GENUS_DIR = os.path.join(ROOT, "output", "genus_tree", "genus_autorun")
 METADATA_PATH = os.path.join(ROOT, "data", "final", "metadata.csv")
 RESULTS_DIR = os.path.join(HERE, "results", "site_grouped_cv")
 DOMAINS = ["ARC", "BAC", "merged"]
 MODELS = ["RF", "CNN", "PMCNN", "MetaDR", "DeepPhylo", "PhyloSpec"]
 POS_WEIGHT_CAP = 10.0
-PHYLOSPEC_EPOCHS = 60
+# Epoch cap + early-stopping patience for the 3 neural models that take a
+# validation split during training (MetaDR, DeepPhylo, PhyloSpec). RF/CNN/
+# PMCNN are unaffected (CNN has its own fixed schedule, RF/PMCNN don't train
+# by epoch). None disables early stopping (always trains the full NN_EPOCHS).
+NN_EPOCHS = 60
+NN_PATIENCE = 10
 PY = sys.executable
-DOMAIN_TO_ARM = {"ARC": "arc", "BAC": "bac", "merged": "merged"}
 
 sys.path.insert(0, PHYLOSPEC_DIR)
 from evaluate_multilabel import LABEL_COLS, audit_site_label_support, evaluate_cv  # noqa: E402
@@ -161,7 +164,10 @@ def make_deepphylo_fit_predict(domain, X_all, Y_all_raw, dp_dir, scratch_root):
             shutil.copyfile(label_path, os.path.join(tmp, "label_names.txt"))
             scores_dir = os.path.join(tmp, "scores")
             cmd = [PY, script, "--data_dir", tmp, "--val_dir", tmp, "--domain", domain,
-                   "--pos-weight-cap", str(POS_WEIGHT_CAP), "--scores-out-dir", scores_dir]
+                   "--pos-weight-cap", str(POS_WEIGHT_CAP), "--scores-out-dir", scores_dir,
+                   "--epochs", str(NN_EPOCHS)]
+            if NN_PATIENCE:
+                cmd += ["--patience", str(NN_PATIENCE)]
             run_subprocess(cmd)
             val_scores = np.load(os.path.join(scores_dir, "val_scores.npy"))[:, col_perm]
             test_scores = np.load(os.path.join(scores_dir, "test_scores.npy"))[:, col_perm]
@@ -178,7 +184,11 @@ def make_phylospec_fit_predict(domain, combined_df, scratch_root):
     Needs PYTHONPATH=<repo root> for its own `from Phylospec.src...` absolute
     imports, which only resolve when the repo root is on sys.path."""
     script = os.path.join(PHYLOSPEC_DIR, "src", "model", "PhyloSpec_train_test.py")
-    tree_path = os.path.join(GENUS_DIR, f"{DOMAIN_TO_ARM[domain]}_tree.nwk")
+    # CSV_DATA_DIR/Warnings_<domain>/phylogeny.nwk is a copy of the same tree
+    # MetaDR/PMCNN use for this domain (written by build_inputs_from_
+    # genus_tables.py / build_inputs_from_asv_tables.py), so PhyloSpec's tree
+    # source follows CSV_DATA_DIR automatically -- no separate genus-only path.
+    tree_path = os.path.join(CSV_DATA_DIR, f"Warnings_{domain}", "phylogeny.nwk")
     labels_arg = ",".join(FLAG_COLS)
     env = dict(os.environ, PYTHONPATH=os.path.abspath(ROOT))
 
@@ -192,10 +202,13 @@ def make_phylospec_fit_predict(domain, combined_df, scratch_root):
             model_dir = os.path.join(tmp, "model") + os.sep
             os.makedirs(model_dir, exist_ok=True)
 
-            run_subprocess([PY, script, "--PhyloSpec", "train",
-                            "-c", train_csv, "-t", tree_path, "-o", model_dir,
-                            "-labels", labels_arg, "-ep", str(PHYLOSPEC_EPOCHS),
-                            "-pos_weight_cap", str(POS_WEIGHT_CAP)], env=env)
+            train_cmd = [PY, script, "--PhyloSpec", "train",
+                        "-c", train_csv, "-t", tree_path, "-o", model_dir,
+                        "-labels", labels_arg, "-ep", str(NN_EPOCHS),
+                        "-pos_weight_cap", str(POS_WEIGHT_CAP)]
+            if NN_PATIENCE:
+                train_cmd += ["-val_c", val_csv, "-patience", str(NN_PATIENCE)]
+            run_subprocess(train_cmd, env=env)
 
             val_scores_path = os.path.join(tmp, "val_scores.npy")
             test_scores_path = os.path.join(tmp, "test_scores.npy")
@@ -226,8 +239,11 @@ def build_fit_predict(model, domain, combined_df, X_all, Y_all_raw, dp_dir, scra
                                     domain, combined_df, ["--list", pmcnn_list], scratch_root)
     if model == "MetaDR":
         tree = os.path.join(d, "phylogeny.nwk")
+        extra = ["-t", tree, "--epochs", str(NN_EPOCHS)]
+        if NN_PATIENCE:
+            extra += ["--patience", str(NN_PATIENCE)]
         return make_csv_fit_predict(os.path.join(HERE, "MetaDR", "MetaDR-multilabel.py"),
-                                    domain, combined_df, ["-t", tree], scratch_root)
+                                    domain, combined_df, extra, scratch_root)
     if model == "DeepPhylo":
         return make_deepphylo_fit_predict(domain, X_all, Y_all_raw, dp_dir, scratch_root)
     if model == "PhyloSpec":
@@ -296,5 +312,26 @@ if __name__ == "__main__":
     ap.add_argument("--models", nargs="+", default=MODELS, choices=MODELS)
     ap.add_argument("--n-splits", type=int, default=5)
     ap.add_argument("--n-repeats", type=int, default=5)
+    ap.add_argument("--csv-data-dir", default=CSV_DATA_DIR,
+                    help="Per-domain Warnings_<domain>/{table.csv,phylogeny.nwk,...} root. "
+                         "Default: the genus-level arm. Point this at "
+                         "input_for_all_models_asv (built by "
+                         "build_inputs_from_asv_tables.py) to run against the original, "
+                         "ungrafted ASV-level features/tree instead.")
+    ap.add_argument("--results-dir", default=RESULTS_DIR,
+                    help="Where to write results_<domain>_<model>.csv etc. Default: "
+                         "results/site_grouped_cv.")
+    ap.add_argument("--epochs", type=int, default=NN_EPOCHS,
+                    help="Epoch cap for MetaDR/DeepPhylo/PhyloSpec.")
+    ap.add_argument("--patience", type=int, default=NN_PATIENCE,
+                    help="Early-stopping patience (epochs) for MetaDR/DeepPhylo/PhyloSpec, "
+                         "using the inner validation split. 0 disables early stopping.")
     a = ap.parse_args()
+    # run_subprocess() runs child scripts with cwd=HERE, so a relative
+    # --csv-data-dir/--results-dir (resolved against the invoking shell's cwd)
+    # must be made absolute here, or paths built from it break.
+    CSV_DATA_DIR = os.path.abspath(a.csv_data_dir)
+    RESULTS_DIR = os.path.abspath(a.results_dir)
+    NN_EPOCHS = a.epochs
+    NN_PATIENCE = a.patience
     run_all(a.domains, a.models, a.n_splits, a.n_repeats)

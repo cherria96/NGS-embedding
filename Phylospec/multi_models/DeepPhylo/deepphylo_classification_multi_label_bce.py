@@ -43,11 +43,17 @@ def clean_flag_names(label_names):
 
 def fit_deepphylo(X_train, Y_train, phy_embedding, pos_weight,
                    hidden_size=32, kernel_size_conv=5, kernel_size_pool=1,
-                   lr=5e-2, batch_size=8, epochs=150, activation=nn.ReLU()):
+                   lr=5e-2, batch_size=8, epochs=150, activation=nn.ReLU(),
+                   X_val=None, Y_val=None, patience=None):
     """Fit and return (model, device, train_dataset) -- separated from
     prediction so the same fitted model can be scored on both the inner-val
     and outer-test splits without retraining (site-grouped CV path).
-    train_dataset is returned only to reuse its custom_collate_fn."""
+    train_dataset is returned only to reuse its custom_collate_fn.
+
+    When X_val/Y_val and patience are given, validation BCE loss is checked
+    after every epoch and training stops once it hasn't improved for
+    `patience` epochs, restoring the best-val-loss weights instead of always
+    running the full `epochs`."""
     device = "cuda" if torch.cuda.is_available() else "cpu"
     n_labels = Y_train.shape[1]
 
@@ -65,6 +71,18 @@ def fit_deepphylo(X_train, Y_train, phy_embedding, pos_weight,
     criterion = nn.BCEWithLogitsLoss(pos_weight=pos_weight.to(device) if pos_weight is not None else None)
     optimizer = optim.AdamW(model.parameters(), lr=lr)
 
+    val_loader = None
+    if X_val is not None and patience:
+        val_dataset = DeepPhyDataset(phy_embedding, X_val, Y_val)
+        val_loader = DataLoader(
+            val_dataset, batch_size=batch_size, shuffle=False,
+            collate_fn=train_dataset.custom_collate_fn,
+        )
+
+    best_state = None
+    best_val_loss = float("inf")
+    epochs_no_improve = 0
+
     for epoch in range(epochs):
         model.train()
         for batch in train_loader:
@@ -74,6 +92,32 @@ def fit_deepphylo(X_train, Y_train, phy_embedding, pos_weight,
             loss = criterion(logits, batch["y"].reshape(-1, n_labels))
             loss.backward()
             optimizer.step()
+
+        if val_loader is not None:
+            model.eval()
+            val_loss_sum, n_seen = 0.0, 0
+            with torch.no_grad():
+                for batch in val_loader:
+                    batch = {key: val.to(device) for key, val in batch.items()}
+                    logits = model(batch["X"], batch["nonzero_indices"])
+                    y = batch["y"].reshape(-1, n_labels)
+                    val_loss_sum += criterion(logits, y).item() * y.shape[0]
+                    n_seen += y.shape[0]
+            val_loss = val_loss_sum / max(n_seen, 1)
+
+            if val_loss < best_val_loss - 1e-6:
+                best_val_loss = val_loss
+                best_state = {k: v.detach().clone() for k, v in model.state_dict().items()}
+                epochs_no_improve = 0
+            else:
+                epochs_no_improve += 1
+                if epochs_no_improve >= patience:
+                    print(f"Early stopping at epoch {epoch + 1}/{epochs} "
+                         f"(no val-loss improvement for {patience} epochs)")
+                    break
+
+    if best_state is not None:
+        model.load_state_dict(best_state)
 
     return model, device, train_dataset
 
@@ -106,7 +150,7 @@ def train_bce(X_train, Y_train, X_eval, Y_eval, phy_embedding, pos_weight,
 
 def main(data_dir, out_path, domain, seed=1234, epochs=150, hidden_size=32,
          use_pos_weight=True, pos_weight_cap=10.0, val_dir=None, scores_out_dir=None,
-         embedding_path=None):
+         patience=None, embedding_path=None):
     set_seed(seed)
 
     X_train = np.load(os.path.join(data_dir, "X_train.npy"))
@@ -151,8 +195,14 @@ def main(data_dir, out_path, domain, seed=1234, epochs=150, hidden_size=32,
     else:
         pos_weight = None
 
+    X_val = Y_val = None
+    if val_dir:
+        X_val = np.load(os.path.join(val_dir, "X_val.npy"))
+        Y_val = np.load(os.path.join(val_dir, "Y_val.npy")).astype(np.float32)
+
     model, device, train_dataset = fit_deepphylo(
-        X_train, Y_train, phy_embedding, pos_weight, hidden_size=hidden_size, epochs=epochs)
+        X_train, Y_train, phy_embedding, pos_weight, hidden_size=hidden_size, epochs=epochs,
+        X_val=X_val, Y_val=Y_val, patience=patience)
     y_prob = predict_deepphylo(model, device, train_dataset, X_eval, Y_eval, phy_embedding)
 
     if scores_out_dir:
@@ -163,9 +213,7 @@ def main(data_dir, out_path, domain, seed=1234, epochs=150, hidden_size=32,
         os.makedirs(scores_out_dir, exist_ok=True)
         np.save(os.path.join(scores_out_dir, "test_scores.npy"), y_prob)
         np.save(os.path.join(scores_out_dir, "test_y.npy"), Y_eval)
-        if val_dir:
-            X_val = np.load(os.path.join(val_dir, "X_val.npy"))
-            Y_val = np.load(os.path.join(val_dir, "Y_val.npy")).astype(np.float32)
+        if X_val is not None:
             val_prob = predict_deepphylo(model, device, train_dataset, X_val, Y_val, phy_embedding)
             np.save(os.path.join(scores_out_dir, "val_scores.npy"), val_prob)
             np.save(os.path.join(scores_out_dir, "val_y.npy"), Y_val)
@@ -185,6 +233,9 @@ if __name__ == "__main__":
     parser.add_argument("--pos-weight-cap", type=float, default=10.0)
     parser.add_argument("--val_dir", default=None, help="Dir with X_val.npy, Y_val.npy (inner-validation split)")
     parser.add_argument("--scores-out-dir", default=None)
+    parser.add_argument("--patience", type=int, default=None,
+                        help="Early-stopping patience in epochs, using --val_dir's "
+                             "validation loss. None (default) disables early stopping.")
     parser.add_argument("--embedding_path", default=None,
                         help="Cross-domain syntrophy injection (CROSS_DOMAIN_INJECTION_BY_"
                              "MODEL.md Sec 1): a precomputed (n_taxa, d) embedding .npy from "
@@ -198,4 +249,4 @@ if __name__ == "__main__":
     main(args.data_dir, args.out, args.domain, epochs=args.epochs,
          use_pos_weight=not args.no_pos_weight, pos_weight_cap=args.pos_weight_cap,
          val_dir=args.val_dir, scores_out_dir=args.scores_out_dir,
-         embedding_path=args.embedding_path)
+         patience=args.patience, embedding_path=args.embedding_path)

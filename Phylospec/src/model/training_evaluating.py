@@ -84,8 +84,18 @@ def cv_train_and_evaluate(model, train_loader, test_loader, criterion, optimizer
     return model, test_group, all_preds
 
 # Standard training loop
-def train_model(model, train_loader, criterion, optimizer, conv_order, data, leaf_to_species, node_weights, num_epochs, num_classes, device=torch.device('cpu')):
+def train_model(model, train_loader, criterion, optimizer, conv_order, data, leaf_to_species, node_weights, num_epochs, num_classes, device=torch.device('cpu'), val_inputs=None, patience=None):
+    """val_inputs, when given, is a dict with keys X, y, conv_order, data,
+    leaf_to_species, node_weights describing a held-out validation split
+    (its own tree parse, matching test_model_function()'s pattern -- see
+    PhyloSpec_train_test.py). If patience is also set, validation loss is
+    checked after every epoch and training stops once it hasn't improved for
+    `patience` epochs, restoring the best-val-loss weights seen so far
+    instead of always running the full num_epochs."""
     train_losses = []
+    best_state = None
+    best_val_loss = float('inf')
+    epochs_no_improve = 0
 
     for epoch in range(num_epochs):
         model.train()
@@ -114,5 +124,35 @@ def train_model(model, train_loader, criterion, optimizer, conv_order, data, lea
 
         train_loss = running_loss / len(train_loader.dataset)
         train_losses.append(train_loss)
+
+        if val_inputs is not None and patience:
+            model.eval()
+            with torch.no_grad():
+                v_inputs = val_inputs['X'].to(device)
+                if isinstance(criterion, torch.nn.BCEWithLogitsLoss):
+                    v_labels = val_inputs['y'].float()
+                    if v_labels.dim() == 1:
+                        v_labels = v_labels.unsqueeze(1)
+                else:
+                    v_labels = val_inputs['y'].long()
+                v_labels = v_labels.to(device)
+                v_outputs = model(v_inputs, val_inputs['conv_order'], {}, val_inputs['data'],
+                                  val_inputs['leaf_to_species'], v_labels, val_inputs['node_weights'])
+                val_loss = criterion(v_outputs, v_labels).item()
+            model.clear_accumulated_features()
+
+            if val_loss < best_val_loss - 1e-6:
+                best_val_loss = val_loss
+                best_state = {k: t.detach().clone() for k, t in model.state_dict().items()}
+                epochs_no_improve = 0
+            else:
+                epochs_no_improve += 1
+                if epochs_no_improve >= patience:
+                    print(f"Early stopping at epoch {epoch + 1}/{num_epochs} "
+                         f"(no val-loss improvement for {patience} epochs)")
+                    break
+
+    if best_state is not None:
+        model.load_state_dict(best_state)
 
     return model

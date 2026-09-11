@@ -89,6 +89,28 @@ def calculate_node_weights(tree):
             node_weights[clade.name] = 1.0  # Default weight if branch length is missing
     return node_weights
 
+# CROSS_DOMAIN_INJECTION_BY_MODEL.md Arm 2a: reweight each internal node by the
+# fraction of retained cross-domain (bacterium, archaeon) edges that have at
+# least one endpoint inside that node's clade. alpha=0 is the identity
+# (bit-for-bit the same node_weights the without-syntrophy arm uses).
+def augment_node_weights_cross_domain(tree, node_weights, edges_df, alpha):
+    if not alpha or edges_df is None or len(edges_df) == 0:
+        return node_weights
+    pairs = list(zip(edges_df['bacterium'].astype(str), edges_df['archaeon'].astype(str)))
+    n_edges = len(pairs)
+    augmented = dict(node_weights)
+    for clade in tree.find_clades():
+        if clade.name not in node_weights:
+            continue
+        leaves = {t.name for t in clade.get_terminals()}
+        if not leaves:
+            continue
+        f = sum(1 for b, a in pairs if b in leaves or a in leaves) / n_edges
+        if f:
+            augmented[clade.name] = node_weights[clade.name] * (1 + alpha * f)
+    return augmented
+
+
 # Save learned node features along with tree structure and labels to a pickle file
 def save_node_features_with_pickle(node_features, node_relations, node_weights, train_group, output_file):
     node_features_dict = {}

@@ -3,6 +3,7 @@ import sys
 import json
 import torch
 import numpy as np
+import pandas as pd
 import joblib
 from Bio import Phylo
 from imblearn.over_sampling import SMOTE
@@ -11,7 +12,8 @@ from sklearn.preprocessing import StandardScaler, LabelEncoder
 from torch import nn
 from torch.utils.data import TensorDataset, DataLoader
 from Phylospec.src.model.data_processing import load_and_preprocess_data, match_leaf_nodes, assign_unique_names, get_conv_order, \
-    calculate_node_weights, save_node_features_with_pickle, process_unclassified_features, tree_p
+    calculate_node_weights, save_node_features_with_pickle, process_unclassified_features, tree_p, \
+    augment_node_weights_cross_domain
 from Phylospec.src.model.PhyloSpec import PhyloSpec, AuxiliaryModel, calculate_fc1_input_dim
 sys.path.append('./')
 from Phylospec.src.global_config import get_config_train_test
@@ -35,6 +37,17 @@ def parse_label_cols(config):
     """Comma-separated -labels arg -> list of column names, or None for single-label mode."""
     raw = getattr(config, 'labels', None)
     return [s.strip() for s in raw.split(',')] if raw else None
+
+def apply_cross_domain_injection(config, tree, node_weights):
+    """CROSS_DOMAIN_INJECTION_BY_MODEL.md Arm 2a. No-op (returns node_weights
+    unchanged) unless both -cross_domain_edges and a nonzero -alpha are given,
+    so the without-syntrophy arm is the same code path at its neutral value."""
+    edges_path = getattr(config, 'cross_domain_edges', None)
+    alpha = getattr(config, 'alpha', 0.0) or 0.0
+    if not edges_path or not alpha:
+        return node_weights
+    edges_df = pd.read_csv(edges_path)
+    return augment_node_weights_cross_domain(tree, node_weights, edges_df, alpha)
 
 def train_model_function(config, seed):
     """Train PhyloSpec model on the training set and save results."""
@@ -71,6 +84,7 @@ def train_model_function(config, seed):
     leaf_to_species = match_leaf_nodes(tree, data_features)
     nodes, parents, conv_order, node_relations = get_conv_order(tree)
     node_weights = calculate_node_weights(tree)
+    node_weights = apply_cross_domain_injection(config, tree, node_weights)
 
     if multi_label:
         # imblearn's SMOTE only supports single-column labels; skip resampling
@@ -131,12 +145,49 @@ def train_model_function(config, seed):
 
     optimizer = torch.optim.Adam(final_model.parameters(), lr=config.lr, weight_decay=0.0001)
 
+    # Optional validation split for early stopping (mirrors test_model_function's
+    # own tree parse + preprocessing, since the val CSV is a different set of
+    # rows over the same feature columns as the training tree).
+    val_inputs = None
+    val_csv_path = getattr(config, 'val_c', None)
+    patience = getattr(config, 'patience', None)
+    if val_csv_path:
+        val_tree = tree_p(val_csv_path, newick_path, label_cols=label_cols)
+        val_tree = Phylo.read(val_tree, 'newick')
+        val_tree = assign_unique_names(val_tree)
+
+        X_val, y_val, _, data_val = load_and_preprocess_data(val_csv_path, val_tree, label_cols=label_cols)
+        if any("Unclassified" in col or "unclassified" in col for col in data_val.columns):
+            data_val, val_tree = process_unclassified_features(val_tree, data_val, taxonomy_path, label_cols=label_cols_resolved)
+            X_val = data_val.iloc[:, 1:-n_labels].values
+            if multi_label:
+                y_val = data_val[label_cols_resolved].values.astype(np.float32)
+            else:
+                y_val = label_encoder.fit_transform(data_val.iloc[:, -1].values)
+
+        val_data_features = data_val.drop(columns=label_cols_resolved)
+        val_leaf_to_species = match_leaf_nodes(val_tree, val_data_features)
+        _, _, val_conv_order, _ = get_conv_order(val_tree)
+        val_node_weights = calculate_node_weights(val_tree)
+        val_node_weights = apply_cross_domain_injection(config, val_tree, val_node_weights)
+
+        X_val = scaler.transform(X_val)
+        val_inputs = {
+            'X': torch.tensor(X_val, dtype=torch.float32),
+            'y': torch.tensor(y_val, dtype=torch.float32 if multi_label else torch.long),
+            'conv_order': val_conv_order,
+            'data': val_data_features,
+            'leaf_to_species': val_leaf_to_species,
+            'node_weights': val_node_weights,
+        }
+
     print("Training the model on the entire training set...")
 
     # Start training loop
     final_model = train_model(
         final_model, train_loader, criterion, optimizer, conv_order, data_features, leaf_to_species,
-        node_weights=node_weights, num_epochs=config.ep, num_classes=num_classes, device=device
+        node_weights=node_weights, num_epochs=config.ep, num_classes=num_classes, device=device,
+        val_inputs=val_inputs, patience=patience
     )
 
     # Save with node features
@@ -197,6 +248,7 @@ def test_model_function(config, seed):
     leaf_to_species = match_leaf_nodes(tree, data_features)
     nodes, parents, conv_order, node_relations = get_conv_order(tree)
     node_weights = calculate_node_weights(tree)
+    node_weights = apply_cross_domain_injection(config, tree, node_weights)
 
     # Normalize test data using training scaler
     scaler = joblib.load(config.o + 'StandardScaler.pkl')

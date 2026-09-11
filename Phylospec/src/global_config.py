@@ -36,6 +36,26 @@ def get_config_train_test():
                              "site-grouped CV: run 'test' once per split (val, test) against "
                              "the same trained model in -o, pointing -scores_out at a "
                              "different file each time.")
+    parser.add_argument('-cross_domain_edges', type=str, default=None,
+                        help="CROSS_DOMAIN_INJECTION_BY_MODEL.md Arm 2a: path to a CSV with "
+                             "'bacterium','archaeon' columns (leaf names on -t's tree) listing "
+                             "retained cross-domain edges. When given together with -alpha, "
+                             "each internal node's weight is multiplied by "
+                             "(1 + alpha * f(v)), f(v) = fraction of these edges with >=1 "
+                             "endpoint in clade(v). Must be passed identically to 'train' and "
+                             "'test' -- omit (or pass -alpha 0) for the without-syntrophy arm.")
+    parser.add_argument('-alpha', type=float, default=0.0,
+                        help="Arm 2a effect size for -cross_domain_edges (default 0.0 = "
+                             "baseline node weights, bit-for-bit).")
+    parser.add_argument('-val_c', type=str, default=None,
+                        help="'train' mode only: path to a validation CSV (same column "
+                             "layout as -c). When given together with -patience, training "
+                             "checks validation loss after every epoch and stops early "
+                             "(restoring the best-val-loss weights) instead of always "
+                             "running the full -ep epochs.")
+    parser.add_argument('-patience', type=int, default=None,
+                        help="Early-stopping patience in epochs (train mode, requires "
+                             "-val_c). None (default) disables early stopping.")
     return parser.parse_args()
 
 

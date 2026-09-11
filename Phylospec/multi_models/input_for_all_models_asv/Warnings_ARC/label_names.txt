@@ -1,0 +1,5 @@
+acid_accumulation
+acid_base_balance
+ammonia_toxicity
+biogas_quality
+buffer_capacity
