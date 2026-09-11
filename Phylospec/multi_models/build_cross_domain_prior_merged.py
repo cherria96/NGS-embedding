@@ -2,15 +2,33 @@
 """
 build_cross_domain_prior_merged.py -- one-time step for
 run_cross_domain_injection_benchmark.py: infer the Bacteria x Archaea
-association network on the merged-domain genus table (per
-CROSS_DOMAIN_INJECTION_BY_MODEL.md) and write everything the three per-model
-injection arms need, all keyed to the SAME feature order as
-input_for_all_models_genus/Warnings_merged/{table.csv,X.npy}:
+association network on the merged-domain genus table and write everything
+the three per-model injection arms need, all keyed to the SAME feature order
+as input_for_all_models_genus/Warnings_merged/{table.csv,X.npy}.
+
+--method selects how the association network itself is estimated (same
+downstream test/sparsification either way -- see parse_args()):
+  conditioned  (default) -- the original analysis: CLR abundances are
+               residualised against reactor operating covariates first, so a
+               bacterium-archaeon pair that merely tracks the same operating
+               conditions is not counted as an edge.
+  cooccurrence -- a simpler, standard co-occurrence-network analysis: raw
+               CLR-abundance correlation, no covariate conditioning.
+
+Output files (same names regardless of --method -- point different --method
+runs at different out_prefix values to keep both on disk):
 
   <out>_Dp.npy           (n_feat, n_feat) patristic distance matrix
   <out>_Dfused.npy       (n_feat, n_feat) syntrophy-shortcut distance matrix
   <out>_edges.csv         retained cross-domain edges (bacterium, archaeon, rho, q)
-  <out>_seriation.txt     optimal-leaf-ordering seriation of Dfused, one feature/line
+  <out>_seriation.txt     MetaDR with-arm column order: features placed on a 2-D
+                          grid (spectral embedding + Hungarian assignment,
+                          CLAUDE_CODE_TASK_cross_domain_injection.md Sec B.2 --
+                          supersedes an earlier 1-D optimal-leaf-ordering
+                          seriation of Dfused), one feature per line,
+                          pre-compensated for transform_image()'s zigzag so the
+                          written order lands each feature at its intended
+                          (row, col) after MetaDR's own reshape+zigzag.
   <out>_diagnostics.json
 
 Domain (Bacteria/Archaea) per feature is derived one of two ways:
@@ -32,8 +50,8 @@ import sys
 
 import numpy as np
 import pandas as pd
-from scipy.cluster.hierarchy import linkage, optimal_leaf_ordering, leaves_list
-from scipy.spatial.distance import squareform
+from scipy.optimize import linear_sum_assignment
+from scipy.sparse.linalg import eigsh
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PHYLOSPEC_DIR = os.path.join(HERE, "..")
@@ -129,6 +147,17 @@ def parse_args():
                     help="max bacterial partners retained per archaeon.")
     ap.add_argument("--fdr", type=float, default=0.05,
                     help="BH-adjusted q-value threshold for edge retention.")
+    ap.add_argument("--method", choices=["conditioned", "cooccurrence"], default="conditioned",
+                    help="'conditioned' (default, original analysis): residualise CLR "
+                         "abundances against reactor operating covariates (COVARIATES) before "
+                         "testing association, so a pair sharing only response to operating "
+                         "conditions (not a direct relationship) is not counted as an edge. "
+                         "'cooccurrence': skip residualisation and test raw CLR-abundance "
+                         "correlation directly -- the simpler, standard co-occurrence-network "
+                         "analysis. Both use the same Spearman-plus-permutation test and "
+                         "FDR/topk sparsification (cross_domain_network/sparsify); only the "
+                         "input matrix differs. Output file names are unaffected -- point "
+                         "different --method runs at different out_prefix values to keep both.")
     return ap.parse_args()
 
 
@@ -159,15 +188,19 @@ def main():
     X = table[feats].to_numpy(np.float64)
     Z = clr(X)
 
-    meta = pd.read_csv(METADATA_PATH, encoding="utf-8-sig").set_index("SampleID")
-    meta = meta.reindex(table["SampleID"].astype(str))
-    Dm, dm_names = design_matrix(meta, COVARIATES)
-    Zc = residualise(Z, Dm)
+    if args.method == "conditioned":
+        meta = pd.read_csv(METADATA_PATH, encoding="utf-8-sig").set_index("SampleID")
+        meta = meta.reindex(table["SampleID"].astype(str))
+        Dm, dm_names = design_matrix(meta, COVARIATES)
+        Z_tested = residualise(Z, Dm)
+    else:  # cooccurrence: plain CLR-abundance correlation, no covariate conditioning
+        dm_names = None
+        Z_tested = Z
 
-    rho, q = cross_domain_network(Zc[:, bac_idx], Zc[:, arc_idx], n_perm=500, seed=0)
+    rho, q = cross_domain_network(Z_tested[:, bac_idx], Z_tested[:, arc_idx], n_perm=500, seed=0)
     keep = sparsify(rho, q, fdr=args.fdr, topk=args.topk, positive_only=True)
-    print(f"cross-domain pairs tested: {rho.size}, retained edges: {int(keep.sum())} "
-          f"(fdr<={args.fdr}, topk={args.topk})", file=sys.stderr)
+    print(f"method={args.method}: cross-domain pairs tested: {rho.size}, retained edges: "
+          f"{int(keep.sum())} (fdr<={args.fdr}, topk={args.topk})", file=sys.stderr)
 
     # shortcut_distance() also returns the plain patristic matrix Dp every
     # call (it does not depend on `scale`), so the without-syntrophy arm's Dp
@@ -188,21 +221,92 @@ def main():
     }).sort_values("rho", ascending=False)
     edges.to_csv(f"{out}_edges.csv", index=False)
 
-    # MetaDR with-arm: optimal-leaf-ordering seriation of Dfused.
-    Z_link = linkage(squareform(Dfused, checks=False), method="average")
-    Z_olo = optimal_leaf_ordering(Z_link, squareform(Dfused, checks=False))
-    order = leaves_list(Z_olo)
+    # MetaDR with-arm (CLAUDE_CODE_TASK_cross_domain_injection.md Sec B.2):
+    # place taxa on a 2-D grid instead of a 1-D seriation. A 1-D ordering
+    # gives each taxon only two neighbours, so --topk 5 cross-domain
+    # partners can never all land in one conv's footprint; a direct 2-D
+    # placement lets a taxon have up to 8 immediate neighbours (24 within a
+    # 5x5 footprint, matching the first conv's receptive field).
+    #
+    # W: p x p symmetric similarity. Within-domain: patristic distance Dp
+    # converted to a similarity with the SAME (scale, mean_pat) reference
+    # shortcut_distance() uses for its cross-domain shortcut-edge lengths --
+    # inverting that transform (length = scale*mean_pat*(1-s)) gives
+    # s = 1 - Dp/(scale*mean_pat), clipped to >=0. Cross-domain: retained
+    # edges get their actual estimated rho (already a similarity in (0,1]
+    # via sparsify(..., positive_only=True)), overriding whatever the
+    # patristic-distance proxy would have given that pair.
+    mean_pat = Dp[np.triu_indices_from(Dp, 1)].mean()
+    W = np.clip(1.0 - Dp / (args.scale * mean_pat), 0.0, None)
+    np.fill_diagonal(W, 0.0)
+    for b, a, r in zip(bi, ai, rho[bi, ai]):
+        i, j = bac_idx[b], arc_idx[a]
+        W[i, j] = W[j, i] = float(r)
+
+    L = np.diag(W.sum(1)) - W
+    _, vecs = eigsh(L, k=3, which="SM")
+    Y = vecs[:, 1:3]
+    n = int(np.ceil(len(feats) ** 0.5))
+    Y = (Y - Y.min(0)) / np.ptp(Y, 0) * (n - 1)
+
+    # Restrict assignment targets to the p grid cells closest to the grid
+    # centre, leaving the (n*n - p) most peripheral cells as the padding
+    # cells transform_image() zero-fills -- an edge/corner cell has the
+    # fewest real neighbours in any conv footprint anyway, so this is where
+    # padding costs the least real adjacency (task doc: "do not scatter them
+    # through the middle").
+    all_cells = np.array([(r, c) for r in range(n) for c in range(n)], float)
+    centre = (n - 1) / 2.0
+    central_order = np.argsort(np.abs(all_cells - centre).sum(1))  # L1 distance from centre
+    cells = all_cells[central_order[:len(feats)]]
+
+    cost = ((Y[:, None, :] - cells[None, :, :]) ** 2).sum(-1)
+    assign_rows, assign_cols = linear_sum_assignment(cost)
+
+    # transform_image() reshapes the order file row-major into img_size x
+    # img_size THEN reverses every odd row (zigzag). Pre-compensate here so
+    # a taxon assigned to grid (r, c) above ends up physically at (r, c)
+    # AFTER that reversal, not before it -- write it into the order file at
+    # column (n-1-c) instead of c on odd target rows.
+    order = [None] * (n * n)
+    grid_pos = {}
+    for i, cell_idx in zip(assign_rows, assign_cols):
+        r, c = divmod(int(cell_idx), n)
+        grid_pos[feats[i]] = (r, c)
+        flat_col = (n - 1 - c) if (r % 2 == 1) else c
+        order[r * n + flat_col] = feats[i]
     with open(f"{out}_seriation.txt", "w") as f:
-        f.write("\n".join(feats[i] for i in order))
+        f.write("\n".join(name for name in order if name is not None))
+
+    # Placement-quality: fraction of retained edges whose two endpoints land
+    # within one 5x5 conv footprint (Chebyshev distance <=2) of each other
+    # in the FINAL (post-zigzag-compensation) grid. If this is low, the
+    # injection did not happen and the with-arm is uninformative regardless
+    # of score (task doc Sec B.2).
+    n_edges_total = int(keep.sum())
+    n_within_footprint = 0
+    for b, a in zip(bi, ai):
+        bac_name, arc_name = feats[bac_idx[b]], feats[arc_idx[a]]
+        (rb, cb), (ra, ca) = grid_pos[bac_name], grid_pos[arc_name]
+        if max(abs(rb - ra), abs(cb - ca)) <= 2:
+            n_within_footprint += 1
+    placement_quality = n_within_footprint / n_edges_total if n_edges_total else None
+    print(f"MetaDR 2-D placement quality: {n_within_footprint}/{n_edges_total} retained edges "
+          f"within one 5x5 footprint ({placement_quality if placement_quality is None else round(placement_quality, 3)})",
+          file=sys.stderr)
 
     diag = {
         "n_features": len(feats), "n_bacteria": int(len(bac_idx)), "n_archaea": int(len(arc_idx)),
         "n_other": int(len(feats) - len(bac_idx) - len(arc_idx)),
-        "covariates": COVARIATES, "scale": args.scale, "topk": args.topk, "fdr": args.fdr,
+        "method": args.method,
+        "covariates": COVARIATES if args.method == "conditioned" else None,
+        "scale": args.scale, "topk": args.topk, "fdr": args.fdr,
         "cross_domain_pairs_tested": int(rho.size),
         "edges_retained": int(keep.sum()),
         "mean_rho_kept": float(rho[keep].mean()) if keep.any() else None,
         "archaea_with_no_partner": int((keep.sum(axis=0) == 0).sum()),
+        "metadr_grid_size": n,
+        "metadr_placement_quality": placement_quality,
     }
     json.dump(diag, open(f"{out}_diagnostics.json", "w"), indent=2)
     print(json.dumps(diag, indent=2), file=sys.stderr)

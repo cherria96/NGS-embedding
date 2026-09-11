@@ -100,7 +100,9 @@ implemented in `Phylospec/evaluate_multilabel.py` (`site_grouped_cv()`,
      — a **separate, later research question** (syntrophic cross-domain prior
      injection ablation), consumes the already-built genus merged table. Not
      part of the core 4-benchmark-family comparison; only touch when asked
-     about cross-domain injection specifically.
+     about cross-domain injection specifically. See "Cross-domain injection"
+     below for the current (per-model) injection mechanisms and what's still
+     unimplemented from the spec.
    - `run_cv_benchmark.py`, `run_multilabel_benchmark.py`, `Multi-comparison-models.py`,
      `build_cv_folds.py`, `build_site_grouped_cv_folds.py` — **superseded**,
      kept for reference only. Don't build on these.
@@ -119,6 +121,87 @@ missing `iterstrat`). Use conda envs:
   table filtering, fragment-insertion SEPP). SEPP reference:
   `data/qiimeresult/sepp-refs-silva-128.qza` (gitignored, ~181MB, don't
   re-download unless missing).
+
+## Cross-domain injection
+
+Read `CLAUDE_CODE_TASK_cross_domain_injection.md` (repo root) before touching
+this. It **supersedes** `Phylospec/CROSS_DOMAIN_INJECTION_BY_MODEL.md` (the
+older doc — its PhyloSpec node-weight-reweighting and MetaDR 1-D-seriation
+mechanisms are explicitly replaced, not complementary approaches). The idea:
+`build_cross_domain_prior_merged.py` estimates which bacterium↔archaeon pairs
+covary after conditioning on operating variables (`{prefix}_edges.csv`:
+bacterium, archaeon, rho, q), and each model gets that edge set injected
+through a *different* mechanism because each model reads the tree
+differently:
+
+- **DeepPhylo** — unaffected by this task; its channel is `--embedding_path`
+  in `deepphylo_classification_multi_label_bce.py` (swap the whole
+  PCA-of-patristic-matrix step for a precomputed fused/tree-only embedding).
+- **Phylo-Spec** (`Phylospec/src/model/data_processing.py:inject_cross_domain_edges`,
+  wired via `PhyloSpec_train_test.py`'s `-cross_domain_edges` CLI flag) —
+  appends one synthetic `(children=[bac_leaf, arc_leaf], parent=f"syn_{i}")`
+  merge to `conv_order` **per retained edge**, weight `node_weights[f"syn_{i}"]
+  = abs(rho)`. Always appended last (conv_order has no topological sort — by
+  the time these run, every leaf and every real internal node is already in
+  `feature_map`, since `forward()` never pops it — a DAG walk, not a tree
+  walk). **No modified Newick file, ever.** `-alpha` no longer exists —
+  edge weight is fixed at `abs(rho)`, not a tunable scalar (that was the old
+  doc's mechanism).
+- **MetaDR** (`build_cross_domain_prior_merged.py`, consumed via
+  `MetaDR-multilabel.py --seriation-order`, **only** on the post-order/zigzag
+  branch — the level-order branch is left untouched as an internal control)
+  — places taxa on a 2-D grid (spectral embedding of a fused similarity graph
+  `W` + Hungarian assignment to grid cells) instead of a 1-D
+  optimal-leaf-ordering seriation, so a taxon can have up to 8 grid neighbors
+  (not 2), letting `--topk`-many cross-domain partners actually land in one
+  5×5 conv footprint. **Critical detail**: `transform_image()` reshapes the
+  order-file's flat list row-major into `img_size × img_size` *then* reverses
+  every odd row (zigzag) — so the order file must be written with each
+  taxon's column **pre-flipped** on odd target rows (`col = n-1-c if
+  target_row % 2 else c`), or the zigzag scrambles the carefully-computed 2-D
+  layout back into something arbitrary. Reports a placement-quality number
+  (fraction of retained edges whose two endpoints land within one 5×5
+  footprint of each other in the final grid) in `{prefix}_diagnostics.json`
+  as `metadr_placement_quality` — it came out **13.6%** on the current
+  134-sample merged data (330 features, 19×19 grid, topk=5), i.e. most edges
+  do *not* end up co-located; report this honestly rather than treating it as
+  a bug, per the task doc — a low number means that *arm* is uninformative,
+  not that the code is wrong.
+
+**What the task doc asks for that is NOT implemented yet** (scope was "fix
+the injection mechanism + named PhyloSpec bugs", not the full spec):
+- No parameter-matched **null arm** (`plus_null`) for either model — task doc
+  §2's null-edge-list export (permuted-weight rewiring in
+  `build_cross_domain_graph.py`) was never wired into
+  `build_cross_domain_prior_merged.py`. Right now there is only
+  with-vs-without, which the task doc explicitly says is not evidence by
+  itself (§7: "a with-vs-baseline difference alone is not evidence").
+- No per-fold edge discovery (§3) — the edge set is still estimated once on
+  all samples, not inside each CV fold.
+- No `run_phylospec_arms.py`/`run_metadr_arms.py`, no figures, no
+  `REPORT_cross_domain_injection.md` (§6 deliverables).
+- Fixed 3 of Phylo-Spec's 5 named bugs this session (§A.5): the optimizer
+  bug (below), `match_leaf_nodes` substring matching, and the resulting
+  `tree_p` disagreement. `out_feature=5` and multi-label indexing were
+  already fixed by a prior session.
+
+## Phylo-Spec optimizer bug (found and fixed 2026-09-11)
+
+`PhyloSpec.conv1x1_layers` (one 1×1 conv per leaf / per unmatched feature)
+is created **lazily inside `forward()`**, not in `__init__`. Every earlier
+version of `PhyloSpec_train_test.py` built `torch.optim.Adam(final_model
+.parameters())` *before* the model's first forward pass, so those layers
+didn't exist yet when Adam snapshotted its parameter list — meaning **every
+PhyloSpec model ever trained in this repo had random, never-updated leaf
+convolutions**; only `res_blocks`/`fc1`/`fc2`/`fc3` actually trained. Fixed
+by running one dummy forward pass on a single training sample right after
+constructing `final_model`, discarding its `accumulated_node_features` side
+effect, *then* building the optimizer, with an assertion
+(`len(final_model.parameters()) == len(optimizer.param_groups[0]['params'])`)
+guarding against this regressing silently again. This affects **every**
+PhyloSpec result in `results/site_grouped_cv*`, not just the cross-domain
+injection arms — the full PhyloSpec arm of the main benchmark was rerun
+after this fix (see session log).
 
 ## Session log
 
@@ -140,3 +223,22 @@ results for ARC/merged would otherwise sit stale next to freshly-rerun ones
 in the same results directory. Did **not** touch the cross-domain-injection
 benchmark (out of scope for that request — it's a separate ablation study,
 not one of the named benchmark families).
+
+**2026-09-11 (later same day)**: Implemented `CLAUDE_CODE_TASK_cross_domain_injection.md`'s
+injection mechanisms for Phylo-Spec and MetaDR (see "Cross-domain injection"
+above), replacing the older `CROSS_DOMAIN_INJECTION_BY_MODEL.md` mechanisms.
+While auditing Phylo-Spec's injection point, found and fixed a pre-existing,
+unrelated bug affecting *every* PhyloSpec run in the repo — see "Phylo-Spec
+optimizer bug" above — and fixed the `match_leaf_nodes` substring-matching
+bug + its resulting `tree_p` disagreement (task doc §A.5). Reran the
+PhyloSpec arm only (not the other 5 models, which weren't affected) of both
+`results/site_grouped_cv/` and `results/site_grouped_cv_asv/` for all 3
+domains. New shared module: `Phylospec/cross_domain_edges.py`
+(`load_edges`/`check_edges`, task doc §4). Did **not** rebuild the
+cross-domain-injection benchmark's own results (`results/cross_domain_injection*/`)
+— those still reflect the old mechanisms and are now stale; smoke-tested the
+new mechanisms there (2 folds, 5 epochs, scratch dir) but a full rerun needs
+an explicit ask since it's ~1-2h of additional GPU time. Also not implemented:
+the parameter-matched null arm (needs task doc §2's null-edge-list export,
+never wired in) and per-fold edge discovery (§3) — both flagged in CLAUDE.md,
+not silently skipped.

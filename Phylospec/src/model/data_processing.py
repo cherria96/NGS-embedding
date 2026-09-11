@@ -34,15 +34,29 @@ def encode_labels(y):
     print(f"Class mapping: {class_mapping}")
     return y_encoded, encoder
 
-# Match leaves in the phylogenetic tree to species in the dataset
+# Match leaves in the phylogenetic tree to species in the dataset.
+# Exact match only -- the old `if species in leaf_name` substring check lets a
+# feature name that is a literal substring of another tip's name bind to the
+# wrong tip silently (e.g. "Clostridium" into "Clostridium_sensu_stricto_1").
+# Column names are expected to be the --safe-ids opaque tree-tip identifiers
+# emitted by reduce_features_for_tree_models.py, so leaf name == column name
+# exactly; tree_p() already prunes the tree to exactly those tips via the same
+# exact `search_nodes(name=...)` match, so the two now agree by construction.
 def match_leaf_nodes(tree, data):
-    leaf_to_species = {}
-    for leaf in tree.get_terminals():
-        leaf_name = leaf.name
-        for species in data.columns[1:]:
-            if species in leaf_name:
-                leaf_to_species[leaf_name] = species
-                break
+    feature_columns = set(data.columns[1:])
+    leaf_to_species = {
+        leaf.name: leaf.name
+        for leaf in tree.get_terminals()
+        if leaf.name in feature_columns
+    }
+    assert len(leaf_to_species) == len(set(leaf_to_species.values())), \
+        "match_leaf_nodes: duplicate leaf/column matches (should be impossible with exact matching)"
+    unmatched = feature_columns - set(leaf_to_species)
+    if unmatched:
+        preview = sorted(unmatched)[:5]
+        print(f"match_leaf_nodes: {len(unmatched)} feature column(s) have no matching tree tip "
+              f"(handled by the model's unmatched-feature bypass): {preview}"
+              f"{'...' if len(unmatched) > 5 else ''}")
     return leaf_to_species
 
 # Assign unique names to internal nodes in the tree
@@ -89,26 +103,41 @@ def calculate_node_weights(tree):
             node_weights[clade.name] = 1.0  # Default weight if branch length is missing
     return node_weights
 
-# CROSS_DOMAIN_INJECTION_BY_MODEL.md Arm 2a: reweight each internal node by the
-# fraction of retained cross-domain (bacterium, archaeon) edges that have at
-# least one endpoint inside that node's clade. alpha=0 is the identity
-# (bit-for-bit the same node_weights the without-syntrophy arm uses).
-def augment_node_weights_cross_domain(tree, node_weights, edges_df, alpha):
-    if not alpha or edges_df is None or len(edges_df) == 0:
-        return node_weights
-    pairs = list(zip(edges_df['bacterium'].astype(str), edges_df['archaeon'].astype(str)))
-    n_edges = len(pairs)
-    augmented = dict(node_weights)
-    for clade in tree.find_clades():
-        if clade.name not in node_weights:
-            continue
-        leaves = {t.name for t in clade.get_terminals()}
-        if not leaves:
-            continue
-        f = sum(1 for b, a in pairs if b in leaves or a in leaves) / n_edges
-        if f:
-            augmented[clade.name] = node_weights[clade.name] * (1 + alpha * f)
-    return augmented
+# CLAUDE_CODE_TASK_cross_domain_injection.md Sec A.2: append one synthetic
+# (children, parent) merge per retained cross-domain (bacterium, archaeon)
+# edge directly to conv_order, instead of reweighting existing node_weights
+# (the old CROSS_DOMAIN_INJECTION_BY_MODEL.md Arm 2a approach this replaces).
+#
+# forward() is a DAG walk, not a tree walk -- feature_map is never popped, so
+# a leaf already consumed by its real parent merge is still available for a
+# second, cross-domain merge. No modified Newick file is needed or wanted.
+#
+# Must be appended LAST: the loop in PhyloSpec.forward has no topological
+# sort and trusts the given order. By the time these lines run, every leaf is
+# already in feature_map (forward's Step 1) and every real internal node has
+# already been merged (the preceding conv_order entries), so both children of
+# every synthetic merge are guaranteed to already exist.
+def inject_cross_domain_edges(conv_order, node_weights, leaf_to_species, edges):
+    """edges: iterable of (bacterium, archaeon, rho) using feature-column
+    (safe-id) names. Returns NEW (conv_order, node_weights) -- does not
+    mutate the inputs, so the same base conv_order/node_weights can still be
+    reused to build the tree-only or a differently-injected arm.
+
+    Raises KeyError if an edge endpoint has no tree leaf -- task doc Sec 7
+    forbids silently dropping one; the caller (cross_domain_edges.load_edges)
+    is expected to have already filtered edges to this arm's feature set."""
+    species_to_leaf = {v: k for k, v in leaf_to_species.items()}  # conv_order uses TREE names
+    new_conv_order = list(conv_order)
+    new_node_weights = dict(node_weights)
+    for i, (bac, arc, rho) in enumerate(edges):
+        lb, la = species_to_leaf.get(bac), species_to_leaf.get(arc)
+        if lb is None or la is None:
+            raise KeyError(f"cross-domain edge endpoint absent from leaf_to_species: {bac}, {arc}")
+        name = f"syn_{i}"
+        assert name not in new_node_weights
+        new_conv_order.append(([lb, la], name))  # APPEND AT THE END
+        new_node_weights[name] = float(abs(rho))
+    return new_conv_order, new_node_weights
 
 
 # Save learned node features along with tree structure and labels to a pickle file

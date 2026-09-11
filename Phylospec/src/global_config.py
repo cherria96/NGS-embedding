@@ -37,16 +37,16 @@ def get_config_train_test():
                              "the same trained model in -o, pointing -scores_out at a "
                              "different file each time.")
     parser.add_argument('-cross_domain_edges', type=str, default=None,
-                        help="CROSS_DOMAIN_INJECTION_BY_MODEL.md Arm 2a: path to a CSV with "
-                             "'bacterium','archaeon' columns (leaf names on -t's tree) listing "
-                             "retained cross-domain edges. When given together with -alpha, "
-                             "each internal node's weight is multiplied by "
-                             "(1 + alpha * f(v)), f(v) = fraction of these edges with >=1 "
-                             "endpoint in clade(v). Must be passed identically to 'train' and "
-                             "'test' -- omit (or pass -alpha 0) for the without-syntrophy arm.")
-    parser.add_argument('-alpha', type=float, default=0.0,
-                        help="Arm 2a effect size for -cross_domain_edges (default 0.0 = "
-                             "baseline node weights, bit-for-bit).")
+                        help="CLAUDE_CODE_TASK_cross_domain_injection.md Sec A.2: path to a CSV "
+                             "with 'bacterium','archaeon','rho' (or 'rho_conditioned') columns "
+                             "(feature/leaf names on -t's tree) listing retained cross-domain "
+                             "edges (real or, for the parameter-matched null arm, rewired). One "
+                             "conv_order merge is appended per edge, weight abs(rho). Omit for "
+                             "the tree_only arm. Must be passed identically to 'train' and "
+                             "'test'.")
+    parser.add_argument('-cross_domain_topk', type=int, default=None,
+                        help="Max partners per archaeon allowed in -cross_domain_edges (checked "
+                             "via cross_domain_edges.check_edges). None (default) = no cap.")
     parser.add_argument('-val_c', type=str, default=None,
                         help="'train' mode only: path to a validation CSV (same column "
                              "layout as -c). When given together with -patience, training "

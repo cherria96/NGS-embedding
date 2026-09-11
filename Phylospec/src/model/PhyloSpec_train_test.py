@@ -13,8 +13,9 @@ from torch import nn
 from torch.utils.data import TensorDataset, DataLoader
 from Phylospec.src.model.data_processing import load_and_preprocess_data, match_leaf_nodes, assign_unique_names, get_conv_order, \
     calculate_node_weights, save_node_features_with_pickle, process_unclassified_features, tree_p, \
-    augment_node_weights_cross_domain
+    inject_cross_domain_edges
 from Phylospec.src.model.PhyloSpec import PhyloSpec, AuxiliaryModel, calculate_fc1_input_dim
+from Phylospec.cross_domain_edges import load_edges, check_edges
 sys.path.append('./')
 from Phylospec.src.global_config import get_config_train_test
 from Phylospec.src.model.training_evaluating import train_model, evaluate_model_on_test
@@ -38,16 +39,19 @@ def parse_label_cols(config):
     raw = getattr(config, 'labels', None)
     return [s.strip() for s in raw.split(',')] if raw else None
 
-def apply_cross_domain_injection(config, tree, node_weights):
-    """CROSS_DOMAIN_INJECTION_BY_MODEL.md Arm 2a. No-op (returns node_weights
-    unchanged) unless both -cross_domain_edges and a nonzero -alpha are given,
-    so the without-syntrophy arm is the same code path at its neutral value."""
+def apply_cross_domain_injection(config, conv_order, node_weights, leaf_to_species):
+    """CLAUDE_CODE_TASK_cross_domain_injection.md Sec A.2. No-op (returns
+    conv_order/node_weights unchanged -- the tree_only arm) unless
+    -cross_domain_edges is given, so the without-syntrophy arm is the exact
+    same code path with zero edges."""
     edges_path = getattr(config, 'cross_domain_edges', None)
-    alpha = getattr(config, 'alpha', 0.0) or 0.0
-    if not edges_path or not alpha:
-        return node_weights
-    edges_df = pd.read_csv(edges_path)
-    return augment_node_weights_cross_domain(tree, node_weights, edges_df, alpha)
+    if not edges_path:
+        return conv_order, node_weights
+    features = list(leaf_to_species.values())
+    edges, _dropped = load_edges(edges_path, features)
+    topk = getattr(config, 'cross_domain_topk', None)
+    check_edges(edges, features, topk=topk if topk else len(edges) or 1)
+    return inject_cross_domain_edges(conv_order, node_weights, leaf_to_species, edges)
 
 def train_model_function(config, seed):
     """Train PhyloSpec model on the training set and save results."""
@@ -84,7 +88,7 @@ def train_model_function(config, seed):
     leaf_to_species = match_leaf_nodes(tree, data_features)
     nodes, parents, conv_order, node_relations = get_conv_order(tree)
     node_weights = calculate_node_weights(tree)
-    node_weights = apply_cross_domain_injection(config, tree, node_weights)
+    conv_order, node_weights = apply_cross_domain_injection(config, conv_order, node_weights, leaf_to_species)
 
     if multi_label:
         # imblearn's SMOTE only supports single-column labels; skip resampling
@@ -143,7 +147,24 @@ def train_model_function(config, seed):
                                 kernel_size=config.ks, out_feature=num_classes).to(device)
         criterion = nn.CrossEntropyLoss()
 
+    # Run one dummy forward pass before constructing the optimiser.
+    # PhyloSpec's per-leaf and per-unmatched-feature conv1x1 layers are
+    # created lazily inside forward() (self.conv1x1_layers starts as an empty
+    # ModuleDict in __init__). Building the optimiser from
+    # final_model.parameters() beforehand -- as this used to do -- silently
+    # freezes every one of those layers at their random init forever: Adam
+    # snapshots the parameter list once at construction time, so a module
+    # registered afterward is never in optimizer.param_groups and never
+    # receives a gradient step, no matter how long training runs.
+    with torch.no_grad():
+        final_model(X_train_tensor[:1].to(device), conv_order, {}, data_features, leaf_to_species,
+                    None, node_weights)
+    final_model.clear_accumulated_features()  # discard the dummy pass's node-feature entries
+
     optimizer = torch.optim.Adam(final_model.parameters(), lr=config.lr, weight_decay=0.0001)
+    assert len(list(final_model.parameters())) == len(optimizer.param_groups[0]['params']), \
+        "optimizer parameter count does not match the model -- a layer was created after " \
+        "the optimizer was built and will never be trained"
 
     # Optional validation split for early stopping (mirrors test_model_function's
     # own tree parse + preprocessing, since the val CSV is a different set of
@@ -169,7 +190,8 @@ def train_model_function(config, seed):
         val_leaf_to_species = match_leaf_nodes(val_tree, val_data_features)
         _, _, val_conv_order, _ = get_conv_order(val_tree)
         val_node_weights = calculate_node_weights(val_tree)
-        val_node_weights = apply_cross_domain_injection(config, val_tree, val_node_weights)
+        val_conv_order, val_node_weights = apply_cross_domain_injection(
+            config, val_conv_order, val_node_weights, val_leaf_to_species)
 
         X_val = scaler.transform(X_val)
         val_inputs = {
@@ -248,7 +270,7 @@ def test_model_function(config, seed):
     leaf_to_species = match_leaf_nodes(tree, data_features)
     nodes, parents, conv_order, node_relations = get_conv_order(tree)
     node_weights = calculate_node_weights(tree)
-    node_weights = apply_cross_domain_injection(config, tree, node_weights)
+    conv_order, node_weights = apply_cross_domain_injection(config, conv_order, node_weights, leaf_to_species)
 
     # Normalize test data using training scaler
     scaler = joblib.load(config.o + 'StandardScaler.pkl')

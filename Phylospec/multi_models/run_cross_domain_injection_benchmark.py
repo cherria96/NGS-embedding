@@ -1,6 +1,6 @@
 """
-run_cross_domain_injection_benchmark.py -- CROSS_DOMAIN_INJECTION_BY_MODEL.md end
-to end: build the Bacteria x Archaea prior on the merged-domain genus data
+run_cross_domain_injection_benchmark.py -- CLAUDE_CODE_TASK_cross_domain_injection.md
+end to end: build the Bacteria x Archaea prior on the merged-domain genus data
 (build_cross_domain_prior_merged.py), inject it into DeepPhylo, MetaDR and
 Phylo-Spec via each model's own channel, and benchmark "without" vs "with" at
 the SAME epoch budget, through evaluate_multilabel.evaluate_cv() (site-grouped
@@ -9,22 +9,43 @@ CV, pooled out-of-fold scoring, per-flag MCC-tuned thresholds -- Sec 5A).
 Only the "merged" domain is run: the cross-domain network needs both Bacteria
 and Archaea features, which ARC-only and BAC-only tables don't have.
 
-Per-model injection, each the SAME code path across arms (injection parameter
-at its neutral value for "without"):
+Per-model injection, each the SAME code path across arms (injection input
+absent/empty for "without"):
   DeepPhylo   -- c.npy: patristic Dp (without) vs syntrophy-shortcut Dfused
                  (with). Both come out of ONE build_cross_domain_prior_merged.py
                  call to shortcut_distance(), so "without" is not a separate
-                 script (CROSS_DOMAIN_INJECTION_BY_MODEL.md Sec 1).
+                 script.
   MetaDR      -- post-order/zigzag branch column order: tree post-order
-                 (without) vs optimal-leaf-ordering seriation of Dfused (with),
-                 via --seriation-order (Sec 3).
-  Phylo-Spec  -- Arm 2a node-weight reweighting: alpha=0 (without, bit-for-bit
-                 baseline weights) vs alpha=1.0 with the retained cross-domain
-                 edges (with), via -cross_domain_edges/-alpha (Sec 2).
+                 (without) vs a 2-D grid placement of the fused similarity,
+                 spectral-embedded and Hungarian-assigned so each retained
+                 edge's endpoints land in one conv footprint (with), via
+                 --seriation-order (task doc Sec B.2).
+  Phylo-Spec  -- conv_order DAG append: unmodified conv_order (without) vs
+                 one synthetic (bacterium, archaeon) merge appended per
+                 retained edge, weight abs(rho) (with), via
+                 -cross_domain_edges (task doc Sec A.2). No -alpha knob --
+                 edge weight is fixed at abs(rho), not a tunable effect size.
+
+This script wires only the tree_only/plus_network pair of the task doc's 3
+arms (Sec A.4/B.4) -- there is no parameter-matched plus_null arm here yet
+(that needs the null-edge-list infrastructure in build_cross_domain_graph.py,
+task doc Sec 2, which is not wired into build_cross_domain_prior_merged.py).
+A with-vs-without difference alone is therefore context, not yet the
+doc's required with-vs-null contrast (Sec A.3/7).
+
+--edge-method chooses how build_cross_domain_prior_merged.py estimates the
+injected edge set: 'conditioned' (default, the original analysis --
+residualises against reactor operating covariates first) or 'cooccurrence'
+(simpler raw-correlation co-occurrence network, no covariate conditioning).
+Each is cached under its own merged_<method>_* prior and its own
+results_merged_<model>_with_<method>.csv (the "without" arm is shared, since
+it has no injection either way), so both can be built and compared without
+recomputing either.
 
 Usage:
     python run_cross_domain_injection_benchmark.py
     python run_cross_domain_injection_benchmark.py --models DeepPhylo --n-repeats 1
+    python run_cross_domain_injection_benchmark.py --edge-method cooccurrence
 """
 import argparse
 import os
@@ -42,11 +63,11 @@ ROOT = os.path.join(PHYLOSPEC_DIR, "..")
 GENUS_CSV_DATA_DIR = os.path.join(HERE, "input_for_all_models_genus")
 CSV_DATA_DIR = GENUS_CSV_DATA_DIR
 RESULTS_DIR = os.path.join(HERE, "results", "cross_domain_injection")
-PRIOR_PREFIX = os.path.join(RESULTS_DIR, "merged")
+EDGE_METHOD = "conditioned"
+PRIOR_PREFIX = os.path.join(RESULTS_DIR, f"merged_{EDGE_METHOD}")
 EPOCHS = 60
 PATIENCE = 10
 POS_WEIGHT_CAP = 10.0
-PHYLOSPEC_ALPHA = 1.0
 MODELS = ["DeepPhylo", "MetaDR", "PhyloSpec"]
 ARMS = ["without", "with"]
 PY = sys.executable
@@ -76,7 +97,7 @@ def build_prior_if_needed(force=False):
         return
     os.makedirs(RESULTS_DIR, exist_ok=True)
     cmd = [PY, os.path.join(HERE, "build_cross_domain_prior_merged.py"), PRIOR_PREFIX,
-           "--data-dir", CSV_DATA_DIR]
+           "--data-dir", CSV_DATA_DIR, "--method", EDGE_METHOD]
     if CSV_DATA_DIR != GENUS_CSV_DATA_DIR:
         # Not the genus arm -- e.g. input_for_all_models_asv, whose raw ASV-hash
         # feature ids have no reduced-feature mapping.csv to join against, so
@@ -144,11 +165,11 @@ def make_metadr_fit_predict(combined_df, tree_path, seriation_path, scratch_root
 
 
 # --------------------------------------------------------------- Phylo-Spec
-def make_phylospec_fit_predict(combined_df, tree_path, edges_path, alpha, scratch_root):
+def make_phylospec_fit_predict(combined_df, tree_path, edges_path, scratch_root):
     script = os.path.join(PHYLOSPEC_DIR, "src", "model", "PhyloSpec_train_test.py")
     labels_arg = ",".join(FLAG_COLS)
     env = dict(os.environ, PYTHONPATH=os.path.abspath(ROOT))
-    injection_args = ["-cross_domain_edges", edges_path, "-alpha", str(alpha)] if edges_path else []
+    injection_args = ["-cross_domain_edges", edges_path] if edges_path else []
 
     def fit_predict(tr, va, te, pos_weight):
         with tempfile.TemporaryDirectory(dir=scratch_root) as tmp:
@@ -193,8 +214,7 @@ def build_fit_predict(model, arm, combined_df, X_all, Y_all_raw, dp_dir, tree_pa
         return make_metadr_fit_predict(combined_df, tree_path, seriation_path, scratch_root)
     if model == "PhyloSpec":
         edges_path = f"{PRIOR_PREFIX}_edges.csv" if with_injection else None
-        alpha = PHYLOSPEC_ALPHA if with_injection else 0.0
-        return make_phylospec_fit_predict(combined_df, tree_path, edges_path, alpha, scratch_root)
+        return make_phylospec_fit_predict(combined_df, tree_path, edges_path, scratch_root)
     raise ValueError(model)
 
 
@@ -220,7 +240,13 @@ def run_all(models=MODELS, arms=ARMS, n_splits=5, n_repeats=5, force_prior=False
                              pos_weight_cap=POS_WEIGHT_CAP)
             table = score_multilabel_table(res, "merged", model)
             table["arm"] = arm
-            out_path = os.path.join(RESULTS_DIR, f"results_merged_{model}_{arm}.csv")
+            # "without" has no injection at all, so it does not depend on
+            # EDGE_METHOD and is shared across methods; only "with" needs a
+            # method suffix so results from both methods can coexist and be
+            # compared without one overwriting the other.
+            fname = (f"results_merged_{model}_with_{EDGE_METHOD}.csv" if arm == "with"
+                     else f"results_merged_{model}_without.csv")
+            out_path = os.path.join(RESULTS_DIR, fname)
             table.to_csv(out_path, index=False)
             print(table[["flag", "n_pos", "mcc", "f2", "auprc", "auprc_lift"]].to_string(index=False))
             print(f"-> {out_path}")
@@ -235,6 +261,13 @@ if __name__ == "__main__":
     ap.add_argument("--n-repeats", type=int, default=5)
     ap.add_argument("--rebuild-prior", action="store_true",
                     help="Recompute the cross-domain prior even if cached outputs exist.")
+    ap.add_argument("--edge-method", choices=["conditioned", "cooccurrence"], default=EDGE_METHOD,
+                    help="Which association-network analysis estimates the injected edge set "
+                         "(build_cross_domain_prior_merged.py --method): 'conditioned' (default, "
+                         "original analysis) residualises against reactor operating covariates "
+                         "first; 'cooccurrence' is the simpler raw-correlation co-occurrence "
+                         "network, no covariate conditioning. Cached separately (merged_<method>_*) "
+                         "so both can be built and compared without recomputing either.")
     ap.add_argument("--csv-data-dir", default=CSV_DATA_DIR,
                     help="Per-domain Warnings_<domain>/{table.csv,phylogeny.nwk,...} root "
                          "(needs Warnings_ARC/BAC/merged, all three domains). Default: the "
@@ -256,7 +289,8 @@ if __name__ == "__main__":
     # must be made absolute here, or paths built from it break.
     CSV_DATA_DIR = os.path.abspath(a.csv_data_dir)
     RESULTS_DIR = os.path.abspath(a.results_dir)
-    PRIOR_PREFIX = os.path.join(RESULTS_DIR, "merged")
+    EDGE_METHOD = a.edge_method
+    PRIOR_PREFIX = os.path.join(RESULTS_DIR, f"merged_{EDGE_METHOD}")
     EPOCHS = a.epochs
     PATIENCE = a.patience
     run_all(a.models, a.arms, a.n_splits, a.n_repeats, force_prior=a.rebuild_prior)
