@@ -1,0 +1,6 @@
+target,n,sites,positives,positive_sites,old_positive_matched,changed_labels
+warning_ammonia_toxicity,134,37,24,10,25,1
+warning_acid_base_balance,134,37,20,12,20,0
+warning_biogas_quality,134,37,13,6,6,7
+warning_acid_accumulation,134,37,4,3,4,0
+warning_buffer_capacity,134,37,5,3,8,5

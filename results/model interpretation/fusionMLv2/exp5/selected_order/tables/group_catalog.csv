@@ -1,0 +1,1135 @@
+config,selection,repeat,outer_fold,domain,group_id,n_members,n_asv,group_mean_beta,theta,max_residual,active,n_classified_members,phyla,members
+acid_high,min_loss,0,0,ARC,0,12,94,3.87739392097e-15,4.65287270516e-14,1.12345739447e-10,False,7,Crenarchaeota; Euryarchaeota; Halobacterota; Thermoplasmatota; unassigned,4194fdb699f4d5c9620e1e7cfb8b009b; 783749c187ad3cb6e60ccecdd73fd8ef; Bathyarchaeia; Methanofastidiosales; Methanomassiliicoccales; Methanomicrobiales; Methanosarciniales__b2; Methanosarciniales__b4; Methanosarciniales__b5; c17275cccc27dc9a4ab351a310c063c8; c4a2579e95fee657cb355e865aa027af; eb0898e38a817c5648a19a5e3db2c1be
+acid_high,min_loss,0,0,BAC,54,1,8,-0.0731531589824,-0.0731531589824,0,True,1,Synergistota,Synergistales__b2
+acid_high,min_loss,0,0,BAC,14,1,5,-0.0395312943165,-0.0395312943165,0,True,1,Caldisericota,Caldisericales
+acid_high,min_loss,0,0,BAC,9,1,4,-0.0371798363912,-0.0371798363912,0,True,1,Bacteroidota,Bacteroidales__b7
+acid_high,min_loss,0,0,BAC,45,1,3,-0.0305635262042,-0.0305635262042,0,True,1,SAR324_clade(Marine_group_B),SAR324_clade_Marine_group_B_
+acid_high,min_loss,0,0,BAC,29,1,3,-0.0294551203608,-0.0294551203608,0,True,1,Firmicutes,Izemoplasmatales
+acid_high,min_loss,0,0,BAC,18,1,15,-0.0251951581629,-0.0251951581629,0,True,1,Cloacimonadota,Cloacimonadales
+acid_high,min_loss,0,0,BAC,10,1,12,-0.0239477620011,-0.0239477620011,0,True,1,Bacteroidota,Bacteroidales__b8
+acid_high,min_loss,0,0,BAC,7,1,53,-0.0222316489662,-0.0222316489662,0,True,1,Bacteroidota,Bacteroidales__b4
+acid_high,min_loss,0,0,BAC,44,1,6,-0.022140859389,-0.022140859389,0,True,1,Proteobacteria,Rhodobacterales
+acid_high,min_loss,0,0,BAC,20,1,5,-0.020138524044,-0.020138524044,0,True,1,Firmicutes,Clostridia__b3
+acid_high,min_loss,0,0,BAC,3,1,7,-0.019162833804,-0.019162833804,0,True,1,Chloroflexi,Anaerolineales
+acid_high,min_loss,0,0,BAC,17,1,29,-0.01776380841,-0.01776380841,0,True,1,Firmicutes,Christensenellales__b2
+acid_high,min_loss,0,0,BAC,46,1,6,-0.0168584660272,-0.0168584660272,0,True,1,Chloroflexi,SBR1031__b2
+acid_high,min_loss,0,0,BAC,35,1,3,-0.0150916129074,-0.0150916129074,0,True,1,Spirochaetota,MVP_15
+acid_high,min_loss,0,0,BAC,58,1,3,-0.0134218245038,-0.0134218245038,0,True,1,Desulfobacterota,Syntrophorhabdales
+acid_high,min_loss,0,0,BAC,16,1,2,-0.0132870028876,-0.0132870028876,0,True,1,Firmicutes,Christensenellales__b1
+acid_high,min_loss,0,0,BAC,8,1,1,-0.0109857673354,-0.0109857673354,0,True,1,Bacteroidota,Bacteroidales__b6
+acid_high,min_loss,0,0,BAC,52,1,10,-0.0109313229944,-0.0109313229944,0,True,1,Spirochaetota,Spirochaetales
+acid_high,min_loss,0,0,BAC,61,1,7,-0.0108066424291,-0.0108066424291,0,True,1,Proteobacteria,Xanthomonadales
+acid_high,min_loss,0,0,BAC,56,1,3,-0.00868768793588,-0.00868768793588,0,True,1,Desulfobacterota,Syntrophales__b2
+acid_high,min_loss,0,0,BAC,48,1,6,-0.00526052454754,-0.00526052454754,0,True,1,Bacteroidota,SJA_28__b2
+acid_high,min_loss,0,0,BAC,26,1,2,-0.00496277046609,-0.00496277046609,0,True,1,Bacteroidota,Flavobacteriales__b1
+acid_high,min_loss,0,0,BAC,2,1,4,-0.00388553293582,-0.00388553293582,0,True,1,Acidobacteriota,Aminicenantales__b2
+acid_high,min_loss,0,0,BAC,15,1,15,-0.00283598920275,-0.00283598920275,0,True,1,Bacteroidota,Chitinophagales
+acid_high,min_loss,0,0,BAC,6,1,2,-0.00222685996186,-0.00222685996186,0,True,1,Bacteroidota,Bacteroidales__b3
+acid_high,min_loss,0,0,BAC,36,1,9,-0.000893864818675,-0.000893864818675,0,True,1,Actinobacteriota,Micrococcales
+acid_high,min_loss,0,0,BAC,55,1,18,-0.000775965033075,-0.000775965033075,0,True,1,Desulfobacterota,Syntrophales__b1
+acid_high,min_loss,0,0,BAC,47,1,3,-0.000178141171916,-0.000178141171916,0,True,1,Chloroflexi,SJA_15
+acid_high,min_loss,0,0,BAC,1,1,2,-1.87019957969e-08,-1.87019957969e-08,0,False,1,Firmicutes,Acholeplasmatales__b2
+acid_high,min_loss,0,0,BAC,28,1,4,-1.26192348788e-08,-1.26192348788e-08,0,False,1,Hydrogenedentes,Hydrogenedentiales
+acid_high,min_loss,0,0,BAC,43,1,5,-6.53170809425e-09,-6.53170809425e-09,0,False,1,Thermotogota,Petrotogales
+acid_high,min_loss,0,0,BAC,27,1,3,-4.9943887939e-10,-4.9943887939e-10,0,False,1,Actinobacteriota,Gaiellales
+acid_high,min_loss,0,0,BAC,37,1,3,-1.8817926523e-10,-1.8817926523e-10,0,False,1,Actinobacteriota,Microtrichales
+acid_high,min_loss,0,0,BAC,31,1,2,3.35922658033e-10,3.35922658033e-10,0,False,1,Thermotogota,Kosmotogales
+acid_high,min_loss,0,0,BAC,24,1,6,4.69039439105e-10,4.69039439105e-10,0,False,1,Firmicutes,DTU014__b1
+acid_high,min_loss,0,0,BAC,5,1,5,0.000158788427647,0.000158788427647,0,True,1,Bacteroidota,Bacteroidales__b2
+acid_high,min_loss,0,0,BAC,21,1,4,0.000466350044039,0.000466350044039,0,True,1,Firmicutes,Clostridia__b4
+acid_high,min_loss,0,0,BAC,23,1,4,0.00145761427731,0.00145761427731,0,True,1,Firmicutes,D8A_2
+acid_high,min_loss,0,0,BAC,39,1,8,0.00282715427683,0.00282715427683,0,True,1,Firmicutes,Oscillospirales__b3
+acid_high,min_loss,0,0,BAC,42,1,3,0.00298774242999,0.00298774242999,0,True,1,Firmicutes,Peptostreptococcales_Tissierellales__b2
+acid_high,min_loss,0,0,BAC,59,1,6,0.0040540170379,0.0040540170379,0,True,1,Verrucomicrobiota,WCHB1_41
+acid_high,min_loss,0,0,BAC,13,1,2,0.0052118942685,0.0052118942685,0,True,1,Caldatribacteriota,Caldatribacteriales
+acid_high,min_loss,0,0,BAC,32,1,7,0.00537520931515,0.00537520931515,0,True,1,Firmicutes,Lachnospirales
+acid_high,min_loss,0,0,BAC,49,1,5,0.00558790470039,0.00558790470039,0,True,1,Bacteroidota,Sphingobacteriales__b2
+acid_high,min_loss,0,0,BAC,60,1,1,0.00706384815635,0.00706384815635,0,True,1,WS1,WS1
+acid_high,min_loss,0,0,BAC,40,1,5,0.00877854482245,0.00877854482245,0,True,1,Verrucomicrobiota,Pedosphaerales
+acid_high,min_loss,0,0,BAC,50,1,5,0.0116871818742,0.0116871818742,0,True,1,Bacteroidota,Sphingobacteriales__b4
+acid_high,min_loss,0,0,BAC,12,1,54,0.0138670085657,0.0138670085657,0,True,1,Proteobacteria,Burkholderiales
+acid_high,min_loss,0,0,BAC,25,1,1,0.0140282739888,0.0140282739888,0,True,1,Firmicutes,Desulfotomaculales
+acid_high,min_loss,0,0,BAC,51,1,2,0.0140511531712,0.0140511531712,0,True,1,Bacteroidota,Sphingobacteriales__b5
+acid_high,min_loss,0,0,BAC,33,1,8,0.015287022376,0.015287022376,0,True,1,Firmicutes,Lactobacillales__b2
+acid_high,min_loss,0,0,BAC,57,1,13,0.0167114724156,0.0167114724156,0,True,1,Firmicutes,Syntrophomonadales
+acid_high,min_loss,0,0,BAC,30,1,5,0.0186646522767,0.0186646522767,0,True,1,Caldatribacteriota,JS1
+acid_high,min_loss,0,0,BAC,19,1,4,0.0201613547523,0.0201613547523,0,True,1,Firmicutes,Clostridia__b2
+acid_high,min_loss,0,0,BAC,53,1,8,0.0311137522152,0.0311137522152,0,True,1,Synergistota,Synergistales__b1
+acid_high,min_loss,0,0,BAC,41,1,25,0.0311311966962,0.0311311966962,0,True,1,Firmicutes,Peptostreptococcales_Tissierellales__b1
+acid_high,min_loss,0,0,BAC,38,1,7,0.036572463584,0.036572463584,0,True,1,Firmicutes,Oscillospirales__b1
+acid_high,min_loss,0,0,BAC,34,1,7,0.036717132461,0.036717132461,0,True,1,Firmicutes,MBA03
+acid_high,min_loss,0,0,BAC,4,1,8,0.0390873060939,0.0390873060939,0,True,1,Bacteroidota,Bacteroidales__b1
+acid_high,min_loss,0,0,BAC,22,1,23,0.0420889355904,0.0420889355904,0,True,1,Firmicutes,Clostridia__b7
+acid_high,min_loss,0,0,BAC,0,1,7,0.0472305868291,0.0472305868291,0,True,1,Firmicutes,Acholeplasmatales__b1
+acid_high,min_loss,0,0,BAC,11,1,5,0.0491849832794,0.0491849832794,0,True,1,Bacteroidota,Bacteroidales__b9
+acid_high,min_loss,0,1,ARC,2,1,1,-0.0205663392905,-0.0205663392905,0,True,1,Halobacterota,Methanosarciniales__b4
+acid_high,min_loss,0,1,ARC,1,5,79,-0.00221287665083,-0.0110643832542,7.87897884956e-11,True,5,Crenarchaeota; Euryarchaeota; Halobacterota; Thermoplasmatota,Bathyarchaeia; Methanofastidiosales; Methanomassiliicoccales; Methanomicrobiales; Methanosarciniales__b2
+acid_high,min_loss,0,1,ARC,0,6,6,0.00346430174768,0.0207858104861,1.70151653184e-13,True,0,unassigned,4194fdb699f4d5c9620e1e7cfb8b009b; 783749c187ad3cb6e60ccecdd73fd8ef; 88fa6e2c26361b8b7ca8a72ae1ed781f; c17275cccc27dc9a4ab351a310c063c8; c4a2579e95fee657cb355e865aa027af; eb0898e38a817c5648a19a5e3db2c1be
+acid_high,min_loss,0,1,ARC,3,1,9,0.0108449120586,0.0108449120586,0,True,1,Halobacterota,Methanosarciniales__b5
+acid_high,min_loss,0,1,BAC,9,1,12,-0.0444166915698,-0.0444166915698,0,True,1,Bacteroidota,Bacteroidales__b8
+acid_high,min_loss,0,1,BAC,5,1,2,-0.0393379942377,-0.0393379942377,0,True,1,Bacteroidota,Bacteroidales__b3
+acid_high,min_loss,0,1,BAC,8,1,4,-0.0380845464404,-0.0380845464404,0,True,1,Bacteroidota,Bacteroidales__b7
+acid_high,min_loss,0,1,BAC,32,1,2,-0.0380560945351,-0.0380560945351,0,True,1,Thermotogota,Kosmotogales
+acid_high,min_loss,0,1,BAC,30,1,3,-0.0353415733175,-0.0353415733175,0,True,1,Firmicutes,Izemoplasmatales
+acid_high,min_loss,0,1,BAC,21,1,4,-0.0350715592172,-0.0350715592172,0,True,1,Firmicutes,Clostridia__b4
+acid_high,min_loss,0,1,BAC,41,1,8,-0.031273686352,-0.031273686352,0,True,1,Firmicutes,Oscillospirales__b3
+acid_high,min_loss,0,1,BAC,47,1,3,-0.0259680808285,-0.0259680808285,0,True,1,SAR324_clade(Marine_group_B),SAR324_clade_Marine_group_B_
+acid_high,min_loss,0,1,BAC,17,1,29,-0.0247576464308,-0.0247576464308,0,True,1,Firmicutes,Christensenellales__b2
+acid_high,min_loss,0,1,BAC,54,1,10,-0.0241674302842,-0.0241674302842,0,True,1,Spirochaetota,Spirochaetales
+acid_high,min_loss,0,1,BAC,36,1,3,-0.0227970453793,-0.0227970453793,0,True,1,Spirochaetota,MVP_15
+acid_high,min_loss,0,1,BAC,26,1,2,-0.0211695473209,-0.0211695473209,0,True,1,Bacteroidota,Flavobacteriales__b1
+acid_high,min_loss,0,1,BAC,27,1,1,-0.0166832171376,-0.0166832171376,0,True,1,Fusobacteriota,Fusobacteriales
+acid_high,min_loss,0,1,BAC,37,1,9,-0.0159675642154,-0.0159675642154,0,True,1,Actinobacteriota,Micrococcales
+acid_high,min_loss,0,1,BAC,34,1,8,-0.0154197959975,-0.0154197959975,0,True,1,Firmicutes,Lactobacillales__b2
+acid_high,min_loss,0,1,BAC,29,1,4,-0.0135968122935,-0.0135968122935,0,True,1,Hydrogenedentes,Hydrogenedentiales
+acid_high,min_loss,0,1,BAC,4,1,5,-0.0131323251122,-0.0131323251122,0,True,1,Bacteroidota,Bacteroidales__b2
+acid_high,min_loss,0,1,BAC,63,1,7,-0.0115284518403,-0.0115284518403,0,True,1,Proteobacteria,Xanthomonadales
+acid_high,min_loss,0,1,BAC,7,1,1,-0.0093303142852,-0.0093303142852,0,True,1,Bacteroidota,Bacteroidales__b6
+acid_high,min_loss,0,1,BAC,48,1,6,-0.0089807889299,-0.0089807889299,0,True,1,Chloroflexi,SBR1031__b2
+acid_high,min_loss,0,1,BAC,33,1,7,-0.00865064506538,-0.00865064506538,0,True,1,Firmicutes,Lachnospirales
+acid_high,min_loss,0,1,BAC,50,1,5,-0.00845524621025,-0.00845524621025,0,True,1,Bacteroidota,Sphingobacteriales__b2
+acid_high,min_loss,0,1,BAC,45,1,5,-0.00624676388528,-0.00624676388528,0,True,1,Thermotogota,Petrotogales
+acid_high,min_loss,0,1,BAC,14,1,5,-0.00591903768594,-0.00591903768594,0,True,1,Caldisericota,Caldisericales
+acid_high,min_loss,0,1,BAC,16,1,2,-0.00479580034824,-0.00479580034824,0,True,1,Firmicutes,Christensenellales__b1
+acid_high,min_loss,0,1,BAC,57,1,18,-0.00440782269959,-0.00440782269959,0,True,1,Desulfobacterota,Syntrophales__b1
+acid_high,min_loss,0,1,BAC,15,1,15,-0.00189702359694,-0.00189702359694,0,True,1,Bacteroidota,Chitinophagales
+acid_high,min_loss,0,1,BAC,60,1,3,-0.00141401363146,-0.00141401363146,0,True,1,Desulfobacterota,Syntrophorhabdales
+acid_high,min_loss,0,1,BAC,28,1,3,-0.00121473241872,-0.00121473241872,0,True,1,Actinobacteriota,Gaiellales
+acid_high,min_loss,0,1,BAC,49,1,6,-0.000623234858313,-0.000623234858313,0,True,1,Bacteroidota,SJA_28__b2
+acid_high,min_loss,0,1,BAC,6,1,53,-0.000321694586413,-0.000321694586413,0,True,1,Bacteroidota,Bacteroidales__b4
+acid_high,min_loss,0,1,BAC,53,1,3,-2.05131406169e-08,-2.05131406169e-08,0,False,1,Proteobacteria,Sphingomonadales
+acid_high,min_loss,0,1,BAC,58,1,3,-4.38755550014e-09,-4.38755550014e-09,0,False,1,Desulfobacterota,Syntrophales__b2
+acid_high,min_loss,0,1,BAC,42,1,5,-3.21112310735e-09,-3.21112310735e-09,0,False,1,Verrucomicrobiota,Pedosphaerales
+acid_high,min_loss,0,1,BAC,56,1,8,-6.76571015579e-10,-6.76571015579e-10,0,False,1,Synergistota,Synergistales__b2
+acid_high,min_loss,0,1,BAC,38,1,3,-2.73291384849e-10,-2.73291384849e-10,0,False,1,Actinobacteriota,Microtrichales
+acid_high,min_loss,0,1,BAC,2,1,7,2.90989945401e-11,2.90989945401e-11,0,False,1,Chloroflexi,Anaerolineales
+acid_high,min_loss,0,1,BAC,20,1,5,7.78835270882e-10,7.78835270882e-10,0,False,1,Firmicutes,Clostridia__b3
+acid_high,min_loss,0,1,BAC,61,1,6,1.29221506607e-09,1.29221506607e-09,0,False,1,Verrucomicrobiota,WCHB1_41
+acid_high,min_loss,0,1,BAC,44,1,3,1.81103232818e-09,1.81103232818e-09,0,False,1,Firmicutes,Peptostreptococcales_Tissierellales__b2
+acid_high,min_loss,0,1,BAC,62,1,1,3.38548692042e-09,3.38548692042e-09,0,False,1,WS1,WS1
+acid_high,min_loss,0,1,BAC,11,1,54,7.99456525615e-05,7.99456525615e-05,0,True,1,Proteobacteria,Burkholderiales
+acid_high,min_loss,0,1,BAC,46,1,6,0.00300252802002,0.00300252802002,0,True,1,Proteobacteria,Rhodobacterales
+acid_high,min_loss,0,1,BAC,59,1,13,0.00377879493236,0.00377879493236,0,True,1,Firmicutes,Syntrophomonadales
+acid_high,min_loss,0,1,BAC,19,1,4,0.00457827903254,0.00457827903254,0,True,1,Firmicutes,Clostridia__b2
+acid_high,min_loss,0,1,BAC,52,1,2,0.00693467528937,0.00693467528937,0,True,1,Bacteroidota,Sphingobacteriales__b5
+acid_high,min_loss,0,1,BAC,43,1,25,0.0100621727166,0.0100621727166,0,True,1,Firmicutes,Peptostreptococcales_Tissierellales__b1
+acid_high,min_loss,0,1,BAC,18,1,15,0.0119832360894,0.0119832360894,0,True,1,Cloacimonadota,Cloacimonadales
+acid_high,min_loss,0,1,BAC,1,1,2,0.0145063519614,0.0145063519614,0,True,1,Firmicutes,Acholeplasmatales__b2
+acid_high,min_loss,0,1,BAC,51,1,5,0.0158753440184,0.0158753440184,0,True,1,Bacteroidota,Sphingobacteriales__b4
+acid_high,min_loss,0,1,BAC,23,1,4,0.0172489762361,0.0172489762361,0,True,1,Firmicutes,D8A_2
+acid_high,min_loss,0,1,BAC,25,1,1,0.0176022995244,0.0176022995244,0,True,1,Firmicutes,Desulfotomaculales
+acid_high,min_loss,0,1,BAC,31,1,5,0.0180579256143,0.0180579256143,0,True,1,Caldatribacteriota,JS1
+acid_high,min_loss,0,1,BAC,40,1,3,0.0267796882357,0.0267796882357,0,True,1,Firmicutes,Oscillospirales__b2
+acid_high,min_loss,0,1,BAC,22,1,23,0.0288061840232,0.0288061840232,0,True,1,Firmicutes,Clostridia__b7
+acid_high,min_loss,0,1,BAC,0,1,7,0.030190677363,0.030190677363,0,True,1,Firmicutes,Acholeplasmatales__b1
+acid_high,min_loss,0,1,BAC,3,1,8,0.0306860881568,0.0306860881568,0,True,1,Bacteroidota,Bacteroidales__b1
+acid_high,min_loss,0,1,BAC,24,1,6,0.0318704849833,0.0318704849833,0,True,1,Firmicutes,DTU014__b1
+acid_high,min_loss,0,1,BAC,55,1,8,0.0319208021959,0.0319208021959,0,True,1,Synergistota,Synergistales__b1
+acid_high,min_loss,0,1,BAC,35,1,7,0.034104915767,0.034104915767,0,True,1,Firmicutes,MBA03
+acid_high,min_loss,0,1,BAC,39,1,7,0.0376013048496,0.0376013048496,0,True,1,Firmicutes,Oscillospirales__b1
+acid_high,min_loss,0,1,BAC,12,1,2,0.0381029206138,0.0381029206138,0,True,1,Caldatribacteriota,Caldatribacteriales
+acid_high,min_loss,0,1,BAC,13,1,5,0.0538456866291,0.0538456866291,0,True,1,Firmicutes,Caldicoprobacterales__b1
+acid_high,min_loss,0,1,BAC,10,1,5,0.0614079205718,0.0614079205718,0,True,1,Bacteroidota,Bacteroidales__b9
+acid_high,min_loss,0,2,ARC,4,1,1,-0.0462088702521,-0.0462088702521,0,True,1,Halobacterota,Methanosarciniales__b4
+acid_high,min_loss,0,2,ARC,1,1,3,-0.0249376124718,-0.0249376124718,0,True,1,Crenarchaeota,Bathyarchaeia
+acid_high,min_loss,0,2,ARC,0,7,7,-0.0045986303447,-0.0321904124129,1.04030085067e-09,True,0,unassigned,4194fdb699f4d5c9620e1e7cfb8b009b; 58de505db56b2250b12c7cd7ec5bfa50; 783749c187ad3cb6e60ccecdd73fd8ef; 88fa6e2c26361b8b7ca8a72ae1ed781f; c17275cccc27dc9a4ab351a310c063c8; c4a2579e95fee657cb355e865aa027af; eb0898e38a817c5648a19a5e3db2c1be
+acid_high,min_loss,0,2,ARC,3,2,58,0.00991344151959,0.0198268830392,1.44083425746e-11,True,2,Halobacterota; Thermoplasmatota,Methanomassiliicoccales; Methanomicrobiales
+acid_high,min_loss,0,2,ARC,2,2,18,0.0221283222183,0.0442566444365,7.62862462436e-09,True,2,Euryarchaeota; Halobacterota,Methanofastidiosales; Methanosarciniales__b2
+acid_high,min_loss,0,2,ARC,5,1,9,0.0392533676612,0.0392533676612,0,True,1,Halobacterota,Methanosarciniales__b5
+acid_high,min_loss,0,2,BAC,9,1,4,-0.0430123507547,-0.0430123507547,0,True,1,Bacteroidota,Bacteroidales__b7
+acid_high,min_loss,0,2,BAC,61,1,18,-0.0359403591352,-0.0359403591352,0,True,1,Desulfobacterota,Syntrophales__b1
+acid_high,min_loss,0,2,BAC,24,1,5,-0.0310024712453,-0.0310024712453,0,True,1,Firmicutes,Clostridia__b3
+acid_high,min_loss,0,2,BAC,10,1,12,-0.0285206980317,-0.0285206980317,0,True,1,Bacteroidota,Bacteroidales__b8
+acid_high,min_loss,0,2,BAC,40,1,9,-0.0276779852122,-0.0276779852122,0,True,1,Actinobacteriota,Micrococcales
+acid_high,min_loss,0,2,BAC,21,1,29,-0.0276749303967,-0.0276749303967,0,True,1,Firmicutes,Christensenellales__b2
+acid_high,min_loss,0,2,BAC,7,1,53,-0.0272821695189,-0.0272821695189,0,True,1,Bacteroidota,Bacteroidales__b4
+acid_high,min_loss,0,2,BAC,51,1,3,-0.0272250706246,-0.0272250706246,0,True,1,SAR324_clade(Marine_group_B),SAR324_clade_Marine_group_B_
+acid_high,min_loss,0,2,BAC,54,1,5,-0.0264645712456,-0.0264645712456,0,True,1,Bacteroidota,Sphingobacteriales__b2
+acid_high,min_loss,0,2,BAC,6,1,2,-0.0254029195192,-0.0254029195192,0,True,1,Bacteroidota,Bacteroidales__b3
+acid_high,min_loss,0,2,BAC,17,1,5,-0.024145265454,-0.024145265454,0,True,1,Caldisericota,Caldisericales
+acid_high,min_loss,0,2,BAC,60,1,8,-0.0236563933799,-0.0236563933799,0,True,1,Synergistota,Synergistales__b2
+acid_high,min_loss,0,2,BAC,53,1,6,-0.0235997340798,-0.0235997340798,0,True,1,Bacteroidota,SJA_28__b2
+acid_high,min_loss,0,2,BAC,44,1,8,-0.0221204667682,-0.0221204667682,0,True,1,Firmicutes,Oscillospirales__b3
+acid_high,min_loss,0,2,BAC,3,1,7,-0.0205828686942,-0.0205828686942,0,True,1,Chloroflexi,Anaerolineales
+acid_high,min_loss,0,2,BAC,65,1,6,-0.0194681071805,-0.0194681071805,0,True,1,Verrucomicrobiota,WCHB1_41
+acid_high,min_loss,0,2,BAC,58,1,10,-0.0192704038858,-0.0192704038858,0,True,1,Spirochaetota,Spirochaetales
+acid_high,min_loss,0,2,BAC,32,1,3,-0.0183206103005,-0.0183206103005,0,True,1,Firmicutes,Izemoplasmatales
+acid_high,min_loss,0,2,BAC,48,1,5,-0.0183079931105,-0.0183079931105,0,True,1,Thermotogota,Petrotogales
+acid_high,min_loss,0,2,BAC,20,1,2,-0.0181824795257,-0.0181824795257,0,True,1,Firmicutes,Christensenellales__b1
+acid_high,min_loss,0,2,BAC,56,1,2,-0.0181720137494,-0.0181720137494,0,True,1,Bacteroidota,Sphingobacteriales__b5
+acid_high,min_loss,0,2,BAC,66,1,7,-0.0180097628847,-0.0180097628847,0,True,1,Proteobacteria,Xanthomonadales
+acid_high,min_loss,0,2,BAC,22,1,15,-0.0175466502772,-0.0175466502772,0,True,1,Cloacimonadota,Cloacimonadales
+acid_high,min_loss,0,2,BAC,50,1,6,-0.0157303268845,-0.0157303268845,0,True,1,Proteobacteria,Rhodobacterales
+acid_high,min_loss,0,2,BAC,36,1,8,-0.014430076344,-0.014430076344,0,True,1,Firmicutes,Lactobacillales__b2
+acid_high,min_loss,0,2,BAC,2,1,4,-0.011895446538,-0.011895446538,0,True,1,Acidobacteriota,Aminicenantales__b2
+acid_high,min_loss,0,2,BAC,37,1,3,-0.0103687560717,-0.0103687560717,0,True,1,Spirochaetota,Leptospirales
+acid_high,min_loss,0,2,BAC,64,1,3,-0.00963948126592,-0.00963948126592,0,True,1,Desulfobacterota,Syntrophorhabdales
+acid_high,min_loss,0,2,BAC,35,1,7,-0.00954131398335,-0.00954131398335,0,True,1,Firmicutes,Lachnospirales
+acid_high,min_loss,0,2,BAC,19,1,15,-0.00852228899099,-0.00852228899099,0,True,1,Bacteroidota,Chitinophagales
+acid_high,min_loss,0,2,BAC,31,1,4,-0.00820463159239,-0.00820463159239,0,True,1,Hydrogenedentes,Hydrogenedentiales
+acid_high,min_loss,0,2,BAC,25,1,4,-0.00802908891983,-0.00802908891983,0,True,1,Firmicutes,Clostridia__b4
+acid_high,min_loss,0,2,BAC,62,1,3,-0.00796743619767,-0.00796743619767,0,True,1,Desulfobacterota,Syntrophales__b2
+acid_high,min_loss,0,2,BAC,28,1,6,-0.0073517432901,-0.0073517432901,0,True,1,Firmicutes,DTU014__b1
+acid_high,min_loss,0,2,BAC,39,1,3,-0.00621456596239,-0.00621456596239,0,True,1,Spirochaetota,MVP_15
+acid_high,min_loss,0,2,BAC,8,1,1,-0.00582075891883,-0.00582075891883,0,True,1,Bacteroidota,Bacteroidales__b6
+acid_high,min_loss,0,2,BAC,34,1,2,-0.00394730725436,-0.00394730725436,0,True,1,Thermotogota,Kosmotogales
+acid_high,min_loss,0,2,BAC,27,1,4,-0.00214578031629,-0.00214578031629,0,True,1,Firmicutes,D8A_2
+acid_high,min_loss,0,2,BAC,30,1,3,-0.00151359079767,-0.00151359079767,0,True,1,Actinobacteriota,Gaiellales
+acid_high,min_loss,0,2,BAC,41,1,3,-0.00059232306611,-0.00059232306611,0,True,1,Actinobacteriota,Microtrichales
+acid_high,min_loss,0,2,BAC,57,1,3,0.00282797097447,0.00282797097447,0,True,1,Proteobacteria,Sphingomonadales
+acid_high,min_loss,0,2,BAC,5,1,5,0.00427477157046,0.00427477157046,0,True,1,Bacteroidota,Bacteroidales__b2
+acid_high,min_loss,0,2,BAC,12,1,54,0.00459126996664,0.00459126996664,0,True,1,Proteobacteria,Burkholderiales
+acid_high,min_loss,0,2,BAC,49,1,3,0.00637415016673,0.00637415016673,0,True,1,Proteobacteria,Rhizobiales__b3
+acid_high,min_loss,0,2,BAC,14,1,2,0.00798474537138,0.00798474537138,0,True,1,Caldatribacteriota,Caldatribacteriales
+acid_high,min_loss,0,2,BAC,59,1,8,0.00838218839815,0.00838218839815,0,True,1,Synergistota,Synergistales__b1
+acid_high,min_loss,0,2,BAC,1,1,2,0.00982027384774,0.00982027384774,0,True,1,Firmicutes,Acholeplasmatales__b2
+acid_high,min_loss,0,2,BAC,18,1,1,0.0107754637059,0.0107754637059,0,True,1,Proteobacteria,Caulobacterales
+acid_high,min_loss,0,2,BAC,52,1,6,0.0137007383269,0.0137007383269,0,True,1,Chloroflexi,SBR1031__b2
+acid_high,min_loss,0,2,BAC,23,1,4,0.0146330249777,0.0146330249777,0,True,1,Firmicutes,Clostridia__b2
+acid_high,min_loss,0,2,BAC,63,1,13,0.0148183025352,0.0148183025352,0,True,1,Firmicutes,Syntrophomonadales
+acid_high,min_loss,0,2,BAC,13,1,1,0.0164759031589,0.0164759031589,0,True,1,CK-2C2-2,CK_2C2_2
+acid_high,min_loss,0,2,BAC,47,1,3,0.0185289045774,0.0185289045774,0,True,1,Firmicutes,Peptostreptococcales_Tissierellales__b2
+acid_high,min_loss,0,2,BAC,33,1,5,0.0196319513247,0.0196319513247,0,True,1,Caldatribacteriota,JS1
+acid_high,min_loss,0,2,BAC,42,1,7,0.0203944083584,0.0203944083584,0,True,1,Firmicutes,Oscillospirales__b1
+acid_high,min_loss,0,2,BAC,38,1,7,0.022021289496,0.022021289496,0,True,1,Firmicutes,MBA03
+acid_high,min_loss,0,2,BAC,29,1,1,0.026618890681,0.026618890681,0,True,1,Firmicutes,Desulfotomaculales
+acid_high,min_loss,0,2,BAC,46,1,25,0.0274507157536,0.0274507157536,0,True,1,Firmicutes,Peptostreptococcales_Tissierellales__b1
+acid_high,min_loss,0,2,BAC,55,1,5,0.0351438465653,0.0351438465653,0,True,1,Bacteroidota,Sphingobacteriales__b4
+acid_high,min_loss,0,2,BAC,45,1,5,0.0360769746325,0.0360769746325,0,True,1,Verrucomicrobiota,Pedosphaerales
+acid_high,min_loss,0,2,BAC,4,1,8,0.0411248558286,0.0411248558286,0,True,1,Bacteroidota,Bacteroidales__b1
+acid_high,min_loss,0,2,BAC,43,1,3,0.0413453191202,0.0413453191202,0,True,1,Firmicutes,Oscillospirales__b2
+acid_high,min_loss,0,2,BAC,26,1,23,0.0445341501282,0.0445341501282,0,True,1,Firmicutes,Clostridia__b7
+acid_high,min_loss,0,2,BAC,11,1,5,0.0539289247552,0.0539289247552,0,True,1,Bacteroidota,Bacteroidales__b9
+acid_high,min_loss,0,2,BAC,15,1,5,0.0568209760209,0.0568209760209,0,True,1,Firmicutes,Caldicoprobacterales__b1
+acid_high,min_loss,0,2,BAC,0,1,7,0.0609772851305,0.0609772851305,0,True,1,Firmicutes,Acholeplasmatales__b1
+acid_high,min_loss,0,2,BAC,16,1,4,0.0742438959961,0.0742438959961,0,True,1,Firmicutes,Caldicoprobacterales__b2
+acid_high,min_loss,1,0,ARC,2,1,1,-0.0395274040585,-0.0395274040585,0,True,1,Halobacterota,Methanosarciniales__b4
+acid_high,min_loss,1,0,ARC,3,1,9,-0.0157287310188,-0.0157287310188,0,True,1,Halobacterota,Methanosarciniales__b5
+acid_high,min_loss,1,0,ARC,0,5,5,-0.00103536867553,-0.00517684337764,4.11443539829e-11,True,0,unassigned,4194fdb699f4d5c9620e1e7cfb8b009b; 783749c187ad3cb6e60ccecdd73fd8ef; c17275cccc27dc9a4ab351a310c063c8; c4a2579e95fee657cb355e865aa027af; eb0898e38a817c5648a19a5e3db2c1be
+acid_high,min_loss,1,0,ARC,1,5,79,0.012086595691,0.0604329784549,2.35267199472e-09,True,5,Crenarchaeota; Euryarchaeota; Halobacterota; Thermoplasmatota,Bathyarchaeia; Methanofastidiosales; Methanomassiliicoccales; Methanomicrobiales; Methanosarciniales__b2
+acid_high,min_loss,1,0,BAC,6,1,2,-0.0393681190053,-0.0393681190053,0,True,1,Bacteroidota,Bacteroidales__b3
+acid_high,min_loss,1,0,BAC,1,1,2,-0.0342425803514,-0.0342425803514,0,True,1,Firmicutes,Acholeplasmatales__b2
+acid_high,min_loss,1,0,BAC,21,1,5,-0.0342149316488,-0.0342149316488,0,True,1,Firmicutes,Clostridia__b3
+acid_high,min_loss,1,0,BAC,46,1,3,-0.032480049504,-0.032480049504,0,True,1,SAR324_clade(Marine_group_B),SAR324_clade_Marine_group_B_
+acid_high,min_loss,1,0,BAC,19,1,15,-0.0314963950022,-0.0314963950022,0,True,1,Cloacimonadota,Cloacimonadales
+acid_high,min_loss,1,0,BAC,30,1,3,-0.030081984958,-0.030081984958,0,True,1,Firmicutes,Izemoplasmatales
+acid_high,min_loss,1,0,BAC,61,1,6,-0.0259890281973,-0.0259890281973,0,True,1,Verrucomicrobiota,WCHB1_41
+acid_high,min_loss,1,0,BAC,27,1,2,-0.0229326844954,-0.0229326844954,0,True,1,Bacteroidota,Flavobacteriales__b1
+acid_high,min_loss,1,0,BAC,18,1,29,-0.0219822780408,-0.0219822780408,0,True,1,Firmicutes,Christensenellales__b2
+acid_high,min_loss,1,0,BAC,54,1,10,-0.0215344226806,-0.0215344226806,0,True,1,Spirochaetota,Spirochaetales
+acid_high,min_loss,1,0,BAC,10,1,12,-0.0184309299572,-0.0184309299572,0,True,1,Bacteroidota,Bacteroidales__b8
+acid_high,min_loss,1,0,BAC,40,1,8,-0.0183484659224,-0.0183484659224,0,True,1,Firmicutes,Oscillospirales__b3
+acid_high,min_loss,1,0,BAC,45,1,6,-0.0181101735779,-0.0181101735779,0,True,1,Proteobacteria,Rhodobacterales
+acid_high,min_loss,1,0,BAC,29,1,4,-0.0174322842092,-0.0174322842092,0,True,1,Hydrogenedentes,Hydrogenedentiales
+acid_high,min_loss,1,0,BAC,7,1,53,-0.0168163811983,-0.0168163811983,0,True,1,Bacteroidota,Bacteroidales__b4
+acid_high,min_loss,1,0,BAC,2,1,4,-0.0164490638711,-0.0164490638711,0,True,1,Acidobacteriota,Aminicenantales__b2
+acid_high,min_loss,1,0,BAC,41,1,5,-0.0163703835274,-0.0163703835274,0,True,1,Verrucomicrobiota,Pedosphaerales
+acid_high,min_loss,1,0,BAC,22,1,4,-0.0161250309033,-0.0161250309033,0,True,1,Firmicutes,Clostridia__b4
+acid_high,min_loss,1,0,BAC,37,1,9,-0.0157367424378,-0.0157367424378,0,True,1,Actinobacteriota,Micrococcales
+acid_high,min_loss,1,0,BAC,36,1,3,-0.0152856895294,-0.0152856895294,0,True,1,Spirochaetota,MVP_15
+acid_high,min_loss,1,0,BAC,48,1,3,-0.0150813836382,-0.0150813836382,0,True,1,Chloroflexi,SJA_15
+acid_high,min_loss,1,0,BAC,15,1,5,-0.0142204720068,-0.0142204720068,0,True,1,Caldisericota,Caldisericales
+acid_high,min_loss,1,0,BAC,56,1,8,-0.0126000779081,-0.0126000779081,0,True,1,Synergistota,Synergistales__b2
+acid_high,min_loss,1,0,BAC,63,1,7,-0.0107930059588,-0.0107930059588,0,True,1,Proteobacteria,Xanthomonadales
+acid_high,min_loss,1,0,BAC,16,1,15,-0.0103225900751,-0.0103225900751,0,True,1,Bacteroidota,Chitinophagales
+acid_high,min_loss,1,0,BAC,17,1,2,-0.00931930204061,-0.00931930204061,0,True,1,Firmicutes,Christensenellales__b1
+acid_high,min_loss,1,0,BAC,9,1,4,-0.00716319813417,-0.00716319813417,0,True,1,Bacteroidota,Bacteroidales__b7
+acid_high,min_loss,1,0,BAC,32,1,2,-0.00599699909727,-0.00599699909727,0,True,1,Thermotogota,Kosmotogales
+acid_high,min_loss,1,0,BAC,8,1,1,-0.00428862964292,-0.00428862964292,0,True,1,Bacteroidota,Bacteroidales__b6
+acid_high,min_loss,1,0,BAC,26,1,1,-0.00362843692107,-0.00362843692107,0,True,1,Firmicutes,Desulfotomaculales
+acid_high,min_loss,1,0,BAC,5,1,5,-0.00346129946558,-0.00346129946558,0,True,1,Bacteroidota,Bacteroidales__b2
+acid_high,min_loss,1,0,BAC,12,1,54,-0.00292021053641,-0.00292021053641,0,True,1,Proteobacteria,Burkholderiales
+acid_high,min_loss,1,0,BAC,57,1,18,-0.00209601214231,-0.00209601214231,0,True,1,Desulfobacterota,Syntrophales__b1
+acid_high,min_loss,1,0,BAC,60,1,3,-0.000542063025753,-0.000542063025753,0,True,1,Desulfobacterota,Syntrophorhabdales
+acid_high,min_loss,1,0,BAC,58,1,3,-0.000274907838269,-0.000274907838269,0,True,1,Desulfobacterota,Syntrophales__b2
+acid_high,min_loss,1,0,BAC,49,1,6,-9.15490346021e-05,-9.15490346021e-05,0,True,1,Bacteroidota,SJA_28__b2
+acid_high,min_loss,1,0,BAC,52,1,2,0.00182266239442,0.00182266239442,0,True,1,Bacteroidota,Sphingobacteriales__b5
+acid_high,min_loss,1,0,BAC,24,1,4,0.00189031919741,0.00189031919741,0,True,1,Firmicutes,D8A_2
+acid_high,min_loss,1,0,BAC,53,1,3,0.00261302043387,0.00261302043387,0,True,1,Proteobacteria,Sphingomonadales
+acid_high,min_loss,1,0,BAC,62,1,1,0.0029030474149,0.0029030474149,0,True,1,WS1,WS1
+acid_high,min_loss,1,0,BAC,51,1,5,0.00298341858852,0.00298341858852,0,True,1,Bacteroidota,Sphingobacteriales__b4
+acid_high,min_loss,1,0,BAC,3,1,7,0.00429854401697,0.00429854401697,0,True,1,Chloroflexi,Anaerolineales
+acid_high,min_loss,1,0,BAC,50,1,5,0.00438870432534,0.00438870432534,0,True,1,Bacteroidota,Sphingobacteriales__b2
+acid_high,min_loss,1,0,BAC,47,1,6,0.00478354589523,0.00478354589523,0,True,1,Chloroflexi,SBR1031__b2
+acid_high,min_loss,1,0,BAC,38,1,3,0.00652814009983,0.00652814009983,0,True,1,Actinobacteriota,Microtrichales
+acid_high,min_loss,1,0,BAC,43,1,3,0.00689532028981,0.00689532028981,0,True,1,Firmicutes,Peptostreptococcales_Tissierellales__b2
+acid_high,min_loss,1,0,BAC,25,1,6,0.0100741640107,0.0100741640107,0,True,1,Firmicutes,DTU014__b1
+acid_high,min_loss,1,0,BAC,28,1,3,0.0144401936279,0.0144401936279,0,True,1,Actinobacteriota,Gaiellales
+acid_high,min_loss,1,0,BAC,59,1,13,0.0146289522989,0.0146289522989,0,True,1,Firmicutes,Syntrophomonadales
+acid_high,min_loss,1,0,BAC,33,1,7,0.0149672956945,0.0149672956945,0,True,1,Firmicutes,Lachnospirales
+acid_high,min_loss,1,0,BAC,31,1,5,0.0176000301929,0.0176000301929,0,True,1,Caldatribacteriota,JS1
+acid_high,min_loss,1,0,BAC,34,1,8,0.0200156023299,0.0200156023299,0,True,1,Firmicutes,Lactobacillales__b2
+acid_high,min_loss,1,0,BAC,39,1,7,0.0201011895712,0.0201011895712,0,True,1,Firmicutes,Oscillospirales__b1
+acid_high,min_loss,1,0,BAC,35,1,7,0.0244691956383,0.0244691956383,0,True,1,Firmicutes,MBA03
+acid_high,min_loss,1,0,BAC,42,1,25,0.0253982021154,0.0253982021154,0,True,1,Firmicutes,Peptostreptococcales_Tissierellales__b1
+acid_high,min_loss,1,0,BAC,13,1,2,0.0276354918101,0.0276354918101,0,True,1,Caldatribacteriota,Caldatribacteriales
+acid_high,min_loss,1,0,BAC,4,1,8,0.0308380652827,0.0308380652827,0,True,1,Bacteroidota,Bacteroidales__b1
+acid_high,min_loss,1,0,BAC,44,1,5,0.0315003981097,0.0315003981097,0,True,1,Thermotogota,Petrotogales
+acid_high,min_loss,1,0,BAC,23,1,23,0.0324539401685,0.0324539401685,0,True,1,Firmicutes,Clostridia__b7
+acid_high,min_loss,1,0,BAC,55,1,8,0.0335920410131,0.0335920410131,0,True,1,Synergistota,Synergistales__b1
+acid_high,min_loss,1,0,BAC,0,1,7,0.0413456491667,0.0413456491667,0,True,1,Firmicutes,Acholeplasmatales__b1
+acid_high,min_loss,1,0,BAC,20,1,4,0.0475484476439,0.0475484476439,0,True,1,Firmicutes,Clostridia__b2
+acid_high,min_loss,1,0,BAC,11,1,5,0.0561847150322,0.0561847150322,0,True,1,Bacteroidota,Bacteroidales__b9
+acid_high,min_loss,1,0,BAC,14,1,5,0.0643274601208,0.0643274601208,0,True,1,Firmicutes,Caldicoprobacterales__b1
+acid_high,min_loss,1,1,ARC,1,7,89,-1.56251999163e-09,-1.09376399414e-08,7.92783009369e-11,False,7,Crenarchaeota; Euryarchaeota; Halobacterota; Thermoplasmatota,Bathyarchaeia; Methanofastidiosales; Methanomassiliicoccales; Methanomicrobiales; Methanosarciniales__b2; Methanosarciniales__b4; Methanosarciniales__b5
+acid_high,min_loss,1,1,ARC,0,6,6,1.82293905293e-09,1.09376343176e-08,5.01023010065e-13,False,0,unassigned,4194fdb699f4d5c9620e1e7cfb8b009b; 783749c187ad3cb6e60ccecdd73fd8ef; 88fa6e2c26361b8b7ca8a72ae1ed781f; c17275cccc27dc9a4ab351a310c063c8; c4a2579e95fee657cb355e865aa027af; eb0898e38a817c5648a19a5e3db2c1be
+acid_high,min_loss,1,1,BAC,5,1,2,-0.0482062975551,-0.0482062975551,0,True,1,Bacteroidota,Bacteroidales__b3
+acid_high,min_loss,1,1,BAC,8,1,4,-0.0445220609286,-0.0445220609286,0,True,1,Bacteroidota,Bacteroidales__b7
+acid_high,min_loss,1,1,BAC,56,1,8,-0.0416692389704,-0.0416692389704,0,True,1,Synergistota,Synergistales__b2
+acid_high,min_loss,1,1,BAC,9,1,12,-0.0365866942823,-0.0365866942823,0,True,1,Bacteroidota,Bacteroidales__b8
+acid_high,min_loss,1,1,BAC,18,1,29,-0.0328736097982,-0.0328736097982,0,True,1,Firmicutes,Christensenellales__b2
+acid_high,min_loss,1,1,BAC,15,1,5,-0.0302385044318,-0.0302385044318,0,True,1,Caldisericota,Caldisericales
+acid_high,min_loss,1,1,BAC,21,1,5,-0.0281372671843,-0.0281372671843,0,True,1,Firmicutes,Clostridia__b3
+acid_high,min_loss,1,1,BAC,6,1,53,-0.0267509932356,-0.0267509932356,0,True,1,Bacteroidota,Bacteroidales__b4
+acid_high,min_loss,1,1,BAC,32,1,2,-0.0254362932783,-0.0254362932783,0,True,1,Thermotogota,Kosmotogales
+acid_high,min_loss,1,1,BAC,54,1,10,-0.0249682437006,-0.0249682437006,0,True,1,Spirochaetota,Spirochaetales
+acid_high,min_loss,1,1,BAC,47,1,3,-0.0242011268079,-0.0242011268079,0,True,1,SAR324_clade(Marine_group_B),SAR324_clade_Marine_group_B_
+acid_high,min_loss,1,1,BAC,28,1,1,-0.022808468841,-0.022808468841,0,True,1,Fusobacteriota,Fusobacteriales
+acid_high,min_loss,1,1,BAC,37,1,9,-0.0205513647874,-0.0205513647874,0,True,1,Actinobacteriota,Micrococcales
+acid_high,min_loss,1,1,BAC,27,1,2,-0.0198423876431,-0.0198423876431,0,True,1,Bacteroidota,Flavobacteriales__b1
+acid_high,min_loss,1,1,BAC,50,1,5,-0.0196684731075,-0.0196684731075,0,True,1,Bacteroidota,Sphingobacteriales__b2
+acid_high,min_loss,1,1,BAC,63,1,7,-0.0196672704879,-0.0196672704879,0,True,1,Proteobacteria,Xanthomonadales
+acid_high,min_loss,1,1,BAC,22,1,4,-0.0196215194854,-0.0196215194854,0,True,1,Firmicutes,Clostridia__b4
+acid_high,min_loss,1,1,BAC,41,1,8,-0.0183221577407,-0.0183221577407,0,True,1,Firmicutes,Oscillospirales__b3
+acid_high,min_loss,1,1,BAC,30,1,3,-0.0178939816302,-0.0178939816302,0,True,1,Firmicutes,Izemoplasmatales
+acid_high,min_loss,1,1,BAC,7,1,1,-0.0132848461159,-0.0132848461159,0,True,1,Bacteroidota,Bacteroidales__b6
+acid_high,min_loss,1,1,BAC,17,1,2,-0.0127950008275,-0.0127950008275,0,True,1,Firmicutes,Christensenellales__b1
+acid_high,min_loss,1,1,BAC,46,1,6,-0.0122390025708,-0.0122390025708,0,True,1,Proteobacteria,Rhodobacterales
+acid_high,min_loss,1,1,BAC,34,1,8,-0.011773794378,-0.011773794378,0,True,1,Firmicutes,Lactobacillales__b2
+acid_high,min_loss,1,1,BAC,36,1,3,-0.0116168023534,-0.0116168023534,0,True,1,Spirochaetota,MVP_15
+acid_high,min_loss,1,1,BAC,45,1,5,-0.0114161322462,-0.0114161322462,0,True,1,Thermotogota,Petrotogales
+acid_high,min_loss,1,1,BAC,49,1,6,-0.010615769247,-0.010615769247,0,True,1,Bacteroidota,SJA_28__b2
+acid_high,min_loss,1,1,BAC,33,1,7,-0.00884673012931,-0.00884673012931,0,True,1,Firmicutes,Lachnospirales
+acid_high,min_loss,1,1,BAC,4,1,5,-0.00495983734524,-0.00495983734524,0,True,1,Bacteroidota,Bacteroidales__b2
+acid_high,min_loss,1,1,BAC,2,1,7,-0.00493938355996,-0.00493938355996,0,True,1,Chloroflexi,Anaerolineales
+acid_high,min_loss,1,1,BAC,38,1,3,-0.00315820738604,-0.00315820738604,0,True,1,Actinobacteriota,Microtrichales
+acid_high,min_loss,1,1,BAC,16,1,15,-0.00312516901702,-0.00312516901702,0,True,1,Bacteroidota,Chitinophagales
+acid_high,min_loss,1,1,BAC,57,1,18,-0.00239423699571,-0.00239423699571,0,True,1,Desulfobacterota,Syntrophales__b1
+acid_high,min_loss,1,1,BAC,48,1,6,-0.00233930408541,-0.00233930408541,0,True,1,Chloroflexi,SBR1031__b2
+acid_high,min_loss,1,1,BAC,29,1,3,-0.000142433385583,-0.000142433385583,0,True,1,Actinobacteriota,Gaiellales
+acid_high,min_loss,1,1,BAC,19,1,15,-5.72409607222e-09,-5.72409607222e-09,0,False,1,Cloacimonadota,Cloacimonadales
+acid_high,min_loss,1,1,BAC,60,1,3,-4.57548749849e-09,-4.57548749849e-09,0,False,1,Desulfobacterota,Syntrophorhabdales
+acid_high,min_loss,1,1,BAC,61,1,6,-1.0277238946e-09,-1.0277238946e-09,0,False,1,Verrucomicrobiota,WCHB1_41
+acid_high,min_loss,1,1,BAC,20,1,4,-6.58679531642e-11,-6.58679531642e-11,0,False,1,Firmicutes,Clostridia__b2
+acid_high,min_loss,1,1,BAC,58,1,3,5.02761987082e-11,5.02761987082e-11,0,False,1,Desulfobacterota,Syntrophales__b2
+acid_high,min_loss,1,1,BAC,53,1,3,4.9905013736e-07,4.9905013736e-07,0,False,1,Proteobacteria,Sphingomonadales
+acid_high,min_loss,1,1,BAC,11,1,54,0.00136549476421,0.00136549476421,0,True,1,Proteobacteria,Burkholderiales
+acid_high,min_loss,1,1,BAC,24,1,4,0.00284439107109,0.00284439107109,0,True,1,Firmicutes,D8A_2
+acid_high,min_loss,1,1,BAC,59,1,13,0.00446637483154,0.00446637483154,0,True,1,Firmicutes,Syntrophomonadales
+acid_high,min_loss,1,1,BAC,1,1,2,0.00476116005719,0.00476116005719,0,True,1,Firmicutes,Acholeplasmatales__b2
+acid_high,min_loss,1,1,BAC,44,1,3,0.00778407198872,0.00778407198872,0,True,1,Firmicutes,Peptostreptococcales_Tissierellales__b2
+acid_high,min_loss,1,1,BAC,25,1,6,0.00908080150792,0.00908080150792,0,True,1,Firmicutes,DTU014__b1
+acid_high,min_loss,1,1,BAC,52,1,2,0.0105629991671,0.0105629991671,0,True,1,Bacteroidota,Sphingobacteriales__b5
+acid_high,min_loss,1,1,BAC,40,1,3,0.0116786818333,0.0116786818333,0,True,1,Firmicutes,Oscillospirales__b2
+acid_high,min_loss,1,1,BAC,43,1,25,0.0142911661645,0.0142911661645,0,True,1,Firmicutes,Peptostreptococcales_Tissierellales__b1
+acid_high,min_loss,1,1,BAC,42,1,5,0.0154767876149,0.0154767876149,0,True,1,Verrucomicrobiota,Pedosphaerales
+acid_high,min_loss,1,1,BAC,62,1,1,0.0157280203732,0.0157280203732,0,True,1,WS1,WS1
+acid_high,min_loss,1,1,BAC,12,1,2,0.0176420322849,0.0176420322849,0,True,1,Caldatribacteriota,Caldatribacteriales
+acid_high,min_loss,1,1,BAC,31,1,5,0.0265201476265,0.0265201476265,0,True,1,Caldatribacteriota,JS1
+acid_high,min_loss,1,1,BAC,35,1,7,0.0342789530661,0.0342789530661,0,True,1,Firmicutes,MBA03
+acid_high,min_loss,1,1,BAC,26,1,1,0.0367637870985,0.0367637870985,0,True,1,Firmicutes,Desulfotomaculales
+acid_high,min_loss,1,1,BAC,51,1,5,0.0376937720517,0.0376937720517,0,True,1,Bacteroidota,Sphingobacteriales__b4
+acid_high,min_loss,1,1,BAC,3,1,8,0.0384683509697,0.0384683509697,0,True,1,Bacteroidota,Bacteroidales__b1
+acid_high,min_loss,1,1,BAC,55,1,8,0.0385414639435,0.0385414639435,0,True,1,Synergistota,Synergistales__b1
+acid_high,min_loss,1,1,BAC,23,1,23,0.0393522795964,0.0393522795964,0,True,1,Firmicutes,Clostridia__b7
+acid_high,min_loss,1,1,BAC,0,1,7,0.045463351426,0.045463351426,0,True,1,Firmicutes,Acholeplasmatales__b1
+acid_high,min_loss,1,1,BAC,39,1,7,0.0528789776836,0.0528789776836,0,True,1,Firmicutes,Oscillospirales__b1
+acid_high,min_loss,1,1,BAC,13,1,5,0.0538510331616,0.0538510331616,0,True,1,Firmicutes,Caldicoprobacterales__b1
+acid_high,min_loss,1,1,BAC,14,1,4,0.0554536337966,0.0554536337966,0,True,1,Firmicutes,Caldicoprobacterales__b2
+acid_high,min_loss,1,1,BAC,10,1,5,0.0606643837533,0.0606643837533,0,True,1,Bacteroidota,Bacteroidales__b9
+acid_high,min_loss,1,2,ARC,2,1,3,-0.0160331387221,-0.0160331387221,0,True,1,Crenarchaeota,Bathyarchaeia
+acid_high,min_loss,1,2,ARC,0,6,6,-0.0104762713443,-0.0628576280656,1.02974758928e-10,True,0,unassigned,4194fdb699f4d5c9620e1e7cfb8b009b; 783749c187ad3cb6e60ccecdd73fd8ef; 88fa6e2c26361b8b7ca8a72ae1ed781f; c17275cccc27dc9a4ab351a310c063c8; c4a2579e95fee657cb355e865aa027af; eb0898e38a817c5648a19a5e3db2c1be
+acid_high,min_loss,1,2,ARC,6,1,1,-0.00696041801222,-0.00696041801222,0,True,1,Halobacterota,Methanosarciniales__b4
+acid_high,min_loss,1,2,ARC,5,1,13,0.0106388942765,0.0106388942765,0,True,1,Halobacterota,Methanosarciniales__b2
+acid_high,min_loss,1,2,ARC,1,1,1,0.0131911262293,0.0131911262293,0,True,0,unassigned,58de505db56b2250b12c7cd7ec5bfa50
+acid_high,min_loss,1,2,ARC,4,2,58,0.013225873692,0.0264517473839,9.52177796679e-10,True,2,Halobacterota; Thermoplasmatota,Methanomassiliicoccales; Methanomicrobiales
+acid_high,min_loss,1,2,ARC,3,1,5,0.0160291580454,0.0160291580454,0,True,1,Euryarchaeota,Methanofastidiosales
+acid_high,min_loss,1,2,ARC,7,1,9,0.019540258865,0.019540258865,0,True,1,Halobacterota,Methanosarciniales__b5
+acid_high,min_loss,1,2,BAC,9,1,4,-0.0598193066065,-0.0598193066065,0,True,1,Bacteroidota,Bacteroidales__b7
+acid_high,min_loss,1,2,BAC,10,1,12,-0.0524178435792,-0.0524178435792,0,True,1,Bacteroidota,Bacteroidales__b8
+acid_high,min_loss,1,2,BAC,56,1,8,-0.0499274449351,-0.0499274449351,0,True,1,Synergistota,Synergistales__b2
+acid_high,min_loss,1,2,BAC,44,1,5,-0.0462759731202,-0.0462759731202,0,True,1,Thermotogota,Petrotogales
+acid_high,min_loss,1,2,BAC,46,1,3,-0.0350701016902,-0.0350701016902,0,True,1,SAR324_clade(Marine_group_B),SAR324_clade_Marine_group_B_
+acid_high,min_loss,1,2,BAC,30,1,3,-0.0346387862677,-0.0346387862677,0,True,1,Firmicutes,Izemoplasmatales
+acid_high,min_loss,1,2,BAC,16,1,5,-0.0344350336044,-0.0344350336044,0,True,1,Caldisericota,Caldisericales
+acid_high,min_loss,1,2,BAC,47,1,6,-0.0311649090997,-0.0311649090997,0,True,1,Chloroflexi,SBR1031__b2
+acid_high,min_loss,1,2,BAC,36,1,3,-0.0268957103907,-0.0268957103907,0,True,1,Spirochaetota,MVP_15
+acid_high,min_loss,1,2,BAC,3,1,7,-0.0265703021995,-0.0265703021995,0,True,1,Chloroflexi,Anaerolineales
+acid_high,min_loss,1,2,BAC,60,1,3,-0.0239172970002,-0.0239172970002,0,True,1,Desulfobacterota,Syntrophorhabdales
+acid_high,min_loss,1,2,BAC,54,1,10,-0.0220774682634,-0.0220774682634,0,True,1,Spirochaetota,Spirochaetales
+acid_high,min_loss,1,2,BAC,32,1,2,-0.0194062444724,-0.0194062444724,0,True,1,Thermotogota,Kosmotogales
+acid_high,min_loss,1,2,BAC,8,1,1,-0.0187291003049,-0.0187291003049,0,True,1,Bacteroidota,Bacteroidales__b6
+acid_high,min_loss,1,2,BAC,58,1,3,-0.0183204330526,-0.0183204330526,0,True,1,Desulfobacterota,Syntrophales__b2
+acid_high,min_loss,1,2,BAC,19,1,29,-0.0182281275504,-0.0182281275504,0,True,1,Firmicutes,Christensenellales__b2
+acid_high,min_loss,1,2,BAC,18,1,2,-0.0173767167497,-0.0173767167497,0,True,1,Firmicutes,Christensenellales__b1
+acid_high,min_loss,1,2,BAC,34,1,8,-0.0165327449461,-0.0165327449461,0,True,1,Firmicutes,Lactobacillales__b2
+acid_high,min_loss,1,2,BAC,37,1,9,-0.014522058944,-0.014522058944,0,True,1,Actinobacteriota,Micrococcales
+acid_high,min_loss,1,2,BAC,22,1,4,-0.0134999409911,-0.0134999409911,0,True,1,Firmicutes,Clostridia__b4
+acid_high,min_loss,1,2,BAC,57,1,18,-0.0126365065846,-0.0126365065846,0,True,1,Desulfobacterota,Syntrophales__b1
+acid_high,min_loss,1,2,BAC,63,1,7,-0.0118987026346,-0.0118987026346,0,True,1,Proteobacteria,Xanthomonadales
+acid_high,min_loss,1,2,BAC,2,1,4,-0.0118032634684,-0.0118032634684,0,True,1,Acidobacteriota,Aminicenantales__b2
+acid_high,min_loss,1,2,BAC,7,1,53,-0.0111618369375,-0.0111618369375,0,True,1,Bacteroidota,Bacteroidales__b4
+acid_high,min_loss,1,2,BAC,28,1,3,-0.0100587479342,-0.0100587479342,0,True,1,Actinobacteriota,Gaiellales
+acid_high,min_loss,1,2,BAC,40,1,8,-0.00820643225689,-0.00820643225689,0,True,1,Firmicutes,Oscillospirales__b3
+acid_high,min_loss,1,2,BAC,49,1,6,-0.00748739979011,-0.00748739979011,0,True,1,Bacteroidota,SJA_28__b2
+acid_high,min_loss,1,2,BAC,29,1,4,-0.00658320975226,-0.00658320975226,0,True,1,Hydrogenedentes,Hydrogenedentiales
+acid_high,min_loss,1,2,BAC,27,1,2,-0.00599595348949,-0.00599595348949,0,True,1,Bacteroidota,Flavobacteriales__b1
+acid_high,min_loss,1,2,BAC,17,1,15,-0.00477824257366,-0.00477824257366,0,True,1,Bacteroidota,Chitinophagales
+acid_high,min_loss,1,2,BAC,53,1,3,-0.00274172166838,-0.00274172166838,0,True,1,Proteobacteria,Sphingomonadales
+acid_high,min_loss,1,2,BAC,48,1,3,-0.00119267796531,-0.00119267796531,0,True,1,Chloroflexi,SJA_15
+acid_high,min_loss,1,2,BAC,45,1,6,0.000384736521854,0.000384736521854,0,True,1,Proteobacteria,Rhodobacterales
+acid_high,min_loss,1,2,BAC,38,1,3,0.00404048003112,0.00404048003112,0,True,1,Actinobacteriota,Microtrichales
+acid_high,min_loss,1,2,BAC,13,1,1,0.00521986599659,0.00521986599659,0,True,1,CK-2C2-2,CK_2C2_2
+acid_high,min_loss,1,2,BAC,33,1,7,0.00525488741589,0.00525488741589,0,True,1,Firmicutes,Lachnospirales
+acid_high,min_loss,1,2,BAC,20,1,15,0.00569176266713,0.00569176266713,0,True,1,Cloacimonadota,Cloacimonadales
+acid_high,min_loss,1,2,BAC,31,1,5,0.00604304978125,0.00604304978125,0,True,1,Caldatribacteriota,JS1
+acid_high,min_loss,1,2,BAC,14,1,2,0.00628584094114,0.00628584094114,0,True,1,Caldatribacteriota,Caldatribacteriales
+acid_high,min_loss,1,2,BAC,5,1,5,0.00732993827943,0.00732993827943,0,True,1,Bacteroidota,Bacteroidales__b2
+acid_high,min_loss,1,2,BAC,52,1,2,0.00742281545362,0.00742281545362,0,True,1,Bacteroidota,Sphingobacteriales__b5
+acid_high,min_loss,1,2,BAC,25,1,6,0.00951850637898,0.00951850637898,0,True,1,Firmicutes,DTU014__b1
+acid_high,min_loss,1,2,BAC,43,1,3,0.0102954346139,0.0102954346139,0,True,1,Firmicutes,Peptostreptococcales_Tissierellales__b2
+acid_high,min_loss,1,2,BAC,6,1,2,0.0104355138011,0.0104355138011,0,True,1,Bacteroidota,Bacteroidales__b3
+acid_high,min_loss,1,2,BAC,51,1,5,0.0113485603586,0.0113485603586,0,True,1,Bacteroidota,Sphingobacteriales__b4
+acid_high,min_loss,1,2,BAC,59,1,13,0.0143134940157,0.0143134940157,0,True,1,Firmicutes,Syntrophomonadales
+acid_high,min_loss,1,2,BAC,62,1,1,0.0145787692442,0.0145787692442,0,True,1,WS1,WS1
+acid_high,min_loss,1,2,BAC,21,1,5,0.0163711638979,0.0163711638979,0,True,1,Firmicutes,Clostridia__b3
+acid_high,min_loss,1,2,BAC,55,1,8,0.0184426144253,0.0184426144253,0,True,1,Synergistota,Synergistales__b1
+acid_high,min_loss,1,2,BAC,50,1,5,0.0189120971212,0.0189120971212,0,True,1,Bacteroidota,Sphingobacteriales__b2
+acid_high,min_loss,1,2,BAC,42,1,25,0.0203773793682,0.0203773793682,0,True,1,Firmicutes,Peptostreptococcales_Tissierellales__b1
+acid_high,min_loss,1,2,BAC,61,1,6,0.0265883708301,0.0265883708301,0,True,1,Verrucomicrobiota,WCHB1_41
+acid_high,min_loss,1,2,BAC,41,1,5,0.0266821459859,0.0266821459859,0,True,1,Verrucomicrobiota,Pedosphaerales
+acid_high,min_loss,1,2,BAC,24,1,4,0.0276831359238,0.0276831359238,0,True,1,Firmicutes,D8A_2
+acid_high,min_loss,1,2,BAC,26,1,1,0.0287511567359,0.0287511567359,0,True,1,Firmicutes,Desulfotomaculales
+acid_high,min_loss,1,2,BAC,12,1,54,0.0325483731662,0.0325483731662,0,True,1,Proteobacteria,Burkholderiales
+acid_high,min_loss,1,2,BAC,1,1,2,0.0337459588044,0.0337459588044,0,True,1,Firmicutes,Acholeplasmatales__b2
+acid_high,min_loss,1,2,BAC,35,1,7,0.035594877685,0.035594877685,0,True,1,Firmicutes,MBA03
+acid_high,min_loss,1,2,BAC,0,1,7,0.0374760151648,0.0374760151648,0,True,1,Firmicutes,Acholeplasmatales__b1
+acid_high,min_loss,1,2,BAC,23,1,23,0.0390078307829,0.0390078307829,0,True,1,Firmicutes,Clostridia__b7
+acid_high,min_loss,1,2,BAC,39,1,7,0.0392664638915,0.0392664638915,0,True,1,Firmicutes,Oscillospirales__b1
+acid_high,min_loss,1,2,BAC,11,1,5,0.0395232762535,0.0395232762535,0,True,1,Bacteroidota,Bacteroidales__b9
+acid_high,min_loss,1,2,BAC,4,1,8,0.0418221267431,0.0418221267431,0,True,1,Bacteroidota,Bacteroidales__b1
+acid_high,min_loss,1,2,BAC,15,1,4,0.0734135965432,0.0734135965432,0,True,1,Firmicutes,Caldicoprobacterales__b2
+acid_high,one_se,0,0,ARC,0,5,5,-0.00695102228071,-0.0347551114035,1.49812506151e-11,True,0,unassigned,4194fdb699f4d5c9620e1e7cfb8b009b; 783749c187ad3cb6e60ccecdd73fd8ef; c17275cccc27dc9a4ab351a310c063c8; c4a2579e95fee657cb355e865aa027af; eb0898e38a817c5648a19a5e3db2c1be
+acid_high,one_se,0,0,ARC,1,7,89,0.00496501591484,0.0347551114039,1.67161855798e-09,True,7,Crenarchaeota; Euryarchaeota; Halobacterota; Thermoplasmatota,Bathyarchaeia; Methanofastidiosales; Methanomassiliicoccales; Methanomicrobiales; Methanosarciniales__b2; Methanosarciniales__b4; Methanosarciniales__b5
+acid_high,one_se,0,0,BAC,54,1,8,-0.276823259128,-0.276823259128,0,True,1,Synergistota,Synergistales__b2
+acid_high,one_se,0,0,BAC,14,1,5,-0.13441798128,-0.13441798128,0,True,1,Caldisericota,Caldisericales
+acid_high,one_se,0,0,BAC,7,1,53,-0.127910919343,-0.127910919343,0,True,1,Bacteroidota,Bacteroidales__b4
+acid_high,one_se,0,0,BAC,20,1,5,-0.111529189001,-0.111529189001,0,True,1,Firmicutes,Clostridia__b3
+acid_high,one_se,0,0,BAC,45,1,3,-0.101993412906,-0.101993412906,0,True,1,SAR324_clade(Marine_group_B),SAR324_clade_Marine_group_B_
+acid_high,one_se,0,0,BAC,9,1,4,-0.0908065471243,-0.0908065471243,0,True,1,Bacteroidota,Bacteroidales__b7
+acid_high,one_se,0,0,BAC,44,1,6,-0.0814866988139,-0.0814866988139,0,True,1,Proteobacteria,Rhodobacterales
+acid_high,one_se,0,0,BAC,29,1,3,-0.0807285425677,-0.0807285425677,0,True,1,Firmicutes,Izemoplasmatales
+acid_high,one_se,0,0,BAC,17,1,29,-0.0677797722303,-0.0677797722303,0,True,1,Firmicutes,Christensenellales__b2
+acid_high,one_se,0,0,BAC,3,1,7,-0.0657426960917,-0.0657426960917,0,True,1,Chloroflexi,Anaerolineales
+acid_high,one_se,0,0,BAC,10,1,12,-0.0650586290572,-0.0650586290572,0,True,1,Bacteroidota,Bacteroidales__b8
+acid_high,one_se,0,0,BAC,52,1,10,-0.0618818514011,-0.0618818514011,0,True,1,Spirochaetota,Spirochaetales
+acid_high,one_se,0,0,BAC,18,1,15,-0.051868737563,-0.051868737563,0,True,1,Cloacimonadota,Cloacimonadales
+acid_high,one_se,0,0,BAC,1,1,2,-0.0329152463555,-0.0329152463555,0,True,1,Firmicutes,Acholeplasmatales__b2
+acid_high,one_se,0,0,BAC,16,1,2,-0.024641748495,-0.024641748495,0,True,1,Firmicutes,Christensenellales__b1
+acid_high,one_se,0,0,BAC,24,1,6,-0.0225284342679,-0.0225284342679,0,True,1,Firmicutes,DTU014__b1
+acid_high,one_se,0,0,BAC,35,1,3,-0.0164297823919,-0.0164297823919,0,True,1,Spirochaetota,MVP_15
+acid_high,one_se,0,0,BAC,48,1,6,-0.00580102130932,-0.00580102130932,0,True,1,Bacteroidota,SJA_28__b2
+acid_high,one_se,0,0,BAC,58,1,3,-1.26977689453e-07,-1.26977689453e-07,0,False,1,Desulfobacterota,Syntrophorhabdales
+acid_high,one_se,0,0,BAC,39,1,8,-1.43299628376e-08,-1.43299628376e-08,0,False,1,Firmicutes,Oscillospirales__b3
+acid_high,one_se,0,0,BAC,26,1,2,-7.48267288297e-09,-7.48267288297e-09,0,False,1,Bacteroidota,Flavobacteriales__b1
+acid_high,one_se,0,0,BAC,8,1,1,-5.0430374663e-09,-5.0430374663e-09,0,False,1,Bacteroidota,Bacteroidales__b6
+acid_high,one_se,0,0,BAC,61,1,7,-2.95009480602e-09,-2.95009480602e-09,0,False,1,Proteobacteria,Xanthomonadales
+acid_high,one_se,0,0,BAC,46,1,6,-1.82234976708e-09,-1.82234976708e-09,0,False,1,Chloroflexi,SBR1031__b2
+acid_high,one_se,0,0,BAC,55,1,18,-1.5119907701e-09,-1.5119907701e-09,0,False,1,Desulfobacterota,Syntrophales__b1
+acid_high,one_se,0,0,BAC,56,1,3,-1.28586201707e-09,-1.28586201707e-09,0,False,1,Desulfobacterota,Syntrophales__b2
+acid_high,one_se,0,0,BAC,15,1,15,-1.22915414505e-09,-1.22915414505e-09,0,False,1,Bacteroidota,Chitinophagales
+acid_high,one_se,0,0,BAC,6,1,2,-8.55056598933e-10,-8.55056598933e-10,0,False,1,Bacteroidota,Bacteroidales__b3
+acid_high,one_se,0,0,BAC,23,1,4,-7.96470741604e-10,-7.96470741604e-10,0,False,1,Firmicutes,D8A_2
+acid_high,one_se,0,0,BAC,51,1,2,-6.80025429185e-10,-6.80025429185e-10,0,False,1,Bacteroidota,Sphingobacteriales__b5
+acid_high,one_se,0,0,BAC,28,1,4,-3.7457374602e-10,-3.7457374602e-10,0,False,1,Hydrogenedentes,Hydrogenedentiales
+acid_high,one_se,0,0,BAC,2,1,4,-2.81766875868e-10,-2.81766875868e-10,0,False,1,Acidobacteriota,Aminicenantales__b2
+acid_high,one_se,0,0,BAC,13,1,2,-5.29371909812e-11,-5.29371909812e-11,0,False,1,Caldatribacteriota,Caldatribacteriales
+acid_high,one_se,0,0,BAC,59,1,6,-3.41289055971e-11,-3.41289055971e-11,0,False,1,Verrucomicrobiota,WCHB1_41
+acid_high,one_se,0,0,BAC,43,1,5,-1.45230977623e-12,-1.45230977623e-12,0,False,1,Thermotogota,Petrotogales
+acid_high,one_se,0,0,BAC,47,1,3,3.51543202887e-10,3.51543202887e-10,0,False,1,Chloroflexi,SJA_15
+acid_high,one_se,0,0,BAC,27,1,3,4.28615220285e-10,4.28615220285e-10,0,False,1,Actinobacteriota,Gaiellales
+acid_high,one_se,0,0,BAC,21,1,4,6.06422075013e-10,6.06422075013e-10,0,False,1,Firmicutes,Clostridia__b4
+acid_high,one_se,0,0,BAC,42,1,3,8.4250635092e-10,8.4250635092e-10,0,False,1,Firmicutes,Peptostreptococcales_Tissierellales__b2
+acid_high,one_se,0,0,BAC,37,1,3,1.43454363434e-09,1.43454363434e-09,0,False,1,Actinobacteriota,Microtrichales
+acid_high,one_se,0,0,BAC,50,1,5,1.56887227689e-09,1.56887227689e-09,0,False,1,Bacteroidota,Sphingobacteriales__b4
+acid_high,one_se,0,0,BAC,33,1,8,2.17113786127e-09,2.17113786127e-09,0,False,1,Firmicutes,Lactobacillales__b2
+acid_high,one_se,0,0,BAC,19,1,4,0.00689121854084,0.00689121854084,0,True,1,Firmicutes,Clostridia__b2
+acid_high,one_se,0,0,BAC,36,1,9,0.0105233008063,0.0105233008063,0,True,1,Actinobacteriota,Micrococcales
+acid_high,one_se,0,0,BAC,60,1,1,0.0156028810921,0.0156028810921,0,True,1,WS1,WS1
+acid_high,one_se,0,0,BAC,32,1,7,0.0258434566963,0.0258434566963,0,True,1,Firmicutes,Lachnospirales
+acid_high,one_se,0,0,BAC,57,1,13,0.0310605031075,0.0310605031075,0,True,1,Firmicutes,Syntrophomonadales
+acid_high,one_se,0,0,BAC,34,1,7,0.0313236635918,0.0313236635918,0,True,1,Firmicutes,MBA03
+acid_high,one_se,0,0,BAC,25,1,1,0.0331039938414,0.0331039938414,0,True,1,Firmicutes,Desulfotomaculales
+acid_high,one_se,0,0,BAC,49,1,5,0.0385526018114,0.0385526018114,0,True,1,Bacteroidota,Sphingobacteriales__b2
+acid_high,one_se,0,0,BAC,5,1,5,0.0445352633981,0.0445352633981,0,True,1,Bacteroidota,Bacteroidales__b2
+acid_high,one_se,0,0,BAC,31,1,2,0.0451641516708,0.0451641516708,0,True,1,Thermotogota,Kosmotogales
+acid_high,one_se,0,0,BAC,30,1,5,0.060996029205,0.060996029205,0,True,1,Caldatribacteriota,JS1
+acid_high,one_se,0,0,BAC,41,1,25,0.074612097311,0.074612097311,0,True,1,Firmicutes,Peptostreptococcales_Tissierellales__b1
+acid_high,one_se,0,0,BAC,40,1,5,0.0877314875702,0.0877314875702,0,True,1,Verrucomicrobiota,Pedosphaerales
+acid_high,one_se,0,0,BAC,53,1,8,0.0994403352828,0.0994403352828,0,True,1,Synergistota,Synergistales__b1
+acid_high,one_se,0,0,BAC,11,1,5,0.104950021174,0.104950021174,0,True,1,Bacteroidota,Bacteroidales__b9
+acid_high,one_se,0,0,BAC,38,1,7,0.114557203529,0.114557203529,0,True,1,Firmicutes,Oscillospirales__b1
+acid_high,one_se,0,0,BAC,4,1,8,0.139940438935,0.139940438935,0,True,1,Bacteroidota,Bacteroidales__b1
+acid_high,one_se,0,0,BAC,0,1,7,0.142022927072,0.142022927072,0,True,1,Firmicutes,Acholeplasmatales__b1
+acid_high,one_se,0,0,BAC,22,1,23,0.147658000625,0.147658000625,0,True,1,Firmicutes,Clostridia__b7
+acid_high,one_se,0,0,BAC,12,1,54,0.165835052371,0.165835052371,0,True,1,Proteobacteria,Burkholderiales
+acid_high,one_se,0,1,ARC,1,7,89,-8.94888240252e-10,-6.26421768176e-09,6.32681814378e-11,False,7,Crenarchaeota; Euryarchaeota; Halobacterota; Thermoplasmatota,Bathyarchaeia; Methanofastidiosales; Methanomassiliicoccales; Methanomicrobiales; Methanosarciniales__b2; Methanosarciniales__b4; Methanosarciniales__b5
+acid_high,one_se,0,1,ARC,0,6,6,1.04403636392e-09,6.2642181835e-09,5.76509687369e-13,False,0,unassigned,4194fdb699f4d5c9620e1e7cfb8b009b; 783749c187ad3cb6e60ccecdd73fd8ef; 88fa6e2c26361b8b7ca8a72ae1ed781f; c17275cccc27dc9a4ab351a310c063c8; c4a2579e95fee657cb355e865aa027af; eb0898e38a817c5648a19a5e3db2c1be
+acid_high,one_se,0,1,BAC,32,1,2,-0.50196324725,-0.50196324725,0,True,1,Thermotogota,Kosmotogales
+acid_high,one_se,0,1,BAC,5,1,2,-0.428785397939,-0.428785397939,0,True,1,Bacteroidota,Bacteroidales__b3
+acid_high,one_se,0,1,BAC,9,1,12,-0.264668900851,-0.264668900851,0,True,1,Bacteroidota,Bacteroidales__b8
+acid_high,one_se,0,1,BAC,41,1,8,-0.218870250274,-0.218870250274,0,True,1,Firmicutes,Oscillospirales__b3
+acid_high,one_se,0,1,BAC,8,1,4,-0.162209472597,-0.162209472597,0,True,1,Bacteroidota,Bacteroidales__b7
+acid_high,one_se,0,1,BAC,37,1,9,-0.140694685608,-0.140694685608,0,True,1,Actinobacteriota,Micrococcales
+acid_high,one_se,0,1,BAC,21,1,4,-0.123487478684,-0.123487478684,0,True,1,Firmicutes,Clostridia__b4
+acid_high,one_se,0,1,BAC,61,1,6,-0.0957956010779,-0.0957956010779,0,True,1,Verrucomicrobiota,WCHB1_41
+acid_high,one_se,0,1,BAC,4,1,5,-0.0827464395378,-0.0827464395378,0,True,1,Bacteroidota,Bacteroidales__b2
+acid_high,one_se,0,1,BAC,50,1,5,-0.0366555989346,-0.0366555989346,0,True,1,Bacteroidota,Sphingobacteriales__b2
+acid_high,one_se,0,1,BAC,30,1,3,-0.018580913134,-0.018580913134,0,True,1,Firmicutes,Izemoplasmatales
+acid_high,one_se,0,1,BAC,17,1,29,-0.00212100856803,-0.00212100856803,0,True,1,Firmicutes,Christensenellales__b2
+acid_high,one_se,0,1,BAC,54,1,10,-7.65559329208e-08,-7.65559329208e-08,0,False,1,Spirochaetota,Spirochaetales
+acid_high,one_se,0,1,BAC,34,1,8,-2.39037435844e-08,-2.39037435844e-08,0,False,1,Firmicutes,Lactobacillales__b2
+acid_high,one_se,0,1,BAC,6,1,53,-1.16271536366e-08,-1.16271536366e-08,0,False,1,Bacteroidota,Bacteroidales__b4
+acid_high,one_se,0,1,BAC,52,1,2,-1.13354869855e-08,-1.13354869855e-08,0,False,1,Bacteroidota,Sphingobacteriales__b5
+acid_high,one_se,0,1,BAC,63,1,7,-9.53855035946e-09,-9.53855035946e-09,0,False,1,Proteobacteria,Xanthomonadales
+acid_high,one_se,0,1,BAC,26,1,2,-8.61986586829e-09,-8.61986586829e-09,0,False,1,Bacteroidota,Flavobacteriales__b1
+acid_high,one_se,0,1,BAC,27,1,1,-7.23398854748e-09,-7.23398854748e-09,0,False,1,Fusobacteriota,Fusobacteriales
+acid_high,one_se,0,1,BAC,19,1,4,-4.62038451946e-09,-4.62038451946e-09,0,False,1,Firmicutes,Clostridia__b2
+acid_high,one_se,0,1,BAC,33,1,7,-3.95722103082e-09,-3.95722103082e-09,0,False,1,Firmicutes,Lachnospirales
+acid_high,one_se,0,1,BAC,47,1,3,-3.82158328076e-09,-3.82158328076e-09,0,False,1,SAR324_clade(Marine_group_B),SAR324_clade_Marine_group_B_
+acid_high,one_se,0,1,BAC,29,1,4,-3.050713928e-09,-3.050713928e-09,0,False,1,Hydrogenedentes,Hydrogenedentiales
+acid_high,one_se,0,1,BAC,45,1,5,-2.83069088702e-09,-2.83069088702e-09,0,False,1,Thermotogota,Petrotogales
+acid_high,one_se,0,1,BAC,36,1,3,-2.42594082934e-09,-2.42594082934e-09,0,False,1,Spirochaetota,MVP_15
+acid_high,one_se,0,1,BAC,20,1,5,-2.19755156804e-09,-2.19755156804e-09,0,False,1,Firmicutes,Clostridia__b3
+acid_high,one_se,0,1,BAC,59,1,13,-1.98573309413e-09,-1.98573309413e-09,0,False,1,Firmicutes,Syntrophomonadales
+acid_high,one_se,0,1,BAC,7,1,1,-1.1250404465e-09,-1.1250404465e-09,0,False,1,Bacteroidota,Bacteroidales__b6
+acid_high,one_se,0,1,BAC,43,1,25,-1.11225913175e-09,-1.11225913175e-09,0,False,1,Firmicutes,Peptostreptococcales_Tissierellales__b1
+acid_high,one_se,0,1,BAC,53,1,3,-9.55550507731e-10,-9.55550507731e-10,0,False,1,Proteobacteria,Sphingomonadales
+acid_high,one_se,0,1,BAC,1,1,2,-2.15018035847e-10,-2.15018035847e-10,0,False,1,Firmicutes,Acholeplasmatales__b2
+acid_high,one_se,0,1,BAC,23,1,4,2.02520338737e-10,2.02520338737e-10,0,False,1,Firmicutes,D8A_2
+acid_high,one_se,0,1,BAC,62,1,1,3.00923417337e-10,3.00923417337e-10,0,False,1,WS1,WS1
+acid_high,one_se,0,1,BAC,49,1,6,4.62541514177e-10,4.62541514177e-10,0,False,1,Bacteroidota,SJA_28__b2
+acid_high,one_se,0,1,BAC,56,1,8,7.26669066212e-10,7.26669066212e-10,0,False,1,Synergistota,Synergistales__b2
+acid_high,one_se,0,1,BAC,14,1,5,8.67855025715e-10,8.67855025715e-10,0,False,1,Caldisericota,Caldisericales
+acid_high,one_se,0,1,BAC,58,1,3,9.39381930802e-10,9.39381930802e-10,0,False,1,Desulfobacterota,Syntrophales__b2
+acid_high,one_se,0,1,BAC,38,1,3,1.32034128745e-09,1.32034128745e-09,0,False,1,Actinobacteriota,Microtrichales
+acid_high,one_se,0,1,BAC,28,1,3,1.34101153321e-09,1.34101153321e-09,0,False,1,Actinobacteriota,Gaiellales
+acid_high,one_se,0,1,BAC,60,1,3,2.03020565302e-09,2.03020565302e-09,0,False,1,Desulfobacterota,Syntrophorhabdales
+acid_high,one_se,0,1,BAC,44,1,3,2.31287941698e-09,2.31287941698e-09,0,False,1,Firmicutes,Peptostreptococcales_Tissierellales__b2
+acid_high,one_se,0,1,BAC,0,1,7,2.92735713322e-09,2.92735713322e-09,0,False,1,Firmicutes,Acholeplasmatales__b1
+acid_high,one_se,0,1,BAC,16,1,2,3.23932123727e-09,3.23932123727e-09,0,False,1,Firmicutes,Christensenellales__b1
+acid_high,one_se,0,1,BAC,57,1,18,3.28817210801e-09,3.28817210801e-09,0,False,1,Desulfobacterota,Syntrophales__b1
+acid_high,one_se,0,1,BAC,15,1,15,3.78181344206e-09,3.78181344206e-09,0,False,1,Bacteroidota,Chitinophagales
+acid_high,one_se,0,1,BAC,42,1,5,3.82824676577e-09,3.82824676577e-09,0,False,1,Verrucomicrobiota,Pedosphaerales
+acid_high,one_se,0,1,BAC,2,1,7,4.29925948648e-09,4.29925948648e-09,0,False,1,Chloroflexi,Anaerolineales
+acid_high,one_se,0,1,BAC,18,1,15,5.2004874779e-09,5.2004874779e-09,0,False,1,Cloacimonadota,Cloacimonadales
+acid_high,one_se,0,1,BAC,40,1,3,7.06583402577e-09,7.06583402577e-09,0,False,1,Firmicutes,Oscillospirales__b2
+acid_high,one_se,0,1,BAC,48,1,6,9.53417218087e-09,9.53417218087e-09,0,False,1,Chloroflexi,SBR1031__b2
+acid_high,one_se,0,1,BAC,35,1,7,4.39872766642e-06,4.39872766642e-06,0,True,1,Firmicutes,MBA03
+acid_high,one_se,0,1,BAC,22,1,23,0.000226603231645,0.000226603231645,0,True,1,Firmicutes,Clostridia__b7
+acid_high,one_se,0,1,BAC,31,1,5,0.0359435427171,0.0359435427171,0,True,1,Caldatribacteriota,JS1
+acid_high,one_se,0,1,BAC,46,1,6,0.0783983791609,0.0783983791609,0,True,1,Proteobacteria,Rhodobacterales
+acid_high,one_se,0,1,BAC,11,1,54,0.0805212117681,0.0805212117681,0,True,1,Proteobacteria,Burkholderiales
+acid_high,one_se,0,1,BAC,24,1,6,0.1210985005,0.1210985005,0,True,1,Firmicutes,DTU014__b1
+acid_high,one_se,0,1,BAC,25,1,1,0.156710959599,0.156710959599,0,True,1,Firmicutes,Desulfotomaculales
+acid_high,one_se,0,1,BAC,55,1,8,0.173541852553,0.173541852553,0,True,1,Synergistota,Synergistales__b1
+acid_high,one_se,0,1,BAC,39,1,7,0.193991307721,0.193991307721,0,True,1,Firmicutes,Oscillospirales__b1
+acid_high,one_se,0,1,BAC,51,1,5,0.209155687008,0.209155687008,0,True,1,Bacteroidota,Sphingobacteriales__b4
+acid_high,one_se,0,1,BAC,12,1,2,0.212356868469,0.212356868469,0,True,1,Caldatribacteriota,Caldatribacteriales
+acid_high,one_se,0,1,BAC,10,1,5,0.236289301092,0.236289301092,0,True,1,Bacteroidota,Bacteroidales__b9
+acid_high,one_se,0,1,BAC,13,1,5,0.288938375713,0.288938375713,0,True,1,Firmicutes,Caldicoprobacterales__b1
+acid_high,one_se,0,1,BAC,3,1,8,0.289402129638,0.289402129638,0,True,1,Bacteroidota,Bacteroidales__b1
+acid_high,one_se,0,2,ARC,0,7,7,-0.00426617439204,-0.0298632207443,1.0115068505e-12,True,0,unassigned,4194fdb699f4d5c9620e1e7cfb8b009b; 58de505db56b2250b12c7cd7ec5bfa50; 783749c187ad3cb6e60ccecdd73fd8ef; 88fa6e2c26361b8b7ca8a72ae1ed781f; c17275cccc27dc9a4ab351a310c063c8; c4a2579e95fee657cb355e865aa027af; eb0898e38a817c5648a19a5e3db2c1be
+acid_high,one_se,0,2,ARC,1,7,89,0.00426617439204,0.0298632207443,1.09917228965e-09,True,7,Crenarchaeota; Euryarchaeota; Halobacterota; Thermoplasmatota,Bathyarchaeia; Methanofastidiosales; Methanomassiliicoccales; Methanomicrobiales; Methanosarciniales__b2; Methanosarciniales__b4; Methanosarciniales__b5
+acid_high,one_se,0,2,BAC,24,1,5,-0.152968751208,-0.152968751208,0,True,1,Firmicutes,Clostridia__b3
+acid_high,one_se,0,2,BAC,44,1,8,-0.131846695204,-0.131846695204,0,True,1,Firmicutes,Oscillospirales__b3
+acid_high,one_se,0,2,BAC,9,1,4,-0.128548198297,-0.128548198297,0,True,1,Bacteroidota,Bacteroidales__b7
+acid_high,one_se,0,2,BAC,10,1,12,-0.126007095426,-0.126007095426,0,True,1,Bacteroidota,Bacteroidales__b8
+acid_high,one_se,0,2,BAC,6,1,2,-0.12511985968,-0.12511985968,0,True,1,Bacteroidota,Bacteroidales__b3
+acid_high,one_se,0,2,BAC,51,1,3,-0.113488683975,-0.113488683975,0,True,1,SAR324_clade(Marine_group_B),SAR324_clade_Marine_group_B_
+acid_high,one_se,0,2,BAC,65,1,6,-0.103474150436,-0.103474150436,0,True,1,Verrucomicrobiota,WCHB1_41
+acid_high,one_se,0,2,BAC,7,1,53,-0.101449733397,-0.101449733397,0,True,1,Bacteroidota,Bacteroidales__b4
+acid_high,one_se,0,2,BAC,56,1,2,-0.100220196685,-0.100220196685,0,True,1,Bacteroidota,Sphingobacteriales__b5
+acid_high,one_se,0,2,BAC,40,1,9,-0.0962829590029,-0.0962829590029,0,True,1,Actinobacteriota,Micrococcales
+acid_high,one_se,0,2,BAC,60,1,8,-0.0888638506151,-0.0888638506151,0,True,1,Synergistota,Synergistales__b2
+acid_high,one_se,0,2,BAC,54,1,5,-0.0775897666762,-0.0775897666762,0,True,1,Bacteroidota,Sphingobacteriales__b2
+acid_high,one_se,0,2,BAC,21,1,29,-0.0647270184974,-0.0647270184974,0,True,1,Firmicutes,Christensenellales__b2
+acid_high,one_se,0,2,BAC,58,1,10,-0.052365956749,-0.052365956749,0,True,1,Spirochaetota,Spirochaetales
+acid_high,one_se,0,2,BAC,61,1,18,-0.0496857475157,-0.0496857475157,0,True,1,Desulfobacterota,Syntrophales__b1
+acid_high,one_se,0,2,BAC,32,1,3,-0.0425048550194,-0.0425048550194,0,True,1,Firmicutes,Izemoplasmatales
+acid_high,one_se,0,2,BAC,22,1,15,-0.0331280440919,-0.0331280440919,0,True,1,Cloacimonadota,Cloacimonadales
+acid_high,one_se,0,2,BAC,28,1,6,-0.0314914342962,-0.0314914342962,0,True,1,Firmicutes,DTU014__b1
+acid_high,one_se,0,2,BAC,53,1,6,-0.0147636255079,-0.0147636255079,0,True,1,Bacteroidota,SJA_28__b2
+acid_high,one_se,0,2,BAC,2,1,4,-0.0139833638972,-0.0139833638972,0,True,1,Acidobacteriota,Aminicenantales__b2
+acid_high,one_se,0,2,BAC,3,1,7,-0.0117467581127,-0.0117467581127,0,True,1,Chloroflexi,Anaerolineales
+acid_high,one_se,0,2,BAC,25,1,4,-0.00808161038238,-0.00808161038238,0,True,1,Firmicutes,Clostridia__b4
+acid_high,one_se,0,2,BAC,20,1,2,-0.00767253238515,-0.00767253238515,0,True,1,Firmicutes,Christensenellales__b1
+acid_high,one_se,0,2,BAC,17,1,5,-0.00576240264602,-0.00576240264602,0,True,1,Caldisericota,Caldisericales
+acid_high,one_se,0,2,BAC,48,1,5,-0.00180513478677,-0.00180513478677,0,True,1,Thermotogota,Petrotogales
+acid_high,one_se,0,2,BAC,23,1,4,-0.0012934432016,-0.0012934432016,0,True,1,Firmicutes,Clostridia__b2
+acid_high,one_se,0,2,BAC,66,1,7,-6.50120987049e-09,-6.50120987049e-09,0,False,1,Proteobacteria,Xanthomonadales
+acid_high,one_se,0,2,BAC,37,1,3,-6.18878987688e-09,-6.18878987688e-09,0,False,1,Spirochaetota,Leptospirales
+acid_high,one_se,0,2,BAC,34,1,2,-4.50726473465e-09,-4.50726473465e-09,0,False,1,Thermotogota,Kosmotogales
+acid_high,one_se,0,2,BAC,31,1,4,-3.60533138823e-09,-3.60533138823e-09,0,False,1,Hydrogenedentes,Hydrogenedentiales
+acid_high,one_se,0,2,BAC,36,1,8,-2.54619036109e-09,-2.54619036109e-09,0,False,1,Firmicutes,Lactobacillales__b2
+acid_high,one_se,0,2,BAC,38,1,7,-1.96235074244e-09,-1.96235074244e-09,0,False,1,Firmicutes,MBA03
+acid_high,one_se,0,2,BAC,14,1,2,-1.33464483335e-09,-1.33464483335e-09,0,False,1,Caldatribacteriota,Caldatribacteriales
+acid_high,one_se,0,2,BAC,27,1,4,-7.15377427075e-10,-7.15377427075e-10,0,False,1,Firmicutes,D8A_2
+acid_high,one_se,0,2,BAC,50,1,6,-5.36639752156e-10,-5.36639752156e-10,0,False,1,Proteobacteria,Rhodobacterales
+acid_high,one_se,0,2,BAC,1,1,2,-4.66602852475e-10,-4.66602852475e-10,0,False,1,Firmicutes,Acholeplasmatales__b2
+acid_high,one_se,0,2,BAC,33,1,5,-3.17336428527e-10,-3.17336428527e-10,0,False,1,Caldatribacteriota,JS1
+acid_high,one_se,0,2,BAC,39,1,3,3.88616984114e-10,3.88616984114e-10,0,False,1,Spirochaetota,MVP_15
+acid_high,one_se,0,2,BAC,8,1,1,1.51161731275e-09,1.51161731275e-09,0,False,1,Bacteroidota,Bacteroidales__b6
+acid_high,one_se,0,2,BAC,30,1,3,1.65771999585e-09,1.65771999585e-09,0,False,1,Actinobacteriota,Gaiellales
+acid_high,one_se,0,2,BAC,19,1,15,2.00525239363e-09,2.00525239363e-09,0,False,1,Bacteroidota,Chitinophagales
+acid_high,one_se,0,2,BAC,64,1,3,2.42924907932e-09,2.42924907932e-09,0,False,1,Desulfobacterota,Syntrophorhabdales
+acid_high,one_se,0,2,BAC,62,1,3,2.68366554158e-09,2.68366554158e-09,0,False,1,Desulfobacterota,Syntrophales__b2
+acid_high,one_se,0,2,BAC,35,1,7,7.65739900876e-09,7.65739900876e-09,0,False,1,Firmicutes,Lachnospirales
+acid_high,one_se,0,2,BAC,59,1,8,1.05027816224e-08,1.05027816224e-08,0,False,1,Synergistota,Synergistales__b1
+acid_high,one_se,0,2,BAC,49,1,3,2.91459451628e-08,2.91459451628e-08,0,False,1,Proteobacteria,Rhizobiales__b3
+acid_high,one_se,0,2,BAC,63,1,13,0.000865364916421,0.000865364916421,0,True,1,Firmicutes,Syntrophomonadales
+acid_high,one_se,0,2,BAC,57,1,3,0.00583844699757,0.00583844699757,0,True,1,Proteobacteria,Sphingomonadales
+acid_high,one_se,0,2,BAC,18,1,1,0.018323172635,0.018323172635,0,True,1,Proteobacteria,Caulobacterales
+acid_high,one_se,0,2,BAC,41,1,3,0.0267862659427,0.0267862659427,0,True,1,Actinobacteriota,Microtrichales
+acid_high,one_se,0,2,BAC,29,1,1,0.0388700939838,0.0388700939838,0,True,1,Firmicutes,Desulfotomaculales
+acid_high,one_se,0,2,BAC,5,1,5,0.0394745330013,0.0394745330013,0,True,1,Bacteroidota,Bacteroidales__b2
+acid_high,one_se,0,2,BAC,46,1,25,0.0437164455437,0.0437164455437,0,True,1,Firmicutes,Peptostreptococcales_Tissierellales__b1
+acid_high,one_se,0,2,BAC,52,1,6,0.0453787149335,0.0453787149335,0,True,1,Chloroflexi,SBR1031__b2
+acid_high,one_se,0,2,BAC,12,1,54,0.0581606011193,0.0581606011193,0,True,1,Proteobacteria,Burkholderiales
+acid_high,one_se,0,2,BAC,55,1,5,0.0606379349581,0.0606379349581,0,True,1,Bacteroidota,Sphingobacteriales__b4
+acid_high,one_se,0,2,BAC,13,1,1,0.061164198782,0.061164198782,0,True,1,CK-2C2-2,CK_2C2_2
+acid_high,one_se,0,2,BAC,47,1,3,0.0641213125475,0.0641213125475,0,True,1,Firmicutes,Peptostreptococcales_Tissierellales__b2
+acid_high,one_se,0,2,BAC,26,1,23,0.101978352247,0.101978352247,0,True,1,Firmicutes,Clostridia__b7
+acid_high,one_se,0,2,BAC,11,1,5,0.109251572425,0.109251572425,0,True,1,Bacteroidota,Bacteroidales__b9
+acid_high,one_se,0,2,BAC,4,1,8,0.110263932357,0.110263932357,0,True,1,Bacteroidota,Bacteroidales__b1
+acid_high,one_se,0,2,BAC,42,1,7,0.1116664704,0.1116664704,0,True,1,Firmicutes,Oscillospirales__b1
+acid_high,one_se,0,2,BAC,0,1,7,0.125664210575,0.125664210575,0,True,1,Firmicutes,Acholeplasmatales__b1
+acid_high,one_se,0,2,BAC,45,1,5,0.129164276832,0.129164276832,0,True,1,Verrucomicrobiota,Pedosphaerales
+acid_high,one_se,0,2,BAC,43,1,3,0.136252031025,0.136252031025,0,True,1,Firmicutes,Oscillospirales__b2
+acid_high,one_se,0,2,BAC,15,1,5,0.17491172329,0.17491172329,0,True,1,Firmicutes,Caldicoprobacterales__b1
+acid_high,one_se,0,2,BAC,16,1,4,0.22238218388,0.22238218388,0,True,1,Firmicutes,Caldicoprobacterales__b2
+acid_high,one_se,1,0,ARC,0,12,94,2.14739296721e-16,2.57687156065e-15,5.53657020949e-10,False,7,Crenarchaeota; Euryarchaeota; Halobacterota; Thermoplasmatota; unassigned,4194fdb699f4d5c9620e1e7cfb8b009b; 783749c187ad3cb6e60ccecdd73fd8ef; Bathyarchaeia; Methanofastidiosales; Methanomassiliicoccales; Methanomicrobiales; Methanosarciniales__b2; Methanosarciniales__b4; Methanosarciniales__b5; c17275cccc27dc9a4ab351a310c063c8; c4a2579e95fee657cb355e865aa027af; eb0898e38a817c5648a19a5e3db2c1be
+acid_high,one_se,1,0,BAC,6,1,2,-0.0375015065785,-0.0375015065785,0,True,1,Bacteroidota,Bacteroidales__b3
+acid_high,one_se,1,0,BAC,1,1,2,-0.0313843866421,-0.0313843866421,0,True,1,Firmicutes,Acholeplasmatales__b2
+acid_high,one_se,1,0,BAC,46,1,3,-0.0313171523131,-0.0313171523131,0,True,1,SAR324_clade(Marine_group_B),SAR324_clade_Marine_group_B_
+acid_high,one_se,1,0,BAC,21,1,5,-0.0311627584891,-0.0311627584891,0,True,1,Firmicutes,Clostridia__b3
+acid_high,one_se,1,0,BAC,30,1,3,-0.0292695949005,-0.0292695949005,0,True,1,Firmicutes,Izemoplasmatales
+acid_high,one_se,1,0,BAC,19,1,15,-0.0292620293141,-0.0292620293141,0,True,1,Cloacimonadota,Cloacimonadales
+acid_high,one_se,1,0,BAC,61,1,6,-0.0210955254589,-0.0210955254589,0,True,1,Verrucomicrobiota,WCHB1_41
+acid_high,one_se,1,0,BAC,27,1,2,-0.0201105826691,-0.0201105826691,0,True,1,Bacteroidota,Flavobacteriales__b1
+acid_high,one_se,1,0,BAC,18,1,29,-0.0191299710453,-0.0191299710453,0,True,1,Firmicutes,Christensenellales__b2
+acid_high,one_se,1,0,BAC,54,1,10,-0.0178923669452,-0.0178923669452,0,True,1,Spirochaetota,Spirochaetales
+acid_high,one_se,1,0,BAC,10,1,12,-0.0168689489216,-0.0168689489216,0,True,1,Bacteroidota,Bacteroidales__b8
+acid_high,one_se,1,0,BAC,45,1,6,-0.0164982087945,-0.0164982087945,0,True,1,Proteobacteria,Rhodobacterales
+acid_high,one_se,1,0,BAC,29,1,4,-0.0151157519436,-0.0151157519436,0,True,1,Hydrogenedentes,Hydrogenedentiales
+acid_high,one_se,1,0,BAC,41,1,5,-0.0150823047136,-0.0150823047136,0,True,1,Verrucomicrobiota,Pedosphaerales
+acid_high,one_se,1,0,BAC,2,1,4,-0.0137529895643,-0.0137529895643,0,True,1,Acidobacteriota,Aminicenantales__b2
+acid_high,one_se,1,0,BAC,36,1,3,-0.0136448174584,-0.0136448174584,0,True,1,Spirochaetota,MVP_15
+acid_high,one_se,1,0,BAC,37,1,9,-0.0136223979858,-0.0136223979858,0,True,1,Actinobacteriota,Micrococcales
+acid_high,one_se,1,0,BAC,22,1,4,-0.0136129899958,-0.0136129899958,0,True,1,Firmicutes,Clostridia__b4
+acid_high,one_se,1,0,BAC,15,1,5,-0.0133871051495,-0.0133871051495,0,True,1,Caldisericota,Caldisericales
+acid_high,one_se,1,0,BAC,48,1,3,-0.0131414160257,-0.0131414160257,0,True,1,Chloroflexi,SJA_15
+acid_high,one_se,1,0,BAC,7,1,53,-0.0127619309404,-0.0127619309404,0,True,1,Bacteroidota,Bacteroidales__b4
+acid_high,one_se,1,0,BAC,40,1,8,-0.0123600938733,-0.0123600938733,0,True,1,Firmicutes,Oscillospirales__b3
+acid_high,one_se,1,0,BAC,56,1,8,-0.00912992600045,-0.00912992600045,0,True,1,Synergistota,Synergistales__b2
+acid_high,one_se,1,0,BAC,63,1,7,-0.00909914703369,-0.00909914703369,0,True,1,Proteobacteria,Xanthomonadales
+acid_high,one_se,1,0,BAC,16,1,15,-0.00777460582207,-0.00777460582207,0,True,1,Bacteroidota,Chitinophagales
+acid_high,one_se,1,0,BAC,17,1,2,-0.00668926998263,-0.00668926998263,0,True,1,Firmicutes,Christensenellales__b1
+acid_high,one_se,1,0,BAC,9,1,4,-0.00517621763426,-0.00517621763426,0,True,1,Bacteroidota,Bacteroidales__b7
+acid_high,one_se,1,0,BAC,32,1,2,-0.0049176960414,-0.0049176960414,0,True,1,Thermotogota,Kosmotogales
+acid_high,one_se,1,0,BAC,26,1,1,-0.00184019979804,-0.00184019979804,0,True,1,Firmicutes,Desulfotomaculales
+acid_high,one_se,1,0,BAC,8,1,1,-0.00129754003157,-0.00129754003157,0,True,1,Bacteroidota,Bacteroidales__b6
+acid_high,one_se,1,0,BAC,12,1,54,-0.00121679788435,-0.00121679788435,0,True,1,Proteobacteria,Burkholderiales
+acid_high,one_se,1,0,BAC,5,1,5,-5.22069065473e-09,-5.22069065473e-09,0,False,1,Bacteroidota,Bacteroidales__b2
+acid_high,one_se,1,0,BAC,60,1,3,-1.62868367946e-09,-1.62868367946e-09,0,False,1,Desulfobacterota,Syntrophorhabdales
+acid_high,one_se,1,0,BAC,57,1,18,-1.18476201223e-09,-1.18476201223e-09,0,False,1,Desulfobacterota,Syntrophales__b1
+acid_high,one_se,1,0,BAC,49,1,6,-9.97703293147e-10,-9.97703293147e-10,0,False,1,Bacteroidota,SJA_28__b2
+acid_high,one_se,1,0,BAC,58,1,3,-9.28811295593e-10,-9.28811295593e-10,0,False,1,Desulfobacterota,Syntrophales__b2
+acid_high,one_se,1,0,BAC,62,1,1,3.1533448148e-10,3.1533448148e-10,0,False,1,WS1,WS1
+acid_high,one_se,1,0,BAC,53,1,3,4.40580371837e-10,4.40580371837e-10,0,False,1,Proteobacteria,Sphingomonadales
+acid_high,one_se,1,0,BAC,24,1,4,1.05422524741e-09,1.05422524741e-09,0,False,1,Firmicutes,D8A_2
+acid_high,one_se,1,0,BAC,47,1,6,1.08875469169e-09,1.08875469169e-09,0,False,1,Chloroflexi,SBR1031__b2
+acid_high,one_se,1,0,BAC,51,1,5,1.78250052011e-09,1.78250052011e-09,0,False,1,Bacteroidota,Sphingobacteriales__b4
+acid_high,one_se,1,0,BAC,3,1,7,1.92319957475e-09,1.92319957475e-09,0,False,1,Chloroflexi,Anaerolineales
+acid_high,one_se,1,0,BAC,52,1,2,4.87113163391e-09,4.87113163391e-09,0,False,1,Bacteroidota,Sphingobacteriales__b5
+acid_high,one_se,1,0,BAC,38,1,3,9.51811890149e-09,9.51811890149e-09,0,False,1,Actinobacteriota,Microtrichales
+acid_high,one_se,1,0,BAC,50,1,5,0.000503617651101,0.000503617651101,0,True,1,Bacteroidota,Sphingobacteriales__b2
+acid_high,one_se,1,0,BAC,43,1,3,0.00182365281769,0.00182365281769,0,True,1,Firmicutes,Peptostreptococcales_Tissierellales__b2
+acid_high,one_se,1,0,BAC,25,1,6,0.00714174703238,0.00714174703238,0,True,1,Firmicutes,DTU014__b1
+acid_high,one_se,1,0,BAC,28,1,3,0.00858441765652,0.00858441765652,0,True,1,Actinobacteriota,Gaiellales
+acid_high,one_se,1,0,BAC,33,1,7,0.0110496854554,0.0110496854554,0,True,1,Firmicutes,Lachnospirales
+acid_high,one_se,1,0,BAC,59,1,13,0.0115066180942,0.0115066180942,0,True,1,Firmicutes,Syntrophomonadales
+acid_high,one_se,1,0,BAC,31,1,5,0.0129662273418,0.0129662273418,0,True,1,Caldatribacteriota,JS1
+acid_high,one_se,1,0,BAC,34,1,8,0.0162774164892,0.0162774164892,0,True,1,Firmicutes,Lactobacillales__b2
+acid_high,one_se,1,0,BAC,39,1,7,0.0176397831433,0.0176397831433,0,True,1,Firmicutes,Oscillospirales__b1
+acid_high,one_se,1,0,BAC,42,1,25,0.0232763328398,0.0232763328398,0,True,1,Firmicutes,Peptostreptococcales_Tissierellales__b1
+acid_high,one_se,1,0,BAC,35,1,7,0.0240869748273,0.0240869748273,0,True,1,Firmicutes,MBA03
+acid_high,one_se,1,0,BAC,13,1,2,0.0248590274753,0.0248590274753,0,True,1,Caldatribacteriota,Caldatribacteriales
+acid_high,one_se,1,0,BAC,44,1,5,0.0277828905355,0.0277828905355,0,True,1,Thermotogota,Petrotogales
+acid_high,one_se,1,0,BAC,4,1,8,0.0278795733237,0.0278795733237,0,True,1,Bacteroidota,Bacteroidales__b1
+acid_high,one_se,1,0,BAC,23,1,23,0.0299179206778,0.0299179206778,0,True,1,Firmicutes,Clostridia__b7
+acid_high,one_se,1,0,BAC,55,1,8,0.0306437963584,0.0306437963584,0,True,1,Synergistota,Synergistales__b1
+acid_high,one_se,1,0,BAC,0,1,7,0.0402853551437,0.0402853551437,0,True,1,Firmicutes,Acholeplasmatales__b1
+acid_high,one_se,1,0,BAC,20,1,4,0.0468663441232,0.0468663441232,0,True,1,Firmicutes,Clostridia__b2
+acid_high,one_se,1,0,BAC,11,1,5,0.0567374601023,0.0567374601023,0,True,1,Bacteroidota,Bacteroidales__b9
+acid_high,one_se,1,0,BAC,14,1,5,0.065287377829,0.065287377829,0,True,1,Firmicutes,Caldicoprobacterales__b1
+acid_high,one_se,1,1,ARC,0,6,6,-1.81722118836e-09,-1.09033271302e-08,4.79438330137e-13,False,0,unassigned,4194fdb699f4d5c9620e1e7cfb8b009b; 783749c187ad3cb6e60ccecdd73fd8ef; 88fa6e2c26361b8b7ca8a72ae1ed781f; c17275cccc27dc9a4ab351a310c063c8; c4a2579e95fee657cb355e865aa027af; eb0898e38a817c5648a19a5e3db2c1be
+acid_high,one_se,1,1,ARC,1,7,89,1.55761843877e-09,1.09033290714e-08,1.1264423923e-10,False,7,Crenarchaeota; Euryarchaeota; Halobacterota; Thermoplasmatota,Bathyarchaeia; Methanofastidiosales; Methanomassiliicoccales; Methanomicrobiales; Methanosarciniales__b2; Methanosarciniales__b4; Methanosarciniales__b5
+acid_high,one_se,1,1,BAC,5,1,2,-0.21170271421,-0.21170271421,0,True,1,Bacteroidota,Bacteroidales__b3
+acid_high,one_se,1,1,BAC,8,1,4,-0.145852233084,-0.145852233084,0,True,1,Bacteroidota,Bacteroidales__b7
+acid_high,one_se,1,1,BAC,56,1,8,-0.140505747993,-0.140505747993,0,True,1,Synergistota,Synergistales__b2
+acid_high,one_se,1,1,BAC,6,1,53,-0.134823429446,-0.134823429446,0,True,1,Bacteroidota,Bacteroidales__b4
+acid_high,one_se,1,1,BAC,21,1,5,-0.121853143415,-0.121853143415,0,True,1,Firmicutes,Clostridia__b3
+acid_high,one_se,1,1,BAC,9,1,12,-0.114644659878,-0.114644659878,0,True,1,Bacteroidota,Bacteroidales__b8
+acid_high,one_se,1,1,BAC,18,1,29,-0.0914766582417,-0.0914766582417,0,True,1,Firmicutes,Christensenellales__b2
+acid_high,one_se,1,1,BAC,54,1,10,-0.0839315235109,-0.0839315235109,0,True,1,Spirochaetota,Spirochaetales
+acid_high,one_se,1,1,BAC,15,1,5,-0.0789828067807,-0.0789828067807,0,True,1,Caldisericota,Caldisericales
+acid_high,one_se,1,1,BAC,32,1,2,-0.0789054770409,-0.0789054770409,0,True,1,Thermotogota,Kosmotogales
+acid_high,one_se,1,1,BAC,41,1,8,-0.0672849122208,-0.0672849122208,0,True,1,Firmicutes,Oscillospirales__b3
+acid_high,one_se,1,1,BAC,22,1,4,-0.0654999438335,-0.0654999438335,0,True,1,Firmicutes,Clostridia__b4
+acid_high,one_se,1,1,BAC,20,1,4,-0.0561298472945,-0.0561298472945,0,True,1,Firmicutes,Clostridia__b2
+acid_high,one_se,1,1,BAC,28,1,1,-0.0537866712641,-0.0537866712641,0,True,1,Fusobacteriota,Fusobacteriales
+acid_high,one_se,1,1,BAC,37,1,9,-0.0469993855699,-0.0469993855699,0,True,1,Actinobacteriota,Micrococcales
+acid_high,one_se,1,1,BAC,34,1,8,-0.0409398463976,-0.0409398463976,0,True,1,Firmicutes,Lactobacillales__b2
+acid_high,one_se,1,1,BAC,27,1,2,-0.0396533855167,-0.0396533855167,0,True,1,Bacteroidota,Flavobacteriales__b1
+acid_high,one_se,1,1,BAC,63,1,7,-0.0385150955094,-0.0385150955094,0,True,1,Proteobacteria,Xanthomonadales
+acid_high,one_se,1,1,BAC,61,1,6,-0.0366398539714,-0.0366398539714,0,True,1,Verrucomicrobiota,WCHB1_41
+acid_high,one_se,1,1,BAC,47,1,3,-0.0355760877679,-0.0355760877679,0,True,1,SAR324_clade(Marine_group_B),SAR324_clade_Marine_group_B_
+acid_high,one_se,1,1,BAC,52,1,2,-0.0128218140352,-0.0128218140352,0,True,1,Bacteroidota,Sphingobacteriales__b5
+acid_high,one_se,1,1,BAC,50,1,5,-0.00933724494424,-0.00933724494424,0,True,1,Bacteroidota,Sphingobacteriales__b2
+acid_high,one_se,1,1,BAC,7,1,1,-0.00262720854955,-0.00262720854955,0,True,1,Bacteroidota,Bacteroidales__b6
+acid_high,one_se,1,1,BAC,45,1,5,-0.000964895101228,-0.000964895101228,0,True,1,Thermotogota,Petrotogales
+acid_high,one_se,1,1,BAC,46,1,6,-8.00460203694e-08,-8.00460203694e-08,0,False,1,Proteobacteria,Rhodobacterales
+acid_high,one_se,1,1,BAC,17,1,2,-1.44907302699e-08,-1.44907302699e-08,0,False,1,Firmicutes,Christensenellales__b1
+acid_high,one_se,1,1,BAC,49,1,6,-4.77105518818e-09,-4.77105518818e-09,0,False,1,Bacteroidota,SJA_28__b2
+acid_high,one_se,1,1,BAC,59,1,13,-4.61068752995e-10,-4.61068752995e-10,0,False,1,Firmicutes,Syntrophomonadales
+acid_high,one_se,1,1,BAC,30,1,3,-4.51311827603e-10,-4.51311827603e-10,0,False,1,Firmicutes,Izemoplasmatales
+acid_high,one_se,1,1,BAC,25,1,6,-4.43345445674e-10,-4.43345445674e-10,0,False,1,Firmicutes,DTU014__b1
+acid_high,one_se,1,1,BAC,16,1,15,-3.44181584934e-10,-3.44181584934e-10,0,False,1,Bacteroidota,Chitinophagales
+acid_high,one_se,1,1,BAC,36,1,3,-9.81574330558e-11,-9.81574330558e-11,0,False,1,Spirochaetota,MVP_15
+acid_high,one_se,1,1,BAC,43,1,25,2.35166329222e-11,2.35166329222e-11,0,False,1,Firmicutes,Peptostreptococcales_Tissierellales__b1
+acid_high,one_se,1,1,BAC,19,1,15,4.07898637435e-11,4.07898637435e-11,0,False,1,Cloacimonadota,Cloacimonadales
+acid_high,one_se,1,1,BAC,24,1,4,5.43469575559e-11,5.43469575559e-11,0,False,1,Firmicutes,D8A_2
+acid_high,one_se,1,1,BAC,2,1,7,1.25495227378e-10,1.25495227378e-10,0,False,1,Chloroflexi,Anaerolineales
+acid_high,one_se,1,1,BAC,4,1,5,1.82531199969e-10,1.82531199969e-10,0,False,1,Bacteroidota,Bacteroidales__b2
+acid_high,one_se,1,1,BAC,33,1,7,1.97749994701e-10,1.97749994701e-10,0,False,1,Firmicutes,Lachnospirales
+acid_high,one_se,1,1,BAC,38,1,3,2.13271048218e-10,2.13271048218e-10,0,False,1,Actinobacteriota,Microtrichales
+acid_high,one_se,1,1,BAC,12,1,2,2.46313082787e-10,2.46313082787e-10,0,False,1,Caldatribacteriota,Caldatribacteriales
+acid_high,one_se,1,1,BAC,29,1,3,2.02515758736e-09,2.02515758736e-09,0,False,1,Actinobacteriota,Gaiellales
+acid_high,one_se,1,1,BAC,1,1,2,3.63601776827e-09,3.63601776827e-09,0,False,1,Firmicutes,Acholeplasmatales__b2
+acid_high,one_se,1,1,BAC,60,1,3,8.21116533679e-09,8.21116533679e-09,0,False,1,Desulfobacterota,Syntrophorhabdales
+acid_high,one_se,1,1,BAC,53,1,3,0.00850541143514,0.00850541143514,0,True,1,Proteobacteria,Sphingomonadales
+acid_high,one_se,1,1,BAC,57,1,18,0.00906245244618,0.00906245244618,0,True,1,Desulfobacterota,Syntrophales__b1
+acid_high,one_se,1,1,BAC,58,1,3,0.00963908570217,0.00963908570217,0,True,1,Desulfobacterota,Syntrophales__b2
+acid_high,one_se,1,1,BAC,31,1,5,0.0163737782032,0.0163737782032,0,True,1,Caldatribacteriota,JS1
+acid_high,one_se,1,1,BAC,35,1,7,0.0260810996855,0.0260810996855,0,True,1,Firmicutes,MBA03
+acid_high,one_se,1,1,BAC,44,1,3,0.038313544365,0.038313544365,0,True,1,Firmicutes,Peptostreptococcales_Tissierellales__b2
+acid_high,one_se,1,1,BAC,48,1,6,0.0424956765893,0.0424956765893,0,True,1,Chloroflexi,SBR1031__b2
+acid_high,one_se,1,1,BAC,40,1,3,0.0459168561258,0.0459168561258,0,True,1,Firmicutes,Oscillospirales__b2
+acid_high,one_se,1,1,BAC,62,1,1,0.0462831902247,0.0462831902247,0,True,1,WS1,WS1
+acid_high,one_se,1,1,BAC,11,1,54,0.0610254383656,0.0610254383656,0,True,1,Proteobacteria,Burkholderiales
+acid_high,one_se,1,1,BAC,23,1,23,0.0802930687965,0.0802930687965,0,True,1,Firmicutes,Clostridia__b7
+acid_high,one_se,1,1,BAC,26,1,1,0.0930443194554,0.0930443194554,0,True,1,Firmicutes,Desulfotomaculales
+acid_high,one_se,1,1,BAC,42,1,5,0.0954733274974,0.0954733274974,0,True,1,Verrucomicrobiota,Pedosphaerales
+acid_high,one_se,1,1,BAC,0,1,7,0.104614878124,0.104614878124,0,True,1,Firmicutes,Acholeplasmatales__b1
+acid_high,one_se,1,1,BAC,51,1,5,0.12361245409,0.12361245409,0,True,1,Bacteroidota,Sphingobacteriales__b4
+acid_high,one_se,1,1,BAC,55,1,8,0.126796233039,0.126796233039,0,True,1,Synergistota,Synergistales__b1
+acid_high,one_se,1,1,BAC,10,1,5,0.130642939641,0.130642939641,0,True,1,Bacteroidota,Bacteroidales__b9
+acid_high,one_se,1,1,BAC,3,1,8,0.142747473052,0.142747473052,0,True,1,Bacteroidota,Bacteroidales__b1
+acid_high,one_se,1,1,BAC,14,1,4,0.14651378501,0.14651378501,0,True,1,Firmicutes,Caldicoprobacterales__b2
+acid_high,one_se,1,1,BAC,13,1,5,0.148399048144,0.148399048144,0,True,1,Firmicutes,Caldicoprobacterales__b1
+acid_high,one_se,1,1,BAC,39,1,7,0.213620611735,0.213620611735,0,True,1,Firmicutes,Oscillospirales__b1
+acid_high,one_se,1,2,ARC,0,6,6,-0.0138533490152,-0.0831200940909,1.30495614314e-12,True,0,unassigned,4194fdb699f4d5c9620e1e7cfb8b009b; 783749c187ad3cb6e60ccecdd73fd8ef; 88fa6e2c26361b8b7ca8a72ae1ed781f; c17275cccc27dc9a4ab351a310c063c8; c4a2579e95fee657cb355e865aa027af; eb0898e38a817c5648a19a5e3db2c1be
+acid_high,one_se,1,2,ARC,3,1,1,-0.0137019583643,-0.0137019583643,0,True,1,Halobacterota,Methanosarciniales__b4
+acid_high,one_se,1,2,ARC,4,1,9,-3.38090810076e-11,-3.38090810076e-11,0,False,1,Halobacterota,Methanosarciniales__b5
+acid_high,one_se,1,2,ARC,1,1,1,0.0118939464423,0.0118939464423,0,True,0,unassigned,58de505db56b2250b12c7cd7ec5bfa50
+acid_high,one_se,1,2,ARC,2,5,79,0.0169856212093,0.0849281060467,4.47513858609e-09,True,5,Crenarchaeota; Euryarchaeota; Halobacterota; Thermoplasmatota,Bathyarchaeia; Methanofastidiosales; Methanomassiliicoccales; Methanomicrobiales; Methanosarciniales__b2
+acid_high,one_se,1,2,BAC,10,1,12,-0.183806849941,-0.183806849941,0,True,1,Bacteroidota,Bacteroidales__b8
+acid_high,one_se,1,2,BAC,9,1,4,-0.166855289812,-0.166855289812,0,True,1,Bacteroidota,Bacteroidales__b7
+acid_high,one_se,1,2,BAC,56,1,8,-0.151538721114,-0.151538721114,0,True,1,Synergistota,Synergistales__b2
+acid_high,one_se,1,2,BAC,44,1,5,-0.116097861331,-0.116097861331,0,True,1,Thermotogota,Petrotogales
+acid_high,one_se,1,2,BAC,3,1,7,-0.102891868809,-0.102891868809,0,True,1,Chloroflexi,Anaerolineales
+acid_high,one_se,1,2,BAC,46,1,3,-0.09511383239,-0.09511383239,0,True,1,SAR324_clade(Marine_group_B),SAR324_clade_Marine_group_B_
+acid_high,one_se,1,2,BAC,54,1,10,-0.086096142992,-0.086096142992,0,True,1,Spirochaetota,Spirochaetales
+acid_high,one_se,1,2,BAC,47,1,6,-0.0794720368236,-0.0794720368236,0,True,1,Chloroflexi,SBR1031__b2
+acid_high,one_se,1,2,BAC,16,1,5,-0.0794253048929,-0.0794253048929,0,True,1,Caldisericota,Caldisericales
+acid_high,one_se,1,2,BAC,30,1,3,-0.0685336385376,-0.0685336385376,0,True,1,Firmicutes,Izemoplasmatales
+acid_high,one_se,1,2,BAC,34,1,8,-0.042822534455,-0.042822534455,0,True,1,Firmicutes,Lactobacillales__b2
+acid_high,one_se,1,2,BAC,40,1,8,-0.0381809265996,-0.0381809265996,0,True,1,Firmicutes,Oscillospirales__b3
+acid_high,one_se,1,2,BAC,37,1,9,-0.0376374262034,-0.0376374262034,0,True,1,Actinobacteriota,Micrococcales
+acid_high,one_se,1,2,BAC,60,1,3,-0.0335071591519,-0.0335071591519,0,True,1,Desulfobacterota,Syntrophorhabdales
+acid_high,one_se,1,2,BAC,7,1,53,-0.0297764955938,-0.0297764955938,0,True,1,Bacteroidota,Bacteroidales__b4
+acid_high,one_se,1,2,BAC,22,1,4,-0.0285240755157,-0.0285240755157,0,True,1,Firmicutes,Clostridia__b4
+acid_high,one_se,1,2,BAC,36,1,3,-0.0215351370665,-0.0215351370665,0,True,1,Spirochaetota,MVP_15
+acid_high,one_se,1,2,BAC,18,1,2,-0.0205504949351,-0.0205504949351,0,True,1,Firmicutes,Christensenellales__b1
+acid_high,one_se,1,2,BAC,58,1,3,-0.0194280223498,-0.0194280223498,0,True,1,Desulfobacterota,Syntrophales__b2
+acid_high,one_se,1,2,BAC,8,1,1,-0.0096903539406,-0.0096903539406,0,True,1,Bacteroidota,Bacteroidales__b6
+acid_high,one_se,1,2,BAC,19,1,29,-0.00847212154514,-0.00847212154514,0,True,1,Firmicutes,Christensenellales__b2
+acid_high,one_se,1,2,BAC,31,1,5,-0.00108759759286,-0.00108759759286,0,True,1,Caldatribacteriota,JS1
+acid_high,one_se,1,2,BAC,2,1,4,-0.00085505834898,-0.00085505834898,0,True,1,Acidobacteriota,Aminicenantales__b2
+acid_high,one_se,1,2,BAC,14,1,2,-8.92324271614e-08,-8.92324271614e-08,0,False,1,Caldatribacteriota,Caldatribacteriales
+acid_high,one_se,1,2,BAC,57,1,18,-1.06369018697e-08,-1.06369018697e-08,0,False,1,Desulfobacterota,Syntrophales__b1
+acid_high,one_se,1,2,BAC,52,1,2,-4.47096355314e-09,-4.47096355314e-09,0,False,1,Bacteroidota,Sphingobacteriales__b5
+acid_high,one_se,1,2,BAC,49,1,6,-2.69057400218e-09,-2.69057400218e-09,0,False,1,Bacteroidota,SJA_28__b2
+acid_high,one_se,1,2,BAC,63,1,7,-2.50264793558e-09,-2.50264793558e-09,0,False,1,Proteobacteria,Xanthomonadales
+acid_high,one_se,1,2,BAC,28,1,3,-1.89322517701e-09,-1.89322517701e-09,0,False,1,Actinobacteriota,Gaiellales
+acid_high,one_se,1,2,BAC,27,1,2,-1.46663518175e-09,-1.46663518175e-09,0,False,1,Bacteroidota,Flavobacteriales__b1
+acid_high,one_se,1,2,BAC,29,1,4,-9.94428235931e-10,-9.94428235931e-10,0,False,1,Hydrogenedentes,Hydrogenedentiales
+acid_high,one_se,1,2,BAC,32,1,2,-6.24508222779e-10,-6.24508222779e-10,0,False,1,Thermotogota,Kosmotogales
+acid_high,one_se,1,2,BAC,53,1,3,-5.22777463024e-10,-5.22777463024e-10,0,False,1,Proteobacteria,Sphingomonadales
+acid_high,one_se,1,2,BAC,17,1,15,-4.88610201412e-10,-4.88610201412e-10,0,False,1,Bacteroidota,Chitinophagales
+acid_high,one_se,1,2,BAC,25,1,6,1.0228707846e-09,1.0228707846e-09,0,False,1,Firmicutes,DTU014__b1
+acid_high,one_se,1,2,BAC,48,1,3,1.80384819951e-09,1.80384819951e-09,0,False,1,Chloroflexi,SJA_15
+acid_high,one_se,1,2,BAC,13,1,1,6.4193566611e-09,6.4193566611e-09,0,False,1,CK-2C2-2,CK_2C2_2
+acid_high,one_se,1,2,BAC,45,1,6,8.19794518184e-09,8.19794518184e-09,0,False,1,Proteobacteria,Rhodobacterales
+acid_high,one_se,1,2,BAC,20,1,15,8.50977791935e-09,8.50977791935e-09,0,False,1,Cloacimonadota,Cloacimonadales
+acid_high,one_se,1,2,BAC,59,1,13,1.06500924781e-08,1.06500924781e-08,0,False,1,Firmicutes,Syntrophomonadales
+acid_high,one_se,1,2,BAC,51,1,5,0.00699715542522,0.00699715542522,0,True,1,Bacteroidota,Sphingobacteriales__b4
+acid_high,one_se,1,2,BAC,6,1,2,0.00809928743814,0.00809928743814,0,True,1,Bacteroidota,Bacteroidales__b3
+acid_high,one_se,1,2,BAC,38,1,3,0.00969753525553,0.00969753525553,0,True,1,Actinobacteriota,Microtrichales
+acid_high,one_se,1,2,BAC,42,1,25,0.0097965415226,0.0097965415226,0,True,1,Firmicutes,Peptostreptococcales_Tissierellales__b1
+acid_high,one_se,1,2,BAC,11,1,5,0.0131967083454,0.0131967083454,0,True,1,Bacteroidota,Bacteroidales__b9
+acid_high,one_se,1,2,BAC,43,1,3,0.013586038851,0.013586038851,0,True,1,Firmicutes,Peptostreptococcales_Tissierellales__b2
+acid_high,one_se,1,2,BAC,35,1,7,0.0209919557196,0.0209919557196,0,True,1,Firmicutes,MBA03
+acid_high,one_se,1,2,BAC,21,1,5,0.0335202562404,0.0335202562404,0,True,1,Firmicutes,Clostridia__b3
+acid_high,one_se,1,2,BAC,61,1,6,0.0338663093226,0.0338663093226,0,True,1,Verrucomicrobiota,WCHB1_41
+acid_high,one_se,1,2,BAC,55,1,8,0.0373314277768,0.0373314277768,0,True,1,Synergistota,Synergistales__b1
+acid_high,one_se,1,2,BAC,62,1,1,0.0420370170626,0.0420370170626,0,True,1,WS1,WS1
+acid_high,one_se,1,2,BAC,0,1,7,0.0460969016739,0.0460969016739,0,True,1,Firmicutes,Acholeplasmatales__b1
+acid_high,one_se,1,2,BAC,5,1,5,0.0483886911122,0.0483886911122,0,True,1,Bacteroidota,Bacteroidales__b2
+acid_high,one_se,1,2,BAC,33,1,7,0.048430273885,0.048430273885,0,True,1,Firmicutes,Lachnospirales
+acid_high,one_se,1,2,BAC,24,1,4,0.0527353478626,0.0527353478626,0,True,1,Firmicutes,D8A_2
+acid_high,one_se,1,2,BAC,1,1,2,0.0573524858568,0.0573524858568,0,True,1,Firmicutes,Acholeplasmatales__b2
+acid_high,one_se,1,2,BAC,26,1,1,0.0585285382116,0.0585285382116,0,True,1,Firmicutes,Desulfotomaculales
+acid_high,one_se,1,2,BAC,50,1,5,0.0600252722108,0.0600252722108,0,True,1,Bacteroidota,Sphingobacteriales__b2
+acid_high,one_se,1,2,BAC,23,1,23,0.0927889747082,0.0927889747082,0,True,1,Firmicutes,Clostridia__b7
+acid_high,one_se,1,2,BAC,39,1,7,0.110003818579,0.110003818579,0,True,1,Firmicutes,Oscillospirales__b1
+acid_high,one_se,1,2,BAC,41,1,5,0.112445618769,0.112445618769,0,True,1,Verrucomicrobiota,Pedosphaerales
+acid_high,one_se,1,2,BAC,4,1,8,0.117612844752,0.117612844752,0,True,1,Bacteroidota,Bacteroidales__b1
+acid_high,one_se,1,2,BAC,12,1,54,0.13960771906,0.13960771906,0,True,1,Proteobacteria,Burkholderiales
+acid_high,one_se,1,2,BAC,15,1,4,0.248762309222,0.248762309222,0,True,1,Firmicutes,Caldicoprobacterales__b2
+ammonia,min_loss,0,0,ARC,7,1,1,-0.0502885872148,-0.0502885872148,0,True,1,Halobacterota,Methanosarciniales__b4
+ammonia,min_loss,0,0,ARC,3,1,5,-0.0226093570438,-0.0226093570438,0,True,1,Euryarchaeota,Methanofastidiosales
+ammonia,min_loss,0,0,ARC,4,1,8,-0.0217454789332,-0.0217454789332,0,True,1,Thermoplasmatota,Methanomassiliicoccales
+ammonia,min_loss,0,0,ARC,2,1,3,-0.0166855795039,-0.0166855795039,0,True,1,Crenarchaeota,Bathyarchaeia
+ammonia,min_loss,0,0,ARC,5,1,50,-0.00585090514577,-0.00585090514577,0,True,1,Halobacterota,Methanomicrobiales
+ammonia,min_loss,0,0,ARC,11,1,1,0.000518301066791,0.000518301066791,0,True,0,unassigned,eb0898e38a817c5648a19a5e3db2c1be
+ammonia,min_loss,0,0,ARC,1,1,1,0.000828908419894,0.000828908419894,0,True,0,unassigned,783749c187ad3cb6e60ccecdd73fd8ef
+ammonia,min_loss,0,0,ARC,10,1,1,0.00166187002883,0.00166187002883,0,True,0,unassigned,c4a2579e95fee657cb355e865aa027af
+ammonia,min_loss,0,0,ARC,0,1,1,0.00750865314477,0.00750865314477,0,True,0,unassigned,4194fdb699f4d5c9620e1e7cfb8b009b
+ammonia,min_loss,0,0,ARC,6,1,13,0.00921088597206,0.00921088597206,0,True,1,Halobacterota,Methanosarciniales__b2
+ammonia,min_loss,0,0,ARC,9,1,1,0.0213741302554,0.0213741302554,0,True,0,unassigned,c17275cccc27dc9a4ab351a310c063c8
+ammonia,min_loss,0,0,ARC,8,1,9,0.0760771589538,0.0760771589538,0,True,1,Halobacterota,Methanosarciniales__b5
+ammonia,min_loss,0,0,BAC,43,1,5,-0.0615461855536,-0.0615461855536,0,True,1,Thermotogota,Petrotogales
+ammonia,min_loss,0,0,BAC,12,1,54,-0.0575491720834,-0.0575491720834,0,True,1,Proteobacteria,Burkholderiales
+ammonia,min_loss,0,0,BAC,35,1,3,-0.0503421454398,-0.0503421454398,0,True,1,Spirochaetota,MVP_15
+ammonia,min_loss,0,0,BAC,51,1,2,-0.0493466923271,-0.0493466923271,0,True,1,Bacteroidota,Sphingobacteriales__b5
+ammonia,min_loss,0,0,BAC,9,1,4,-0.0429815452311,-0.0429815452311,0,True,1,Bacteroidota,Bacteroidales__b7
+ammonia,min_loss,0,0,BAC,33,1,8,-0.0291057178433,-0.0291057178433,0,True,1,Firmicutes,Lactobacillales__b2
+ammonia,min_loss,0,0,BAC,45,1,3,-0.0238980083127,-0.0238980083127,0,True,1,SAR324_clade(Marine_group_B),SAR324_clade_Marine_group_B_
+ammonia,min_loss,0,0,BAC,58,1,3,-0.0210218385826,-0.0210218385826,0,True,1,Desulfobacterota,Syntrophorhabdales
+ammonia,min_loss,0,0,BAC,44,1,6,-0.0195053709257,-0.0195053709257,0,True,1,Proteobacteria,Rhodobacterales
+ammonia,min_loss,0,0,BAC,55,1,18,-0.0194010981665,-0.0194010981665,0,True,1,Desulfobacterota,Syntrophales__b1
+ammonia,min_loss,0,0,BAC,31,1,2,-0.0187454608275,-0.0187454608275,0,True,1,Thermotogota,Kosmotogales
+ammonia,min_loss,0,0,BAC,60,1,1,-0.0183679537363,-0.0183679537363,0,True,1,WS1,WS1
+ammonia,min_loss,0,0,BAC,53,1,8,-0.0181008210173,-0.0181008210173,0,True,1,Synergistota,Synergistales__b1
+ammonia,min_loss,0,0,BAC,14,1,5,-0.0177852500463,-0.0177852500463,0,True,1,Caldisericota,Caldisericales
+ammonia,min_loss,0,0,BAC,46,1,6,-0.0169594250122,-0.0169594250122,0,True,1,Chloroflexi,SBR1031__b2
+ammonia,min_loss,0,0,BAC,13,1,2,-0.0166468406262,-0.0166468406262,0,True,1,Caldatribacteriota,Caldatribacteriales
+ammonia,min_loss,0,0,BAC,37,1,3,-0.0161408910069,-0.0161408910069,0,True,1,Actinobacteriota,Microtrichales
+ammonia,min_loss,0,0,BAC,56,1,3,-0.0149235897211,-0.0149235897211,0,True,1,Desulfobacterota,Syntrophales__b2
+ammonia,min_loss,0,0,BAC,38,1,7,-0.014632266311,-0.014632266311,0,True,1,Firmicutes,Oscillospirales__b1
+ammonia,min_loss,0,0,BAC,48,1,6,-0.014268718708,-0.014268718708,0,True,1,Bacteroidota,SJA_28__b2
+ammonia,min_loss,0,0,BAC,3,1,7,-0.0134016896689,-0.0134016896689,0,True,1,Chloroflexi,Anaerolineales
+ammonia,min_loss,0,0,BAC,36,1,9,-0.0127090579992,-0.0127090579992,0,True,1,Actinobacteriota,Micrococcales
+ammonia,min_loss,0,0,BAC,2,1,4,-0.0115344416841,-0.0115344416841,0,True,1,Acidobacteriota,Aminicenantales__b2
+ammonia,min_loss,0,0,BAC,29,1,3,-0.0112153393593,-0.0112153393593,0,True,1,Firmicutes,Izemoplasmatales
+ammonia,min_loss,0,0,BAC,47,1,3,-0.0110758471911,-0.0110758471911,0,True,1,Chloroflexi,SJA_15
+ammonia,min_loss,0,0,BAC,32,1,7,-0.0103145970259,-0.0103145970259,0,True,1,Firmicutes,Lachnospirales
+ammonia,min_loss,0,0,BAC,28,1,4,-0.0100888124862,-0.0100888124862,0,True,1,Hydrogenedentes,Hydrogenedentiales
+ammonia,min_loss,0,0,BAC,54,1,8,-0.00817322736319,-0.00817322736319,0,True,1,Synergistota,Synergistales__b2
+ammonia,min_loss,0,0,BAC,61,1,7,-0.0043688607216,-0.0043688607216,0,True,1,Proteobacteria,Xanthomonadales
+ammonia,min_loss,0,0,BAC,26,1,2,-0.00215513502345,-0.00215513502345,0,True,1,Bacteroidota,Flavobacteriales__b1
+ammonia,min_loss,0,0,BAC,16,1,2,-0.00153911357914,-0.00153911357914,0,True,1,Firmicutes,Christensenellales__b1
+ammonia,min_loss,0,0,BAC,27,1,3,-0.00137039829774,-0.00137039829774,0,True,1,Actinobacteriota,Gaiellales
+ammonia,min_loss,0,0,BAC,40,1,5,0.000242118088426,0.000242118088426,0,True,1,Verrucomicrobiota,Pedosphaerales
+ammonia,min_loss,0,0,BAC,15,1,15,0.000743032779103,0.000743032779103,0,True,1,Bacteroidota,Chitinophagales
+ammonia,min_loss,0,0,BAC,18,1,15,0.000908007479331,0.000908007479331,0,True,1,Cloacimonadota,Cloacimonadales
+ammonia,min_loss,0,0,BAC,8,1,1,0.00190072860434,0.00190072860434,0,True,1,Bacteroidota,Bacteroidales__b6
+ammonia,min_loss,0,0,BAC,21,1,4,0.00266940264532,0.00266940264532,0,True,1,Firmicutes,Clostridia__b4
+ammonia,min_loss,0,0,BAC,25,1,1,0.00314022704879,0.00314022704879,0,True,1,Firmicutes,Desulfotomaculales
+ammonia,min_loss,0,0,BAC,6,1,2,0.00712984199783,0.00712984199783,0,True,1,Bacteroidota,Bacteroidales__b3
+ammonia,min_loss,0,0,BAC,52,1,10,0.00757416456211,0.00757416456211,0,True,1,Spirochaetota,Spirochaetales
+ammonia,min_loss,0,0,BAC,59,1,6,0.0101438348871,0.0101438348871,0,True,1,Verrucomicrobiota,WCHB1_41
+ammonia,min_loss,0,0,BAC,17,1,29,0.0114503322375,0.0114503322375,0,True,1,Firmicutes,Christensenellales__b2
+ammonia,min_loss,0,0,BAC,24,1,6,0.0116461075812,0.0116461075812,0,True,1,Firmicutes,DTU014__b1
+ammonia,min_loss,0,0,BAC,7,1,53,0.0119508804568,0.0119508804568,0,True,1,Bacteroidota,Bacteroidales__b4
+ammonia,min_loss,0,0,BAC,20,1,5,0.0157616707478,0.0157616707478,0,True,1,Firmicutes,Clostridia__b3
+ammonia,min_loss,0,0,BAC,49,1,5,0.0158109704426,0.0158109704426,0,True,1,Bacteroidota,Sphingobacteriales__b2
+ammonia,min_loss,0,0,BAC,10,1,12,0.0215672791377,0.0215672791377,0,True,1,Bacteroidota,Bacteroidales__b8
+ammonia,min_loss,0,0,BAC,30,1,5,0.0234410220266,0.0234410220266,0,True,1,Caldatribacteriota,JS1
+ammonia,min_loss,0,0,BAC,11,1,5,0.0235955332264,0.0235955332264,0,True,1,Bacteroidota,Bacteroidales__b9
+ammonia,min_loss,0,0,BAC,39,1,8,0.0243002387345,0.0243002387345,0,True,1,Firmicutes,Oscillospirales__b3
+ammonia,min_loss,0,0,BAC,41,1,25,0.0267173790302,0.0267173790302,0,True,1,Firmicutes,Peptostreptococcales_Tissierellales__b1
+ammonia,min_loss,0,0,BAC,19,1,4,0.0268692647551,0.0268692647551,0,True,1,Firmicutes,Clostridia__b2
+ammonia,min_loss,0,0,BAC,42,1,3,0.0269719376017,0.0269719376017,0,True,1,Firmicutes,Peptostreptococcales_Tissierellales__b2
+ammonia,min_loss,0,0,BAC,1,1,2,0.0310052824244,0.0310052824244,0,True,1,Firmicutes,Acholeplasmatales__b2
+ammonia,min_loss,0,0,BAC,5,1,5,0.0310172789022,0.0310172789022,0,True,1,Bacteroidota,Bacteroidales__b2
+ammonia,min_loss,0,0,BAC,34,1,7,0.0339824975911,0.0339824975911,0,True,1,Firmicutes,MBA03
+ammonia,min_loss,0,0,BAC,22,1,23,0.0366184339809,0.0366184339809,0,True,1,Firmicutes,Clostridia__b7
+ammonia,min_loss,0,0,BAC,57,1,13,0.0372309780167,0.0372309780167,0,True,1,Firmicutes,Syntrophomonadales
+ammonia,min_loss,0,0,BAC,50,1,5,0.0393665822379,0.0393665822379,0,True,1,Bacteroidota,Sphingobacteriales__b4
+ammonia,min_loss,0,0,BAC,0,1,7,0.0414821701412,0.0414821701412,0,True,1,Firmicutes,Acholeplasmatales__b1
+ammonia,min_loss,0,0,BAC,23,1,4,0.0477251647489,0.0477251647489,0,True,1,Firmicutes,D8A_2
+ammonia,min_loss,0,0,BAC,4,1,8,0.0662531497647,0.0662531497647,0,True,1,Bacteroidota,Bacteroidales__b1
+ammonia,min_loss,0,1,ARC,2,1,1,-0.0311039545949,-0.0311039545949,0,True,1,Halobacterota,Methanosarciniales__b4
+ammonia,min_loss,0,1,ARC,0,6,6,-0.00178346991877,-0.0107008195126,3.6343107343e-13,True,0,unassigned,4194fdb699f4d5c9620e1e7cfb8b009b; 783749c187ad3cb6e60ccecdd73fd8ef; 88fa6e2c26361b8b7ca8a72ae1ed781f; c17275cccc27dc9a4ab351a310c063c8; c4a2579e95fee657cb355e865aa027af; eb0898e38a817c5648a19a5e3db2c1be
+ammonia,min_loss,0,1,ARC,1,5,79,0.00335139508901,0.016756975445,6.32257818149e-11,True,5,Crenarchaeota; Euryarchaeota; Halobacterota; Thermoplasmatota,Bathyarchaeia; Methanofastidiosales; Methanomassiliicoccales; Methanomicrobiales; Methanosarciniales__b2
+ammonia,min_loss,0,1,ARC,3,1,9,0.0250477986625,0.0250477986625,0,True,1,Halobacterota,Methanosarciniales__b5
+ammonia,min_loss,0,1,BAC,8,1,4,-0.0572845275842,-0.0572845275842,0,True,1,Bacteroidota,Bacteroidales__b7
+ammonia,min_loss,0,1,BAC,26,1,3,-0.0502349243868,-0.0502349243868,0,True,1,Spirochaetota,MVP_15
+ammonia,min_loss,0,1,BAC,19,1,1,-0.0367122331208,-0.0367122331208,0,True,1,Firmicutes,Desulfotomaculales
+ammonia,min_loss,0,1,BAC,27,1,9,-0.0341437854342,-0.0341437854342,0,True,1,Actinobacteriota,Micrococcales
+ammonia,min_loss,0,1,BAC,33,1,5,-0.0286854793621,-0.0286854793621,0,True,1,Thermotogota,Petrotogales
+ammonia,min_loss,0,1,BAC,11,1,54,-0.0231579032198,-0.0231579032198,0,True,1,Proteobacteria,Burkholderiales
+ammonia,min_loss,0,1,BAC,14,4,31,-0.0220259186127,-0.0881036744507,3.28791160964e-12,True,4,Actinobacteriota; Bacteroidota; Proteobacteria,Chitinophagales; Microtrichales; SJA_28__b2; Xanthomonadales
+ammonia,min_loss,0,1,BAC,2,4,31,-0.0218458386103,-0.0873833544413,2.87523477249e-12,True,4,Chloroflexi; Desulfobacterota,Anaerolineales; Syntrophales__b1; Syntrophales__b2; Syntrophorhabdales
+ammonia,min_loss,0,1,BAC,31,1,5,-0.0209311357526,-0.0209311357526,0,True,1,Verrucomicrobiota,Pedosphaerales
+ammonia,min_loss,0,1,BAC,24,2,5,-0.0195285050363,-0.0390570100725,1.13582407368e-12,True,2,SAR324_clade(Marine_group_B); Thermotogota,Kosmotogales; SAR324_clade_Marine_group_B_
+ammonia,min_loss,0,1,BAC,34,1,6,-0.0173768452952,-0.0173768452952,0,True,1,Proteobacteria,Rhodobacterales
+ammonia,min_loss,0,1,BAC,38,1,3,-0.0146495684281,-0.0146495684281,0,True,1,Proteobacteria,Sphingomonadales
+ammonia,min_loss,0,1,BAC,22,1,3,-0.013171352555,-0.013171352555,0,True,1,Firmicutes,Izemoplasmatales
+ammonia,min_loss,0,1,BAC,39,1,8,-0.0121647564466,-0.0121647564466,0,True,1,Synergistota,Synergistales__b1
+ammonia,min_loss,0,1,BAC,35,1,6,-0.0111102894071,-0.0111102894071,0,True,1,Chloroflexi,SBR1031__b2
+ammonia,min_loss,0,1,BAC,13,1,5,-0.0109030375726,-0.0109030375726,0,True,1,Caldisericota,Caldisericales
+ammonia,min_loss,0,1,BAC,21,1,3,-0.00987655601235,-0.00987655601235,0,True,1,Actinobacteriota,Gaiellales
+ammonia,min_loss,0,1,BAC,28,1,7,-0.00820276280621,-0.00820276280621,0,True,1,Firmicutes,Oscillospirales__b1
+ammonia,min_loss,0,1,BAC,15,2,6,-0.00783055426157,-0.0156611085231,3.32471897235e-13,True,2,Firmicutes; Hydrogenedentes,Christensenellales__b1; Hydrogenedentiales
+ammonia,min_loss,0,1,BAC,20,3,10,-0.00667267138964,-0.0200180141689,7.50456901483e-12,True,3,Bacteroidota; Firmicutes; Fusobacteriota,Flavobacteriales__b1; Fusobacteriales; Lachnospirales
+ammonia,min_loss,0,1,BAC,23,2,10,-0.00657922933101,-0.013158458662,2.36559756159e-11,True,2,Bacteroidota; Caldatribacteriota,JS1; Sphingobacteriales__b4
+ammonia,min_loss,0,1,BAC,17,1,4,-0.00508933606282,-0.00508933606282,0,True,1,Firmicutes,Clostridia__b4
+ammonia,min_loss,0,1,BAC,25,1,8,-0.00263107409486,-0.00263107409486,0,True,1,Firmicutes,Lactobacillales__b2
+ammonia,min_loss,0,1,BAC,41,1,1,-1.80798054192e-07,-1.80798054192e-07,0,False,1,WS1,WS1
+ammonia,min_loss,0,1,BAC,7,1,1,-1.86572125018e-08,-1.86572125018e-08,0,False,1,Bacteroidota,Bacteroidales__b6
+ammonia,min_loss,0,1,BAC,9,1,12,-9.73326720508e-10,-9.73326720508e-10,0,False,1,Bacteroidota,Bacteroidales__b8
+ammonia,min_loss,0,1,BAC,4,3,30,-3.52362883921e-10,-1.05708865176e-09,4.51596645146e-12,False,3,Bacteroidota; Cloacimonadota; Spirochaetota,Bacteroidales__b2; Cloacimonadales; Spirochaetales
+ammonia,min_loss,0,1,BAC,37,1,2,6.03887892261e-10,6.03887892261e-10,0,False,1,Bacteroidota,Sphingobacteriales__b5
+ammonia,min_loss,0,1,BAC,12,2,8,0.000825097695002,0.00165019539,3.53007217641e-12,True,2,Caldatribacteriota; Firmicutes,Caldatribacteriales; DTU014__b1
+ammonia,min_loss,0,1,BAC,30,1,8,0.0023859943063,0.0023859943063,0,True,1,Firmicutes,Oscillospirales__b3
+ammonia,min_loss,0,1,BAC,32,1,3,0.00492943809309,0.00492943809309,0,True,1,Firmicutes,Peptostreptococcales_Tissierellales__b2
+ammonia,min_loss,0,1,BAC,6,5,126,0.0103416466096,0.051708233048,7.30700742968e-12,True,5,Bacteroidota; Firmicutes; Verrucomicrobiota,Bacteroidales__b4; Christensenellales__b2; Peptostreptococcales_Tissierellales__b1; Syntrophomonadales; WCHB1_41
+ammonia,min_loss,0,1,BAC,16,1,5,0.014837853582,0.014837853582,0,True,1,Firmicutes,Clostridia__b3
+ammonia,min_loss,0,1,BAC,40,1,8,0.0168274743692,0.0168274743692,0,True,1,Synergistota,Synergistales__b2
+ammonia,min_loss,0,1,BAC,36,1,5,0.0184404540786,0.0184404540786,0,True,1,Bacteroidota,Sphingobacteriales__b2
+ammonia,min_loss,0,1,BAC,1,1,2,0.021197517485,0.021197517485,0,True,1,Firmicutes,Acholeplasmatales__b2
+ammonia,min_loss,0,1,BAC,18,1,4,0.0233616493789,0.0233616493789,0,True,1,Firmicutes,D8A_2
+ammonia,min_loss,0,1,BAC,5,1,2,0.0257622734347,0.0257622734347,0,True,1,Bacteroidota,Bacteroidales__b3
+ammonia,min_loss,0,1,BAC,0,5,46,0.0463447155787,0.231723577893,3.20774656837e-12,True,5,Firmicutes,Acholeplasmatales__b1; Caldicoprobacterales__b1; Clostridia__b2; Clostridia__b7; MBA03
+ammonia,min_loss,0,1,BAC,10,1,5,0.0499456672755,0.0499456672755,0,True,1,Bacteroidota,Bacteroidales__b9
+ammonia,min_loss,0,1,BAC,3,1,8,0.0625265577142,0.0625265577142,0,True,1,Bacteroidota,Bacteroidales__b1
+ammonia,min_loss,0,1,BAC,29,1,3,0.094410502693,0.094410502693,0,True,1,Firmicutes,Oscillospirales__b2
+ammonia,min_loss,0,2,ARC,1,1,3,-0.0114956227893,-0.0114956227893,0,True,1,Crenarchaeota,Bathyarchaeia
+ammonia,min_loss,0,2,ARC,0,7,7,0.000187002147752,0.00130901503426,1.71178346563e-12,True,0,unassigned,4194fdb699f4d5c9620e1e7cfb8b009b; 58de505db56b2250b12c7cd7ec5bfa50; 783749c187ad3cb6e60ccecdd73fd8ef; 88fa6e2c26361b8b7ca8a72ae1ed781f; c17275cccc27dc9a4ab351a310c063c8; c4a2579e95fee657cb355e865aa027af; eb0898e38a817c5648a19a5e3db2c1be
+ammonia,min_loss,0,2,ARC,2,5,78,0.00150161995265,0.00750809976327,8.20028106399e-10,True,5,Euryarchaeota; Halobacterota,Methanofastidiosales; Methanomicrobiales; Methanosarciniales__b2; Methanosarciniales__b4; Methanosarciniales__b5
+ammonia,min_loss,0,2,ARC,3,1,8,0.00267850799177,0.00267850799177,0,True,1,Thermoplasmatota,Methanomassiliicoccales
+ammonia,min_loss,0,2,BAC,12,1,9,-0.0372162334003,-0.0372162334003,0,True,1,Actinobacteriota,Micrococcales
+ammonia,min_loss,0,2,BAC,13,3,24,-0.0299977551117,-0.089993265335,7.13335952807e-11,True,3,Desulfobacterota,Syntrophales__b1; Syntrophales__b2; Syntrophorhabdales
+ammonia,min_loss,0,2,BAC,3,2,61,-0.0233828435076,-0.0467656870152,1.52875909848e-10,True,2,Proteobacteria,Burkholderiales; Xanthomonadales
+ammonia,min_loss,0,2,BAC,8,2,6,-0.0221434149996,-0.0442868299993,4.11792520916e-09,True,2,Actinobacteriota,Gaiellales; Microtrichales
+ammonia,min_loss,0,2,BAC,5,5,16,-0.0202247514904,-0.101123757452,1.18269519178e-10,True,5,Proteobacteria; SAR324_clade(Marine_group_B),Caulobacterales; Rhizobiales__b3; Rhodobacterales; SAR324_clade_Marine_group_B_; Sphingomonadales
+ammonia,min_loss,0,2,BAC,9,1,4,-0.00793278730841,-0.00793278730841,0,True,1,Hydrogenedentes,Hydrogenedentiales
+ammonia,min_loss,0,2,BAC,11,2,7,-0.0067544418229,-0.0135088836458,2.47339006915e-11,True,2,Thermotogota,Kosmotogales; Petrotogales
+ammonia,min_loss,0,2,BAC,1,23,170,-0.00632667122322,-0.145513438134,7.05453122914e-09,True,23,Acidobacteriota; Bacteroidota; CK-2C2-2; Caldatribacteriota; Caldisericota; Chloroflexi; Spirochaetota; Verrucomicrobiota,Aminicenantales__b2; Anaerolineales; Bacteroidales__b1; Bacteroidales__b2; Bacteroidales__b3; Bacteroidales__b4; Bacteroidales__b6; Bacteroidales__b7; Bacteroidales__b8; CK_2C2_2; Caldatribacteriales; Caldisericales; Chitinophagales; Leptospirales; MVP_15; Pedosphaerales; SBR1031__b2; SJA_28__b2; Sphingobacteriales__b2; Sphingobacteriales__b4; Sphingobacteriales__b5; Spirochaetales; WCHB1_41
+ammonia,min_loss,0,2,BAC,7,5,27,-0.00293944576928,-0.0146972288464,3.65850680046e-10,True,5,Firmicutes; Synergistota,D8A_2; DTU014__b1; Desulfotomaculales; Synergistales__b1; Synergistales__b2
+ammonia,min_loss,0,2,BAC,6,1,15,8.18522553212e-05,8.18522553212e-05,0,True,1,Cloacimonadota,Cloacimonadales
+ammonia,min_loss,0,2,BAC,10,1,5,0.0106772790528,0.0106772790528,0,True,1,Caldatribacteriota,JS1
+ammonia,min_loss,0,2,BAC,4,18,160,0.0225551608536,0.405992895365,2.9902083136e-09,True,18,Firmicutes,Caldicoprobacterales__b1; Caldicoprobacterales__b2; Christensenellales__b1; Christensenellales__b2; Clostridia__b2; Clostridia__b3; Clostridia__b4; Clostridia__b7; Izemoplasmatales; Lachnospirales; Lactobacillales__b2; MBA03; Oscillospirales__b1; Oscillospirales__b2; Oscillospirales__b3; Peptostreptococcales_Tissierellales__b1; Peptostreptococcales_Tissierellales__b2; Syntrophomonadales
+ammonia,min_loss,0,2,BAC,2,1,5,0.0233718016196,0.0233718016196,0,True,1,Bacteroidota,Bacteroidales__b9
+ammonia,min_loss,0,2,BAC,0,2,9,0.030457141422,0.0609142828439,5.96519222906e-11,True,2,Firmicutes,Acholeplasmatales__b1; Acholeplasmatales__b2
+ammonia,min_loss,1,0,ARC,0,5,5,-0.00164630687744,-0.0082315343872,6.30724431017e-11,True,0,unassigned,4194fdb699f4d5c9620e1e7cfb8b009b; 783749c187ad3cb6e60ccecdd73fd8ef; c17275cccc27dc9a4ab351a310c063c8; c4a2579e95fee657cb355e865aa027af; eb0898e38a817c5648a19a5e3db2c1be
+ammonia,min_loss,1,0,ARC,1,5,72,-0.000639508295642,-0.00319754147821,8.69339312885e-10,True,5,Crenarchaeota; Euryarchaeota; Halobacterota,Bathyarchaeia; Methanofastidiosales; Methanomicrobiales; Methanosarciniales__b2; Methanosarciniales__b4
+ammonia,min_loss,1,0,ARC,2,1,8,0.00379995363639,0.00379995363639,0,True,1,Thermoplasmatota,Methanomassiliicoccales
+ammonia,min_loss,1,0,ARC,3,1,9,0.00762912222899,0.00762912222899,0,True,1,Halobacterota,Methanosarciniales__b5
+ammonia,min_loss,1,0,BAC,12,1,54,-0.0418469501438,-0.0418469501438,0,True,1,Proteobacteria,Burkholderiales
+ammonia,min_loss,1,0,BAC,33,1,5,-0.0400738574059,-0.0400738574059,0,True,1,Thermotogota,Petrotogales
+ammonia,min_loss,1,0,BAC,26,4,20,-0.0238175667583,-0.0952702670333,8.95386171457e-09,True,4,Actinobacteriota; Proteobacteria; SAR324_clade(Marine_group_B); Thermotogota,Kosmotogales; Micrococcales; Rhodobacterales; SAR324_clade_Marine_group_B_
+ammonia,min_loss,1,0,BAC,17,2,11,-0.0221022428399,-0.0442044856799,1.42434278608e-09,True,2,Firmicutes,Clostridia__b4; Oscillospirales__b1
+ammonia,min_loss,1,0,BAC,40,1,18,-0.020737278362,-0.020737278362,0,True,1,Desulfobacterota,Syntrophales__b1
+ammonia,min_loss,1,0,BAC,42,1,7,-0.0186148094917,-0.0186148094917,0,True,1,Proteobacteria,Xanthomonadales
+ammonia,min_loss,1,0,BAC,14,4,14,-0.0184229145747,-0.073691658299,4.70498601884e-09,True,4,Caldisericota; Desulfobacterota; Spirochaetota,Caldisericales; MVP_15; Syntrophales__b2; Syntrophorhabdales
+ammonia,min_loss,1,0,BAC,36,1,2,-0.0178956604112,-0.0178956604112,0,True,1,Bacteroidota,Sphingobacteriales__b5
+ammonia,min_loss,1,0,BAC,28,1,8,-0.0155776277343,-0.0155776277343,0,True,1,Firmicutes,Lactobacillales__b2
+ammonia,min_loss,1,0,BAC,9,1,4,-0.0140516164311,-0.0140516164311,0,True,1,Bacteroidota,Bacteroidales__b7
+ammonia,min_loss,1,0,BAC,37,1,3,-0.0137882667622,-0.0137882667622,0,True,1,Proteobacteria,Sphingomonadales
+ammonia,min_loss,1,0,BAC,13,1,2,-0.0137761203886,-0.0137761203886,0,True,1,Caldatribacteriota,Caldatribacteriales
+ammonia,min_loss,1,0,BAC,3,1,7,-0.0137738281279,-0.0137738281279,0,True,1,Chloroflexi,Anaerolineales
+ammonia,min_loss,1,0,BAC,15,3,20,-0.0128730522784,-0.0386191568351,2.47214179162e-09,True,3,Actinobacteriota; Bacteroidota; Firmicutes,Chitinophagales; Christensenellales__b1; Microtrichales
+ammonia,min_loss,1,0,BAC,41,1,1,-0.0127671037286,-0.0127671037286,0,True,1,WS1,WS1
+ammonia,min_loss,1,0,BAC,22,2,9,-0.0118841137281,-0.0237682274561,7.52080793476e-10,True,2,Actinobacteriota; Bacteroidota,Gaiellales; SJA_28__b2
+ammonia,min_loss,1,0,BAC,34,2,9,-0.0117388791506,-0.0234777583012,4.9158463758e-10,True,2,Chloroflexi,SBR1031__b2; SJA_15
+ammonia,min_loss,1,0,BAC,30,1,5,-0.00941465177561,-0.00941465177561,0,True,1,Verrucomicrobiota,Pedosphaerales
+ammonia,min_loss,1,0,BAC,20,1,1,-0.00861951818079,-0.00861951818079,0,True,1,Firmicutes,Desulfotomaculales
+ammonia,min_loss,1,0,BAC,21,1,2,-0.00840979207554,-0.00840979207554,0,True,1,Bacteroidota,Flavobacteriales__b1
+ammonia,min_loss,1,0,BAC,8,1,1,-0.0080490455428,-0.0080490455428,0,True,1,Bacteroidota,Bacteroidales__b6
+ammonia,min_loss,1,0,BAC,23,1,4,-0.00744791812646,-0.00744791812646,0,True,1,Hydrogenedentes,Hydrogenedentiales
+ammonia,min_loss,1,0,BAC,2,1,4,-0.00486222225053,-0.00486222225053,0,True,1,Acidobacteriota,Aminicenantales__b2
+ammonia,min_loss,1,0,BAC,38,1,10,-0.00136532459998,-0.00136532459998,0,True,1,Spirochaetota,Spirochaetales
+ammonia,min_loss,1,0,BAC,24,1,3,0.00122447617438,0.00122447617438,0,True,1,Firmicutes,Izemoplasmatales
+ammonia,min_loss,1,0,BAC,25,2,10,0.00161893585267,0.00323787170533,4.97085473911e-10,True,2,Bacteroidota; Caldatribacteriota,JS1; Sphingobacteriales__b4
+ammonia,min_loss,1,0,BAC,39,1,8,0.0018929760673,0.0018929760673,0,True,1,Synergistota,Synergistales__b1
+ammonia,min_loss,1,0,BAC,27,1,7,0.00245340395231,0.00245340395231,0,True,1,Firmicutes,Lachnospirales
+ammonia,min_loss,1,0,BAC,10,1,12,0.00430778506237,0.00430778506237,0,True,1,Bacteroidota,Bacteroidales__b8
+ammonia,min_loss,1,0,BAC,19,1,6,0.00524145485498,0.00524145485498,0,True,1,Firmicutes,DTU014__b1
+ammonia,min_loss,1,0,BAC,16,1,15,0.00653360160547,0.00653360160547,0,True,1,Cloacimonadota,Cloacimonadales
+ammonia,min_loss,1,0,BAC,6,1,2,0.0111928020063,0.0111928020063,0,True,1,Bacteroidota,Bacteroidales__b3
+ammonia,min_loss,1,0,BAC,7,4,93,0.012579229061,0.0503169162439,7.35784422973e-10,True,4,Bacteroidota; Firmicutes; Verrucomicrobiota,Bacteroidales__b4; Christensenellales__b2; Clostridia__b3; WCHB1_41
+ammonia,min_loss,1,0,BAC,32,1,3,0.0198666974303,0.0198666974303,0,True,1,Firmicutes,Peptostreptococcales_Tissierellales__b2
+ammonia,min_loss,1,0,BAC,29,1,8,0.0204238262247,0.0204238262247,0,True,1,Firmicutes,Oscillospirales__b3
+ammonia,min_loss,1,0,BAC,5,2,13,0.0212291284676,0.0424582569351,1.47408293905e-10,True,2,Bacteroidota; Synergistota,Bacteroidales__b2; Synergistales__b2
+ammonia,min_loss,1,0,BAC,1,1,2,0.0234783409269,0.0234783409269,0,True,1,Firmicutes,Acholeplasmatales__b2
+ammonia,min_loss,1,0,BAC,31,2,38,0.024224991194,0.048449982388,5.3679029971e-11,True,2,Firmicutes,Peptostreptococcales_Tissierellales__b1; Syntrophomonadales
+ammonia,min_loss,1,0,BAC,18,1,4,0.027077463886,0.027077463886,0,True,1,Firmicutes,D8A_2
+ammonia,min_loss,1,0,BAC,11,1,5,0.0290951733365,0.0290951733365,0,True,1,Bacteroidota,Bacteroidales__b9
+ammonia,min_loss,1,0,BAC,0,5,46,0.0331173205539,0.165586602769,3.90000855222e-09,True,5,Firmicutes,Acholeplasmatales__b1; Caldicoprobacterales__b1; Clostridia__b2; Clostridia__b7; MBA03
+ammonia,min_loss,1,0,BAC,4,1,8,0.0454450551841,0.0454450551841,0,True,1,Bacteroidota,Bacteroidales__b1
+ammonia,min_loss,1,0,BAC,35,1,5,0.0618204583903,0.0618204583903,0,True,1,Bacteroidota,Sphingobacteriales__b2
+ammonia,min_loss,1,1,ARC,3,1,1,-0.0469735105423,-0.0469735105423,0,True,1,Halobacterota,Methanosarciniales__b4
+ammonia,min_loss,1,1,ARC,1,4,71,-0.0017108529775,-0.00684341190999,4.13392185501e-10,True,4,Crenarchaeota; Euryarchaeota; Halobacterota,Bathyarchaeia; Methanofastidiosales; Methanomicrobiales; Methanosarciniales__b2
+ammonia,min_loss,1,1,ARC,0,6,6,-0.00149478318136,-0.00896869908819,6.41955672648e-13,True,0,unassigned,4194fdb699f4d5c9620e1e7cfb8b009b; 783749c187ad3cb6e60ccecdd73fd8ef; 88fa6e2c26361b8b7ca8a72ae1ed781f; c17275cccc27dc9a4ab351a310c063c8; c4a2579e95fee657cb355e865aa027af; eb0898e38a817c5648a19a5e3db2c1be
+ammonia,min_loss,1,1,ARC,2,1,8,0.0210890738924,0.0210890738924,0,True,1,Thermoplasmatota,Methanomassiliicoccales
+ammonia,min_loss,1,1,ARC,4,1,9,0.0416965476481,0.0416965476481,0,True,1,Halobacterota,Methanosarciniales__b5
+ammonia,min_loss,1,1,BAC,26,1,9,-0.0555585337901,-0.0555585337901,0,True,1,Actinobacteriota,Micrococcales
+ammonia,min_loss,1,1,BAC,32,1,5,-0.0446245544952,-0.0446245544952,0,True,1,Thermotogota,Petrotogales
+ammonia,min_loss,1,1,BAC,7,1,4,-0.0424284780568,-0.0424284780568,0,True,1,Bacteroidota,Bacteroidales__b7
+ammonia,min_loss,1,1,BAC,14,5,37,-0.0326529774611,-0.163264887305,1.08869163684e-11,True,5,Actinobacteriota; Bacteroidota; Proteobacteria,Chitinophagales; Microtrichales; Rhodobacterales; SJA_28__b2; Xanthomonadales
+ammonia,min_loss,1,1,BAC,13,1,5,-0.027429681127,-0.027429681127,0,True,1,Caldisericota,Caldisericales
+ammonia,min_loss,1,1,BAC,2,4,31,-0.0261097382085,-0.104438952834,4.7424147942e-12,True,4,Chloroflexi; Desulfobacterota,Anaerolineales; Syntrophales__b1; Syntrophales__b2; Syntrophorhabdales
+ammonia,min_loss,1,1,BAC,10,1,54,-0.0247488052922,-0.0247488052922,0,True,1,Proteobacteria,Burkholderiales
+ammonia,min_loss,1,1,BAC,24,3,11,-0.0193394802613,-0.058018440784,5.30981508762e-12,True,3,Chloroflexi; SAR324_clade(Marine_group_B); Thermotogota,Kosmotogales; SAR324_clade_Marine_group_B_; SBR1031__b2
+ammonia,min_loss,1,1,BAC,15,1,2,-0.0187784468901,-0.0187784468901,0,True,1,Firmicutes,Christensenellales__b1
+ammonia,min_loss,1,1,BAC,21,1,3,-0.0182161056579,-0.0182161056579,0,True,1,Actinobacteriota,Gaiellales
+ammonia,min_loss,1,1,BAC,19,1,1,-0.0180374936684,-0.0180374936684,0,True,1,Firmicutes,Desulfotomaculales
+ammonia,min_loss,1,1,BAC,20,3,10,-0.017530029193,-0.0525900875789,1.58841793885e-11,True,3,Bacteroidota; Firmicutes; Fusobacteriota,Flavobacteriales__b1; Fusobacteriales; Lachnospirales
+ammonia,min_loss,1,1,BAC,35,1,3,-0.017355454254,-0.017355454254,0,True,1,Proteobacteria,Sphingomonadales
+ammonia,min_loss,1,1,BAC,36,1,8,-0.0128342171923,-0.0128342171923,0,True,1,Synergistota,Synergistales__b1
+ammonia,min_loss,1,1,BAC,22,2,6,-0.011534028499,-0.0230680569979,4.08920727141e-11,True,2,Firmicutes; Spirochaetota,Izemoplasmatales; MVP_15
+ammonia,min_loss,1,1,BAC,6,1,1,-0.0107280956481,-0.0107280956481,0,True,1,Bacteroidota,Bacteroidales__b6
+ammonia,min_loss,1,1,BAC,34,1,2,-0.00994141525466,-0.00994141525466,0,True,1,Bacteroidota,Sphingobacteriales__b5
+ammonia,min_loss,1,1,BAC,11,2,8,-0.00882776669343,-0.0176555333869,8.30674244667e-12,True,2,Caldatribacteriota; Firmicutes,Caldatribacteriales; DTU014__b1
+ammonia,min_loss,1,1,BAC,30,1,5,-0.00832938137042,-0.00832938137042,0,True,1,Verrucomicrobiota,Pedosphaerales
+ammonia,min_loss,1,1,BAC,25,1,8,-0.00384744303622,-0.00384744303622,0,True,1,Firmicutes,Lactobacillales__b2
+ammonia,min_loss,1,1,BAC,33,1,5,-0.00289996587264,-0.00289996587264,0,True,1,Bacteroidota,Sphingobacteriales__b2
+ammonia,min_loss,1,1,BAC,27,1,7,0.000816728292985,0.000816728292985,0,True,1,Firmicutes,Oscillospirales__b1
+ammonia,min_loss,1,1,BAC,31,1,3,0.00620246805013,0.00620246805013,0,True,1,Firmicutes,Peptostreptococcales_Tissierellales__b2
+ammonia,min_loss,1,1,BAC,29,1,8,0.00979475051517,0.00979475051517,0,True,1,Firmicutes,Oscillospirales__b3
+ammonia,min_loss,1,1,BAC,17,1,4,0.010458664599,0.010458664599,0,True,1,Firmicutes,Clostridia__b4
+ammonia,min_loss,1,1,BAC,23,2,10,0.0104921442672,0.0209842885344,2.69095561806e-11,True,2,Bacteroidota; Caldatribacteriota,JS1; Sphingobacteriales__b4
+ammonia,min_loss,1,1,BAC,16,2,25,0.0137454220616,0.0274908441232,8.51719736406e-13,True,2,Cloacimonadota; Spirochaetota,Cloacimonadales; Spirochaetales
+ammonia,min_loss,1,1,BAC,37,1,1,0.0195247963212,0.0195247963212,0,True,1,WS1,WS1
+ammonia,min_loss,1,1,BAC,12,1,4,0.0198977508455,0.0198977508455,0,True,1,Firmicutes,Caldicoprobacterales__b2
+ammonia,min_loss,1,1,BAC,4,8,144,0.0208390081433,0.166712065146,4.34803131e-11,True,8,Bacteroidota; Firmicutes; Synergistota; Verrucomicrobiota,Bacteroidales__b2; Bacteroidales__b4; Christensenellales__b2; Clostridia__b3; Peptostreptococcales_Tissierellales__b1; Synergistales__b2; Syntrophomonadales; WCHB1_41
+ammonia,min_loss,1,1,BAC,5,1,2,0.0224950731262,0.0224950731262,0,True,1,Bacteroidota,Bacteroidales__b3
+ammonia,min_loss,1,1,BAC,18,1,4,0.0247249044128,0.0247249044128,0,True,1,Firmicutes,D8A_2
+ammonia,min_loss,1,1,BAC,1,1,2,0.0262534554324,0.0262534554324,0,True,1,Firmicutes,Acholeplasmatales__b2
+ammonia,min_loss,1,1,BAC,8,1,12,0.0298027940151,0.0298027940151,0,True,1,Bacteroidota,Bacteroidales__b8
+ammonia,min_loss,1,1,BAC,9,1,5,0.0302417868138,0.0302417868138,0,True,1,Bacteroidota,Bacteroidales__b9
+ammonia,min_loss,1,1,BAC,0,5,46,0.0388519543503,0.194259771752,5.89919779692e-12,True,5,Firmicutes,Acholeplasmatales__b1; Caldicoprobacterales__b1; Clostridia__b2; Clostridia__b7; MBA03
+ammonia,min_loss,1,1,BAC,28,1,3,0.0596194173979,0.0596194173979,0,True,1,Firmicutes,Oscillospirales__b2
+ammonia,min_loss,1,1,BAC,3,1,8,0.0655144711161,0.0655144711161,0,True,1,Bacteroidota,Bacteroidales__b1
+ammonia,min_loss,1,2,ARC,3,1,1,-0.0319800103722,-0.0319800103722,0,True,1,Halobacterota,Methanosarciniales__b4
+ammonia,min_loss,1,2,ARC,2,5,79,-0.001913416218,-0.00956708108998,5.83372527802e-10,True,5,Crenarchaeota; Euryarchaeota; Halobacterota; Thermoplasmatota,Bathyarchaeia; Methanofastidiosales; Methanomassiliicoccales; Methanomicrobiales; Methanosarciniales__b2
+ammonia,min_loss,1,2,ARC,1,1,1,1.26691450315e-09,1.26691450315e-09,0,False,0,unassigned,58de505db56b2250b12c7cd7ec5bfa50
+ammonia,min_loss,1,2,ARC,0,6,6,0.000567818834531,0.00340691300719,7.16491210979e-13,True,0,unassigned,4194fdb699f4d5c9620e1e7cfb8b009b; 783749c187ad3cb6e60ccecdd73fd8ef; 88fa6e2c26361b8b7ca8a72ae1ed781f; c17275cccc27dc9a4ab351a310c063c8; c4a2579e95fee657cb355e865aa027af; eb0898e38a817c5648a19a5e3db2c1be
+ammonia,min_loss,1,2,ARC,4,1,9,0.038140177188,0.038140177188,0,True,1,Halobacterota,Methanosarciniales__b5
+ammonia,min_loss,1,2,BAC,7,1,4,-0.0649857261747,-0.0649857261747,0,True,1,Bacteroidota,Bacteroidales__b7
+ammonia,min_loss,1,2,BAC,26,1,3,-0.050360375323,-0.050360375323,0,True,1,Spirochaetota,MVP_15
+ammonia,min_loss,1,2,BAC,30,1,5,-0.0421766731841,-0.0421766731841,0,True,1,Thermotogota,Petrotogales
+ammonia,min_loss,1,2,BAC,21,1,3,-0.0407106982345,-0.0407106982345,0,True,1,Firmicutes,Izemoplasmatales
+ammonia,min_loss,1,2,BAC,32,1,5,-0.0337834451818,-0.0337834451818,0,True,1,Bacteroidota,Sphingobacteriales__b2
+ammonia,min_loss,1,2,BAC,23,2,5,-0.0238696254227,-0.0477392508455,7.30596139142e-14,True,2,SAR324_clade(Marine_group_B); Thermotogota,Kosmotogales; SAR324_clade_Marine_group_B_
+ammonia,min_loss,1,2,BAC,37,2,6,-0.023101705094,-0.046203410188,3.46285500274e-14,True,2,Desulfobacterota,Syntrophales__b2; Syntrophorhabdales
+ammonia,min_loss,1,2,BAC,36,1,18,-0.022482749816,-0.022482749816,0,True,1,Desulfobacterota,Syntrophales__b1
+ammonia,min_loss,1,2,BAC,31,1,6,-0.0214291014326,-0.0214291014326,0,True,1,Chloroflexi,SBR1031__b2
+ammonia,min_loss,1,2,BAC,33,1,2,-0.0191237542628,-0.0191237542628,0,True,1,Bacteroidota,Sphingobacteriales__b5
+ammonia,min_loss,1,2,BAC,18,1,1,-0.016440640292,-0.016440640292,0,True,1,Firmicutes,Desulfotomaculales
+ammonia,min_loss,1,2,BAC,2,1,7,-0.0162440942164,-0.0162440942164,0,True,1,Chloroflexi,Anaerolineales
+ammonia,min_loss,1,2,BAC,9,5,76,-0.0139953940297,-0.0699769701483,1.3250555167e-11,True,5,Actinobacteriota; Caldisericota; Firmicutes; Proteobacteria,Burkholderiales; Caldisericales; Christensenellales__b1; Micrococcales; Rhodobacterales
+ammonia,min_loss,1,2,BAC,13,1,15,-0.0127923428616,-0.0127923428616,0,True,1,Bacteroidota,Chitinophagales
+ammonia,min_loss,1,2,BAC,1,1,4,-0.0124922666649,-0.0124922666649,0,True,1,Acidobacteriota,Aminicenantales__b2
+ammonia,min_loss,1,2,BAC,24,2,14,-0.0121236770489,-0.0242473540978,2.15880594651e-11,True,2,Firmicutes,Lachnospirales; Oscillospirales__b1
+ammonia,min_loss,1,2,BAC,15,1,4,-0.0101919960271,-0.0101919960271,0,True,1,Firmicutes,Clostridia__b4
+ammonia,min_loss,1,2,BAC,35,1,8,-0.00757534746586,-0.00757534746586,0,True,1,Synergistota,Synergistales__b1
+ammonia,min_loss,1,2,BAC,10,5,17,-0.00756316701893,-0.0378158350947,5.78064072304e-12,True,5,Actinobacteriota; Bacteroidota; CK-2C2-2; Chloroflexi; Hydrogenedentes,CK_2C2_2; Hydrogenedentiales; Microtrichales; SJA_15; SJA_28__b2
+ammonia,min_loss,1,2,BAC,29,1,3,-0.00614872805644,-0.00614872805644,0,True,1,Firmicutes,Peptostreptococcales_Tissierellales__b2
+ammonia,min_loss,1,2,BAC,27,1,8,-0.00546965300386,-0.00546965300386,0,True,1,Firmicutes,Oscillospirales__b3
+ammonia,min_loss,1,2,BAC,39,1,7,-0.00295287844045,-0.00295287844045,0,True,1,Proteobacteria,Xanthomonadales
+ammonia,min_loss,1,2,BAC,34,1,3,-0.0027579995733,-0.0027579995733,0,True,1,Proteobacteria,Sphingomonadales
+ammonia,min_loss,1,2,BAC,20,1,3,-0.00194322794924,-0.00194322794924,0,True,1,Actinobacteriota,Gaiellales
+ammonia,min_loss,1,2,BAC,38,1,1,-1.99918942174e-07,-1.99918942174e-07,0,False,1,WS1,WS1
+ammonia,min_loss,1,2,BAC,6,1,1,-5.97211670391e-09,-5.97211670391e-09,0,False,1,Bacteroidota,Bacteroidales__b6
+ammonia,min_loss,1,2,BAC,19,1,2,-1.89981810858e-09,-1.89981810858e-09,0,False,1,Bacteroidota,Flavobacteriales__b1
+ammonia,min_loss,1,2,BAC,4,2,13,1.94519916379e-10,3.89039832758e-10,1.42731940938e-11,False,2,Bacteroidota; Synergistota,Bacteroidales__b2; Synergistales__b2
+ammonia,min_loss,1,2,BAC,28,1,5,1.37019472598e-09,1.37019472598e-09,0,False,1,Verrucomicrobiota,Pedosphaerales
+ammonia,min_loss,1,2,BAC,8,1,12,0.00303059706475,0.00303059706475,0,True,1,Bacteroidota,Bacteroidales__b8
+ammonia,min_loss,1,2,BAC,25,1,8,0.00619984599196,0.00619984599196,0,True,1,Firmicutes,Lactobacillales__b2
+ammonia,min_loss,1,2,BAC,16,1,4,0.0129823908451,0.0129823908451,0,True,1,Firmicutes,D8A_2
+ammonia,min_loss,1,2,BAC,11,1,2,0.013316479313,0.013316479313,0,True,1,Caldatribacteriota,Caldatribacteriales
+ammonia,min_loss,1,2,BAC,17,1,6,0.0193457425088,0.0193457425088,0,True,1,Firmicutes,DTU014__b1
+ammonia,min_loss,1,2,BAC,5,1,2,0.0216983216105,0.0216983216105,0,True,1,Bacteroidota,Bacteroidales__b3
+ammonia,min_loss,1,2,BAC,0,12,195,0.0270777785343,0.324933342412,2.91272173047e-10,True,12,Bacteroidota; Cloacimonadota; Firmicutes; Spirochaetota; Verrucomicrobiota,Acholeplasmatales__b1; Acholeplasmatales__b2; Bacteroidales__b4; Bacteroidales__b9; Christensenellales__b2; Cloacimonadales; Clostridia__b7; MBA03; Peptostreptococcales_Tissierellales__b1; Spirochaetales; Syntrophomonadales; WCHB1_41
+ammonia,min_loss,1,2,BAC,14,1,5,0.0286842772058,0.0286842772058,0,True,1,Firmicutes,Clostridia__b3
+ammonia,min_loss,1,2,BAC,22,2,10,0.0332443580468,0.0664887160936,2.68782912594e-12,True,2,Bacteroidota; Caldatribacteriota,JS1; Sphingobacteriales__b4
+ammonia,min_loss,1,2,BAC,12,1,4,0.0565150191091,0.0565150191091,0,True,1,Firmicutes,Caldicoprobacterales__b2
+ammonia,min_loss,1,2,BAC,3,1,8,0.0628499924122,0.0628499924122,0,True,1,Bacteroidota,Bacteroidales__b1
+ammonia,one_se,0,0,ARC,1,7,89,-0.00164429104844,-0.0115100373391,3.39421329584e-12,True,7,Crenarchaeota; Euryarchaeota; Halobacterota; Thermoplasmatota,Bathyarchaeia; Methanofastidiosales; Methanomassiliicoccales; Methanomicrobiales; Methanosarciniales__b2; Methanosarciniales__b4; Methanosarciniales__b5
+ammonia,one_se,0,0,ARC,0,5,5,0.00230200746782,0.0115100373391,2.04251979913e-13,True,0,unassigned,4194fdb699f4d5c9620e1e7cfb8b009b; 783749c187ad3cb6e60ccecdd73fd8ef; c17275cccc27dc9a4ab351a310c063c8; c4a2579e95fee657cb355e865aa027af; eb0898e38a817c5648a19a5e3db2c1be
+ammonia,one_se,0,0,BAC,4,1,5,-0.0726602802348,-0.0726602802348,0,True,1,Thermotogota,Petrotogales
+ammonia,one_se,0,0,BAC,3,1,2,-0.059480218138,-0.059480218138,0,True,1,Thermotogota,Kosmotogales
+ammonia,one_se,0,0,BAC,2,7,94,-0.0434922553808,-0.304445787666,8.23291899932e-10,True,7,Desulfobacterota; Proteobacteria; SAR324_clade(Marine_group_B),Burkholderiales; Rhodobacterales; SAR324_clade_Marine_group_B_; Syntrophales__b1; Syntrophales__b2; Syntrophorhabdales; Xanthomonadales
+ammonia,one_se,0,0,BAC,5,1,2,-0.0307942977364,-0.0307942977364,0,True,1,Bacteroidota,Sphingobacteriales__b5
+ammonia,one_se,0,0,BAC,1,35,244,-4.4666094427e-09,-1.56331330495e-07,1.58742764491e-08,False,35,Acidobacteriota; Actinobacteriota; Bacteroidota; Caldatribacteriota; Caldisericota; Chloroflexi; Cloacimonadota; Firmicutes; Hydrogenedentes; Spirochaetota; Synergistota; Verrucomicrobiota; WS1,Aminicenantales__b2; Anaerolineales; Bacteroidales__b1; Bacteroidales__b2; Bacteroidales__b3; Bacteroidales__b4; Bacteroidales__b6; Bacteroidales__b7; Bacteroidales__b8; Caldatribacteriales; Caldisericales; Chitinophagales; Cloacimonadales; D8A_2; DTU014__b1; Desulfotomaculales; Flavobacteriales__b1; Gaiellales; Hydrogenedentiales; JS1; Lactobacillales__b2; MVP_15; Micrococcales; Microtrichales; Pedosphaerales; SBR1031__b2; SJA_15; SJA_28__b2; Sphingobacteriales__b2; Sphingobacteriales__b4; Spirochaetales; Synergistales__b1; Synergistales__b2; WCHB1_41; WS1
+ammonia,one_se,0,0,BAC,0,17,154,0.0274929847121,0.467380740106,1.93277864893e-08,True,17,Bacteroidota; Firmicutes,Acholeplasmatales__b1; Acholeplasmatales__b2; Bacteroidales__b9; Christensenellales__b1; Christensenellales__b2; Clostridia__b2; Clostridia__b3; Clostridia__b4; Clostridia__b7; Izemoplasmatales; Lachnospirales; MBA03; Oscillospirales__b1; Oscillospirales__b3; Peptostreptococcales_Tissierellales__b1; Peptostreptococcales_Tissierellales__b2; Syntrophomonadales
+ammonia,one_se,0,1,ARC,0,6,6,-0.00375849423355,-0.0225509654013,2.66711999708e-13,True,0,unassigned,4194fdb699f4d5c9620e1e7cfb8b009b; 783749c187ad3cb6e60ccecdd73fd8ef; 88fa6e2c26361b8b7ca8a72ae1ed781f; c17275cccc27dc9a4ab351a310c063c8; c4a2579e95fee657cb355e865aa027af; eb0898e38a817c5648a19a5e3db2c1be
+ammonia,one_se,0,1,ARC,1,7,89,0.0032215664859,0.0225509654013,3.71802484633e-11,True,7,Crenarchaeota; Euryarchaeota; Halobacterota; Thermoplasmatota,Bathyarchaeia; Methanofastidiosales; Methanomassiliicoccales; Methanomicrobiales; Methanosarciniales__b2; Methanosarciniales__b4; Methanosarciniales__b5
+ammonia,one_se,0,1,BAC,6,1,3,-0.061748410015,-0.061748410015,0,True,1,Spirochaetota,MVP_15
+ammonia,one_se,0,1,BAC,5,5,19,-0.0447813746673,-0.223906873337,6.35960763218e-10,True,5,Proteobacteria; SAR324_clade(Marine_group_B); Thermotogota,Kosmotogales; Petrotogales; Rhodobacterales; SAR324_clade_Marine_group_B_; Sphingomonadales
+ammonia,one_se,0,1,BAC,1,6,91,-0.0393915676216,-0.23634940573,5.12353229287e-09,True,6,Chloroflexi; Desulfobacterota; Proteobacteria,Anaerolineales; Burkholderiales; SBR1031__b2; Syntrophales__b1; Syntrophales__b2; Syntrophorhabdales
+ammonia,one_se,0,1,BAC,7,1,9,-0.0317943930397,-0.0317943930397,0,True,1,Actinobacteriota,Micrococcales
+ammonia,one_se,0,1,BAC,4,1,1,-0.0317870233213,-0.0317870233213,0,True,1,Firmicutes,Desulfotomaculales
+ammonia,one_se,0,1,BAC,2,36,297,9.10596894001e-10,3.2781488184e-08,4.71149875677e-09,False,36,Actinobacteriota; Bacteroidota; Caldatribacteriota; Caldisericota; Cloacimonadota; Firmicutes; Fusobacteriota; Hydrogenedentes; Proteobacteria; Spirochaetota; Synergistota; Verrucomicrobiota; WS1,Bacteroidales__b1; Bacteroidales__b2; Bacteroidales__b3; Bacteroidales__b4; Bacteroidales__b6; Bacteroidales__b7; Bacteroidales__b8; Caldatribacteriales; Caldisericales; Chitinophagales; Christensenellales__b1; Christensenellales__b2; Cloacimonadales; D8A_2; DTU014__b1; Flavobacteriales__b1; Fusobacteriales; Gaiellales; Hydrogenedentiales; JS1; Lachnospirales; Lactobacillales__b2; Microtrichales; Pedosphaerales; Peptostreptococcales_Tissierellales__b1; SJA_28__b2; Sphingobacteriales__b2; Sphingobacteriales__b4; Sphingobacteriales__b5; Spirochaetales; Synergistales__b1; Synergistales__b2; Syntrophomonadales; WCHB1_41; WS1; Xanthomonadales
+ammonia,one_se,0,1,BAC,8,1,3,0.00262970122127,0.00262970122127,0,True,1,Firmicutes,Peptostreptococcales_Tissierellales__b2
+ammonia,one_se,0,1,BAC,0,12,78,0.0322739633327,0.387287559992,6.45226289064e-10,True,12,Firmicutes,Acholeplasmatales__b1; Acholeplasmatales__b2; Caldicoprobacterales__b1; Clostridia__b2; Clostridia__b3; Clostridia__b4; Clostridia__b7; Izemoplasmatales; MBA03; Oscillospirales__b1; Oscillospirales__b2; Oscillospirales__b3
+ammonia,one_se,0,1,BAC,3,1,5,0.195668811447,0.195668811447,0,True,1,Bacteroidota,Bacteroidales__b9
+ammonia,one_se,0,2,ARC,0,7,7,-0.0093649508302,-0.0655546558114,8.62684923497e-13,True,0,unassigned,4194fdb699f4d5c9620e1e7cfb8b009b; 58de505db56b2250b12c7cd7ec5bfa50; 783749c187ad3cb6e60ccecdd73fd8ef; 88fa6e2c26361b8b7ca8a72ae1ed781f; c17275cccc27dc9a4ab351a310c063c8; c4a2579e95fee657cb355e865aa027af; eb0898e38a817c5648a19a5e3db2c1be
+ammonia,one_se,0,2,ARC,1,7,89,0.0093649508302,0.0655546558114,1.40612957059e-08,True,7,Crenarchaeota; Euryarchaeota; Halobacterota; Thermoplasmatota,Bathyarchaeia; Methanofastidiosales; Methanomassiliicoccales; Methanomicrobiales; Methanosarciniales__b2; Methanosarciniales__b4; Methanosarciniales__b5
+ammonia,one_se,0,2,BAC,2,26,168,-0.0337761118568,-0.878178908276,2.95548870169e-08,True,26,Acidobacteriota; Actinobacteriota; Bacteroidota; CK-2C2-2; Caldatribacteriota; Caldisericota; Chloroflexi; Desulfobacterota; Firmicutes; Hydrogenedentes; Proteobacteria; SAR324_clade(Marine_group_B); Spirochaetota; Thermotogota,Aminicenantales__b2; Anaerolineales; Bacteroidales__b7; Burkholderiales; CK_2C2_2; Caldatribacteriales; Caldisericales; Caulobacterales; Gaiellales; Hydrogenedentiales; Izemoplasmatales; Kosmotogales; Leptospirales; Micrococcales; Microtrichales; Petrotogales; Rhizobiales__b3; Rhodobacterales; SAR324_clade_Marine_group_B_; SBR1031__b2; SJA_28__b2; Sphingomonadales; Syntrophales__b1; Syntrophales__b2; Syntrophorhabdales; Xanthomonadales
+ammonia,one_se,0,2,BAC,3,1,3,0.0158402143935,0.0158402143935,0,True,1,Spirochaetota,MVP_15
+ammonia,one_se,0,2,BAC,0,39,345,0.0210953425851,0.822718360819,2.74511675197e-09,True,39,Bacteroidota; Caldatribacteriota; Cloacimonadota; Firmicutes; Spirochaetota; Synergistota; Verrucomicrobiota,Acholeplasmatales__b1; Bacteroidales__b1; Bacteroidales__b2; Bacteroidales__b3; Bacteroidales__b4; Bacteroidales__b6; Bacteroidales__b8; Bacteroidales__b9; Caldicoprobacterales__b1; Caldicoprobacterales__b2; Chitinophagales; Christensenellales__b1; Christensenellales__b2; Cloacimonadales; Clostridia__b2; Clostridia__b3; Clostridia__b4; Clostridia__b7; D8A_2; DTU014__b1; Desulfotomaculales; JS1; Lachnospirales; Lactobacillales__b2; MBA03; Oscillospirales__b1; Oscillospirales__b2; Oscillospirales__b3; Pedosphaerales; Peptostreptococcales_Tissierellales__b1; Peptostreptococcales_Tissierellales__b2; Sphingobacteriales__b2; Sphingobacteriales__b4; Sphingobacteriales__b5; Spirochaetales; Synergistales__b1; Synergistales__b2; Syntrophomonadales; WCHB1_41
+ammonia,one_se,0,2,BAC,1,1,2,0.0396203330632,0.0396203330632,0,True,1,Firmicutes,Acholeplasmatales__b2
+ammonia,one_se,1,0,ARC,0,5,5,-0.00195044867107,-0.00975224335532,9.0910395531e-13,True,0,unassigned,4194fdb699f4d5c9620e1e7cfb8b009b; 783749c187ad3cb6e60ccecdd73fd8ef; c17275cccc27dc9a4ab351a310c063c8; c4a2579e95fee657cb355e865aa027af; eb0898e38a817c5648a19a5e3db2c1be
+ammonia,one_se,1,0,ARC,1,7,89,0.00139317762219,0.00975224335533,7.87859426137e-12,True,7,Crenarchaeota; Euryarchaeota; Halobacterota; Thermoplasmatota,Bathyarchaeia; Methanofastidiosales; Methanomassiliicoccales; Methanomicrobiales; Methanosarciniales__b2; Methanosarciniales__b4; Methanosarciniales__b5
+ammonia,one_se,1,0,BAC,2,8,97,-0.0450751686688,-0.360601349351,5.28241630993e-10,True,8,Desulfobacterota; Proteobacteria; SAR324_clade(Marine_group_B),Burkholderiales; Rhodobacterales; SAR324_clade_Marine_group_B_; Sphingomonadales; Syntrophales__b1; Syntrophales__b2; Syntrophorhabdales; Xanthomonadales
+ammonia,one_se,1,0,BAC,1,37,245,-0.00687660328223,-0.254434321442,1.36364014282e-08,True,37,Acidobacteriota; Actinobacteriota; Bacteroidota; Caldatribacteriota; Caldisericota; Chloroflexi; Cloacimonadota; Firmicutes; Hydrogenedentes; Spirochaetota; Synergistota; Thermotogota; Verrucomicrobiota; WS1,Aminicenantales__b2; Anaerolineales; Bacteroidales__b1; Bacteroidales__b2; Bacteroidales__b3; Bacteroidales__b4; Bacteroidales__b6; Bacteroidales__b7; Bacteroidales__b8; Caldatribacteriales; Caldisericales; Chitinophagales; Cloacimonadales; D8A_2; DTU014__b1; Desulfotomaculales; Flavobacteriales__b1; Gaiellales; Hydrogenedentiales; JS1; Kosmotogales; MVP_15; Micrococcales; Microtrichales; Pedosphaerales; Petrotogales; SBR1031__b2; SJA_15; SJA_28__b2; Sphingobacteriales__b2; Sphingobacteriales__b4; Sphingobacteriales__b5; Spirochaetales; Synergistales__b1; Synergistales__b2; WCHB1_41; WS1
+ammonia,one_se,1,0,BAC,0,19,167,0.0323702984628,0.615035670793,5.68017216596e-10,True,19,Bacteroidota; Firmicutes,Acholeplasmatales__b1; Acholeplasmatales__b2; Bacteroidales__b9; Caldicoprobacterales__b1; Christensenellales__b1; Christensenellales__b2; Clostridia__b2; Clostridia__b3; Clostridia__b4; Clostridia__b7; Izemoplasmatales; Lachnospirales; Lactobacillales__b2; MBA03; Oscillospirales__b1; Oscillospirales__b3; Peptostreptococcales_Tissierellales__b1; Peptostreptococcales_Tissierellales__b2; Syntrophomonadales
+ammonia,one_se,1,1,ARC,0,6,6,-0.00208289663252,-0.0124973797951,4.53601566031e-13,True,0,unassigned,4194fdb699f4d5c9620e1e7cfb8b009b; 783749c187ad3cb6e60ccecdd73fd8ef; 88fa6e2c26361b8b7ca8a72ae1ed781f; c17275cccc27dc9a4ab351a310c063c8; c4a2579e95fee657cb355e865aa027af; eb0898e38a817c5648a19a5e3db2c1be
+ammonia,one_se,1,1,ARC,1,7,89,0.00178533997074,0.0124973797951,7.95203044471e-10,True,7,Crenarchaeota; Euryarchaeota; Halobacterota; Thermoplasmatota,Bathyarchaeia; Methanofastidiosales; Methanomassiliicoccales; Methanomicrobiales; Methanosarciniales__b2; Methanosarciniales__b4; Methanosarciniales__b5
+ammonia,one_se,1,1,BAC,6,1,9,-0.177234435494,-0.177234435494,0,True,1,Actinobacteriota,Micrococcales
+ammonia,one_se,1,1,BAC,7,1,5,-0.0817827159042,-0.0817827159042,0,True,1,Thermotogota,Petrotogales
+ammonia,one_se,1,1,BAC,1,15,139,-0.0475811911802,-0.713717867703,2.92849311467e-09,True,15,Actinobacteriota; Bacteroidota; Chloroflexi; Desulfobacterota; Proteobacteria; SAR324_clade(Marine_group_B); Thermotogota,Anaerolineales; Burkholderiales; Chitinophagales; Gaiellales; Kosmotogales; Microtrichales; Rhodobacterales; SAR324_clade_Marine_group_B_; SBR1031__b2; SJA_28__b2; Sphingomonadales; Syntrophales__b1; Syntrophales__b2; Syntrophorhabdales; Xanthomonadales
+ammonia,one_se,1,1,BAC,4,1,5,-0.00250010877791,-0.00250010877791,0,True,1,Caldisericota,Caldisericales
+ammonia,one_se,1,1,BAC,3,4,17,0.0111198620592,0.044479448237,5.58947029286e-10,True,4,Caldatribacteriota; Firmicutes; Synergistota,Caldatribacteriales; DTU014__b1; Desulfotomaculales; Synergistales__b1
+ammonia,one_se,1,1,BAC,5,5,37,0.0220182397334,0.110091198667,1.5929331916e-09,True,5,Cloacimonadota; Firmicutes; Spirochaetota; Verrucomicrobiota,Cloacimonadales; D8A_2; MVP_15; Pedosphaerales; Spirochaetales
+ammonia,one_se,1,1,BAC,0,36,289,0.0220976761453,0.795516341233,1.75971631745e-08,True,36,Bacteroidota; Caldatribacteriota; Firmicutes; Fusobacteriota; Synergistota; Verrucomicrobiota; WS1,Acholeplasmatales__b1; Acholeplasmatales__b2; Bacteroidales__b1; Bacteroidales__b2; Bacteroidales__b3; Bacteroidales__b4; Bacteroidales__b6; Bacteroidales__b7; Bacteroidales__b8; Caldicoprobacterales__b1; Caldicoprobacterales__b2; Christensenellales__b1; Christensenellales__b2; Clostridia__b2; Clostridia__b3; Clostridia__b4; Clostridia__b7; Flavobacteriales__b1; Fusobacteriales; Izemoplasmatales; JS1; Lachnospirales; Lactobacillales__b2; MBA03; Oscillospirales__b1; Oscillospirales__b2; Oscillospirales__b3; Peptostreptococcales_Tissierellales__b1; Peptostreptococcales_Tissierellales__b2; Sphingobacteriales__b2; Sphingobacteriales__b4; Sphingobacteriales__b5; Synergistales__b2; Syntrophomonadales; WCHB1_41; WS1
+ammonia,one_se,1,1,BAC,2,1,5,0.0251481397426,0.0251481397426,0,True,1,Bacteroidota,Bacteroidales__b9
+ammonia,one_se,1,2,ARC,1,3,16,-0.00645960105892,-0.0193788031768,9.18112053397e-11,True,3,Crenarchaeota; Euryarchaeota; Thermoplasmatota,Bathyarchaeia; Methanofastidiosales; Methanomassiliicoccales
+ammonia,one_se,1,2,ARC,2,4,73,5.52132334301e-10,2.2085293372e-09,2.78093983334e-11,False,4,Halobacterota,Methanomicrobiales; Methanosarciniales__b2; Methanosarciniales__b4; Methanosarciniales__b5
+ammonia,one_se,1,2,ARC,0,7,7,0.00276840013832,0.0193788009682,4.71794044804e-13,True,0,unassigned,4194fdb699f4d5c9620e1e7cfb8b009b; 58de505db56b2250b12c7cd7ec5bfa50; 783749c187ad3cb6e60ccecdd73fd8ef; 88fa6e2c26361b8b7ca8a72ae1ed781f; c17275cccc27dc9a4ab351a310c063c8; c4a2579e95fee657cb355e865aa027af; eb0898e38a817c5648a19a5e3db2c1be
+ammonia,one_se,1,2,BAC,7,2,7,-0.0306107680456,-0.0612215360913,6.59146660864e-11,True,2,Thermotogota,Kosmotogales; Petrotogales
+ammonia,one_se,1,2,BAC,8,3,24,-0.0152142068235,-0.0456426204704,2.30134782758e-11,True,3,Desulfobacterota,Syntrophales__b1; Syntrophales__b2; Syntrophorhabdales
+ammonia,one_se,1,2,BAC,3,6,77,-0.0147995466693,-0.0887972800161,4.44250990682e-09,True,6,Hydrogenedentes; Proteobacteria; SAR324_clade(Marine_group_B),Burkholderiales; Hydrogenedentiales; Rhodobacterales; SAR324_clade_Marine_group_B_; Sphingomonadales; Xanthomonadales
+ammonia,one_se,1,2,BAC,1,34,230,-0.00947431734898,-0.322126789865,1.30616112891e-09,True,34,Acidobacteriota; Actinobacteriota; Bacteroidota; CK-2C2-2; Caldatribacteriota; Caldisericota; Chloroflexi; Cloacimonadota; Firmicutes; Spirochaetota; Synergistota; Verrucomicrobiota; WS1,Aminicenantales__b2; Anaerolineales; Bacteroidales__b1; Bacteroidales__b2; Bacteroidales__b3; Bacteroidales__b4; Bacteroidales__b6; Bacteroidales__b7; Bacteroidales__b8; CK_2C2_2; Caldatribacteriales; Caldisericales; Chitinophagales; Cloacimonadales; D8A_2; DTU014__b1; Desulfotomaculales; Flavobacteriales__b1; Gaiellales; MVP_15; Micrococcales; Microtrichales; Pedosphaerales; SBR1031__b2; SJA_15; SJA_28__b2; Sphingobacteriales__b2; Sphingobacteriales__b4; Sphingobacteriales__b5; Spirochaetales; Synergistales__b1; Synergistales__b2; WCHB1_41; WS1
+ammonia,one_se,1,2,BAC,6,1,5,2.03827482518e-09,2.03827482518e-09,0,False,1,Caldatribacteriota,JS1
+ammonia,one_se,1,2,BAC,5,9,95,0.00942956508303,0.0848660857473,7.22681502315e-09,True,9,Firmicutes,Christensenellales__b1; Christensenellales__b2; Clostridia__b3; Clostridia__b4; Lachnospirales; Lactobacillales__b2; Oscillospirales__b1; Oscillospirales__b3; Peptostreptococcales_Tissierellales__b1
+ammonia,one_se,1,2,BAC,4,4,23,0.0411768660646,0.164707464258,8.3814148677e-10,True,4,Firmicutes,Caldicoprobacterales__b2; Izemoplasmatales; Peptostreptococcales_Tissierellales__b2; Syntrophomonadales
+ammonia,one_se,1,2,BAC,0,4,39,0.0508751720242,0.203500688097,7.96096723266e-10,True,4,Firmicutes,Acholeplasmatales__b1; Acholeplasmatales__b2; Clostridia__b7; MBA03
+ammonia,one_se,1,2,BAC,2,1,5,0.0647139863021,0.0647139863021,0,True,1,Bacteroidota,Bacteroidales__b9

@@ -1,0 +1,13 @@
+config,domain,n_members,n_fits,fits,mean_group_beta,mean_theta,n_positive,n_negative,members
+acid_high,ARC,6,3,r0f1; r1f1; r1f2,-0.00233732259121,-0.0140239355473,1,1,4194fdb699f4d5c9620e1e7cfb8b009b; 783749c187ad3cb6e60ccecdd73fd8ef; 88fa6e2c26361b8b7ca8a72ae1ed781f; c17275cccc27dc9a4ab351a310c063c8; c4a2579e95fee657cb355e865aa027af; eb0898e38a817c5648a19a5e3db2c1be
+acid_high,ARC,5,2,r0f1; r1f0,0.00493685952008,0.0246842976004,1,1,Bathyarchaeia; Methanofastidiosales; Methanomassiliicoccales; Methanomicrobiales; Methanosarciniales__b2
+acid_high,ARC,2,2,r0f2; r1f2,0.0115696576058,0.0231393152115,2,0,Methanomassiliicoccales; Methanomicrobiales
+ammonia,BAC,2,4,r0f1; r1f0; r1f1; r1f2,0.00969405220891,0.0193881044178,3,1,JS1; Sphingobacteriales__b4
+ammonia,BAC,5,3,r0f1; r1f0; r1f1,0.0394379968276,0.197189984138,3,0,Acholeplasmatales__b1; Caldicoprobacterales__b1; Clostridia__b2; Clostridia__b7; MBA03
+ammonia,ARC,6,3,r0f1; r1f1; r1f2,-0.000903478088536,-0.00542086853121,1,2,4194fdb699f4d5c9620e1e7cfb8b009b; 783749c187ad3cb6e60ccecdd73fd8ef; 88fa6e2c26361b8b7ca8a72ae1ed781f; c17275cccc27dc9a4ab351a310c063c8; c4a2579e95fee657cb355e865aa027af; eb0898e38a817c5648a19a5e3db2c1be
+ammonia,BAC,2,2,r1f0; r1f2,0.010614564331,0.0212291286621,1,0,Bacteroidales__b2; Synergistales__b2
+ammonia,ARC,5,2,r0f1; r1f2,0.000718989435507,0.00359494717753,1,1,Bathyarchaeia; Methanofastidiosales; Methanomassiliicoccales; Methanomicrobiales; Methanosarciniales__b2
+ammonia,BAC,2,2,r0f1; r1f1,-0.00400133449921,-0.00800266899843,1,1,Caldatribacteriales; DTU014__b1
+ammonia,BAC,3,2,r0f1; r1f1,-0.0121013502913,-0.0363040508739,0,2,Flavobacteriales__b1; Fusobacteriales; Lachnospirales
+ammonia,BAC,2,2,r0f1; r1f2,-0.0216990652295,-0.043398130459,0,2,Kosmotogales; SAR324_clade_Marine_group_B_
+ammonia,BAC,4,2,r0f1; r1f1,-0.0239777884094,-0.0959111536377,0,2,Anaerolineales; Syntrophales__b1; Syntrophales__b2; Syntrophorhabdales

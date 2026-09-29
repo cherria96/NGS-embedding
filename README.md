@@ -1,119 +1,174 @@
-# Experimental plan
+# NGS embedding and fusionML
 
-## Dataset
+This repository studies whether bacterial and archaeal community profiles can predict anaerobic-digester warning indicators, and whether phylogenetic and abundance relationships can compress those profiles into interpretable predictive groups. Repeated seasonal samples from a digester are related observations, so the principal comparisons use site-grouped validation.
 
-34 anaerobic digestion (AD) sites × 4 seasons (Summer/Fall/Winter/Spring), delivered as separate
-bacterial and archaeal QIIME2 artifacts (filtered feature table + SILVA taxonomy + rooted tree
-each). Bacteria and archaea align to 138 paired samples (two bacteria-only samples, `1-32'` and
-`4-24`, have no archaeal partner and drop out; a few `b`/`'` replicate facilities are retained
-within their site). Raw dimensionality is large — ~13,385 bacterial ASVs and ~1,776 archaeal
-ASVs — so aggressive prevalence filtering is applied per training fold (≥15% prevalence ⇒
-≈450 BAC + ≈70 ARC features).
+The objective is to compare fixed-taxonomic-rank machine learning, phylogeny-aware deep learning, and domain-constrained log-contrast fusion models. Phylogenetic proximity and similar abundance patterns provide grouping evidence; neither establishes shared biological function. Existing analyses distinguish prediction, compression, and biological interpretation.
 
-Sample IDs follow the `{round}-{No}` convention used throughout `data/fastq/`, `data/qiimeresult/`,
-and `data/final/metadata.csv` (e.g. `1-2` = round 1 (Summer), site No. 2 (BSN); `2-32'` = round 2
-(Fall), site No. 32' (JJY)).
+## Repository layout
 
-### Raw source: `data/final/Dat_chem.xlsx`
+```text
+configs/                       YAML configurations and configuration schemas
+function/                      pipeline orchestration, evaluation, plotting, reporting
+models/
+  baselines/
+    TaxlevelML/                fixed-rank ML models and benchmark runner
+    PhylogenicDL/              Phylo-Spec, MetaDR, DeepPhylo, PMCNN, CNN
+  fusionML/                    estimator, search, interactions, coefficient groups
+    experiments/               existing exp1 and exp5 scripts and documentation
+datasets/
+  graph/                       phylogeny and log-ratio-variance graph construction
+  datapreprocess/              input readers, warning labels, tree resolution, zero handling
+  raw/                         original data/final and data/qiimeresult contents
+  processed/                   reduced trees, mappings, prepared tables
+  fusionML/                    normalized input cache and synthetic demo inputs
+  baselines/                   prepared baseline inputs and reference data
+  experiments/                 preserved experiment input/source snapshots
+results/
+  data investigation/report.md
+  classification result/report.md
+  model interpretation/report.md
+  ablation analysis/report.md
+main.py
+README.md
+```
 
-Physicochemical characterization of each digester's influent substrates and effluent, sheet by sheet:
+The spelling `PhylogenicDL` and the spaces in result directory names follow the requested layout. Quote result paths in shell commands. The published root contains only this revised layout plus `.gitignore`; the previous uploaded layout is preserved on `archive/main-before-restructure-2026-09-29`. Internal compatibility links preserve existing experiment layouts, while saved fusionML models load through the canonical modules. Tests and supporting design documents live in `function/tests/` and `function/docs/`. Frozen experiment inputs and historical reports retain their original content and provenance paths.
 
-- **`Si_1R`–`Si_4R`** (Summer/Fall/Winter/Spring anaerobic digester input): one row per substrate
-  fed to a site's digester that season. Where a site is fed multiple substrates (e.g. site `BSN`
-  is fed `1SC`, `2SC`, `Fww`), each substrate gets its own row; the `Site` column is only filled on
-  the first row of the group. The trailing `"{site} avg."` row is the Q-weighted average across
-  that site's substrates and is excluded from downstream processing (it's derived, not raw data).
-- **`Se`**: digester effluent physicochemical results. Row 2 (`S`/`F`/`W`/`Sp`) labels the season
-  block for each parameter; season maps to round as `S`=`Si_1R`, `F`=`Si_2R`, `W`=`Si_3R`,
-  `Sp`=`Si_4R`.
-- **`ADPs_140Si,Se,분석`**: reference table of which substrate type is fed to each digester in each
-  season (columns I–L) and the substrate-name → acronym legend (columns T–U, e.g. `1S(C)` =
-  primary sludge, `Fww` = food wastewater, `HM` = human manure).
+## Data
 
-## `data/final/metadata.csv`
+- **Relative abundance and taxonomy:** `datasets/raw/final/Dat_ARC.xlsx` and `Dat_BAC.xlsx` contain domain-specific taxonomic summaries, including abundance at phylum, class, order, family, genus, and species ranks. QIIME exports and taxonomy assignments are under `datasets/raw/qiimeresult/{ARC,BAC}/`.
+- **Count tables and phylogenetic trees:** QIIME feature tables and rooted Newick trees are under the same domain directories. Normalized sample-ID tables used by fusionML are in `datasets/fusionML/real_data_cache/`. Reduced trees and their ASV-to-block mappings are under `datasets/processed/genus_tree/`.
+- **Chemistry:** `datasets/raw/final/Dat_chem.xlsx` contains substrate and effluent measurements. `metadata.csv` is the existing derived metadata/label table. The newer fusionML configurations assemble targets directly from the chemistry workbook and their explicit site/season crosswalks.
+- **Observation unit:** a site-season sample, with repeated visits grouped by site. Sample IDs commonly use `{round}-{No}`. Available sample counts and site groupings differ across historical protocols; use each report's cohort definition rather than combining their scores.
 
-Tidy, per-site-per-season chemical feature table built from `Dat_chem.xlsx`, meant to be joined to
-the microbiome tables on `SampleID` and used as ML features/covariates. 140 rows × 108 columns
-(35 site codes × 4 seasons, minus 2 seasons a site couldn't be visited due to dredging works, plus
-2 one-off QC replicate rows that only exist for Summer). `std`, `Cation`, `Anion`, `Pellet`, `DNA`,
-`NGS`, `QPCR` columns and the `"{site} avg."` rows from the source sheets are excluded.
+Warning labels include acid-base balance, buffer capacity, acid accumulation, ammonia toxicity, biogas quality, and one-sided acid-low/acid-high flags. Definitions are implemented in `datasets/datapreprocess/chemistry_targets.py` and the historical `datasets/datapreprocess/legacy/metadata_targetwriter.py`. Thresholds and missing-value treatment differ between historical workflows; inspect the selected configuration and source report before comparing them. The metadata writer modifies `metadata.csv` when explicitly run.
 
-Columns:
+fusionML expects raw counts by default. Set `preprocessing.relative_input_mode: true` explicitly to accept relative-abundance inputs, and choose detection/pseudocount settings appropriate to their scale. An absent assay and a measured zero are distinct. Feature filtering, zero handling, graph fitting, and hyperparameter selection happen within training partitions. Each microbial domain is normalized separately.
 
-| Group | Columns | Source |
-|---|---|---|
-| Identity | `SampleID`, `Round`, `Season`, `Site`, `No` | `Se` (`No`/`Site`), derived (`SampleID` = `Round`-`No`) |
-| Digester operation | `HRT_d`, `T_C` | `Se` |
-| Feed summary | `Q_total_Tpy` (sum of that season's substrate flows), `substrate_type` (e.g. `1SC/2SC/Fww`) | derived from `Si_*R` |
-| `substrate1_*` … `substrate3_*` | `name`, `Q`, `pH`, `ALK`, `TS`, `VS`, `TSS`, `VSS`, `COD`, `sCOD`, `TC`, `Protein`, `Lipid`, `TVFAs`, `TVFAs_plus_EtOH`, `EtOH`, `HAc`, `HPro`, `i_HBut`, `HBut`, `i_HVal`, `HVal`, `i_HCap`, `HCap` | `Si_1R`–`Si_4R`, one block per substrate fed that site/season (blank if the site had fewer substrates that season) |
-| `eff_*` | same physicochemical panel as substrates, plus `TKN`, `TAN`, `CO2`, `CH4`, `H2S`, `O2` | `Se` |
+## Models and graphs
 
-Notes:
-- Sites `ADP` and `YCG` are missing their Spring row (facility inaccessible; flagged `x` in `ADPs_140Si,Se,분석`).
-- `BSIb` and `DGYb` (QC replicate facilities) only have a Summer row — the source notes them as excluded from Fall onward.
-- Empty cells are blank strings, not `0`/`NaN` — impute/cast before model training.
+| Component | Implementation and role |
+|---|---|
+| TaxlevelML | RF, KNN, SVM, NNET, XGBoost, GLMNET and existing rank-specific training scripts; fixed-rank abundance predictors |
+| PhylogenicDL | Existing Phylo-Spec, MetaDR, DeepPhylo, PMCNN and CNN implementations and benchmark scripts |
+| fusionML | Convex log-contrast regression/classification with separate zero-sum constraints for ARC and BAC; sparsity, ridge, and graph-fusion penalties |
+| Phylogenetic graph | Nearest-neighbor relationships from patristic tree distances |
+| Abundance graph | Site-weighted variance of log abundance ratios, joint-detection requirements, mutual neighbors, and bootstrap support |
+| Fusion controls | No fusion, phylogeny-only, abundance-only, shared/domain-adaptive mixtures, domain-restricted fusion, and optional cross-domain interactions |
 
-### Warning-flag targets (`code/metadata_targetwriter.py`)
+`datasets/graph/fusion_graphs.py` computes log-ratio variance as `Var(log(q_j) - log(q_k))`. The training pipeline rebuilds these graphs inside each training partition. Full-cohort exports made by the descriptive stages are not inputs to nested cross-validation.
 
-Five binary target columns are appended to `metadata.csv`, each a threshold flag on a
-digester-stability indicator computed from the `eff_*` effluent columns. A row can trigger more
-than one flag at once (17/140 rows do) — these are **multi-label**, not mutually-exclusive
-classes:
+The fusion implementation supports both classification and regression. `task` in the YAML determines which is run; the synthetic demonstration configuration uses regression.
 
-| Column | Trigger condition | Rationale | Positives (of 140) |
-|---|---|---|---|
-| `warning_acid_base_balance` | `eff_pH < 6.5` OR `eff_pH > 8.0` | outside the workable pH range for methanogens | 21 |
-| `warning_buffer_capacity` | `eff_TVFAs / eff_ALK >= 0.30` | classic VFA/ALK (FOS/TAC) instability ratio | 9 |
-| `warning_acid_accumulation` | (`eff_HPro / eff_HAc > 1.4` AND `eff_HPro > 0.1`) OR `eff_HPro >= 0.8` | propionate build-up/inhibition pattern | 4 |
-| `warning_ammonia_toxicity` | `eff_TAN > 2.5` | total ammonia nitrogen inhibition threshold | 26 |
-| `warning_biogas_quality` | `eff_CH4 < 50.0` | methane content below viable biogas quality | 7 |
+## Environment
 
-Notes:
-- `eff_TVFAs / eff_ALK` is computed as 999 (forced positive) when `eff_ALK == 0` and `eff_TVFAs > 0`,
-  and left undefined (no flag) when both are 0/missing.
-- Because these thresholds are computed straight from `eff_pH`/`eff_TAN`/etc., a row with missing
-  underlying effluent data silently evaluates its comparisons to `False` (numpy `NaN` comparisons)
-  and gets flagged `0` rather than "unknown" — treat `0` as "not flagged," not necessarily "confirmed normal,"
-  for rows with sparse `eff_*` data.
-- Class counts are small enough (4–26 positives out of 140) that any train/test split must be
-  **grouped by `Site`** (never split a site's 4 seasonal samples across train and test) and ideally
-  stratified at the site level per flag — see the model-comparison scripts below.
+Use the existing Python 3.12 `torch` environment for the full repository, including the experiment report scripts:
 
-### Genomic data
+```bash
+conda activate torch
+python main.py --help
+```
 
-- **`data/final/Dat_ARC.xlsx`, `data/final/Dat_BAC.xlsx`**: 16S rRNA taxonomic classification and
-  relative-abundance summaries derived from the QIIME2 ASV tables (archaeal and bacterial
-  domains, respectively). Sheet `OTUs` lists each ASV's `Feature ID` and full lineage
-  (`Domain`→`Species`). For each taxonomic rank (`P`=Phylum, `C`=Class, `O`=Order, `F`=Family,
-  `G`=Genus, `S`=Species) there are three wide sheets, one row per taxon and one column per
-  `SampleID` (e.g. `1-1-BSSG`): `{rank}_read` (read counts), `{rank}(%)` (relative abundance
-  within sample), and `{rank}_rank(%)` (percentile rank within sample).
-- **`data/qiimeresult/ARC/`, `data/qiimeresult/BAC/`**: the underlying QIIME2 analysis artifacts
-  that `Dat_ARC.xlsx`/`Dat_BAC.xlsx` were summarized from (per domain). Key outputs:
-  - `table_filtered.qza` — prevalence-filtered ASV feature table (the ASV × sample count matrix).
-  - `silva_16S_taxonomy.qza`/`.qzv` — SILVA-based taxonomic classification per ASV.
-  - `rooted-tree.qza` — rooted phylogenetic tree over the ASVs, used by the hierarchy-aware models.
-  
-  The directories also retain the intermediate DADA2/denoising and QC artifacts
-  (`dada2_table.qza`, `dada2_rep_seqs.qza`, `dada2_stats.qzv`, `alpha_rarefaction.qzv`,
-  `primer_trimmed.qzv`, `seq_filtered.qza`, `aligned-rep-seqs.qza`, `unrooted-tree.qza`, etc.)
-  from the QIIME2 pipeline run.
+For a new environment, the existing dependency lists are [fusionML requirements](models/fusionML/requirements.txt), [taxonomic ML requirements](models/baselines/TaxlevelML/requirements.txt), and [phylogenetic benchmark requirements](models/baselines/PhylogenicDL/multi_models/requirements.txt). These originated in separate workflows and are not a newly unified environment lockfile.
 
-## Experimental plan
+## Main workflow
 
-### Three-tier comparison
+```text
+import abundance/counts + taxonomy + phylogenetic trees + chemistry
+  -> preprocessing and resolution mapping
+  -> descriptive graph construction and data investigation
+  -> baseline and/or fusionML training/testing
+  -> fitted-model coefficient/group interpretation
+  -> comparison of the configured ablation families
+```
 
-| Tier | Model(s) | Encodes | Named gap |
-|---|---|---|---|
-| Baseline | RF / MLP on single-rank abundance + covariates | one taxonomic level | drops other levels → information loss + rank-choice bias |
-| Hierarchy-aware | PopPhy-CNN, DeepPhylo, Phylo-Spec | within-tree structure | ignores cross-domain bacteria↔archaea syntrophy |
-| Proposed | dual-domain hierarchy encoder + syntrophic cross-attention | within-tree and cross-domain syntrophic interface | — |
+Start with validation or a dry run:
 
-### Benchmark reimplementations
+```bash
+python main.py --stage validate --config configs/fusionML/real_smoke_classification_phylo.yaml
+python main.py --stage all --model all --config configs/fusionML/real_smoke_classification_phylo.yaml --dry-run
+```
 
-Faithful but deliberately small reimplementations, used as the hierarchy-aware tier:
+Run the fusionML workflow, or individual stages:
 
-- **PopPhy-CNN** (Reiman 2020): tree → 2D matrix populated with abundance → 2D-CNN.
-- **DeepPhylo** (Wang 2024): per-OTU embeddings = PCA of the patristic-distance matrix
-  (evolutionary distance, not just topology); dual abundance + conv modules.
-- **Phylo-Spec** (Zhang 2025): bottom-up fusion of per-rank abundance features.
+```bash
+python main.py --stage all --config configs/fusionML/real_smoke_classification_phylo.yaml
+python main.py --stage preprocess --config configs/fusionML/synthetic_demo.yaml
+python main.py --stage graph --config configs/fusionML/synthetic_demo.yaml
+python main.py --stage investigate --config configs/fusionML/synthetic_demo.yaml
+python main.py --stage train --config configs/fusionML/real_smoke_classification_phylo.yaml
+python main.py --stage interpret --config configs/fusionML/real_smoke_classification_phylo.yaml
+python main.py --stage ablate --config configs/fusionML/real_smoke_classification_phylo.yaml
+```
+
+`all` performs validation first and stops on failure. `--model all` also launches both existing baseline benchmarks at the training stage. Those benchmarks use their own prepared inputs and evaluation settings; launching them together does not make their cohorts or splits identical to the fusionML config. A full run can be expensive. `--dry-run` prints the plan without loading scientific dependencies or fitting models.
+
+Prediction uses a saved model and does not refit:
+
+```bash
+python main.py --stage predict --config configs/fusionML/real_smoke_classification_phylo.yaml \
+  --model-path 'results/classification result/fusionML/real_results_classification_phylo/smoke/final_model.pkl' \
+  --output /tmp/predictions.csv
+```
+
+Baseline-only examples:
+
+```bash
+python main.py --stage train --model TaxlevelML \
+  --baseline-args='--levels Genus --domains ARC --models RF --n-splits 3 --n-repeats 1'
+python main.py --stage train --model PhylogenicDL --baseline-args='--help'
+```
+
+Preparation commands remain separate when their outputs are needed:
+
+```bash
+python datasets/datapreprocess/prepare_real_data_smoke_inputs.py
+python datasets/datapreprocess/run_genus_tree_pipeline.py --mode genus
+python datasets/datapreprocess/generate_synthetic_demo_data.py
+```
+
+These commands write prepared inputs. The first command normalizes existing QIIME sample IDs; the second rebuilds reduced trees/tables; the third regenerates the synthetic demonstration data. The staged `preprocess` command uses the input readers, chemistry targets, and resolution mappings configured in YAML and exports full-cohort log compositions. It does not implicitly run every historical data preparation script.
+
+## Arguments and configuration
+
+| Argument | Purpose |
+|---|---|
+| `--stage` | `validate` (default), `preprocess`, `graph`, `investigate`, `train`, `predict`, `interpret`, `ablate`, `all` |
+| `--config` | fusionML YAML; required when running fusionML stages |
+| `--model` | `fusionML` (default), `TaxlevelML`, `PhylogenicDL`, or `all`; baseline-only runs use `train` |
+| `--model-path` | saved model for prediction; optional override for interpretation |
+| `--output` | prediction CSV or output directory for descriptive/interpretation/ablation stages; training uses YAML `output_dir` |
+| `--baseline-args` | quoted arguments forwarded to baseline benchmark parsers; use `--baseline-args='--help'` for their full options |
+| `--dry-run` | print the requested stages and baseline commands without executing |
+
+Configurations live in `configs/fusionML/`; schema/defaults are in `configs/fusionml.py`. Relative paths resolve against the actual configuration file's directory, including when it is opened through a compatibility link. The older project-schema template `configs/ad-microbial-config.yaml` has its own validation contract and is not a drop-in training configuration.
+
+| YAML section | Main settings |
+|---|---|
+| `task`, `resolution`, `seed` | classification/regression, ASV or configured taxonomic rank, random seed |
+| `inputs`, `columns`, `chemistry` | counts, metadata/chemistry, taxonomy, trees, orientation, target, site/sample identifiers |
+| `preprocessing` | detection/prevalence filters, pseudocount, sensitivity pseudocounts, explicit relative-abundance mode |
+| `graph` | phylogenetic/abundance neighbor counts, joint support, bootstrap repetitions and support threshold |
+| `cv` | outer/inner folds, selection rule, eligible `families` |
+| `search` | candidate budget, sparsity/ridge/fusion penalties, domain mixture weights |
+| `solver` | solver selection and tolerances |
+| `classification`, `interaction` | classification thresholds/metrics and optional ARC–BAC interaction controls |
+| `compression` | coefficient grouping tolerance and residual retention |
+| `output_dir`, `smoke`, `run_id` | training output location and run metadata |
+
+Preprocess/graph exports default to `datasets/processed/fusionML/<config-name>/<stage>/`. Investigation, interpretation, and ablation reports default to their respective result category under `<config-name>/`. Interpretation exports fitted coefficients and explicit group memberships. The ablation stage summarizes already-trained families from that config's `results.csv`; select controls through `cv.families` and train them first. It reports when only one family is available.
+
+## Existing results and reproduction
+
+- [Data investigation](results/data%20investigation/report.md)
+- [Classification results](results/classification%20result/report.md), including the preserved [Experiment 1 report](results/classification%20result/fusionMLv2/exp1/REPORT.md)
+- [Model interpretation](results/model%20interpretation/report.md)
+- [Ablation analysis](results/ablation%20analysis/report.md)
+
+Archived Experiment 1 and Experiment 5 scripts remain under `models/fusionML/experiments/`. Their `data/` and `results/` links lead to the centralized snapshots and results. These analyses describe saved experiments, while `main.py --stage interpret/ablate` operates on the selected config's fitted model/results. Do not refresh archived snapshots merely to regenerate their reports. See each experiment README for its original protocol and reproduction commands.
+
+Run the implementation checks with:
+
+```bash
+python -m pytest models/fusionML/tests function/tests models/baselines/TaxlevelML -q
+```

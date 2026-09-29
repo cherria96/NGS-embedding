@@ -1,0 +1,181 @@
+feature_id,domain,block,n_asv,classified,phylum,genus_composition,dominant_genus,dominant_genus_fraction,min_confidence
+ARC::F00000,ARC,19d2984a92774f1291ebc1812f80368c,1,False,unassigned,unclassified,unclassified,1,0.353484991502
+ARC::F00001,ARC,4194fdb699f4d5c9620e1e7cfb8b009b,1,False,unassigned,unclassified,unclassified,1,0.705940365344
+ARC::F00002,ARC,58de505db56b2250b12c7cd7ec5bfa50,1,False,unassigned,unclassified,unclassified,1,0.436198276891
+ARC::F00003,ARC,783749c187ad3cb6e60ccecdd73fd8ef,1,False,unassigned,unclassified,unclassified,1,0.392609838532
+ARC::F00004,ARC,88fa6e2c26361b8b7ca8a72ae1ed781f,1,False,unassigned,unclassified,unclassified,1,0.385731795581
+ARC::F00005,ARC,Bathyarchaeia,3,True,Crenarchaeota,Bathyarchaeia (3),Bathyarchaeia,1,0.937366576153
+ARC::F00006,ARC,Methanofastidiosales,5,True,Euryarchaeota,Candidatus_Methanofastidiosum (5),Candidatus_Methanofastidiosum,1,0.705002950548
+ARC::F00007,ARC,Methanomassiliicoccales,8,True,Thermoplasmatota,Methanomassiliicoccus (3); Candidatus_Methanoplasma (2); uncultured (2); RumEn_M2,Methanomassiliicoccus,0.375,0.801935012697
+ARC::F00008,ARC,Methanomethyliales,2,True,Crenarchaeota,Candidatus_Methanomethylicus (2),Candidatus_Methanomethylicus,1,0.850134664152
+ARC::F00009,ARC,Methanomicrobiales,50,True,Halobacterota,Methanospirillum (15); Methanoculleus (14); Methanolinea (10); uncultured (4); Methanosphaerula (3); Methanoregula (2); f__Methanoregulaceae; Methanocorpusculum,Methanospirillum,0.3,0.704111838627
+ARC::F00010,ARC,Methanosarciniales__b1,1,True,Halobacterota,unclassified,unclassified,1,0.998708467647
+ARC::F00011,ARC,Methanosarciniales__b2,13,True,Halobacterota,Methanosaeta (13),Methanosaeta,1,0.887171250682
+ARC::F00012,ARC,Methanosarciniales__b3,1,True,Halobacterota,Methanosaeta,Methanosaeta,1,0.995665231957
+ARC::F00013,ARC,Methanosarciniales__b4,1,True,Halobacterota,Methanosaeta,Methanosaeta,1,0.999999970423
+ARC::F00014,ARC,Methanosarciniales__b5,9,True,Halobacterota,Methanosarcina (5); Methanomethylovorans (3); f__Methanosarcinaceae,Methanosarcina,0.555555555556,0.82540717232
+ARC::F00015,ARC,Woesearchaeales__b1,1,True,Nanoarchaeota,SCGC_AAA011-D5,SCGC_AAA011-D5,1,0.999628236502
+ARC::F00016,ARC,Woesearchaeales__b2,1,True,Nanoarchaeota,Woesearchaeales,Woesearchaeales,1,0.999574473834
+ARC::F00017,ARC,c17275cccc27dc9a4ab351a310c063c8,1,False,unassigned,unclassified,unclassified,1,0.700002719696
+ARC::F00018,ARC,c4a2579e95fee657cb355e865aa027af,1,False,unassigned,unclassified,unclassified,1,0.36570689139
+ARC::F00019,ARC,cca7777d25945dbdb89d6cccbce09c5d,1,False,Halobacterota,unclassified,unclassified,1,0.998935490873
+ARC::F00020,ARC,eb0898e38a817c5648a19a5e3db2c1be,1,False,unassigned,unclassified,unclassified,1,0.387439771124
+BAC::F00000,BAC,08fe4403784eeb61e1575052647a0ade,1,False,Firmicutes,Gelria,Gelria,1,0.970378883579
+BAC::F00001,BAC,2bd4a356fbe963c2c7e5d021661cee3c,1,False,Firmicutes,Gelria,Gelria,1,0.999997517412
+BAC::F00002,BAC,35f9d4ff42ea1470daeb4a8e28463324,1,False,Desulfobacterota,uncultured,uncultured,1,0.771469864372
+BAC::F00003,BAC,796ba8e19ff016fb873edbb5bf1ca811,1,False,Firmicutes,uncultured,uncultured,1,0.949794691317
+BAC::F00004,BAC,80fa627a5ed632377f103fe128c42df6,1,False,unassigned,unclassified,unclassified,1,0.999999998817
+BAC::F00005,BAC,842ac4c7c442860a7c32508c2fa2ca23,1,False,Firmicutes,uncultured,uncultured,1,0.808766953258
+BAC::F00006,BAC,9e2a67d08991624ee8ea2470150192e8,1,False,Firmicutes,unclassified,unclassified,1,0.929159482772
+BAC::F00007,BAC,Absconditabacteriales__SR1_,1,True,Patescibacteria,Absconditabacteriales_(SR1),Absconditabacteriales_(SR1),1,0.968845826966
+BAC::F00008,BAC,Acholeplasmatales__b1,7,True,Firmicutes,Acholeplasma (7),Acholeplasma,1,0.823383303647
+BAC::F00009,BAC,Acholeplasmatales__b2,2,True,Firmicutes,Acholeplasma (2),Acholeplasma,1,0.999999999994
+BAC::F00010,BAC,Acidaminococcales,1,True,Firmicutes,Succiniclasticum,Succiniclasticum,1,0.996245407443
+BAC::F00011,BAC,Actinomycetales,1,True,Actinobacteriota,uncultured,uncultured,1,0.998368956154
+BAC::F00012,BAC,Aeromonadales__b1,1,True,Proteobacteria,Tolumonas,Tolumonas,1,0.700373161883
+BAC::F00013,BAC,Aeromonadales__b2,1,True,Proteobacteria,Aeromonas,Aeromonas,1,0.989906387787
+BAC::F00014,BAC,Aminicenantales__b1,2,True,Acidobacteriota,Aminicenantales (2),Aminicenantales,1,0.999815628132
+BAC::F00015,BAC,Aminicenantales__b2,4,True,Acidobacteriota,Aminicenantales (4),Aminicenantales,1,0.725734721023
+BAC::F00016,BAC,Anaerolineales,7,True,Chloroflexi,f__Anaerolineaceae (3); Longilinea; Flexilinea; ADurb.Bin120; uncultured,f__Anaerolineaceae,0.428571428571,0.701525271434
+BAC::F00017,BAC,B55_F_B_G02,1,True,Firmicutes,B55-F-B-G02,B55-F-B-G02,1,0.865536251387
+BAC::F00018,BAC,Babeliales,1,True,Dependentiae,Babeliales,Babeliales,1,0.943492215326
+BAC::F00019,BAC,Bacteroidales__b1,8,True,Bacteroidota,f__Dysgonomonadaceae (6); Fermentimonas; uncultured,f__Dysgonomonadaceae,0.75,0.740852361552
+BAC::F00020,BAC,Bacteroidales__b2,5,True,Bacteroidota,Rikenellaceae_RC9_gut_group (2); Blvii28_wastewater-sludge_group; p-251-o5; F082,Rikenellaceae_RC9_gut_group,0.4,0.847310689783
+BAC::F00021,BAC,Bacteroidales__b3,2,True,Bacteroidota,SB-5; MgMjR-022,SB-5,0.5,0.995692362314
+BAC::F00022,BAC,Bacteroidales__b4,53,True,Bacteroidota,uncultured (14); Rikenellaceae_RC9_gut_group (8); Paludibacter (5); Prevotella (5); Bacteroides (3); Petrimonas (3); Parabacteroides (2); Mariniphaga (2); Proteiniphilum (2); Fermentimonas; p-251-o5; Dysgonomonadaceae; Bacteroidales_UCG-001; Roseimarinus; Macellibacteroides; M2PB4-65_termite_group; dgA-11_gut_group; Ruminofilibacter,uncultured,0.264150943396,0.707780323078
+BAC::F00023,BAC,Bacteroidales__b5,2,True,Bacteroidota,Bacteroidetes_BD2-2; GWE2-42-42,Bacteroidetes_BD2-2,0.5,0.797644798145
+BAC::F00024,BAC,Bacteroidales__b6,1,True,Bacteroidota,009E01-B-SD-P15,009E01-B-SD-P15,1,0.999466278153
+BAC::F00025,BAC,Bacteroidales__b7,4,True,Bacteroidota,Bacteroidetes_vadinHA17 (4),Bacteroidetes_vadinHA17,1,0.911146713529
+BAC::F00026,BAC,Bacteroidales__b8,12,True,Bacteroidota,Bacteroidetes_vadinHA17 (12),Bacteroidetes_vadinHA17,1,0.71690756281
+BAC::F00027,BAC,Bacteroidales__b9,5,True,Bacteroidota,Proteiniphilum (5),Proteiniphilum,1,0.715492605369
+BAC::F00028,BAC,Bacteroidetes_VC2_1_Bac22,1,True,Bacteroidota,Bacteroidetes_VC2.1_Bac22,Bacteroidetes_VC2.1_Bac22,1,0.999992533182
+BAC::F00029,BAC,Brachyspirales,1,True,Spirochaetota,Exilispira,Exilispira,1,1
+BAC::F00030,BAC,Burkholderiales,54,True,Proteobacteria,f__Comamonadaceae (13); SC-I-84 (6); Dechloromonas (4); f__Rhodocyclaceae (4); Lautropia (3); Thauera (3); Zoogloea (3); uncultured (2); Candidatus_Accumulibacter (2); unclassified (2); B1-7BS; Azospira; Denitratisoma; Brachymonas; Methylotenera; Propionivibrio; Acidovorax; AAP99; Sulfuritalea; Simplicispira; Comamonas; Limnobacter,f__Comamonadaceae,0.240740740741,0.703090648909
+BAC::F00031,BAC,CK_2C2_2,1,True,CK-2C2-2,CK-2C2-2,CK-2C2-2,1,0.983495882742
+BAC::F00032,BAC,Caldatribacteriales,2,True,Caldatribacteriota,Candidatus_Caldatribacterium (2),Candidatus_Caldatribacterium,1,0.79857926321
+BAC::F00033,BAC,Caldicoprobacterales__b1,5,True,Firmicutes,Caldicoprobacter (5),Caldicoprobacter,1,0.768588555292
+BAC::F00034,BAC,Caldicoprobacterales__b2,4,True,Firmicutes,Caldicoprobacter (4),Caldicoprobacter,1,0.912717194234
+BAC::F00035,BAC,Caldisericales,5,True,Caldisericota,WCHB1-02 (3); Caldisericum; LF045,WCHB1-02,0.6,0.999799728261
+BAC::F00036,BAC,Campylobacterales,1,True,Campilobacterota,Arcobacter,Arcobacter,1,0.765937924725
+BAC::F00037,BAC,Caulobacterales,1,True,Proteobacteria,SWB02,SWB02,1,0.929943614354
+BAC::F00038,BAC,Cellvibrionales,1,True,Proteobacteria,BD1-7_clade,BD1-7_clade,1,0.999967232159
+BAC::F00039,BAC,Chitinophagales,15,True,Bacteroidota,uncultured (9); OLB8 (3); Terrimonas; Niabella; Ferruginibacter,uncultured,0.6,0.734393872986
+BAC::F00040,BAC,Christensenellales__b1,2,True,Firmicutes,Christensenellaceae_R-7_group (2),Christensenellaceae_R-7_group,1,0.701502944316
+BAC::F00041,BAC,Christensenellales__b2,29,True,Firmicutes,Christensenellaceae_R-7_group (29),Christensenellaceae_R-7_group,1,0.725321335318
+BAC::F00042,BAC,Chthonomonadales,1,True,Armatimonadota,Chthonomonadales,Chthonomonadales,1,0.870927640941
+BAC::F00043,BAC,Cloacimonadales,15,True,Cloacimonadota,Candidatus_Cloacimonas (6); W27 (4); W5 (3); unclassified; LNR_A2-18,Candidatus_Cloacimonas,0.4,0.716204068295
+BAC::F00044,BAC,Clostridia_UCG_014,1,True,Firmicutes,Clostridia_UCG-014,Clostridia_UCG-014,1,0.999225453985
+BAC::F00045,BAC,Clostridia__b1,2,True,Firmicutes,f__Gracilibacteraceae (2),f__Gracilibacteraceae,1,0.999988226586
+BAC::F00046,BAC,Clostridia__b2,4,True,Firmicutes,Ruminiclostridium (2); HN-HF0106 (2),Ruminiclostridium,0.5,0.925404822835
+BAC::F00047,BAC,Clostridia__b3,5,True,Firmicutes,uncultured (5),uncultured,1,0.99725661872
+BAC::F00048,BAC,Clostridia__b4,4,True,Firmicutes,Saccharofermentans (2); uncultured; Ercella,Saccharofermentans,0.5,0.807175367168
+BAC::F00049,BAC,Clostridia__b5,2,True,Firmicutes,Hungateiclostridium; HN-HF0106,Hungateiclostridium,0.5,0.722772227939
+BAC::F00050,BAC,Clostridia__b6,1,True,Firmicutes,uncultured,uncultured,1,0.870681064069
+BAC::F00051,BAC,Clostridia__b7,23,True,Firmicutes,Fastidiosipila (23),Fastidiosipila,1,0.731876156708
+BAC::F00052,BAC,Clostridia_vadinBB60_group__b1,1,True,Firmicutes,Clostridia_vadinBB60_group,Clostridia_vadinBB60_group,1,0.701966247606
+BAC::F00053,BAC,Clostridia_vadinBB60_group__b2,1,True,Firmicutes,Clostridia_vadinBB60_group,Clostridia_vadinBB60_group,1,0.971215540354
+BAC::F00054,BAC,Clostridiales,1,True,Firmicutes,Clostridium_sensu_stricto_1,Clostridium_sensu_stricto_1,1,0.999925627823
+BAC::F00055,BAC,Competibacterales,3,True,Proteobacteria,Candidatus_Competibacter (3),Candidatus_Competibacter,1,0.760685969139
+BAC::F00056,BAC,Coprothermobacterales,1,True,Coprothermobacterota,Coprothermobacter,Coprothermobacter,1,1
+BAC::F00057,BAC,Coriobacteriales,1,True,Actinobacteriota,Atopobium,Atopobium,1,0.997344971639
+BAC::F00058,BAC,Corynebacteriales,1,True,Actinobacteriota,Mycobacterium,Mycobacterium,1,0.99999958828
+BAC::F00059,BAC,D8A_2,4,True,Firmicutes,D8A-2 (4),D8A-2,1,0.84594515938
+BAC::F00060,BAC,DS_100,1,True,Acidobacteriota,DS-100,DS-100,1,0.866658612356
+BAC::F00061,BAC,DTU014__b1,6,True,Firmicutes,DTU014 (6),DTU014,1,0.798518690787
+BAC::F00062,BAC,DTU014__b2,1,True,Firmicutes,DTU014,DTU014,1,0.92753003521
+BAC::F00063,BAC,Desulfobulbales,1,True,Desulfobacterota,Desulfobulbus,Desulfobulbus,1,0.75969770307
+BAC::F00064,BAC,Desulfotomaculales,1,True,Firmicutes,Pelotomaculum,Pelotomaculum,1,0.998799044761
+BAC::F00065,BAC,Desulfovibrionales,2,True,Desulfobacterota,Desulfomicrobium; Desulfovibrio,Desulfomicrobium,0.5,0.887650721482
+BAC::F00066,BAC,Dethiobacterales,2,True,Firmicutes,uncultured (2),uncultured,1,0.724849645643
+BAC::F00067,BAC,Enterobacterales,1,True,Proteobacteria,f__Enterobacteriaceae,f__Enterobacteriaceae,1,0.925153399359
+BAC::F00068,BAC,Erysipelotrichales,2,True,Firmicutes,UCG-004 (2),UCG-004,1,0.992219966649
+BAC::F00069,BAC,Eubacteriales__b1,1,True,Firmicutes,Anaerofustis,Anaerofustis,1,0.999999081198
+BAC::F00070,BAC,Eubacteriales__b2,1,True,Firmicutes,Irregularibacter,Irregularibacter,1,0.999999637592
+BAC::F00071,BAC,Fermentibacterales,1,True,Fermentibacterota,Fermentibacteraceae,Fermentibacteraceae,1,0.999609107572
+BAC::F00072,BAC,Fibrobacterales,1,True,Fibrobacterota,Fibrobacter,Fibrobacter,1,1
+BAC::F00073,BAC,Fimbriimonadales,2,True,Armatimonadota,Fimbriimonadaceae (2),Fimbriimonadaceae,1,0.988925588876
+BAC::F00074,BAC,Flavobacteriales__b1,2,True,Bacteroidota,Cloacibacterium; Chryseobacterium,Cloacibacterium,0.5,0.766823814525
+BAC::F00075,BAC,Flavobacteriales__b2,2,True,Bacteroidota,NS9_marine_group (2),NS9_marine_group,1,0.997872112247
+BAC::F00076,BAC,Frankiales,1,True,Actinobacteriota,Longivirga,Longivirga,1,0.999985550134
+BAC::F00077,BAC,Fusobacteriales,1,True,Fusobacteriota,Leptotrichia,Leptotrichia,1,0.999987162772
+BAC::F00078,BAC,Gaiellales,3,True,Actinobacteriota,uncultured (3),uncultured,1,0.948580962789
+BAC::F00079,BAC,Gemmatales,1,True,Planctomycetota,uncultured,uncultured,1,0.996885434959
+BAC::F00080,BAC,Holophagales,1,True,Acidobacteriota,Holophaga,Holophaga,1,0.97418625024
+BAC::F00081,BAC,Hydrogenedentiales,4,True,Hydrogenedentes,Hydrogenedensaceae (4),Hydrogenedensaceae,1,0.807555290215
+BAC::F00082,BAC,Ignavibacteriales,2,True,Bacteroidota,PHOS-HE36 (2),PHOS-HE36,1,0.986784475133
+BAC::F00083,BAC,Isosphaerales,1,True,Planctomycetota,uncultured,uncultured,1,0.773775687358
+BAC::F00084,BAC,Izemoplasmatales,3,True,Firmicutes,Izemoplasmatales (3),Izemoplasmatales,1,0.993065821239
+BAC::F00085,BAC,JS1,5,True,Caldatribacteriota,JS1 (5),JS1,1,0.750621442034
+BAC::F00086,BAC,Kapabacteriales,1,True,Bacteroidota,Kapabacteriales,Kapabacteriales,1,0.99416875386
+BAC::F00087,BAC,Kosmotogales,2,True,Thermotogota,Mesotoga (2),Mesotoga,1,0.892356570266
+BAC::F00088,BAC,LD1_PA32,1,True,Verrucomicrobiota,LD1-PA32,LD1-PA32,1,0.999999999943
+BAC::F00089,BAC,LD1_PB3,2,True,Verrucomicrobiota,LD1-PB3 (2),LD1-PB3,1,0.976838518411
+BAC::F00090,BAC,Lachnospirales,7,True,Firmicutes,Butyrivibrio (2); Lachnospiraceae_NK3A20_group (2); Herbinix; Anaerocolumna; Shuttleworthia,Butyrivibrio,0.285714285714,0.707598943777
+BAC::F00091,BAC,Lactobacillales__b1,1,True,Firmicutes,Leuconostoc,Leuconostoc,1,0.999999999132
+BAC::F00092,BAC,Lactobacillales__b2,8,True,Firmicutes,Streptococcus (3); Lactobacillus (3); Lactococcus; Trichococcus,Streptococcus,0.375,0.727813305972
+BAC::F00093,BAC,Leptospirales,3,True,Spirochaetota,RBG-16-49-21 (2); uncultured,RBG-16-49-21,0.666666666667,0.991583226868
+BAC::F00094,BAC,MBA03,7,True,Firmicutes,MBA03 (7),MBA03,1,0.813806908568
+BAC::F00095,BAC,MVP_15,3,True,Spirochaetota,MVP-15 (3),MVP-15,1,0.813822815973
+BAC::F00096,BAC,Marinimicrobia__SAR406_clade_,1,True,Marinimicrobia_(SAR406_clade),Marinimicrobia_(SAR406_clade),Marinimicrobia_(SAR406_clade),1,0.999843841974
+BAC::F00097,BAC,Methylococcales,1,True,Proteobacteria,Crenothrix,Crenothrix,1,0.937590876102
+BAC::F00098,BAC,Micrococcales,9,True,Actinobacteriota,Tetrasphaera (5); f__Intrasporangiaceae (2); Microbacterium; Galbitalea,Tetrasphaera,0.555555555556,0.70017287267
+BAC::F00099,BAC,Microtrichales,3,True,Actinobacteriota,IMCC26207 (2); uncultured,IMCC26207,0.666666666667,0.880556757625
+BAC::F00100,BAC,Nitrospirales,1,True,Nitrospirota,Nitrospira,Nitrospira,1,0.744586482441
+BAC::F00101,BAC,OPB41,1,True,Actinobacteriota,OPB41,OPB41,1,0.999999998464
+BAC::F00102,BAC,Oscillospirales__b1,7,True,Firmicutes,[Eubacterium]_coprostanoligenes_group (5); uncultured; Ruminococcus,[Eubacterium]_coprostanoligenes_group,0.714285714286,0.772524226753
+BAC::F00103,BAC,Oscillospirales__b2,3,True,Firmicutes,UCG-010 (3),UCG-010,1,0.72540691461
+BAC::F00104,BAC,Oscillospirales__b3,8,True,Firmicutes,NK4A214_group (3); Papillibacter (2); uncultured (2); UCG-002,NK4A214_group,0.375,0.876184225743
+BAC::F00105,BAC,Oscillospirales__b4,1,True,Firmicutes,UCG-010,UCG-010,1,0.938949676416
+BAC::F00106,BAC,PLTA13,1,True,Proteobacteria,PLTA13,PLTA13,1,0.998345650336
+BAC::F00107,BAC,PeM15__b1,1,True,Actinobacteriota,PeM15,PeM15,1,0.999310591589
+BAC::F00108,BAC,PeM15__b2,1,True,Actinobacteriota,PeM15,PeM15,1,0.756033294564
+BAC::F00109,BAC,Pedosphaerales,5,True,Verrucomicrobiota,DEV114 (2); ADurb.Bin118; ADurb.Bin063-1; Pedosphaeraceae,DEV114,0.4,0.896235768702
+BAC::F00110,BAC,Peptostreptococcales_Tissierellales__b1,25,True,Firmicutes,uncultured (5); Anaerovorax (4); Tissierella (3); Tepidimicrobium (3); Guggenheimella (2); Alkaliphilus (2); W5053 (2); f__Anaerovoracaceae (2); Fusibacter; Amnipila,uncultured,0.2,0.703358969322
+BAC::F00111,BAC,Peptostreptococcales_Tissierellales__b2,3,True,Firmicutes,Sedimentibacter (3),Sedimentibacter,1,0.938115487499
+BAC::F00112,BAC,Petrotogales,5,True,Thermotogota,SC103 (3); AUTHM297; Defluviitoga,SC103,0.6,0.737385151015
+BAC::F00113,BAC,Pirellulales,1,True,Planctomycetota,p-1088-a5_gut_group,p-1088-a5_gut_group,1,0.999879555124
+BAC::F00114,BAC,Planctomycetales,2,True,Planctomycetota,SH-PL14; uncultured,SH-PL14,0.5,0.923285406263
+BAC::F00115,BAC,Pseudomonadales,2,True,Proteobacteria,Acinetobacter; Enhydrobacter,Acinetobacter,0.5,0.806184892949
+BAC::F00116,BAC,Rhizobiales__b1,1,True,Proteobacteria,A0839,A0839,1,0.997788997395
+BAC::F00117,BAC,Rhizobiales__b2,2,True,Proteobacteria,Hyphomicrobium; Devosia,Hyphomicrobium,0.5,0.881452239213
+BAC::F00118,BAC,Rhizobiales__b3,3,True,Proteobacteria,f__Beijerinckiaceae; f__Xanthobacteraceae; uncultured,f__Beijerinckiaceae,0.333333333333,0.725379110216
+BAC::F00119,BAC,Rhodobacterales,6,True,Proteobacteria,f__Rhodobacteraceae (2); Rhodobacter (2); Paracoccus (2),f__Rhodobacteraceae,0.333333333333,0.725895753237
+BAC::F00120,BAC,Run_SP154,1,True,Proteobacteria,Run-SP154,Run-SP154,1,0.970537051444
+BAC::F00121,BAC,SAR324_clade_Marine_group_B_,3,True,SAR324_clade(Marine_group_B),SAR324_clade(Marine_group_B) (3),SAR324_clade(Marine_group_B),1,0.994406695333
+BAC::F00122,BAC,SBR1031__b1,1,True,Chloroflexi,SBR1031,SBR1031,1,0.998725444925
+BAC::F00123,BAC,SBR1031__b2,6,True,Chloroflexi,SBR1031 (6),SBR1031,1,0.999773496629
+BAC::F00124,BAC,SJA_15,3,True,Chloroflexi,SJA-15 (3),SJA-15,1,0.826475597586
+BAC::F00125,BAC,SJA_28__b1,1,True,Bacteroidota,SJA-28,SJA-28,1,0.999999930158
+BAC::F00126,BAC,SJA_28__b2,6,True,Bacteroidota,SJA-28 (6),SJA-28,1,0.98719564399
+BAC::F00127,BAC,Sphingobacteriales__b1,1,True,Bacteroidota,AKYH767,AKYH767,1,0.99983540845
+BAC::F00128,BAC,Sphingobacteriales__b2,5,True,Bacteroidota,Lentimicrobiaceae (3); S15A-MN91; Lentimicrobium,Lentimicrobiaceae,0.6,0.797830508271
+BAC::F00129,BAC,Sphingobacteriales__b3,1,True,Bacteroidota,Lentimicrobium,Lentimicrobium,1,0.999850730193
+BAC::F00130,BAC,Sphingobacteriales__b4,5,True,Bacteroidota,ST-12K33 (5),ST-12K33,1,0.999767294531
+BAC::F00131,BAC,Sphingobacteriales__b5,2,True,Bacteroidota,Lentimicrobium (2),Lentimicrobium,1,0.999999998746
+BAC::F00132,BAC,Sphingomonadales,3,True,Proteobacteria,uncultured (2); Novosphingobium,uncultured,0.666666666667,0.721164553152
+BAC::F00133,BAC,Spirochaetales,10,True,Spirochaetota,uncultured (5); Sphaerochaeta (4); Treponema,uncultured,0.5,0.706337701257
+BAC::F00134,BAC,Subgroup_7,1,True,Acidobacteriota,Subgroup_7,Subgroup_7,1,0.895948362732
+BAC::F00135,BAC,Sumerlaeales,1,True,Sumerlaeota,Sumerlaea,Sumerlaea,1,0.742854212214
+BAC::F00136,BAC,Sva0485,1,True,Sva0485,Sva0485,Sva0485,1,0.97638137651
+BAC::F00137,BAC,Synergistales__b1,8,True,Synergistota,uncultured (3); Thermovirga (3); JGI-0000079-D21; Acetomicrobium,uncultured,0.375,0.914177869704
+BAC::F00138,BAC,Synergistales__b2,8,True,Synergistota,uncultured (3); Syner-01 (2); f__Synergistaceae; Lactivibrio; Aminobacterium,uncultured,0.375,0.896903711839
+BAC::F00139,BAC,Syntrophales__b1,18,True,Desulfobacterota,Smithella (12); Syntrophus (3); uncultured (3),Smithella,0.666666666667,0.706687389079
+BAC::F00140,BAC,Syntrophales__b2,3,True,Desulfobacterota,uncultured (3),uncultured,1,0.933320051396
+BAC::F00141,BAC,Syntrophobacterales,2,True,Desulfobacterota,Syntrophobacter (2),Syntrophobacter,1,0.852859290263
+BAC::F00142,BAC,Syntrophomonadales,13,True,Firmicutes,Syntrophomonas (10); uncultured (2); Syntrophothermus,Syntrophomonas,0.769230769231,0.710421156843
+BAC::F00143,BAC,Syntrophorhabdales,3,True,Desulfobacterota,Syntrophorhabdus (3),Syntrophorhabdus,1,0.977213114625
+BAC::F00144,BAC,Thermacetogeniales,1,True,Firmicutes,Syntrophaceticus,Syntrophaceticus,1,0.99933624871
+BAC::F00145,BAC,Thermoanaerobacterales,1,True,Firmicutes,SRB2,SRB2,1,0.880899354177
+BAC::F00146,BAC,Thermoanaerobaculales__b1,1,True,Acidobacteriota,Thermoanaerobaculum,Thermoanaerobaculum,1,0.951909704206
+BAC::F00147,BAC,Thermoanaerobaculales__b2,1,True,Acidobacteriota,Subgroup_10,Subgroup_10,1,0.832680054694
+BAC::F00148,BAC,Thermovenabulales,1,True,Firmicutes,Tepidanaerobacter,Tepidanaerobacter,1,0.98338531007
+BAC::F00149,BAC,Verrucomicrobiales,1,True,Verrucomicrobiota,DEV007,DEV007,1,0.999748747568
+BAC::F00150,BAC,WCHB1_41,6,True,Verrucomicrobiota,WCHB1-41 (6),WCHB1-41,1,0.832731174422
+BAC::F00151,BAC,WCHB1_81,1,True,Actinobacteriota,WCHB1-81,WCHB1-81,1,0.999560372923
+BAC::F00152,BAC,WS1,1,True,WS1,WS1,WS1,1,0.949232649754
+BAC::F00153,BAC,Xanthomonadales,7,True,Proteobacteria,Thermomonas (4); Dokdonella (2); Ahniella,Thermomonas,0.571428571429,0.700384108466
+BAC::F00154,BAC,ad1d77ee0d42fce6e6be46238b8039a3,1,False,Firmicutes,uncultured,uncultured,1,0.995811694084
+BAC::F00155,BAC,bcaccd7b2b03591f7163f388f6b71e31,1,False,Proteobacteria,uncultured,uncultured,1,0.763983484416
+BAC::F00156,BAC,c5LKS83,1,True,Acidobacteriota,c5LKS83,c5LKS83,1,0.999999999844
+BAC::F00157,BAC,e402879c282f05a14dc00c02d0ad2f89,1,False,Armatimonadota,uncultured,uncultured,1,0.999982642458
+BAC::F00158,BAC,f89c33627286641b52e39fcb76834ede,1,False,Armatimonadota,uncultured,uncultured,1,0.999370084472

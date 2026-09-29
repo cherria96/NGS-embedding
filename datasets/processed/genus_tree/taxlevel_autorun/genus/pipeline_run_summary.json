@@ -1,0 +1,10 @@
+{
+  "mode": "genus",
+  "out_dir": "output/genus_tree/genus_autorun",
+  "arms": [
+    "arc",
+    "bac",
+    "merged"
+  ],
+  "merge_route": "sepp_fragment_insertion"
+}

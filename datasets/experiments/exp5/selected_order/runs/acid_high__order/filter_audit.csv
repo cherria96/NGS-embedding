@@ -1,0 +1,13 @@
+target,repeat,outer_fold,fraction,resolution,n_train,n_train_sites,n_train_positive,n_test_positive,domain,input_features,retained_features,mean_retained_mass,min_retained_mass,tree_uncovered_retained
+warning_acid_high,0,0,1.0,order,88,23,8,7,ARC,21,12,0.9816829880026199,0.7505922274153275,0
+warning_acid_high,0,0,1.0,order,88,23,8,7,BAC,159,62,0.8977309651389338,0.17734375,0
+warning_acid_high,0,1,1.0,order,91,24,7,8,ARC,21,13,0.9870182910399222,0.755137972981625,0
+warning_acid_high,0,1,1.0,order,91,24,7,8,BAC,159,64,0.9099123102514857,0.17734375,0
+warning_acid_high,0,2,1.0,order,89,23,15,0,ARC,21,14,0.9934687486666852,0.927652733118971,0
+warning_acid_high,0,2,1.0,order,89,23,15,0,BAC,159,67,0.9259473577157415,0.6733362331448456,0
+warning_acid_high,1,0,1.0,order,88,23,7,8,ARC,21,12,0.9858939604555877,0.7505922274153275,0
+warning_acid_high,1,0,1.0,order,88,23,7,8,BAC,159,64,0.9044234102975224,0.17734375,0
+warning_acid_high,1,1,1.0,order,91,24,13,2,ARC,21,13,0.9871694841523514,0.755137972981625,0
+warning_acid_high,1,1,1.0,order,91,24,13,2,BAC,159,64,0.9053126530707146,0.17734375,0
+warning_acid_high,1,2,1.0,order,89,23,10,5,ARC,21,14,0.9900901659790093,0.9211514392991239,0
+warning_acid_high,1,2,1.0,order,89,23,10,5,BAC,159,64,0.9231320700949178,0.6780242617563191,0

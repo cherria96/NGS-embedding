@@ -1,0 +1,201 @@
+{
+  "run_id": "real_smoke_family_rank",
+  "mode": "train",
+  "timestamp_unix": 1789902720.8019497,
+  "timestamp_iso": "2026-09-20T11:12:00Z",
+  "seed": 20260917,
+  "python_version": "3.12.5 | packaged by Anaconda, Inc. | (main, Sep 12 2024, 18:27:27) [GCC 11.2.0]",
+  "platform": "Linux-6.8.0-111-generic-x86_64-with-glibc2.35",
+  "git_commit": "d75a038e147c4f34c56cb51733e024c22a686a35",
+  "dependency_versions": {
+    "numpy": "2.0.1",
+    "pandas": "2.2.3",
+    "scipy": "1.14.1",
+    "sklearn": "1.5.2",
+    "cvxpy": "1.9.2",
+    "yaml": "6.0.1",
+    "Bio": "1.88",
+    "matplotlib": "3.9.2"
+  },
+  "input_hashes": {
+    "arc_counts": "309f1ecaeee2e7dd99d6d812e245c55c0aeb1d5e442a76282852cacad3d0ac46",
+    "bac_counts": "48e338420fe43413ef678501ac2473b03a5503d8fe1a5fd8db6cca7147f012c0",
+    "metadata": "cd0c854a306128ca1c26612e27f9a849ca5523d05e9a469932eb1ddb63ef97e7",
+    "arc_tree": "35297e8eac476b73200f12c71dcd13f02316404fb0442e6594f485af351f6e28",
+    "bac_tree": "fb1641fd17f1aa24f9926a653b7cb192be3c1e3a744e6e59fa30d123194665a9",
+    "arc_taxonomy": "3f4650824380311d0aa2c3e8a69ebfb4541bfef60931ba7b69c908fee6301117",
+    "bac_taxonomy": "86ac53804aba829e041537abb62c1a01ac7c4ad20a687a46b88c288793496e6f"
+  },
+  "config": {
+    "seed": 20260917,
+    "task": "regression",
+    "resolution": "family",
+    "inputs": {
+      "arc_counts": "../real_data_cache/ARC_table_filtered_roundno.tsv",
+      "bac_counts": "../real_data_cache/BAC_table_filtered_roundno.tsv",
+      "metadata": "../../data/final/metadata.csv",
+      "arc_tree": "../../data/qiimeresult/ARC/rooted-tree.nwk",
+      "bac_tree": "../../data/qiimeresult/BAC/rooted-tree.nwk",
+      "arc_taxonomy": "../../data/qiimeresult/ARC/metadata.tsv",
+      "bac_taxonomy": "../../data/qiimeresult/BAC/metadata.tsv",
+      "orientation": "features_by_samples",
+      "exploratory_block_list": null,
+      "rank_trees": {
+        "family": {
+          "arc": "../../output/genus_tree/taxlevel_autorun/family/arc_tree.nwk",
+          "bac": "../../output/genus_tree/taxlevel_autorun/family/bac_tree.nwk"
+        }
+      }
+    },
+    "columns": {
+      "sample_id": "SampleID",
+      "site_id": "Site",
+      "target": "eff_CH4",
+      "covariates": []
+    },
+    "preprocessing": {
+      "detection_count": 5,
+      "min_detected_samples": 5,
+      "min_sample_prevalence": 0.4,
+      "min_detected_sites": 3,
+      "min_site_prevalence": 0.4,
+      "pseudocount": 0.5,
+      "sensitivity_pseudocounts": [
+        1.0
+      ],
+      "standardize_target": true,
+      "standardize_microbial_columns": false,
+      "relative_input_mode": false,
+      "missing_retained_feature_means_zero": false
+    },
+    "graph": {
+      "k_phylogeny": 5,
+      "k_abundance": 5,
+      "min_joint_samples": 10,
+      "min_joint_sites": 5,
+      "empirical_score": "max_all_and_joint_lrv",
+      "bootstrap_sites": 20,
+      "support_threshold": 0.7,
+      "approximate_bootstrap": false,
+      "approximate_candidate_k": 20
+    },
+    "cv": {
+      "outer_folds": 3,
+      "inner_folds": 2,
+      "selection_metric": "site_balanced_mse",
+      "selection_rule": "one_standard_error",
+      "required_validation_coverage": 0.8,
+      "families": [
+        "intercept_only",
+        "phylogeny_only",
+        "abundance_only",
+        "domain_adaptive_hybrid"
+      ]
+    },
+    "search": {
+      "candidate_budget_per_family": 10,
+      "lambda_s": [
+        0,
+        0.01
+      ],
+      "lambda_r": [
+        0.01,
+        0.1,
+        1
+      ],
+      "lambda_f": [
+        0,
+        1,
+        10
+      ],
+      "alpha_arc": [
+        0,
+        0.5,
+        1
+      ],
+      "alpha_bac": [
+        0,
+        0.5,
+        1
+      ],
+      "exhaustive": false
+    },
+    "solver": {
+      "preferred": "CLARABEL",
+      "fallback": "OSQP",
+      "equality_tolerance": 1e-06,
+      "max_retries": 3,
+      "time_limit_seconds": 120
+    },
+    "compression": {
+      "coefficient_tolerance": 1e-06,
+      "keep_residual_coefficients": true
+    },
+    "optional": {
+      "b12_comparator": false,
+      "cross_domain_interactions": false
+    },
+    "output_dir": "../real_results_family_rank",
+    "run_id": "real_smoke_family_rank",
+    "smoke": true,
+    "parsing": {
+      "rank_tree_mapping": {
+        "require_unambiguous_taxon_mapping": true,
+        "mapping_file": null
+      }
+    }
+  },
+  "smoke": true,
+  "cohort_report": {
+    "n_arc": 134,
+    "n_bac": 140,
+    "n_metadata": 140,
+    "n_missing_arc_assay": 6,
+    "n_missing_bac_assay": 0,
+    "n_missing_target": 2,
+    "n_missing_site": 0,
+    "n_joint_cohort": 132,
+    "missing_arc_assay_ids": [
+      "1-32'",
+      "2-33",
+      "3-1",
+      "3-22",
+      "3-9",
+      "4-24"
+    ],
+    "missing_bac_assay_ids": [],
+    "missing_target_ids": [
+      "1-15",
+      "1-21"
+    ]
+  },
+  "solver_environment": {
+    "cvxpy_version": "1.9.2",
+    "installed_solvers": [
+      "CLARABEL",
+      "SCS",
+      "SCIPY",
+      "HIGHS",
+      "OSQP"
+    ]
+  },
+  "families_run": [
+    "intercept_only",
+    "phylogeny_only",
+    "abundance_only",
+    "domain_adaptive_hybrid"
+  ],
+  "final_model": {
+    "status": "ok",
+    "family": "domain_adaptive_hybrid",
+    "model_path": "/home/best/Sujin/NGS-embedding/fusionML/real_results_family_rank/smoke/final_model.pkl",
+    "selected_candidate": {
+      "lambda_s": 0,
+      "lambda_r": 0.1,
+      "lambda_f": 1,
+      "alpha_arc": 1,
+      "alpha_bac": 0.5
+    },
+    "n_train": 132
+  }
+}

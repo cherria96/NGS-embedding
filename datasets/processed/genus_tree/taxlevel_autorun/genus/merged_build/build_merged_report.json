@@ -1,0 +1,61 @@
+{
+  "route": "sepp_fragment_insertion",
+  "sepp_tree_path": "/home/best/Sujin/NGS-embedding/data/qiimeresult/sepp_output/sepp_tree_export/tree.nwk",
+  "phylospec_audit_pre_rescale": {
+    "ARC": {
+      "label": "ARC",
+      "n_branches": 3486,
+      "max_branch_length": 3.203447,
+      "branches_eq_1_weight_zero": 0,
+      "branches_gt_1_weight_negative": 158,
+      "suggested_rescale_factor": 0.29655555406410655
+    },
+    "BAC": {
+      "label": "BAC",
+      "n_branches": 26769,
+      "max_branch_length": 3.31024721104,
+      "branches_eq_1_weight_zero": 0,
+      "branches_gt_1_weight_negative": 17,
+      "suggested_rescale_factor": 0.2869876294530682
+    },
+    "merged": {
+      "label": "merged",
+      "n_branches": 30256,
+      "max_branch_length": 3.203447,
+      "branches_eq_1_weight_zero": 0,
+      "branches_gt_1_weight_negative": 146,
+      "suggested_rescale_factor": 0.29655555406410655
+    }
+  },
+  "phylospec_audit_final": {
+    "ARC": {
+      "label": "ARC",
+      "n_branches": 3486,
+      "max_branch_length": 0.9193496606085431,
+      "branches_eq_1_weight_zero": 0,
+      "branches_gt_1_weight_negative": 0,
+      "suggested_rescale_factor": 1.0
+    },
+    "BAC": {
+      "label": "BAC",
+      "n_branches": 26769,
+      "max_branch_length": 0.9500000000000001,
+      "branches_eq_1_weight_zero": 0,
+      "branches_gt_1_weight_negative": 0,
+      "suggested_rescale_factor": 1.0
+    },
+    "merged": {
+      "label": "merged",
+      "n_branches": 30256,
+      "max_branch_length": 0.9193496606085431,
+      "branches_eq_1_weight_zero": 0,
+      "branches_gt_1_weight_negative": 0,
+      "suggested_rescale_factor": 1.0
+    }
+  },
+  "rescale_factor_applied": 0.2869876294530682,
+  "n_common_samples": 134,
+  "n_arc_features": 1776,
+  "n_bac_features": 13385,
+  "merged_abundance_units": "per-domain-closed relative abundance, NOT raw reads -- each sample sums to 1.0 within ARC and 1.0 within BAC (2.0 total), by design (Sec 5.6). reduce_features_for_tree_models.py's --protect-min-abundance / --min-abundance thresholds and its 'abundance conserved under collapsing' behaviour both operate correctly on this, but 'total reads conserved' (task invariant 4) means 'total relative-abundance units conserved' for this arm specifically, not literal read counts -- note this in REPORT.md."
+}

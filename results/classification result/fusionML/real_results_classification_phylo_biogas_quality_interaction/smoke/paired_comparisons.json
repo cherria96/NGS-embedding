@@ -1,0 +1,10 @@
+{
+  "primary_vs_intercept_only": {
+    "n_sites": 37,
+    "n_bootstrap": 1000,
+    "observed_mean_site_logloss_diff_a_minus_b": 0.009213276535689032,
+    "ci95_low": -0.055747746669597024,
+    "ci95_high": 0.07756765990226132,
+    "note": "conditional on fitted OOF models; repeated CV folds are not independent samples"
+  }
+}

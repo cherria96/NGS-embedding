@@ -1,0 +1,698 @@
+{
+  "resolution": "family",
+  "targets": [
+    "warning_acid_high"
+  ],
+  "outer_folds": 3,
+  "inner_folds": 2,
+  "repeats": 2,
+  "grouping": "BSIb\u2192BSI, DGYb\u2192DGY",
+  "config": {
+    "seed": 20260917,
+    "task": "classification",
+    "resolution": "family",
+    "inputs": {
+      "arc_counts": "../real_data_cache/ARC_table_filtered_roundno.tsv",
+      "bac_counts": "../real_data_cache/BAC_table_filtered_roundno.tsv",
+      "metadata": null,
+      "arc_tree": "/home/best/Sujin/NGS-embedding/data/qiimeresult/ARC/rooted-tree.nwk",
+      "bac_tree": "/home/best/Sujin/NGS-embedding/data/qiimeresult/BAC/rooted-tree.nwk",
+      "arc_taxonomy": "../../data/qiimeresult/ARC/metadata.tsv",
+      "bac_taxonomy": "../../data/qiimeresult/BAC/metadata.tsv",
+      "orientation": "features_by_samples",
+      "exploratory_block_list": null,
+      "rank_trees": {
+        "family": {
+          "arc": "/home/best/Sujin/NGS-embedding/output/genus_tree/taxlevel_autorun/family/arc_tree.nwk",
+          "bac": "/home/best/Sujin/NGS-embedding/output/genus_tree/taxlevel_autorun/family/bac_tree.nwk"
+        }
+      }
+    },
+    "columns": {
+      "sample_id": "sample_id",
+      "site_id": "site_id",
+      "target": "warning_ammonia_toxicity",
+      "covariates": []
+    },
+    "preprocessing": {
+      "detection_count": 5,
+      "min_detected_samples": 5,
+      "min_sample_prevalence": 0.4,
+      "min_detected_sites": 3,
+      "min_site_prevalence": 0.4,
+      "pseudocount": 0.5,
+      "sensitivity_pseudocounts": [
+        1.0
+      ],
+      "standardize_target": true,
+      "standardize_microbial_columns": false,
+      "relative_input_mode": false,
+      "missing_retained_feature_means_zero": false
+    },
+    "graph": {
+      "k_phylogeny": 5,
+      "k_abundance": 5,
+      "min_joint_samples": 10,
+      "min_joint_sites": 5,
+      "empirical_score": "max_all_and_joint_lrv",
+      "bootstrap_sites": 20,
+      "support_threshold": 0.7,
+      "approximate_bootstrap": false,
+      "approximate_candidate_k": 20
+    },
+    "cv": {
+      "outer_folds": 3,
+      "inner_folds": 2,
+      "selection_metric": "site_balanced_log_loss",
+      "selection_rule": "one_standard_error",
+      "required_validation_coverage": 0.8,
+      "families": [
+        "fusion_arc_only",
+        "fusion_bac_only",
+        "shared_hybrid",
+        "domain_adaptive_hybrid",
+        "domain_adaptive_interaction"
+      ]
+    },
+    "search": {
+      "candidate_budget_per_family": 10,
+      "lambda_s": [
+        0,
+        0.01
+      ],
+      "lambda_r": [
+        0.01,
+        0.1,
+        1
+      ],
+      "lambda_f": [
+        0,
+        1,
+        10
+      ],
+      "alpha_arc": [
+        0,
+        0.5,
+        1
+      ],
+      "alpha_bac": [
+        0,
+        0.5,
+        1
+      ],
+      "exhaustive": false
+    },
+    "solver": {
+      "preferred": "CLARABEL",
+      "fallback": "OSQP",
+      "classification_fallback": "SCS",
+      "equality_tolerance": 1e-06,
+      "max_retries": 3,
+      "time_limit_seconds": 120
+    },
+    "compression": {
+      "coefficient_tolerance": 1e-06,
+      "keep_residual_coefficients": true
+    },
+    "optional": {
+      "b12_comparator": false,
+      "cross_domain_interactions": true
+    },
+    "interaction": {
+      "enabled": true,
+      "family": "domain_adaptive_interaction",
+      "retain_additive_reference": true,
+      "balance_source": "tree_splits",
+      "external_balance_file": null,
+      "max_balances_arc": 2,
+      "max_balances_bac": 2,
+      "max_products": 4,
+      "balance_selection": "site_weighted_variance_greedy",
+      "sign_orientation": "lexicographic_positive_side",
+      "group_detection_count": 5,
+      "min_joint_group_samples": 10,
+      "min_joint_group_sites": 5,
+      "max_abs_balance_correlation": 0.95,
+      "loading_rank_absolute_tolerance": 1e-10,
+      "product_rank_relative_tolerance": 1e-10,
+      "min_variance": 1e-12,
+      "center_scale_balances": true,
+      "center_scale_products": true,
+      "scaling_weights": "equal_site",
+      "require_cross_domain_correlation": false,
+      "enforce_strong_heredity": false,
+      "fit_jointly_with_main_effects": true,
+      "include_off_candidate": true,
+      "lambda_i_l1": [
+        0,
+        0.01,
+        0.1
+      ],
+      "lambda_i_l2": [
+        0.01,
+        0.1,
+        1
+      ],
+      "search": "full_cross_with_shared_base_candidates",
+      "no_eligible_products": "mark_on_candidate_unavailable"
+    },
+    "classification": {
+      "selection_metric": "site_balanced_log_loss",
+      "standardize_target": false,
+      "class_weighting": "none",
+      "single_class_training": "fail_primary_fit",
+      "reference_threshold": 0.5,
+      "threshold_selection": "inner_oof_site_weighted_f2",
+      "threshold_grid": [
+        0.05,
+        0.1,
+        0.15,
+        0.2,
+        0.25,
+        0.3,
+        0.35,
+        0.4,
+        0.45,
+        0.5,
+        0.55,
+        0.6,
+        0.65,
+        0.7,
+        0.75,
+        0.8,
+        0.85,
+        0.9,
+        0.95
+      ],
+      "threshold_tie_break": "larger_threshold",
+      "probability_clip_for_metrics": 1e-12
+    },
+    "output_dir": "../real_results_classification_phylo_interaction",
+    "run_id": "real_smoke_classification_phylo_interaction",
+    "smoke": true,
+    "parsing": {
+      "rank_tree_mapping": {
+        "require_unambiguous_taxon_mapping": true,
+        "mapping_file": null
+      }
+    },
+    "chemistry": {
+      "workbook": "../../data/final/Dat_chem.xlsx",
+      "engine": "openpyxl",
+      "inspected_sha256": "619aa196e36ca62621fd7bb1360dd6145698c6f59345a2d5841e4d266b562efe",
+      "layout": "wide_measurement_by_season",
+      "excel_row_numbering": "one_based",
+      "title_row": 1,
+      "season_header_row": 2,
+      "measurement_header_row": 3,
+      "data_start_row": 4,
+      "data_only": true,
+      "preserve_cell_provenance": true,
+      "strip_header_whitespace": true,
+      "row_filter": "nonblank_source_site_code",
+      "ignore_blank_separator_columns": true,
+      "assert_configured_headers": true,
+      "fail_on_unmapped_measurement_columns": true,
+      "sheets": {
+        "substrate": {
+          "name": "Chem_Si.Avg",
+          "header_row": 3,
+          "sample_id_column": null,
+          "site_id_column": "ADP_6",
+          "site_id_excel_column": "C",
+          "acronym_column": "Acronym",
+          "acronym_excel_column": "D",
+          "record_number_column": "No.",
+          "record_number_excel_column": "B",
+          "record_number_dtype": "string",
+          "season_column": null,
+          "namespace": "substrate",
+          "already_q_weighted": true,
+          "recompute_weighted_average": false,
+          "static_fields": {
+            "Q_T_per_y": {
+              "excel_column": "E",
+              "expected_header": "Q (T/y)",
+              "units": "T/y",
+              "role": "annual_site_attribute",
+              "broadcast_to_seasons": true,
+              "include_as_predictor": false
+            }
+          },
+          "seasonal_measurement_columns": {
+            "pH": {
+              "1": "F",
+              "2": "G",
+              "3": "H",
+              "4": "I"
+            },
+            "ALK": {
+              "1": "K",
+              "2": "L",
+              "3": "M",
+              "4": "N"
+            },
+            "TS": {
+              "1": "P",
+              "2": "Q",
+              "3": "R",
+              "4": "S"
+            },
+            "VS": {
+              "1": "U",
+              "2": "V",
+              "3": "W",
+              "4": "X"
+            },
+            "TSS": {
+              "1": "Z",
+              "2": "AA",
+              "3": "AB",
+              "4": "AC"
+            },
+            "VSS": {
+              "1": "AE",
+              "2": "AF",
+              "3": "AG",
+              "4": "AH"
+            },
+            "COD": {
+              "1": "AJ",
+              "2": "AK",
+              "3": "AL",
+              "4": "AM"
+            },
+            "sCOD": {
+              "1": "AO",
+              "2": "AP",
+              "3": "AQ",
+              "4": "AR"
+            },
+            "TC": {
+              "1": "AT",
+              "2": "AU",
+              "3": "AV",
+              "4": "AW"
+            },
+            "Protein": {
+              "1": "AY",
+              "2": "AZ",
+              "3": "BA",
+              "4": "BB"
+            },
+            "TAN": {
+              "1": "BD",
+              "2": "BE",
+              "3": "BF",
+              "4": "BG"
+            },
+            "Lipid": {
+              "1": "BI",
+              "2": "BJ",
+              "3": "BK",
+              "4": "BL"
+            },
+            "TVFAs": {
+              "1": "BN",
+              "2": "BO",
+              "3": "BP",
+              "4": "BQ"
+            },
+            "VFAs,Et": {
+              "1": "BS",
+              "2": "BT",
+              "3": "BU",
+              "4": "BV"
+            },
+            "EtOH": {
+              "1": "BX",
+              "2": "BY",
+              "3": "BZ",
+              "4": "CA"
+            },
+            "HAc": {
+              "1": "CC",
+              "2": "CD",
+              "3": "CE",
+              "4": "CF"
+            },
+            "HPro": {
+              "1": "CH",
+              "2": "CI",
+              "3": "CJ",
+              "4": "CK"
+            },
+            "HBut": {
+              "1": "CM",
+              "2": "CN",
+              "3": "CO",
+              "4": "CP"
+            },
+            "i-HBut": {
+              "1": "CR",
+              "2": "CS",
+              "3": "CT",
+              "4": "CU"
+            },
+            "HVal": {
+              "1": "CW",
+              "2": "CX",
+              "3": "CY",
+              "4": "CZ"
+            },
+            "i-HVal": {
+              "1": "DB",
+              "2": "DC",
+              "3": "DD",
+              "4": "DE"
+            },
+            "HCap": {
+              "1": "DG",
+              "2": "DH",
+              "3": "DI",
+              "4": "DJ"
+            },
+            "i-HCap": {
+              "1": "DL",
+              "2": "DM",
+              "3": "DN",
+              "4": "DO"
+            }
+          },
+          "season_header_overrides": {
+            "BD": 1,
+            "BE": 2,
+            "BF": 3,
+            "BG": 4
+          }
+        },
+        "effluent": {
+          "name": "Chem_Se.Avg",
+          "header_row": 3,
+          "sample_id_column": null,
+          "site_id_column": "Site",
+          "site_id_excel_column": "C",
+          "acronym_column": "Acronym",
+          "acronym_excel_column": "D",
+          "record_number_column": "No.",
+          "record_number_excel_column": "B",
+          "record_number_dtype": "string",
+          "season_column": null,
+          "namespace": "effluent",
+          "seasonal_measurement_columns": {
+            "pH": {
+              "1": "E",
+              "2": "F",
+              "3": "G",
+              "4": "H"
+            },
+            "ALK": {
+              "1": "J",
+              "2": "K",
+              "3": "L",
+              "4": "M"
+            },
+            "TS": {
+              "1": "O",
+              "2": "P",
+              "3": "Q",
+              "4": "R"
+            },
+            "VS": {
+              "1": "T",
+              "2": "U",
+              "3": "V",
+              "4": "W"
+            },
+            "TSS": {
+              "1": "Y",
+              "2": "Z",
+              "3": "AA",
+              "4": "AB"
+            },
+            "VSS": {
+              "1": "AD",
+              "2": "AE",
+              "3": "AF",
+              "4": "AG"
+            },
+            "COD": {
+              "1": "AI",
+              "2": "AJ",
+              "3": "AK",
+              "4": "AL"
+            },
+            "sCOD": {
+              "1": "AN",
+              "2": "AO",
+              "3": "AP",
+              "4": "AQ"
+            },
+            "TC": {
+              "1": "AS",
+              "2": "AT",
+              "3": "AU",
+              "4": "AV"
+            },
+            "Protein": {
+              "1": "AX",
+              "2": "AY",
+              "3": "AZ",
+              "4": "BA"
+            },
+            "NH4-N": {
+              "1": "BC",
+              "2": "BD",
+              "3": "BE",
+              "4": "BF"
+            },
+            "Lipid": {
+              "1": "BH",
+              "2": "BI",
+              "3": "BJ",
+              "4": "BK"
+            },
+            "TVFAs": {
+              "1": "BM",
+              "2": "BN",
+              "3": "BO",
+              "4": "BP"
+            },
+            "VFAs,Et": {
+              "1": "BR",
+              "2": "BS",
+              "3": "BT",
+              "4": "BU"
+            },
+            "EtOH": {
+              "1": "BW",
+              "2": "BX",
+              "3": "BY",
+              "4": "BZ"
+            },
+            "HAc": {
+              "1": "CB",
+              "2": "CC",
+              "3": "CD",
+              "4": "CE"
+            },
+            "HPro": {
+              "1": "CG",
+              "2": "CH",
+              "3": "CI",
+              "4": "CJ"
+            },
+            "HBut": {
+              "1": "CL",
+              "2": "CM",
+              "3": "CN",
+              "4": "CO"
+            },
+            "i-HBut": {
+              "1": "CQ",
+              "2": "CR",
+              "3": "CS",
+              "4": "CT"
+            },
+            "HVal": {
+              "1": "CV",
+              "2": "CW",
+              "3": "CX",
+              "4": "CY"
+            },
+            "i-HVal": {
+              "1": "DA",
+              "2": "DB",
+              "3": "DC",
+              "4": "DD"
+            },
+            "HCap": {
+              "1": "DF",
+              "2": "DG",
+              "3": "DH",
+              "4": "DI"
+            },
+            "i-HCap": {
+              "1": "DK",
+              "2": "DL",
+              "3": "DM",
+              "4": "DN"
+            },
+            "CO2": {
+              "1": "DP",
+              "2": "DQ",
+              "3": "DR",
+              "4": "DS"
+            },
+            "CH4": {
+              "1": "DU",
+              "2": "DV",
+              "3": "DW",
+              "4": "DX"
+            },
+            "O2": {
+              "1": "DZ",
+              "2": "EA",
+              "3": "EB",
+              "4": "EC"
+            },
+            "H2S": {
+              "1": "EE",
+              "2": "EF",
+              "3": "EG",
+              "4": "EH"
+            }
+          },
+          "season_header_overrides": {
+            "BC": 1,
+            "BD": 2,
+            "BE": 3,
+            "BF": 4
+          }
+        }
+      },
+      "reshape_rules": {
+        "emit_seasons": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "retain_all_missing_site_seasons_for_audit": true
+      },
+      "missing_values": {
+        "tokens": [
+          "",
+          "x",
+          "n.a"
+        ],
+        "strip_text_whitespace": true,
+        "preserve_numeric_zero": true,
+        "known_uncached_formula_cells": {
+          "Chem_Se.Avg": [
+            "BC39",
+            "BC40"
+          ]
+        }
+      },
+      "site_id_aliases": {
+        "substrate": {},
+        "effluent": {
+          "MGYe2": "MGY"
+        }
+      },
+      "join": {
+        "duplicate_policy": "error",
+        "assert_matching_nonmissing_acronyms": true,
+        "unresolved_effluent_site_ids": [
+          "MGYe1"
+        ]
+      }
+    }
+  },
+  "hashes": {
+    "data/final/Dat_chem.xlsx": "072f9329df56e93a615b049dc0c60fb75c3da169ef243d4cbd35f0ff52e814e2",
+    "data/qiimeresult/ARC/metadata.tsv": "3f4650824380311d0aa2c3e8a69ebfb4541bfef60931ba7b69c908fee6301117",
+    "data/qiimeresult/ARC/rooted-tree.nwk": "35297e8eac476b73200f12c71dcd13f02316404fb0442e6594f485af351f6e28",
+    "data/qiimeresult/BAC/metadata.tsv": "86ac53804aba829e041537abb62c1a01ac7c4ad20a687a46b88c288793496e6f",
+    "data/qiimeresult/BAC/rooted-tree.nwk": "fb1641fd17f1aa24f9926a653b7cb192be3c1e3a744e6e59fa30d123194665a9",
+    "fusionML/__init__.py": "ba89f8c20a9bd642ebefd25256de8fa87b2edf43c7502b42c16d7bb65a6a2436",
+    "fusionML/artifacts.py": "6312315c7b432a38e7b0659af2142ca173eaac77bd42f7b7c4ee1fae512694b1",
+    "fusionML/chemistry.py": "c2d09e63e4c710117ff44a17320617177ba3ceb1bfd40bd8142d5392a54aa573",
+    "fusionML/chemistry_targets.py": "4d8f37cbf799212358a2f65f074fef9b99818acd74bd7b1ae56210ffe0fc0f1a",
+    "fusionML/cli.py": "72fdd45c1bb7d901b4af15a0482bc798b0156f1757d8b86a90e3225c04c51394",
+    "fusionML/cohort.py": "102723f99735f51901aa39b4de1889a98cabde0e51736b2070693263aa7c9b9e",
+    "fusionML/config.py": "24932a7a8b7f760d058b01a4f46925876cdc20d2beac9ab68914434719ae49e4",
+    "fusionML/configs/real_smoke_classification_phylo.yaml": "5831951a045be31f17db1415426803758b821b3ba7d2683a1a0f5e6ac58358c2",
+    "fusionML/diagnostics.py": "5d709184491a85dd3f7a43ebeb01b136e6cd4d34daa4c337172f0c499b7986c3",
+    "fusionML/estimator.py": "22119a9381dc55a2eba5fedb5ec9abfd81136b11146e7e1e88067ea2731bf708",
+    "fusionML/evaluate.py": "eaa29654cfa28335bd48e0cdf1a3f56e6c35aa15dea371efb9b6612e825df574",
+    "fusionML/figures.py": "cba432f8f15202825fa2d4d3c75d6e508397c77331502e4a142af98d33939a9e",
+    "fusionML/folds.py": "c9417e0f732ae77b0303905091a7af517895f741c0595c235590b29d11b2c1e0",
+    "fusionML/generate_synthetic_demo_data.py": "fa222da39d537ca2ee9b605e2667a2acfd4b87fff6b35961a4d440f5fae9e634",
+    "fusionML/genus.py": "eb6e53cba6c023d65e81293373bb37a4f363f953b2e490cc3044930ae34f946f",
+    "fusionML/graphs.py": "369c81e87e10ce6b028b0626df89c696d90ffeed5fe4803eed305d9f546c9ea0",
+    "fusionML/groups.py": "24a887bbddce36941f41f0a905a2ec50b55405f125a5733641e47aec88272eae",
+    "fusionML/interactions.py": "2f0383b93a6f6229a73218ef86158a87dd4d72b762c4ce57478490850119d542",
+    "fusionML/investigation_20260921/learning_curves.py": "21612869f9a7f2dd5b96e215b992f3697818ae7a3aa916068a7324daa91605c1",
+    "fusionML/io_counts.py": "23d92ec259c01f6598c0beb6e2ca6b2b84a31290d8bf0f13a6f11c2a7e664850",
+    "fusionML/io_metadata.py": "665da906ae3be25a1740461428daf5faf615d7bb10e0589b419555afaae878f9",
+    "fusionML/io_taxonomy.py": "57c587b933acefc13c4eeacddf60f128003a4cc4e425bcb8bb96f52b9c84814f",
+    "fusionML/io_tree.py": "db0d0e8cb64f73c220db0ed2734172e95e09c327761f80cb3b20ee1a69f33107",
+    "fusionML/model_io.py": "1b85e524c89093631681a301b1f6ec4733b692991511b7f446781c2dc43a56e6",
+    "fusionML/pipeline.py": "02dfd56fc41afb1189821c1c9abb60822200a6c211a2aeae2e7b0d851b3c6227",
+    "fusionML/prepare_real_data_smoke_inputs.py": "6a6d2cfc3666fc825758e1a99758f8f1caaa216999b30c8f7981670e578fd0f5",
+    "fusionML/preprocessing.py": "122d55cc8bbe6c44fcad022feb726cd858501cf4c44ba5603e8b6a0f2d8f29e7",
+    "fusionML/rank_mapping.py": "6ab17a53a400609ce24b8d1eda5257ba97414c91162a62a123e2bcdff50e8f96",
+    "fusionML/real_data_cache/ARC_table_filtered_roundno.tsv": "309f1ecaeee2e7dd99d6d812e245c55c0aeb1d5e442a76282852cacad3d0ac46",
+    "fusionML/real_data_cache/BAC_table_filtered_roundno.tsv": "48e338420fe43413ef678501ac2473b03a5503d8fe1a5fd8db6cca7147f012c0",
+    "fusionML/run_model.py": "070de99c1a2eec12806fb2d1dbb7d7031031f0c80145d768ae132f2564687812",
+    "fusionML/search.py": "f802875bc6110677109c21825e7c719bcd897a88cb2bfa0269baf32225ee531c",
+    "fusionML/season.py": "1b2af95703573589e3d393c7b45c149b2992482745fe1f10b7aa6da25b1b976f",
+    "fusionML/single_domain.py": "5f3671a356ce283d59a3a637d7733785a1a2133066ec530c2abd287aa071e7b5",
+    "fusionML/synthetic.py": "c5b6882ad93cffbfd5e02d7e199628e57a13486889d4be440364455db15514ff",
+    "fusionMLv2/exp1/data/investigation_20260921/learning_qc/predictions.csv": "e71e2cb2a09bf5512af810b62c510f80008d3def1a43e7184ecc6dce3b08e092",
+    "fusionMLv2/exp1/data/investigation_20260921/learning_qc/splits.csv": "400ea95780ed3f66aab4485ff1ccd9af152135cfa6a70b2ad81a29276a1b65fc",
+    "fusionMLv2/exp1/scripts/run_domain_restricted_fusion.py": "34fed005064f997aa13a0c7ddbe71b650f4e06dd0eed25d8e892934147e6b226",
+    "output/genus_tree/taxlevel_autorun/family/arc_mapping.csv": "e653316210a936a104ad353c995daa061e9e04b17ddb91ffa6d3cff75600db74",
+    "output/genus_tree/taxlevel_autorun/family/arc_tree.nwk": "d90660908bd36ad1fa45cc789942a3c9646ea7a52dd8fdb4a5032052f7cb9186",
+    "output/genus_tree/taxlevel_autorun/family/bac_mapping.csv": "5dfa25f0b6fd8db0e60b4d4055c5c9e6d285b9cb589ea999b0e43556006de844",
+    "output/genus_tree/taxlevel_autorun/family/bac_tree.nwk": "0a5859d02b595a73634f86152132aa3b34389c0d916d06a08c974168f365fac4"
+  },
+  "models": [
+    "fusion_arc_only",
+    "fusion_bac_only",
+    "shared_hybrid",
+    "domain_adaptive_hybrid",
+    "domain_adaptive_interaction"
+  ],
+  "fusion_domains": {
+    "fusion_arc_only": "arc_only",
+    "fusion_bac_only": "bac_only",
+    "shared_hybrid": "both",
+    "domain_adaptive_hybrid": "both",
+    "domain_adaptive_interaction": "both"
+  },
+  "question": "where the fusion penalty acts: ARC edges only, BAC edges only, or both domains",
+  "selection": "both one-SE and minimum inner site-logloss; thresholds from inner OOF F2",
+  "comparison": "same cohort, labels, seeds, candidate generation and outer/inner split rules as the saved ASV and genus QC experiments",
+  "tree_paths": {
+    "ARC": "/home/best/Sujin/NGS-embedding/data/qiimeresult/ARC/rooted-tree.nwk",
+    "BAC": "/home/best/Sujin/NGS-embedding/data/qiimeresult/BAC/rooted-tree.nwk"
+  },
+  "fingerprint": "c883bd7faabce1996c819d805c9e9a1b79f12e56623ead302296b943ea9a8b8a",
+  "started_at": "2026-09-22T12:01:48.365153+00:00",
+  "completed_at": "2026-09-22T12:02:24.556008+00:00",
+  "completed_tasks": 6,
+  "output_hashes": {
+    "filter_audit.csv": "fcbaaf40ace437571a67843219c70125065ae2e456a5d6d1791f8cbe0194e0e7",
+    "interactions.csv": "14a5ac8f7c7bdb2ee408b03b842d98891bb9427e3a1c4f18626f8824116877ad",
+    "rows.csv": "0ce206da0f242e4ba3bba9e6cffffdf314ed9adf73a85b40ce89c1706673df7d",
+    "predictions.csv": "b297752dd92544cbec1507a404db8a209a975b9df05a337eab19aab70a6f03c2",
+    "search.csv": "4a60cf4d0da99a25b8a094b6027273411b7f60edcbdf4fb73d9f108a4ff1e9d0",
+    "splits.csv": "96a3ee1b2b0972a99c685a8e566d7a719ad40e755cf6aa76be04ff96382e6255",
+    "failures.csv": "f097b5f4f46cda2da21b954c9ff4097e1e14ae7064ecdee2c2cec2d3c1f08e6b",
+    "domain_counts.csv": "f55d1bd366190ad3d0801af01633abe8b27198cf6a0233bdfc46ddfc6ea7529c",
+    "coefficients_and_groups.csv": "0e441792d89d01ae62792952279f2be654653b25bdf860807e151781932de795"
+  }
+}

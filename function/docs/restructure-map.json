@@ -1,0 +1,586 @@
+[
+  {
+    "old": "function/investigation_20260921/learning_filter20",
+    "new": "results/data investigation/fusionML/learning_filter20"
+  },
+  {
+    "old": "function/investigation_20260921/learning",
+    "new": "results/data investigation/fusionML/learning"
+  },
+  {
+    "old": "function/investigation_20260921/learning_qc",
+    "new": "results/data investigation/fusionML/learning_qc"
+  },
+  {
+    "old": "function/investigation_20260921/compression_regularization.pdf",
+    "new": "results/data investigation/fusionML/compression_regularization.pdf"
+  },
+  {
+    "old": "function/investigation_20260921/filter_audit.csv",
+    "new": "results/data investigation/fusionML/filter_audit.csv"
+  },
+  {
+    "old": "function/investigation_20260921/audit.log",
+    "new": "results/data investigation/fusionML/audit.log"
+  },
+  {
+    "old": "function/investigation_20260921/REPORT.md",
+    "new": "results/data investigation/fusionML/REPORT.md"
+  },
+  {
+    "old": "function/investigation_20260921/legacy_benchmarks.csv",
+    "new": "results/data investigation/fusionML/legacy_benchmarks.csv"
+  },
+  {
+    "old": "function/investigation_20260921/regularization_paths.csv",
+    "new": "results/data investigation/fusionML/regularization_paths.csv"
+  },
+  {
+    "old": "function/investigation_20260921/saved_results.csv",
+    "new": "results/data investigation/fusionML/saved_results.csv"
+  },
+  {
+    "old": "function/investigation_20260921/legacy_ml_metrics.csv",
+    "new": "results/data investigation/fusionML/legacy_ml_metrics.csv"
+  },
+  {
+    "old": "function/investigation_20260921/compression_regularization.png",
+    "new": "results/data investigation/fusionML/compression_regularization.png"
+  },
+  {
+    "old": "function/investigation_20260921/mechanism.log",
+    "new": "results/data investigation/fusionML/mechanism.log"
+  },
+  {
+    "old": "function/investigation_20260921/saved_graphs.csv",
+    "new": "results/data investigation/fusionML/saved_graphs.csv"
+  },
+  {
+    "old": "function/investigation_20260921/learning_curve_overview.png",
+    "new": "results/data investigation/fusionML/learning_curve_overview.png"
+  },
+  {
+    "old": "function/investigation_20260921/learning_curve_overview.pdf",
+    "new": "results/data investigation/fusionML/learning_curve_overview.pdf"
+  },
+  {
+    "old": "function/investigation_20260921/paired_fixed_oof_bootstrap.csv",
+    "new": "results/data investigation/fusionML/paired_fixed_oof_bootstrap.csv"
+  },
+  {
+    "old": "function/investigation_20260921/saved_compression.csv",
+    "new": "results/data investigation/fusionML/saved_compression.csv"
+  },
+  {
+    "old": "function/investigation_20260921/changed_labels.csv",
+    "new": "results/data investigation/fusionML/changed_labels.csv"
+  },
+  {
+    "old": "function/investigation_20260921/verification.json",
+    "new": "results/data investigation/fusionML/verification.json"
+  },
+  {
+    "old": "function/investigation_20260921/selection_ablation.csv",
+    "new": "results/data investigation/fusionML/selection_ablation.csv"
+  },
+  {
+    "old": "function/investigation_20260921/saved_grids.csv",
+    "new": "results/data investigation/fusionML/saved_grids.csv"
+  },
+  {
+    "old": "function/investigation_20260921/learning_qc.log",
+    "new": "results/data investigation/fusionML/learning_qc.log"
+  },
+  {
+    "old": "function/investigation_20260921/production_groups_comparison.csv",
+    "new": "results/data investigation/fusionML/production_groups_comparison.csv"
+  },
+  {
+    "old": "function/investigation_20260921/learning.log",
+    "new": "results/data investigation/fusionML/learning.log"
+  },
+  {
+    "old": "function/investigation_20260921/qc_groups_comparison.csv",
+    "new": "results/data investigation/fusionML/qc_groups_comparison.csv"
+  },
+  {
+    "old": "function/investigation_20260921/cache_validation.json",
+    "new": "results/data investigation/fusionML/cache_validation.json"
+  },
+  {
+    "old": "function/investigation_20260921/filter_sensitivity.csv",
+    "new": "results/data investigation/fusionML/filter_sensitivity.csv"
+  },
+  {
+    "old": "function/investigation_20260921/qc_pair_partition_audit.csv",
+    "new": "results/data investigation/fusionML/qc_pair_partition_audit.csv"
+  },
+  {
+    "old": "function/investigation_20260921/label_audit.csv",
+    "new": "results/data investigation/fusionML/label_audit.csv"
+  },
+  {
+    "old": "function/investigation_20260921/legacy_threshold_overlap.csv",
+    "new": "results/data investigation/fusionML/legacy_threshold_overlap.csv"
+  },
+  {
+    "old": "function/investigation_20260921/learning_filter20.log",
+    "new": "results/data investigation/fusionML/learning_filter20.log"
+  },
+  {
+    "old": "function/investigation_20260921/graph_prior_probe.csv",
+    "new": "results/data investigation/fusionML/graph_prior_probe.csv"
+  },
+  {
+    "old": "models/fusionML/demo_results",
+    "new": "results/classification result/fusionML/demo_results"
+  },
+  {
+    "old": "models/fusionML/real_results_classification_phylo_acid_high",
+    "new": "results/classification result/fusionML/real_results_classification_phylo_acid_high"
+  },
+  {
+    "old": "models/fusionML/real_results_classification_phylo_acid_base_balance",
+    "new": "results/classification result/fusionML/real_results_classification_phylo_acid_base_balance"
+  },
+  {
+    "old": "models/fusionML/demo_data",
+    "new": "datasets/fusionML/demo_data"
+  },
+  {
+    "old": "models/fusionML/real_results_classification_phylo_interaction",
+    "new": "results/classification result/fusionML/real_results_classification_phylo_interaction"
+  },
+  {
+    "old": "models/fusionML/real_results_classification_warning_buffer_capacity",
+    "new": "results/classification result/fusionML/real_results_classification_warning_buffer_capacity"
+  },
+  {
+    "old": "models/fusionML/real_results_classification_order_acid_base_balance_interaction",
+    "new": "results/classification result/fusionML/real_results_classification_order_acid_base_balance_interaction"
+  },
+  {
+    "old": "models/fusionML/real_results_family_rank",
+    "new": "results/classification result/fusionML/real_results_family_rank"
+  },
+  {
+    "old": "models/fusionML/real_results_classification_phylo_acid_base_balance_interaction",
+    "new": "results/classification result/fusionML/real_results_classification_phylo_acid_base_balance_interaction"
+  },
+  {
+    "old": "models/fusionML/real_results_classification_phylo_acid_low",
+    "new": "results/classification result/fusionML/real_results_classification_phylo_acid_low"
+  },
+  {
+    "old": "models/fusionML/real_results_classification_order_biogas_quality_interaction",
+    "new": "results/classification result/fusionML/real_results_classification_order_biogas_quality_interaction"
+  },
+  {
+    "old": "models/fusionML/real_results_classification",
+    "new": "results/classification result/fusionML/real_results_classification"
+  },
+  {
+    "old": "models/fusionML/real_results_classification_order_interaction",
+    "new": "results/classification result/fusionML/real_results_classification_order_interaction"
+  },
+  {
+    "old": "models/fusionML/real_results_classification_warning_acid_accumulation",
+    "new": "results/classification result/fusionML/real_results_classification_warning_acid_accumulation"
+  },
+  {
+    "old": "models/fusionML/real_results",
+    "new": "results/classification result/fusionML/real_results"
+  },
+  {
+    "old": "models/fusionML/real_results_classification_family_acid_base_balance_interaction",
+    "new": "results/classification result/fusionML/real_results_classification_family_acid_base_balance_interaction"
+  },
+  {
+    "old": "models/fusionML/real_results_classification_asv_acid_base_balance",
+    "new": "results/classification result/fusionML/real_results_classification_asv_acid_base_balance"
+  },
+  {
+    "old": "models/fusionML/real_results_domain_fusion_genus_exp1_20260922",
+    "new": "results/classification result/fusionML/real_results_domain_fusion_genus_exp1_20260922"
+  },
+  {
+    "old": "models/fusionML/real_results_classification_warning_biogas_quality",
+    "new": "results/classification result/fusionML/real_results_classification_warning_biogas_quality"
+  },
+  {
+    "old": "models/fusionML/real_results_classification_warning_acid_base_balance",
+    "new": "results/classification result/fusionML/real_results_classification_warning_acid_base_balance"
+  },
+  {
+    "old": "models/fusionML/real_results_classification_family_acid_high",
+    "new": "results/classification result/fusionML/real_results_classification_family_acid_high"
+  },
+  {
+    "old": "models/fusionML/real_results_classification_order_acid_high",
+    "new": "results/classification result/fusionML/real_results_classification_order_acid_high"
+  },
+  {
+    "old": "models/fusionML/real_results_classification_asv",
+    "new": "results/classification result/fusionML/real_results_classification_asv"
+  },
+  {
+    "old": "models/fusionML/real_data_cache",
+    "new": "datasets/fusionML/real_data_cache"
+  },
+  {
+    "old": "models/fusionML/real_results_domain_fusion_acidhigh_asv_exp1_20260922",
+    "new": "results/classification result/fusionML/real_results_domain_fusion_acidhigh_asv_exp1_20260922"
+  },
+  {
+    "old": "models/fusionML/real_results_classification_family_interaction",
+    "new": "results/classification result/fusionML/real_results_classification_family_interaction"
+  },
+  {
+    "old": "models/fusionML/real_results_domain_fusion_family_exp1_20260922",
+    "new": "results/classification result/fusionML/real_results_domain_fusion_family_exp1_20260922"
+  },
+  {
+    "old": "models/fusionML/real_results_domain_fusion_acidhigh_genus_exp1_20260922",
+    "new": "results/classification result/fusionML/real_results_domain_fusion_acidhigh_genus_exp1_20260922"
+  },
+  {
+    "old": "models/fusionML/real_results_domain_fusion_acidhigh_order_exp1_20260922",
+    "new": "results/classification result/fusionML/real_results_domain_fusion_acidhigh_order_exp1_20260922"
+  },
+  {
+    "old": "models/fusionML/real_results_classification_family_acid_low",
+    "new": "results/classification result/fusionML/real_results_classification_family_acid_low"
+  },
+  {
+    "old": "models/fusionML/real_results_classification_phylo_biogas_quality_interaction",
+    "new": "results/classification result/fusionML/real_results_classification_phylo_biogas_quality_interaction"
+  },
+  {
+    "old": "models/fusionML/real_results_domain_fusion_order_exp1_20260922",
+    "new": "results/classification result/fusionML/real_results_domain_fusion_order_exp1_20260922"
+  },
+  {
+    "old": "models/fusionML/real_results_asv_exp1_20260922",
+    "new": "results/classification result/fusionML/real_results_asv_exp1_20260922"
+  },
+  {
+    "old": "models/fusionML/real_results_domain_fusion_acidhigh_family_exp1_20260922",
+    "new": "results/classification result/fusionML/real_results_domain_fusion_acidhigh_family_exp1_20260922"
+  },
+  {
+    "old": "models/fusionML/real_results_classification_asv_biogas_quality",
+    "new": "results/classification result/fusionML/real_results_classification_asv_biogas_quality"
+  },
+  {
+    "old": "models/fusionML/investigation_20260921",
+    "new": "function/investigation_20260921"
+  },
+  {
+    "old": "models/fusionML/real_results_domain_fusion_asv_exp1_20260922",
+    "new": "results/classification result/fusionML/real_results_domain_fusion_asv_exp1_20260922"
+  },
+  {
+    "old": "models/fusionML/configs",
+    "new": "configs/fusionML"
+  },
+  {
+    "old": "models/fusionML/real_results_classification_family_biogas_quality_interaction",
+    "new": "results/classification result/fusionML/real_results_classification_family_biogas_quality_interaction"
+  },
+  {
+    "old": "models/fusionML/real_results_classification_phylo",
+    "new": "results/classification result/fusionML/real_results_classification_phylo"
+  },
+  {
+    "old": "models/fusionML/real_results_classification_order_acid_low",
+    "new": "results/classification result/fusionML/real_results_classification_order_acid_low"
+  },
+  {
+    "old": "models/fusionML/ad-microbial-config.yaml",
+    "new": "configs/ad-microbial-config.yaml"
+  },
+  {
+    "old": "models/fusionML/generate_synthetic_demo_data.py",
+    "new": "datasets/datapreprocess/generate_synthetic_demo_data.py"
+  },
+  {
+    "old": "models/fusionML/prepare_real_data_smoke_inputs.py",
+    "new": "datasets/datapreprocess/prepare_real_data_smoke_inputs.py"
+  },
+  {
+    "old": "models/fusionML/experiments/exp1/results",
+    "new": "results/classification result/fusionMLv2/exp1"
+  },
+  {
+    "old": "models/fusionML/experiments/exp1/data",
+    "new": "datasets/experiments/exp1"
+  },
+  {
+    "old": "models/fusionML/experiments/exp5/results",
+    "new": "results/model interpretation/fusionMLv2/exp5"
+  },
+  {
+    "old": "models/fusionML/experiments/exp5/data",
+    "new": "datasets/experiments/exp5"
+  },
+  {
+    "old": "models/fusionML/experiments/exp5/selected_order/results",
+    "new": "results/model interpretation/fusionMLv2/exp5/selected_order"
+  },
+  {
+    "old": "models/fusionML/experiments/exp5/selected_order/data",
+    "new": "datasets/experiments/exp5/selected_order"
+  },
+  {
+    "old": "models/baselines/TaxlevelML/results",
+    "new": "results/classification result/TaxlevelML/results"
+  },
+  {
+    "old": "models/baselines/TaxlevelML/results_order_macro",
+    "new": "results/classification result/TaxlevelML/results_order_macro"
+  },
+  {
+    "old": "models/baselines/TaxlevelML/results_family",
+    "new": "results/classification result/TaxlevelML/results_family"
+  },
+  {
+    "old": "models/baselines/TaxlevelML/results_averaged",
+    "new": "results/classification result/TaxlevelML/results_averaged"
+  },
+  {
+    "old": "models/baselines/TaxlevelML/results_class_macro",
+    "new": "results/classification result/TaxlevelML/results_class_macro"
+  },
+  {
+    "old": "models/baselines/TaxlevelML/results_genus_macro",
+    "new": "results/classification result/TaxlevelML/results_genus_macro"
+  },
+  {
+    "old": "models/baselines/TaxlevelML/results_multilabel",
+    "new": "results/classification result/TaxlevelML/results_multilabel"
+  },
+  {
+    "old": "models/baselines/TaxlevelML/results_family_genomic",
+    "new": "results/classification result/TaxlevelML/results_family_genomic"
+  },
+  {
+    "old": "models/baselines/TaxlevelML/results_family_point1",
+    "new": "results/classification result/TaxlevelML/results_family_point1"
+  },
+  {
+    "old": "models/baselines/TaxlevelML/results_class",
+    "new": "results/classification result/TaxlevelML/results_class"
+  },
+  {
+    "old": "models/baselines/TaxlevelML/results_phylum",
+    "new": "results/classification result/TaxlevelML/results_phylum"
+  },
+  {
+    "old": "models/baselines/TaxlevelML/results_order",
+    "new": "results/classification result/TaxlevelML/results_order"
+  },
+  {
+    "old": "models/baselines/TaxlevelML/results_warnings",
+    "new": "results/classification result/TaxlevelML/results_warnings"
+  },
+  {
+    "old": "models/baselines/TaxlevelML/results_genomic",
+    "new": "results/classification result/TaxlevelML/results_genomic"
+  },
+  {
+    "old": "models/baselines/TaxlevelML/results_family_macro",
+    "new": "results/classification result/TaxlevelML/results_family_macro"
+  },
+  {
+    "old": "models/baselines/TaxlevelML/results_selected",
+    "new": "results/classification result/TaxlevelML/results_selected"
+  },
+  {
+    "old": "models/baselines/TaxlevelML/results_phylum_macro",
+    "new": "results/classification result/TaxlevelML/results_phylum_macro"
+  },
+  {
+    "old": "models/baselines/TaxlevelML/multi_models/input_for_all_models_taxlevel",
+    "new": "datasets/baselines/input_for_all_models_taxlevel"
+  },
+  {
+    "old": "models/baselines/TaxlevelML/multi_models/input_for_all_models",
+    "new": "datasets/baselines/input_for_all_models"
+  },
+  {
+    "old": "models/baselines/TaxlevelML/multi_models/input_for_all_models_genus",
+    "new": "datasets/baselines/input_for_all_models_genus"
+  },
+  {
+    "old": "models/baselines/TaxlevelML/multi_models/data_preprocessing",
+    "new": "datasets/datapreprocess/baseline"
+  },
+  {
+    "old": "models/baselines/TaxlevelML/multi_models/input_for_all_models_asvtree",
+    "new": "datasets/baselines/input_for_all_models_asvtree"
+  },
+  {
+    "old": "models/baselines/TaxlevelML/multi_models/input_for_all_models_asv",
+    "new": "datasets/baselines/input_for_all_models_asv"
+  },
+  {
+    "old": "models/baselines/PhylogenicDL/database",
+    "new": "datasets/baselines/PhylogenicDL/database"
+  },
+  {
+    "old": "models/baselines/PhylogenicDL/data",
+    "new": "datasets/baselines/PhylogenicDL/data"
+  },
+  {
+    "old": "models/baselines/PhylogenicDL/output",
+    "new": "results/classification result/PhyloSpec"
+  },
+  {
+    "old": "models/baselines/PhylogenicDL/example",
+    "new": "datasets/baselines/PhylogenicDL/example"
+  },
+  {
+    "old": "models/baselines/PhylogenicDL/evaluate_multilabel.py",
+    "new": "function/evaluate_multilabel.py"
+  },
+  {
+    "old": "models/baselines/PhylogenicDL/make_deepphylo_inputs.py",
+    "new": "datasets/datapreprocess/make_deepphylo_inputs.py"
+  },
+  {
+    "old": "models/baselines/PhylogenicDL/domain_merge_utils.py",
+    "new": "datasets/graph/domain_merge_utils.py"
+  },
+  {
+    "old": "models/baselines/PhylogenicDL/cross_domain_edges.py",
+    "new": "datasets/graph/cross_domain_edges.py"
+  },
+  {
+    "old": "models/baselines/PhylogenicDL/reduce_features_for_tree_models.py",
+    "new": "datasets/datapreprocess/reduce_features_for_tree_models.py"
+  },
+  {
+    "old": "models/baselines/PhylogenicDL/build_cross_domain_graph.py",
+    "new": "datasets/graph/build_cross_domain_graph.py"
+  },
+  {
+    "old": "models/baselines/PhylogenicDL/multi_models/RF",
+    "new": "models/baselines/TaxlevelML/multi_models/RF"
+  },
+  {
+    "old": "models/baselines/PhylogenicDL/multi_models/results",
+    "new": "results/classification result/PhylogenicDL"
+  },
+  {
+    "old": "models/baselines/PhylogenicDL/multi_models/KNN",
+    "new": "models/baselines/TaxlevelML/multi_models/KNN"
+  },
+  {
+    "old": "models/baselines/PhylogenicDL/multi_models/input_for_all_models_taxlevel",
+    "new": "datasets/baselines/input_for_all_models_taxlevel"
+  },
+  {
+    "old": "models/baselines/PhylogenicDL/multi_models/NNET",
+    "new": "models/baselines/TaxlevelML/multi_models/NNET"
+  },
+  {
+    "old": "models/baselines/PhylogenicDL/multi_models/input_for_all_models",
+    "new": "datasets/baselines/input_for_all_models"
+  },
+  {
+    "old": "models/baselines/PhylogenicDL/multi_models/input_for_all_models_genus",
+    "new": "datasets/baselines/input_for_all_models_genus"
+  },
+  {
+    "old": "models/baselines/PhylogenicDL/multi_models/data_preprocessing",
+    "new": "datasets/datapreprocess/baseline"
+  },
+  {
+    "old": "models/baselines/PhylogenicDL/multi_models/SVM",
+    "new": "models/baselines/TaxlevelML/multi_models/SVM"
+  },
+  {
+    "old": "models/baselines/PhylogenicDL/multi_models/GLMNET",
+    "new": "models/baselines/TaxlevelML/multi_models/GLMNET"
+  },
+  {
+    "old": "models/baselines/PhylogenicDL/multi_models/input_for_all_models_asvtree",
+    "new": "datasets/baselines/input_for_all_models_asvtree"
+  },
+  {
+    "old": "models/baselines/PhylogenicDL/multi_models/input_for_all_models_asv",
+    "new": "datasets/baselines/input_for_all_models_asv"
+  },
+  {
+    "old": "models/baselines/PhylogenicDL/multi_models/XGBoost",
+    "new": "models/baselines/TaxlevelML/multi_models/XGBoost"
+  },
+  {
+    "old": "models/baselines/PhylogenicDL/multi_models/build_cross_domain_prior_merged.py",
+    "new": "datasets/graph/build_cross_domain_prior_merged.py"
+  },
+  {
+    "old": "models/baselines/PhylogenicDL/multi_models/prep_injection_inputs.py",
+    "new": "datasets/datapreprocess/prep_injection_inputs.py"
+  },
+  {
+    "old": "models/baselines/PhylogenicDL/multi_models/run_taxlevel_baseline_benchmark.py",
+    "new": "models/baselines/TaxlevelML/run_taxlevel_baseline_benchmark.py"
+  },
+  {
+    "old": "models/baselines/PhylogenicDL/multi_models/build_taxlevel_inputs.py",
+    "new": "datasets/datapreprocess/build_taxlevel_inputs.py"
+  },
+  {
+    "old": "models/baselines/PhylogenicDL/multi_models/build_cv_folds.py",
+    "new": "datasets/datapreprocess/build_cv_folds.py"
+  },
+  {
+    "old": "models/baselines/PhylogenicDL/multi_models/build_ablation_summary.py",
+    "new": "function/build_ablation_summary.py"
+  },
+  {
+    "old": "models/baselines/PhylogenicDL/multi_models/build_inputs_from_genus_tables.py",
+    "new": "datasets/datapreprocess/build_inputs_from_genus_tables.py"
+  },
+  {
+    "old": "models/baselines/PhylogenicDL/multi_models/build_site_grouped_cv_folds.py",
+    "new": "datasets/datapreprocess/build_site_grouped_cv_folds.py"
+  },
+  {
+    "old": "models/baselines/PhylogenicDL/multi_models/build_inputs_from_asv_tables.py",
+    "new": "datasets/datapreprocess/build_inputs_from_asv_tables.py"
+  },
+  {
+    "old": "models/baselines/PhylogenicDL/multi_models/DeepPhylo/data",
+    "new": "datasets/baselines/DeepPhylo"
+  },
+  {
+    "old": "models/baselines/PhylogenicDL/src/global_config.py",
+    "new": "configs/phylospec.py"
+  },
+  {
+    "old": "datasets/raw/data_investigation.ipynb",
+    "new": "function/data_investigation.ipynb"
+  },
+  {
+    "old": "datasets/raw/Data_investigation_result.md",
+    "new": "results/data investigation/report.md"
+  },
+  {
+    "old": "results/classification result/TaxlevelML/results_multilabel/physicochemical_importance",
+    "new": "results/model interpretation/TaxlevelML/results_multilabel/physicochemical_importance"
+  },
+  {
+    "old": "results/classification result/TaxlevelML/results_warnings/feature_importance",
+    "new": "results/model interpretation/TaxlevelML/results_warnings/feature_importance"
+  },
+  {
+    "old": "results/classification result/TaxlevelML/results_genomic/genomic_importance",
+    "new": "results/model interpretation/TaxlevelML/results_genomic/genomic_importance"
+  },
+  {
+    "old": "results/classification result/PhylogenicDL/ablation_no_posweight",
+    "new": "results/ablation analysis/pos_weight"
+  }
+]

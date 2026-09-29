@@ -1,0 +1,154 @@
+{
+  "files": [
+    {
+      "path": "tables/active_interactions_annotated.csv",
+      "sha256": "f9d86abcf29cceadd7a2303d0919cdd42e2bbb314b53d6ada7b35fafdc5cb703",
+      "bytes": 134
+    },
+    {
+      "path": "tables/coefficients_annotated.csv",
+      "sha256": "ad70919821af1519f80910c5e05a5cc92061d93fd7a28cf90d53c646ffd87949",
+      "bytes": 4071181
+    },
+    {
+      "path": "tables/cohort_summary.csv",
+      "sha256": "2505d3937aa0e2a0a67b69a37537056cc0eebde4878d933586bd7673ad03c73c",
+      "bytes": 318
+    },
+    {
+      "path": "tables/domain_contrasts.csv",
+      "sha256": "c96eedf83389ddaa26c946eecc25f44169a981ce628d52c960695ab5e618267a",
+      "bytes": 862708
+    },
+    {
+      "path": "tables/feature_associations.csv",
+      "sha256": "5a31db561d4c0f3644cdc5c9306a37402345c00decb91c22fa24d50d734c898d",
+      "bytes": 634600
+    },
+    {
+      "path": "tables/feature_asv_taxonomy.csv",
+      "sha256": "5adc64f2a7b6402f258c10806614fcfffcdf79e4b05725d49391940c79e9a5c7",
+      "bytes": 124130
+    },
+    {
+      "path": "tables/fit_validation.csv",
+      "sha256": "a879c3cfac3f5348075f875fba37e269a36b52e139f50288d529152708c3dc2e",
+      "bytes": 27008
+    },
+    {
+      "path": "tables/functional_evidence.csv",
+      "sha256": "65245bef37eb987454c789bfcfe74d5caeb60b143af16b47e69a9824b588636d",
+      "bytes": 2290
+    },
+    {
+      "path": "tables/group_catalog.csv",
+      "sha256": "1a3cdca80987e3a18be781575e7812973ec002cd34bed33af1c0818d06055e8c",
+      "bytes": 1762315
+    },
+    {
+      "path": "tables/interaction_summary.csv",
+      "sha256": "1d060c19039397f7579b78bb7f7fe967c028fa3453db1548f262fe1852f71801",
+      "bytes": 1944
+    },
+    {
+      "path": "tables/model_domain_summary.csv",
+      "sha256": "43e88595ba3290c688f074f8527644e1c798d5fd4d26e64211d8d377828b4a6f",
+      "bytes": 8495
+    },
+    {
+      "path": "tables/model_fit_inventory.csv",
+      "sha256": "4db101c55c7d21685903574a0703a70ec691c2f45a1f9c36eb5b8928b6fa8904",
+      "bytes": 39898
+    },
+    {
+      "path": "tables/prediction_context.csv",
+      "sha256": "2b970f533a3bb4c547f895535f860167d604c2eadb7bedefcf14e322b7a90af1",
+      "bytes": 5168
+    },
+    {
+      "path": "tables/taxonomy_domain_mismatches.csv",
+      "sha256": "79b58c689cf412f8706070475c4755585e84ddcc1f76ef0c149bad7b33e452da",
+      "bytes": 757
+    },
+    {
+      "path": "figures/01_taxon_coefficients_asv.pdf",
+      "sha256": "b5f28da11ddc2eba60ba67cc97ad5a9dfdabd1fad0d6ca6db0f1b6296ea7ed9d",
+      "bytes": 51963
+    },
+    {
+      "path": "figures/01_taxon_coefficients_asv.png",
+      "sha256": "cbc243e398b013a4a9336a46d01414c0de612703e3478f7add03c64cabec6a10",
+      "bytes": 611685
+    },
+    {
+      "path": "figures/01_taxon_coefficients_genus.pdf",
+      "sha256": "1302a64dff5cb96816d0819169f93d40fa212d16053040d12a91032a3980c86b",
+      "bytes": 49719
+    },
+    {
+      "path": "figures/01_taxon_coefficients_genus.png",
+      "sha256": "4a03b9b3d5b9264544c95365f827c4b2eb6bc10ce29ba18f589a487c9c25ec07",
+      "bytes": 589140
+    },
+    {
+      "path": "figures/02_active_groups_by_domain.pdf",
+      "sha256": "f02279f8177e5fe2f9bf4221e703787d9922e3a68af20cc62467e99a8fbfe949",
+      "bytes": 20562
+    },
+    {
+      "path": "figures/02_active_groups_by_domain.png",
+      "sha256": "03d379ba8660f1224762a7534a89ed3196b88cd45101f7974fbc689dacded274",
+      "bytes": 149173
+    },
+    {
+      "path": "figures/03_group_taxonomic_coherence.pdf",
+      "sha256": "a2f2f98af7b7cc47a7577dd0eb9497a665b800ab41ea14023db7b78251a3fb73",
+      "bytes": 24019
+    },
+    {
+      "path": "figures/03_group_taxonomic_coherence.png",
+      "sha256": "4331dbc9ef840cd96d1a81c0ddf559ff8ca75b9a58256ffa7af3458d84dcaeeb",
+      "bytes": 94513
+    },
+    {
+      "path": "details/asv_warning_acid_base_balance.md",
+      "sha256": "102e46008288ad416a63892551efc09c1e7a238ad5f9ab941ee33cfa7c1c9398",
+      "bytes": 12207
+    },
+    {
+      "path": "details/asv_warning_ammonia_toxicity.md",
+      "sha256": "916d0baecbaccf4e16371807583656db561c41e7577e3e01a198439e7f94d14d",
+      "bytes": 13310
+    },
+    {
+      "path": "details/asv_warning_biogas_quality.md",
+      "sha256": "b1257c40954f6cea3eecc1a599376d7c1941848b64e2df807c66fef81a11301f",
+      "bytes": 11765
+    },
+    {
+      "path": "details/genus_warning_acid_base_balance.md",
+      "sha256": "a1de198b76c0e462a3dd111a7c3b8142a2669f0d21a1e1029131ba0e3eea2f53",
+      "bytes": 12074
+    },
+    {
+      "path": "details/genus_warning_ammonia_toxicity.md",
+      "sha256": "a699275ff89e6c63be1b5efd13ce99f3b4a621aba453cf153fe21855e760bdae",
+      "bytes": 12443
+    },
+    {
+      "path": "details/genus_warning_biogas_quality.md",
+      "sha256": "ae53728bc773b55063ed88203a18395da0a2d3df73e4caac4f12a58033b3c69d",
+      "bytes": 12104
+    },
+    {
+      "path": "REPORT.md",
+      "sha256": "0b0d9b7b357f0513ece3aa75970c0eea3b9a4eed60d1a2c0b2a049b8ee63afe5",
+      "bytes": 12582
+    },
+    {
+      "path": "validation.json",
+      "sha256": "730f13e9ba3ebef56d1143bd60b94d5d38875439d736dc302f15834c836279bf",
+      "bytes": 1212
+    }
+  ]
+}

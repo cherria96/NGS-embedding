@@ -1,0 +1,4 @@
+feature_j,feature_k,v_all,v_joint,v_star,joint_samples,joint_sites,eligible
+ARC::genus::g__SynGenusA0,ARC::genus::g__SynGenusA1,0.12636644955251378,0.1263664495525138,0.1263664495525138,41,12,True
+ARC::genus::g__SynGenusA0,ARC::genus::g__SynGenusA2,0.3705976616453279,0.370597661645328,0.370597661645328,41,12,True
+ARC::genus::g__SynGenusA1,ARC::genus::g__SynGenusA2,0.3016946047867543,0.30169460478675425,0.3016946047867543,41,12,True

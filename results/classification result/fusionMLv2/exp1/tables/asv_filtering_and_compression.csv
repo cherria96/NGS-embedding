@@ -1,0 +1,5 @@
+target,domain,input_asvs,retained_asvs_mean,retained_asvs_min,retained_asvs_max,mean_training_retained_mass,min_training_retained_mass,shared_hybrid_active_groups_mean
+warning_acid_base_balance,ARC,1768,20.6666666667,19,23,0.589822950439,0.00974919997023,3.5
+warning_acid_base_balance,BAC,13385,57.3333333333,50,69,0.347950555073,0.000735097567495,6.5
+warning_ammonia_toxicity,ARC,1768,20.6666666667,19,23,0.589822950439,0.00974919997023,5
+warning_ammonia_toxicity,BAC,13385,57.3333333333,50,69,0.347950555073,0.000735097567495,9.33333333333

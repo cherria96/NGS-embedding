@@ -1,0 +1,482 @@
+{
+  "copied_at_utc": "2026-09-22T11:17:15.548528+00:00",
+  "purpose": "Experiment 1 reanalysis of existing outputs; no model training",
+  "files": [
+    {
+      "source": "fusionML/investigation_20260921/regularization_paths.csv",
+      "copy": "investigation_20260921/regularization_paths.csv",
+      "sha256": "105f89c7d21bb3c44f36341c07567c5a86ae920db9e4d72b2c04fcd8934b38ea",
+      "bytes": 19240,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/investigation_20260921/saved_compression.csv",
+      "copy": "investigation_20260921/saved_compression.csv",
+      "sha256": "b5c705cffef13cde72005ac6afe68c1d84bd854880e68eb05e21d8361f5e43d9",
+      "bytes": 41407,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/investigation_20260921/saved_results.csv",
+      "copy": "investigation_20260921/saved_results.csv",
+      "sha256": "2c1e832c0f4e090af0379600161291ad5a70207c3018d6f2a35bc3526196be53",
+      "bytes": 34246,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/investigation_20260921/qc_groups_comparison.csv",
+      "copy": "investigation_20260921/qc_groups_comparison.csv",
+      "sha256": "e3e369d2c9da3828bbea6bbe0f2dc3e3adbc38078431e9a13a31d8889710e1c7",
+      "bytes": 1906,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/investigation_20260921/learning_qc/rows.csv",
+      "copy": "investigation_20260921/learning_qc/rows.csv",
+      "sha256": "31dcfe1975f103e01d17d47eecce8d3729616eb6952dcbad26a89a8d9bf46e08",
+      "bytes": 218045,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/investigation_20260921/learning_qc/predictions.csv",
+      "copy": "investigation_20260921/learning_qc/predictions.csv",
+      "sha256": "e71e2cb2a09bf5512af810b62c510f80008d3def1a43e7184ecc6dce3b08e092",
+      "bytes": 2323133,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/investigation_20260921/learning_qc/pooled_metrics.csv",
+      "copy": "investigation_20260921/learning_qc/pooled_metrics.csv",
+      "sha256": "46990d67f4eb5bc1ae813a40306533b737fd460f9499fb21cf45db53ec571082",
+      "bytes": 29985,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/investigation_20260921/learning_qc/splits.csv",
+      "copy": "investigation_20260921/learning_qc/splits.csv",
+      "sha256": "400ea95780ed3f66aab4485ff1ccd9af152135cfa6a70b2ad81a29276a1b65fc",
+      "bytes": 240278,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/investigation_20260921/learning_qc/manifest.json",
+      "copy": "investigation_20260921/learning_qc/manifest.json",
+      "sha256": "b387d8c55eb399092d860032f02fe97b2ba1a6c2ff20d2722b549b7caa4b80dd",
+      "bytes": 1080,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/investigation_20260921/REPORT.md",
+      "copy": "investigation_20260921/REPORT.md",
+      "sha256": "d2d75968fa9df45202b1502141b8f634b709e15073744dfb0132b5520e6c70b3",
+      "bytes": 22951,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/investigation_20260921/mechanism_probes.py",
+      "copy": "investigation_20260921/mechanism_probes.py",
+      "sha256": "a4ad5abc1b79f53405c2d05c1722c58736afc49b3729a45f6061ff22213d805b",
+      "bytes": 7384,
+      "role": "current code/config context, not certified original training version"
+    },
+    {
+      "source": "fusionML/investigation_20260921/learning_curves.py",
+      "copy": "investigation_20260921/learning_curves.py",
+      "sha256": "21612869f9a7f2dd5b96e215b992f3697818ae7a3aa916068a7324daa91605c1",
+      "bytes": 23359,
+      "role": "current code/config context, not certified original training version"
+    },
+    {
+      "source": "fusionML/configs/real_smoke_classification_phylo.yaml",
+      "copy": "configs/real_smoke_classification_phylo.yaml",
+      "sha256": "5831951a045be31f17db1415426803758b821b3ba7d2683a1a0f5e6ac58358c2",
+      "bytes": 9450,
+      "role": "current code/config context, not certified original training version"
+    },
+    {
+      "source": "fusionML/evaluate.py",
+      "copy": "evaluate.py",
+      "sha256": "eaa29654cfa28335bd48e0cdf1a3f56e6c35aa15dea371efb9b6612e825df574",
+      "bytes": 11443,
+      "role": "current code/config context, not certified original training version"
+    },
+    {
+      "source": "fusionML/groups.py",
+      "copy": "groups.py",
+      "sha256": "24a887bbddce36941f41f0a905a2ec50b55405f125a5733641e47aec88272eae",
+      "bytes": 6734,
+      "role": "current code/config context, not certified original training version"
+    },
+    {
+      "source": "fusionML/real_results_asv_exp1_20260922/balances.csv",
+      "copy": "real_results_asv_exp1_20260922/balances.csv",
+      "sha256": "613faa5aa93703a7a46cd076ccafea8db22421ad05921e1a24f3f0a46b6e3b0e",
+      "bytes": 304517,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_asv_exp1_20260922/coefficients_and_groups.csv",
+      "copy": "real_results_asv_exp1_20260922/coefficients_and_groups.csv",
+      "sha256": "48dab6d7b1e50f9c5af85847eb4de8faec6c6cad68cde66aa7314514ed39da64",
+      "bytes": 2654279,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_asv_exp1_20260922/domain_counts.csv",
+      "copy": "real_results_asv_exp1_20260922/domain_counts.csv",
+      "sha256": "38a88892d70dd928ce4cfe63cb12b9a3e6b4f834d2dcbd6d0d14e703de63da25",
+      "bytes": 32436,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_asv_exp1_20260922/failures.csv",
+      "copy": "real_results_asv_exp1_20260922/failures.csv",
+      "sha256": "f097b5f4f46cda2da21b954c9ff4097e1e14ae7064ecdee2c2cec2d3c1f08e6b",
+      "bytes": 6,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_asv_exp1_20260922/filter_audit.csv",
+      "copy": "real_results_asv_exp1_20260922/filter_audit.csv",
+      "sha256": "a6bb2d799ee4c19674c023f7e899ef690130c6433b5f4f71515f53be6b4052cc",
+      "bytes": 2609,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_asv_exp1_20260922/graph_edges.csv",
+      "copy": "real_results_asv_exp1_20260922/graph_edges.csv",
+      "sha256": "1171fbea8333faff713b744afe4f8571656b61cbabb466b58c199d63fb731d31",
+      "bytes": 6995717,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_asv_exp1_20260922/interactions.csv",
+      "copy": "real_results_asv_exp1_20260922/interactions.csv",
+      "sha256": "cc4e81fbcfc2c894e196b1fe306e2eac8ebed6ae1dce34e3ca302976fcdc9102",
+      "bytes": 299781,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_asv_exp1_20260922/predictions.csv",
+      "copy": "real_results_asv_exp1_20260922/predictions.csv",
+      "sha256": "f5651b2db90e2d509e8c8e4d1e480f032a92b7472d845094e7df2950901bbdf5",
+      "bytes": 940244,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_asv_exp1_20260922/regularization_paths.csv",
+      "copy": "real_results_asv_exp1_20260922/regularization_paths.csv",
+      "sha256": "7968119437cbd4c258c1f283a5648a9d8a1d864134d8fa73d4d516f47963c653",
+      "bytes": 48135,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_asv_exp1_20260922/rows.csv",
+      "copy": "real_results_asv_exp1_20260922/rows.csv",
+      "sha256": "1099d066e9fe5a5b0ed521760e7128e2038cd8c8fb03254dc5933257fd0ed766",
+      "bytes": 101409,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_asv_exp1_20260922/search.csv",
+      "copy": "real_results_asv_exp1_20260922/search.csv",
+      "sha256": "e7a55df8d4bd485df482ae65cec5eae8460d7f3b8b458d28f57bdb30fae64879",
+      "bytes": 944847,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_asv_exp1_20260922/splits.csv",
+      "copy": "real_results_asv_exp1_20260922/splits.csv",
+      "sha256": "e58abae34fa53d19a8d3896cf74b5f13fa2f415aa54e0c3cc72a1dffed0025e8",
+      "bytes": 250267,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_asv_exp1_20260922/run_manifest.json",
+      "copy": "real_results_asv_exp1_20260922/run_manifest.json",
+      "sha256": "9ff797c8a57743ca8aa4751d323e9b39f1f62df99b0d7fcfdafd9d99455149fd",
+      "bytes": 22373,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_domain_fusion_order_exp1_20260922/coefficients_and_groups.csv",
+      "copy": "real_results_domain_fusion_order_exp1_20260922/coefficients_and_groups.csv",
+      "sha256": "7864cb347fb2cd8f64c568763c899490375d3d15a815202e76d8af3e234b5cc2",
+      "bytes": 2025408,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_domain_fusion_order_exp1_20260922/domain_counts.csv",
+      "copy": "real_results_domain_fusion_order_exp1_20260922/domain_counts.csv",
+      "sha256": "726e141dd8035ae2a8b87ac238c12ecd697ffd3e5631e81f1c05dc736d0a8cbe",
+      "bytes": 33576,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_domain_fusion_order_exp1_20260922/failures.csv",
+      "copy": "real_results_domain_fusion_order_exp1_20260922/failures.csv",
+      "sha256": "7bf43aa5fb47de45f0bb2283f7d285d466a19d2002aed6193951f66ecd789a07",
+      "bytes": 110474,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_domain_fusion_order_exp1_20260922/filter_audit.csv",
+      "copy": "real_results_domain_fusion_order_exp1_20260922/filter_audit.csv",
+      "sha256": "17159dac3f5871e75433e29efe84ea186d524ec4373c26792252a16a6ad6d93b",
+      "bytes": 3702,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_domain_fusion_order_exp1_20260922/interactions.csv",
+      "copy": "real_results_domain_fusion_order_exp1_20260922/interactions.csv",
+      "sha256": "d88da5ce3f5124045f643486ef5a84edafd713b3237be5517d173f4b1c80b75a",
+      "bytes": 140451,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_domain_fusion_order_exp1_20260922/predictions.csv",
+      "copy": "real_results_domain_fusion_order_exp1_20260922/predictions.csv",
+      "sha256": "75260cd229fa6b060d34039eb350e8162d181eafa0b5bb8c71c4061dd21f7343",
+      "bytes": 872205,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_domain_fusion_order_exp1_20260922/rows.csv",
+      "copy": "real_results_domain_fusion_order_exp1_20260922/rows.csv",
+      "sha256": "295a1ddb6bb37a3180712aab655fa4f3019c0595cad5f3f739408f1e791a7190",
+      "bytes": 93514,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_domain_fusion_order_exp1_20260922/search.csv",
+      "copy": "real_results_domain_fusion_order_exp1_20260922/search.csv",
+      "sha256": "e31be7d4614c267188085d6c42c6d04bc8bc3bac7ba7580799aa9cdcb79e99f1",
+      "bytes": 663917,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_domain_fusion_order_exp1_20260922/splits.csv",
+      "copy": "real_results_domain_fusion_order_exp1_20260922/splits.csv",
+      "sha256": "b841e048ea6bf534784564b792b1d1715cc9402d3ba95703e87388befd9388a8",
+      "bytes": 393171,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_domain_fusion_order_exp1_20260922/run_manifest.json",
+      "copy": "real_results_domain_fusion_order_exp1_20260922/run_manifest.json",
+      "sha256": "bd4ff3614d7f63fae07838cccefab9276c16fae7decef1f9a8e66ad44000e701",
+      "bytes": 22512,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_domain_fusion_family_exp1_20260922/coefficients_and_groups.csv",
+      "copy": "real_results_domain_fusion_family_exp1_20260922/coefficients_and_groups.csv",
+      "sha256": "3c6530bf9ccdef385430a6be0eb155c3b7590fa4dc990101c24aed2a45bb60f6",
+      "bytes": 2529609,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_domain_fusion_family_exp1_20260922/domain_counts.csv",
+      "copy": "real_results_domain_fusion_family_exp1_20260922/domain_counts.csv",
+      "sha256": "d8598de26b293711c2411979599ecbf8a1b2e27d864dd85b61405ec672a8bf72",
+      "bytes": 33965,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_domain_fusion_family_exp1_20260922/failures.csv",
+      "copy": "real_results_domain_fusion_family_exp1_20260922/failures.csv",
+      "sha256": "d8eec731c8914474234f33aabe275cdaeef597779305f487e98ed3cc7abc3164",
+      "bytes": 110754,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_domain_fusion_family_exp1_20260922/filter_audit.csv",
+      "copy": "real_results_domain_fusion_family_exp1_20260922/filter_audit.csv",
+      "sha256": "c092d3bff3a6e48405abbb6dc616cde0de047137899ad100691df08f89ce89d4",
+      "bytes": 3747,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_domain_fusion_family_exp1_20260922/interactions.csv",
+      "copy": "real_results_domain_fusion_family_exp1_20260922/interactions.csv",
+      "sha256": "45d830a2fc33e2a69d2e23e7d8f517b7ff3d7226860ea57e945fc4d4eca319d6",
+      "bytes": 169492,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_domain_fusion_family_exp1_20260922/predictions.csv",
+      "copy": "real_results_domain_fusion_family_exp1_20260922/predictions.csv",
+      "sha256": "1eb5577605a16f1e696f1ce73c9eefbd82fc759c11c6b33e6f05ca32ab686f41",
+      "bytes": 879978,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_domain_fusion_family_exp1_20260922/rows.csv",
+      "copy": "real_results_domain_fusion_family_exp1_20260922/rows.csv",
+      "sha256": "adc71f08428716498693c09febffb24e1e61f06643b65fc5b7eedfdd30556076",
+      "bytes": 92917,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_domain_fusion_family_exp1_20260922/search.csv",
+      "copy": "real_results_domain_fusion_family_exp1_20260922/search.csv",
+      "sha256": "2699135528ec1f770f581a0e8893ac68ecff6b900b38e3a20bd0c38adb280565",
+      "bytes": 666581,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_domain_fusion_family_exp1_20260922/splits.csv",
+      "copy": "real_results_domain_fusion_family_exp1_20260922/splits.csv",
+      "sha256": "8bf3964dbcff75b534ba0ca17f0e243daa3bec332c52e99e78950f9769159e7f",
+      "bytes": 398799,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_domain_fusion_family_exp1_20260922/run_manifest.json",
+      "copy": "real_results_domain_fusion_family_exp1_20260922/run_manifest.json",
+      "sha256": "01414cf487e4797681a402c0190c352eaac74f02e51cc40f418f51d6a637144a",
+      "bytes": 22521,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_domain_fusion_genus_exp1_20260922/coefficients_and_groups.csv",
+      "copy": "real_results_domain_fusion_genus_exp1_20260922/coefficients_and_groups.csv",
+      "sha256": "1e15b4e60b9c0e92e6e608f574739606518b4f06e3847e4c269275b6d1b9e554",
+      "bytes": 2462231,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_domain_fusion_genus_exp1_20260922/domain_counts.csv",
+      "copy": "real_results_domain_fusion_genus_exp1_20260922/domain_counts.csv",
+      "sha256": "5304cd01c4e85bede4278ae20b099cdb814dbb0106990e398432dc6b8d75256c",
+      "bytes": 33634,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_domain_fusion_genus_exp1_20260922/failures.csv",
+      "copy": "real_results_domain_fusion_genus_exp1_20260922/failures.csv",
+      "sha256": "7ea2c2a9a2cf2372a3705219b91bc0437afd8d26ef85de1bfea76e262d1cb476",
+      "bytes": 110474,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_domain_fusion_genus_exp1_20260922/filter_audit.csv",
+      "copy": "real_results_domain_fusion_genus_exp1_20260922/filter_audit.csv",
+      "sha256": "659d81058339568f4f162b1bca4ac0d35c0e5cf36f0e5014d557a8b597ee8b3a",
+      "bytes": 3696,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_domain_fusion_genus_exp1_20260922/interactions.csv",
+      "copy": "real_results_domain_fusion_genus_exp1_20260922/interactions.csv",
+      "sha256": "41c15a130754dbc3f085b6e3e70a2f300b787f8965a5ca8285b229c255e029a3",
+      "bytes": 167398,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_domain_fusion_genus_exp1_20260922/predictions.csv",
+      "copy": "real_results_domain_fusion_genus_exp1_20260922/predictions.csv",
+      "sha256": "ce94de8fa96da8c6633aea5109e35714bc40e4e35217771ae39c589e966552a4",
+      "bytes": 872386,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_domain_fusion_genus_exp1_20260922/rows.csv",
+      "copy": "real_results_domain_fusion_genus_exp1_20260922/rows.csv",
+      "sha256": "f2e983a0b351e84e33f6b2ef1565db12b3c9ca19b17ceeb8f68054a0896f2340",
+      "bytes": 92653,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_domain_fusion_genus_exp1_20260922/search.csv",
+      "copy": "real_results_domain_fusion_genus_exp1_20260922/search.csv",
+      "sha256": "bfdd656637114319d1fe6b2b90a92fbdc24f946ba562f842d1d99d7465c95b9e",
+      "bytes": 664292,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_domain_fusion_genus_exp1_20260922/splits.csv",
+      "copy": "real_results_domain_fusion_genus_exp1_20260922/splits.csv",
+      "sha256": "b76843e1773ea59c004dab7bc2bd7e5110b7d1589aca9fdf8601e6338bbafec4",
+      "bytes": 393171,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_domain_fusion_genus_exp1_20260922/run_manifest.json",
+      "copy": "real_results_domain_fusion_genus_exp1_20260922/run_manifest.json",
+      "sha256": "bef8d7c996ec71f633e507cd33a50d3a125536d1984bc95941eeea2ebd1e5a37",
+      "bytes": 22512,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_domain_fusion_asv_exp1_20260922/coefficients_and_groups.csv",
+      "copy": "real_results_domain_fusion_asv_exp1_20260922/coefficients_and_groups.csv",
+      "sha256": "d574c5d418903f4093f58e891c81c925cc250a03dcdf5afe4c15d4ee64231143",
+      "bytes": 2370893,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_domain_fusion_asv_exp1_20260922/domain_counts.csv",
+      "copy": "real_results_domain_fusion_asv_exp1_20260922/domain_counts.csv",
+      "sha256": "d3c3819083ec3d9c961906d68f90b8cbfc3f5be52689c082796dea6c4ead4b00",
+      "bytes": 32987,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_domain_fusion_asv_exp1_20260922/failures.csv",
+      "copy": "real_results_domain_fusion_asv_exp1_20260922/failures.csv",
+      "sha256": "ef4e9503fe8e49c1723617c188ddfcdb0dab79c37f2f6db22a99a1c7bf0d1ef7",
+      "bytes": 109914,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_domain_fusion_asv_exp1_20260922/filter_audit.csv",
+      "copy": "real_results_domain_fusion_asv_exp1_20260922/filter_audit.csv",
+      "sha256": "28b0c8964a7ac3922034a2046f5706e86bf85c3a3523ed9a8067f9f5cc707436",
+      "bytes": 3891,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_domain_fusion_asv_exp1_20260922/interactions.csv",
+      "copy": "real_results_domain_fusion_asv_exp1_20260922/interactions.csv",
+      "sha256": "6107128115377de4d0d62efaaad5eaf6a6a78d883f9e2e65ed98fdb677c896bf",
+      "bytes": 402612,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_domain_fusion_asv_exp1_20260922/predictions.csv",
+      "copy": "real_results_domain_fusion_asv_exp1_20260922/predictions.csv",
+      "sha256": "ded277d0ac51213236ac09316110e2d20cd835088adefbc8b8e92989b515c771",
+      "bytes": 857758,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_domain_fusion_asv_exp1_20260922/rows.csv",
+      "copy": "real_results_domain_fusion_asv_exp1_20260922/rows.csv",
+      "sha256": "0ab4f5572005bcac7c78101f6a9745f1f1e40bb739a1c159482e0ca6fc67c94b",
+      "bytes": 93270,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_domain_fusion_asv_exp1_20260922/search.csv",
+      "copy": "real_results_domain_fusion_asv_exp1_20260922/search.csv",
+      "sha256": "bee05b1a410d12215eebeec3de8eb1d04102ba24969f7f8a4a7d85ecc1370a0a",
+      "bytes": 659392,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_domain_fusion_asv_exp1_20260922/splits.csv",
+      "copy": "real_results_domain_fusion_asv_exp1_20260922/splits.csv",
+      "sha256": "e4fd78a942dc5e1d8d04efdad32665463e37089e686a80cc5abf92242ff7b2f8",
+      "bytes": 381915,
+      "role": "saved output or protocol document"
+    },
+    {
+      "source": "fusionML/real_results_domain_fusion_asv_exp1_20260922/run_manifest.json",
+      "copy": "real_results_domain_fusion_asv_exp1_20260922/run_manifest.json",
+      "sha256": "e736a535ccdafb1bc3150e215e6d47374416063bf9bb7f1467f7067395abacca",
+      "bytes": 21741,
+      "role": "saved output or protocol document"
+    }
+  ]
+}

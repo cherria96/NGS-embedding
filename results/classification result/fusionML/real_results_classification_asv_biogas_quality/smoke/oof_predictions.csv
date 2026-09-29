@@ -1,0 +1,403 @@
+sample_id,site_id,target,prediction,outer_fold,family,scorable,reason,predicted_class
+1-10,DGC,0,0.10666666666666667,0,intercept_only,True,,0.0
+1-13,USY,0,0.10666666666666667,0,intercept_only,True,,0.0
+1-14,USJ,0,0.10666666666666667,0,intercept_only,True,,0.0
+1-16,GCG,0,0.10666666666666667,0,intercept_only,True,,0.0
+1-19,ADP,0,0.10666666666666667,0,intercept_only,True,,0.0
+1-2,BSN,0,0.10666666666666667,0,intercept_only,True,,0.0
+1-21,YCD,0,0.10666666666666667,0,intercept_only,True,,0.0
+1-24,GHGa,0,0.10666666666666667,0,intercept_only,True,,0.0
+1-26,GHH,0,0.10666666666666667,0,intercept_only,True,,0.0
+1-28,MYS,0,0.10666666666666667,0,intercept_only,True,,0.0
+1-32,JJN,0,0.10666666666666667,0,intercept_only,True,,0.0
+1-33,CWM,0,0.10666666666666667,0,intercept_only,True,,0.0
+2-10,DGC,1,0.10666666666666667,0,intercept_only,True,,0.0
+2-13,USY,0,0.10666666666666667,0,intercept_only,True,,0.0
+2-14,USJ,0,0.10666666666666667,0,intercept_only,True,,0.0
+2-16,GCG,0,0.10666666666666667,0,intercept_only,True,,0.0
+2-19,ADP,0,0.10666666666666667,0,intercept_only,True,,0.0
+2-2,BSN,1,0.10666666666666667,0,intercept_only,True,,0.0
+2-21,YCD,0,0.10666666666666667,0,intercept_only,True,,0.0
+2-24,GHGa,0,0.10666666666666667,0,intercept_only,True,,0.0
+2-26,GHH,0,0.10666666666666667,0,intercept_only,True,,0.0
+2-28,MYS,0,0.10666666666666667,0,intercept_only,True,,0.0
+2-32,JJN,0,0.10666666666666667,0,intercept_only,True,,0.0
+3-10,DGC,0,0.10666666666666667,0,intercept_only,True,,0.0
+3-13,USY,0,0.10666666666666667,0,intercept_only,True,,0.0
+3-14,USJ,0,0.10666666666666667,0,intercept_only,True,,0.0
+3-16,GCG,0,0.10666666666666667,0,intercept_only,True,,0.0
+3-19,ADP,0,0.10666666666666667,0,intercept_only,True,,0.0
+3-2,BSN,1,0.10666666666666667,0,intercept_only,True,,0.0
+3-21,YCD,0,0.10666666666666667,0,intercept_only,True,,0.0
+3-24,GHGa,0,0.10666666666666667,0,intercept_only,True,,0.0
+3-26,GHH,0,0.10666666666666667,0,intercept_only,True,,0.0
+3-28,MYS,0,0.10666666666666667,0,intercept_only,True,,0.0
+3-32,JJN,0,0.10666666666666667,0,intercept_only,True,,0.0
+3-33,CWM,0,0.10666666666666667,0,intercept_only,True,,0.0
+4-10,DGC,0,0.10666666666666667,0,intercept_only,True,,0.0
+4-13,USY,0,0.10666666666666667,0,intercept_only,True,,0.0
+4-14,USJ,0,0.10666666666666667,0,intercept_only,True,,0.0
+4-16,GCG,0,0.10666666666666667,0,intercept_only,True,,0.0
+4-2,BSN,1,0.10666666666666667,0,intercept_only,True,,0.0
+4-21,YCD,0,0.10666666666666667,0,intercept_only,True,,0.0
+4-26,GHH,0,0.10666666666666667,0,intercept_only,True,,0.0
+4-28,MYS,0,0.10666666666666667,0,intercept_only,True,,0.0
+4-32,JJN,0,0.10666666666666667,0,intercept_only,True,,0.0
+4-33,CWM,0,0.10666666666666667,0,intercept_only,True,,0.0
+1-1,BSS,0,0.09666666666666666,1,intercept_only,True,,0.0
+1-17,MGYe1,0,0.09666666666666666,1,intercept_only,True,,0.0
+1-18,ADA,0,0.09666666666666666,1,intercept_only,True,,0.0
+1-29,SCH,0,0.09666666666666666,1,intercept_only,True,,0.0
+1-30,YSD,0,0.09666666666666666,1,intercept_only,True,,0.0
+1-31,YSY,0,0.09666666666666666,1,intercept_only,True,,0.0
+1-34,CWS,0,0.09666666666666666,1,intercept_only,True,,0.0
+1-6,DGG,0,0.09666666666666666,1,intercept_only,True,,0.0
+1-7,DGD,0,0.09666666666666666,1,intercept_only,True,,0.0
+1-8,DGJ,0,0.09666666666666666,1,intercept_only,True,,0.0
+1-9,DGB,0,0.09666666666666666,1,intercept_only,True,,0.0
+2-1,BSS,0,0.09666666666666666,1,intercept_only,True,,0.0
+2-17,MGYe1,0,0.09666666666666666,1,intercept_only,True,,0.0
+2-18,ADA,0,0.09666666666666666,1,intercept_only,True,,0.0
+2-29,SCH,0,0.09666666666666666,1,intercept_only,True,,0.0
+2-30,YSD,0,0.09666666666666666,1,intercept_only,True,,0.0
+2-31,YSY,0,0.09666666666666666,1,intercept_only,True,,0.0
+2-32',JJY,1,0.09666666666666666,1,intercept_only,True,,0.0
+2-34,CWS,0,0.09666666666666666,1,intercept_only,True,,0.0
+2-6,DGG,1,0.09666666666666666,1,intercept_only,True,,0.0
+2-7,DGD,0,0.09666666666666666,1,intercept_only,True,,0.0
+2-8,DGJ,0,0.09666666666666666,1,intercept_only,True,,0.0
+2-9,DGB,0,0.09666666666666666,1,intercept_only,True,,0.0
+3-17,MGYe1,0,0.09666666666666666,1,intercept_only,True,,0.0
+3-18,ADA,0,0.09666666666666666,1,intercept_only,True,,0.0
+3-29,SCH,0,0.09666666666666666,1,intercept_only,True,,0.0
+3-30,YSD,0,0.09666666666666666,1,intercept_only,True,,0.0
+3-31,YSY,0,0.09666666666666666,1,intercept_only,True,,0.0
+3-32',JJY,1,0.09666666666666666,1,intercept_only,True,,0.0
+3-34,CWS,0,0.09666666666666666,1,intercept_only,True,,0.0
+3-6,DGG,0,0.09666666666666666,1,intercept_only,True,,0.0
+3-7,DGD,0,0.09666666666666666,1,intercept_only,True,,0.0
+3-8,DGJ,0,0.09666666666666666,1,intercept_only,True,,0.0
+4-1,BSS,0,0.09666666666666666,1,intercept_only,True,,0.0
+4-17,MGYe1,0,0.09666666666666666,1,intercept_only,True,,0.0
+4-18,ADA,0,0.09666666666666666,1,intercept_only,True,,0.0
+4-29,SCH,0,0.09666666666666666,1,intercept_only,True,,0.0
+4-30,YSD,0,0.09666666666666666,1,intercept_only,True,,0.0
+4-31,YSY,0,0.09666666666666666,1,intercept_only,True,,0.0
+4-32',JJY,1,0.09666666666666666,1,intercept_only,True,,0.0
+4-34,CWS,0,0.09666666666666666,1,intercept_only,True,,0.0
+4-6,DGG,0,0.09666666666666666,1,intercept_only,True,,0.0
+4-7,DGD,0,0.09666666666666666,1,intercept_only,True,,0.0
+4-8,DGJ,0,0.09666666666666666,1,intercept_only,True,,0.0
+4-9,DGB,0,0.09666666666666666,1,intercept_only,True,,0.0
+1-11,DGY,0,0.09374999999999999,2,intercept_only,True,,0.0
+1-11b,DGYb,0,0.09374999999999999,2,intercept_only,True,,0.0
+1-12,USO,0,0.09374999999999999,2,intercept_only,True,,0.0
+1-15,GSG,0,0.09374999999999999,2,intercept_only,True,,0.0
+1-20,YCG,0,0.09374999999999999,2,intercept_only,True,,0.0
+1-22,UJG,0,0.09374999999999999,2,intercept_only,True,,0.0
+1-23,CGS,0,0.09374999999999999,2,intercept_only,True,,0.0
+1-25,GHGb,0,0.09374999999999999,2,intercept_only,True,,0.0
+1-27,GHJ,0,0.09374999999999999,2,intercept_only,True,,0.0
+1-3,BSI,0,0.09374999999999999,2,intercept_only,True,,0.0
+1-3b,BSIb,0,0.09374999999999999,2,intercept_only,True,,0.0
+1-4,BSO,0,0.09374999999999999,2,intercept_only,True,,0.0
+1-5,BSE,0,0.09374999999999999,2,intercept_only,True,,0.0
+2-11,DGY,0,0.09374999999999999,2,intercept_only,True,,0.0
+2-12,USO,0,0.09374999999999999,2,intercept_only,True,,0.0
+2-15,GSG,0,0.09374999999999999,2,intercept_only,True,,0.0
+2-20,YCG,0,0.09374999999999999,2,intercept_only,True,,0.0
+2-22,UJG,1,0.09374999999999999,2,intercept_only,True,,0.0
+2-23,CGS,1,0.09374999999999999,2,intercept_only,True,,0.0
+2-25,GHGb,0,0.09374999999999999,2,intercept_only,True,,0.0
+2-27,GHJ,0,0.09374999999999999,2,intercept_only,True,,0.0
+2-3,BSI,0,0.09374999999999999,2,intercept_only,True,,0.0
+2-4,BSO,0,0.09374999999999999,2,intercept_only,True,,0.0
+2-5,BSE,0,0.09374999999999999,2,intercept_only,True,,0.0
+3-11,DGY,0,0.09374999999999999,2,intercept_only,True,,0.0
+3-12,USO,0,0.09374999999999999,2,intercept_only,True,,0.0
+3-15,GSG,0,0.09374999999999999,2,intercept_only,True,,0.0
+3-20,YCG,0,0.09374999999999999,2,intercept_only,True,,0.0
+3-23,CGS,1,0.09374999999999999,2,intercept_only,True,,0.0
+3-25,GHGb,0,0.09374999999999999,2,intercept_only,True,,0.0
+3-27,GHJ,0,0.09374999999999999,2,intercept_only,True,,0.0
+3-3,BSI,0,0.09374999999999999,2,intercept_only,True,,0.0
+3-4,BSO,0,0.09374999999999999,2,intercept_only,True,,0.0
+3-5,BSE,0,0.09374999999999999,2,intercept_only,True,,0.0
+4-11,DGY,0,0.09374999999999999,2,intercept_only,True,,0.0
+4-12,USO,0,0.09374999999999999,2,intercept_only,True,,0.0
+4-15,GSG,0,0.09374999999999999,2,intercept_only,True,,0.0
+4-22,UJG,1,0.09374999999999999,2,intercept_only,True,,0.0
+4-23,CGS,1,0.09374999999999999,2,intercept_only,True,,0.0
+4-25,GHGb,0,0.09374999999999999,2,intercept_only,True,,0.0
+4-27,GHJ,0,0.09374999999999999,2,intercept_only,True,,0.0
+4-3,BSI,0,0.09374999999999999,2,intercept_only,True,,0.0
+4-4,BSO,0,0.09374999999999999,2,intercept_only,True,,0.0
+4-5,BSE,0,0.09374999999999999,2,intercept_only,True,,0.0
+1-10,DGC,0,0.06792175588676266,0,asv_ridge,True,,1.0
+1-13,USY,0,0.11014589974811245,0,asv_ridge,True,,1.0
+1-14,USJ,0,0.11218195008730977,0,asv_ridge,True,,1.0
+1-16,GCG,0,0.24331126589524346,0,asv_ridge,True,,1.0
+1-19,ADP,0,0.09963500587363751,0,asv_ridge,True,,1.0
+1-2,BSN,0,0.08307121852850376,0,asv_ridge,True,,1.0
+1-21,YCD,0,0.0482317419410195,0,asv_ridge,True,,0.0
+1-24,GHGa,0,0.03001973673977848,0,asv_ridge,True,,0.0
+1-26,GHH,0,0.13789683057504798,0,asv_ridge,True,,1.0
+1-28,MYS,0,0.1968170550761011,0,asv_ridge,True,,1.0
+1-32,JJN,0,0.06039671841890538,0,asv_ridge,True,,1.0
+1-33,CWM,0,0.07068684246317777,0,asv_ridge,True,,1.0
+2-10,DGC,1,0.11903055927498243,0,asv_ridge,True,,1.0
+2-13,USY,0,0.19119413615863254,0,asv_ridge,True,,1.0
+2-14,USJ,0,0.06726801730191605,0,asv_ridge,True,,1.0
+2-16,GCG,0,0.20344752201882066,0,asv_ridge,True,,1.0
+2-19,ADP,0,0.06478450080694809,0,asv_ridge,True,,1.0
+2-2,BSN,1,0.093518453818015,0,asv_ridge,True,,1.0
+2-21,YCD,0,0.03937250173185162,0,asv_ridge,True,,0.0
+2-24,GHGa,0,0.03577066671145857,0,asv_ridge,True,,0.0
+2-26,GHH,0,0.22399494265239275,0,asv_ridge,True,,1.0
+2-28,MYS,0,0.11604625145785806,0,asv_ridge,True,,1.0
+2-32,JJN,0,0.08636688495936397,0,asv_ridge,True,,1.0
+3-10,DGC,0,0.07836115922793495,0,asv_ridge,True,,1.0
+3-13,USY,0,0.10952329053603194,0,asv_ridge,True,,1.0
+3-14,USJ,0,0.12405775112228042,0,asv_ridge,True,,1.0
+3-16,GCG,0,0.1913534410253356,0,asv_ridge,True,,1.0
+3-19,ADP,0,0.05817550978499923,0,asv_ridge,True,,1.0
+3-2,BSN,1,0.12664539872554195,0,asv_ridge,True,,1.0
+3-21,YCD,0,0.025922229107345384,0,asv_ridge,True,,0.0
+3-24,GHGa,0,0.03391210442970046,0,asv_ridge,True,,0.0
+3-26,GHH,0,0.2574719339530299,0,asv_ridge,True,,1.0
+3-28,MYS,0,0.1421672621253553,0,asv_ridge,True,,1.0
+3-32,JJN,0,0.09580517367046296,0,asv_ridge,True,,1.0
+3-33,CWM,0,0.03961379221652965,0,asv_ridge,True,,0.0
+4-10,DGC,0,0.1326201812247715,0,asv_ridge,True,,1.0
+4-13,USY,0,0.13158724289284168,0,asv_ridge,True,,1.0
+4-14,USJ,0,0.10624932503872775,0,asv_ridge,True,,1.0
+4-16,GCG,0,0.20726255277622826,0,asv_ridge,True,,1.0
+4-2,BSN,1,0.18404935206362052,0,asv_ridge,True,,1.0
+4-21,YCD,0,0.08406640386165994,0,asv_ridge,True,,1.0
+4-26,GHH,0,0.23095296810599358,0,asv_ridge,True,,1.0
+4-28,MYS,0,0.21971382426980018,0,asv_ridge,True,,1.0
+4-32,JJN,0,0.11339769578170457,0,asv_ridge,True,,1.0
+4-33,CWM,0,0.060152564087171026,0,asv_ridge,True,,1.0
+1-1,BSS,0,0.06622358490245144,1,asv_ridge,True,,1.0
+1-17,MGYe1,0,0.05706410188505375,1,asv_ridge,True,,1.0
+1-18,ADA,0,0.02970451533333887,1,asv_ridge,True,,0.0
+1-29,SCH,0,0.09813120616343575,1,asv_ridge,True,,1.0
+1-30,YSD,0,0.052152104708302095,1,asv_ridge,True,,1.0
+1-31,YSY,0,0.07925579317666398,1,asv_ridge,True,,1.0
+1-34,CWS,0,0.21295551486069078,1,asv_ridge,True,,1.0
+1-6,DGG,0,0.07458563853540555,1,asv_ridge,True,,1.0
+1-7,DGD,0,0.019790329858449203,1,asv_ridge,True,,0.0
+1-8,DGJ,0,0.14952062319610937,1,asv_ridge,True,,1.0
+1-9,DGB,0,0.030932859726367928,1,asv_ridge,True,,0.0
+2-1,BSS,0,0.031777691273105965,1,asv_ridge,True,,0.0
+2-17,MGYe1,0,0.10713157007140452,1,asv_ridge,True,,1.0
+2-18,ADA,0,0.01993317213327806,1,asv_ridge,True,,0.0
+2-29,SCH,0,0.029891426997765747,1,asv_ridge,True,,0.0
+2-30,YSD,0,0.03843968941711421,1,asv_ridge,True,,0.0
+2-31,YSY,0,0.0740572084837445,1,asv_ridge,True,,1.0
+2-32',JJY,1,0.0393966962882002,1,asv_ridge,True,,0.0
+2-34,CWS,0,0.18094377303005327,1,asv_ridge,True,,1.0
+2-6,DGG,1,0.05962729651970443,1,asv_ridge,True,,1.0
+2-7,DGD,0,0.03512160859302817,1,asv_ridge,True,,0.0
+2-8,DGJ,0,0.20318799550843136,1,asv_ridge,True,,1.0
+2-9,DGB,0,0.03363958361169131,1,asv_ridge,True,,0.0
+3-17,MGYe1,0,0.057172116088766455,1,asv_ridge,True,,1.0
+3-18,ADA,0,0.023906731131270568,1,asv_ridge,True,,0.0
+3-29,SCH,0,0.18740504854433618,1,asv_ridge,True,,1.0
+3-30,YSD,0,0.039504571955946595,1,asv_ridge,True,,0.0
+3-31,YSY,0,0.05736510212843566,1,asv_ridge,True,,1.0
+3-32',JJY,1,0.06828493576346781,1,asv_ridge,True,,1.0
+3-34,CWS,0,0.24189852279476443,1,asv_ridge,True,,1.0
+3-6,DGG,0,0.052231292250524586,1,asv_ridge,True,,1.0
+3-7,DGD,0,0.06322283793888835,1,asv_ridge,True,,1.0
+3-8,DGJ,0,0.2015999287896825,1,asv_ridge,True,,1.0
+4-1,BSS,0,0.050039814596389065,1,asv_ridge,True,,1.0
+4-17,MGYe1,0,0.08151065578881125,1,asv_ridge,True,,1.0
+4-18,ADA,0,0.03508250327445827,1,asv_ridge,True,,0.0
+4-29,SCH,0,0.29062765320802547,1,asv_ridge,True,,1.0
+4-30,YSD,0,0.03882511838638853,1,asv_ridge,True,,0.0
+4-31,YSY,0,0.09753936067439854,1,asv_ridge,True,,1.0
+4-32',JJY,1,0.09480405418707341,1,asv_ridge,True,,1.0
+4-34,CWS,0,0.28106181415299697,1,asv_ridge,True,,1.0
+4-6,DGG,0,0.12996362701296438,1,asv_ridge,True,,1.0
+4-7,DGD,0,0.15439085099958932,1,asv_ridge,True,,1.0
+4-8,DGJ,0,0.21400542944329987,1,asv_ridge,True,,1.0
+4-9,DGB,0,0.05563848492979542,1,asv_ridge,True,,1.0
+1-11,DGY,0,0.11160723868219705,2,asv_ridge,True,,1.0
+1-11b,DGYb,0,0.1013268469322238,2,asv_ridge,True,,1.0
+1-12,USO,0,0.047900948945052695,2,asv_ridge,True,,0.0
+1-15,GSG,0,0.0820738850646265,2,asv_ridge,True,,1.0
+1-20,YCG,0,0.07808352382764831,2,asv_ridge,True,,1.0
+1-22,UJG,0,0.05360868127401983,2,asv_ridge,True,,1.0
+1-23,CGS,0,0.09944597158004545,2,asv_ridge,True,,1.0
+1-25,GHGb,0,0.07885189402427088,2,asv_ridge,True,,1.0
+1-27,GHJ,0,0.0707579839364235,2,asv_ridge,True,,1.0
+1-3,BSI,0,0.1792507105756693,2,asv_ridge,True,,1.0
+1-3b,BSIb,0,0.2594371566268955,2,asv_ridge,True,,1.0
+1-4,BSO,0,0.08969859318065909,2,asv_ridge,True,,1.0
+1-5,BSE,0,0.09933984236156727,2,asv_ridge,True,,1.0
+2-11,DGY,0,0.08884680563150092,2,asv_ridge,True,,1.0
+2-12,USO,0,0.037209185649290294,2,asv_ridge,True,,0.0
+2-15,GSG,0,0.07038983052711904,2,asv_ridge,True,,1.0
+2-20,YCG,0,0.11107546949525905,2,asv_ridge,True,,1.0
+2-22,UJG,1,0.05797506082765072,2,asv_ridge,True,,1.0
+2-23,CGS,1,0.13564970065467896,2,asv_ridge,True,,1.0
+2-25,GHGb,0,0.1022570037207086,2,asv_ridge,True,,1.0
+2-27,GHJ,0,0.06572941254938637,2,asv_ridge,True,,1.0
+2-3,BSI,0,0.34176720899644314,2,asv_ridge,True,,1.0
+2-4,BSO,0,0.13380499077457206,2,asv_ridge,True,,1.0
+2-5,BSE,0,0.11865654805960732,2,asv_ridge,True,,1.0
+3-11,DGY,0,0.08120326131721782,2,asv_ridge,True,,1.0
+3-12,USO,0,0.04682310182654565,2,asv_ridge,True,,0.0
+3-15,GSG,0,0.05831616609468284,2,asv_ridge,True,,1.0
+3-20,YCG,0,0.053694337334841066,2,asv_ridge,True,,1.0
+3-23,CGS,1,0.08712164281784779,2,asv_ridge,True,,1.0
+3-25,GHGb,0,0.061795314805207155,2,asv_ridge,True,,1.0
+3-27,GHJ,0,0.04924762416477456,2,asv_ridge,True,,0.0
+3-3,BSI,0,0.19607575642413094,2,asv_ridge,True,,1.0
+3-4,BSO,0,0.1479912162501793,2,asv_ridge,True,,1.0
+3-5,BSE,0,0.11785012379328492,2,asv_ridge,True,,1.0
+4-11,DGY,0,0.17797060782380308,2,asv_ridge,True,,1.0
+4-12,USO,0,0.05109971444694638,2,asv_ridge,True,,1.0
+4-15,GSG,0,0.0636877253426255,2,asv_ridge,True,,1.0
+4-22,UJG,1,0.1061487802190074,2,asv_ridge,True,,1.0
+4-23,CGS,1,0.08091066816475478,2,asv_ridge,True,,1.0
+4-25,GHGb,0,0.0726828031999622,2,asv_ridge,True,,1.0
+4-27,GHJ,0,0.07189392412067852,2,asv_ridge,True,,1.0
+4-3,BSI,0,0.24253119733458703,2,asv_ridge,True,,1.0
+4-4,BSO,0,0.17647786431750356,2,asv_ridge,True,,1.0
+4-5,BSE,0,0.09932512259305831,2,asv_ridge,True,,1.0
+1-10,DGC,0,0.0035932312514922312,0,asv_elastic_net,True,,0.0
+1-13,USY,0,0.13333362194459578,0,asv_elastic_net,True,,1.0
+1-14,USJ,0,0.02456918163958397,0,asv_elastic_net,True,,0.0
+1-16,GCG,0,0.8291789550805008,0,asv_elastic_net,True,,1.0
+1-19,ADP,0,0.040651259218114494,0,asv_elastic_net,True,,0.0
+1-2,BSN,0,0.008750983714145382,0,asv_elastic_net,True,,0.0
+1-21,YCD,0,0.0008585873118343615,0,asv_elastic_net,True,,0.0
+1-24,GHGa,0,8.764999956228827e-05,0,asv_elastic_net,True,,0.0
+1-26,GHH,0,0.23663817133403767,0,asv_elastic_net,True,,1.0
+1-28,MYS,0,0.36754626190608614,0,asv_elastic_net,True,,1.0
+1-32,JJN,0,0.01706325715935619,0,asv_elastic_net,True,,0.0
+1-33,CWM,0,0.027670147600783117,0,asv_elastic_net,True,,0.0
+2-10,DGC,1,0.011561700465247743,0,asv_elastic_net,True,,0.0
+2-13,USY,0,0.6632713911187521,0,asv_elastic_net,True,,1.0
+2-14,USJ,0,0.0012971657354832664,0,asv_elastic_net,True,,0.0
+2-16,GCG,0,0.7038826448389209,0,asv_elastic_net,True,,1.0
+2-19,ADP,0,0.001750853481448156,0,asv_elastic_net,True,,0.0
+2-2,BSN,1,0.046664730451807475,0,asv_elastic_net,True,,0.0
+2-21,YCD,0,0.0038439858841688816,0,asv_elastic_net,True,,0.0
+2-24,GHGa,0,0.0002556613407800379,0,asv_elastic_net,True,,0.0
+2-26,GHH,0,0.47252360090592394,0,asv_elastic_net,True,,1.0
+2-28,MYS,0,0.14589097556039027,0,asv_elastic_net,True,,1.0
+2-32,JJN,0,0.1643946006801148,0,asv_elastic_net,True,,1.0
+3-10,DGC,0,0.01080538460878743,0,asv_elastic_net,True,,0.0
+3-13,USY,0,0.010914398818677994,0,asv_elastic_net,True,,0.0
+3-14,USJ,0,0.11328839085411509,0,asv_elastic_net,True,,1.0
+3-16,GCG,0,0.6102327207368397,0,asv_elastic_net,True,,1.0
+3-19,ADP,0,0.0017167899716885198,0,asv_elastic_net,True,,0.0
+3-2,BSN,1,0.07994639430371091,0,asv_elastic_net,True,,1.0
+3-21,YCD,0,0.0003623903535284508,0,asv_elastic_net,True,,0.0
+3-24,GHGa,0,0.0004177264343458701,0,asv_elastic_net,True,,0.0
+3-26,GHH,0,0.8459168694464579,0,asv_elastic_net,True,,1.0
+3-28,MYS,0,0.0768347258612942,0,asv_elastic_net,True,,1.0
+3-32,JJN,0,0.09396118870157741,0,asv_elastic_net,True,,1.0
+3-33,CWM,0,0.0004950908412267259,0,asv_elastic_net,True,,0.0
+4-10,DGC,0,0.028676579489536613,0,asv_elastic_net,True,,0.0
+4-13,USY,0,0.2645877414386353,0,asv_elastic_net,True,,1.0
+4-14,USJ,0,0.034187400385782316,0,asv_elastic_net,True,,0.0
+4-16,GCG,0,0.834346636874999,0,asv_elastic_net,True,,1.0
+4-2,BSN,1,0.622214510715697,0,asv_elastic_net,True,,1.0
+4-21,YCD,0,0.061765037408566134,0,asv_elastic_net,True,,1.0
+4-26,GHH,0,0.5909710113569222,0,asv_elastic_net,True,,1.0
+4-28,MYS,0,0.4694587601650213,0,asv_elastic_net,True,,1.0
+4-32,JJN,0,0.2060710448132435,0,asv_elastic_net,True,,1.0
+4-33,CWM,0,0.007177048808140002,0,asv_elastic_net,True,,0.0
+1-1,BSS,0,0.057905676937504064,1,asv_elastic_net,True,,1.0
+1-17,MGYe1,0,0.02109826627363062,1,asv_elastic_net,True,,0.0
+1-18,ADA,0,0.015595553844050718,1,asv_elastic_net,True,,0.0
+1-29,SCH,0,0.02303408965905549,1,asv_elastic_net,True,,0.0
+1-30,YSD,0,0.008420993683009925,1,asv_elastic_net,True,,0.0
+1-31,YSY,0,0.053334343236195826,1,asv_elastic_net,True,,1.0
+1-34,CWS,0,0.4034516935727145,1,asv_elastic_net,True,,1.0
+1-6,DGG,0,0.05377655431453177,1,asv_elastic_net,True,,1.0
+1-7,DGD,0,0.006079184766422511,1,asv_elastic_net,True,,0.0
+1-8,DGJ,0,0.20116002775870703,1,asv_elastic_net,True,,1.0
+1-9,DGB,0,0.01100947103160882,1,asv_elastic_net,True,,0.0
+2-1,BSS,0,0.009847586009600715,1,asv_elastic_net,True,,0.0
+2-17,MGYe1,0,0.19067526871557403,1,asv_elastic_net,True,,1.0
+2-18,ADA,0,0.004566307157145547,1,asv_elastic_net,True,,0.0
+2-29,SCH,0,0.006125291392217248,1,asv_elastic_net,True,,0.0
+2-30,YSD,0,0.002837559657861246,1,asv_elastic_net,True,,0.0
+2-31,YSY,0,0.028850285444807885,1,asv_elastic_net,True,,0.0
+2-32',JJY,1,0.018453932954510196,1,asv_elastic_net,True,,0.0
+2-34,CWS,0,0.19505420884490018,1,asv_elastic_net,True,,1.0
+2-6,DGG,1,0.01386333773968735,1,asv_elastic_net,True,,0.0
+2-7,DGD,0,0.023752485839592653,1,asv_elastic_net,True,,0.0
+2-8,DGJ,0,0.38510249817227404,1,asv_elastic_net,True,,1.0
+2-9,DGB,0,0.008749786794946693,1,asv_elastic_net,True,,0.0
+3-17,MGYe1,0,0.03163683771038364,1,asv_elastic_net,True,,0.0
+3-18,ADA,0,0.006104468774306982,1,asv_elastic_net,True,,0.0
+3-29,SCH,0,0.14424602222088612,1,asv_elastic_net,True,,1.0
+3-30,YSD,0,0.0036007505769484103,1,asv_elastic_net,True,,0.0
+3-31,YSY,0,0.018370980906015407,1,asv_elastic_net,True,,0.0
+3-32',JJY,1,0.031131129671501934,1,asv_elastic_net,True,,0.0
+3-34,CWS,0,0.32893436840885903,1,asv_elastic_net,True,,1.0
+3-6,DGG,0,0.016850903873827008,1,asv_elastic_net,True,,0.0
+3-7,DGD,0,0.052140644292403525,1,asv_elastic_net,True,,1.0
+3-8,DGJ,0,0.3241054750082094,1,asv_elastic_net,True,,1.0
+4-1,BSS,0,0.025646533069948085,1,asv_elastic_net,True,,0.0
+4-17,MGYe1,0,0.028814241753975987,1,asv_elastic_net,True,,0.0
+4-18,ADA,0,0.004789589750272675,1,asv_elastic_net,True,,0.0
+4-29,SCH,0,0.2843589496039112,1,asv_elastic_net,True,,1.0
+4-30,YSD,0,0.005504924150273111,1,asv_elastic_net,True,,0.0
+4-31,YSY,0,0.06902034825960911,1,asv_elastic_net,True,,1.0
+4-32',JJY,1,0.09149441900890799,1,asv_elastic_net,True,,1.0
+4-34,CWS,0,0.4401790371029872,1,asv_elastic_net,True,,1.0
+4-6,DGG,0,0.15361648708405962,1,asv_elastic_net,True,,1.0
+4-7,DGD,0,0.19186264837590494,1,asv_elastic_net,True,,1.0
+4-8,DGJ,0,0.19839372964663946,1,asv_elastic_net,True,,1.0
+4-9,DGB,0,0.023515287426200487,1,asv_elastic_net,True,,0.0
+1-11,DGY,0,,2,asv_elastic_net,False,"inner search failed for this outer fold: family asv_elastic_net, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-11b,DGYb,0,,2,asv_elastic_net,False,"inner search failed for this outer fold: family asv_elastic_net, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-12,USO,0,,2,asv_elastic_net,False,"inner search failed for this outer fold: family asv_elastic_net, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-15,GSG,0,,2,asv_elastic_net,False,"inner search failed for this outer fold: family asv_elastic_net, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-20,YCG,0,,2,asv_elastic_net,False,"inner search failed for this outer fold: family asv_elastic_net, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-22,UJG,0,,2,asv_elastic_net,False,"inner search failed for this outer fold: family asv_elastic_net, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-23,CGS,0,,2,asv_elastic_net,False,"inner search failed for this outer fold: family asv_elastic_net, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-25,GHGb,0,,2,asv_elastic_net,False,"inner search failed for this outer fold: family asv_elastic_net, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-27,GHJ,0,,2,asv_elastic_net,False,"inner search failed for this outer fold: family asv_elastic_net, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-3,BSI,0,,2,asv_elastic_net,False,"inner search failed for this outer fold: family asv_elastic_net, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-3b,BSIb,0,,2,asv_elastic_net,False,"inner search failed for this outer fold: family asv_elastic_net, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-4,BSO,0,,2,asv_elastic_net,False,"inner search failed for this outer fold: family asv_elastic_net, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-5,BSE,0,,2,asv_elastic_net,False,"inner search failed for this outer fold: family asv_elastic_net, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-11,DGY,0,,2,asv_elastic_net,False,"inner search failed for this outer fold: family asv_elastic_net, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-12,USO,0,,2,asv_elastic_net,False,"inner search failed for this outer fold: family asv_elastic_net, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-15,GSG,0,,2,asv_elastic_net,False,"inner search failed for this outer fold: family asv_elastic_net, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-20,YCG,0,,2,asv_elastic_net,False,"inner search failed for this outer fold: family asv_elastic_net, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-22,UJG,1,,2,asv_elastic_net,False,"inner search failed for this outer fold: family asv_elastic_net, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-23,CGS,1,,2,asv_elastic_net,False,"inner search failed for this outer fold: family asv_elastic_net, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-25,GHGb,0,,2,asv_elastic_net,False,"inner search failed for this outer fold: family asv_elastic_net, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-27,GHJ,0,,2,asv_elastic_net,False,"inner search failed for this outer fold: family asv_elastic_net, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-3,BSI,0,,2,asv_elastic_net,False,"inner search failed for this outer fold: family asv_elastic_net, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-4,BSO,0,,2,asv_elastic_net,False,"inner search failed for this outer fold: family asv_elastic_net, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-5,BSE,0,,2,asv_elastic_net,False,"inner search failed for this outer fold: family asv_elastic_net, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-11,DGY,0,,2,asv_elastic_net,False,"inner search failed for this outer fold: family asv_elastic_net, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-12,USO,0,,2,asv_elastic_net,False,"inner search failed for this outer fold: family asv_elastic_net, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-15,GSG,0,,2,asv_elastic_net,False,"inner search failed for this outer fold: family asv_elastic_net, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-20,YCG,0,,2,asv_elastic_net,False,"inner search failed for this outer fold: family asv_elastic_net, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-23,CGS,1,,2,asv_elastic_net,False,"inner search failed for this outer fold: family asv_elastic_net, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-25,GHGb,0,,2,asv_elastic_net,False,"inner search failed for this outer fold: family asv_elastic_net, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-27,GHJ,0,,2,asv_elastic_net,False,"inner search failed for this outer fold: family asv_elastic_net, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-3,BSI,0,,2,asv_elastic_net,False,"inner search failed for this outer fold: family asv_elastic_net, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-4,BSO,0,,2,asv_elastic_net,False,"inner search failed for this outer fold: family asv_elastic_net, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-5,BSE,0,,2,asv_elastic_net,False,"inner search failed for this outer fold: family asv_elastic_net, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-11,DGY,0,,2,asv_elastic_net,False,"inner search failed for this outer fold: family asv_elastic_net, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-12,USO,0,,2,asv_elastic_net,False,"inner search failed for this outer fold: family asv_elastic_net, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-15,GSG,0,,2,asv_elastic_net,False,"inner search failed for this outer fold: family asv_elastic_net, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-22,UJG,1,,2,asv_elastic_net,False,"inner search failed for this outer fold: family asv_elastic_net, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-23,CGS,1,,2,asv_elastic_net,False,"inner search failed for this outer fold: family asv_elastic_net, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-25,GHGb,0,,2,asv_elastic_net,False,"inner search failed for this outer fold: family asv_elastic_net, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-27,GHJ,0,,2,asv_elastic_net,False,"inner search failed for this outer fold: family asv_elastic_net, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-3,BSI,0,,2,asv_elastic_net,False,"inner search failed for this outer fold: family asv_elastic_net, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-4,BSO,0,,2,asv_elastic_net,False,"inner search failed for this outer fold: family asv_elastic_net, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-5,BSE,0,,2,asv_elastic_net,False,"inner search failed for this outer fold: family asv_elastic_net, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",

@@ -1,0 +1,7 @@
+label,n_pos_samples,n_pos_sites,n_sites
+acid_accumulation,4,3,37
+acid_base_balance,20,12,37
+acid_high,15,9,37
+ammonia_toxicity,25,11,37
+biogas_quality,11,7,37
+buffer_capacity,8,5,37

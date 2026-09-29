@@ -1,0 +1,805 @@
+sample_id,site_id,target,prediction,outer_fold,family,scorable,reason,predicted_class
+1-10,DGC,0,0.05,0,intercept_only,True,,0.0
+1-13,USY,0,0.05,0,intercept_only,True,,0.0
+1-14,USJ,0,0.05,0,intercept_only,True,,0.0
+1-16,GCG,0,0.05,0,intercept_only,True,,0.0
+1-19,ADP,0,0.05,0,intercept_only,True,,0.0
+1-2,BSN,0,0.05,0,intercept_only,True,,0.0
+1-21,YCD,0,0.05,0,intercept_only,True,,0.0
+1-24,GHGa,0,0.05,0,intercept_only,True,,0.0
+1-26,GHH,0,0.05,0,intercept_only,True,,0.0
+1-28,MYS,0,0.05,0,intercept_only,True,,0.0
+1-32,JJN,0,0.05,0,intercept_only,True,,0.0
+1-33,CWM,0,0.05,0,intercept_only,True,,0.0
+2-10,DGC,0,0.05,0,intercept_only,True,,0.0
+2-13,USY,0,0.05,0,intercept_only,True,,0.0
+2-14,USJ,0,0.05,0,intercept_only,True,,0.0
+2-16,GCG,0,0.05,0,intercept_only,True,,0.0
+2-19,ADP,0,0.05,0,intercept_only,True,,0.0
+2-2,BSN,0,0.05,0,intercept_only,True,,0.0
+2-21,YCD,0,0.05,0,intercept_only,True,,0.0
+2-24,GHGa,0,0.05,0,intercept_only,True,,0.0
+2-26,GHH,0,0.05,0,intercept_only,True,,0.0
+2-28,MYS,0,0.05,0,intercept_only,True,,0.0
+2-32,JJN,0,0.05,0,intercept_only,True,,0.0
+3-10,DGC,0,0.05,0,intercept_only,True,,0.0
+3-13,USY,0,0.05,0,intercept_only,True,,0.0
+3-14,USJ,0,0.05,0,intercept_only,True,,0.0
+3-16,GCG,0,0.05,0,intercept_only,True,,0.0
+3-19,ADP,0,0.05,0,intercept_only,True,,0.0
+3-2,BSN,0,0.05,0,intercept_only,True,,0.0
+3-21,YCD,0,0.05,0,intercept_only,True,,0.0
+3-24,GHGa,1,0.05,0,intercept_only,True,,0.0
+3-26,GHH,0,0.05,0,intercept_only,True,,0.0
+3-28,MYS,0,0.05,0,intercept_only,True,,0.0
+3-32,JJN,0,0.05,0,intercept_only,True,,0.0
+3-33,CWM,0,0.05,0,intercept_only,True,,0.0
+4-10,DGC,0,0.05,0,intercept_only,True,,0.0
+4-13,USY,0,0.05,0,intercept_only,True,,0.0
+4-14,USJ,0,0.05,0,intercept_only,True,,0.0
+4-16,GCG,0,0.05,0,intercept_only,True,,0.0
+4-2,BSN,0,0.05,0,intercept_only,True,,0.0
+4-21,YCD,0,0.05,0,intercept_only,True,,0.0
+4-26,GHH,0,0.05,0,intercept_only,True,,0.0
+4-28,MYS,0,0.05,0,intercept_only,True,,0.0
+4-32,JJN,0,0.05,0,intercept_only,True,,0.0
+4-33,CWM,0,0.05,0,intercept_only,True,,0.0
+1-1,BSS,0,0.013333333333333334,1,intercept_only,True,,0.0
+1-17,MGYe1,0,0.013333333333333334,1,intercept_only,True,,0.0
+1-18,ADA,0,0.013333333333333334,1,intercept_only,True,,0.0
+1-29,SCH,0,0.013333333333333334,1,intercept_only,True,,0.0
+1-30,YSD,0,0.013333333333333334,1,intercept_only,True,,0.0
+1-31,YSY,0,0.013333333333333334,1,intercept_only,True,,0.0
+1-34,CWS,0,0.013333333333333334,1,intercept_only,True,,0.0
+1-6,DGG,0,0.013333333333333334,1,intercept_only,True,,0.0
+1-7,DGD,0,0.013333333333333334,1,intercept_only,True,,0.0
+1-8,DGJ,0,0.013333333333333334,1,intercept_only,True,,0.0
+1-9,DGB,0,0.013333333333333334,1,intercept_only,True,,0.0
+2-1,BSS,0,0.013333333333333334,1,intercept_only,True,,0.0
+2-17,MGYe1,0,0.013333333333333334,1,intercept_only,True,,0.0
+2-18,ADA,0,0.013333333333333334,1,intercept_only,True,,0.0
+2-29,SCH,1,0.013333333333333334,1,intercept_only,True,,0.0
+2-30,YSD,0,0.013333333333333334,1,intercept_only,True,,0.0
+2-31,YSY,0,0.013333333333333334,1,intercept_only,True,,0.0
+2-32',JJY,1,0.013333333333333334,1,intercept_only,True,,0.0
+2-34,CWS,0,0.013333333333333334,1,intercept_only,True,,0.0
+2-6,DGG,0,0.013333333333333334,1,intercept_only,True,,0.0
+2-7,DGD,0,0.013333333333333334,1,intercept_only,True,,0.0
+2-8,DGJ,0,0.013333333333333334,1,intercept_only,True,,0.0
+2-9,DGB,0,0.013333333333333334,1,intercept_only,True,,0.0
+3-17,MGYe1,0,0.013333333333333334,1,intercept_only,True,,0.0
+3-18,ADA,0,0.013333333333333334,1,intercept_only,True,,0.0
+3-29,SCH,0,0.013333333333333334,1,intercept_only,True,,0.0
+3-30,YSD,0,0.013333333333333334,1,intercept_only,True,,0.0
+3-31,YSY,0,0.013333333333333334,1,intercept_only,True,,0.0
+3-32',JJY,1,0.013333333333333334,1,intercept_only,True,,0.0
+3-34,CWS,0,0.013333333333333334,1,intercept_only,True,,0.0
+3-6,DGG,0,0.013333333333333334,1,intercept_only,True,,0.0
+3-7,DGD,0,0.013333333333333334,1,intercept_only,True,,0.0
+3-8,DGJ,0,0.013333333333333334,1,intercept_only,True,,0.0
+4-1,BSS,0,0.013333333333333334,1,intercept_only,True,,0.0
+4-17,MGYe1,0,0.013333333333333334,1,intercept_only,True,,0.0
+4-18,ADA,0,0.013333333333333334,1,intercept_only,True,,0.0
+4-29,SCH,0,0.013333333333333334,1,intercept_only,True,,0.0
+4-30,YSD,0,0.013333333333333334,1,intercept_only,True,,0.0
+4-31,YSY,0,0.013333333333333334,1,intercept_only,True,,0.0
+4-32',JJY,1,0.013333333333333334,1,intercept_only,True,,0.0
+4-34,CWS,0,0.013333333333333334,1,intercept_only,True,,0.0
+4-6,DGG,0,0.013333333333333334,1,intercept_only,True,,0.0
+4-7,DGD,0,0.013333333333333334,1,intercept_only,True,,0.0
+4-8,DGJ,0,0.013333333333333334,1,intercept_only,True,,0.0
+4-9,DGB,0,0.013333333333333334,1,intercept_only,True,,0.0
+1-11,DGY,0,0.06597222222222221,2,intercept_only,True,,0.0
+1-11b,DGYb,0,0.06597222222222221,2,intercept_only,True,,0.0
+1-12,USO,0,0.06597222222222221,2,intercept_only,True,,0.0
+1-15,GSG,0,0.06597222222222221,2,intercept_only,True,,0.0
+1-20,YCG,0,0.06597222222222221,2,intercept_only,True,,0.0
+1-22,UJG,0,0.06597222222222221,2,intercept_only,True,,0.0
+1-23,CGS,0,0.06597222222222221,2,intercept_only,True,,0.0
+1-25,GHGb,0,0.06597222222222221,2,intercept_only,True,,0.0
+1-27,GHJ,0,0.06597222222222221,2,intercept_only,True,,0.0
+1-3,BSI,0,0.06597222222222221,2,intercept_only,True,,0.0
+1-3b,BSIb,0,0.06597222222222221,2,intercept_only,True,,0.0
+1-4,BSO,0,0.06597222222222221,2,intercept_only,True,,0.0
+1-5,BSE,0,0.06597222222222221,2,intercept_only,True,,0.0
+2-11,DGY,0,0.06597222222222221,2,intercept_only,True,,0.0
+2-12,USO,0,0.06597222222222221,2,intercept_only,True,,0.0
+2-15,GSG,0,0.06597222222222221,2,intercept_only,True,,0.0
+2-20,YCG,0,0.06597222222222221,2,intercept_only,True,,0.0
+2-22,UJG,0,0.06597222222222221,2,intercept_only,True,,0.0
+2-23,CGS,0,0.06597222222222221,2,intercept_only,True,,0.0
+2-25,GHGb,0,0.06597222222222221,2,intercept_only,True,,0.0
+2-27,GHJ,0,0.06597222222222221,2,intercept_only,True,,0.0
+2-3,BSI,0,0.06597222222222221,2,intercept_only,True,,0.0
+2-4,BSO,0,0.06597222222222221,2,intercept_only,True,,0.0
+2-5,BSE,0,0.06597222222222221,2,intercept_only,True,,0.0
+3-11,DGY,0,0.06597222222222221,2,intercept_only,True,,0.0
+3-12,USO,0,0.06597222222222221,2,intercept_only,True,,0.0
+3-15,GSG,0,0.06597222222222221,2,intercept_only,True,,0.0
+3-20,YCG,0,0.06597222222222221,2,intercept_only,True,,0.0
+3-23,CGS,0,0.06597222222222221,2,intercept_only,True,,0.0
+3-25,GHGb,0,0.06597222222222221,2,intercept_only,True,,0.0
+3-27,GHJ,0,0.06597222222222221,2,intercept_only,True,,0.0
+3-3,BSI,0,0.06597222222222221,2,intercept_only,True,,0.0
+3-4,BSO,0,0.06597222222222221,2,intercept_only,True,,0.0
+3-5,BSE,0,0.06597222222222221,2,intercept_only,True,,0.0
+4-11,DGY,0,0.06597222222222221,2,intercept_only,True,,0.0
+4-12,USO,0,0.06597222222222221,2,intercept_only,True,,0.0
+4-15,GSG,0,0.06597222222222221,2,intercept_only,True,,0.0
+4-22,UJG,0,0.06597222222222221,2,intercept_only,True,,0.0
+4-23,CGS,0,0.06597222222222221,2,intercept_only,True,,0.0
+4-25,GHGb,0,0.06597222222222221,2,intercept_only,True,,0.0
+4-27,GHJ,0,0.06597222222222221,2,intercept_only,True,,0.0
+4-3,BSI,0,0.06597222222222221,2,intercept_only,True,,0.0
+4-4,BSO,0,0.06597222222222221,2,intercept_only,True,,0.0
+4-5,BSE,0,0.06597222222222221,2,intercept_only,True,,0.0
+1-10,DGC,0,0.028031817054430853,0,phylogeny_only,True,,0.0
+1-13,USY,0,0.054129262619349194,0,phylogeny_only,True,,0.0
+1-14,USJ,0,0.015941651939529355,0,phylogeny_only,True,,0.0
+1-16,GCG,0,0.05053553619423856,0,phylogeny_only,True,,0.0
+1-19,ADP,0,0.03502158171204615,0,phylogeny_only,True,,0.0
+1-2,BSN,0,0.032117550426514124,0,phylogeny_only,True,,0.0
+1-21,YCD,0,0.04016656736451965,0,phylogeny_only,True,,0.0
+1-24,GHGa,0,0.04695393386481119,0,phylogeny_only,True,,0.0
+1-26,GHH,0,0.12860878645304663,0,phylogeny_only,True,,0.0
+1-28,MYS,0,0.08938587193782552,0,phylogeny_only,True,,0.0
+1-32,JJN,0,0.028791318524242826,0,phylogeny_only,True,,0.0
+1-33,CWM,0,0.051588868397935174,0,phylogeny_only,True,,0.0
+2-10,DGC,0,0.028329227824495817,0,phylogeny_only,True,,0.0
+2-13,USY,0,0.04905467282015091,0,phylogeny_only,True,,0.0
+2-14,USJ,0,0.013109967114867307,0,phylogeny_only,True,,0.0
+2-16,GCG,0,0.0327367625022199,0,phylogeny_only,True,,0.0
+2-19,ADP,0,0.02925331162182665,0,phylogeny_only,True,,0.0
+2-2,BSN,0,0.047476384241595906,0,phylogeny_only,True,,0.0
+2-21,YCD,0,0.026783774208843824,0,phylogeny_only,True,,0.0
+2-24,GHGa,0,0.035824788600991433,0,phylogeny_only,True,,0.0
+2-26,GHH,0,0.12445951143726154,0,phylogeny_only,True,,0.0
+2-28,MYS,0,0.10678490418188849,0,phylogeny_only,True,,0.0
+2-32,JJN,0,0.04020309844434706,0,phylogeny_only,True,,0.0
+3-10,DGC,0,0.029839901232266517,0,phylogeny_only,True,,0.0
+3-13,USY,0,0.028221650455749703,0,phylogeny_only,True,,0.0
+3-14,USJ,0,0.03423599503450532,0,phylogeny_only,True,,0.0
+3-16,GCG,0,0.013725337474538671,0,phylogeny_only,True,,0.0
+3-19,ADP,0,0.02720804997530008,0,phylogeny_only,True,,0.0
+3-2,BSN,0,0.01958968962965229,0,phylogeny_only,True,,0.0
+3-21,YCD,0,0.10148078487443415,0,phylogeny_only,True,,0.0
+3-24,GHGa,1,0.020488200957666496,0,phylogeny_only,True,,0.0
+3-26,GHH,0,0.12705007170603352,0,phylogeny_only,True,,0.0
+3-28,MYS,0,0.0645697221023566,0,phylogeny_only,True,,0.0
+3-32,JJN,0,0.023306723570382333,0,phylogeny_only,True,,0.0
+3-33,CWM,0,0.05578117461222736,0,phylogeny_only,True,,0.0
+4-10,DGC,0,0.06880196707001789,0,phylogeny_only,True,,0.0
+4-13,USY,0,0.05866209597540531,0,phylogeny_only,True,,0.0
+4-14,USJ,0,0.02758855670467561,0,phylogeny_only,True,,0.0
+4-16,GCG,0,0.07423263376358084,0,phylogeny_only,True,,0.0
+4-2,BSN,0,0.06089664183330578,0,phylogeny_only,True,,0.0
+4-21,YCD,0,0.09057177997214895,0,phylogeny_only,True,,0.0
+4-26,GHH,0,0.1668143022368701,0,phylogeny_only,True,,1.0
+4-28,MYS,0,0.10335973630877116,0,phylogeny_only,True,,0.0
+4-32,JJN,0,0.045133007910384486,0,phylogeny_only,True,,0.0
+4-33,CWM,0,0.04126672053704079,0,phylogeny_only,True,,0.0
+1-1,BSS,0,,1,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-17,MGYe1,0,,1,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-18,ADA,0,,1,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-29,SCH,0,,1,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-30,YSD,0,,1,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-31,YSY,0,,1,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-34,CWS,0,,1,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-6,DGG,0,,1,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-7,DGD,0,,1,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-8,DGJ,0,,1,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-9,DGB,0,,1,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-1,BSS,0,,1,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-17,MGYe1,0,,1,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-18,ADA,0,,1,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-29,SCH,1,,1,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-30,YSD,0,,1,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-31,YSY,0,,1,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-32',JJY,1,,1,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-34,CWS,0,,1,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-6,DGG,0,,1,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-7,DGD,0,,1,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-8,DGJ,0,,1,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-9,DGB,0,,1,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-17,MGYe1,0,,1,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-18,ADA,0,,1,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-29,SCH,0,,1,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-30,YSD,0,,1,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-31,YSY,0,,1,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-32',JJY,1,,1,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-34,CWS,0,,1,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-6,DGG,0,,1,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-7,DGD,0,,1,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-8,DGJ,0,,1,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-1,BSS,0,,1,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-17,MGYe1,0,,1,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-18,ADA,0,,1,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-29,SCH,0,,1,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-30,YSD,0,,1,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-31,YSY,0,,1,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-32',JJY,1,,1,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-34,CWS,0,,1,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-6,DGG,0,,1,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-7,DGD,0,,1,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-8,DGJ,0,,1,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-9,DGB,0,,1,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-11,DGY,0,,2,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-11b,DGYb,0,,2,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-12,USO,0,,2,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-15,GSG,0,,2,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-20,YCG,0,,2,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-22,UJG,0,,2,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-23,CGS,0,,2,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-25,GHGb,0,,2,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-27,GHJ,0,,2,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-3,BSI,0,,2,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-3b,BSIb,0,,2,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-4,BSO,0,,2,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-5,BSE,0,,2,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-11,DGY,0,,2,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-12,USO,0,,2,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-15,GSG,0,,2,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-20,YCG,0,,2,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-22,UJG,0,,2,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-23,CGS,0,,2,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-25,GHGb,0,,2,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-27,GHJ,0,,2,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-3,BSI,0,,2,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-4,BSO,0,,2,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-5,BSE,0,,2,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-11,DGY,0,,2,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-12,USO,0,,2,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-15,GSG,0,,2,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-20,YCG,0,,2,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-23,CGS,0,,2,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-25,GHGb,0,,2,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-27,GHJ,0,,2,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-3,BSI,0,,2,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-4,BSO,0,,2,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-5,BSE,0,,2,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-11,DGY,0,,2,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-12,USO,0,,2,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-15,GSG,0,,2,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-22,UJG,0,,2,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-23,CGS,0,,2,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-25,GHGb,0,,2,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-27,GHJ,0,,2,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-3,BSI,0,,2,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-4,BSO,0,,2,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-5,BSE,0,,2,phylogeny_only,False,"inner search failed for this outer fold: family phylogeny_only, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-10,DGC,0,,0,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-13,USY,0,,0,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-14,USJ,0,,0,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-16,GCG,0,,0,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-19,ADP,0,,0,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-2,BSN,0,,0,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-21,YCD,0,,0,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-24,GHGa,0,,0,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-26,GHH,0,,0,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-28,MYS,0,,0,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-32,JJN,0,,0,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-33,CWM,0,,0,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-10,DGC,0,,0,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-13,USY,0,,0,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-14,USJ,0,,0,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-16,GCG,0,,0,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-19,ADP,0,,0,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-2,BSN,0,,0,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-21,YCD,0,,0,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-24,GHGa,0,,0,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-26,GHH,0,,0,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-28,MYS,0,,0,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-32,JJN,0,,0,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-10,DGC,0,,0,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-13,USY,0,,0,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-14,USJ,0,,0,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-16,GCG,0,,0,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-19,ADP,0,,0,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-2,BSN,0,,0,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-21,YCD,0,,0,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-24,GHGa,1,,0,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-26,GHH,0,,0,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-28,MYS,0,,0,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-32,JJN,0,,0,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-33,CWM,0,,0,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-10,DGC,0,,0,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-13,USY,0,,0,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-14,USJ,0,,0,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-16,GCG,0,,0,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-2,BSN,0,,0,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-21,YCD,0,,0,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-26,GHH,0,,0,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-28,MYS,0,,0,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-32,JJN,0,,0,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-33,CWM,0,,0,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-1,BSS,0,,1,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-17,MGYe1,0,,1,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-18,ADA,0,,1,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-29,SCH,0,,1,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-30,YSD,0,,1,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-31,YSY,0,,1,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-34,CWS,0,,1,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-6,DGG,0,,1,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-7,DGD,0,,1,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-8,DGJ,0,,1,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-9,DGB,0,,1,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-1,BSS,0,,1,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-17,MGYe1,0,,1,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-18,ADA,0,,1,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-29,SCH,1,,1,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-30,YSD,0,,1,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-31,YSY,0,,1,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-32',JJY,1,,1,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-34,CWS,0,,1,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-6,DGG,0,,1,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-7,DGD,0,,1,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-8,DGJ,0,,1,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-9,DGB,0,,1,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-17,MGYe1,0,,1,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-18,ADA,0,,1,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-29,SCH,0,,1,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-30,YSD,0,,1,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-31,YSY,0,,1,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-32',JJY,1,,1,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-34,CWS,0,,1,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-6,DGG,0,,1,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-7,DGD,0,,1,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-8,DGJ,0,,1,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-1,BSS,0,,1,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-17,MGYe1,0,,1,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-18,ADA,0,,1,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-29,SCH,0,,1,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-30,YSD,0,,1,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-31,YSY,0,,1,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-32',JJY,1,,1,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-34,CWS,0,,1,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-6,DGG,0,,1,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-7,DGD,0,,1,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-8,DGJ,0,,1,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-9,DGB,0,,1,metadr_order_only,False,"inner search failed for this outer fold: family metadr_order_only, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-11,DGY,0,0.06846524374469201,2,metadr_order_only,True,,1.0
+1-11b,DGYb,0,0.08146065377334125,2,metadr_order_only,True,,1.0
+1-12,USO,0,0.0768642940068682,2,metadr_order_only,True,,1.0
+1-15,GSG,0,0.06518873600178948,2,metadr_order_only,True,,1.0
+1-20,YCG,0,0.05951223649792636,2,metadr_order_only,True,,1.0
+1-22,UJG,0,0.06657422606338904,2,metadr_order_only,True,,1.0
+1-23,CGS,0,0.06722281369310606,2,metadr_order_only,True,,1.0
+1-25,GHGb,0,0.058967773003807226,2,metadr_order_only,True,,1.0
+1-27,GHJ,0,0.06478529147984202,2,metadr_order_only,True,,1.0
+1-3,BSI,0,0.06615294432460334,2,metadr_order_only,True,,1.0
+1-3b,BSIb,0,0.06336173766669548,2,metadr_order_only,True,,1.0
+1-4,BSO,0,0.06601871275947938,2,metadr_order_only,True,,1.0
+1-5,BSE,0,0.07015386973067449,2,metadr_order_only,True,,1.0
+2-11,DGY,0,0.06530606814632767,2,metadr_order_only,True,,1.0
+2-12,USO,0,0.06979755210655098,2,metadr_order_only,True,,1.0
+2-15,GSG,0,0.06791614982072551,2,metadr_order_only,True,,1.0
+2-20,YCG,0,0.05726446008572299,2,metadr_order_only,True,,1.0
+2-22,UJG,0,0.08110495521883762,2,metadr_order_only,True,,1.0
+2-23,CGS,0,0.06805759272730076,2,metadr_order_only,True,,1.0
+2-25,GHGb,0,0.059126949431192115,2,metadr_order_only,True,,1.0
+2-27,GHJ,0,0.06207449135162185,2,metadr_order_only,True,,1.0
+2-3,BSI,0,0.06447290520967079,2,metadr_order_only,True,,1.0
+2-4,BSO,0,0.06704566982721873,2,metadr_order_only,True,,1.0
+2-5,BSE,0,0.07254723761420054,2,metadr_order_only,True,,1.0
+3-11,DGY,0,0.07170973873653977,2,metadr_order_only,True,,1.0
+3-12,USO,0,0.07176799361671839,2,metadr_order_only,True,,1.0
+3-15,GSG,0,0.06585742454290582,2,metadr_order_only,True,,1.0
+3-20,YCG,0,0.061295181526223604,2,metadr_order_only,True,,1.0
+3-23,CGS,0,0.06485542644490223,2,metadr_order_only,True,,1.0
+3-25,GHGb,0,0.06099922155149613,2,metadr_order_only,True,,1.0
+3-27,GHJ,0,0.06069724433207264,2,metadr_order_only,True,,1.0
+3-3,BSI,0,0.06271373715163082,2,metadr_order_only,True,,1.0
+3-4,BSO,0,0.06622899487732678,2,metadr_order_only,True,,1.0
+3-5,BSE,0,0.0719354620230933,2,metadr_order_only,True,,1.0
+4-11,DGY,0,0.08114354307130371,2,metadr_order_only,True,,1.0
+4-12,USO,0,0.07335841931163722,2,metadr_order_only,True,,1.0
+4-15,GSG,0,0.06325435115502259,2,metadr_order_only,True,,1.0
+4-22,UJG,0,0.07222846419571712,2,metadr_order_only,True,,1.0
+4-23,CGS,0,0.0659388263035319,2,metadr_order_only,True,,1.0
+4-25,GHGb,0,0.06123704879435177,2,metadr_order_only,True,,1.0
+4-27,GHJ,0,0.06120737108226985,2,metadr_order_only,True,,1.0
+4-3,BSI,0,0.06562963969033966,2,metadr_order_only,True,,1.0
+4-4,BSO,0,0.06714023613484271,2,metadr_order_only,True,,1.0
+4-5,BSE,0,0.06959064359482742,2,metadr_order_only,True,,1.0
+1-10,DGC,0,0.03589003082180767,0,shared_hybrid,True,,0.0
+1-13,USY,0,0.05957137399898085,0,shared_hybrid,True,,0.0
+1-14,USJ,0,0.02405578259778895,0,shared_hybrid,True,,0.0
+1-16,GCG,0,0.05032435020728839,0,shared_hybrid,True,,0.0
+1-19,ADP,0,0.04030729473554962,0,shared_hybrid,True,,0.0
+1-2,BSN,0,0.03977640799617253,0,shared_hybrid,True,,0.0
+1-21,YCD,0,0.04491251607939534,0,shared_hybrid,True,,0.0
+1-24,GHGa,0,0.050195904197463906,0,shared_hybrid,True,,0.0
+1-26,GHH,0,0.09678580989473955,0,shared_hybrid,True,,0.0
+1-28,MYS,0,0.07837783806985285,0,shared_hybrid,True,,0.0
+1-32,JJN,0,0.036250671039696855,0,shared_hybrid,True,,0.0
+1-33,CWM,0,0.05342073543875787,0,shared_hybrid,True,,0.0
+2-10,DGC,0,0.035698910965355435,0,shared_hybrid,True,,0.0
+2-13,USY,0,0.0543704747516687,0,shared_hybrid,True,,0.0
+2-14,USJ,0,0.02095523576515906,0,shared_hybrid,True,,0.0
+2-16,GCG,0,0.038501020884101775,0,shared_hybrid,True,,0.0
+2-19,ADP,0,0.03610989995053092,0,shared_hybrid,True,,0.0
+2-2,BSN,0,0.05003170899888063,0,shared_hybrid,True,,0.0
+2-21,YCD,0,0.03487934985122455,0,shared_hybrid,True,,0.0
+2-24,GHGa,0,0.0414549435528653,0,shared_hybrid,True,,0.0
+2-26,GHH,0,0.09623793259468993,0,shared_hybrid,True,,0.0
+2-28,MYS,0,0.08911522957685691,0,shared_hybrid,True,,0.0
+2-32,JJN,0,0.04383104501402307,0,shared_hybrid,True,,0.0
+3-10,DGC,0,0.03688391436950257,0,shared_hybrid,True,,0.0
+3-13,USY,0,0.03905402094791546,0,shared_hybrid,True,,0.0
+3-14,USJ,0,0.03798946291289951,0,shared_hybrid,True,,0.0
+3-16,GCG,0,0.0225803385989845,0,shared_hybrid,True,,0.0
+3-19,ADP,0,0.03376512946289539,0,shared_hybrid,True,,0.0
+3-2,BSN,0,0.029138092693732364,0,shared_hybrid,True,,0.0
+3-21,YCD,0,0.08428746248857674,0,shared_hybrid,True,,0.0
+3-24,GHGa,1,0.02986176732733758,0,shared_hybrid,True,,0.0
+3-26,GHH,0,0.09781277214453606,0,shared_hybrid,True,,0.0
+3-28,MYS,0,0.06376593610293958,0,shared_hybrid,True,,0.0
+3-32,JJN,0,0.03149476171474049,0,shared_hybrid,True,,0.0
+3-33,CWM,0,0.0551047125045117,0,shared_hybrid,True,,0.0
+4-10,DGC,0,0.06274916794898557,0,shared_hybrid,True,,0.0
+4-13,USY,0,0.062137397144721995,0,shared_hybrid,True,,0.0
+4-14,USJ,0,0.03446979759545962,0,shared_hybrid,True,,0.0
+4-16,GCG,0,0.07014629125139323,0,shared_hybrid,True,,0.0
+4-2,BSN,0,0.06315161728346162,0,shared_hybrid,True,,0.0
+4-21,YCD,0,0.07384520116285137,0,shared_hybrid,True,,0.0
+4-26,GHH,0,0.11720346609209016,0,shared_hybrid,True,,0.0
+4-28,MYS,0,0.08569117133701033,0,shared_hybrid,True,,0.0
+4-32,JJN,0,0.0471376965667216,0,shared_hybrid,True,,0.0
+4-33,CWM,0,0.045314677462846314,0,shared_hybrid,True,,0.0
+1-1,BSS,0,,1,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-17,MGYe1,0,,1,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-18,ADA,0,,1,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-29,SCH,0,,1,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-30,YSD,0,,1,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-31,YSY,0,,1,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-34,CWS,0,,1,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-6,DGG,0,,1,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-7,DGD,0,,1,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-8,DGJ,0,,1,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-9,DGB,0,,1,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-1,BSS,0,,1,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-17,MGYe1,0,,1,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-18,ADA,0,,1,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-29,SCH,1,,1,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-30,YSD,0,,1,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-31,YSY,0,,1,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-32',JJY,1,,1,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-34,CWS,0,,1,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-6,DGG,0,,1,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-7,DGD,0,,1,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-8,DGJ,0,,1,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-9,DGB,0,,1,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-17,MGYe1,0,,1,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-18,ADA,0,,1,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-29,SCH,0,,1,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-30,YSD,0,,1,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-31,YSY,0,,1,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-32',JJY,1,,1,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-34,CWS,0,,1,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-6,DGG,0,,1,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-7,DGD,0,,1,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-8,DGJ,0,,1,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-1,BSS,0,,1,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-17,MGYe1,0,,1,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-18,ADA,0,,1,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-29,SCH,0,,1,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-30,YSD,0,,1,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-31,YSY,0,,1,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-32',JJY,1,,1,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-34,CWS,0,,1,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-6,DGG,0,,1,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-7,DGD,0,,1,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-8,DGJ,0,,1,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-9,DGB,0,,1,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-11,DGY,0,,2,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-11b,DGYb,0,,2,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-12,USO,0,,2,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-15,GSG,0,,2,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-20,YCG,0,,2,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-22,UJG,0,,2,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-23,CGS,0,,2,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-25,GHGb,0,,2,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-27,GHJ,0,,2,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-3,BSI,0,,2,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-3b,BSIb,0,,2,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-4,BSO,0,,2,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-5,BSE,0,,2,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-11,DGY,0,,2,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-12,USO,0,,2,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-15,GSG,0,,2,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-20,YCG,0,,2,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-22,UJG,0,,2,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-23,CGS,0,,2,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-25,GHGb,0,,2,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-27,GHJ,0,,2,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-3,BSI,0,,2,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-4,BSO,0,,2,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-5,BSE,0,,2,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-11,DGY,0,,2,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-12,USO,0,,2,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-15,GSG,0,,2,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-20,YCG,0,,2,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-23,CGS,0,,2,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-25,GHGb,0,,2,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-27,GHJ,0,,2,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-3,BSI,0,,2,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-4,BSO,0,,2,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-5,BSE,0,,2,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-11,DGY,0,,2,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-12,USO,0,,2,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-15,GSG,0,,2,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-22,UJG,0,,2,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-23,CGS,0,,2,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-25,GHGb,0,,2,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-27,GHJ,0,,2,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-3,BSI,0,,2,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-4,BSO,0,,2,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-5,BSE,0,,2,shared_hybrid,False,"inner search failed for this outer fold: family shared_hybrid, outer fold 2: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-10,DGC,0,,0,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-13,USY,0,,0,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-14,USJ,0,,0,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-16,GCG,0,,0,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-19,ADP,0,,0,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-2,BSN,0,,0,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-21,YCD,0,,0,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-24,GHGa,0,,0,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-26,GHH,0,,0,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-28,MYS,0,,0,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-32,JJN,0,,0,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-33,CWM,0,,0,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-10,DGC,0,,0,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-13,USY,0,,0,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-14,USJ,0,,0,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-16,GCG,0,,0,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-19,ADP,0,,0,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-2,BSN,0,,0,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-21,YCD,0,,0,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-24,GHGa,0,,0,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-26,GHH,0,,0,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-28,MYS,0,,0,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-32,JJN,0,,0,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-10,DGC,0,,0,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-13,USY,0,,0,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-14,USJ,0,,0,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-16,GCG,0,,0,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-19,ADP,0,,0,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-2,BSN,0,,0,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-21,YCD,0,,0,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-24,GHGa,1,,0,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-26,GHH,0,,0,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-28,MYS,0,,0,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-32,JJN,0,,0,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-33,CWM,0,,0,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-10,DGC,0,,0,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-13,USY,0,,0,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-14,USJ,0,,0,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-16,GCG,0,,0,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-2,BSN,0,,0,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-21,YCD,0,,0,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-26,GHH,0,,0,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-28,MYS,0,,0,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-32,JJN,0,,0,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-33,CWM,0,,0,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-1,BSS,0,,1,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-17,MGYe1,0,,1,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-18,ADA,0,,1,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-29,SCH,0,,1,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-30,YSD,0,,1,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-31,YSY,0,,1,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-34,CWS,0,,1,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-6,DGG,0,,1,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-7,DGD,0,,1,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-8,DGJ,0,,1,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-9,DGB,0,,1,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-1,BSS,0,,1,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-17,MGYe1,0,,1,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-18,ADA,0,,1,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-29,SCH,1,,1,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-30,YSD,0,,1,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-31,YSY,0,,1,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-32',JJY,1,,1,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-34,CWS,0,,1,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-6,DGG,0,,1,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-7,DGD,0,,1,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-8,DGJ,0,,1,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-9,DGB,0,,1,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-17,MGYe1,0,,1,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-18,ADA,0,,1,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-29,SCH,0,,1,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-30,YSD,0,,1,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-31,YSY,0,,1,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-32',JJY,1,,1,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-34,CWS,0,,1,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-6,DGG,0,,1,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-7,DGD,0,,1,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-8,DGJ,0,,1,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-1,BSS,0,,1,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-17,MGYe1,0,,1,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-18,ADA,0,,1,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-29,SCH,0,,1,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-30,YSD,0,,1,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-31,YSY,0,,1,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-32',JJY,1,,1,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-34,CWS,0,,1,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-6,DGG,0,,1,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-7,DGD,0,,1,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-8,DGJ,0,,1,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-9,DGB,0,,1,domain_adaptive_hybrid,False,"inner search failed for this outer fold: family domain_adaptive_hybrid, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-11,DGY,0,0.030844236203169232,2,domain_adaptive_hybrid,True,,0.0
+1-11b,DGYb,0,0.04537195632788701,2,domain_adaptive_hybrid,True,,0.0
+1-12,USO,0,0.03499784459435462,2,domain_adaptive_hybrid,True,,0.0
+1-15,GSG,0,0.006200324282352571,2,domain_adaptive_hybrid,True,,0.0
+1-20,YCG,0,0.012467222469239984,2,domain_adaptive_hybrid,True,,0.0
+1-22,UJG,0,0.020300187307236373,2,domain_adaptive_hybrid,True,,0.0
+1-23,CGS,0,0.013811037713159726,2,domain_adaptive_hybrid,True,,0.0
+1-25,GHGb,0,0.0017693640047577405,2,domain_adaptive_hybrid,True,,0.0
+1-27,GHJ,0,0.004331170578905835,2,domain_adaptive_hybrid,True,,0.0
+1-3,BSI,0,0.07786225329009702,2,domain_adaptive_hybrid,True,,0.0
+1-3b,BSIb,0,0.014349340094749027,2,domain_adaptive_hybrid,True,,0.0
+1-4,BSO,0,0.007406464252012337,2,domain_adaptive_hybrid,True,,0.0
+1-5,BSE,0,0.03300933448296682,2,domain_adaptive_hybrid,True,,0.0
+2-11,DGY,0,0.004737993545235251,2,domain_adaptive_hybrid,True,,0.0
+2-12,USO,0,0.029012270136664912,2,domain_adaptive_hybrid,True,,0.0
+2-15,GSG,0,0.004904835994879906,2,domain_adaptive_hybrid,True,,0.0
+2-20,YCG,0,0.006294331838368444,2,domain_adaptive_hybrid,True,,0.0
+2-22,UJG,0,0.054846779852726645,2,domain_adaptive_hybrid,True,,0.0
+2-23,CGS,0,0.012963462398769221,2,domain_adaptive_hybrid,True,,0.0
+2-25,GHGb,0,0.0011452019999604929,2,domain_adaptive_hybrid,True,,0.0
+2-27,GHJ,0,0.0037271498533412704,2,domain_adaptive_hybrid,True,,0.0
+2-3,BSI,0,0.0307797733627262,2,domain_adaptive_hybrid,True,,0.0
+2-4,BSO,0,0.0287770716469538,2,domain_adaptive_hybrid,True,,0.0
+2-5,BSE,0,0.034608356363087074,2,domain_adaptive_hybrid,True,,0.0
+3-11,DGY,0,0.151039896552512,2,domain_adaptive_hybrid,True,,0.0
+3-12,USO,0,0.10033932308833726,2,domain_adaptive_hybrid,True,,0.0
+3-15,GSG,0,0.005742875924163242,2,domain_adaptive_hybrid,True,,0.0
+3-20,YCG,0,0.05884978159639123,2,domain_adaptive_hybrid,True,,0.0
+3-23,CGS,0,0.010077799023270677,2,domain_adaptive_hybrid,True,,0.0
+3-25,GHGb,0,0.0004832378248064372,2,domain_adaptive_hybrid,True,,0.0
+3-27,GHJ,0,0.004947427300776479,2,domain_adaptive_hybrid,True,,0.0
+3-3,BSI,0,0.056014820916956365,2,domain_adaptive_hybrid,True,,0.0
+3-4,BSO,0,0.009465728978179896,2,domain_adaptive_hybrid,True,,0.0
+3-5,BSE,0,0.02454684301205123,2,domain_adaptive_hybrid,True,,0.0
+4-11,DGY,0,0.013605573912203444,2,domain_adaptive_hybrid,True,,0.0
+4-12,USO,0,0.014011086707109821,2,domain_adaptive_hybrid,True,,0.0
+4-15,GSG,0,0.001084876733290574,2,domain_adaptive_hybrid,True,,0.0
+4-22,UJG,0,0.054375168057873,2,domain_adaptive_hybrid,True,,0.0
+4-23,CGS,0,0.024377487235767787,2,domain_adaptive_hybrid,True,,0.0
+4-25,GHGb,0,0.0006571408878309195,2,domain_adaptive_hybrid,True,,0.0
+4-27,GHJ,0,0.0039589935299696195,2,domain_adaptive_hybrid,True,,0.0
+4-3,BSI,0,0.03407505488481533,2,domain_adaptive_hybrid,True,,0.0
+4-4,BSO,0,0.006456212394992404,2,domain_adaptive_hybrid,True,,0.0
+4-5,BSE,0,0.026571781048678956,2,domain_adaptive_hybrid,True,,0.0
+1-10,DGC,0,,0,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-13,USY,0,,0,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-14,USJ,0,,0,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-16,GCG,0,,0,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-19,ADP,0,,0,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-2,BSN,0,,0,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-21,YCD,0,,0,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-24,GHGa,0,,0,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-26,GHH,0,,0,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-28,MYS,0,,0,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-32,JJN,0,,0,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-33,CWM,0,,0,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-10,DGC,0,,0,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-13,USY,0,,0,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-14,USJ,0,,0,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-16,GCG,0,,0,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-19,ADP,0,,0,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-2,BSN,0,,0,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-21,YCD,0,,0,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-24,GHGa,0,,0,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-26,GHH,0,,0,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-28,MYS,0,,0,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-32,JJN,0,,0,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-10,DGC,0,,0,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-13,USY,0,,0,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-14,USJ,0,,0,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-16,GCG,0,,0,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-19,ADP,0,,0,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-2,BSN,0,,0,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-21,YCD,0,,0,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-24,GHGa,1,,0,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-26,GHH,0,,0,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-28,MYS,0,,0,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-32,JJN,0,,0,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-33,CWM,0,,0,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-10,DGC,0,,0,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-13,USY,0,,0,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-14,USJ,0,,0,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-16,GCG,0,,0,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-2,BSN,0,,0,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-21,YCD,0,,0,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-26,GHH,0,,0,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-28,MYS,0,,0,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-32,JJN,0,,0,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-33,CWM,0,,0,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 0: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-1,BSS,0,,1,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-17,MGYe1,0,,1,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-18,ADA,0,,1,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-29,SCH,0,,1,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-30,YSD,0,,1,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-31,YSY,0,,1,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-34,CWS,0,,1,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-6,DGG,0,,1,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-7,DGD,0,,1,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-8,DGJ,0,,1,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-9,DGB,0,,1,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-1,BSS,0,,1,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-17,MGYe1,0,,1,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-18,ADA,0,,1,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-29,SCH,1,,1,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-30,YSD,0,,1,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-31,YSY,0,,1,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-32',JJY,1,,1,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-34,CWS,0,,1,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-6,DGG,0,,1,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-7,DGD,0,,1,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-8,DGJ,0,,1,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+2-9,DGB,0,,1,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-17,MGYe1,0,,1,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-18,ADA,0,,1,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-29,SCH,0,,1,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-30,YSD,0,,1,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-31,YSY,0,,1,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-32',JJY,1,,1,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-34,CWS,0,,1,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-6,DGG,0,,1,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-7,DGD,0,,1,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+3-8,DGJ,0,,1,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-1,BSS,0,,1,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-17,MGYe1,0,,1,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-18,ADA,0,,1,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-29,SCH,0,,1,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-30,YSD,0,,1,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-31,YSY,0,,1,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-32',JJY,1,,1,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-34,CWS,0,,1,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-6,DGG,0,,1,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-7,DGD,0,,1,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-8,DGJ,0,,1,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+4-9,DGB,0,,1,domain_adaptive_interaction,False,"inner search failed for this outer fold: family domain_adaptive_interaction, outer fold 1: no candidate met the required validation coverage (0.8) with a successful constrained solve across all inner folds.",
+1-11,DGY,0,0.023358118419307433,2,domain_adaptive_interaction,True,,0.0
+1-11b,DGYb,0,0.01643920438738624,2,domain_adaptive_interaction,True,,0.0
+1-12,USO,0,0.014439390850717241,2,domain_adaptive_interaction,True,,0.0
+1-15,GSG,0,0.004397668092576046,2,domain_adaptive_interaction,True,,0.0
+1-20,YCG,0,0.012900636218411879,2,domain_adaptive_interaction,True,,0.0
+1-22,UJG,0,0.016826001025754194,2,domain_adaptive_interaction,True,,0.0
+1-23,CGS,0,0.005299694579758139,2,domain_adaptive_interaction,True,,0.0
+1-25,GHGb,0,0.0007916553001356394,2,domain_adaptive_interaction,True,,0.0
+1-27,GHJ,0,0.0026798926926600323,2,domain_adaptive_interaction,True,,0.0
+1-3,BSI,0,0.06480027279789756,2,domain_adaptive_interaction,True,,0.0
+1-3b,BSIb,0,0.021176773182629463,2,domain_adaptive_interaction,True,,0.0
+1-4,BSO,0,0.005675914712626393,2,domain_adaptive_interaction,True,,0.0
+1-5,BSE,0,0.03298994975231173,2,domain_adaptive_interaction,True,,0.0
+2-11,DGY,0,0.004119186525171088,2,domain_adaptive_interaction,True,,0.0
+2-12,USO,0,0.008136123160258617,2,domain_adaptive_interaction,True,,0.0
+2-15,GSG,0,0.00639291036421763,2,domain_adaptive_interaction,True,,0.0
+2-20,YCG,0,0.014843690935111753,2,domain_adaptive_interaction,True,,0.0
+2-22,UJG,0,0.03376888111541213,2,domain_adaptive_interaction,True,,0.0
+2-23,CGS,0,0.006206814950307664,2,domain_adaptive_interaction,True,,0.0
+2-25,GHGb,0,0.0006820261754552349,2,domain_adaptive_interaction,True,,0.0
+2-27,GHJ,0,0.004969827571593298,2,domain_adaptive_interaction,True,,0.0
+2-3,BSI,0,0.017200997894719548,2,domain_adaptive_interaction,True,,0.0
+2-4,BSO,0,0.027583163925251834,2,domain_adaptive_interaction,True,,0.0
+2-5,BSE,0,0.010022729589894709,2,domain_adaptive_interaction,True,,0.0
+3-11,DGY,0,0.115249815448295,2,domain_adaptive_interaction,True,,0.0
+3-12,USO,0,0.039668118543344254,2,domain_adaptive_interaction,True,,0.0
+3-15,GSG,0,0.004796057568367998,2,domain_adaptive_interaction,True,,0.0
+3-20,YCG,0,0.03046054535920024,2,domain_adaptive_interaction,True,,0.0
+3-23,CGS,0,0.004528585697687975,2,domain_adaptive_interaction,True,,0.0
+3-25,GHGb,0,0.00023749865232161385,2,domain_adaptive_interaction,True,,0.0
+3-27,GHJ,0,0.00176432998581954,2,domain_adaptive_interaction,True,,0.0
+3-3,BSI,0,0.020394942699372105,2,domain_adaptive_interaction,True,,0.0
+3-4,BSO,0,0.006956385024037213,2,domain_adaptive_interaction,True,,0.0
+3-5,BSE,0,0.01600691796944811,2,domain_adaptive_interaction,True,,0.0
+4-11,DGY,0,0.003275336159471885,2,domain_adaptive_interaction,True,,0.0
+4-12,USO,0,0.002696335738266187,2,domain_adaptive_interaction,True,,0.0
+4-15,GSG,0,0.0007875865167670228,2,domain_adaptive_interaction,True,,0.0
+4-22,UJG,0,0.02705000668665107,2,domain_adaptive_interaction,True,,0.0
+4-23,CGS,0,0.007819809177666812,2,domain_adaptive_interaction,True,,0.0
+4-25,GHGb,0,0.0002186288877892686,2,domain_adaptive_interaction,True,,0.0
+4-27,GHJ,0,0.0015479831457614601,2,domain_adaptive_interaction,True,,0.0
+4-3,BSI,0,0.027571773975021825,2,domain_adaptive_interaction,True,,0.0
+4-4,BSO,0,0.0020466751665545262,2,domain_adaptive_interaction,True,,0.0
+4-5,BSE,0,0.016613316773239482,2,domain_adaptive_interaction,True,,0.0

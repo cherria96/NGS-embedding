@@ -1,0 +1,22 @@
+{
+  "completed_tasks": 12,
+  "selected_fit_rows": 192,
+  "prediction_rows": 8576,
+  "regularization_rows": 324,
+  "same_cohort_labels_and_outer_splits_as_genus": true,
+  "retained_asvs_missing_from_trees": 0,
+  "maximum_equality_residual": 2.56253351871294e-13,
+  "maximum_group_reconstruction_error": 8.215650382226158e-15,
+  "maximum_coefficient_residual": 6.97410529132414e-07,
+  "failed_candidate_records": 0,
+  "active_product_counts": [
+    0,
+    1,
+    3,
+    4
+  ],
+  "input_tree_hashes": {
+    "data/qiimeresult/ARC/rooted-tree.nwk": "35297e8eac476b73200f12c71dcd13f02316404fb0442e6594f485af351f6e28",
+    "data/qiimeresult/BAC/rooted-tree.nwk": "fb1641fd17f1aa24f9926a653b7cb192be3c1e3a744e6e59fa30d123194665a9"
+  }
+}

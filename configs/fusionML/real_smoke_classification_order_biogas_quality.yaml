@@ -1,0 +1,263 @@
+# REAL-DATA SMOKE CONFIG, CLASSIFICATION + ORDER-RANK TREE.
+# Same chemistry-derived target/crosswalk as real_smoke_classification.yaml
+# (no data/final/metadata.csv). Uses inputs.rank_trees.order (the
+# monophyly-consistent output/genus_tree/taxlevel_autorun/order tree +
+# ASV->block crosswalk, same rank_mapping.py mechanism as
+# real_smoke_family_rank.yaml but at the order rank -- 21/159 ARC/BAC
+# tips) so phylogeny_only/shared_hybrid/domain_adaptive_hybrid/
+# domain_adaptive_interaction can be compared at order resolution.
+# genus_ridge/genus_elastic_net/abundance_only are intentionally excluded
+# (not requested; the first two are hardcoded to genus resolution
+# regardless of this file's `resolution:` per search.FAMILY_SPECS, so
+# including them here would silently compare against genus, not order,
+# features) -- only intercept_only (the standard zero-cost reference
+# baseline) plus the four requested tree-based families run.
+#
+# Adds the ARC-BAC cross-domain interaction family
+# (domain_adaptive_interaction, arc-bac-interactions.md items 8/10-18) with
+# its FULL lambda_i_l1 x lambda_i_l2 grid -- still smoke-scale in every
+# other knob (3 outer/2 inner folds, candidate_budget 10), so this is a
+# real-data check, not a claim of full research validation.
+seed: 20260917
+task: classification
+resolution: order
+inputs:
+  arc_counts: ../../datasets/fusionML/real_data_cache/ARC_table_filtered_roundno.tsv
+  bac_counts: ../../datasets/fusionML/real_data_cache/BAC_table_filtered_roundno.tsv
+  metadata: null
+  arc_tree: ../../datasets/raw/qiimeresult/ARC/rooted-tree.nwk
+  bac_tree: ../../datasets/raw/qiimeresult/BAC/rooted-tree.nwk
+  arc_taxonomy: ../../datasets/raw/qiimeresult/ARC/metadata.tsv
+  bac_taxonomy: ../../datasets/raw/qiimeresult/BAC/metadata.tsv
+  orientation: features_by_samples
+  exploratory_block_list: null
+  rank_trees:
+    order:
+      arc: ../../datasets/processed/genus_tree/taxlevel_autorun/order/arc_tree.nwk
+      bac: ../../datasets/processed/genus_tree/taxlevel_autorun/order/bac_tree.nwk
+parsing:
+  rank_tree_mapping:
+    require_unambiguous_taxon_mapping: true
+    mapping_file: null
+chemistry:
+  workbook: ../../datasets/raw/final/Dat_chem.xlsx
+  engine: openpyxl
+  inspected_sha256: 619aa196e36ca62621fd7bb1360dd6145698c6f59345a2d5841e4d266b562efe
+  layout: wide_measurement_by_season
+  excel_row_numbering: one_based
+  title_row: 1
+  season_header_row: 2
+  measurement_header_row: 3
+  data_start_row: 4
+  data_only: true
+  preserve_cell_provenance: true
+  strip_header_whitespace: true
+  row_filter: nonblank_source_site_code
+  ignore_blank_separator_columns: true
+  assert_configured_headers: true
+  fail_on_unmapped_measurement_columns: true
+  sheets:
+    substrate:
+      name: Chem_Si.Avg
+      header_row: 3
+      sample_id_column: null
+      site_id_column: ADP_6
+      site_id_excel_column: C
+      acronym_column: Acronym
+      acronym_excel_column: D
+      record_number_column: No.
+      record_number_excel_column: B
+      record_number_dtype: string
+      season_column: null
+      namespace: substrate
+      already_q_weighted: true
+      recompute_weighted_average: false
+      static_fields:
+        Q_T_per_y:
+          excel_column: E
+          expected_header: "Q (T/y)"
+          units: T/y
+          role: annual_site_attribute
+          broadcast_to_seasons: true
+          include_as_predictor: false
+      seasonal_measurement_columns:
+        pH: {1: F, 2: G, 3: H, 4: I}
+        ALK: {1: K, 2: L, 3: M, 4: N}
+        TS: {1: P, 2: Q, 3: R, 4: S}
+        VS: {1: U, 2: V, 3: W, 4: X}
+        TSS: {1: Z, 2: AA, 3: AB, 4: AC}
+        VSS: {1: AE, 2: AF, 3: AG, 4: AH}
+        COD: {1: AJ, 2: AK, 3: AL, 4: AM}
+        sCOD: {1: AO, 2: AP, 3: AQ, 4: AR}
+        TC: {1: AT, 2: AU, 3: AV, 4: AW}
+        Protein: {1: AY, 2: AZ, 3: BA, 4: BB}
+        TAN: {1: BD, 2: BE, 3: BF, 4: BG}
+        Lipid: {1: BI, 2: BJ, 3: BK, 4: BL}
+        TVFAs: {1: BN, 2: BO, 3: BP, 4: BQ}
+        "VFAs,Et": {1: BS, 2: BT, 3: BU, 4: BV}
+        EtOH: {1: BX, 2: BY, 3: BZ, 4: CA}
+        HAc: {1: CC, 2: CD, 3: CE, 4: CF}
+        HPro: {1: CH, 2: CI, 3: CJ, 4: CK}
+        HBut: {1: CM, 2: CN, 3: CO, 4: CP}
+        i-HBut: {1: CR, 2: CS, 3: CT, 4: CU}
+        HVal: {1: CW, 2: CX, 3: CY, 4: CZ}
+        i-HVal: {1: DB, 2: DC, 3: DD, 4: DE}
+        HCap: {1: DG, 2: DH, 3: DI, 4: DJ}
+        i-HCap: {1: DL, 2: DM, 3: DN, 4: DO}
+      season_header_overrides: {BD: 1, BE: 2, BF: 3, BG: 4}
+    effluent:
+      name: Chem_Se.Avg
+      header_row: 3
+      sample_id_column: null
+      site_id_column: Site
+      site_id_excel_column: C
+      acronym_column: Acronym
+      acronym_excel_column: D
+      record_number_column: No.
+      record_number_excel_column: B
+      record_number_dtype: string
+      season_column: null
+      namespace: effluent
+      seasonal_measurement_columns:
+        pH: {1: E, 2: F, 3: G, 4: H}
+        ALK: {1: J, 2: K, 3: L, 4: M}
+        TS: {1: O, 2: P, 3: Q, 4: R}
+        VS: {1: T, 2: U, 3: V, 4: W}
+        TSS: {1: Y, 2: Z, 3: AA, 4: AB}
+        VSS: {1: AD, 2: AE, 3: AF, 4: AG}
+        COD: {1: AI, 2: AJ, 3: AK, 4: AL}
+        sCOD: {1: AN, 2: AO, 3: AP, 4: AQ}
+        TC: {1: AS, 2: AT, 3: AU, 4: AV}
+        Protein: {1: AX, 2: AY, 3: AZ, 4: BA}
+        "NH4-N": {1: BC, 2: BD, 3: BE, 4: BF}
+        Lipid: {1: BH, 2: BI, 3: BJ, 4: BK}
+        TVFAs: {1: BM, 2: BN, 3: BO, 4: BP}
+        "VFAs,Et": {1: BR, 2: BS, 3: BT, 4: BU}
+        EtOH: {1: BW, 2: BX, 3: BY, 4: BZ}
+        HAc: {1: CB, 2: CC, 3: CD, 4: CE}
+        HPro: {1: CG, 2: CH, 3: CI, 4: CJ}
+        HBut: {1: CL, 2: CM, 3: CN, 4: CO}
+        i-HBut: {1: CQ, 2: CR, 3: CS, 4: CT}
+        HVal: {1: CV, 2: CW, 3: CX, 4: CY}
+        i-HVal: {1: DA, 2: DB, 3: DC, 4: DD}
+        HCap: {1: DF, 2: DG, 3: DH, 4: DI}
+        i-HCap: {1: DK, 2: DL, 3: DM, 4: DN}
+        CO2: {1: DP, 2: DQ, 3: DR, 4: DS}
+        CH4: {1: DU, 2: DV, 3: DW, 4: DX}
+        O2: {1: DZ, 2: EA, 3: EB, 4: EC}
+        H2S: {1: EE, 2: EF, 3: EG, 4: EH}
+      season_header_overrides: {BC: 1, BD: 2, BE: 3, BF: 4}
+  reshape_rules:
+    emit_seasons: [1, 2, 3, 4]
+    retain_all_missing_site_seasons_for_audit: true
+  missing_values:
+    tokens: ["", "x", "n.a"]
+    strip_text_whitespace: true
+    preserve_numeric_zero: true
+    known_uncached_formula_cells:
+      Chem_Se.Avg: [BC39, BC40]
+  site_id_aliases:
+    substrate: {}
+    effluent:
+      MGYe2: MGY
+  join:
+    duplicate_policy: error
+    assert_matching_nonmissing_acronyms: true
+    unresolved_effluent_site_ids: [MGYe1]
+columns:
+  sample_id: sample_id
+  site_id: site_id
+  target: warning_biogas_quality
+  covariates: []
+preprocessing:
+  detection_count: 5
+  min_detected_samples: 5
+  min_sample_prevalence: 0.40
+  min_detected_sites: 3
+  min_site_prevalence: 0.40
+  pseudocount: 0.5
+  sensitivity_pseudocounts: [1.0]
+  standardize_target: true
+  standardize_microbial_columns: false
+  relative_input_mode: false
+  missing_retained_feature_means_zero: false
+graph:
+  k_phylogeny: 5
+  k_abundance: 5
+  min_joint_samples: 10
+  min_joint_sites: 5
+  empirical_score: max_all_and_joint_lrv
+  bootstrap_sites: 20
+  support_threshold: 0.70
+  approximate_bootstrap: false
+  approximate_candidate_k: 20
+cv:
+  outer_folds: 3
+  inner_folds: 2
+  selection_metric: site_balanced_log_loss
+  selection_rule: one_standard_error
+  required_validation_coverage: 0.8
+  families: [intercept_only, phylogeny_only, shared_hybrid, domain_adaptive_hybrid, domain_adaptive_interaction, metadr_order_only, fusion_arc_only, fusion_bac_only]
+search:
+  candidate_budget_per_family: 10
+  lambda_s: [0, 0.01]
+  lambda_r: [0.01, 0.1, 1]
+  lambda_f: [0, 1, 10]
+  alpha_arc: [0, 0.5, 1]
+  alpha_bac: [0, 0.5, 1]
+  exhaustive: false
+solver:
+  preferred: CLARABEL
+  fallback: OSQP
+  classification_fallback: SCS
+  equality_tolerance: 1.0e-6
+  max_retries: 3
+  time_limit_seconds: 120
+compression:
+  coefficient_tolerance: 1.0e-6
+  keep_residual_coefficients: true
+optional:
+  b12_comparator: false
+  cross_domain_interactions: true
+interaction:
+  enabled: true
+  family: domain_adaptive_interaction
+  retain_additive_reference: true
+  balance_source: tree_splits
+  external_balance_file: null
+  max_balances_arc: 2
+  max_balances_bac: 2
+  max_products: 4
+  balance_selection: site_weighted_variance_greedy
+  sign_orientation: lexicographic_positive_side
+  group_detection_count: 5
+  min_joint_group_samples: 10
+  min_joint_group_sites: 5
+  max_abs_balance_correlation: 0.95
+  loading_rank_absolute_tolerance: 1.0e-10
+  product_rank_relative_tolerance: 1.0e-10
+  min_variance: 1.0e-12
+  center_scale_balances: true
+  center_scale_products: true
+  scaling_weights: equal_site
+  require_cross_domain_correlation: false
+  enforce_strong_heredity: false
+  fit_jointly_with_main_effects: true
+  include_off_candidate: true
+  lambda_i_l1: [0, 0.01, 0.1]
+  lambda_i_l2: [0.01, 0.1, 1]
+  search: full_cross_with_shared_base_candidates
+  no_eligible_products: mark_on_candidate_unavailable
+classification:
+  selection_metric: site_balanced_log_loss
+  standardize_target: false
+  class_weighting: none
+  single_class_training: fail_primary_fit
+  reference_threshold: 0.5
+  threshold_selection: inner_oof_site_weighted_f2
+  threshold_grid: [0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40, 0.45, 0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90, 0.95]
+  threshold_tie_break: larger_threshold
+  probability_clip_for_metrics: 1.0e-12
+output_dir: ../../results/classification result/fusionML/real_results_classification_order_biogas_quality_interaction
+run_id: real_smoke_classification_order_biogas_quality_interaction
+smoke: true

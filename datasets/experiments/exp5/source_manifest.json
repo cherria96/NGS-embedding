@@ -1,0 +1,508 @@
+{
+  "files": [
+    {
+      "path": "data/final/Dat_chem.xlsx",
+      "source": "data/final/Dat_chem.xlsx",
+      "sha256": "072f9329df56e93a615b049dc0c60fb75c3da169ef243d4cbd35f0ff52e814e2",
+      "bytes": 3260002
+    },
+    {
+      "path": "data/qiimeresult/ARC/metadata.tsv",
+      "source": "data/qiimeresult/ARC/metadata.tsv",
+      "sha256": "3f4650824380311d0aa2c3e8a69ebfb4541bfef60931ba7b69c908fee6301117",
+      "bytes": 343718
+    },
+    {
+      "path": "data/qiimeresult/ARC/rooted-tree.nwk",
+      "source": "data/qiimeresult/ARC/rooted-tree.nwk",
+      "sha256": "35297e8eac476b73200f12c71dcd13f02316404fb0442e6594f485af351f6e28",
+      "bytes": 106072
+    },
+    {
+      "path": "data/qiimeresult/BAC/metadata.tsv",
+      "source": "data/qiimeresult/BAC/metadata.tsv",
+      "sha256": "86ac53804aba829e041537abb62c1a01ac7c4ad20a687a46b88c288793496e6f",
+      "bytes": 2262240
+    },
+    {
+      "path": "data/qiimeresult/BAC/rooted-tree.nwk",
+      "source": "data/qiimeresult/BAC/rooted-tree.nwk",
+      "sha256": "fb1641fd17f1aa24f9926a653b7cb192be3c1e3a744e6e59fa30d123194665a9",
+      "bytes": 805834
+    },
+    {
+      "path": "fusionML/__init__.py",
+      "source": "fusionML/__init__.py",
+      "sha256": "ba89f8c20a9bd642ebefd25256de8fa87b2edf43c7502b42c16d7bb65a6a2436",
+      "bytes": 228
+    },
+    {
+      "path": "fusionML/artifacts.py",
+      "source": "fusionML/artifacts.py",
+      "sha256": "6312315c7b432a38e7b0659af2142ca173eaac77bd42f7b7c4ee1fae512694b1",
+      "bytes": 2639
+    },
+    {
+      "path": "fusionML/chemistry.py",
+      "source": "fusionML/chemistry.py",
+      "sha256": "c2d09e63e4c710117ff44a17320617177ba3ceb1bfd40bd8142d5392a54aa573",
+      "bytes": 15370
+    },
+    {
+      "path": "fusionML/chemistry_targets.py",
+      "source": "fusionML/chemistry_targets.py",
+      "sha256": "4d8f37cbf799212358a2f65f074fef9b99818acd74bd7b1ae56210ffe0fc0f1a",
+      "bytes": 8371
+    },
+    {
+      "path": "fusionML/cli.py",
+      "source": "fusionML/cli.py",
+      "sha256": "72fdd45c1bb7d901b4af15a0482bc798b0156f1757d8b86a90e3225c04c51394",
+      "bytes": 1715
+    },
+    {
+      "path": "fusionML/cohort.py",
+      "source": "fusionML/cohort.py",
+      "sha256": "102723f99735f51901aa39b4de1889a98cabde0e51736b2070693263aa7c9b9e",
+      "bytes": 1914
+    },
+    {
+      "path": "fusionML/config.py",
+      "source": "fusionML/config.py",
+      "sha256": "24932a7a8b7f760d058b01a4f46925876cdc20d2beac9ab68914434719ae49e4",
+      "bytes": 17483
+    },
+    {
+      "path": "fusionML/configs/real_smoke_classification_phylo.yaml",
+      "source": "fusionML/configs/real_smoke_classification_phylo.yaml",
+      "sha256": "5831951a045be31f17db1415426803758b821b3ba7d2683a1a0f5e6ac58358c2",
+      "bytes": 9450
+    },
+    {
+      "path": "fusionML/diagnostics.py",
+      "source": "fusionML/diagnostics.py",
+      "sha256": "5d709184491a85dd3f7a43ebeb01b136e6cd4d34daa4c337172f0c499b7986c3",
+      "bytes": 6574
+    },
+    {
+      "path": "fusionML/estimator.py",
+      "source": "fusionML/estimator.py",
+      "sha256": "22119a9381dc55a2eba5fedb5ec9abfd81136b11146e7e1e88067ea2731bf708",
+      "bytes": 22864
+    },
+    {
+      "path": "fusionML/evaluate.py",
+      "source": "fusionML/evaluate.py",
+      "sha256": "eaa29654cfa28335bd48e0cdf1a3f56e6c35aa15dea371efb9b6612e825df574",
+      "bytes": 11443
+    },
+    {
+      "path": "fusionML/figures.py",
+      "source": "fusionML/figures.py",
+      "sha256": "cba432f8f15202825fa2d4d3c75d6e508397c77331502e4a142af98d33939a9e",
+      "bytes": 4068
+    },
+    {
+      "path": "fusionML/folds.py",
+      "source": "fusionML/folds.py",
+      "sha256": "c9417e0f732ae77b0303905091a7af517895f741c0595c235590b29d11b2c1e0",
+      "bytes": 2285
+    },
+    {
+      "path": "fusionML/generate_synthetic_demo_data.py",
+      "source": "fusionML/generate_synthetic_demo_data.py",
+      "sha256": "fa222da39d537ca2ee9b605e2667a2acfd4b87fff6b35961a4d440f5fae9e634",
+      "bytes": 844
+    },
+    {
+      "path": "fusionML/genus.py",
+      "source": "fusionML/genus.py",
+      "sha256": "eb6e53cba6c023d65e81293373bb37a4f363f953b2e490cc3044930ae34f946f",
+      "bytes": 2437
+    },
+    {
+      "path": "fusionML/graphs.py",
+      "source": "fusionML/graphs.py",
+      "sha256": "369c81e87e10ce6b028b0626df89c696d90ffeed5fe4803eed305d9f546c9ea0",
+      "bytes": 19283
+    },
+    {
+      "path": "fusionML/groups.py",
+      "source": "fusionML/groups.py",
+      "sha256": "24a887bbddce36941f41f0a905a2ec50b55405f125a5733641e47aec88272eae",
+      "bytes": 6734
+    },
+    {
+      "path": "fusionML/interactions.py",
+      "source": "fusionML/interactions.py",
+      "sha256": "2f0383b93a6f6229a73218ef86158a87dd4d72b762c4ce57478490850119d542",
+      "bytes": 14748
+    },
+    {
+      "path": "fusionML/investigation_20260921/learning_curves.py",
+      "source": "fusionML/investigation_20260921/learning_curves.py",
+      "sha256": "21612869f9a7f2dd5b96e215b992f3697818ae7a3aa916068a7324daa91605c1",
+      "bytes": 23359
+    },
+    {
+      "path": "fusionML/io_counts.py",
+      "source": "fusionML/io_counts.py",
+      "sha256": "23d92ec259c01f6598c0beb6e2ca6b2b84a31290d8bf0f13a6f11c2a7e664850",
+      "bytes": 7949
+    },
+    {
+      "path": "fusionML/io_metadata.py",
+      "source": "fusionML/io_metadata.py",
+      "sha256": "665da906ae3be25a1740461428daf5faf615d7bb10e0589b419555afaae878f9",
+      "bytes": 2915
+    },
+    {
+      "path": "fusionML/io_taxonomy.py",
+      "source": "fusionML/io_taxonomy.py",
+      "sha256": "57c587b933acefc13c4eeacddf60f128003a4cc4e425bcb8bb96f52b9c84814f",
+      "bytes": 3654
+    },
+    {
+      "path": "fusionML/io_tree.py",
+      "source": "fusionML/io_tree.py",
+      "sha256": "db0d0e8cb64f73c220db0ed2734172e95e09c327761f80cb3b20ee1a69f33107",
+      "bytes": 5566
+    },
+    {
+      "path": "fusionML/model_io.py",
+      "source": "fusionML/model_io.py",
+      "sha256": "1b85e524c89093631681a301b1f6ec4733b692991511b7f446781c2dc43a56e6",
+      "bytes": 5299
+    },
+    {
+      "path": "fusionML/pipeline.py",
+      "source": "fusionML/pipeline.py",
+      "sha256": "02dfd56fc41afb1189821c1c9abb60822200a6c211a2aeae2e7b0d851b3c6227",
+      "bytes": 70553
+    },
+    {
+      "path": "fusionML/prepare_real_data_smoke_inputs.py",
+      "source": "fusionML/prepare_real_data_smoke_inputs.py",
+      "sha256": "6a6d2cfc3666fc825758e1a99758f8f1caaa216999b30c8f7981670e578fd0f5",
+      "bytes": 2205
+    },
+    {
+      "path": "fusionML/preprocessing.py",
+      "source": "fusionML/preprocessing.py",
+      "sha256": "122d55cc8bbe6c44fcad022feb726cd858501cf4c44ba5603e8b6a0f2d8f29e7",
+      "bytes": 15872
+    },
+    {
+      "path": "fusionML/rank_mapping.py",
+      "source": "fusionML/rank_mapping.py",
+      "sha256": "6ab17a53a400609ce24b8d1eda5257ba97414c91162a62a123e2bcdff50e8f96",
+      "bytes": 3248
+    },
+    {
+      "path": "fusionML/real_data_cache/ARC_table_filtered_roundno.tsv",
+      "source": "fusionML/real_data_cache/ARC_table_filtered_roundno.tsv",
+      "sha256": "309f1ecaeee2e7dd99d6d812e245c55c0aeb1d5e442a76282852cacad3d0ac46",
+      "bytes": 1014910
+    },
+    {
+      "path": "fusionML/real_data_cache/BAC_table_filtered_roundno.tsv",
+      "source": "fusionML/real_data_cache/BAC_table_filtered_roundno.tsv",
+      "sha256": "48e338420fe43413ef678501ac2473b03a5503d8fe1a5fd8db6cca7147f012c0",
+      "bytes": 7986449
+    },
+    {
+      "path": "fusionML/real_results_asv_exp1_20260922/balances.csv",
+      "source": "fusionML/real_results_asv_exp1_20260922/balances.csv",
+      "sha256": "613faa5aa93703a7a46cd076ccafea8db22421ad05921e1a24f3f0a46b6e3b0e",
+      "bytes": 304517
+    },
+    {
+      "path": "fusionML/real_results_asv_exp1_20260922/coefficients_and_groups.csv",
+      "source": "fusionML/real_results_asv_exp1_20260922/coefficients_and_groups.csv",
+      "sha256": "48dab6d7b1e50f9c5af85847eb4de8faec6c6cad68cde66aa7314514ed39da64",
+      "bytes": 2654279
+    },
+    {
+      "path": "fusionML/real_results_asv_exp1_20260922/domain_counts.csv",
+      "source": "fusionML/real_results_asv_exp1_20260922/domain_counts.csv",
+      "sha256": "38a88892d70dd928ce4cfe63cb12b9a3e6b4f834d2dcbd6d0d14e703de63da25",
+      "bytes": 32436
+    },
+    {
+      "path": "fusionML/real_results_asv_exp1_20260922/failures.csv",
+      "source": "fusionML/real_results_asv_exp1_20260922/failures.csv",
+      "sha256": "f097b5f4f46cda2da21b954c9ff4097e1e14ae7064ecdee2c2cec2d3c1f08e6b",
+      "bytes": 6
+    },
+    {
+      "path": "fusionML/real_results_asv_exp1_20260922/filter_audit.csv",
+      "source": "fusionML/real_results_asv_exp1_20260922/filter_audit.csv",
+      "sha256": "a6bb2d799ee4c19674c023f7e899ef690130c6433b5f4f71515f53be6b4052cc",
+      "bytes": 2609
+    },
+    {
+      "path": "fusionML/real_results_asv_exp1_20260922/graph_edges.csv",
+      "source": "fusionML/real_results_asv_exp1_20260922/graph_edges.csv",
+      "sha256": "1171fbea8333faff713b744afe4f8571656b61cbabb466b58c199d63fb731d31",
+      "bytes": 6995717
+    },
+    {
+      "path": "fusionML/real_results_asv_exp1_20260922/interactions.csv",
+      "source": "fusionML/real_results_asv_exp1_20260922/interactions.csv",
+      "sha256": "cc4e81fbcfc2c894e196b1fe306e2eac8ebed6ae1dce34e3ca302976fcdc9102",
+      "bytes": 299781
+    },
+    {
+      "path": "fusionML/real_results_asv_exp1_20260922/predictions.csv",
+      "source": "fusionML/real_results_asv_exp1_20260922/predictions.csv",
+      "sha256": "f5651b2db90e2d509e8c8e4d1e480f032a92b7472d845094e7df2950901bbdf5",
+      "bytes": 940244
+    },
+    {
+      "path": "fusionML/real_results_asv_exp1_20260922/regularization_paths.csv",
+      "source": "fusionML/real_results_asv_exp1_20260922/regularization_paths.csv",
+      "sha256": "7968119437cbd4c258c1f283a5648a9d8a1d864134d8fa73d4d516f47963c653",
+      "bytes": 48135
+    },
+    {
+      "path": "fusionML/real_results_asv_exp1_20260922/rows.csv",
+      "source": "fusionML/real_results_asv_exp1_20260922/rows.csv",
+      "sha256": "1099d066e9fe5a5b0ed521760e7128e2038cd8c8fb03254dc5933257fd0ed766",
+      "bytes": 101409
+    },
+    {
+      "path": "fusionML/real_results_asv_exp1_20260922/run_manifest.json",
+      "source": "fusionML/real_results_asv_exp1_20260922/run_manifest.json",
+      "sha256": "9ff797c8a57743ca8aa4751d323e9b39f1f62df99b0d7fcfdafd9d99455149fd",
+      "bytes": 22373
+    },
+    {
+      "path": "fusionML/real_results_asv_exp1_20260922/search.csv",
+      "source": "fusionML/real_results_asv_exp1_20260922/search.csv",
+      "sha256": "e7a55df8d4bd485df482ae65cec5eae8460d7f3b8b458d28f57bdb30fae64879",
+      "bytes": 944847
+    },
+    {
+      "path": "fusionML/real_results_asv_exp1_20260922/splits.csv",
+      "source": "fusionML/real_results_asv_exp1_20260922/splits.csv",
+      "sha256": "e58abae34fa53d19a8d3896cf74b5f13fa2f415aa54e0c3cc72a1dffed0025e8",
+      "bytes": 250267
+    },
+    {
+      "path": "fusionML/real_results_classification_phylo_acid_base_balance_interaction/smoke/balance_definitions_outer_folds.csv",
+      "source": "fusionML/real_results_classification_phylo_acid_base_balance_interaction/smoke/balance_definitions_outer_folds.csv",
+      "sha256": "74d1b899d97eac5ea7bd71959ced331b36029011384dfa6a7027c748c32a2b11",
+      "bytes": 15846
+    },
+    {
+      "path": "fusionML/real_results_classification_phylo_acid_base_balance_interaction/smoke/coefficients_and_groups.csv",
+      "source": "fusionML/real_results_classification_phylo_acid_base_balance_interaction/smoke/coefficients_and_groups.csv",
+      "sha256": "ee0fb636a131025f90580cbe4597ad96c51494948a47e0aee62a81f79a071264",
+      "bytes": 288271
+    },
+    {
+      "path": "fusionML/real_results_classification_phylo_acid_base_balance_interaction/smoke/fold_manifest.csv",
+      "source": "fusionML/real_results_classification_phylo_acid_base_balance_interaction/smoke/fold_manifest.csv",
+      "sha256": "8e77534e7dbdac9e920ab78e7b27c95c70ca01417df16bb4be8aa70c6aad0b8d",
+      "bytes": 2003
+    },
+    {
+      "path": "fusionML/real_results_classification_phylo_acid_base_balance_interaction/smoke/graph_edges.csv",
+      "source": "fusionML/real_results_classification_phylo_acid_base_balance_interaction/smoke/graph_edges.csv",
+      "sha256": "2da2e78aec96a872c75d44558c927830ce56b127429aae257e683b34a9f9b283",
+      "bytes": 677500
+    },
+    {
+      "path": "fusionML/real_results_classification_phylo_acid_base_balance_interaction/smoke/interaction_coefficients_outer_folds.csv",
+      "source": "fusionML/real_results_classification_phylo_acid_base_balance_interaction/smoke/interaction_coefficients_outer_folds.csv",
+      "sha256": "ee4dca08d82fe632c1002936be42d967ccac36792b7f1c80a1b51162213ee60b",
+      "bytes": 15395
+    },
+    {
+      "path": "fusionML/real_results_classification_phylo_acid_base_balance_interaction/smoke/oof_predictions.csv",
+      "source": "fusionML/real_results_classification_phylo_acid_base_balance_interaction/smoke/oof_predictions.csv",
+      "sha256": "56ad9b5a7df5662eafe9acc4d55025013db83a4a3f7d704d51a0d46d27478be5",
+      "bytes": 87937
+    },
+    {
+      "path": "fusionML/real_results_classification_phylo_acid_base_balance_interaction/smoke/results.csv",
+      "source": "fusionML/real_results_classification_phylo_acid_base_balance_interaction/smoke/results.csv",
+      "sha256": "418412f621e0a53b7e55a84178748578bbf8aeabf714d0f1f1fcbf6fa1872ed4",
+      "bytes": 2366
+    },
+    {
+      "path": "fusionML/real_results_classification_phylo_acid_base_balance_interaction/smoke/run_manifest.json",
+      "source": "fusionML/real_results_classification_phylo_acid_base_balance_interaction/smoke/run_manifest.json",
+      "sha256": "b8336df11da62350341203f0070eee58f795f43624fad8a95393be668df36cc3",
+      "bytes": 18250
+    },
+    {
+      "path": "fusionML/real_results_classification_phylo_acid_base_balance_interaction/smoke/search_results.csv",
+      "source": "fusionML/real_results_classification_phylo_acid_base_balance_interaction/smoke/search_results.csv",
+      "sha256": "b475ab2fce91bdfd0c72c187c31f20de4c29a1ae35f373ef82ed28abfa998e9b",
+      "bytes": 53616
+    },
+    {
+      "path": "fusionML/real_results_classification_phylo_biogas_quality_interaction/smoke/balance_definitions_outer_folds.csv",
+      "source": "fusionML/real_results_classification_phylo_biogas_quality_interaction/smoke/balance_definitions_outer_folds.csv",
+      "sha256": "74d1b899d97eac5ea7bd71959ced331b36029011384dfa6a7027c748c32a2b11",
+      "bytes": 15846
+    },
+    {
+      "path": "fusionML/real_results_classification_phylo_biogas_quality_interaction/smoke/coefficients_and_groups.csv",
+      "source": "fusionML/real_results_classification_phylo_biogas_quality_interaction/smoke/coefficients_and_groups.csv",
+      "sha256": "5ebe74e581bfab27432b46a0900f7d5b1c4784e7e5d0ae74175ca5d0dad6caf3",
+      "bytes": 268052
+    },
+    {
+      "path": "fusionML/real_results_classification_phylo_biogas_quality_interaction/smoke/fold_manifest.csv",
+      "source": "fusionML/real_results_classification_phylo_biogas_quality_interaction/smoke/fold_manifest.csv",
+      "sha256": "8e77534e7dbdac9e920ab78e7b27c95c70ca01417df16bb4be8aa70c6aad0b8d",
+      "bytes": 2003
+    },
+    {
+      "path": "fusionML/real_results_classification_phylo_biogas_quality_interaction/smoke/graph_edges.csv",
+      "source": "fusionML/real_results_classification_phylo_biogas_quality_interaction/smoke/graph_edges.csv",
+      "sha256": "604ca1ec975f75427359fae76d153e2cadca05084af0cff98726efaac74cc656",
+      "bytes": 698237
+    },
+    {
+      "path": "fusionML/real_results_classification_phylo_biogas_quality_interaction/smoke/interaction_coefficients_outer_folds.csv",
+      "source": "fusionML/real_results_classification_phylo_biogas_quality_interaction/smoke/interaction_coefficients_outer_folds.csv",
+      "sha256": "261846cacd9c0d33c09573200efdd7e1de3ddacc3d59d834b7a057809d06e5ff",
+      "bytes": 15247
+    },
+    {
+      "path": "fusionML/real_results_classification_phylo_biogas_quality_interaction/smoke/oof_predictions.csv",
+      "source": "fusionML/real_results_classification_phylo_biogas_quality_interaction/smoke/oof_predictions.csv",
+      "sha256": "a550337800a09111a7de11af4a45ec793e4dfa79e9ccc0dcb19cca3bcb712463",
+      "bytes": 112167
+    },
+    {
+      "path": "fusionML/real_results_classification_phylo_biogas_quality_interaction/smoke/results.csv",
+      "source": "fusionML/real_results_classification_phylo_biogas_quality_interaction/smoke/results.csv",
+      "sha256": "8c6a33fc40409714bad34057a980f66c59dd87579689b57751de73774d6a9568",
+      "bytes": 2534
+    },
+    {
+      "path": "fusionML/real_results_classification_phylo_biogas_quality_interaction/smoke/run_manifest.json",
+      "source": "fusionML/real_results_classification_phylo_biogas_quality_interaction/smoke/run_manifest.json",
+      "sha256": "2a2c41b72404fd6b94fad8b2c3b797dd3772b76342737af608d781af86f1481b",
+      "bytes": 18234
+    },
+    {
+      "path": "fusionML/real_results_classification_phylo_biogas_quality_interaction/smoke/search_results.csv",
+      "source": "fusionML/real_results_classification_phylo_biogas_quality_interaction/smoke/search_results.csv",
+      "sha256": "7faf45b3c6a3b6818856e2a15a390289d217e63a16919e697c6174038b939ab0",
+      "bytes": 52176
+    },
+    {
+      "path": "fusionML/real_results_classification_phylo_interaction/smoke/balance_definitions_outer_folds.csv",
+      "source": "fusionML/real_results_classification_phylo_interaction/smoke/balance_definitions_outer_folds.csv",
+      "sha256": "74d1b899d97eac5ea7bd71959ced331b36029011384dfa6a7027c748c32a2b11",
+      "bytes": 15846
+    },
+    {
+      "path": "fusionML/real_results_classification_phylo_interaction/smoke/coefficients_and_groups.csv",
+      "source": "fusionML/real_results_classification_phylo_interaction/smoke/coefficients_and_groups.csv",
+      "sha256": "4cf89755c975fc03ff058df082de5cba07d49ae37c1343b36104b83543b63e61",
+      "bytes": 289251
+    },
+    {
+      "path": "fusionML/real_results_classification_phylo_interaction/smoke/fold_manifest.csv",
+      "source": "fusionML/real_results_classification_phylo_interaction/smoke/fold_manifest.csv",
+      "sha256": "8e77534e7dbdac9e920ab78e7b27c95c70ca01417df16bb4be8aa70c6aad0b8d",
+      "bytes": 2003
+    },
+    {
+      "path": "fusionML/real_results_classification_phylo_interaction/smoke/graph_edges.csv",
+      "source": "fusionML/real_results_classification_phylo_interaction/smoke/graph_edges.csv",
+      "sha256": "897f59684817eb471f263429fcbaf01f00fdf24ce0c178e2462780f8ac351cfe",
+      "bytes": 649336
+    },
+    {
+      "path": "fusionML/real_results_classification_phylo_interaction/smoke/interaction_coefficients_outer_folds.csv",
+      "source": "fusionML/real_results_classification_phylo_interaction/smoke/interaction_coefficients_outer_folds.csv",
+      "sha256": "c240fd755bd2a9fed4b56c28fe4060a0538d0f2b8dde3dc7d1fb0ca5ac2de8f2",
+      "bytes": 15395
+    },
+    {
+      "path": "fusionML/real_results_classification_phylo_interaction/smoke/oof_predictions.csv",
+      "source": "fusionML/real_results_classification_phylo_interaction/smoke/oof_predictions.csv",
+      "sha256": "f4726e523736328990176d858ebb36d015a19d705cda189e515a9929049e6b78",
+      "bytes": 89328
+    },
+    {
+      "path": "fusionML/real_results_classification_phylo_interaction/smoke/results.csv",
+      "source": "fusionML/real_results_classification_phylo_interaction/smoke/results.csv",
+      "sha256": "c4ead56ab7dd834e6797140a99d926467f2a1b706eb11cf3d5d7bdafd07a1217",
+      "bytes": 2449
+    },
+    {
+      "path": "fusionML/real_results_classification_phylo_interaction/smoke/run_manifest.json",
+      "source": "fusionML/real_results_classification_phylo_interaction/smoke/run_manifest.json",
+      "sha256": "bab6f4efb1f2fd94b978ed7e022570180bb0157dd2e8acd28b89151e9e432fbf",
+      "bytes": 18178
+    },
+    {
+      "path": "fusionML/real_results_classification_phylo_interaction/smoke/search_results.csv",
+      "source": "fusionML/real_results_classification_phylo_interaction/smoke/search_results.csv",
+      "sha256": "bed2b89c211a3d70851f028d2c493d8198926e3c594d58fb03f1f9085076dc06",
+      "bytes": 53799
+    },
+    {
+      "path": "fusionML/run_model.py",
+      "source": "fusionML/run_model.py",
+      "sha256": "070de99c1a2eec12806fb2d1dbb7d7031031f0c80145d768ae132f2564687812",
+      "bytes": 346
+    },
+    {
+      "path": "fusionML/search.py",
+      "source": "fusionML/search.py",
+      "sha256": "f802875bc6110677109c21825e7c719bcd897a88cb2bfa0269baf32225ee531c",
+      "bytes": 11856
+    },
+    {
+      "path": "fusionML/season.py",
+      "source": "fusionML/season.py",
+      "sha256": "1b2af95703573589e3d393c7b45c149b2992482745fe1f10b7aa6da25b1b976f",
+      "bytes": 1681
+    },
+    {
+      "path": "fusionML/single_domain.py",
+      "source": "fusionML/single_domain.py",
+      "sha256": "5f3671a356ce283d59a3a637d7733785a1a2133066ec530c2abd287aa071e7b5",
+      "bytes": 20440
+    },
+    {
+      "path": "fusionML/synthetic.py",
+      "source": "fusionML/synthetic.py",
+      "sha256": "c5b6882ad93cffbfd5e02d7e199628e57a13486889d4be440364455db15514ff",
+      "bytes": 6665
+    },
+    {
+      "path": "output/genus_tree/taxlevel_autorun/genus/arc_mapping.csv",
+      "source": "output/genus_tree/taxlevel_autorun/genus/arc_mapping.csv",
+      "sha256": "03bf047b003d010fdd3bca7dcea4c3dec5ac24c3668683153a7457fe3b097264",
+      "bytes": 6588
+    },
+    {
+      "path": "output/genus_tree/taxlevel_autorun/genus/arc_tree.nwk",
+      "source": "output/genus_tree/taxlevel_autorun/genus/arc_tree.nwk",
+      "sha256": "faefa163cb7948206bbe2253308dd2500421cb4f2b760f5d0f4240c9c1b79e24",
+      "bytes": 1495
+    },
+    {
+      "path": "output/genus_tree/taxlevel_autorun/genus/bac_mapping.csv",
+      "source": "output/genus_tree/taxlevel_autorun/genus/bac_mapping.csv",
+      "sha256": "baf8f701dfd9657fad5652c42c18fa127bffdc1cc6c2f0e41294ba968448156b",
+      "bytes": 38932
+    },
+    {
+      "path": "output/genus_tree/taxlevel_autorun/genus/bac_tree.nwk",
+      "source": "output/genus_tree/taxlevel_autorun/genus/bac_tree.nwk",
+      "sha256": "f24f170c7b993120c9e5f21c9b0efece52d5313b1e03965b599e2157e9afa1d7",
+      "bytes": 13982
+    }
+  ]
+}

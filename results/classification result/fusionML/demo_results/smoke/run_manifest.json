@@ -1,0 +1,184 @@
+{
+  "run_id": "synthetic_demo",
+  "mode": "train",
+  "timestamp_unix": 1789716875.1983178,
+  "timestamp_iso": "2026-09-18T07:34:35Z",
+  "seed": 20260917,
+  "python_version": "3.12.5 | packaged by Anaconda, Inc. | (main, Sep 12 2024, 18:27:27) [GCC 11.2.0]",
+  "platform": "Linux-6.8.0-111-generic-x86_64-with-glibc2.35",
+  "git_commit": "d75a038e147c4f34c56cb51733e024c22a686a35",
+  "dependency_versions": {
+    "numpy": "2.0.1",
+    "pandas": "2.2.3",
+    "scipy": "1.14.1",
+    "sklearn": "1.5.2",
+    "cvxpy": "1.9.2",
+    "yaml": "6.0.1",
+    "Bio": "1.88",
+    "matplotlib": "3.9.2"
+  },
+  "input_hashes": {
+    "arc_counts": "88cd8c2cdf85644c01768aa59bf979b866fceb8429449beca717a8a77cbbbddd",
+    "bac_counts": "f5233abc31d7a10f1e2649dae3af3f3b49b773d829d515befc69e937c4db6a9d",
+    "metadata": "ab03144e512f4d934f56321630ede3b2913080c6b7afc1e0a10a086005174000",
+    "arc_tree": "f24a8b3f2b96629238adc91808056e322a92c0282fae1acb64559022a8bf3dab",
+    "bac_tree": "fb306d529b977f5e7bd3f019b9b3a7d0e6956f9d49f74f9a445989e1e6b8c9cc",
+    "arc_taxonomy": "702fbd80a9f636596a0b9f507a58ead167167892a4791c616bb151b2126f59c9",
+    "bac_taxonomy": "3be097f999cc9d58e720e9ca2f818345446f9ada7911dfbb1e565a5b1eb2a126"
+  },
+  "config": {
+    "seed": 20260917,
+    "task": "regression",
+    "resolution": "asv",
+    "inputs": {
+      "arc_counts": "../demo_data/SYNTHETIC_arc_counts.csv",
+      "bac_counts": "../demo_data/SYNTHETIC_bac_counts.csv",
+      "metadata": "../demo_data/SYNTHETIC_metadata.csv",
+      "arc_tree": "../demo_data/SYNTHETIC_arc_tree.nwk",
+      "bac_tree": "../demo_data/SYNTHETIC_bac_tree.nwk",
+      "arc_taxonomy": "../demo_data/SYNTHETIC_arc_taxonomy.tsv",
+      "bac_taxonomy": "../demo_data/SYNTHETIC_bac_taxonomy.tsv",
+      "orientation": "samples_by_features",
+      "exploratory_block_list": null
+    },
+    "columns": {
+      "sample_id": "sample_id",
+      "site_id": "site_id",
+      "target": "methane_yield_SYNTHETIC",
+      "covariates": []
+    },
+    "preprocessing": {
+      "detection_count": 1,
+      "min_detected_samples": 4,
+      "min_sample_prevalence": 0.1,
+      "min_detected_sites": 2,
+      "min_site_prevalence": 0.1,
+      "pseudocount": 0.5,
+      "sensitivity_pseudocounts": [
+        1.0
+      ],
+      "standardize_target": true,
+      "standardize_microbial_columns": false,
+      "relative_input_mode": false,
+      "missing_retained_feature_means_zero": false
+    },
+    "graph": {
+      "k_phylogeny": 3,
+      "k_abundance": 3,
+      "min_joint_samples": 5,
+      "min_joint_sites": 2,
+      "empirical_score": "max_all_and_joint_lrv",
+      "bootstrap_sites": 30,
+      "support_threshold": 0.7,
+      "approximate_bootstrap": false,
+      "approximate_candidate_k": 20
+    },
+    "cv": {
+      "outer_folds": 4,
+      "inner_folds": 3,
+      "selection_metric": "site_balanced_mse",
+      "selection_rule": "one_standard_error",
+      "required_validation_coverage": 0.8,
+      "families": null
+    },
+    "search": {
+      "candidate_budget_per_family": 16,
+      "lambda_s": [
+        0,
+        0.001,
+        0.01,
+        0.1
+      ],
+      "lambda_r": [
+        0.001,
+        0.01,
+        0.1,
+        1
+      ],
+      "lambda_f": [
+        0,
+        0.1,
+        1,
+        10,
+        100
+      ],
+      "alpha_arc": [
+        0,
+        0.5,
+        1
+      ],
+      "alpha_bac": [
+        0,
+        0.5,
+        1
+      ],
+      "exhaustive": false
+    },
+    "solver": {
+      "preferred": "CLARABEL",
+      "fallback": "OSQP",
+      "equality_tolerance": 1e-06,
+      "max_retries": 3,
+      "time_limit_seconds": 60
+    },
+    "compression": {
+      "coefficient_tolerance": 1e-06,
+      "keep_residual_coefficients": true
+    },
+    "optional": {
+      "b12_comparator": false,
+      "cross_domain_interactions": false
+    },
+    "output_dir": "../demo_results",
+    "run_id": "synthetic_demo",
+    "smoke": true
+  },
+  "smoke": true,
+  "cohort_report": {
+    "n_arc": 41,
+    "n_bac": 41,
+    "n_metadata": 41,
+    "n_missing_arc_assay": 0,
+    "n_missing_bac_assay": 0,
+    "n_missing_target": 0,
+    "n_missing_site": 0,
+    "n_joint_cohort": 41,
+    "missing_arc_assay_ids": [],
+    "missing_bac_assay_ids": [],
+    "missing_target_ids": []
+  },
+  "solver_environment": {
+    "cvxpy_version": "1.9.2",
+    "installed_solvers": [
+      "CLARABEL",
+      "SCS",
+      "SCIPY",
+      "HIGHS",
+      "OSQP"
+    ]
+  },
+  "families_run": [
+    "intercept_only",
+    "genus_ridge",
+    "genus_elastic_net",
+    "asv_ridge",
+    "asv_elastic_net",
+    "phylogeny_only",
+    "abundance_only",
+    "shared_hybrid",
+    "domain_adaptive_hybrid"
+  ],
+  "final_model": {
+    "status": "ok",
+    "family": "domain_adaptive_hybrid",
+    "model_path": "/home/best/Sujin/NGS-embedding/fusionML/demo_results/smoke/final_model.pkl",
+    "selected_candidate": {
+      "lambda_s": 0,
+      "lambda_r": 0.1,
+      "lambda_f": 0.1,
+      "alpha_arc": 1,
+      "alpha_bac": 0
+    },
+    "n_train": 41
+  }
+}

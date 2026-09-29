@@ -1,0 +1,25 @@
+target,model,reference,n_sites,delta_logloss_vs_ridge,ci_low,ci_high,bootstrap_resamples,seed,uncertainty
+warning_ammonia_toxicity,genus_ridge,genus_ridge,35,0,0,0,5000,20260922,paired site bootstrap of fixed OOF losses; no refitting
+warning_ammonia_toxicity,genus_elastic_net,genus_ridge,35,0.111356864811,0.0388089725332,0.190591893921,5000,20260922,paired site bootstrap of fixed OOF losses; no refitting
+warning_ammonia_toxicity,phylogeny_only,genus_ridge,35,0.0867250837132,0.036614519437,0.149243146846,5000,20260922,paired site bootstrap of fixed OOF losses; no refitting
+warning_ammonia_toxicity,abundance_only,genus_ridge,35,0.0429179111234,0.00509128391599,0.0864942809884,5000,20260922,paired site bootstrap of fixed OOF losses; no refitting
+warning_ammonia_toxicity,shared_hybrid,genus_ridge,35,0.0743912239012,0.0301869497421,0.128729196959,5000,20260922,paired site bootstrap of fixed OOF losses; no refitting
+warning_ammonia_toxicity,domain_adaptive_hybrid,genus_ridge,35,0.0636808234189,0.0252704172593,0.107707383447,5000,20260922,paired site bootstrap of fixed OOF losses; no refitting
+warning_ammonia_toxicity,domain_adaptive_interaction,genus_ridge,35,0.0664109653949,0.0257515628524,0.112995995724,5000,20260922,paired site bootstrap of fixed OOF losses; no refitting
+warning_ammonia_toxicity,adaptive_expanded,genus_ridge,35,0.105268229052,0.0488642761282,0.170566036794,5000,20260922,paired site bootstrap of fixed OOF losses; no refitting
+warning_ammonia_toxicity,elasticnet_RA_matched,genus_ridge,35,0.0771818791482,0.0253322430228,0.134911382879,5000,20260922,paired site bootstrap of fixed OOF losses; no refitting
+warning_ammonia_toxicity,xgboost_RA_matched,genus_ridge,35,0.0454832152037,-0.0392177063268,0.150532076798,5000,20260922,paired site bootstrap of fixed OOF losses; no refitting
+warning_ammonia_toxicity,elasticnet_RA_flat,genus_ridge,35,0.193636528491,0.10526305726,0.305926574932,5000,20260922,paired site bootstrap of fixed OOF losses; no refitting
+warning_ammonia_toxicity,xgboost_RA_flat,genus_ridge,35,0.153597206205,0.0504050398937,0.278306824975,5000,20260922,paired site bootstrap of fixed OOF losses; no refitting
+warning_acid_base_balance,genus_ridge,genus_ridge,35,0,0,0,5000,20260922,paired site bootstrap of fixed OOF losses; no refitting
+warning_acid_base_balance,genus_elastic_net,genus_ridge,35,0.0798193728907,0.0134578074617,0.15872786243,5000,20260922,paired site bootstrap of fixed OOF losses; no refitting
+warning_acid_base_balance,phylogeny_only,genus_ridge,35,0.0547273586843,0.00725518530803,0.10456793339,5000,20260922,paired site bootstrap of fixed OOF losses; no refitting
+warning_acid_base_balance,abundance_only,genus_ridge,35,0.0520899005953,-0.00102304711727,0.110263743646,5000,20260922,paired site bootstrap of fixed OOF losses; no refitting
+warning_acid_base_balance,shared_hybrid,genus_ridge,35,0.0754506739027,0.0163394722936,0.147812129282,5000,20260922,paired site bootstrap of fixed OOF losses; no refitting
+warning_acid_base_balance,domain_adaptive_hybrid,genus_ridge,35,0.0937654920109,0.0307966640636,0.172742004043,5000,20260922,paired site bootstrap of fixed OOF losses; no refitting
+warning_acid_base_balance,domain_adaptive_interaction,genus_ridge,35,0.105101960617,0.0386768946462,0.18597016729,5000,20260922,paired site bootstrap of fixed OOF losses; no refitting
+warning_acid_base_balance,adaptive_expanded,genus_ridge,35,0.0499332310428,0.01036857587,0.0911109812452,5000,20260922,paired site bootstrap of fixed OOF losses; no refitting
+warning_acid_base_balance,elasticnet_RA_matched,genus_ridge,35,0.0494039727428,-0.028645822472,0.145775714744,5000,20260922,paired site bootstrap of fixed OOF losses; no refitting
+warning_acid_base_balance,xgboost_RA_matched,genus_ridge,35,0.0603975952367,-0.0165553250855,0.148577830997,5000,20260922,paired site bootstrap of fixed OOF losses; no refitting
+warning_acid_base_balance,elasticnet_RA_flat,genus_ridge,35,0.0981237821729,-0.0481308592955,0.287149832736,5000,20260922,paired site bootstrap of fixed OOF losses; no refitting
+warning_acid_base_balance,xgboost_RA_flat,genus_ridge,35,0.0944669633956,-0.0613877505877,0.257831380286,5000,20260922,paired site bootstrap of fixed OOF losses; no refitting

@@ -1,0 +1,53 @@
+{
+  "learning": {
+    "tasks": 36,
+    "reported_outer_fits": 504,
+    "successful_outer_fits": 438,
+    "unavailable_outer_fits": 66,
+    "scored_prediction_rows": 19575,
+    "group_disjointness": true,
+    "unique_predictions": true,
+    "input_config_workbook_unchanged": true
+  },
+  "learning_qc": {
+    "tasks": 36,
+    "reported_outer_fits": 504,
+    "successful_outer_fits": 482,
+    "unavailable_outer_fits": 22,
+    "scored_prediction_rows": 21533,
+    "group_disjointness": true,
+    "unique_predictions": true,
+    "input_config_workbook_unchanged": true
+  },
+  "learning_filter20": {
+    "tasks": 12,
+    "reported_outer_fits": 48,
+    "successful_outer_fits": 48,
+    "unavailable_outer_fits": 0,
+    "scored_prediction_rows": 2144,
+    "group_disjointness": true,
+    "unique_predictions": true,
+    "input_config_workbook_unchanged": true
+  },
+  "existing_tests": {
+    "passed": 13,
+    "failed": 0,
+    "suite": [
+      "test_constraints.py",
+      "test_solver.py",
+      "test_fold_isolation.py",
+      "test_group_algebra.py",
+      "test_scale_invariance.py"
+    ]
+  },
+  "cache_replay": {
+    "maximum_absolute_prediction_difference": 0.0,
+    "maximum_zero_sum_residual": 1.2684298056342413e-14
+  },
+  "final_analysis_code_hashes": {
+    "learning_curves.py": "21612869f9a7f2dd5b96e215b992f3697818ae7a3aa916068a7324daa91605c1",
+    "mechanism_probes.py": "a4ad5abc1b79f53405c2d05c1722c58736afc49b3729a45f6061ff22213d805b",
+    "audit.py": "b9aa6371ff1ca16505869fdf49ad58bb6c20941959fe8b593ad63cc8ab5927c2",
+    "summarize_investigation.py": "6660116cca98adf102abd9ad1e898a8f883c521d2d7fe8b9495e95edaf8c173c"
+  }
+}

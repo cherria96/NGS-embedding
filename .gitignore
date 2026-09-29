@@ -1,4 +1,25 @@
-/data/fastq/
-/data/qiimeresult/sepp-refs-silva-128.qza
+# Published root layout
+/*
+!/.gitignore
+!/README.md
+!/main.py
+!/configs/
+!/function/
+!/models/
+!/datasets/
+!/results/
+
+# Local caches and generated inspection files
 __pycache__/
-/Phylospec/output/
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+graphify-out/
+*.log
+
+# Large externally supplied references and old generated model output
+/datasets/raw/fastq/
+/datasets/raw/qiimeresult/sepp-refs-silva-128.qza
+/results/classification result/PhyloSpec/
+
+/models/baselines/PhylogenicDL/output

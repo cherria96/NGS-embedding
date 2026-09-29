@@ -1,0 +1,7 @@
+claim,source,statement
+ammonia_methanogen_spectrum,https://www.sciencedirect.com/science/article/abs/pii/S2214714419302107,"Ammonia inhibition review: acetoclastic methanogens are the most ammonia-sensitive group, hydrogenotrophic methanogens the most tolerant, with Methanosarcina intermediate."
+sao_replaces_acetoclastic,https://pmc.ncbi.nlm.nih.gov/articles/PMC7334858/,Syntrophic acetate oxidation coupled to hydrogenotrophic methanogenesis can replace acetoclastic methanogenesis when ammonia rises.
+sao_consortia_members,https://pmc.ncbi.nlm.nih.gov/articles/PMC9600251/,"Syntrophic acetate-oxidising consortia enriched from full-scale mesophilic digesters are taxonomically diverse, with unclassified Clostridia and Syntrophomonas recurring."
+sao_full_scale_digesters,https://pmc.ncbi.nlm.nih.gov/articles/PMC4769498/,"Low- vs high-ammonia full-scale digesters differ in bacterial composition and fhs profiles, with novel candidate syntrophic acetate oxidisers among uncultured Clostridia."
+propionate_syntroph_inhibition,https://pubmed.ncbi.nlm.nih.gov/30278382/,"Ammonia dosing of digester sludge inhibited syntrophic propionate oxidation, with Smithella, Methanosaetaceae and Methanospirillaceae among the inhibited populations."
+immigration,https://www.nature.com/articles/s41598-017-09303-0,Several of the most abundant populations in full-scale digesters are inactive immigrants from the feed; inactive populations were associated with aerobes and facultative anaerobes.

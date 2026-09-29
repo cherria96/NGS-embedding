@@ -1,0 +1,50 @@
+{
+ "snapshot": {
+  "files_verified": 73,
+  "selected": [
+   {
+    "flag": "warning_acid_high",
+    "model": "fusion_arc_only",
+    "resolution": "order",
+    "run": "acid_high__order"
+   },
+   {
+    "flag": "warning_ammonia_toxicity",
+    "model": "shared_hybrid",
+    "resolution": "order",
+    "run": "ammonia__order"
+   }
+  ]
+ },
+ "cohort": {
+  "n_samples": 134,
+  "n_sites": 35,
+  "labels_match_trained": true
+ },
+ "fits": {
+  "n_fits": 12,
+  "all_ok": true,
+  "max_equality_residual": 3.5263458819656535e-13,
+  "max_group_reconstruction_error": 3.774758283725532e-15
+ },
+ "zero_sum_max_abs_residual": 3.527126507529843e-13,
+ "arc_only_restriction_holds": true,
+ "shared_hybrid_fuses_both_domains": true,
+ "metric_reproduction": {
+  "n_fits": 12,
+  "max_mcc_difference": 0.0,
+  "max_f2_difference": 1.1102230246251565e-16
+ },
+ "site_isolated_splits": 12,
+ "scripts": {
+  "copy_inputs.py": "cee38cd710667bde4fc4c666e992ddb632239bb80b7ad033e0a6e24e0bd63e71",
+  "functional_evidence.py": "6db1fef751a8fce0ad6c81c452899d6a824a901f6b714ef78788038ebe3b4ce8",
+  "interpret.py": "4ee768df0a67155eea8fa818be83306d9bc6413503a22a3bc986a066ba3a8505",
+  "report_text.py": "7c6a79b4df696dd9ab6323fec9ba4acbc6fd306b2403a8dd3b723d2a3c34e24f"
+ },
+ "versions": {
+  "numpy": "2.0.1",
+  "pandas": "2.2.3",
+  "matplotlib": "3.9.2"
+ }
+}

@@ -1,0 +1,9 @@
+target,model,auc,logloss,prevalence_filter
+warning_acid_base_balance,domain_adaptive_hybrid,0.6524122807017544,0.5366711877425725,40%
+warning_acid_base_balance,genus_ridge,0.6765350877192982,0.442905695731651,40%
+warning_ammonia_toxicity,domain_adaptive_hybrid,0.8810606060606061,0.36046494730957157,40%
+warning_ammonia_toxicity,genus_ridge,0.9113636363636363,0.29678412389062203,40%
+warning_acid_base_balance,domain_adaptive_hybrid,0.6934210526315789,0.5798512582895545,20%
+warning_acid_base_balance,genus_ridge,0.7320175438596491,0.4291823454997282,20%
+warning_ammonia_toxicity,domain_adaptive_hybrid,0.8939393939393939,0.36330192027077735,20%
+warning_ammonia_toxicity,genus_ridge,0.9041666666666668,0.3040724539956233,20%

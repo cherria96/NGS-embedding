@@ -1,0 +1,26 @@
+{
+ "tables": {
+  "selection_ranking": "4c806fa7706f53822f107094c4fcb3a22a827a4629e3c3cc625460ea0d46f3c3",
+  "fit_inventory": "51b58fdd18462cb22138ff702c8e17e2ed41f025d0dd48b4ab8272dbbeeea344",
+  "taxon_coefficients": "0c0d64baac73e6ed6ccd479c8edba66ef234ed03b13a341ceac07e667ec2b968",
+  "group_catalog": "ac40222a6fa719ba2e9a7b018ba83e0cdccd030b8de4db8f6bfb6daf672e0e77",
+  "recurrent_groups": "c6a82d2333e897202731bcf6ca1105ee15f01527122f32500808b7d0d8d18113",
+  "domain_contrasts": "94d985f592e4acb083e6477c27b495334c455e4196d55d4d65dc46bf30ea42cd",
+  "cross_flag_agreement": "6dcf4535ce35de9a71d5b17298ec9c74b0bc4af2e4b9c5530d7759e527af8f9d",
+  "functional_annotation": "f4aa84fa0695932108b197354cf716a8ffac8de8e86dbf65c6236130e87fa065",
+  "unassigned_lineages": "8c8c2f5496ae92655437747c558c8693d118f07d1075c4392e062dc6c8adb1ba",
+  "background_literature": "5320fdfb4ff682b9687e17dc2376bda2a3767fa603695700bb6b36f0feef4806",
+  "abundance_context": "e87d5a1cbd8cd72d8362875e6e106182a6a81a266deb51e2fbc4f11a7fb6e567",
+  "metric_reproduction": "9cfb37910bc45348ee7137963ed6bef6928b6fd6a4d526dc81a6e9fa44100a93",
+  "block_catalog": "9af2244c0115b5680276924444008b9267a1f2e32df5303888e45a1b56f20ab0"
+ },
+ "figures": {
+  "01_taxon_coefficients.png": "2294a7bedad7a757159b364e8adfbea48cbda32ea5f4a9c9d4391118eaf3b368",
+  "01_taxon_coefficients.pdf": "658c4b3ba72887a9a23b8799d0bf6a1e7725ebb1ec15fb8bce02fc60e1d3e170",
+  "02_archaeal_blocks.png": "7f2d8a7be40b872d15043f040a3d4b594151fa0d07ea670d096a6db146c21f49",
+  "02_archaeal_blocks.pdf": "f6787a764932f1fd6caa49eec53fd2a51ef8ffafd845833c3dbfe9305406accd",
+  "03_cross_flag_agreement.png": "c71f70e8fdcd7c88dbe0e3aca6b871ff14bb13ecd2b2274da609fafa00595285",
+  "03_cross_flag_agreement.pdf": "b1e1aacf4d7f7687711135a5ec25632dd90f4335786c89bc53e96c4a46f26c88"
+ },
+ "report": "c372e6f9249f59edb24b533143e6a0a5849e8d5067ba7a6a9900103e6c7f0918"
+}

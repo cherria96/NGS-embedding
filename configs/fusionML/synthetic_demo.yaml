@@ -1,0 +1,75 @@
+# SYNTHETIC DEMONSTRATION CONFIG -- exercises the full pipeline end to end
+# on generated data (fusionML/generate_synthetic_demo_data.py). This tests
+# IMPLEMENTATION correctness only; it is not evidence about real AD data
+# (design-spec item 18.10). All figures/results from this config are
+# labeled synthetic (smoke: true).
+seed: 20260917
+task: regression
+resolution: asv
+inputs:
+  arc_counts: ../../datasets/fusionML/demo_data/SYNTHETIC_arc_counts.csv
+  bac_counts: ../../datasets/fusionML/demo_data/SYNTHETIC_bac_counts.csv
+  metadata: ../../datasets/fusionML/demo_data/SYNTHETIC_metadata.csv
+  arc_tree: ../../datasets/fusionML/demo_data/SYNTHETIC_arc_tree.nwk
+  bac_tree: ../../datasets/fusionML/demo_data/SYNTHETIC_bac_tree.nwk
+  arc_taxonomy: ../../datasets/fusionML/demo_data/SYNTHETIC_arc_taxonomy.tsv
+  bac_taxonomy: ../../datasets/fusionML/demo_data/SYNTHETIC_bac_taxonomy.tsv
+  orientation: samples_by_features
+  exploratory_block_list: null
+columns:
+  sample_id: sample_id
+  site_id: site_id
+  target: methane_yield_SYNTHETIC
+  covariates: []
+preprocessing:
+  detection_count: 1
+  min_detected_samples: 4
+  min_sample_prevalence: 0.10
+  min_detected_sites: 2
+  min_site_prevalence: 0.10
+  pseudocount: 0.5
+  sensitivity_pseudocounts: [1.0]
+  standardize_target: true
+  standardize_microbial_columns: false
+  relative_input_mode: false
+  missing_retained_feature_means_zero: false
+graph:
+  k_phylogeny: 3
+  k_abundance: 3
+  min_joint_samples: 5
+  min_joint_sites: 2
+  empirical_score: max_all_and_joint_lrv
+  bootstrap_sites: 30
+  support_threshold: 0.70
+  approximate_bootstrap: false
+  approximate_candidate_k: 20
+cv:
+  outer_folds: 4
+  inner_folds: 3
+  selection_metric: site_balanced_mse
+  selection_rule: one_standard_error
+  required_validation_coverage: 0.8
+  families: null   # null = every family applicable to this resolution/inputs
+search:
+  candidate_budget_per_family: 16
+  lambda_s: [0, 0.001, 0.01, 0.1]
+  lambda_r: [0.001, 0.01, 0.1, 1]
+  lambda_f: [0, 0.1, 1, 10, 100]
+  alpha_arc: [0, 0.5, 1]
+  alpha_bac: [0, 0.5, 1]
+  exhaustive: false
+solver:
+  preferred: CLARABEL
+  fallback: OSQP
+  equality_tolerance: 1.0e-6
+  max_retries: 3
+  time_limit_seconds: 60
+compression:
+  coefficient_tolerance: 1.0e-6
+  keep_residual_coefficients: true
+optional:
+  b12_comparator: false
+  cross_domain_interactions: false
+output_dir: ../../results/classification result/fusionML/demo_results
+run_id: synthetic_demo
+smoke: true

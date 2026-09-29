@@ -1,0 +1,31 @@
+{
+  "targets": [
+    "warning_ammonia_toxicity",
+    "warning_acid_base_balance"
+  ],
+  "repeats": 2,
+  "fractions": [
+    1.0
+  ],
+  "outer_folds": 3,
+  "inner_folds": 2,
+  "grouping": "BSIb\u2192BSI, DGYb\u2192DGY",
+  "min_prevalence": 0.2,
+  "pseudocount": null,
+  "models": [
+    "genus_ridge",
+    "domain_adaptive_hybrid"
+  ],
+  "subsampling": "nested random whole-site prefixes; no label stratification",
+  "selection": "production one-SE for fusion, minimum inner site-logloss for ML; F2 threshold on inner OOF only",
+  "changes_from_production": [
+    "same inner folds across families",
+    "same graph bootstrap seeds per partition",
+    "additional full-size expanded adaptive grid and minimum-loss selection ablation"
+  ],
+  "hashes": {
+    "fusionML/configs/real_smoke_classification_phylo.yaml": "628565a7bab7ed451877c6399029cb7a0156ca9b86987e8dc1df721ffd678650",
+    "data/final/Dat_chem.xlsx": "072f9329df56e93a615b049dc0c60fb75c3da169ef243d4cbd35f0ff52e814e2",
+    "fusionML/investigation_20260921/learning_curves.py": "21612869f9a7f2dd5b96e215b992f3697818ae7a3aa916068a7324daa91605c1"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "resolutions": [
+    "order",
+    "family",
+    "genus",
+    "asv"
+  ],
+  "completed_tasks_per_resolution": 18,
+  "planned_fit_records": 720,
+  "available_fit_records": 640,
+  "unavailable_fit_records": 80,
+  "prediction_rows": 28640,
+  "outer_partitions_without_site_overlap": 72,
+  "restriction_verified_no_edges_in_unfused_domain": true,
+  "labels_and_sites_match_reused_cohort": true,
+  "retained_features_missing_from_trees": 0,
+  "maximum_equality_residual": 4.2202005778868573e-13,
+  "maximum_group_reconstruction_error": 1.6875389974302383e-14,
+  "maximum_coefficient_residual": 7.329368396467567e-07,
+  "failed_candidate_records": 1120,
+  "failure_kinds": [
+    "SingleClassTrainingError"
+  ],
+  "unavailable_outer_splits": [
+    [
+      "warning_biogas_quality",
+      0,
+      2
+    ],
+    [
+      "warning_biogas_quality",
+      1,
+      1
+    ]
+  ],
+  "targets_with_complete_out_of_fold_coverage": [
+    "warning_acid_base_balance",
+    "warning_ammonia_toxicity"
+  ],
+  "asv_both_domain_fits_reproduce_saved_asv_run": {
+    "n_active_groups": 0.0,
+    "test_mcc": 0.0,
+    "test_f2": 0.0,
+    "test_logloss": 0.0,
+    "test_auc": 0.0
+  },
+  "selection_rule_reported": "min_loss",
+  "ranking_metric": "mcc"
+}

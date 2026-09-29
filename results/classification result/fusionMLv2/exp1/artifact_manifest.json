@@ -1,0 +1,224 @@
+{
+  "files": [
+    {
+      "path": "REPORT.md",
+      "sha256": "a72d06c01295d774d86e139bf7e048a0fa04b25a7e5324acbfd7681e5b470b44",
+      "bytes": 36589
+    },
+    {
+      "path": "asv_validation.json",
+      "sha256": "3ad72ad5fbdb125402c194c7a9b8a044cff1e77a14cae5a182d6cf9e9ab4d152",
+      "bytes": 729
+    },
+    {
+      "path": "domain_fusion_validation.json",
+      "sha256": "a4799ff71b29f2b4a0c8aaf5625143013af7eb8dc0691448e90677f487e637e4",
+      "bytes": 1226
+    },
+    {
+      "path": "figures/01_regularization_tradeoff.pdf",
+      "sha256": "e04f425e8b558fea542d7ca8bdd54aaa155e8d9783177751a29a4482de7fa156",
+      "bytes": 28795
+    },
+    {
+      "path": "figures/01_regularization_tradeoff.png",
+      "sha256": "4d85a0158ddfd0240845b77a1b27547fcf6d8ca1a1c2bd2450b34b1e0f0a657c",
+      "bytes": 308954
+    },
+    {
+      "path": "figures/02_qc_compression_and_loss.pdf",
+      "sha256": "d41d6366553d96c17836feeb451cca484cc8035b3a1e7357ba9541cdb9b46d76",
+      "bytes": 24243
+    },
+    {
+      "path": "figures/02_qc_compression_and_loss.png",
+      "sha256": "a1d2d8143cbc3965c65518e390e6dec455d77897ed7ca6d6aafa50fc279b3624",
+      "bytes": 312491
+    },
+    {
+      "path": "figures/03_qc_tradeoff.pdf",
+      "sha256": "aa2700b707607d4e8d6a4d4c3d871242174a347c8d24f4c65788e0873138a72a",
+      "bytes": 24301
+    },
+    {
+      "path": "figures/03_qc_tradeoff.png",
+      "sha256": "a89982c7ee42712dc90a73290d6ca4e7bfe312c01ce13dae428ef0d9e046d040",
+      "bytes": 150098
+    },
+    {
+      "path": "figures/04_qc_selection_sensitivity.pdf",
+      "sha256": "fd3c5a2541f5bb670f6d069538109f7ce5152a78662d0757b05678a4d6bea8d6",
+      "bytes": 24805
+    },
+    {
+      "path": "figures/04_qc_selection_sensitivity.png",
+      "sha256": "43230cbdae37f68796727c9be69d3a87092b83c8933a1f32c134cf3d94fdd459",
+      "bytes": 224402
+    },
+    {
+      "path": "figures/05_asv_regularization_tradeoff.pdf",
+      "sha256": "5bcd8e6e38c46ce477d6890218cd17b1420e5198cbb0db86136727d851c74bb1",
+      "bytes": 28900
+    },
+    {
+      "path": "figures/05_asv_regularization_tradeoff.png",
+      "sha256": "28a548206705feed13057b48b94079bfcb293c905e9739ba1d225290207c3e0b",
+      "bytes": 340952
+    },
+    {
+      "path": "figures/06_asv_vs_genus.pdf",
+      "sha256": "1c247279c53016e06f97974e51770916d582917cf9bfc68c73b331f9ab3aada3",
+      "bytes": 21517
+    },
+    {
+      "path": "figures/06_asv_vs_genus.png",
+      "sha256": "ef938d1452d769224a79f36be4c3ff91a465abc20881eda2a3aacf587d05837c",
+      "bytes": 207203
+    },
+    {
+      "path": "figures/07_domain_fusion_compression.pdf",
+      "sha256": "eb7d5202ff4e95f1237694400597cd4ef000d7a58cc9c7b8e258628f68a41774",
+      "bytes": 23157
+    },
+    {
+      "path": "figures/07_domain_fusion_compression.png",
+      "sha256": "dda9f839ded5a4cf10ae3727ccc132a4824b71902ba4ce3abd04977d34095f7f",
+      "bytes": 219872
+    },
+    {
+      "path": "tables/asv_all_selection_rules.csv",
+      "sha256": "2e518b07c9e03cc39d9ebab822aebb5ee49893993bf26564ef3786da22334082",
+      "bytes": 7979
+    },
+    {
+      "path": "tables/asv_filtering_and_compression.csv",
+      "sha256": "d56390e0172cc82398b958b5644b7f59ed004454726a82d6c9a9efe70db60984",
+      "bytes": 542
+    },
+    {
+      "path": "tables/asv_full_size_fits.csv",
+      "sha256": "4033ab465c75ced926c639db20389a5492571713da9eb5e02d7517a413f2a33a",
+      "bytes": 86695
+    },
+    {
+      "path": "tables/asv_primary_comparison.csv",
+      "sha256": "41b20b77eb31e6400856b640afa5353303e9577a4300894bc7842926982fc08a",
+      "bytes": 4411
+    },
+    {
+      "path": "tables/asv_regularization_summary.csv",
+      "sha256": "20f9f49bf4ac1174b113901f600969ef8cc51e1761a3b95994855fa3f7967c28",
+      "bytes": 5417
+    },
+    {
+      "path": "tables/asv_repeat_metrics.csv",
+      "sha256": "5d499af7d1e079a4e52ce43a543785242c7f463a0f725ec7b5accf24f16d55c4",
+      "bytes": 9773
+    },
+    {
+      "path": "tables/asv_vs_genus_qc.csv",
+      "sha256": "1b87bb5154711fdd777e38383f967723350647c76854f2d79038325f8c25b239",
+      "bytes": 4456
+    },
+    {
+      "path": "tables/domain_fusion_all_selection_rules.csv",
+      "sha256": "4a9c5cb17c188c8cd5a78a3e7877de4d3dd5463cdab6c10acddb42b83f8912bd",
+      "bytes": 42527
+    },
+    {
+      "path": "tables/domain_fusion_arm_winners.csv",
+      "sha256": "902f8a59e12ec1340d43f0e2ee204230550a211081343b9a038ecf11ee876cf8",
+      "bytes": 3086
+    },
+    {
+      "path": "tables/domain_fusion_best_by_resolution.csv",
+      "sha256": "777437a2550447f088fc14525f2e651453690584e0ab875522083e6acb968e9c",
+      "bytes": 3311
+    },
+    {
+      "path": "tables/domain_fusion_fit_inventory.csv",
+      "sha256": "67a33398222998a86dbecc9e3c2b1cdd0d5823249e21af1ae8b264d87289d487",
+      "bytes": 51454
+    },
+    {
+      "path": "tables/domain_fusion_fits.csv",
+      "sha256": "9d2eb7d5086f65426983ae4158ecc0da82c15cf3b3ec18609a0aa532847ad9c5",
+      "bytes": 311280
+    },
+    {
+      "path": "tables/domain_fusion_min_loss_comparison.csv",
+      "sha256": "9ddd1d706a31ba78624a0faa00c093f730b7562a6e5d794e72f87bd2db63feba",
+      "bytes": 21520
+    },
+    {
+      "path": "tables/domain_fusion_prior_best_configurations.csv",
+      "sha256": "990837639f567d69f7ccfcc5378f4b9df9562e1002c087a625c80ed1dd1c9dd1",
+      "bytes": 2503
+    },
+    {
+      "path": "tables/domain_fusion_repeat_metrics.csv",
+      "sha256": "dab9a75fd60dee0535e729cfc09ed807f52a0d0ee948138a8068deeaab823c74",
+      "bytes": 39305
+    },
+    {
+      "path": "tables/domain_fusion_resolution_grid.csv",
+      "sha256": "f3a41f59c21853fe711e69a46831e330e0e5468f7ab3b30812ff04f056fa47f4",
+      "bytes": 3297
+    },
+    {
+      "path": "tables/historical_saved_runs.csv",
+      "sha256": "db6951ab57dea1f449cb720217e341d1e8e9ecb7c832cc64a6fb63cb1a39d907",
+      "bytes": 17782
+    },
+    {
+      "path": "tables/qc_all_selection_rules.csv",
+      "sha256": "864c4981e279f00488f27957f7ef7f7313732f1c9f4bed8e670e73f4ed3c006c",
+      "bytes": 18511
+    },
+    {
+      "path": "tables/qc_fixed_oof_site_losses.csv",
+      "sha256": "cdc9614b49909636fd95f38c0e17d96e816ff4bfccb37a75cc4bea7be65e6bb1",
+      "bytes": 53171
+    },
+    {
+      "path": "tables/qc_full_size_fits.csv",
+      "sha256": "40750de5ee3d570ad46a97edee53eb52e0b91040b26595245c216ce066af926d",
+      "bytes": 92701
+    },
+    {
+      "path": "tables/qc_paired_loss_vs_ridge.csv",
+      "sha256": "4616629cd67670c9719eeff2167a934d86278b9aec77cc78da38a44149ab8602",
+      "bytes": 4239
+    },
+    {
+      "path": "tables/qc_primary_comparison.csv",
+      "sha256": "f40133e1b3ef6cfdcb15382811241da7118a34c4b17a0b3e6cd75fe4deee1da4",
+      "bytes": 12578
+    },
+    {
+      "path": "tables/qc_repeat_metrics.csv",
+      "sha256": "aba4dc34284bff91568261fb53f39140182e5f6b6bdafb39bdd9c039131f3121",
+      "bytes": 12218
+    },
+    {
+      "path": "tables/qc_selection_sensitivity.csv",
+      "sha256": "e1678943b4f15b9cf07881d15e3b5fae7476710e78e31cebaee64db5fef31014",
+      "bytes": 2493
+    },
+    {
+      "path": "tables/regularization_fold_results.csv",
+      "sha256": "6ea3f80478c47d825fdd5ddfb07e287e009cc345997af08a282078c4838a22c3",
+      "bytes": 23878
+    },
+    {
+      "path": "tables/regularization_summary.csv",
+      "sha256": "f4ffef101d34f2454a8fb067854869ef0ae6c21c11b3e45b7a261cb2347db669",
+      "bytes": 8694
+    },
+    {
+      "path": "validation.json",
+      "sha256": "95ba3adc17da2d3eb24ca1d0fcee72c3ef08b8e7abba84682b5bef9db6323bfa",
+      "bytes": 3554
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+resolution,target,n_samples,n_sites,n_positive,n_positive_sites
+asv,warning_ammonia_toxicity,134,35,24,10
+asv,warning_acid_base_balance,134,35,20,12
+asv,warning_biogas_quality,134,35,13,6
+genus,warning_ammonia_toxicity,134,37,24,10
+genus,warning_acid_base_balance,134,37,20,12
+genus,warning_biogas_quality,134,37,13,6

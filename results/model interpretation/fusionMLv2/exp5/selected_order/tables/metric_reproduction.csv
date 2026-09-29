@@ -1,0 +1,13 @@
+config,repeat,outer_fold,mcc_difference,f2_difference
+ammonia,0,0,0,0
+ammonia,0,1,0,0
+ammonia,0,2,0,0
+ammonia,1,0,0,0
+ammonia,1,1,0,5.55111512313e-17
+ammonia,1,2,0,1.11022302463e-16
+acid_high,0,0,0,0
+acid_high,0,1,0,0
+acid_high,0,2,0,0
+acid_high,1,0,0,0
+acid_high,1,1,0,0
+acid_high,1,2,0,0

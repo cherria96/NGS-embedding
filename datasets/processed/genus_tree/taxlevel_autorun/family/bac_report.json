@@ -1,0 +1,158 @@
+{
+  "input_features": 13385,
+  "features_absent_from_tree": 0,
+  "features_after_filter": 630,
+  "protected_features_retained": 0,
+  "reads_retained_pct": 71.07,
+  "classification_rate_all_features": {
+    "domain": {
+      "features_pct": 100.0,
+      "reads_pct": 100.0
+    },
+    "phylum": {
+      "features_pct": 98.9,
+      "reads_pct": 99.8
+    },
+    "class": {
+      "features_pct": 95.6,
+      "reads_pct": 96.4
+    },
+    "order": {
+      "features_pct": 94.7,
+      "reads_pct": 99.1
+    },
+    "family": {
+      "features_pct": 90.5,
+      "reads_pct": 97.3
+    },
+    "genus": {
+      "features_pct": 71.7,
+      "reads_pct": 83.3
+    },
+    "species": {
+      "features_pct": 7.7,
+      "reads_pct": 11.6
+    }
+  },
+  "classification_rate_after_filter": {
+    "domain": {
+      "features_pct": 100.0,
+      "reads_pct": 100.0
+    },
+    "phylum": {
+      "features_pct": 99.8,
+      "reads_pct": 99.9
+    },
+    "class": {
+      "features_pct": 97.5,
+      "reads_pct": 96.2
+    },
+    "order": {
+      "features_pct": 98.3,
+      "reads_pct": 99.6
+    },
+    "family": {
+      "features_pct": 95.7,
+      "reads_pct": 98.0
+    },
+    "genus": {
+      "features_pct": 80.2,
+      "reads_pct": 84.1
+    },
+    "species": {
+      "features_pct": 8.3,
+      "reads_pct": 12.1
+    }
+  },
+  "genera_on_pruned_tree": 159,
+  "genera_non_monophyletic": 33,
+  "worst_genera": [
+    [
+      "Rhodocyclaceae",
+      7
+    ],
+    [
+      "Hungateiclostridiaceae",
+      6
+    ],
+    [
+      "Dysgonomonadaceae",
+      5
+    ],
+    [
+      "Cloacimonadaceae",
+      5
+    ],
+    [
+      "Burkholderiaceae",
+      4
+    ],
+    [
+      "Paludibacteraceae",
+      3
+    ],
+    [
+      "Smithellaceae",
+      3
+    ],
+    [
+      "Bacteroidaceae",
+      3
+    ],
+    [
+      "Lentimicrobiaceae",
+      3
+    ],
+    [
+      "Syntrophaceae",
+      3
+    ]
+  ],
+  "genera_split_into_blocks": {
+    "Acholeplasmataceae": 2,
+    "Aeromonadaceae": 2,
+    "Aminicenantales": 2,
+    "Bacteroidaceae": 3,
+    "Bacteroidetes_vadinHA17": 2,
+    "Burkholderiaceae": 4,
+    "Caldicoprobacteraceae": 2,
+    "Christensenellaceae": 2,
+    "Cloacimonadaceae": 5,
+    "Clostridia_vadinBB60_group": 2,
+    "DTU014": 2,
+    "Dysgonomonadaceae": 5,
+    "Hungateiclostridiaceae": 6,
+    "Lentimicrobiaceae": 3,
+    "Marinilabiliaceae": 2,
+    "Oscillospiraceae": 3,
+    "Paludibacteraceae": 3,
+    "PeM15": 2,
+    "Peptostreptococcales-Tissierellales": 2,
+    "Prolixibacteraceae": 2,
+    "Rhodanobacteraceae": 2,
+    "Rhodocyclaceae": 7,
+    "Rikenellaceae": 2,
+    "Ruminococcaceae": 2,
+    "SBR1031": 2,
+    "SJA-28": 2,
+    "Smithellaceae": 3,
+    "Synergistaceae": 2,
+    "Syntrophaceae": 3,
+    "Thermoanaerobaculaceae": 2,
+    "UCG-010": 2,
+    "W27": 2,
+    "p-251-o5": 2
+  },
+  "phylospec_audit": {
+    "features_matching_a_tip": 242,
+    "features_routed_to_step2_bypass": 0,
+    "columns_named_unclassified": [],
+    "max_branch_length": 0.5358,
+    "branches_ge_1_negative_node_weight": 0,
+    "substring_ambiguous_feature_names": []
+  },
+  "output_features": 242,
+  "largest_group": 29,
+  "mode": "genus",
+  "rank": "family"
+}

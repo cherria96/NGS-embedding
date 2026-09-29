@@ -1,0 +1,5 @@
+feature_id,detected_samples,detected_sites,sample_prevalence_fraction
+BAC::genus::g__SynGenusB0,41,12,1.0
+BAC::genus::g__SynGenusB1,41,12,1.0
+BAC::genus::g__SynGenusB2,41,12,1.0
+BAC::genus::g__SynGenusB3,41,12,1.0

@@ -1,0 +1,18 @@
+{
+  "fusionml_version": "0.1.0",
+  "python_version": "3.12.5 | packaged by Anaconda, Inc. | (main, Sep 12 2024, 18:27:27) [GCC 11.2.0]",
+  "saved_at_unix": 1790003943.7842274,
+  "resolution": "order",
+  "family": "domain_adaptive_interaction",
+  "n_features_a": 14,
+  "n_features_b": 64,
+  "alpha_arc": 0.5,
+  "alpha_bac": 0.5,
+  "lambda_s": 0,
+  "lambda_r": 0.1,
+  "lambda_f": 1,
+  "task": "classification",
+  "classification_threshold": 0.15,
+  "has_interaction": true,
+  "n_interaction_products": 4
+}

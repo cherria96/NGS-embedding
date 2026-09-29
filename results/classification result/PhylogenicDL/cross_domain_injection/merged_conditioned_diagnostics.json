@@ -1,0 +1,29 @@
+{
+  "n_features": 330,
+  "n_bacteria": 285,
+  "n_archaea": 37,
+  "n_other": 8,
+  "method": "conditioned",
+  "covariates": [
+    "T_C",
+    "HRT_d",
+    "Q_total_Tpy",
+    "Season",
+    "substrate_avg_pH",
+    "substrate_avg_COD",
+    "substrate_avg_sCOD",
+    "substrate_avg_Protein",
+    "substrate_avg_Lipid",
+    "substrate_avg_TC",
+    "substrate_avg_TVFAs"
+  ],
+  "scale": 0.25,
+  "topk": 5,
+  "fdr": 0.05,
+  "cross_domain_pairs_tested": 10545,
+  "edges_retained": 177,
+  "mean_rho_kept": 0.37309129979853073,
+  "archaea_with_no_partner": 0,
+  "metadr_grid_size": 19,
+  "metadr_placement_quality": 0.13559322033898305
+}

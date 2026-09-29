@@ -1,0 +1,31 @@
+{
+  "copied_files_verified": 84,
+  "planned_fits": 135,
+  "successful_fits": 125,
+  "unavailable_fits": 10,
+  "coefficient_rows": 10605,
+  "groups": 4975,
+  "active_groups": 4395,
+  "max_group_reconstruction_error": 2.6201263381153694e-14,
+  "max_equality_residual": 3.007594173709549e-13,
+  "unique_domain_mismatch_asvs": 2,
+  "unique_unassigned_domain_asvs": 5,
+  "active_interaction_products": 0,
+  "domain_restricted_graphs_verified": true,
+  "train_test_site_isolation_verified": true,
+  "historical_taxonomy_hashes_verified": true,
+  "historical_rank_mapping_hashes_available": false,
+  "software_versions": {
+    "python": "3.12.5",
+    "numpy": "2.0.1",
+    "pandas": "2.2.3",
+    "matplotlib": "3.9.2"
+  },
+  "script_hashes": {
+    "run_missing_asv.py": "d8eb3fbabae215bb86892315ed26154036a2264e31b45e9e1b64954e5332ed19",
+    "functional_evidence.py": "bf9e2924f4b4f01a76d3a4440e473202e1ac8e6e7b504b1c1e80b5926c3a1c24",
+    "copy_inputs.py": "e93078b9cede3b61edbb0011fa053fb126517112de99fcbb00fb9ccb27b4cd04",
+    "verify_results.py": "e6c4f3b6db0589d146cdb503673d265a890512b3e4122ced19f638d1a1c08080",
+    "generate_results.py": "48588965d6d99638dbcc684e31266675a3f354206c8622ba0a761c783d3a07fb"
+  }
+}

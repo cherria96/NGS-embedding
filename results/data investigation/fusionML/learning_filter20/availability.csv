@@ -1,0 +1,9 @@
+target,fraction,model,selection,planned_fits,successful_fits
+warning_acid_base_balance,1.0,domain_adaptive_hybrid,min_loss,6,6
+warning_acid_base_balance,1.0,domain_adaptive_hybrid,one_se,6,6
+warning_acid_base_balance,1.0,genus_ridge,min_loss,6,6
+warning_acid_base_balance,1.0,genus_ridge,one_se,6,6
+warning_ammonia_toxicity,1.0,domain_adaptive_hybrid,min_loss,6,6
+warning_ammonia_toxicity,1.0,domain_adaptive_hybrid,one_se,6,6
+warning_ammonia_toxicity,1.0,genus_ridge,min_loss,6,6
+warning_ammonia_toxicity,1.0,genus_ridge,one_se,6,6

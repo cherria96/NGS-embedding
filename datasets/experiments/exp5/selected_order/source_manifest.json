@@ -1,0 +1,458 @@
+{
+ "experiment": "fusionMLv2/exp5/selected_order",
+ "root": "/home/best/Sujin/NGS-embedding",
+ "selected": [
+  {
+   "flag": "warning_acid_high",
+   "model": "fusion_arc_only",
+   "resolution": "order",
+   "run": "acid_high__order"
+  },
+  {
+   "flag": "warning_ammonia_toxicity",
+   "model": "shared_hybrid",
+   "resolution": "order",
+   "run": "ammonia__order"
+  }
+ ],
+ "files": [
+  {
+   "copy": "runs/acid_high__order/rows.csv",
+   "source": "fusionML/real_results_domain_fusion_acidhigh_order_exp1_20260922/rows.csv",
+   "sha256": "b18371a073f432fbea36a5b82183cd04051adc101204907a4d4cb14d5f1125cd",
+   "bytes": 31714
+  },
+  {
+   "copy": "runs/acid_high__order/predictions.csv",
+   "source": "fusionML/real_results_domain_fusion_acidhigh_order_exp1_20260922/predictions.csv",
+   "sha256": "a62420d6439b29d10a70c6719a9a76a93375d80c4c9db3075a437271a0df3192",
+   "bytes": 306983
+  },
+  {
+   "copy": "runs/acid_high__order/coefficients_and_groups.csv",
+   "source": "fusionML/real_results_domain_fusion_acidhigh_order_exp1_20260922/coefficients_and_groups.csv",
+   "sha256": "3a2a1188222d401cbc7fc703ea6d5926690c67e011305517675d0d360ba23c6d",
+   "bytes": 723278
+  },
+  {
+   "copy": "runs/acid_high__order/domain_counts.csv",
+   "source": "fusionML/real_results_domain_fusion_acidhigh_order_exp1_20260922/domain_counts.csv",
+   "sha256": "2acfb11196b1d9625c21b073c5aeb726d2a5f450ecd53ee961d3167abe606a6f",
+   "bytes": 11814
+  },
+  {
+   "copy": "runs/acid_high__order/filter_audit.csv",
+   "source": "fusionML/real_results_domain_fusion_acidhigh_order_exp1_20260922/filter_audit.csv",
+   "sha256": "741c8bb64d2d019ced5a9d8c8c04faebaf21a71db530bff16ace09a8b07a20bc",
+   "bytes": 1282
+  },
+  {
+   "copy": "runs/acid_high__order/interactions.csv",
+   "source": "fusionML/real_results_domain_fusion_acidhigh_order_exp1_20260922/interactions.csv",
+   "sha256": "cad0cab65b97ee26252b579e30c949a85deda4478d2e46ba74f4702bfecd8d76",
+   "bytes": 52448
+  },
+  {
+   "copy": "runs/acid_high__order/splits.csv",
+   "source": "fusionML/real_results_domain_fusion_acidhigh_order_exp1_20260922/splits.csv",
+   "sha256": "2c64f931f7c1fdd1f74729d0e5bafc7cb2346442ad07a7db86e1e0d798b3e974",
+   "bytes": 117701
+  },
+  {
+   "copy": "runs/acid_high__order/search.csv",
+   "source": "fusionML/real_results_domain_fusion_acidhigh_order_exp1_20260922/search.csv",
+   "sha256": "35b32b6bc88275d480f6116ba2140d4071b11bf9fa62aa6a4dc206a73e8a6a82",
+   "bytes": 242904
+  },
+  {
+   "copy": "runs/acid_high__order/failures.csv",
+   "source": "fusionML/real_results_domain_fusion_acidhigh_order_exp1_20260922/failures.csv",
+   "sha256": "f097b5f4f46cda2da21b954c9ff4097e1e14ae7064ecdee2c2cec2d3c1f08e6b",
+   "bytes": 6
+  },
+  {
+   "copy": "runs/acid_high__order/run_manifest.json",
+   "source": "fusionML/real_results_domain_fusion_acidhigh_order_exp1_20260922/run_manifest.json",
+   "sha256": "0fb904634e976580e623e62a65773860fb8644d62462965deb0a6d70b4081f30",
+   "bytes": 22441
+  },
+  {
+   "copy": "runs/acid_high__family/rows.csv",
+   "source": "fusionML/real_results_domain_fusion_acidhigh_family_exp1_20260922/rows.csv",
+   "sha256": "0ce206da0f242e4ba3bba9e6cffffdf314ed9adf73a85b40ce89c1706673df7d",
+   "bytes": 32262
+  },
+  {
+   "copy": "runs/acid_high__family/predictions.csv",
+   "source": "fusionML/real_results_domain_fusion_acidhigh_family_exp1_20260922/predictions.csv",
+   "sha256": "b297752dd92544cbec1507a404db8a209a975b9df05a337eab19aab70a6f03c2",
+   "bytes": 309661
+  },
+  {
+   "copy": "runs/acid_high__genus/rows.csv",
+   "source": "fusionML/real_results_domain_fusion_acidhigh_genus_exp1_20260922/rows.csv",
+   "sha256": "5189c8f63ac753aece0cc72e3fdc254c3eedae218cf448583470464fbd3593b5",
+   "bytes": 31942
+  },
+  {
+   "copy": "runs/acid_high__genus/predictions.csv",
+   "source": "fusionML/real_results_domain_fusion_acidhigh_genus_exp1_20260922/predictions.csv",
+   "sha256": "90dcd45fb594573c63141bb046dc90b177e63f5373c31acf9f597842aed24959",
+   "bytes": 307040
+  },
+  {
+   "copy": "runs/acid_high__asv/rows.csv",
+   "source": "fusionML/real_results_domain_fusion_acidhigh_asv_exp1_20260922/rows.csv",
+   "sha256": "9a8125491728bbf8ea019343b9ff3e6d53f72198e7227d279d3f7f0159192ba1",
+   "bytes": 32204
+  },
+  {
+   "copy": "runs/acid_high__asv/predictions.csv",
+   "source": "fusionML/real_results_domain_fusion_acidhigh_asv_exp1_20260922/predictions.csv",
+   "sha256": "6437c2f31371c2b199dbd9e12f3731a9ede05a4ce10ce007132003d229b5474a",
+   "bytes": 301612
+  },
+  {
+   "copy": "runs/ammonia__order/rows.csv",
+   "source": "fusionML/real_results_domain_fusion_order_exp1_20260922/rows.csv",
+   "sha256": "295a1ddb6bb37a3180712aab655fa4f3019c0595cad5f3f739408f1e791a7190",
+   "bytes": 93514
+  },
+  {
+   "copy": "runs/ammonia__order/predictions.csv",
+   "source": "fusionML/real_results_domain_fusion_order_exp1_20260922/predictions.csv",
+   "sha256": "75260cd229fa6b060d34039eb350e8162d181eafa0b5bb8c71c4061dd21f7343",
+   "bytes": 872205
+  },
+  {
+   "copy": "runs/ammonia__order/coefficients_and_groups.csv",
+   "source": "fusionML/real_results_domain_fusion_order_exp1_20260922/coefficients_and_groups.csv",
+   "sha256": "7864cb347fb2cd8f64c568763c899490375d3d15a815202e76d8af3e234b5cc2",
+   "bytes": 2025408
+  },
+  {
+   "copy": "runs/ammonia__order/domain_counts.csv",
+   "source": "fusionML/real_results_domain_fusion_order_exp1_20260922/domain_counts.csv",
+   "sha256": "726e141dd8035ae2a8b87ac238c12ecd697ffd3e5631e81f1c05dc736d0a8cbe",
+   "bytes": 33576
+  },
+  {
+   "copy": "runs/ammonia__order/filter_audit.csv",
+   "source": "fusionML/real_results_domain_fusion_order_exp1_20260922/filter_audit.csv",
+   "sha256": "17159dac3f5871e75433e29efe84ea186d524ec4373c26792252a16a6ad6d93b",
+   "bytes": 3702
+  },
+  {
+   "copy": "runs/ammonia__order/interactions.csv",
+   "source": "fusionML/real_results_domain_fusion_order_exp1_20260922/interactions.csv",
+   "sha256": "d88da5ce3f5124045f643486ef5a84edafd713b3237be5517d173f4b1c80b75a",
+   "bytes": 140451
+  },
+  {
+   "copy": "runs/ammonia__order/splits.csv",
+   "source": "fusionML/real_results_domain_fusion_order_exp1_20260922/splits.csv",
+   "sha256": "b841e048ea6bf534784564b792b1d1715cc9402d3ba95703e87388befd9388a8",
+   "bytes": 393171
+  },
+  {
+   "copy": "runs/ammonia__order/search.csv",
+   "source": "fusionML/real_results_domain_fusion_order_exp1_20260922/search.csv",
+   "sha256": "e31be7d4614c267188085d6c42c6d04bc8bc3bac7ba7580799aa9cdcb79e99f1",
+   "bytes": 663917
+  },
+  {
+   "copy": "runs/ammonia__order/failures.csv",
+   "source": "fusionML/real_results_domain_fusion_order_exp1_20260922/failures.csv",
+   "sha256": "7bf43aa5fb47de45f0bb2283f7d285d466a19d2002aed6193951f66ecd789a07",
+   "bytes": 110474
+  },
+  {
+   "copy": "runs/ammonia__order/run_manifest.json",
+   "source": "fusionML/real_results_domain_fusion_order_exp1_20260922/run_manifest.json",
+   "sha256": "bd4ff3614d7f63fae07838cccefab9276c16fae7decef1f9a8e66ad44000e701",
+   "bytes": 22512
+  },
+  {
+   "copy": "runs/ammonia__family/rows.csv",
+   "source": "fusionML/real_results_domain_fusion_family_exp1_20260922/rows.csv",
+   "sha256": "adc71f08428716498693c09febffb24e1e61f06643b65fc5b7eedfdd30556076",
+   "bytes": 92917
+  },
+  {
+   "copy": "runs/ammonia__family/predictions.csv",
+   "source": "fusionML/real_results_domain_fusion_family_exp1_20260922/predictions.csv",
+   "sha256": "1eb5577605a16f1e696f1ce73c9eefbd82fc759c11c6b33e6f05ca32ab686f41",
+   "bytes": 879978
+  },
+  {
+   "copy": "runs/ammonia__genus/rows.csv",
+   "source": "fusionML/real_results_domain_fusion_genus_exp1_20260922/rows.csv",
+   "sha256": "f2e983a0b351e84e33f6b2ef1565db12b3c9ca19b17ceeb8f68054a0896f2340",
+   "bytes": 92653
+  },
+  {
+   "copy": "runs/ammonia__genus/predictions.csv",
+   "source": "fusionML/real_results_domain_fusion_genus_exp1_20260922/predictions.csv",
+   "sha256": "ce94de8fa96da8c6633aea5109e35714bc40e4e35217771ae39c589e966552a4",
+   "bytes": 872386
+  },
+  {
+   "copy": "runs/ammonia__asv/rows.csv",
+   "source": "fusionML/real_results_domain_fusion_asv_exp1_20260922/rows.csv",
+   "sha256": "0ab4f5572005bcac7c78101f6a9745f1f1e40bb739a1c159482e0ca6fc67c94b",
+   "bytes": 93270
+  },
+  {
+   "copy": "runs/ammonia__asv/predictions.csv",
+   "source": "fusionML/real_results_domain_fusion_asv_exp1_20260922/predictions.csv",
+   "sha256": "ded277d0ac51213236ac09316110e2d20cd835088adefbc8b8e92989b515c771",
+   "bytes": 857758
+  },
+  {
+   "copy": "reference/order/arc_mapping.csv",
+   "source": "output/genus_tree/taxlevel_autorun/order/arc_mapping.csv",
+   "sha256": "ad52b9a5508e21673df20c540eeff43775ef9fb18f547509ac9dc97df48aeebf",
+   "bytes": 6710
+  },
+  {
+   "copy": "reference/order/bac_mapping.csv",
+   "source": "output/genus_tree/taxlevel_autorun/order/bac_mapping.csv",
+   "sha256": "4a8d5657943ce29f4419161176439297c61a64bc9159cae5bd39e69e798af29c",
+   "bytes": 38178
+  },
+  {
+   "copy": "reference/order/arc_table.csv",
+   "source": "output/genus_tree/taxlevel_autorun/order/arc_table.csv",
+   "sha256": "90918a61254845bd324b06a2c2d7db8148944769e2490cae2d0a319e19b8e0a8",
+   "bytes": 14481
+  },
+  {
+   "copy": "reference/order/bac_table.csv",
+   "source": "output/genus_tree/taxlevel_autorun/order/bac_table.csv",
+   "sha256": "9681f4c2ef441a54c3d469d27a21e23faa11af14538d8a8819261f1d40a4d8d4",
+   "bytes": 103578
+  },
+  {
+   "copy": "reference/order/arc_tree.nwk",
+   "source": "output/genus_tree/taxlevel_autorun/order/arc_tree.nwk",
+   "sha256": "d6598a17942baa0991d66e10028fe5aa4794da5a5fbdac1cab6dca1e95796dc3",
+   "bytes": 739
+  },
+  {
+   "copy": "reference/order/bac_tree.nwk",
+   "source": "output/genus_tree/taxlevel_autorun/order/bac_tree.nwk",
+   "sha256": "550f7c26fe939979388e15f7155a74bdc795e389730f1e325a63645d69d3fddf",
+   "bytes": 5707
+  },
+  {
+   "copy": "reference/taxonomy/ARC_metadata.tsv",
+   "source": "data/qiimeresult/ARC/metadata.tsv",
+   "sha256": "3f4650824380311d0aa2c3e8a69ebfb4541bfef60931ba7b69c908fee6301117",
+   "bytes": 343718
+  },
+  {
+   "copy": "reference/taxonomy/BAC_metadata.tsv",
+   "source": "data/qiimeresult/BAC/metadata.tsv",
+   "sha256": "86ac53804aba829e041537abb62c1a01ac7c4ad20a687a46b88c288793496e6f",
+   "bytes": 2262240
+  },
+  {
+   "copy": "reference/chemistry/Dat_chem.xlsx",
+   "source": "data/final/Dat_chem.xlsx",
+   "sha256": "072f9329df56e93a615b049dc0c60fb75c3da169ef243d4cbd35f0ff52e814e2",
+   "bytes": 3260002
+  },
+  {
+   "copy": "fusionML/configs/real_smoke_classification_phylo.yaml",
+   "source": "fusionML/configs/real_smoke_classification_phylo.yaml",
+   "sha256": "5831951a045be31f17db1415426803758b821b3ba7d2683a1a0f5e6ac58358c2",
+   "bytes": 9450
+  },
+  {
+   "copy": "fusionML/__init__.py",
+   "source": "fusionML/__init__.py",
+   "sha256": "ba89f8c20a9bd642ebefd25256de8fa87b2edf43c7502b42c16d7bb65a6a2436",
+   "bytes": 228
+  },
+  {
+   "copy": "fusionML/artifacts.py",
+   "source": "fusionML/artifacts.py",
+   "sha256": "6312315c7b432a38e7b0659af2142ca173eaac77bd42f7b7c4ee1fae512694b1",
+   "bytes": 2639
+  },
+  {
+   "copy": "fusionML/chemistry.py",
+   "source": "fusionML/chemistry.py",
+   "sha256": "c2d09e63e4c710117ff44a17320617177ba3ceb1bfd40bd8142d5392a54aa573",
+   "bytes": 15370
+  },
+  {
+   "copy": "fusionML/chemistry_targets.py",
+   "source": "fusionML/chemistry_targets.py",
+   "sha256": "4d8f37cbf799212358a2f65f074fef9b99818acd74bd7b1ae56210ffe0fc0f1a",
+   "bytes": 8371
+  },
+  {
+   "copy": "fusionML/cli.py",
+   "source": "fusionML/cli.py",
+   "sha256": "72fdd45c1bb7d901b4af15a0482bc798b0156f1757d8b86a90e3225c04c51394",
+   "bytes": 1715
+  },
+  {
+   "copy": "fusionML/cohort.py",
+   "source": "fusionML/cohort.py",
+   "sha256": "102723f99735f51901aa39b4de1889a98cabde0e51736b2070693263aa7c9b9e",
+   "bytes": 1914
+  },
+  {
+   "copy": "fusionML/config.py",
+   "source": "fusionML/config.py",
+   "sha256": "24932a7a8b7f760d058b01a4f46925876cdc20d2beac9ab68914434719ae49e4",
+   "bytes": 17483
+  },
+  {
+   "copy": "fusionML/diagnostics.py",
+   "source": "fusionML/diagnostics.py",
+   "sha256": "5d709184491a85dd3f7a43ebeb01b136e6cd4d34daa4c337172f0c499b7986c3",
+   "bytes": 6574
+  },
+  {
+   "copy": "fusionML/estimator.py",
+   "source": "fusionML/estimator.py",
+   "sha256": "22119a9381dc55a2eba5fedb5ec9abfd81136b11146e7e1e88067ea2731bf708",
+   "bytes": 22864
+  },
+  {
+   "copy": "fusionML/evaluate.py",
+   "source": "fusionML/evaluate.py",
+   "sha256": "eaa29654cfa28335bd48e0cdf1a3f56e6c35aa15dea371efb9b6612e825df574",
+   "bytes": 11443
+  },
+  {
+   "copy": "fusionML/figures.py",
+   "source": "fusionML/figures.py",
+   "sha256": "cba432f8f15202825fa2d4d3c75d6e508397c77331502e4a142af98d33939a9e",
+   "bytes": 4068
+  },
+  {
+   "copy": "fusionML/folds.py",
+   "source": "fusionML/folds.py",
+   "sha256": "c9417e0f732ae77b0303905091a7af517895f741c0595c235590b29d11b2c1e0",
+   "bytes": 2285
+  },
+  {
+   "copy": "fusionML/generate_synthetic_demo_data.py",
+   "source": "fusionML/generate_synthetic_demo_data.py",
+   "sha256": "fa222da39d537ca2ee9b605e2667a2acfd4b87fff6b35961a4d440f5fae9e634",
+   "bytes": 844
+  },
+  {
+   "copy": "fusionML/genus.py",
+   "source": "fusionML/genus.py",
+   "sha256": "eb6e53cba6c023d65e81293373bb37a4f363f953b2e490cc3044930ae34f946f",
+   "bytes": 2437
+  },
+  {
+   "copy": "fusionML/graphs.py",
+   "source": "fusionML/graphs.py",
+   "sha256": "369c81e87e10ce6b028b0626df89c696d90ffeed5fe4803eed305d9f546c9ea0",
+   "bytes": 19283
+  },
+  {
+   "copy": "fusionML/groups.py",
+   "source": "fusionML/groups.py",
+   "sha256": "24a887bbddce36941f41f0a905a2ec50b55405f125a5733641e47aec88272eae",
+   "bytes": 6734
+  },
+  {
+   "copy": "fusionML/interactions.py",
+   "source": "fusionML/interactions.py",
+   "sha256": "2f0383b93a6f6229a73218ef86158a87dd4d72b762c4ce57478490850119d542",
+   "bytes": 14748
+  },
+  {
+   "copy": "fusionML/io_counts.py",
+   "source": "fusionML/io_counts.py",
+   "sha256": "23d92ec259c01f6598c0beb6e2ca6b2b84a31290d8bf0f13a6f11c2a7e664850",
+   "bytes": 7949
+  },
+  {
+   "copy": "fusionML/io_metadata.py",
+   "source": "fusionML/io_metadata.py",
+   "sha256": "665da906ae3be25a1740461428daf5faf615d7bb10e0589b419555afaae878f9",
+   "bytes": 2915
+  },
+  {
+   "copy": "fusionML/io_taxonomy.py",
+   "source": "fusionML/io_taxonomy.py",
+   "sha256": "57c587b933acefc13c4eeacddf60f128003a4cc4e425bcb8bb96f52b9c84814f",
+   "bytes": 3654
+  },
+  {
+   "copy": "fusionML/io_tree.py",
+   "source": "fusionML/io_tree.py",
+   "sha256": "db0d0e8cb64f73c220db0ed2734172e95e09c327761f80cb3b20ee1a69f33107",
+   "bytes": 5566
+  },
+  {
+   "copy": "fusionML/model_io.py",
+   "source": "fusionML/model_io.py",
+   "sha256": "1b85e524c89093631681a301b1f6ec4733b692991511b7f446781c2dc43a56e6",
+   "bytes": 5299
+  },
+  {
+   "copy": "fusionML/pipeline.py",
+   "source": "fusionML/pipeline.py",
+   "sha256": "02dfd56fc41afb1189821c1c9abb60822200a6c211a2aeae2e7b0d851b3c6227",
+   "bytes": 70553
+  },
+  {
+   "copy": "fusionML/prepare_real_data_smoke_inputs.py",
+   "source": "fusionML/prepare_real_data_smoke_inputs.py",
+   "sha256": "6a6d2cfc3666fc825758e1a99758f8f1caaa216999b30c8f7981670e578fd0f5",
+   "bytes": 2205
+  },
+  {
+   "copy": "fusionML/preprocessing.py",
+   "source": "fusionML/preprocessing.py",
+   "sha256": "122d55cc8bbe6c44fcad022feb726cd858501cf4c44ba5603e8b6a0f2d8f29e7",
+   "bytes": 15872
+  },
+  {
+   "copy": "fusionML/rank_mapping.py",
+   "source": "fusionML/rank_mapping.py",
+   "sha256": "6ab17a53a400609ce24b8d1eda5257ba97414c91162a62a123e2bcdff50e8f96",
+   "bytes": 3248
+  },
+  {
+   "copy": "fusionML/run_model.py",
+   "source": "fusionML/run_model.py",
+   "sha256": "070de99c1a2eec12806fb2d1dbb7d7031031f0c80145d768ae132f2564687812",
+   "bytes": 346
+  },
+  {
+   "copy": "fusionML/search.py",
+   "source": "fusionML/search.py",
+   "sha256": "f802875bc6110677109c21825e7c719bcd897a88cb2bfa0269baf32225ee531c",
+   "bytes": 11856
+  },
+  {
+   "copy": "fusionML/season.py",
+   "source": "fusionML/season.py",
+   "sha256": "1b2af95703573589e3d393c7b45c149b2992482745fe1f10b7aa6da25b1b976f",
+   "bytes": 1681
+  },
+  {
+   "copy": "fusionML/single_domain.py",
+   "source": "fusionML/single_domain.py",
+   "sha256": "5f3671a356ce283d59a3a637d7733785a1a2133066ec530c2abd287aa071e7b5",
+   "bytes": 20440
+  },
+  {
+   "copy": "fusionML/synthetic.py",
+   "source": "fusionML/synthetic.py",
+   "sha256": "c5b6882ad93cffbfd5e02d7e199628e57a13486889d4be440364455db15514ff",
+   "bytes": 6665
+  }
+ ]
+}

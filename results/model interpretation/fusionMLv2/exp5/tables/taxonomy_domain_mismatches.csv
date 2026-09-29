@@ -1,0 +1,5 @@
+resolution,domain,feature_id,asv_id,lineage,genus,genus_resolved,taxon_label,taxonomic_domain,confidence
+asv,ARC,ARC::4194fdb699f4d5c9620e1e7cfb8b009b,ARC::4194fdb699f4d5c9620e1e7cfb8b009b,d__Eukaryota,unassigned,False,d__Eukaryota (unresolved genus),Eukaryota,0.7059403653436394
+asv,ARC,ARC::c17275cccc27dc9a4ab351a310c063c8,ARC::c17275cccc27dc9a4ab351a310c063c8,d__Eukaryota,unassigned,False,d__Eukaryota (unresolved genus),Eukaryota,0.7000027196955562
+genus,ARC,ARC::F00001,ARC::4194fdb699f4d5c9620e1e7cfb8b009b,d__Eukaryota,unassigned,False,d__Eukaryota (unresolved genus),Eukaryota,0.7059403653436394
+genus,ARC,ARC::F00033,ARC::c17275cccc27dc9a4ab351a310c063c8,d__Eukaryota,unassigned,False,d__Eukaryota (unresolved genus),Eukaryota,0.7000027196955562

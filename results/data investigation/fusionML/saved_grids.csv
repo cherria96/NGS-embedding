@@ -1,0 +1,276 @@
+run,target,resolution,timestamp,family,outer_fold,candidates,base_candidates,invalid,lambda_s_values,lambda_r_values,lambda_f_values,no_fusion_candidates,best_inner_score
+real_results,effluent.CH4,genus,2026-09-20T12:29:04Z,abundance_only,0,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",3,181.9946408093951
+real_results,effluent.CH4,genus,2026-09-20T12:29:04Z,abundance_only,1,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",4,115.0389810341631
+real_results,effluent.CH4,genus,2026-09-20T12:29:04Z,abundance_only,2,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",2,48.265604703090666
+real_results,effluent.CH4,genus,2026-09-20T12:29:04Z,genus_elastic_net,0,6,6,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]",[0.0],6,77.95792551164138
+real_results,effluent.CH4,genus,2026-09-20T12:29:04Z,genus_elastic_net,1,6,6,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]",[0.0],6,79.67276419903799
+real_results,effluent.CH4,genus,2026-09-20T12:29:04Z,genus_elastic_net,2,6,6,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]",[0.0],6,58.27460564090406
+real_results,effluent.CH4,genus,2026-09-20T12:29:04Z,genus_ridge,0,3,3,0,[0.0],"[0.01, 0.1, 1.0]",[0.0],3,82.4494256566313
+real_results,effluent.CH4,genus,2026-09-20T12:29:04Z,genus_ridge,1,3,3,0,[0.0],"[0.01, 0.1, 1.0]",[0.0],3,81.74004473616917
+real_results,effluent.CH4,genus,2026-09-20T12:29:04Z,genus_ridge,2,3,3,0,[0.0],"[0.01, 0.1, 1.0]",[0.0],3,45.65351308469965
+real_results_classification,warning_ammonia_toxicity,genus,2026-09-20T12:23:28Z,abundance_only,0,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.2229135003817273
+real_results_classification,warning_ammonia_toxicity,genus,2026-09-20T12:23:28Z,abundance_only,1,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",4,0.2323549594337272
+real_results_classification,warning_ammonia_toxicity,genus,2026-09-20T12:23:28Z,abundance_only,2,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",2,0.3495351203517042
+real_results_classification,warning_ammonia_toxicity,genus,2026-09-20T12:23:28Z,genus_elastic_net,0,6,6,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]",[0.0],6,0.2625518087794109
+real_results_classification,warning_ammonia_toxicity,genus,2026-09-20T12:23:28Z,genus_elastic_net,1,6,6,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]",[0.0],6,0.2828978990433443
+real_results_classification,warning_ammonia_toxicity,genus,2026-09-20T12:23:28Z,genus_elastic_net,2,6,6,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]",[0.0],6,0.3161475709894883
+real_results_classification,warning_ammonia_toxicity,genus,2026-09-20T12:23:28Z,genus_ridge,0,3,3,0,[0.0],"[0.01, 0.1, 1.0]",[0.0],3,0.257271798858197
+real_results_classification,warning_ammonia_toxicity,genus,2026-09-20T12:23:28Z,genus_ridge,1,3,3,0,[0.0],"[0.01, 0.1, 1.0]",[0.0],3,0.3519135775283077
+real_results_classification,warning_ammonia_toxicity,genus,2026-09-20T12:23:28Z,genus_ridge,2,3,3,0,[0.0],"[0.01, 0.1, 1.0]",[0.0],3,0.289772271815432
+real_results_classification_asv,warning_ammonia_toxicity,asv,2026-09-21T05:17:10Z,asv_elastic_net,0,6,6,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]",[0.0],6,0.3757304396305405
+real_results_classification_asv,warning_ammonia_toxicity,asv,2026-09-21T05:17:10Z,asv_elastic_net,1,6,6,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]",[0.0],6,0.3328466597376306
+real_results_classification_asv,warning_ammonia_toxicity,asv,2026-09-21T05:17:10Z,asv_elastic_net,2,6,6,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]",[0.0],6,0.3010139642626096
+real_results_classification_asv,warning_ammonia_toxicity,asv,2026-09-21T05:17:10Z,asv_ridge,0,3,3,0,[0.0],"[0.01, 0.1, 1.0]",[0.0],3,0.2515032879576822
+real_results_classification_asv,warning_ammonia_toxicity,asv,2026-09-21T05:17:10Z,asv_ridge,1,3,3,0,[0.0],"[0.01, 0.1, 1.0]",[0.0],3,0.3537245422679634
+real_results_classification_asv,warning_ammonia_toxicity,asv,2026-09-21T05:17:10Z,asv_ridge,2,3,3,0,[0.0],"[0.01, 0.1, 1.0]",[0.0],3,0.4982092189408636
+real_results_classification_asv_acid_base_balance,warning_acid_base_balance,asv,2026-09-21T05:17:16Z,asv_elastic_net,0,6,6,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]",[0.0],6,0.4020801392090892
+real_results_classification_asv_acid_base_balance,warning_acid_base_balance,asv,2026-09-21T05:17:16Z,asv_elastic_net,1,6,6,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]",[0.0],6,0.3964667201375053
+real_results_classification_asv_acid_base_balance,warning_acid_base_balance,asv,2026-09-21T05:17:16Z,asv_elastic_net,2,6,6,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]",[0.0],6,0.5251966870198963
+real_results_classification_asv_acid_base_balance,warning_acid_base_balance,asv,2026-09-21T05:17:16Z,asv_ridge,0,3,3,0,[0.0],"[0.01, 0.1, 1.0]",[0.0],3,0.6080837703007719
+real_results_classification_asv_acid_base_balance,warning_acid_base_balance,asv,2026-09-21T05:17:16Z,asv_ridge,1,3,3,0,[0.0],"[0.01, 0.1, 1.0]",[0.0],3,0.3770525509453378
+real_results_classification_asv_acid_base_balance,warning_acid_base_balance,asv,2026-09-21T05:17:16Z,asv_ridge,2,3,3,0,[0.0],"[0.01, 0.1, 1.0]",[0.0],3,0.7126896161278223
+real_results_classification_asv_biogas_quality,warning_biogas_quality,asv,2026-09-21T08:47:28Z,asv_elastic_net,0,6,6,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]",[0.0],6,0.3539733488928562
+real_results_classification_asv_biogas_quality,warning_biogas_quality,asv,2026-09-21T08:47:28Z,asv_elastic_net,1,6,6,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]",[0.0],6,0.3472044973486617
+real_results_classification_asv_biogas_quality,warning_biogas_quality,asv,2026-09-21T08:47:28Z,asv_ridge,0,3,3,0,[0.0],"[0.01, 0.1, 1.0]",[0.0],3,0.386252894891327
+real_results_classification_asv_biogas_quality,warning_biogas_quality,asv,2026-09-21T08:47:28Z,asv_ridge,1,3,3,0,[0.0],"[0.01, 0.1, 1.0]",[0.0],3,0.3187984346658142
+real_results_classification_asv_biogas_quality,warning_biogas_quality,asv,2026-09-21T08:47:28Z,asv_ridge,2,3,3,0,[0.0],"[0.01, 0.1, 1.0]",[0.0],3,0.3622897009354
+real_results_classification_family_acid_base_balance_interaction,warning_acid_base_balance,family,2026-09-21T12:18:05Z,domain_adaptive_hybrid,0,10,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.5861833688420895
+real_results_classification_family_acid_base_balance_interaction,warning_acid_base_balance,family,2026-09-21T12:18:05Z,domain_adaptive_hybrid,1,10,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.6191106311836257
+real_results_classification_family_acid_base_balance_interaction,warning_acid_base_balance,family,2026-09-21T12:18:05Z,domain_adaptive_hybrid,2,10,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.5399950069414926
+real_results_classification_family_acid_base_balance_interaction,warning_acid_base_balance,family,2026-09-21T12:18:05Z,domain_adaptive_interaction,0,100,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.6167538269317991
+real_results_classification_family_acid_base_balance_interaction,warning_acid_base_balance,family,2026-09-21T12:18:05Z,domain_adaptive_interaction,1,100,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.361472992907527
+real_results_classification_family_acid_base_balance_interaction,warning_acid_base_balance,family,2026-09-21T12:18:05Z,domain_adaptive_interaction,2,100,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.7557527642916663
+real_results_classification_family_acid_base_balance_interaction,warning_acid_base_balance,family,2026-09-21T12:18:05Z,metadr_order_only,0,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",4,0.4544663858967641
+real_results_classification_family_acid_base_balance_interaction,warning_acid_base_balance,family,2026-09-21T12:18:05Z,metadr_order_only,1,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.3102909422761646
+real_results_classification_family_acid_base_balance_interaction,warning_acid_base_balance,family,2026-09-21T12:18:05Z,metadr_order_only,2,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.6147444515879239
+real_results_classification_family_acid_base_balance_interaction,warning_acid_base_balance,family,2026-09-21T12:18:05Z,phylogeny_only,0,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",4,0.3652250818757938
+real_results_classification_family_acid_base_balance_interaction,warning_acid_base_balance,family,2026-09-21T12:18:05Z,phylogeny_only,1,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",5,0.5126704187221477
+real_results_classification_family_acid_base_balance_interaction,warning_acid_base_balance,family,2026-09-21T12:18:05Z,phylogeny_only,2,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.4867125846652256
+real_results_classification_family_acid_base_balance_interaction,warning_acid_base_balance,family,2026-09-21T12:18:05Z,shared_hybrid,0,10,10,0,"[0.0, 0.01]","[0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.427639950136669
+real_results_classification_family_acid_base_balance_interaction,warning_acid_base_balance,family,2026-09-21T12:18:05Z,shared_hybrid,1,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",2,0.3508849421468876
+real_results_classification_family_acid_base_balance_interaction,warning_acid_base_balance,family,2026-09-21T12:18:05Z,shared_hybrid,2,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",1,0.6032262612112406
+real_results_classification_family_biogas_quality_interaction,warning_biogas_quality,family,2026-09-21T12:29:54Z,domain_adaptive_hybrid,0,10,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.4542865741303152
+real_results_classification_family_biogas_quality_interaction,warning_biogas_quality,family,2026-09-21T12:29:54Z,domain_adaptive_hybrid,1,10,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.3883088506881856
+real_results_classification_family_biogas_quality_interaction,warning_biogas_quality,family,2026-09-21T12:29:54Z,domain_adaptive_hybrid,2,10,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.533577691397995
+real_results_classification_family_biogas_quality_interaction,warning_biogas_quality,family,2026-09-21T12:29:54Z,domain_adaptive_interaction,0,100,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.3418711001720799
+real_results_classification_family_biogas_quality_interaction,warning_biogas_quality,family,2026-09-21T12:29:54Z,domain_adaptive_interaction,1,100,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.4398490949310761
+real_results_classification_family_biogas_quality_interaction,warning_biogas_quality,family,2026-09-21T12:29:54Z,domain_adaptive_interaction,2,100,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.4925003378763495
+real_results_classification_family_biogas_quality_interaction,warning_biogas_quality,family,2026-09-21T12:29:54Z,metadr_order_only,0,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",4,0.3556617878660038
+real_results_classification_family_biogas_quality_interaction,warning_biogas_quality,family,2026-09-21T12:29:54Z,metadr_order_only,1,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.434520505015195
+real_results_classification_family_biogas_quality_interaction,warning_biogas_quality,family,2026-09-21T12:29:54Z,metadr_order_only,2,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.4468527058622967
+real_results_classification_family_biogas_quality_interaction,warning_biogas_quality,family,2026-09-21T12:29:54Z,phylogeny_only,0,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",4,0.2915169729603984
+real_results_classification_family_biogas_quality_interaction,warning_biogas_quality,family,2026-09-21T12:29:54Z,phylogeny_only,1,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",5,0.4501929193371674
+real_results_classification_family_biogas_quality_interaction,warning_biogas_quality,family,2026-09-21T12:29:54Z,phylogeny_only,2,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.3328763812160495
+real_results_classification_family_biogas_quality_interaction,warning_biogas_quality,family,2026-09-21T12:29:54Z,shared_hybrid,0,10,10,0,"[0.0, 0.01]","[0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.3337084290053503
+real_results_classification_family_biogas_quality_interaction,warning_biogas_quality,family,2026-09-21T12:29:54Z,shared_hybrid,1,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",2,0.3339779644961236
+real_results_classification_family_biogas_quality_interaction,warning_biogas_quality,family,2026-09-21T12:29:54Z,shared_hybrid,2,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",1,0.4545938541560332
+real_results_classification_family_interaction,warning_ammonia_toxicity,family,2026-09-21T12:07:17Z,domain_adaptive_hybrid,0,10,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.2989287221452776
+real_results_classification_family_interaction,warning_ammonia_toxicity,family,2026-09-21T12:07:17Z,domain_adaptive_hybrid,1,10,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.270429381567048
+real_results_classification_family_interaction,warning_ammonia_toxicity,family,2026-09-21T12:07:17Z,domain_adaptive_hybrid,2,10,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.440668553361121
+real_results_classification_family_interaction,warning_ammonia_toxicity,family,2026-09-21T12:07:17Z,domain_adaptive_interaction,0,100,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.2420206921382042
+real_results_classification_family_interaction,warning_ammonia_toxicity,family,2026-09-21T12:07:17Z,domain_adaptive_interaction,1,100,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.189964901010788
+real_results_classification_family_interaction,warning_ammonia_toxicity,family,2026-09-21T12:07:17Z,domain_adaptive_interaction,2,100,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.4825553670300032
+real_results_classification_family_interaction,warning_ammonia_toxicity,family,2026-09-21T12:07:17Z,metadr_order_only,0,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",4,0.2340699255936927
+real_results_classification_family_interaction,warning_ammonia_toxicity,family,2026-09-21T12:07:17Z,metadr_order_only,1,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.2556502202429849
+real_results_classification_family_interaction,warning_ammonia_toxicity,family,2026-09-21T12:07:17Z,metadr_order_only,2,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.3582616605096015
+real_results_classification_family_interaction,warning_ammonia_toxicity,family,2026-09-21T12:07:17Z,phylogeny_only,0,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",4,0.2792550899189228
+real_results_classification_family_interaction,warning_ammonia_toxicity,family,2026-09-21T12:07:17Z,phylogeny_only,1,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",5,0.2297558747529303
+real_results_classification_family_interaction,warning_ammonia_toxicity,family,2026-09-21T12:07:17Z,phylogeny_only,2,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.3465225344190284
+real_results_classification_family_interaction,warning_ammonia_toxicity,family,2026-09-21T12:07:17Z,shared_hybrid,0,10,10,0,"[0.0, 0.01]","[0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.2130793412742295
+real_results_classification_family_interaction,warning_ammonia_toxicity,family,2026-09-21T12:07:17Z,shared_hybrid,1,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",2,0.208363154637407
+real_results_classification_family_interaction,warning_ammonia_toxicity,family,2026-09-21T12:07:17Z,shared_hybrid,2,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",1,0.4363495359452571
+real_results_classification_order_acid_base_balance_interaction,warning_acid_base_balance,order,2026-09-21T12:15:21Z,domain_adaptive_hybrid,0,10,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.5485748258359237
+real_results_classification_order_acid_base_balance_interaction,warning_acid_base_balance,order,2026-09-21T12:15:21Z,domain_adaptive_hybrid,1,10,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.6359004861194087
+real_results_classification_order_acid_base_balance_interaction,warning_acid_base_balance,order,2026-09-21T12:15:21Z,domain_adaptive_hybrid,2,10,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.5475104882933692
+real_results_classification_order_acid_base_balance_interaction,warning_acid_base_balance,order,2026-09-21T12:15:21Z,domain_adaptive_interaction,0,100,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.4856732521769452
+real_results_classification_order_acid_base_balance_interaction,warning_acid_base_balance,order,2026-09-21T12:15:21Z,domain_adaptive_interaction,1,100,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.3792401705304162
+real_results_classification_order_acid_base_balance_interaction,warning_acid_base_balance,order,2026-09-21T12:15:21Z,domain_adaptive_interaction,2,100,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.6847365229272273
+real_results_classification_order_acid_base_balance_interaction,warning_acid_base_balance,order,2026-09-21T12:15:21Z,metadr_order_only,0,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",4,0.4152346386041396
+real_results_classification_order_acid_base_balance_interaction,warning_acid_base_balance,order,2026-09-21T12:15:21Z,metadr_order_only,1,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.3110722587958752
+real_results_classification_order_acid_base_balance_interaction,warning_acid_base_balance,order,2026-09-21T12:15:21Z,metadr_order_only,2,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.5937522727603849
+real_results_classification_order_acid_base_balance_interaction,warning_acid_base_balance,order,2026-09-21T12:15:21Z,phylogeny_only,0,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",4,0.3749486717261687
+real_results_classification_order_acid_base_balance_interaction,warning_acid_base_balance,order,2026-09-21T12:15:21Z,phylogeny_only,1,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",5,0.466144264895229
+real_results_classification_order_acid_base_balance_interaction,warning_acid_base_balance,order,2026-09-21T12:15:21Z,phylogeny_only,2,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.4621875682358226
+real_results_classification_order_acid_base_balance_interaction,warning_acid_base_balance,order,2026-09-21T12:15:21Z,shared_hybrid,0,10,10,0,"[0.0, 0.01]","[0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.3955930047886224
+real_results_classification_order_acid_base_balance_interaction,warning_acid_base_balance,order,2026-09-21T12:15:21Z,shared_hybrid,1,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",2,0.3249644182250184
+real_results_classification_order_acid_base_balance_interaction,warning_acid_base_balance,order,2026-09-21T12:15:21Z,shared_hybrid,2,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",1,0.5368065534324497
+real_results_classification_order_biogas_quality_interaction,warning_biogas_quality,order,2026-09-21T12:26:43Z,domain_adaptive_hybrid,0,10,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.381287513987532
+real_results_classification_order_biogas_quality_interaction,warning_biogas_quality,order,2026-09-21T12:26:43Z,domain_adaptive_hybrid,1,10,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.3815344412758858
+real_results_classification_order_biogas_quality_interaction,warning_biogas_quality,order,2026-09-21T12:26:43Z,domain_adaptive_hybrid,2,10,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.4875344743903458
+real_results_classification_order_biogas_quality_interaction,warning_biogas_quality,order,2026-09-21T12:26:43Z,domain_adaptive_interaction,0,100,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.3009908276973342
+real_results_classification_order_biogas_quality_interaction,warning_biogas_quality,order,2026-09-21T12:26:43Z,domain_adaptive_interaction,1,100,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.4403067017495442
+real_results_classification_order_biogas_quality_interaction,warning_biogas_quality,order,2026-09-21T12:26:43Z,domain_adaptive_interaction,2,100,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.4770649605633026
+real_results_classification_order_biogas_quality_interaction,warning_biogas_quality,order,2026-09-21T12:26:43Z,metadr_order_only,0,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",4,0.3681243825779871
+real_results_classification_order_biogas_quality_interaction,warning_biogas_quality,order,2026-09-21T12:26:43Z,metadr_order_only,1,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.4510006313408863
+real_results_classification_order_biogas_quality_interaction,warning_biogas_quality,order,2026-09-21T12:26:43Z,metadr_order_only,2,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.4578201647924897
+real_results_classification_order_biogas_quality_interaction,warning_biogas_quality,order,2026-09-21T12:26:43Z,phylogeny_only,0,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",4,0.2804672090623116
+real_results_classification_order_biogas_quality_interaction,warning_biogas_quality,order,2026-09-21T12:26:43Z,phylogeny_only,1,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",5,0.4568666586303827
+real_results_classification_order_biogas_quality_interaction,warning_biogas_quality,order,2026-09-21T12:26:43Z,phylogeny_only,2,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.3169238150436826
+real_results_classification_order_biogas_quality_interaction,warning_biogas_quality,order,2026-09-21T12:26:43Z,shared_hybrid,0,10,10,0,"[0.0, 0.01]","[0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.3505748836593356
+real_results_classification_order_biogas_quality_interaction,warning_biogas_quality,order,2026-09-21T12:26:43Z,shared_hybrid,1,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",2,0.3325884375306478
+real_results_classification_order_biogas_quality_interaction,warning_biogas_quality,order,2026-09-21T12:26:43Z,shared_hybrid,2,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",1,0.4388809123243885
+real_results_classification_order_interaction,warning_ammonia_toxicity,order,2026-09-21T12:04:50Z,domain_adaptive_hybrid,0,10,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.3239227201069126
+real_results_classification_order_interaction,warning_ammonia_toxicity,order,2026-09-21T12:04:50Z,domain_adaptive_hybrid,1,10,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.3138825189895762
+real_results_classification_order_interaction,warning_ammonia_toxicity,order,2026-09-21T12:04:50Z,domain_adaptive_hybrid,2,10,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.414220608379344
+real_results_classification_order_interaction,warning_ammonia_toxicity,order,2026-09-21T12:04:50Z,domain_adaptive_interaction,0,100,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.238869692757297
+real_results_classification_order_interaction,warning_ammonia_toxicity,order,2026-09-21T12:04:50Z,domain_adaptive_interaction,1,100,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.1822810814369014
+real_results_classification_order_interaction,warning_ammonia_toxicity,order,2026-09-21T12:04:50Z,domain_adaptive_interaction,2,100,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.4769001837260693
+real_results_classification_order_interaction,warning_ammonia_toxicity,order,2026-09-21T12:04:50Z,metadr_order_only,0,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",4,0.2479063813437114
+real_results_classification_order_interaction,warning_ammonia_toxicity,order,2026-09-21T12:04:50Z,metadr_order_only,1,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.2583169530917986
+real_results_classification_order_interaction,warning_ammonia_toxicity,order,2026-09-21T12:04:50Z,metadr_order_only,2,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.3608670769598806
+real_results_classification_order_interaction,warning_ammonia_toxicity,order,2026-09-21T12:04:50Z,phylogeny_only,0,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",4,0.3041762676563425
+real_results_classification_order_interaction,warning_ammonia_toxicity,order,2026-09-21T12:04:50Z,phylogeny_only,1,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",5,0.2328556839448314
+real_results_classification_order_interaction,warning_ammonia_toxicity,order,2026-09-21T12:04:50Z,phylogeny_only,2,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.3448516651378486
+real_results_classification_order_interaction,warning_ammonia_toxicity,order,2026-09-21T12:04:50Z,shared_hybrid,0,10,10,0,"[0.0, 0.01]","[0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.2155500083235685
+real_results_classification_order_interaction,warning_ammonia_toxicity,order,2026-09-21T12:04:50Z,shared_hybrid,1,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",2,0.224053016475723
+real_results_classification_order_interaction,warning_ammonia_toxicity,order,2026-09-21T12:04:50Z,shared_hybrid,2,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",1,0.4187274764029711
+real_results_classification_phylo,warning_ammonia_toxicity,genus,2026-09-20T22:44:48Z,abundance_only,0,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.220683633709881
+real_results_classification_phylo,warning_ammonia_toxicity,genus,2026-09-20T22:44:48Z,abundance_only,1,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",4,0.2203080333664017
+real_results_classification_phylo,warning_ammonia_toxicity,genus,2026-09-20T22:44:48Z,abundance_only,2,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",2,0.3523148024112617
+real_results_classification_phylo,warning_ammonia_toxicity,genus,2026-09-20T22:44:48Z,domain_adaptive_hybrid,0,10,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.2645331766646361
+real_results_classification_phylo,warning_ammonia_toxicity,genus,2026-09-20T22:44:48Z,domain_adaptive_hybrid,1,10,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.2941767734125557
+real_results_classification_phylo,warning_ammonia_toxicity,genus,2026-09-20T22:44:48Z,domain_adaptive_hybrid,2,10,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.4249082425246049
+real_results_classification_phylo,warning_ammonia_toxicity,genus,2026-09-20T22:44:48Z,genus_elastic_net,0,6,6,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]",[0.0],6,0.2304071816507157
+real_results_classification_phylo,warning_ammonia_toxicity,genus,2026-09-20T22:44:48Z,genus_elastic_net,1,6,6,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]",[0.0],6,0.2355812706255905
+real_results_classification_phylo,warning_ammonia_toxicity,genus,2026-09-20T22:44:48Z,genus_elastic_net,2,6,6,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]",[0.0],6,0.3123016442954309
+real_results_classification_phylo,warning_ammonia_toxicity,genus,2026-09-20T22:44:48Z,genus_ridge,0,3,3,0,[0.0],"[0.01, 0.1, 1.0]",[0.0],3,0.2192003501530845
+real_results_classification_phylo,warning_ammonia_toxicity,genus,2026-09-20T22:44:48Z,genus_ridge,1,3,3,0,[0.0],"[0.01, 0.1, 1.0]",[0.0],3,0.3559416888630743
+real_results_classification_phylo,warning_ammonia_toxicity,genus,2026-09-20T22:44:48Z,genus_ridge,2,3,3,0,[0.0],"[0.01, 0.1, 1.0]",[0.0],3,0.2682061493138674
+real_results_classification_phylo,warning_ammonia_toxicity,genus,2026-09-20T22:44:48Z,phylogeny_only,0,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",4,0.2694510554326756
+real_results_classification_phylo,warning_ammonia_toxicity,genus,2026-09-20T22:44:48Z,phylogeny_only,1,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",5,0.2474080596378228
+real_results_classification_phylo,warning_ammonia_toxicity,genus,2026-09-20T22:44:48Z,phylogeny_only,2,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.3288829627759909
+real_results_classification_phylo,warning_ammonia_toxicity,genus,2026-09-20T22:44:48Z,shared_hybrid,0,10,10,0,"[0.0, 0.01]","[0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.2073654316088071
+real_results_classification_phylo,warning_ammonia_toxicity,genus,2026-09-20T22:44:48Z,shared_hybrid,1,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",2,0.1951571224776903
+real_results_classification_phylo,warning_ammonia_toxicity,genus,2026-09-20T22:44:48Z,shared_hybrid,2,10,10,1,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",1,0.4352089692234675
+real_results_classification_phylo_acid_base_balance,warning_acid_base_balance,genus,2026-09-20T22:47:05Z,abundance_only,0,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.3623885074331132
+real_results_classification_phylo_acid_base_balance,warning_acid_base_balance,genus,2026-09-20T22:47:05Z,abundance_only,1,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",4,0.5351987038805105
+real_results_classification_phylo_acid_base_balance,warning_acid_base_balance,genus,2026-09-20T22:47:05Z,abundance_only,2,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",2,0.473933457677699
+real_results_classification_phylo_acid_base_balance,warning_acid_base_balance,genus,2026-09-20T22:47:05Z,domain_adaptive_hybrid,0,10,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.6300361203523992
+real_results_classification_phylo_acid_base_balance,warning_acid_base_balance,genus,2026-09-20T22:47:05Z,domain_adaptive_hybrid,1,10,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.5686266571062346
+real_results_classification_phylo_acid_base_balance,warning_acid_base_balance,genus,2026-09-20T22:47:05Z,domain_adaptive_hybrid,2,10,10,1,[0.0],[0.1],"[0.0, 1.0]",1,0.6093672407966843
+real_results_classification_phylo_acid_base_balance,warning_acid_base_balance,genus,2026-09-20T22:47:05Z,genus_elastic_net,0,6,6,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]",[0.0],6,0.4380382679672279
+real_results_classification_phylo_acid_base_balance,warning_acid_base_balance,genus,2026-09-20T22:47:05Z,genus_elastic_net,1,6,6,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]",[0.0],6,0.3683404828424479
+real_results_classification_phylo_acid_base_balance,warning_acid_base_balance,genus,2026-09-20T22:47:05Z,genus_elastic_net,2,6,6,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]",[0.0],6,0.5588851042434729
+real_results_classification_phylo_acid_base_balance,warning_acid_base_balance,genus,2026-09-20T22:47:05Z,genus_ridge,0,3,3,0,[0.0],"[0.01, 0.1, 1.0]",[0.0],3,0.4310441391840299
+real_results_classification_phylo_acid_base_balance,warning_acid_base_balance,genus,2026-09-20T22:47:05Z,genus_ridge,1,3,3,0,[0.0],"[0.01, 0.1, 1.0]",[0.0],3,0.3729850984207327
+real_results_classification_phylo_acid_base_balance,warning_acid_base_balance,genus,2026-09-20T22:47:05Z,genus_ridge,2,3,3,0,[0.0],"[0.01, 0.1, 1.0]",[0.0],3,0.4456337163103106
+real_results_classification_phylo_acid_base_balance,warning_acid_base_balance,genus,2026-09-20T22:47:05Z,phylogeny_only,0,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",4,0.3726978270137249
+real_results_classification_phylo_acid_base_balance,warning_acid_base_balance,genus,2026-09-20T22:47:05Z,phylogeny_only,1,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",5,0.5005111742253736
+real_results_classification_phylo_acid_base_balance,warning_acid_base_balance,genus,2026-09-20T22:47:05Z,phylogeny_only,2,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.4983782395635687
+real_results_classification_phylo_acid_base_balance,warning_acid_base_balance,genus,2026-09-20T22:47:05Z,shared_hybrid,0,10,10,0,"[0.0, 0.01]","[0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.4234940146825157
+real_results_classification_phylo_acid_base_balance,warning_acid_base_balance,genus,2026-09-20T22:47:05Z,shared_hybrid,1,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",2,0.339294654321147
+real_results_classification_phylo_acid_base_balance,warning_acid_base_balance,genus,2026-09-20T22:47:05Z,shared_hybrid,2,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",1,0.5825683583594773
+real_results_classification_phylo_acid_base_balance_interaction,warning_acid_base_balance,genus,2026-09-21T12:17:32Z,abundance_only,0,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.3623885074331132
+real_results_classification_phylo_acid_base_balance_interaction,warning_acid_base_balance,genus,2026-09-21T12:17:32Z,abundance_only,1,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",4,0.5351987038805105
+real_results_classification_phylo_acid_base_balance_interaction,warning_acid_base_balance,genus,2026-09-21T12:17:32Z,abundance_only,2,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",2,0.473933457677699
+real_results_classification_phylo_acid_base_balance_interaction,warning_acid_base_balance,genus,2026-09-21T12:17:32Z,domain_adaptive_hybrid,0,10,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.6300361203523992
+real_results_classification_phylo_acid_base_balance_interaction,warning_acid_base_balance,genus,2026-09-21T12:17:32Z,domain_adaptive_hybrid,1,10,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.5686266571062346
+real_results_classification_phylo_acid_base_balance_interaction,warning_acid_base_balance,genus,2026-09-21T12:17:32Z,domain_adaptive_hybrid,2,10,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.6093672407966843
+real_results_classification_phylo_acid_base_balance_interaction,warning_acid_base_balance,genus,2026-09-21T12:17:32Z,domain_adaptive_interaction,0,100,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.5918559310192937
+real_results_classification_phylo_acid_base_balance_interaction,warning_acid_base_balance,genus,2026-09-21T12:17:32Z,domain_adaptive_interaction,1,100,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.3654434740834072
+real_results_classification_phylo_acid_base_balance_interaction,warning_acid_base_balance,genus,2026-09-21T12:17:32Z,domain_adaptive_interaction,2,100,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.8644112812203976
+real_results_classification_phylo_acid_base_balance_interaction,warning_acid_base_balance,genus,2026-09-21T12:17:32Z,genus_elastic_net,0,6,6,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]",[0.0],6,0.4380382679672279
+real_results_classification_phylo_acid_base_balance_interaction,warning_acid_base_balance,genus,2026-09-21T12:17:32Z,genus_elastic_net,1,6,6,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]",[0.0],6,0.3683404828424479
+real_results_classification_phylo_acid_base_balance_interaction,warning_acid_base_balance,genus,2026-09-21T12:17:32Z,genus_elastic_net,2,6,6,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]",[0.0],6,0.5588851042434729
+real_results_classification_phylo_acid_base_balance_interaction,warning_acid_base_balance,genus,2026-09-21T12:17:32Z,genus_ridge,0,3,3,0,[0.0],"[0.01, 0.1, 1.0]",[0.0],3,0.4310441391840299
+real_results_classification_phylo_acid_base_balance_interaction,warning_acid_base_balance,genus,2026-09-21T12:17:32Z,genus_ridge,1,3,3,0,[0.0],"[0.01, 0.1, 1.0]",[0.0],3,0.3729850984207327
+real_results_classification_phylo_acid_base_balance_interaction,warning_acid_base_balance,genus,2026-09-21T12:17:32Z,genus_ridge,2,3,3,0,[0.0],"[0.01, 0.1, 1.0]",[0.0],3,0.4456337163103106
+real_results_classification_phylo_acid_base_balance_interaction,warning_acid_base_balance,genus,2026-09-21T12:17:32Z,metadr_order_only,0,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",4,0.4498806721634091
+real_results_classification_phylo_acid_base_balance_interaction,warning_acid_base_balance,genus,2026-09-21T12:17:32Z,metadr_order_only,1,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.30701464826816
+real_results_classification_phylo_acid_base_balance_interaction,warning_acid_base_balance,genus,2026-09-21T12:17:32Z,metadr_order_only,2,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.6249472960886864
+real_results_classification_phylo_acid_base_balance_interaction,warning_acid_base_balance,genus,2026-09-21T12:17:32Z,phylogeny_only,0,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",4,0.3726978270137249
+real_results_classification_phylo_acid_base_balance_interaction,warning_acid_base_balance,genus,2026-09-21T12:17:32Z,phylogeny_only,1,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",5,0.5005111742253736
+real_results_classification_phylo_acid_base_balance_interaction,warning_acid_base_balance,genus,2026-09-21T12:17:32Z,phylogeny_only,2,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.4983782395635687
+real_results_classification_phylo_acid_base_balance_interaction,warning_acid_base_balance,genus,2026-09-21T12:17:32Z,shared_hybrid,0,10,10,0,"[0.0, 0.01]","[0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.4234940146825157
+real_results_classification_phylo_acid_base_balance_interaction,warning_acid_base_balance,genus,2026-09-21T12:17:32Z,shared_hybrid,1,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",2,0.339294654321147
+real_results_classification_phylo_acid_base_balance_interaction,warning_acid_base_balance,genus,2026-09-21T12:17:32Z,shared_hybrid,2,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",1,0.5825683583594773
+real_results_classification_phylo_biogas_quality_interaction,warning_biogas_quality,genus,2026-09-21T12:28:45Z,abundance_only,1,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",4,0.4363195515883103
+real_results_classification_phylo_biogas_quality_interaction,warning_biogas_quality,genus,2026-09-21T12:28:45Z,abundance_only,2,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",2,0.3351484449322968
+real_results_classification_phylo_biogas_quality_interaction,warning_biogas_quality,genus,2026-09-21T12:28:45Z,domain_adaptive_hybrid,0,10,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.5160524492803776
+real_results_classification_phylo_biogas_quality_interaction,warning_biogas_quality,genus,2026-09-21T12:28:45Z,domain_adaptive_hybrid,1,10,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.4051874347259009
+real_results_classification_phylo_biogas_quality_interaction,warning_biogas_quality,genus,2026-09-21T12:28:45Z,domain_adaptive_hybrid,2,10,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.5403277891198138
+real_results_classification_phylo_biogas_quality_interaction,warning_biogas_quality,genus,2026-09-21T12:28:45Z,domain_adaptive_interaction,0,100,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.3067726618612352
+real_results_classification_phylo_biogas_quality_interaction,warning_biogas_quality,genus,2026-09-21T12:28:45Z,domain_adaptive_interaction,1,100,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.4621865391292445
+real_results_classification_phylo_biogas_quality_interaction,warning_biogas_quality,genus,2026-09-21T12:28:45Z,domain_adaptive_interaction,2,100,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.4955386421993739
+real_results_classification_phylo_biogas_quality_interaction,warning_biogas_quality,genus,2026-09-21T12:28:45Z,genus_elastic_net,0,6,6,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]",[0.0],6,0.3292590833093456
+real_results_classification_phylo_biogas_quality_interaction,warning_biogas_quality,genus,2026-09-21T12:28:45Z,genus_elastic_net,1,6,6,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]",[0.0],6,0.3244834832661831
+real_results_classification_phylo_biogas_quality_interaction,warning_biogas_quality,genus,2026-09-21T12:28:45Z,genus_ridge,0,3,3,0,[0.0],"[0.01, 0.1, 1.0]",[0.0],3,0.3395898704558388
+real_results_classification_phylo_biogas_quality_interaction,warning_biogas_quality,genus,2026-09-21T12:28:45Z,genus_ridge,1,3,3,0,[0.0],"[0.01, 0.1, 1.0]",[0.0],3,0.3369765794264473
+real_results_classification_phylo_biogas_quality_interaction,warning_biogas_quality,genus,2026-09-21T12:28:45Z,metadr_order_only,0,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",4,0.3321194326839926
+real_results_classification_phylo_biogas_quality_interaction,warning_biogas_quality,genus,2026-09-21T12:28:45Z,metadr_order_only,1,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.4447757610727512
+real_results_classification_phylo_biogas_quality_interaction,warning_biogas_quality,genus,2026-09-21T12:28:45Z,metadr_order_only,2,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.4765043076875677
+real_results_classification_phylo_biogas_quality_interaction,warning_biogas_quality,genus,2026-09-21T12:28:45Z,phylogeny_only,0,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",4,0.301637029619313
+real_results_classification_phylo_biogas_quality_interaction,warning_biogas_quality,genus,2026-09-21T12:28:45Z,phylogeny_only,1,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",5,0.4493487580507973
+real_results_classification_phylo_biogas_quality_interaction,warning_biogas_quality,genus,2026-09-21T12:28:45Z,phylogeny_only,2,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.3379622088097231
+real_results_classification_phylo_biogas_quality_interaction,warning_biogas_quality,genus,2026-09-21T12:28:45Z,shared_hybrid,0,10,10,0,"[0.0, 0.01]","[0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.3369864191477768
+real_results_classification_phylo_biogas_quality_interaction,warning_biogas_quality,genus,2026-09-21T12:28:45Z,shared_hybrid,1,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",2,0.339629155455327
+real_results_classification_phylo_biogas_quality_interaction,warning_biogas_quality,genus,2026-09-21T12:28:45Z,shared_hybrid,2,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",1,0.4452633182899022
+real_results_classification_phylo_interaction,warning_ammonia_toxicity,genus,2026-09-21T12:06:47Z,abundance_only,0,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.220683633709881
+real_results_classification_phylo_interaction,warning_ammonia_toxicity,genus,2026-09-21T12:06:47Z,abundance_only,1,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",4,0.2203080333664017
+real_results_classification_phylo_interaction,warning_ammonia_toxicity,genus,2026-09-21T12:06:47Z,abundance_only,2,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",2,0.3523148024112617
+real_results_classification_phylo_interaction,warning_ammonia_toxicity,genus,2026-09-21T12:06:47Z,domain_adaptive_hybrid,0,10,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.2645331766646361
+real_results_classification_phylo_interaction,warning_ammonia_toxicity,genus,2026-09-21T12:06:47Z,domain_adaptive_hybrid,1,10,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.2941767734125557
+real_results_classification_phylo_interaction,warning_ammonia_toxicity,genus,2026-09-21T12:06:47Z,domain_adaptive_hybrid,2,10,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.4249082425246049
+real_results_classification_phylo_interaction,warning_ammonia_toxicity,genus,2026-09-21T12:06:47Z,domain_adaptive_interaction,0,100,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.2282559381188489
+real_results_classification_phylo_interaction,warning_ammonia_toxicity,genus,2026-09-21T12:06:47Z,domain_adaptive_interaction,1,100,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.2060631398818189
+real_results_classification_phylo_interaction,warning_ammonia_toxicity,genus,2026-09-21T12:06:47Z,domain_adaptive_interaction,2,100,10,0,[0.0],[0.1],"[0.0, 1.0]",1,0.4616644638095961
+real_results_classification_phylo_interaction,warning_ammonia_toxicity,genus,2026-09-21T12:06:47Z,genus_elastic_net,0,6,6,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]",[0.0],6,0.2304071816507157
+real_results_classification_phylo_interaction,warning_ammonia_toxicity,genus,2026-09-21T12:06:47Z,genus_elastic_net,1,6,6,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]",[0.0],6,0.2355812706255905
+real_results_classification_phylo_interaction,warning_ammonia_toxicity,genus,2026-09-21T12:06:47Z,genus_elastic_net,2,6,6,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]",[0.0],6,0.3123016442954309
+real_results_classification_phylo_interaction,warning_ammonia_toxicity,genus,2026-09-21T12:06:47Z,genus_ridge,0,3,3,0,[0.0],"[0.01, 0.1, 1.0]",[0.0],3,0.2192003501530845
+real_results_classification_phylo_interaction,warning_ammonia_toxicity,genus,2026-09-21T12:06:47Z,genus_ridge,1,3,3,0,[0.0],"[0.01, 0.1, 1.0]",[0.0],3,0.3559416888630743
+real_results_classification_phylo_interaction,warning_ammonia_toxicity,genus,2026-09-21T12:06:47Z,genus_ridge,2,3,3,0,[0.0],"[0.01, 0.1, 1.0]",[0.0],3,0.2682061493138674
+real_results_classification_phylo_interaction,warning_ammonia_toxicity,genus,2026-09-21T12:06:47Z,metadr_order_only,0,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",4,0.2471979517503904
+real_results_classification_phylo_interaction,warning_ammonia_toxicity,genus,2026-09-21T12:06:47Z,metadr_order_only,1,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.2503686524725561
+real_results_classification_phylo_interaction,warning_ammonia_toxicity,genus,2026-09-21T12:06:47Z,metadr_order_only,2,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.3428615281748646
+real_results_classification_phylo_interaction,warning_ammonia_toxicity,genus,2026-09-21T12:06:47Z,phylogeny_only,0,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",4,0.2694510554326756
+real_results_classification_phylo_interaction,warning_ammonia_toxicity,genus,2026-09-21T12:06:47Z,phylogeny_only,1,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",5,0.2474080596378228
+real_results_classification_phylo_interaction,warning_ammonia_toxicity,genus,2026-09-21T12:06:47Z,phylogeny_only,2,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.3288829627759909
+real_results_classification_phylo_interaction,warning_ammonia_toxicity,genus,2026-09-21T12:06:47Z,shared_hybrid,0,10,10,0,"[0.0, 0.01]","[0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.2073654316088071
+real_results_classification_phylo_interaction,warning_ammonia_toxicity,genus,2026-09-21T12:06:47Z,shared_hybrid,1,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",2,0.1951571224776903
+real_results_classification_phylo_interaction,warning_ammonia_toxicity,genus,2026-09-21T12:06:47Z,shared_hybrid,2,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",1,0.4352089692234675
+real_results_classification_warning_acid_accumulation,warning_acid_accumulation,genus,2026-09-20T12:29:07Z,abundance_only,0,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.1415815773954383
+real_results_classification_warning_acid_accumulation,warning_acid_accumulation,genus,2026-09-20T12:29:07Z,abundance_only,1,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",4,0.1853459207577986
+real_results_classification_warning_acid_accumulation,warning_acid_accumulation,genus,2026-09-20T12:29:07Z,abundance_only,2,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",2,0.1545454819696633
+real_results_classification_warning_acid_accumulation,warning_acid_accumulation,genus,2026-09-20T12:29:07Z,genus_elastic_net,0,6,6,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]",[0.0],6,0.1231126840387566
+real_results_classification_warning_acid_accumulation,warning_acid_accumulation,genus,2026-09-20T12:29:07Z,genus_elastic_net,1,6,6,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]",[0.0],6,0.1844595405002292
+real_results_classification_warning_acid_accumulation,warning_acid_accumulation,genus,2026-09-20T12:29:07Z,genus_elastic_net,2,6,6,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]",[0.0],6,0.4857471598691014
+real_results_classification_warning_acid_accumulation,warning_acid_accumulation,genus,2026-09-20T12:29:07Z,genus_ridge,0,3,3,0,[0.0],"[0.01, 0.1, 1.0]",[0.0],3,0.1787654005340971
+real_results_classification_warning_acid_accumulation,warning_acid_accumulation,genus,2026-09-20T12:29:07Z,genus_ridge,1,3,3,0,[0.0],"[0.01, 0.1, 1.0]",[0.0],3,0.1846932788940757
+real_results_classification_warning_acid_accumulation,warning_acid_accumulation,genus,2026-09-20T12:29:07Z,genus_ridge,2,3,3,0,[0.0],"[0.01, 0.1, 1.0]",[0.0],3,0.4857953573506846
+real_results_classification_warning_acid_base_balance,warning_acid_base_balance,genus,2026-09-20T12:25:45Z,abundance_only,0,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.3603841082232384
+real_results_classification_warning_acid_base_balance,warning_acid_base_balance,genus,2026-09-20T12:25:45Z,abundance_only,1,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",4,0.5854903946958383
+real_results_classification_warning_acid_base_balance,warning_acid_base_balance,genus,2026-09-20T12:25:45Z,abundance_only,2,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",2,0.4290028774494808
+real_results_classification_warning_acid_base_balance,warning_acid_base_balance,genus,2026-09-20T12:25:45Z,genus_elastic_net,0,6,6,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]",[0.0],6,0.3942979680692451
+real_results_classification_warning_acid_base_balance,warning_acid_base_balance,genus,2026-09-20T12:25:45Z,genus_elastic_net,1,6,6,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]",[0.0],6,0.3662854718192841
+real_results_classification_warning_acid_base_balance,warning_acid_base_balance,genus,2026-09-20T12:25:45Z,genus_elastic_net,2,6,6,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]",[0.0],6,0.4733431396356121
+real_results_classification_warning_acid_base_balance,warning_acid_base_balance,genus,2026-09-20T12:25:45Z,genus_ridge,0,3,3,0,[0.0],"[0.01, 0.1, 1.0]",[0.0],3,0.4411619064213243
+real_results_classification_warning_acid_base_balance,warning_acid_base_balance,genus,2026-09-20T12:25:45Z,genus_ridge,1,3,3,0,[0.0],"[0.01, 0.1, 1.0]",[0.0],3,0.3814330856028294
+real_results_classification_warning_acid_base_balance,warning_acid_base_balance,genus,2026-09-20T12:25:45Z,genus_ridge,2,3,3,0,[0.0],"[0.01, 0.1, 1.0]",[0.0],3,0.3818266670328058
+real_results_classification_warning_biogas_quality,warning_biogas_quality,genus,2026-09-20T12:30:47Z,abundance_only,0,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",3,1.0581067376287483
+real_results_classification_warning_biogas_quality,warning_biogas_quality,genus,2026-09-20T12:30:47Z,abundance_only,1,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",4,0.1177318558168663
+real_results_classification_warning_biogas_quality,warning_biogas_quality,genus,2026-09-20T12:30:47Z,abundance_only,2,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",2,0.7230420368074317
+real_results_classification_warning_biogas_quality,warning_biogas_quality,genus,2026-09-20T12:30:47Z,genus_elastic_net,0,6,6,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]",[0.0],6,0.2581711372287314
+real_results_classification_warning_biogas_quality,warning_biogas_quality,genus,2026-09-20T12:30:47Z,genus_elastic_net,1,6,6,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]",[0.0],6,0.3227928767105012
+real_results_classification_warning_biogas_quality,warning_biogas_quality,genus,2026-09-20T12:30:47Z,genus_elastic_net,2,6,6,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]",[0.0],6,0.726312195195857
+real_results_classification_warning_biogas_quality,warning_biogas_quality,genus,2026-09-20T12:30:47Z,genus_ridge,0,3,3,0,[0.0],"[0.01, 0.1, 1.0]",[0.0],3,0.2578240379592867
+real_results_classification_warning_biogas_quality,warning_biogas_quality,genus,2026-09-20T12:30:47Z,genus_ridge,1,3,3,0,[0.0],"[0.01, 0.1, 1.0]",[0.0],3,0.112528679747467
+real_results_classification_warning_biogas_quality,warning_biogas_quality,genus,2026-09-20T12:30:47Z,genus_ridge,2,3,3,0,[0.0],"[0.01, 0.1, 1.0]",[0.0],3,0.729186652944363
+real_results_classification_warning_buffer_capacity,warning_buffer_capacity,genus,2026-09-20T12:27:15Z,abundance_only,0,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",3,0.2081155565046012
+real_results_classification_warning_buffer_capacity,warning_buffer_capacity,genus,2026-09-20T12:27:15Z,abundance_only,1,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",4,1.000000500029089e-06
+real_results_classification_warning_buffer_capacity,warning_buffer_capacity,genus,2026-09-20T12:27:15Z,abundance_only,2,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",2,0.2275313930132769
+real_results_classification_warning_buffer_capacity,warning_buffer_capacity,genus,2026-09-20T12:27:15Z,genus_elastic_net,0,6,6,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]",[0.0],6,0.8190419733734902
+real_results_classification_warning_buffer_capacity,warning_buffer_capacity,genus,2026-09-20T12:27:15Z,genus_elastic_net,1,6,6,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]",[0.0],6,1.000000500029089e-06
+real_results_classification_warning_buffer_capacity,warning_buffer_capacity,genus,2026-09-20T12:27:15Z,genus_elastic_net,2,6,6,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]",[0.0],6,0.8393040303757763
+real_results_classification_warning_buffer_capacity,warning_buffer_capacity,genus,2026-09-20T12:27:15Z,genus_ridge,0,3,3,0,[0.0],"[0.01, 0.1, 1.0]",[0.0],3,0.2323041758387078
+real_results_classification_warning_buffer_capacity,warning_buffer_capacity,genus,2026-09-20T12:27:15Z,genus_ridge,1,3,3,0,[0.0],"[0.01, 0.1, 1.0]",[0.0],3,1.000000500029089e-06
+real_results_classification_warning_buffer_capacity,warning_buffer_capacity,genus,2026-09-20T12:27:15Z,genus_ridge,2,3,3,0,[0.0],"[0.01, 0.1, 1.0]",[0.0],3,0.8382643027138054
+real_results_family_rank,eff_CH4,family,2026-09-20T11:12:00Z,abundance_only,0,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",3,137.15760515452007
+real_results_family_rank,eff_CH4,family,2026-09-20T11:12:00Z,abundance_only,1,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",4,29.982617388530706
+real_results_family_rank,eff_CH4,family,2026-09-20T11:12:00Z,abundance_only,2,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",2,119.08724125789
+real_results_family_rank,eff_CH4,family,2026-09-20T11:12:00Z,domain_adaptive_hybrid,0,10,10,0,[0.0],[0.1],"[0.0, 1.0]",1,158.62661867287648
+real_results_family_rank,eff_CH4,family,2026-09-20T11:12:00Z,domain_adaptive_hybrid,1,10,10,0,[0.0],[0.1],"[0.0, 1.0]",1,52.79056799944295
+real_results_family_rank,eff_CH4,family,2026-09-20T11:12:00Z,domain_adaptive_hybrid,2,10,10,0,[0.0],[0.1],"[0.0, 1.0]",1,241.88631555248008
+real_results_family_rank,eff_CH4,family,2026-09-20T11:12:00Z,phylogeny_only,0,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",4,119.65707253012506
+real_results_family_rank,eff_CH4,family,2026-09-20T11:12:00Z,phylogeny_only,1,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",5,27.49019058675581
+real_results_family_rank,eff_CH4,family,2026-09-20T11:12:00Z,phylogeny_only,2,10,10,0,"[0.0, 0.01]","[0.01, 0.1, 1.0]","[0.0, 1.0, 10.0]",3,173.80435542057478

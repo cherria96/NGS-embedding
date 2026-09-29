@@ -1,0 +1,18 @@
+{
+  "fusionml_version": "0.1.0",
+  "python_version": "3.12.5 | packaged by Anaconda, Inc. | (main, Sep 12 2024, 18:27:27) [GCC 11.2.0]",
+  "saved_at_unix": 1789980448.31664,
+  "resolution": "asv",
+  "family": "asv_elastic_net",
+  "n_features_a": 20,
+  "n_features_b": 54,
+  "alpha_arc": null,
+  "alpha_bac": null,
+  "lambda_s": 0.01,
+  "lambda_r": 0.1,
+  "lambda_f": 0.0,
+  "task": "classification",
+  "classification_threshold": 0.05,
+  "has_interaction": false,
+  "n_interaction_products": 0
+}

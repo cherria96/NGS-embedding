@@ -1,0 +1,110 @@
+{
+  "copied_files_verified": 68,
+  "matches_original_run_code_config_hashes": {
+    "fusionML/configs/real_smoke_classification_phylo.yaml": false,
+    "fusionML/investigation_20260921/learning_curves.py": false
+  },
+  "raw_workbook_not_copied_or_revalidated": true,
+  "qc_full_size_fit_rows": 240,
+  "qc_full_size_prediction_rows": 10720,
+  "qc_metric_max_absolute_differences": {
+    "auc": 1.1102230246251565e-16,
+    "ap": 5.551115123125783e-17,
+    "logloss": 1.6653345369377348e-16,
+    "brier": 8.326672684688674e-17,
+    "mcc": 9.71445146547012e-17,
+    "f2": 5.551115123125783e-17
+  },
+  "outer_partitions_without_site_overlap": 12,
+  "samples": 134,
+  "qc_site_groups": 35,
+  "paired_loss_delta_matches_pooled_repeat_mean": true,
+  "regularization_rows_verified": 162,
+  "asv": {
+    "completed_tasks": 12,
+    "selected_fit_rows": 192,
+    "prediction_rows": 8576,
+    "regularization_rows": 324,
+    "same_cohort_labels_and_outer_splits_as_genus": true,
+    "retained_asvs_missing_from_trees": 0,
+    "maximum_equality_residual": 2.56253351871294e-13,
+    "maximum_group_reconstruction_error": 8.215650382226158e-15,
+    "maximum_coefficient_residual": 6.97410529132414e-07,
+    "failed_candidate_records": 0,
+    "active_product_counts": [
+      0,
+      1,
+      3,
+      4
+    ],
+    "input_tree_hashes": {
+      "data/qiimeresult/ARC/rooted-tree.nwk": "35297e8eac476b73200f12c71dcd13f02316404fb0442e6594f485af351f6e28",
+      "data/qiimeresult/BAC/rooted-tree.nwk": "fb1641fd17f1aa24f9926a653b7cb192be3c1e3a744e6e59fa30d123194665a9"
+    }
+  },
+  "domain_fusion": {
+    "resolutions": [
+      "order",
+      "family",
+      "genus",
+      "asv"
+    ],
+    "completed_tasks_per_resolution": 18,
+    "planned_fit_records": 720,
+    "available_fit_records": 640,
+    "unavailable_fit_records": 80,
+    "prediction_rows": 28640,
+    "outer_partitions_without_site_overlap": 72,
+    "restriction_verified_no_edges_in_unfused_domain": true,
+    "labels_and_sites_match_reused_cohort": true,
+    "retained_features_missing_from_trees": 0,
+    "maximum_equality_residual": 4.2202005778868573e-13,
+    "maximum_group_reconstruction_error": 1.6875389974302383e-14,
+    "maximum_coefficient_residual": 7.329368396467567e-07,
+    "failed_candidate_records": 1120,
+    "failure_kinds": [
+      "SingleClassTrainingError"
+    ],
+    "unavailable_outer_splits": [
+      [
+        "warning_biogas_quality",
+        0,
+        2
+      ],
+      [
+        "warning_biogas_quality",
+        1,
+        1
+      ]
+    ],
+    "targets_with_complete_out_of_fold_coverage": [
+      "warning_acid_base_balance",
+      "warning_ammonia_toxicity"
+    ],
+    "asv_both_domain_fits_reproduce_saved_asv_run": {
+      "n_active_groups": 0.0,
+      "test_mcc": 0.0,
+      "test_f2": 0.0,
+      "test_logloss": 0.0,
+      "test_auc": 0.0
+    },
+    "selection_rule_reported": "min_loss",
+    "ranking_metric": "mcc"
+  },
+  "asv_results_module_sha256": "26ef02458a626edaa0d1810c1f5324f05bd25705b8b8bbb5425016f6a58b108a",
+  "domain_restricted_results_module_sha256": "a6304186a11944fab631dbe5153ec325313de0c4da032fc05782a6920459198e",
+  "primary_active_interaction_products": 0.0,
+  "versions": {
+    "numpy": "2.0.1",
+    "pandas": "2.2.3",
+    "matplotlib": "3.9.2",
+    "scikit-learn": "1.5.2"
+  },
+  "generator_sha256": "f1d4c78406e52e023c2736806e19050b9ac4e55fca2146215519300fb97f2ebe",
+  "source_manifest_sha256": "e7f3d43b5a938aeacb0692ad73e997792eedc307f1e51eb5d51c8dcde13aa4ed",
+  "bootstrap": {
+    "seed": 20260922,
+    "resamples": 5000,
+    "refit": false
+  }
+}

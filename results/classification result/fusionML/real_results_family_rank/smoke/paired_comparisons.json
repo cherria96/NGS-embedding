@@ -1,0 +1,10 @@
+{
+  "primary_vs_intercept_only": {
+    "n_sites": 37,
+    "n_bootstrap": 1000,
+    "observed_mean_site_mse_diff_a_minus_b": 52.559002963964545,
+    "ci95_low": 26.695273508878035,
+    "ci95_high": 82.76073506709001,
+    "note": "conditional on fitted OOF models; repeated CV folds are not independent samples"
+  }
+}

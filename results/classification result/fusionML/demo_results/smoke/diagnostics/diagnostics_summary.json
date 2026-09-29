@@ -1,0 +1,32 @@
+{
+  "resolution_used": "genus",
+  "note": "descriptive/exploratory only; not used by pipeline.train() feature/graph selection",
+  "ARC": {
+    "n_features": 3,
+    "n_samples": 41,
+    "n_pairs_analyzed": 3,
+    "site_decomposition_check_max_abs_error": 1.1102230246251565e-16
+  },
+  "BAC": {
+    "n_features": 4,
+    "n_samples": 41,
+    "n_pairs_analyzed": 6,
+    "site_decomposition_check_max_abs_error": 5.551115123125783e-17
+  },
+  "pseudocount_sensitivity": {
+    "1.0": {
+      "ARC": {
+        "compared": "delta=0.5 vs delta=1.0",
+        "n_features_compared": 3,
+        "mean_abs_log_diff": 0.00012543692399629412,
+        "max_abs_log_diff": 0.0006896068703139413
+      },
+      "BAC": {
+        "compared": "delta=0.5 vs delta=1.0",
+        "n_features_compared": 4,
+        "mean_abs_log_diff": 8.42398217499298e-05,
+        "max_abs_log_diff": 0.0004218718808592925
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+feature_id,detected_samples,detected_sites,sample_prevalence_fraction
+ARC::genus::g__SynGenusA0,41,12,1.0
+ARC::genus::g__SynGenusA1,41,12,1.0
+ARC::genus::g__SynGenusA2,41,12,1.0

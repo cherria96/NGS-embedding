@@ -1,0 +1,33 @@
+{
+  "fingerprint": "8ce338803c9f41943d65e334f056120c7fab4050ecbf4a7e1b03e0340cc6c426",
+  "completed_tasks": 18,
+  "targets": [
+    "warning_ammonia_toxicity",
+    "warning_acid_base_balance",
+    "warning_biogas_quality"
+  ],
+  "models": [
+    "fusion_arc_only",
+    "fusion_bac_only",
+    "shared_hybrid",
+    "domain_adaptive_hybrid",
+    "domain_adaptive_interaction"
+  ],
+  "resolution": "asv",
+  "inner_folds": 2,
+  "outer_folds": 3,
+  "repeats": 2,
+  "selection": "one_se",
+  "source_manifest_sha256": "9b6edffd8c7b26dc046357c9c2ddb3dd239430541294d012d66c16215bd0529c",
+  "output_hashes": {
+    "interactions.csv": "6696c010505e92a60cf33429db662d390301288dace1925025daa281ae34fbf7",
+    "graph_edges.csv": "ca5198998a4d4d379b8c574bc003cef35a6baf905fd5708dde3250ecc24d9120",
+    "rows.csv": "4d97cbc2884892284ac92364f645a49455438e137067dbf00602e1f7f414417a",
+    "balances.csv": "7133a1744616b50fbc95773c327377e5522f51178e3c2e3d6451ae4d65ff8ccf",
+    "predictions.csv": "c01ca3f8c6f5c0cf7d425c79a8ce5680b7ef7a5c7642fc103ad97a32e8488b60",
+    "search.csv": "c771c0540bd20cf318b8b426866cb4283f8aca64f90e4ce985c9afad7d41495a",
+    "splits.csv": "cdeeb2b7a3f9a9ef0007698b0954805402890e3775cea1088a2bc81c987f31e8",
+    "failures.csv": "9d5187950f941d69d1c57f8e9105973608bb45cd76fbabe9c42758a850eeb49d",
+    "coefficients_and_groups.csv": "bd9d1d3b7265319ff4d59d0f72334869aa25bc82dd3c9e205e49ea7d11a3ca28"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "n_features": 330,
+  "n_bacteria": 285,
+  "n_archaea": 37,
+  "n_other": 8,
+  "method": "cooccurrence",
+  "covariates": null,
+  "scale": 0.25,
+  "topk": 5,
+  "fdr": 0.05,
+  "cross_domain_pairs_tested": 10545,
+  "edges_retained": 185,
+  "mean_rho_kept": 0.5912594178737147,
+  "archaea_with_no_partner": 0,
+  "metadr_grid_size": 19,
+  "metadr_placement_quality": 0.16756756756756758
+}

@@ -1,0 +1,7 @@
+domain,lineage,source,note
+ARC,Bathyarchaeia,https://pubmed.ncbi.nlm.nih.gov/26494757/,"Methane-metabolism potential was identified in particular genomes, not across this broad lineage; other bathyarchaeotal genomes support acetogenic potential instead (PubMed 26626228). A 16S label does not resolve function."
+ARC,Woesearchaeales__b1/b2,,No cultured representative; no role assigned.
+BAC,Bacteroidales__b7/b8,,16 Bacteroidetes vadinHA17 ASVs across two blocks. Digester-associated uncultured lineage; no role assigned even though b7 carries a large negative coefficient in both models.
+BAC,"MBA03, D8A_2, MVP_15, JS1, WS1, SBR1031, SJA_15, SJA_28, CK_2C2_2, WCHB1_41, DTU014",,Uncultured lineage labels with no cultured representative in this dataset; no role assigned.
+BAC,"Cloacimonadales, Aminicenantales, Caldatribacteriales, Caldisericales, Hydrogenedentiales, Izemoplasmatales",https://pmc.ncbi.nlm.nih.gov/articles/PMC2293186/,Candidate-phylum lineages. One reconstructed Cloacamonas genome suggests amino-acid fermentation and possible syntrophy; no role is transferred to the other labels here.
+BAC,SAR324_clade(Marine_group_B),,"Uncultured clade whose described habitat is marine, not digesters. Carries a consistent negative coefficient in both models; no role assigned and the assignment itself should be treated cautiously."
